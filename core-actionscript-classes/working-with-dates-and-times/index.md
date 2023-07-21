@@ -18,7 +18,7 @@ of the week, hour, minutes, seconds, milliseconds, and time zone. For more
 advanced uses, ActionScript also includes the Timer class, which you can use to
 perform actions after a certain delay or at repeated intervals.
 
-- [Managing calendar dates and times](./managing-calendar-date-and-times.md)
+- [Managing calendar dates and times](./managing-calendar-dates-and-times.md)
 - [Controlling time intervals](./controlling-time-intervals.md)
 - [Date and time example: Simple analog clock](./date-and-time-example-simple-analog-clock.md)
 
