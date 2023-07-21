@@ -22,7 +22,7 @@ replacing found matches with replacement substrings. These methods are
 described in the following sections.
 
 Regular expressions can define intricate patterns. For more information,
-see [Using regular expressions](../05-using-regular-expressions/index.md).
+see [Using regular expressions](../using-regular-expressions/index.md).
 
 </div>
 
@@ -135,7 +135,7 @@ You can also use a regular expression as the delimiter character:
     var str:String = "Give me\t5."
     var a:Array = str.split(/\s+/); // a == ["Give","me","5."]
 
-For more information, see [Using regular expressions](../05-using-regular-expressions/index.md) and the <a
+For more information, see [Using regular expressions](../using-regular-expressions/index.md) and the <a
 href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html"
 target="_self">ActionScript 3.0 Reference for the Adobe Flash
 Platform</a>.
@@ -164,7 +164,7 @@ patterns in strings:
 These methods are described in the following sections.
 
 You can use strings or regular expressions to define patterns used in
-these methods. For more information on regular expressions, see [Using regular expressions](../05-using-regular-expressions/index.md).
+these methods. For more information on regular expressions, see [Using regular expressions](../using-regular-expressions/index.md).
 
 <div xmlns:adobe="http://www.adobe.com/saxon">
 
@@ -257,7 +257,7 @@ following:
 
     ["bob@example.com","omar@example.org"]
 
-For more information on regular expressions, see [Using regular expressions](../05-using-regular-expressions/index.md).
+For more information on regular expressions, see [Using regular expressions](../using-regular-expressions/index.md).
 
 </div>
 
@@ -279,7 +279,7 @@ because the `i` (
 expression, and multiple matches are replaced because the
 `g` (
 `global` ) flag is set. For more
-information, see [Using regular expressions](../05-using-regular-expressions/index.md).
+information, see [Using regular expressions](../using-regular-expressions/index.md).
 
 You can include the following `$`
 replacement codes in the replacement string. The replacement text shown

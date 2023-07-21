@@ -50,6 +50,20 @@ You can use regular expressions with the following methods of the String
 class: `match()`,
 `replace()`, and
 `search()`. For more information on these
-methods, see [Finding patterns in strings and replacing substrings](../02-working-with-strings/finding-substrings-and-patterns-in-strings.md).
+methods, see [Finding patterns in strings and replacing substrings](../working-with-strings/finding-substrings-and-patterns-in-strings.md).
 
 </div>
+
+- [Creating an instance of a regular expression](./creating-an-instance-of-a-regular-expression.md)
+
+- [Characters, metacharacters, and metasequences](./characters-metacharacters-and-metasequences.md)
+
+- [Character classes](./character-classes.md)
+
+- [Quantifiers](./quantifiers.md)
+
+- [Alternation](./alternation.md)
+
+- [Groups](./groups.md)
+
+- [Flags and properties](./flags-and-properties.md)

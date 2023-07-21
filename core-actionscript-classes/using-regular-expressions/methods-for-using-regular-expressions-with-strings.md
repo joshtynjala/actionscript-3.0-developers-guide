@@ -95,7 +95,7 @@ parameters: `match()`,
 `replace()`,
 `search()`, and
 `split()`. For more information on these
-methods, see [Finding patterns in strings and replacing substrings](../02-working-with-strings/finding-substrings-and-patterns-in-strings.md).
+methods, see [Finding patterns in strings and replacing substrings](../working-with-strings/finding-substrings-and-patterns-in-strings.md).
 
 </div>
 

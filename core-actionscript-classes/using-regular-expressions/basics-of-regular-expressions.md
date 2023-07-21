@@ -32,7 +32,7 @@ String class methods. The following methods of the String class take
 regular expressions as parameters: `match()`, `replace()`,
 `search()`, and
 `split()`. For more information on these
-methods, see [Finding patterns in strings and replacing substrings](../02-working-with-strings/finding-substrings-and-patterns-in-strings.md).
+methods, see [Finding patterns in strings and replacing substrings](../working-with-strings/finding-substrings-and-patterns-in-strings.md).
 
 The RegExp class includes the following methods:
 `test()` and

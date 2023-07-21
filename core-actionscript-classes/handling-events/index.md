@@ -12,7 +12,7 @@ tool for ActionScript programmers.
 
 The ActionScript 3.0 event-handling system interacts closely with the
 display list. To gain a basic understanding of the display list, read
-[Display programming](../../02-display/index.md).
+[Display programming](../../display/index.md).
 
 - [Basics of handling events](./basics-of-handling-events.md)
 - [How ActionScript 3.0 event handling differs from earlier versions](./how-actionscript-3.0-event-handling-differs-from-earlier-versions.md)

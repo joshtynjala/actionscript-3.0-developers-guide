@@ -17,7 +17,7 @@ normally dispatches three types of events:
 occurs, the XMLSocket class can dispatch the
 `IOErrorEvent.IOError` or the
 `SecurityErrorEvent.SECURITY_ERROR`. For
-more information about event listeners and event handlers, see [Handling events](../08-handling-events/index.md).
+more information about event listeners and event handlers, see [Handling events](../handling-events/index.md).
 
 Error events fit into one of two categories:
 

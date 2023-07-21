@@ -5,7 +5,7 @@
 The Alarm Clock example consists of a clock that allows the user to
 specify a time at which an alarm will go off, as well as a message to be
 displayed at that time. The Alarm Clock example builds on the
-SimpleClock application from [Working with dates and times](../01-working-with-dates-and-times/index.md) Alarm Clock
+SimpleClock application from [Working with dates and times](../working-with-dates-and-times/index.md) Alarm Clock
 illustrates several aspects of working with events in ActionScript 3.0,
 including:
 
@@ -90,7 +90,7 @@ the SimpleClock example).</p></td>
 
 The primary functionality of the clock in this example, including
 tracking the time and displaying the clock face, reuses the SimpleClock
-application code, which is described in [Date and time example: Simple analog clock](../01-working-with-dates-and-times/date-and-time-example-simple-analog-clock.md). The
+application code, which is described in [Date and time example: Simple analog clock](../working-with-dates-and-times/date-and-time-example-simple-analog-clock.md). The
 AlarmClock class extends the SimpleClock class from that example by
 adding the functionality required for an alarm clock, including setting
 the alarm time and providing notification when the alarm “goes off.”
