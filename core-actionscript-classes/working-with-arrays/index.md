@@ -18,3 +18,6 @@ whose elements are all instances of the same data type.
 - [Arrays example: PlayList](./arrays-example-playlist.md)
 
 </div>
+
+- [Array class](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html)
+- [Vector class](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Vector.html)

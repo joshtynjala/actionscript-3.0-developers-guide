@@ -12,4 +12,7 @@
 - [Handling events](./handling-events/index.md)
 - [Working with application domains](./working-with-application-domains/index.md)
 
+- [flash.events package](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/package-detail.html)
+- [Document Object Model (DOM) Level 3 Events Specification](http://www.w3.org/TR/DOM-Level-3-Events/)
+
 </div>

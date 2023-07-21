@@ -29,3 +29,6 @@ error-handling system in ActionScript 3.0.
 - [Handling errors example: CustomErrors application](./handling-errors-example-custom-errors-application.md)
 
 </div>
+
+- [ActionScript language and syntax](http://help.adobe.com/en_US/as3/learn/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ec7.html)
+- [Object-oriented programming in ActionScript](http://help.adobe.com/en_US/as3/learn/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ec0.html)

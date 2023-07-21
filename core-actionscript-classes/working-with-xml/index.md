@@ -69,3 +69,7 @@ XML to find the data you need. </span></td>
 - [XML in ActionScript example: Loading RSS data from the Internet](./xml-in-actionscript-example-loading-rss-data-from-the-internet.md)
 
 </div>
+
+- [XML class](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html)
+- [XMLList class](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html)
+- [ECMA-457 specification](https://www.ecma-international.org/publications-and-standards/standards/ecma-357/)

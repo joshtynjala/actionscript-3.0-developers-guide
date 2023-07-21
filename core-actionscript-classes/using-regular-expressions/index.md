@@ -25,3 +25,5 @@ ECMAScript edition 3 language specification (ECMA-262).
 - [Regular expressions example: A Wiki parser](./regular-expressions-example-a-wiki-parser.md)
 
 </div>
+
+- [RegExp class](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/RegExp.html)

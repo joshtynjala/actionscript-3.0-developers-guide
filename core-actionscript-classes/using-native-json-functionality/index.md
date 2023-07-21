@@ -565,3 +565,7 @@ JSONDictionaryExtnExample object from a private static array.
 </div>
 
 </div>
+
+- [JSON class](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/JSON.html)
+- [The prototype object](http://help.adobe.com/en_US/as3/learn/WS5b3ccc516d4fbf351e63e3d118a9b90204-7fa3.html)
+- [ECMA-262 specification](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/)

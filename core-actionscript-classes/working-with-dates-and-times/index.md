@@ -24,3 +24,6 @@ actions after a certain delay or at repeated intervals.
 - [Date and time example: Simple analog clock](./date-and-time-example-simple-analog-clock.md)
 
 </div>
+
+- [Date class](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Date.html)
+- [flash.utils.Timer class](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/utils/Timer.html)

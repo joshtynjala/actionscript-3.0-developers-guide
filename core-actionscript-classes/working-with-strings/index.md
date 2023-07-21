@@ -22,3 +22,8 @@ Unicode characters.
 - [Strings example: ASCII art](./strings-example-ascii-art.md)
 
 </div>
+
+- [String class](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/String.html)
+- [RegExp class](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/RegExp.html)
+- [parseFloat() function](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/package.html#parseFloat%28%29)
+- [parseInt() function](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/package.html#parseInt%28%29)
