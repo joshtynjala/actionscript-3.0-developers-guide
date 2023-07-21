@@ -2,13 +2,13 @@
 
 <div>
 
-The String class contains methods that let you work with text strings.
-Strings are important in working with many objects. The methods
-described here are useful for working with strings used in objects such
-as TextField, StaticText, XML, ContextMenu, and FileReference objects.
+The String class contains methods that let you work with text strings. Strings
+are important in working with many objects. The methods described here are
+useful for working with strings used in objects such as TextField, StaticText,
+XML, ContextMenu, and FileReference objects.
 
-Strings are sequences of characters. ActionScript 3.0 supports ASCII and
-Unicode characters.
+Strings are sequences of characters. ActionScript 3.0 supports ASCII and Unicode
+characters.
 
 - [Basics of strings](./basics-of-strings.md)
 - [Creating strings](./creating-strings.md)

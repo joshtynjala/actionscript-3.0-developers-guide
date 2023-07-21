@@ -2,10 +2,10 @@
 
 <div>
 
-Namespaces in an XML object (or document) identify the type of data that
-the object contains. For example, in sending and delivering XML data to
-a web service that uses the SOAP messaging protocol, you declare the
-namespace in the opening tag of the XML:
+Namespaces in an XML object (or document) identify the type of data that the
+object contains. For example, in sending and delivering XML data to a web
+service that uses the SOAP messaging protocol, you declare the namespace in the
+opening tag of the XML:
 
     var message:XML =
         <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
@@ -17,13 +17,12 @@ namespace in the opening tag of the XML:
             </soap:Body>
         </soap:Envelope>;
 
-The namespace has a prefix, `soap`, and a
-URI that defines the namespace,
+The namespace has a prefix, `soap`, and a URI that defines the namespace,
 `http://schemas.xmlsoap.org/soap/envelope/`.
 
-ActionScript 3.0 includes the Namespace class for working with XML
-namespaces. For the XML object in the previous example, you can use the
-Namespace class as follows:
+ActionScript 3.0 includes the Namespace class for working with XML namespaces.
+For the XML object in the previous example, you can use the Namespace class as
+follows:
 
     var soapNS:Namespace = message.namespace("soap");
     trace(soapNS); // Output: http://schemas.xmlsoap.org/soap/envelope/
@@ -35,22 +34,14 @@ Namespace class as follows:
 
     message.soapNS::Body.wNS::GetWeatherResponse.wNS::tempurature = "78";
 
-The XML class includes the following methods for working with
-namespaces: `addNamespace()`,
-`inScopeNamespaces()`,
-`localName()`,
-`name()`,
-`namespace()`,
-`namespaceDeclarations()`,
-`removeNamespace()`,
-`setLocalName()`,
-`setName()`, and
-`setNamespace()`.
+The XML class includes the following methods for working with namespaces:
+`addNamespace()`, `inScopeNamespaces()`, `localName()`, `name()`, `namespace()`,
+`namespaceDeclarations()`, `removeNamespace()`, `setLocalName()`, `setName()`,
+and `setNamespace()`.
 
-The `default xml namespace` directive lets
-you assign a default namespace for XML objects. For example, in the
-following, both `x1` and
-`x2` have the same default namespace:
+The `default xml namespace` directive lets you assign a default namespace for
+XML objects. For example, in the following, both `x1` and `x2` have the same
+default namespace:
 
     var ns1:Namespace = new Namespace("http://www.example.com/namespaces/");
     default xml namespace = ns1;

@@ -2,10 +2,9 @@
 
 <div>
 
-Use the `prependChild()` method or the
-`appendChild()` method to add a property to
-the beginning or end of an XML object’s list of properties, as the
-following example shows:
+Use the `prependChild()` method or the `appendChild()` method to add a property
+to the beginning or end of an XML object’s list of properties, as the following
+example shows:
 
     var x1:XML = <p>Line 1</p>
     var x2:XML = <p>Line 2</p>
@@ -15,9 +14,8 @@ following example shows:
     x = x.prependChild(<p>Line 0</p>);
         // x == <body><p>Line 0</p><p>Line 1</p><p>Line 2</p></body>
 
-Use the `insertChildBefore()` method or the
-`insertChildAfter()` method to add a property
-before or after a specified property, as follows:
+Use the `insertChildBefore()` method or the `insertChildAfter()` method to add a
+property before or after a specified property, as follows:
 
     var x:XML =
         <body>
@@ -28,9 +26,8 @@ before or after a specified property, as follows:
     x = x.insertChildAfter(x.p[0], newNode)
     x = x.insertChildBefore(x.p[2], <p>Paragraph 1.75</p>)
 
-As the following example shows, you can also use curly brace operators (
-`{` and `}` ) to
-pass data by reference (from other variables) when constructing XML
+As the following example shows, you can also use curly brace operators (`{` and
+`}`) to pass data by reference (from other variables) when constructing XML
 objects:
 
     var ids:Array = [121, 122, 123];
@@ -49,8 +46,8 @@ objects:
         x = x.appendChild(newnode)
     }
 
-You can assign properties and attributes to an XML object by using the
-`=` operator, as in the following:
+You can assign properties and attributes to an XML object by using the `=`
+operator, as in the following:
 
     var x:XML =
         <employee>
@@ -59,8 +56,7 @@ You can assign properties and attributes to an XML object by using the
     x.firstname = "Jean";
     x.@id = "239";
 
-This sets the XML object `x` to the
-following:
+This sets the XML object `x` to the following:
 
     <employee id="239">
         <lastname>Smith</lastname>
@@ -74,8 +70,7 @@ You can use the + and += operators to concatenate XMLList objects:
     var xList:XMLList = x1 + x2;
     xList += <c>test3</c>
 
-This sets the XMLList object `xList` to the
-following:
+This sets the XMLList object `xList` to the following:
 
     <a>test1</a>
     <b>test2</b>

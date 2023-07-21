@@ -2,8 +2,8 @@
 
 <div>
 
-The CustomErrors application demonstrates techniques for working with
-custom errors when building an application. These techniques are:
+The CustomErrors application demonstrates techniques for working with custom
+errors when building an application. These techniques are:
 
 - Validating an XML packet
 
@@ -15,10 +15,9 @@ custom errors when building an application. These techniques are:
 
 To get the application files for this sample, see
 <a href="http://www.adobe.com/go/learn_programmingAS3samples_flash"
-target="_self">www.adobe.com/go/learn_programmingAS3samples_flash</a>.
-The CustomErrors application files can be found in the
-Samples/CustomError folder. The application consists of the following
-files:
+target="_self">www.adobe.com/go/learn_programmingAS3samples_flash</a>. The
+CustomErrors application files can be found in the Samples/CustomError folder.
+The application consists of the following files:
 
 <div>
 
@@ -83,11 +82,10 @@ extends the custom ApplicationError class.</p></td>
 
 <div>
 
-When the application loads, the `initApp()`
-method is called for Flex applications or the timeline (non-function)
-code is executed for Flash Professional applications. This code defines
-a sample XML packet to be verified by the Validator class. The following
-code is run:
+When the application loads, the `initApp()` method is called for Flex
+applications or the timeline (non-function) code is executed for Flash
+Professional applications. This code defines a sample XML packet to be verified
+by the Validator class. The following code is run:
 
     employeeXML =
         <employee id="12345">
@@ -98,16 +96,14 @@ code is run:
         </employee>;
     }
 
-The XML packet is later displayed in a TextArea component instance on
-the Stage. This step allows you to modify the XML packet before
-attempting to revalidate it.
+The XML packet is later displayed in a TextArea component instance on the Stage.
+This step allows you to modify the XML packet before attempting to revalidate
+it.
 
-When the user clicks the Validate button, the
-`validateData()` method is called. This
-method validates the employee XML packet using the
-`validateEmployeeXML()` method in the
-Validator class. The following code shows the
-`validateData()` method:
+When the user clicks the Validate button, the `validateData()` method is called.
+This method validates the employee XML packet using the `validateEmployeeXML()`
+method in the Validator class. The following code shows the `validateData()`
+method:
 
     function validateData():void
     {
@@ -131,32 +127,22 @@ Validator class. The following code shows the
         }
     }
 
-First, a temporary XML object is created using the contents of the
-TextArea component instance `xmlText`.
-Next, the `validateEmployeeXML()` method in
-the custom Validator class
-(com.example.programmingas3/errors/Validator.as) is called and passes
-the temporary XML object as a parameter. If the XML packet is valid, the
-`status` Label component instance displays
-a success message and the application exits. If the
-`validateEmployeeXML()` method throws a
-custom error (that is, a FatalError, WarningError, or a generic Error
-occurs), the appropriate `catch` statement
-executes and calls either the
-`showFatalError()`,
-`showWarningError()`, or
-`showGenericError()` methods. Each of these
-methods displays an appropriate message in a text area named
-`statusTex` t to notify the user of the
-specific error that occurred. Each method also updates the
-`status` Label component instance with a
-specific message.
+First, a temporary XML object is created using the contents of the TextArea
+component instance `xmlText`. Next, the `validateEmployeeXML()` method in the
+custom Validator class (com.example.programmingas3/errors/Validator.as) is
+called and passes the temporary XML object as a parameter. If the XML packet is
+valid, the `status` Label component instance displays a success message and the
+application exits. If the `validateEmployeeXML()` method throws a custom error
+(that is, a FatalError, WarningError, or a generic Error occurs), the
+appropriate `catch` statement executes and calls either the `showFatalError()`,
+`showWarningError()`, or `showGenericError()` methods. Each of these methods
+displays an appropriate message in a text area named `statusTex` t to notify the
+user of the specific error that occurred. Each method also updates the `status`
+Label component instance with a specific message.
 
-If a fatal error occurs during an attempt to validate the employee XML
-packet, the error message is displayed in the
-`statusText` text area, and the
-`xmlText` TextArea component instance and
-`validateBtn` Button component instance are
+If a fatal error occurs during an attempt to validate the employee XML packet,
+the error message is displayed in the `statusText` text area, and the `xmlText`
+TextArea component instance and `validateBtn` Button component instance are
 disabled, as the following code shows:
 
     function showFatalError(error:FatalError):void
@@ -170,15 +156,11 @@ disabled, as the following code shows:
     }
 
 If a warning error instead of a fatal error occurs, the error message is
-displayed in the `statusText` TextArea
-instance, but the `xmlText` TextField and
-Button component instances aren’t disabled. The
-`showWarningError()` method displays the
-custom error message in the `statusText`
-text area. The message also asks the user to decide if they want to
-proceed with validating the XML or cancel the script. The following
-excerpt shows the `showWarningError()`
-method:
+displayed in the `statusText` TextArea instance, but the `xmlText` TextField and
+Button component instances aren’t disabled. The `showWarningError()` method
+displays the custom error message in the `statusText` text area. The message
+also asks the user to decide if they want to proceed with validating the XML or
+cancel the script. The following excerpt shows the `showWarningError()` method:
 
     function showWarningError(error:WarningError):void
     {
@@ -188,10 +170,8 @@ method:
         statusText.text = message;
     }
 
-When the user clicks either the Yes or No button, the
-`closeHandler()` method is called. The
-following excerpt shows the
-`closeHandler()` method:
+When the user clicks either the Yes or No button, the `closeHandler()` method is
+called. The following excerpt shows the `closeHandler()` method:
 
     function closeHandler(event:CloseEvent):void
     {
@@ -207,8 +187,8 @@ following excerpt shows the
         }
     }
 
-If the user chooses to cancel the script by clicking Yes, a FatalError
-is thrown, causing the application to terminate.
+If the user chooses to cancel the script by clicking Yes, a FatalError is
+thrown, causing the application to terminate.
 
 </div>
 
@@ -220,13 +200,10 @@ is thrown, causing the application to terminate.
 
 <div>
 
-The custom Validator class contains a single method,
-`validateEmployeeXML()`. The
-`validateEmployeeXML()` method takes a
-single argument, `employee`, which is the
-XML packet that you want to validate. The
-`validateEmployeeXML()` method is as
-follows:
+The custom Validator class contains a single method, `validateEmployeeXML()`.
+The `validateEmployeeXML()` method takes a single argument, `employee`, which is
+the XML packet that you want to validate. The `validateEmployeeXML()` method is
+as follows:
 
     public static function validateEmployeeXML(employee:XML):void
     {
@@ -245,24 +222,19 @@ follows:
         }
     }
 
-To be validated, an employee must belong to one (and only one) cost
-center. If the employee doesn’t belong to any cost centers, the method
-throws a FatalError, which bubbles up to the
-`validateData()` method in the main
-application file. If the employee belongs to more than one cost center,
-a WarningError is thrown. The final check in the XML validator is that
-the user has exactly one social security number defined (the
-`ssn` node in the XML packet). If there is
-not exactly one `ssn` node, a FatalError
-error is thrown.
+To be validated, an employee must belong to one (and only one) cost center. If
+the employee doesn’t belong to any cost centers, the method throws a FatalError,
+which bubbles up to the `validateData()` method in the main application file. If
+the employee belongs to more than one cost center, a WarningError is thrown. The
+final check in the XML validator is that the user has exactly one social
+security number defined (the `ssn` node in the XML packet). If there is not
+exactly one `ssn` node, a FatalError error is thrown.
 
-You can add additional checks to the
-`validateEmployeeXML()` method—for example,
-to ensure that the `ssn` node contains a
-valid number, or that the employee has at least one phone number and
-e-mail address defined, and that both values are valid. You can also
-modify the XML so that each employee has a unique ID and specifies the
-ID of their manager.
+You can add additional checks to the `validateEmployeeXML()` method—for example,
+to ensure that the `ssn` node contains a valid number, or that the employee has
+at least one phone number and e-mail address defined, and that both values are
+valid. You can also modify the XML so that each employee has a unique ID and
+specifies the ID of their manager.
 
 </div>
 
@@ -274,13 +246,12 @@ ID of their manager.
 
 <div>
 
-The ApplicationError class serves as the base class for both the
-FatalError and WarningError classes. The ApplicationError class extends
-the Error class, and defines its own custom methods and properties,
-including defining an error ID, severity, and an XML object that
-contains the custom error codes and messages. This class also defines
-two static constants that are used to define the severity of each error
-type.
+The ApplicationError class serves as the base class for both the FatalError and
+WarningError classes. The ApplicationError class extends the Error class, and
+defines its own custom methods and properties, including defining an error ID,
+severity, and an XML object that contains the custom error codes and messages.
+This class also defines two static constants that are used to define the
+severity of each error type.
 
 The ApplicationError class’s constructor method is as follows:
 
@@ -303,10 +274,9 @@ The ApplicationError class’s constructor method is as follows:
             </errors>;
     }
 
-Each error node in the XML object contains a unique numeric code and an
-error message. Error messages can be easily looked up by their error
-code using E4X, as seen in the following
-`getMessageText()` method:
+Each error node in the XML object contains a unique numeric code and an error
+message. Error messages can be easily looked up by their error code using E4X,
+as seen in the following `getMessageText()` method:
 
     public function getMessageText(id:int):String
     {
@@ -314,34 +284,28 @@ code using E4X, as seen in the following
         return message[0].text();
     }
 
-The `getMessageText()` method takes a
-single integer argument, `id`, and returns
-a string. The `id` argument is the error
-code for the error to look up. For example, passing an
-`id` of 9001 retrieves the error saying
-that employees must be assigned to only one cost center. If more than
-one error has the same error code, ActionScript returns the error
-message only for the first result found (
-`message[0]` in the returned XMLList
-object).
+The `getMessageText()` method takes a single integer argument, `id`, and returns
+a string. The `id` argument is the error code for the error to look up. For
+example, passing an `id` of 9001 retrieves the error saying that employees must
+be assigned to only one cost center. If more than one error has the same error
+code, ActionScript returns the error message only for the first result found (
+`message[0]` in the returned XMLList object).
 
-The next method in this class, `getTitle()`
-, doesn’t take any parameters and returns a string value that contains
-the error ID for this specific error. This value is used to help you
-easily identify the exact error that occurred during validation of the
-XML packet. The following excerpt shows the
-`getTitle()` method:
+The next method in this class, `getTitle()`, doesn’t take any parameters and
+returns a string value that contains the error ID for this specific error. This
+value is used to help you easily identify the exact error that occurred during
+validation of the XML packet. The following excerpt shows the `getTitle()`
+method:
 
     public function getTitle():String
     {
         return "Error #" + id;
     }
 
-The final method in the ApplicationError class is
-`toString().` This method overrides the
-function defined in the Error class so that you can customize the
-presentation of the error message. The method returns a string that
-identifies the specific error number and message that occurred.
+The final method in the ApplicationError class is `toString().` This method
+overrides the function defined in the Error class so that you can customize the
+presentation of the error message. The method returns a string that identifies
+the specific error number and message that occurred.
 
     public override function toString():String
     {
@@ -358,16 +322,13 @@ identifies the specific error number and message that occurred.
 
 <div>
 
-The FatalError class extends the custom ApplicationError class and
-defines three methods: the FatalError constructor,
-`getTitle()`, and
-`toString()`. The first method, the
-FatalError constructor, takes a single integer argument,
-`errorID`, and sets the error’s severity
-using the static constant values defined in the ApplicationError class,
-and gets the specific error’s error message by calling the
-`getMessageText()` method in the
-ApplicationError class. The FatalError constructor is as follows:
+The FatalError class extends the custom ApplicationError class and defines three
+methods: the FatalError constructor, `getTitle()`, and `toString()`. The first
+method, the FatalError constructor, takes a single integer argument, `errorID`,
+and sets the error’s severity using the static constant values defined in the
+ApplicationError class, and gets the specific error’s error message by calling
+the `getMessageText()` method in the ApplicationError class. The FatalError
+constructor is as follows:
 
     public function FatalError(errorID:int)
     {
@@ -376,23 +337,18 @@ ApplicationError class. The FatalError constructor is as follows:
         message = getMessageText(errorID);
     }
 
-The next method in the FatalError class,
-`getTitle()`, overrides the
-`getTitle()` method defined earlier in the
-ApplicationError class, and appends the text “-- FATAL” in the title to
-inform the user that a fatal error has occurred. The
-`getTitle()` method is as follows:
+The next method in the FatalError class, `getTitle()`, overrides the
+`getTitle()` method defined earlier in the ApplicationError class, and appends
+the text “-- FATAL” in the title to inform the user that a fatal error has
+occurred. The `getTitle()` method is as follows:
 
     public override function getTitle():String
     {
         return "Error #" + id + " -- FATAL";
     }
 
-The final method in this class,
-`toString()`, overrides the
-`toString()` method defined in the
-ApplicationError class. The `toString()`
-method is
+The final method in this class, `toString()`, overrides the `toString()` method
+defined in the ApplicationError class. The `toString()` method is
 
     public override function toString():String
     {
@@ -410,9 +366,9 @@ method is
 <div>
 
 The WarningError class extends the ApplicationError class and is nearly
-identical to the FatalError class, except for a couple minor string
-changes and sets the error severity to ApplicationError.WARNING instead
-of ApplicationError.FATAL, as seen in the following code:
+identical to the FatalError class, except for a couple minor string changes and
+sets the error severity to ApplicationError.WARNING instead of
+ApplicationError.FATAL, as seen in the following code:
 
     public function WarningError(errorID:int)
     {

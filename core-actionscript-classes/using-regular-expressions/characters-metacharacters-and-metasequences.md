@@ -2,41 +2,39 @@
 
 <div>
 
-The simplest regular expression is one that matches a sequence of
-characters, as in the following example:
+The simplest regular expression is one that matches a sequence of characters, as
+in the following example:
 
     var pattern:RegExp = /hello/;
 
-However, the following characters, known as metacharacters _,_ have
-special meanings in regular expressions:
+However, the following characters, known as metacharacters _,_ have special
+meanings in regular expressions:
 
     ^ $ \ . * + ? ( ) [ ] { } |
 
-For example, the following regular expression matches the letter A
-followed by zero or more instances of the letter B (the asterisk
-metacharacter indicates this repetition), followed by the letter C:
+For example, the following regular expression matches the letter A followed by
+zero or more instances of the letter B (the asterisk metacharacter indicates
+this repetition), followed by the letter C:
 
     /AB*C/
 
-To include a metacharacter without its special meaning in a regular
-expression pattern, you must use the backslash (
-`\` ) escape character. For example, the
-following regular expression matches the letter A followed by the letter
-B, followed by an asterisk, followed by the letter C:
+To include a metacharacter without its special meaning in a regular expression
+pattern, you must use the backslash ( `\` ) escape character. For example, the
+following regular expression matches the letter A followed by the letter B,
+followed by an asterisk, followed by the letter C:
 
     var pattern:RegExp = /AB\*C/;
 
 A _metasequence,_ like a metacharacter, has special meaning in a regular
-expression. A metasequence is made up of more than one character. The
-following sections provide details on using metacharacters and
-metasequences.
+expression. A metasequence is made up of more than one character. The following
+sections provide details on using metacharacters and metasequences.
 
 <div>
 
 #### About metacharacters
 
-The following table summarizes the metacharacters that you can use in
-regular expressions:
+The following table summarizes the metacharacters that you can use in regular
+expressions:
 
 <div>
 
@@ -81,7 +79,7 @@ position before a newline (
 <samp>\n</samp> ) character as
 well. For more information, see <a
 href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7ea7.html">Flags and
-properties</a> .</p></td>
+properties</a>.</p></td>
 </tr>
 <tr class="odd">
 <td headers="d17e6310 " data-valign="top"
@@ -157,8 +155,7 @@ parenthetical group of the pattern:</p></li>
 </ul>
 </div>
 <p>For more information, see <a
-href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7e9a.html">Groups</a>
-.</p></td>
+href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7e9a.html">Groups</a>.</p></td>
 </tr>
 <tr class="odd">
 <td headers="d17e6310 " data-valign="top"
@@ -212,9 +209,8 @@ either <samp>abc</samp> or
 
 #### About metasequences
 
-Metasequences are sequences of characters that have special meaning in a
-regular expression pattern. The following table describes these
-metasequences:
+Metasequences are sequences of characters that have special meaning in a regular
+expression pattern. The following table describes these metasequences:
 
 <div>
 

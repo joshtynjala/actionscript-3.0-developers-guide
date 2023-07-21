@@ -2,12 +2,11 @@
 
 <div>
 
-An XMLList instance represents an arbitrary collection of XML objects.
-It can contain full XML documents, XML fragments, or the results of an
-XML query.
+An XMLList instance represents an arbitrary collection of XML objects. It can
+contain full XML documents, XML fragments, or the results of an XML query.
 
-The following methods allow you to work with the hierarchical structure
-of XMLList objects:
+The following methods allow you to work with the hierarchical structure of
+XMLList objects:
 
 - `child()`
 
@@ -31,8 +30,8 @@ The following methods allow you to you work with XMLList properties:
 
 - `propertyIsEnumerable()`
 
-The following methods are for working with and determining certain types
-of XML content:
+The following methods are for working with and determining certain types of XML
+content:
 
 - `comments()`
 
@@ -44,8 +43,8 @@ of XML content:
 
 - `text()`
 
-The following are for conversion to strings and for formatting the
-XMLList object:
+The following are for conversion to strings and for formatting the XMLList
+object:
 
 - `normalize()`
 
@@ -65,14 +64,12 @@ There are a few additional methods:
 
 For details on these methods, see the <a
 href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html"
-target="_self">ActionScript 3.0 Reference for the Adobe Flash
-Platform</a>.
+target="_self">ActionScript 3.0 Reference for the Adobe Flash Platform</a>.
 
-For an XMLList object that contains exactly one XML element, you can use
-all properties and methods of the XML class, because an XMLList with one
-XML element is treated the same as an XML object. For example, in the
-following code, because `doc.div` is an
-XMLList object containing one element, you can use the
+For an XMLList object that contains exactly one XML element, you can use all
+properties and methods of the XML class, because an XMLList with one XML element
+is treated the same as an XML object. For example, in the following code,
+because `doc.div` is an XMLList object containing one element, you can use the
 `appendChild()` method from the XML class:
 
     var doc:XML =

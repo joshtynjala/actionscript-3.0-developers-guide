@@ -2,12 +2,11 @@
 
 <div>
 
-ActionScript 3.0 includes a group of classes based on the ECMAScript for
-XML (E4X) specification (ECMA-357 edition 2). These classes include
-powerful and easy-to-use functionality for working with XML data. Using
-E4X, you will be able to develop code with XML data faster than was
-possible with previous programming techniques. As an added benefit, the
-code you produce will be easier to read.
+ActionScript 3.0 includes a group of classes based on the ECMAScript for XML
+(E4X) specification (ECMA-357 edition 2). These classes include powerful and
+easy-to-use functionality for working with XML data. Using E4X, you will be able
+to develop code with XML data faster than was possible with previous programming
+techniques. As an added benefit, the code you produce will be easier to read.
 
 <div xmlns:adobe="http://www.adobe.com/saxon">
 
@@ -37,7 +36,7 @@ data-cellspacing="0">
 </colgroup>
 <tbody>
 <tr class="odd">
-<td width="15%"><span> <img src="images/marc_bir.png" /> </span></td>
+<td width="15%"><span> <img src="../../img/marc_bir.png" /> </span></td>
 <td width="85%"><h3 id="e4x-is-good4u"><a href="http://goo.gl/OrIZm"
 target="_self">E4X is Good4U</a></h3>
 <span> Marc Bir </span><br />

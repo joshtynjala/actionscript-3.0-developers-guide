@@ -16,19 +16,18 @@ You can assign an XML literal to an XML object, as follows:
             </item>
         </order>
 
-As the following snippet shows, you can also use the
-`new` constructor to create an instance of an
-XML object from a string that contains XML data:
+As the following snippet shows, you can also use the `new` constructor to create
+an instance of an XML object from a string that contains XML data:
 
     var str:String = "<order><item id='1'><menuName>burger</menuName>"
                                 + "<price>3.95</price></item></order>";
     var myXML:XML = new XML(str);
 
-If the XML data in the string is not well formed (for example, if a
-closing tag is missing), you will see a run-time error.
+If the XML data in the string is not well formed (for example, if a closing tag
+is missing), you will see a run-time error.
 
-You can also pass data by reference (from other variables) into an XML
-object, as the following example shows:
+You can also pass data by reference (from other variables) into an XML object,
+as the following example shows:
 
     var tagname:String = "item";
     var attributename:String = "id";
@@ -38,8 +37,8 @@ object, as the following example shows:
     trace(x.toXMLString())
         // Output: <item id="5">Chicken</item>
 
-To load XML data from a URL, use the URLLoader class, as the following
-example shows:
+To load XML data from a URL, use the URLLoader class, as the following example
+shows:
 
     import flash.events.Event;
     import flash.net.URLLoader;
@@ -65,12 +64,11 @@ example shows:
         }
     }
 
-To read XML data from a socket connection, use the XMLSocket class. For
-more information, see the <a
+To read XML data from a socket connection, use the XMLSocket class. For more
+information, see the <a
 href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/XMLSocket.html"
 target="_self">XMLSocket class</a> in the <a
 href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html"
-target="_self">ActionScript 3.0 Reference for the Adobe Flash
-Platform</a>.
+target="_self">ActionScript 3.0 Reference for the Adobe Flash Platform</a>.
 
 </div>

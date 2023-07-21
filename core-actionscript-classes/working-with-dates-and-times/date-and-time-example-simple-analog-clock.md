@@ -2,19 +2,18 @@
 
 <div>
 
-A simple analog clock example illustrates these two date and time
-concepts:
+A simple analog clock example illustrates these two date and time concepts:
 
-- Getting the current date and time and extracting values for the
-  hours, minutes, and seconds
+- Getting the current date and time and extracting values for the hours,
+  minutes, and seconds
 
 - Using a Timer to set the pace of an application
 
   To get the application files for this sample, see
   <a href="http://www.adobe.com/go/learn_programmingAS3samples_flash"
-  target="_self">www.adobe.com/go/learn_programmingAS3samples_flash</a>. The SimpleClock application files can be found in the folder
-  Samples/SimpleClock. The application consists of the following
-  files:
+  target="_self">www.adobe.com/go/learn_programmingAS3samples_flash</a>. The
+  SimpleClock application files can be found in the folder Samples/SimpleClock.
+  The application consists of the following files:
 
   <div>
 
@@ -64,15 +63,14 @@ concepts:
 
 <div>
 
-The clock example is simple, but it’s a good idea to organize even
-simple applications well so you could easily expand them in the future.
-To that end, the SimpleClock application uses the SimpleClock class to
-handle the startup and time-keeping tasks, and then uses another class
-named AnalogClockFace to actually display the time.
+The clock example is simple, but it’s a good idea to organize even simple
+applications well so you could easily expand them in the future. To that end,
+the SimpleClock application uses the SimpleClock class to handle the startup and
+time-keeping tasks, and then uses another class named AnalogClockFace to
+actually display the time.
 
-Here is the code that defines and initializes the SimpleClock class
-(note that in the Flash version, SimpleClock extends the Sprite class
-instead):
+Here is the code that defines and initializes the SimpleClock class (note that
+in the Flash version, SimpleClock extends the Sprite class instead):
 
     public class SimpleClock extends UIComponent
     {
@@ -88,16 +86,13 @@ instead):
 
 The class has two important properties:
 
-- `The face` property, which is an
-  instance of the AnalogClockFace class
+- `The face` property, which is an instance of the AnalogClockFace class
 
-- `The ticker` property, which is an
-  instance of the Timer class
+- `The ticker` property, which is an instance of the Timer class
 
-  The SimpleClock class uses a default constructor. The
-  `initClock()` method takes care of
-  the real setup work, creating the clock face and starting the Timer
-  instance ticking.
+  The SimpleClock class uses a default constructor. The `initClock()` method
+  takes care of the real setup work, creating the clock face and starting the
+  Timer instance ticking.
 
 </div>
 
@@ -109,8 +104,8 @@ The class has two important properties:
 
 <div>
 
-The next lines in the SimpleClock code create the clock face that is
-used to display the time:
+The next lines in the SimpleClock code create the clock face that is used to
+display the time:
 
         /**
          * Sets up a SimpleClock instance.
@@ -125,15 +120,13 @@ used to display the time:
             // draws the initial clock display
             face.draw();
 
-The size of the face can be passed in to the
-`initClock()` method. If no
-`faceSize` value is passed, a default size
-of 200 pixels is used.
+The size of the face can be passed in to the `initClock()` method. If no
+`faceSize` value is passed, a default size of 200 pixels is used.
 
-Next, the application initializes the face and then adds it to the
-display list using theaddChild()`method
-inherited from the DisplayObjectContainer class. Then it calls the`AnalogClockFace.draw()` method to display
-the clock face once, showing the current time.
+Next, the application initializes the face and then adds it to the display list
+using
+theaddChild()`method inherited from the DisplayObjectContainer class. Then it calls the`AnalogClockFace.draw()`
+method to display the clock face once, showing the current time.
 
 </div>
 
@@ -145,8 +138,7 @@ the clock face once, showing the current time.
 
 <div>
 
-After creating the clock face, the
-`initClock()` method sets up a timer:
+After creating the clock face, the `initClock()` method sets up a timer:
 
             // creates a Timer that fires an event once per second
             ticker = new Timer(1000);
@@ -157,14 +149,11 @@ After creating the clock face, the
             // starts the clock ticking
             ticker.start();
 
-First this method instantiates a Timer instance that will dispatch an
-event once per second (every 1000 milliseconds). Since no second
-`repeatCount` parameter is passed to the
-`Timer()` constructor, the Timer will keep
-repeating indefinitely.
+First this method instantiates a Timer instance that will dispatch an event once
+per second (every 1000 milliseconds). Since no second `repeatCount` parameter is
+passed to the `Timer()` constructor, the Timer will keep repeating indefinitely.
 
-The `SimpleClock.onTick()` method will
-execute once per second when the `timer`
+The `SimpleClock.onTick()` method will execute once per second when the `timer`
 event is received:
 
         public function onTick(event:TimerEvent):void
@@ -173,8 +162,7 @@ event is received:
             face.draw();
         }
 
-The `AnalogClockFace.draw()` method simply
-draws the clock face and hands.
+The `AnalogClockFace.draw()` method simply draws the clock face and hands.
 
 </div>
 
@@ -186,15 +174,14 @@ draws the clock face and hands.
 
 <div>
 
-Most of the code in the AnalogClockFace class involves setting up the
-clock face’s display elements. When the AnalogClockFace is initialized,
-it draws a circular outline, places a numeric text label at each hour
-mark, and then creates three Shape objects, one each for the hour hand,
-the minute hand, and the second hand on the clock.
+Most of the code in the AnalogClockFace class involves setting up the clock
+face’s display elements. When the AnalogClockFace is initialized, it draws a
+circular outline, places a numeric text label at each hour mark, and then
+creates three Shape objects, one each for the hour hand, the minute hand, and
+the second hand on the clock.
 
 Once the SimpleClock application is running, it calls the
-`AnalogClockFace.draw()` method each
-second, as follows:
+`AnalogClockFace.draw()` method each second, as follows:
 
         /**
          * Called by the parent container when the display is being drawn.
@@ -206,10 +193,9 @@ second, as follows:
             showTime(currentTime);
         }
 
-This method saves the current time in a variable, so the time can’t
-change in the middle of drawing the clock hands. Then it calls the
-`showTime()` method to display the hands,
-as the following shows:
+This method saves the current time in a variable, so the time can’t change in
+the middle of drawing the clock hands. Then it calls the `showTime()` method to
+display the hands, as the following shows:
 
         /**
          * Displays the given Date/Time in that good old analog clock style.
@@ -231,16 +217,15 @@ as the following shows:
             this.hourHand.rotation = 180 + (hours * 30) + (minutes * 0.5);
         }
 
-First, this method extracts the values for the hours, minutes, and
-seconds of the current time. Then it uses these values to calculate the
-angle for each hand. Since the second hand makes a full rotation in 60
-seconds, it rotates 6 degrees each second (360/60). The minute hand
-rotates the same amount each minute.
+First, this method extracts the values for the hours, minutes, and seconds of
+the current time. Then it uses these values to calculate the angle for each
+hand. Since the second hand makes a full rotation in 60 seconds, it rotates 6
+degrees each second (360/60). The minute hand rotates the same amount each
+minute.
 
-The hour hand updates every minute, too, so it can show some progress as
-the minutes tick by. It rotates 30 degrees each hour (360/12), but it
-also rotates half a degree each minute (30 degrees divided by 60
-minutes).
+The hour hand updates every minute, too, so it can show some progress as the
+minutes tick by. It rotates 30 degrees each hour (360/12), but it also rotates
+half a degree each minute (30 degrees divided by 60 minutes).
 
 </div>
 

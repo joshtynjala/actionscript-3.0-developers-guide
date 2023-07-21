@@ -2,49 +2,40 @@
 
 <div>
 
-One of the most noticeable improvements to error handling in
-ActionScript 3.0 is the support for error event handling for responding
-to asynchronous errors while an application is running. (For a
-definition of asynchronous errors, see [Types of errors](./types-of-errors.md).)
+One of the most noticeable improvements to error handling in ActionScript 3.0 is
+the support for error event handling for responding to asynchronous errors while
+an application is running. (For a definition of asynchronous errors, see
+[Types of errors](./types-of-errors.md).)
 
-You can create event listeners and event handlers to respond to the
-error events. Many classes dispatch error events the same way they
-dispatch other events. For example, an instance of the XMLSocket class
-normally dispatches three types of events:
-`Event.CLOSE`,
-`Event.CONNECT`, and
-`DataEvent.DATA`. However, when a problem
-occurs, the XMLSocket class can dispatch the
-`IOErrorEvent.IOError` or the
-`SecurityErrorEvent.SECURITY_ERROR`. For
-more information about event listeners and event handlers, see [Handling events](../handling-events/index.md).
+You can create event listeners and event handlers to respond to the error
+events. Many classes dispatch error events the same way they dispatch other
+events. For example, an instance of the XMLSocket class normally dispatches
+three types of events: `Event.CLOSE`, `Event.CONNECT`, and `DataEvent.DATA`.
+However, when a problem occurs, the XMLSocket class can dispatch the
+`IOErrorEvent.IOError` or the `SecurityErrorEvent.SECURITY_ERROR`. For more
+information about event listeners and event handlers, see
+[Handling events](../handling-events/index.md).
 
 Error events fit into one of two categories:
 
 - Error events that extend the ErrorEvent class
 
-  The flash.events.ErrorEvent class contains the properties and
-  methods for managing errors related to networking and communication
-  operations in a running application. The AsyncErrorEvent,
-  IOErrorEvent, and SecurityErrorEvent classes extend the ErrorEvent
-  class. If you’re using the debugger version of a Flash runtime, a
-  dialog box informs you at run-time of any error events without
-  listener functions that the player encounters.
+  The flash.events.ErrorEvent class contains the properties and methods for
+  managing errors related to networking and communication operations in a
+  running application. The AsyncErrorEvent, IOErrorEvent, and SecurityErrorEvent
+  classes extend the ErrorEvent class. If you’re using the debugger version of a
+  Flash runtime, a dialog box informs you at run-time of any error events
+  without listener functions that the player encounters.
 
 - Status-based error events
 
-  The status-based error events are related to the
-  `netStatus` and
-  `status` properties of the networking
-  and communication classes. If a Flash runtime encounters a problem
-  when reading or writing data, the value of the
-  `netStatus.info.level` or
-  `status.level` properties (depending
-  on the class object you’re using) is set to the value
-  `"error"`. You respond to this error
-  by checking if the `level` property
-  contains the value `"error"` in your
-  event handler function.
+  The status-based error events are related to the `netStatus` and `status`
+  properties of the networking and communication classes. If a Flash runtime
+  encounters a problem when reading or writing data, the value of the
+  `netStatus.info.level` or `status.level` properties (depending on the class
+  object you’re using) is set to the value `"error"`. You respond to this error
+  by checking if the `level` property contains the value `"error"` in your event
+  handler function.
 
 </div>
 
@@ -54,15 +45,14 @@ Error events fit into one of two categories:
 
 <div>
 
-The ErrorEvent class and its subclasses contain error types for handling
-errors dispatched by Flash runtimes as they try to read or write data.
+The ErrorEvent class and its subclasses contain error types for handling errors
+dispatched by Flash runtimes as they try to read or write data.
 
-The following example uses both a
-`try..catch` statement and error event
-handlers to display any errors detected while trying to read a local
-file. You can add more sophisticated handling code to provide a user
-with options or otherwise handle the error automatically in the places
-indicated by the comment “your error-handling code here”:
+The following example uses both a `try..catch` statement and error event
+handlers to display any errors detected while trying to read a local file. You
+can add more sophisticated handling code to provide a user with options or
+otherwise handle the error automatically in the places indicated by the comment
+“your error-handling code here”:
 
     package
     {
@@ -130,24 +120,17 @@ indicated by the comment “your error-handling code here”:
 
 <div>
 
-Flash runtimes dynamically change the value of the
-`netStatus.info.level` or
-`status.level` properties for the classes
-that support the `level` property while an
-application is running. The classes that have the
-`netStatus.info.level` property are
-NetConnection, NetStream, and SharedObject. The classes that have the
-`status.level` property are
-HTTPStatusEvent, Camera, Microphone, and LocalConnection. You can write
-a handler function to respond to the change in
-`level` value and track communication
-errors.
+Flash runtimes dynamically change the value of the `netStatus.info.level` or
+`status.level` properties for the classes that support the `level` property
+while an application is running. The classes that have the
+`netStatus.info.level` property are NetConnection, NetStream, and SharedObject.
+The classes that have the `status.level` property are HTTPStatusEvent, Camera,
+Microphone, and LocalConnection. You can write a handler function to respond to
+the change in `level` value and track communication errors.
 
-The following example uses a
-`netStatusHandler()` function to test the
-value of the `level` property. If the
-`level` property indicates that an error
-has been encountered, the code traces the message “Video stream failed”.
+The following example uses a `netStatusHandler()` function to test the value of
+the `level` property. If the `level` property indicates that an error has been
+encountered, the code traces the message “Video stream failed”.
 
     package
     {

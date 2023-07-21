@@ -2,13 +2,9 @@
 
 <div>
 
-You can use the following operators to compare strings:
-`<`, `<=`,
-`!=`, `==`,
-`=>`, and `>`.
-These operators can be used with conditional statements, such as
-`if` and `while`,
-as the following example shows:
+You can use the following operators to compare strings: `<`, `<=`, `!=`, `==`,
+`=>`, and `>`. These operators can be used with conditional statements, such as
+`if` and `while`, as the following example shows:
 
     var str1:String = "Apple";
     var str2:String = "apple";
@@ -17,19 +13,17 @@ as the following example shows:
         trace("A < a, B < b, C < c, ...");
     }
 
-When using these operators with strings, ActionScript considers the
-character code value of each character in the string, comparing
-characters from left to right, as in the following:
+When using these operators with strings, ActionScript considers the character
+code value of each character in the string, comparing characters from left to
+right, as in the following:
 
     trace("A" < "B"); // true
     trace("A" < "a"); // true
     trace("Ab" < "az"); // true
     trace("abc" < "abza"); // true
 
-Use the `==` and
-`!=` operators to compare strings with each
-other and to compare strings with other types of objects, as the
-following example shows:
+Use the `==` and `!=` operators to compare strings with each other and to
+compare strings with other types of objects, as the following example shows:
 
     var str1:String = "1";
     var str1b:String = "1";

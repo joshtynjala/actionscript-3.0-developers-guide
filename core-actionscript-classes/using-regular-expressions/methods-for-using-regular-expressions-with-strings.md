@@ -2,17 +2,11 @@
 
 <div>
 
-The RegExp class includes two methods:
-`exec()` and
-`test()`.
+The RegExp class includes two methods: `exec()` and `test()`.
 
-In addition to the `exec()` and
-`test()` methods of the RegExp class, the
-String class includes the following methods that let you match regular
-expressions in strings: `match()`,
-`replace()`,
-`search()`, and
-`splice()`.
+In addition to the `exec()` and `test()` methods of the RegExp class, the String
+class includes the following methods that let you match regular expressions in
+strings: `match()`, `replace()`, `search()`, and `splice()`.
 
 </div>
 
@@ -22,9 +16,9 @@ expressions in strings: `match()`,
 
 <div>
 
-The `test()` method of the RegExp class
-simply checks the supplied string to see if it contains a match for the
-regular expression, as the following example shows:
+The `test()` method of the RegExp class simply checks the supplied string to see
+if it contains a match for the regular expression, as the following example
+shows:
 
     var pattern:RegExp = /Class-\w/;
     var str = "Class-A";
@@ -40,18 +34,15 @@ regular expression, as the following example shows:
 
 <div>
 
-The `exec()` method of the RegExp class
-checks the supplied string for a match of the regular expression and
-returns an array with the following:
+The `exec()` method of the RegExp class checks the supplied string for a match
+of the regular expression and returns an array with the following:
 
 - The matching substring
 
-- Substring matches for any parenthetical groups in the regular
-  expression
+- Substring matches for any parenthetical groups in the regular expression
 
-The array also includes an `index`
-property, indicating the index position of the start of the substring
-match.
+The array also includes an `index` property, indicating the index position of
+the start of the substring match.
 
 For example, consider the following code:
 
@@ -61,10 +52,8 @@ For example, consider the following code:
     trace(result.index, " - ", result);
     // 7-415-555-1212
 
-Use the `exec()` method multiple times to
-match multiple substrings when the `g` (
-`global` ) flag is set for the regular
-expression:
+Use the `exec()` method multiple times to match multiple substrings when the `g`
+(`global`) flag is set for the regular expression:
 
     var pattern:RegExp = /\w*sh\w*/gi;
     var str:String = "She sells seashells by the seashore";
@@ -91,11 +80,9 @@ expression:
 <div>
 
 The following methods of the String class take regular expressions as
-parameters: `match()`,
-`replace()`,
-`search()`, and
-`split()`. For more information on these
-methods, see [Finding patterns in strings and replacing substrings](../working-with-strings/finding-substrings-and-patterns-in-strings.md).
+parameters: `match()`, `replace()`, `search()`, and `split()`. For more
+information on these methods, see
+[Finding patterns in strings and replacing substrings](../working-with-strings/finding-substrings-and-patterns-in-strings.md).
 
 </div>
 

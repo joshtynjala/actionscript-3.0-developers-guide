@@ -2,19 +2,16 @@
 
 <div>
 
-The String class is used to represent string (textual) data in
-ActionScript 3.0. ActionScript strings support both ASCII and Unicode
-characters. The simplest way to create a string is to use a string
-literal. To declare a string literal, use straight double quotation mark
-( `"` ) or single quotation mark (
-`'` ) characters. For example, the following
-two strings are equivalent:
+The String class is used to represent string (textual) data in ActionScript 3.0.
+ActionScript strings support both ASCII and Unicode characters. The simplest way
+to create a string is to use a string literal. To declare a string literal, use
+straight double quotation mark (`"`) or single quotation mark (`'`) characters.
+For example, the following two strings are equivalent:
 
     var str1:String = "hello";
     var str2:String = 'hello';
 
-You can also declare a string by using the
-`new` operator, as follows:
+You can also declare a string by using the `new` operator, as follows:
 
     var str1:String = new String("hello");  
     var str2:String = new String(str1);
@@ -25,37 +22,30 @@ The following two strings are equivalent:
     var str1:String = "hello";
     var str2:String = new String("hello");
 
-To use single quotation marks ( `'` ) within
-a string literal defined with single quotation mark (
-`'` ) delimiters, use the backslash escape
-character ( `\` ). Similarly, to use double
-quotation marks ( `"` ) within a string
-literal defined with double quotation marks (
-`"` ) delimiters, use the backslash escape
-character ( `\` ). The following two strings
-are equivalent:
+To use single quotation marks (`'`) within a string literal defined with single
+quotation mark (`'`) delimiters, use the backslash escape character (`\`).
+Similarly, to use double quotation marks (`"`) within a string literal defined
+with double quotation marks (`"`) delimiters, use the backslash escape character
+(`\`). The following two strings are equivalent:
 
     var str1:String = "That's \"A-OK\"";
     var str2:String = 'That\'s "A-OK"';
 
-You may choose to use single quotation marks or double quotation marks
-based on any single or double quotation marks that exist in a string
-literal, as in the following:
+You may choose to use single quotation marks or double quotation marks based on
+any single or double quotation marks that exist in a string literal, as in the
+following:
 
     var str1:String = "ActionScript <span class='heavy'>3.0</span>";
     var str2:String = '<item id="155">banana</item>';
 
-Keep in mind that ActionScript distinguishes between a straight single
-quotation mark ( `'` ) and a left or right
-single quotation mark ( `'` or
-`'` ). The same is true for double quotation
-marks. Use straight quotation marks to delineate string literals. When
-pasting text from another source into ActionScript, be sure to use the
-correct characters.
+Keep in mind that ActionScript distinguishes between a straight single quotation
+mark (`'`) and a left or right single quotation mark (`'` or `'`). The same is
+true for double quotation marks. Use straight quotation marks to delineate
+string literals. When pasting text from another source into ActionScript, be
+sure to use the correct characters.
 
-As the following table shows, you can use the backslash escape character
-( `\` ) to define other characters in string
-literals:
+As the following table shows, you can use the backslash escape character (`\`)
+to define other characters in string literals:
 
 <div>
 

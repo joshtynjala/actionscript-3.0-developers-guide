@@ -43,17 +43,17 @@ previous item repeated zero times or one time.</p></td>
 <tr class="even">
 <td headers="d17e7054 " data-valign="top"
 width="NaN%"><p><samp>                   {                  </samp>
-<samp>                                       n                                     </samp>
-<samp>                   }                  </samp></p>
+<samp>n</samp>
+<samp>}</samp></p>
 <p><samp>                   {                  </samp>
-<samp>                                       n                                     </samp>
-<samp>                   ,}                  </samp></p>
+<samp>n</samp>
+<samp>,}</samp></p>
 <p>and</p>
 <p><samp>                   {                  </samp>
-<samp>                                       n                                     </samp>
-<samp>                   ,                  </samp>
-<samp>                                       n                                     </samp>
-<samp>                   }                  </samp></p></td>
+<samp>n</samp>
+<samp>,</samp>
+<samp>n</samp>
+<samp>}</samp></p></td>
 <td headers="d17e7057 " data-valign="top" width="NaN%"><p>Specifies a
 numeric quantifier or quantifier range for the previous item:</p>
 <p><samp>                   /A{27}/                  </samp> matches the
@@ -68,37 +68,30 @@ the character A repeated 3 to 5 times.</p></td>
 
 </div>
 
-You can apply a quantifier to a single character, to a character class,
-or to a group:
+You can apply a quantifier to a single character, to a character class, or to a
+group:
 
-- `/a+/` matches the character
-  `a` repeated one or more times.
+- `/a+/` matches the character `a` repeated one or more times.
 
 - `/\d+/` matches one or more digits.
 
-- `/[abc]+/` matches a repetition of
-  one or more character, each of which is either
-  `a`,
-  `b`, or
-  `c`.
+- `/[abc]+/` matches a repetition of one or more character, each of which is
+  either `a`, `b`, or `c`.
 
-- `/(very, )*/` matches the word
-  `very` followed by a comma and a
-  space repeated zero or more times.
+- `/(very, )*/` matches the word `very` followed by a comma and a space repeated
+  zero or more times.
 
-You can use quantifiers within parenthetical groupings that have
-quantifiers applied to them. For example, the following quantifier
-matches strings such as `word` and
-`word-word-word` :
+You can use quantifiers within parenthetical groupings that have quantifiers
+applied to them. For example, the following quantifier matches strings such as
+`word` and `word-word-word`:
 
     /\w+(-\w+)*/
 
-By default, regular expressions perform what is known as _greedy
-matching._ Any subpattern in the regular expression (such as
-`.*` ) tries to match as many characters in
-the string as possible before moving forward to the next part of the
-regular expression. For example, consider the following regular
-expression and string:
+By default, regular expressions perform what is known as _greedy matching._ Any
+subpattern in the regular expression (such as `.*`) tries to match as many
+characters in the string as possible before moving forward to the next part of
+the regular expression. For example, consider the following regular expression
+and string:
 
     var pattern:RegExp = /<p>.*<\/p>/;
     str:String = "<p>Paragraph 1</p> <p>Paragraph 2</p>";
@@ -107,36 +100,26 @@ The regular expression matches the entire string:
 
     <p>Paragraph 1</p> <p>Paragraph 2</p>
 
-Suppose, however, that you want to match only one
-`<p>...</p>` grouping. You can do this with
-the following:
+Suppose, however, that you want to match only one `<p>...</p>` grouping. You can
+do this with the following:
 
     <p>Paragraph 1</p>
 
-Add a question mark ( `?` ) after any
-quantifier to change it to what is known as a _lazy quantifier_. For
-example, the following regular expression, which uses the lazy
-`*?` quantifier, matches
-`<p>` followed by the minimum number of
-characters possible (lazy), followed by
-`</p>` :
+Add a question mark (`?`) after any quantifier to change it to what is known as
+a _lazy quantifier_. For example, the following regular expression, which uses
+the lazy `*?` quantifier, matches `<p>` followed by the minimum number of
+characters possible (lazy), followed by `</p>`:
 
     /<p>.*?<\/p>/
 
 Keep in mind the following points about quantifiers:
 
-- The quantifiers `{0}` and
-  `{0,0}` do not exclude an item from a
-  match.
+- The quantifiers `{0}` and `{0,0}` do not exclude an item from a match.
 
-- Do not combine multiple quantifiers, as in
-  `/abc+*/`.
+- Do not combine multiple quantifiers, as in `/abc+*/`.
 
-- The dot (.) does not span lines unless the
-  `s` (
-  `dotall` ) flag is set, even if it is
-  followed by a `*` quantifier. For
-  example, consider the following code:
+- The dot (.) does not span lines unless the `s` (`dotall`) flag is set, even if
+  it is followed by a `*` quantifier. For example, consider the following code:
 
       var str:String = "<p>Test\n";
       str += "Multiline</p>";

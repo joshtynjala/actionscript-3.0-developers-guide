@@ -2,16 +2,16 @@
 
 <div>
 
-The RSSViewer sample application shows a number of features of working
-with XML in ActionScript, including the following:
+The RSSViewer sample application shows a number of features of working with XML
+in ActionScript, including the following:
 
 - Using XML methods to traverse XML data in the form of an RSS feed.
 
-- Using XML methods to assemble XML data in the form of HTML to use in
-  a text field.
+- Using XML methods to assemble XML data in the form of HTML to use in a text
+  field.
 
-The RSS format is widely used to syndicate news via XML. A simple RSS
-data file may look like the following:
+The RSS format is widely used to syndicate news via XML. A simple RSS data file
+may look like the following:
 
     <?xml version="1.0" encoding="UTF-8" ?>
     <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
@@ -49,16 +49,16 @@ data file may look like the following:
     </channel>
     </rss>
 
-The SimpleRSS application reads RSS data from the Internet, parses the
-data for headlines (titles), links, and descriptions, and returns that
-data. The SimpleRSSUI class provides the UI and calls the SimpleRSS
-class, which does all of the XML processing.
+The SimpleRSS application reads RSS data from the Internet, parses the data for
+headlines (titles), links, and descriptions, and returns that data. The
+SimpleRSSUI class provides the UI and calls the SimpleRSS class, which does all
+of the XML processing.
 
 To get the application files for this sample, see
 <a href="http://www.adobe.com/go/learn_programmingAS3samples_flash"
-target="_self">www.adobe.com/go/learn_programmingAS3samples_flash</a>.
-The RSSViewer application files can be found in the folder
-Samples/RSSViewer. The application consists of the following files:
+target="_self">www.adobe.com/go/learn_programmingAS3samples_flash</a>. The
+RSSViewer application files can be found in the folder Samples/RSSViewer. The
+application consists of the following files:
 
 <div>
 
@@ -111,23 +111,20 @@ schema than that of the Flex RSS feed.</p></td>
 
 <div>
 
-The RSSParser class includes an
-`xmlLoaded()` method that converts the
-input RSS data, stored in the `rssXML`
-variable, into an string containing HTML-formatted output,
-`rssOutput`.
+The RSSParser class includes an `xmlLoaded()` method that converts the input RSS
+data, stored in the `rssXML` variable, into an string containing HTML-formatted
+output, `rssOutput`.
 
-Near the beginning of the method, code sets the default XML namespace if
-the source RSS data includes a default namespace:
+Near the beginning of the method, code sets the default XML namespace if the
+source RSS data includes a default namespace:
 
     if (rssXML.namespace("") != undefined)
     {
         default xml namespace = rssXML.namespace("");
     }
 
-The next lines then loop through the contents of the source XML data,
-examining each descendant property named
-`item` :
+The next lines then loop through the contents of the source XML data, examining
+each descendant property named `item`:
 
     for each (var item:XML in rssXML..item)
     {
@@ -139,12 +136,10 @@ examining each descendant property named
                                 itemLink);
     }
 
-The first three lines simply set string variables to represent the
-title, description and link properties of the
-`item` property of the XML data. The next
-line then calls the `buildItemHTML()`
-method to get HTML data in the form of an XMLList object, using the
-three new string variables as parameters.
+The first three lines simply set string variables to represent the title,
+description and link properties of the `item` property of the XML data. The next
+line then calls the `buildItemHTML()` method to get HTML data in the form of an
+XMLList object, using the three new string variables as parameters.
 
 </div>
 
@@ -171,13 +166,11 @@ The first lines of the method clear the default xml namespace:
 
     default xml namespace = new Namespace();
 
-The `default xml namespace` directive has
-function block-level scope. This means that the scope of this
-declaration is the `buildItemHTML()`
-method.
+The `default xml namespace` directive has function block-level scope. This means
+that the scope of this declaration is the `buildItemHTML()` method.
 
-The lines that follow assemble the XMLList, based on the string
-arguments passed to the function:
+The lines that follow assemble the XMLList, based on the string arguments passed
+to the function:
 
     var body:XMLList = new XMLList();
     body += new XML("<b>" + itemTitle + "</b>");
@@ -194,12 +187,11 @@ arguments passed to the function:
     p.appendChild(link);
     body += p;
 
-This XMLList object represents string data suitable for an ActionScript
-HTML text field.
+This XMLList object represents string data suitable for an ActionScript HTML
+text field.
 
-The `xmlLoaded()` method uses the return
-value of the `buildItemHTML()` method and
-converts it to a string:
+The `xmlLoaded()` method uses the return value of the `buildItemHTML()` method
+and converts it to a string:
 
     XML.prettyPrinting = false;
     rssOutput = outXML.toXMLString();
@@ -214,15 +206,13 @@ converts it to a string:
 
 <div>
 
-The `xmlLoaded()` method sets a
-`rssTitle` string variable, based on
-information in the source RSS XML data:
+The `xmlLoaded()` method sets a `rssTitle` string variable, based on information
+in the source RSS XML data:
 
     rssTitle = rssXML.channel.title.toString();
 
-Finally, the `xmlLoaded()` method generates
-an event, which notifies the application that the data is parsed and
-available:
+Finally, the `xmlLoaded()` method generates an event, which notifies the
+application that the data is parsed and available:
 
                 dataWritten = new Event("dataWritten", true);
 

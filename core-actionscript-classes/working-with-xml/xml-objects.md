@@ -2,17 +2,16 @@
 
 <div>
 
-An XML object may represent an XML element, attribute, comment,
-processing instruction, or text element.
+An XML object may represent an XML element, attribute, comment, processing
+instruction, or text element.
 
-An XML object is classified as having either _simple content_ or
-_complex content_. An XML object that has child nodes is classified as
-having complex content. An XML object is said to have simple content if
-it is any one of the following: an attribute, a comment, a processing
-instruction, or a text node.
+An XML object is classified as having either _simple content_ or _complex
+content_. An XML object that has child nodes is classified as having complex
+content. An XML object is said to have simple content if it is any one of the
+following: an attribute, a comment, a processing instruction, or a text node.
 
-For example, the following XML object contains complex content,
-including a comment and a processing instruction:
+For example, the following XML object contains complex content, including a
+comment and a processing instruction:
 
     XML.ignoreComments = false;
     XML.ignoreProcessingInstructions = false;
@@ -30,10 +29,9 @@ including a comment and a processing instruction:
             </item>
         </order>
 
-As the following example shows, you can now use the
-`comments()` and
-`processingInstructions()` methods to create
-new XML objects, a comment and a processing instruction:
+As the following example shows, you can now use the `comments()` and
+`processingInstructions()` methods to create new XML objects, a comment and a
+processing instruction:
 
     var x2:XML = x1.comments()[0];
     var x3:XML = x1.processingInstructions()[0];
@@ -48,28 +46,21 @@ new XML objects, a comment and a processing instruction:
 
 The XML class has five static properties:
 
-- The `ignoreComments` and
-  `ignoreProcessingInstructions`
-  properties determine whether comments or processing instructions are
-  ignored when the XML object is parsed.
+- The `ignoreComments` and `ignoreProcessingInstructions` properties determine
+  whether comments or processing instructions are ignored when the XML object is
+  parsed.
 
-- The `ignoreWhitespace` property
-  determines whether white space characters are ignored in element
-  tags and embedded expressions that are separated only by white space
-  characters.
+- The `ignoreWhitespace` property determines whether white space characters are
+  ignored in element tags and embedded expressions that are separated only by
+  white space characters.
 
-- The `prettyIndent`
-  `a` nd
-  `prettyPrinting` properties are
-  used to format the text that is returned by the
-  `toString()` and
-  `toXMLString()` methods of the XML
-  class.
+- The `prettyIndent` `a` nd `prettyPrinting` properties are used to format the
+  text that is returned by the `toString()` and `toXMLString()` methods of the
+  XML class.
 
 For details on these properties, see the <a
 href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html"
-target="_self">ActionScript 3.0 Reference for the Adobe Flash
-Platform</a>.
+target="_self">ActionScript 3.0 Reference for the Adobe Flash Platform</a>.
 
 </div>
 
@@ -81,8 +72,8 @@ Platform</a>.
 
 <div>
 
-The following methods allow you to work with the hierarchical structure
-of XML objects:
+The following methods allow you to work with the hierarchical structure of XML
+objects:
 
 - `appendChild()`
 
@@ -120,8 +111,7 @@ The following methods allow you to you work with XML object properties:
 
 - `setChildren()`
 
-The following methods are for working with qualified names and
-namespaces:
+The following methods are for working with qualified names and namespaces:
 
 - `addNamespace()`
 
@@ -143,8 +133,8 @@ namespaces:
 
 - `setNamespace()`
 
-The following methods are for working with and determining certain types
-of XML content:
+The following methods are for working with and determining certain types of XML
+content:
 
 - `comments()`
 
@@ -158,8 +148,8 @@ of XML content:
 
 - `text()`
 
-The following methods are for conversion to strings and for formatting
-XML objects:
+The following methods are for conversion to strings and for formatting XML
+objects:
 
 - `defaultSettings()`
 
@@ -185,8 +175,7 @@ There are a few additional methods:
 
 For details on these methods, see the <a
 href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html"
-target="_self">ActionScript 3.0 Reference for the Adobe Flash
-Platform</a>.
+target="_self">ActionScript 3.0 Reference for the Adobe Flash Platform</a>.
 
 </div>
 
