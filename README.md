@@ -5,7 +5,7 @@ by Adobe Systems Incorporated. The full text of this documentation has been
 converted to Markdown, for ease of readability and to provide an easy base for
 transforming the content into other formats.
 
-Copyright ©️ Adobe Systems Incorporated. All rights reserved.
+Copyright © Adobe Systems Incorporated. All rights reserved.
 
 This guide is licensed for use under the terms of the Creative Commons
 Attribution Non-Commercial 3.0 License. This License allows users to copy,
