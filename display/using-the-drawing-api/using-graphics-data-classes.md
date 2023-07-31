@@ -46,79 +46,60 @@ represent in the flash.display.Graphics class:
 
 <div>
 
-<table data-border="1" data-cellpadding="4" data-cellspacing="0">
+<table>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
 </colgroup>
-<thead data-align="left">
+<thead>
 <tr class="header">
-<th data-valign="top" width="NaN%"><p>Graphics Method</p></th>
-<th data-valign="top" width="NaN%"><p>Corresponding Class</p></th>
+<th><p>Graphics Method</p></th>
+<th><p>Corresponding Class</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td headers="d17e19098 " data-valign="top"
-width="NaN%"><p>beginBitmapFill()</p></td>
-<td headers="d17e19101 " data-valign="top"
-width="NaN%"><p>GraphicsBitmapFill</p></td>
+<td headers="d17e19098 "><p>beginBitmapFill()</p></td>
+<td headers="d17e19101 "><p>GraphicsBitmapFill</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e19098 " data-valign="top"
-width="NaN%"><p>beginFill()</p></td>
-<td headers="d17e19101 " data-valign="top"
-width="NaN%"><p>GraphicsSolidFill</p></td>
+<td headers="d17e19098 "><p>beginFill()</p></td>
+<td headers="d17e19101 "><p>GraphicsSolidFill</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e19098 " data-valign="top"
-width="NaN%"><p>beginGradientFill()</p></td>
-<td headers="d17e19101 " data-valign="top"
-width="NaN%"><p>GraphicsGradientFill</p></td>
+<td headers="d17e19098 "><p>beginGradientFill()</p></td>
+<td headers="d17e19101 "><p>GraphicsGradientFill</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e19098 " data-valign="top"
-width="NaN%"><p>beginShaderFill()</p></td>
-<td headers="d17e19101 " data-valign="top"
-width="NaN%"><p>GraphicsShaderFill</p></td>
+<td headers="d17e19098 "><p>beginShaderFill()</p></td>
+<td headers="d17e19101 "><p>GraphicsShaderFill</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e19098 " data-valign="top"
-width="NaN%"><p>lineBitmapStyle()</p></td>
-<td headers="d17e19101 " data-valign="top"
-width="NaN%"><p>GraphicsStroke + GraphicsBitmapFill</p></td>
+<td headers="d17e19098 "><p>lineBitmapStyle()</p></td>
+<td headers="d17e19101 "><p>GraphicsStroke + GraphicsBitmapFill</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e19098 " data-valign="top"
-width="NaN%"><p>lineGradientStyle()</p></td>
-<td headers="d17e19101 " data-valign="top"
-width="NaN%"><p>GraphicsStroke + GraphicsGradientFill</p></td>
+<td headers="d17e19098 "><p>lineGradientStyle()</p></td>
+<td headers="d17e19101 "><p>GraphicsStroke + GraphicsGradientFill</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e19098 " data-valign="top"
-width="NaN%"><p>lineShaderStyle()</p></td>
-<td headers="d17e19101 " data-valign="top"
-width="NaN%"><p>GraphicsStroke + GraphicsShaderFill</p></td>
+<td headers="d17e19098 "><p>lineShaderStyle()</p></td>
+<td headers="d17e19101 "><p>GraphicsStroke + GraphicsShaderFill</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e19098 " data-valign="top"
-width="NaN%"><p>lineStyle()</p></td>
-<td headers="d17e19101 " data-valign="top"
-width="NaN%"><p>GraphicsStroke + GraphicsSolidFill</p></td>
+<td headers="d17e19098 "><p>lineStyle()</p></td>
+<td headers="d17e19101 "><p>GraphicsStroke + GraphicsSolidFill</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e19098 " data-valign="top" width="NaN%"><p>moveTo()</p>
+<td headers="d17e19098 "><p>moveTo()</p>
 <p>lineTo()</p>
 <p>curveTo()</p>
 <p>drawPath()</p></td>
-<td headers="d17e19101 " data-valign="top"
-width="NaN%"><p>GraphicsPath</p></td>
+<td headers="d17e19101 "><p>GraphicsPath</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e19098 " data-valign="top"
-width="NaN%"><p>drawTriangles()</p></td>
-<td headers="d17e19101 " data-valign="top"
-width="NaN%"><p>GraphicsTrianglePath</p></td>
+<td headers="d17e19098 "><p>drawTriangles()</p></td>
+<td headers="d17e19101 "><p>GraphicsTrianglePath</p></td>
 </tr>
 </tbody>
 </table>

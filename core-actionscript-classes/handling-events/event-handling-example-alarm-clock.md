@@ -26,52 +26,47 @@ includes these files:
 
 <div>
 
-<table data-border="1" data-cellpadding="4" data-cellspacing="0">
+<table>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
 </colgroup>
-<thead data-align="left">
+<thead>
 <tr class="header">
-<th data-valign="top" width="NaN%"><p>File</p></th>
-<th data-valign="top" width="NaN%"><p>Description</p></th>
+<th><p>File</p></th>
+<th><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td headers="d17e12087 " data-valign="top"
-width="NaN%"><p>AlarmClockApp.mxml</p>
+<td headers="d17e12087 "><p>AlarmClockApp.mxml</p>
 <p>or</p>
 <p>AlarmClockApp.fla</p></td>
-<td headers="d17e12090 " data-valign="top" width="NaN%"><p>The main
+<td headers="d17e12090 "><p>The main
 application file in Flash (FLA) or Flex (MXML).</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e12087 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/clock/AlarmClock.as</p></td>
-<td headers="d17e12090 " data-valign="top" width="NaN%"><p>A class which
+<td headers="d17e12087 "><p>com/example/programmingas3/clock/AlarmClock.as</p></td>
+<td headers="d17e12090 "><p>A class which
 extends the SimpleClock class, adding alarm clock
 functionality.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e12087 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/clock/AlarmEvent.as</p></td>
-<td headers="d17e12090 " data-valign="top" width="NaN%"><p>A custom
+<td headers="d17e12087 "><p>com/example/programmingas3/clock/AlarmEvent.as</p></td>
+<td headers="d17e12090 "><p>A custom
 event class (a subclass of flash.events.Event) which serves as the event
 object for the AlarmClock class’s
 <samp>alarm</samp> event.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e12087 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/clock/AnalogClockFace.as</p></td>
-<td headers="d17e12090 " data-valign="top" width="NaN%"><p>Draws a round
+<td headers="d17e12087 "><p>com/example/programmingas3/clock/AnalogClockFace.as</p></td>
+<td headers="d17e12090 "><p>Draws a round
 clock face and hour, minute, and seconds hands based on the time
 (described in the SimpleClock example).</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e12087 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/clock/SimpleClock.as</p></td>
-<td headers="d17e12090 " data-valign="top" width="NaN%"><p>A clock
+<td headers="d17e12087 "><p>com/example/programmingas3/clock/SimpleClock.as</p></td>
+<td headers="d17e12090 "><p>A clock
 interface component with simple timekeeping functionality (described in
 the SimpleClock example).</p></td>
 </tr>

@@ -51,35 +51,33 @@ files:
 
 <div>
 
-<table data-border="1" data-cellpadding="4" data-cellspacing="0">
+<table>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
 </colgroup>
-<thead data-align="left">
+<thead>
 <tr class="header">
-<th data-valign="top" width="NaN%"><p>File</p></th>
-<th data-valign="top" width="NaN%"><p>Description</p></th>
+<th><p>File</p></th>
+<th><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td headers="d17e17434 " data-valign="top"
-width="NaN%"><p>DisplayObjectTransformer.mxml</p>
+<td headers="d17e17434 "><p>DisplayObjectTransformer.mxml</p>
 <p>or</p>
 <p>DisplayObjectTransformer.fla</p></td>
-<td headers="d17e17437 " data-valign="top" width="NaN%"><p>The main
+<td headers="d17e17437 "><p>The main
 application file in Flash (FLA) or Flex (MXML)</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e17434 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/geometry/MatrixTransformer.as</p></td>
-<td headers="d17e17437 " data-valign="top" width="NaN%"><p>A class that
+<td headers="d17e17434 "><p>com/example/programmingas3/geometry/MatrixTransformer.as</p></td>
+<td headers="d17e17437 "><p>A class that
 contains methods for applying matrix transformations.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e17434 " data-valign="top" width="NaN%"><p>img/</p></td>
-<td headers="d17e17437 " data-valign="top" width="NaN%"><p>A directory
+<td headers="d17e17434 "><p>img/</p></td>
+<td headers="d17e17437 "><p>A directory
 containing sample image files used by the application.</p></td>
 </tr>
 </tbody>

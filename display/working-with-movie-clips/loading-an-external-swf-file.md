@@ -117,36 +117,36 @@ display, execute, and cross-script only ActionScript 1.0 and 2.0.
 
 <div>
 
-<table data-border="1" data-cellpadding="4" data-cellspacing="0">
+<table>
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
 <col style="width: 33%" />
 </colgroup>
-<thead data-align="left">
+<thead>
 <tr class="header">
-<th data-valign="top" width="NaN%"><p>Supported functionality</p></th>
-<th data-valign="top" width="NaN%"><p>Content created in ActionScript
+<th><p>Supported functionality</p></th>
+<th><p>Content created in ActionScript
 1.0 and 2.0</p></th>
-<th data-valign="top" width="NaN%"><p>Content created in ActionScript
+<th><p>Content created in ActionScript
 3.0</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td headers="d17e24154 " data-valign="top" width="NaN%"><p>Can load
+<td headers="d17e24154 "><p>Can load
 content and execute code in content created in</p></td>
-<td headers="d17e24157 " data-valign="top" width="NaN%"><p>ActionScript
+<td headers="d17e24157 "><p>ActionScript
 1.0 and 2.0 only</p></td>
-<td headers="d17e24160 " data-valign="top" width="NaN%"><p>ActionScript
+<td headers="d17e24160 "><p>ActionScript
 1.0 and 2.0, and ActionScript 3.0</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e24154 " data-valign="top" width="NaN%"><p>Can cross
+<td headers="d17e24154 "><p>Can cross
 script content created in</p></td>
-<td headers="d17e24157 " data-valign="top" width="NaN%"><p>ActionScript
+<td headers="d17e24157 "><p>ActionScript
 1.0 and 2.0 only (ActionScript 3.0 through Local Connection)</p></td>
-<td headers="d17e24160 " data-valign="top" width="NaN%"><p>ActionScript
+<td headers="d17e24160 "><p>ActionScript
 1.0 and 2.0 through LocalConnection.</p>
 <p>ActionScript 3.0</p></td>
 </tr>

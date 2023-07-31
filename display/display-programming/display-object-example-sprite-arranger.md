@@ -26,107 +26,94 @@ Examples/SpriteArranger. The application consists of the following files:
 
 <div>
 
-<table data-border="1" data-cellpadding="4" data-cellspacing="0">
+<table>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
 </colgroup>
-<thead data-align="left">
+<thead>
 <tr class="header">
-<th data-valign="top" width="NaN%"><p>File</p></th>
-<th data-valign="top" width="NaN%"><p>Description</p></th>
+<th><p>File</p></th>
+<th><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td headers="d17e16067 " data-valign="top"
-width="NaN%"><p>SpriteArranger.mxml</p>
+<td headers="d17e16067 "><p>SpriteArranger.mxml</p>
 <p>or</p>
 <p>SpriteArranger.fla</p></td>
-<td headers="d17e16070 " data-valign="top" width="NaN%"><p>The main
+<td headers="d17e16070 "><p>The main
 application file in Flash (FLA) or Flex (MXML).</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e16067 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/SpriteArranger/CircleSprite.as</p></td>
-<td headers="d17e16070 " data-valign="top" width="NaN%"><p>A class
+<td headers="d17e16067 "><p>com/example/programmingas3/SpriteArranger/CircleSprite.as</p></td>
+<td headers="d17e16070 "><p>A class
 defining a type of Sprite object that renders a circle
 on-screen.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e16067 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/SpriteArranger/DrawingCanvas.as</p></td>
-<td headers="d17e16070 " data-valign="top" width="NaN%"><p>A class
+<td headers="d17e16067 "><p>com/example/programmingas3/SpriteArranger/DrawingCanvas.as</p></td>
+<td headers="d17e16070 "><p>A class
 defining the canvas, which is a display object container that contains
 GeometricSprite objects.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e16067 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/SpriteArranger/SquareSprite.as</p></td>
-<td headers="d17e16070 " data-valign="top" width="NaN%"><p>A class
+<td headers="d17e16067 "><p>com/example/programmingas3/SpriteArranger/SquareSprite.as</p></td>
+<td headers="d17e16070 "><p>A class
 defining a type of Sprite object that renders a square
 on-screen.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e16067 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/SpriteArranger/TriangleSprite.as</p></td>
-<td headers="d17e16070 " data-valign="top" width="NaN%"><p>A class
+<td headers="d17e16067 "><p>com/example/programmingas3/SpriteArranger/TriangleSprite.as</p></td>
+<td headers="d17e16070 "><p>A class
 defining a type of Sprite object that renders a triangle
 on-screen.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e16067 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/SpriteArranger/GeometricSprite.as</p></td>
-<td headers="d17e16070 " data-valign="top" width="NaN%"><p>A class that
+<td headers="d17e16067 "><p>com/example/programmingas3/SpriteArranger/GeometricSprite.as</p></td>
+<td headers="d17e16070 "><p>A class that
 extends the Sprite object, used to define an on-screen shape. The
 CircleSprite, SquareSprite, and TriangleSprite each extend this
 class.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e16067 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/geometricshapes/IGeometricShape.as</p></td>
-<td headers="d17e16070 " data-valign="top" width="NaN%"><p>The base
+<td headers="d17e16067 "><p>com/example/programmingas3/geometricshapes/IGeometricShape.as</p></td>
+<td headers="d17e16070 "><p>The base
 interface defining methods to be implemented by all geometric shape
 classes.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e16067 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/geometricshapes/IPolygon.as</p></td>
-<td headers="d17e16070 " data-valign="top" width="NaN%"><p>An interface
+<td headers="d17e16067 "><p>com/example/programmingas3/geometricshapes/IPolygon.as</p></td>
+<td headers="d17e16070 "><p>An interface
 defining methods to be implemented by geometric shape classes that have
 multiple sides.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e16067 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/geometricshapes/RegularPolygon.as</p></td>
-<td headers="d17e16070 " data-valign="top" width="NaN%"><p>A type of
+<td headers="d17e16067 "><p>com/example/programmingas3/geometricshapes/RegularPolygon.as</p></td>
+<td headers="d17e16070 "><p>A type of
 geometric shape that has sides of equal length positioned symmetrically
 around the shape’s center.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e16067 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/geometricshapes/Circle.as</p></td>
-<td headers="d17e16070 " data-valign="top" width="NaN%"><p>A type of
+<td headers="d17e16067 "><p>com/example/programmingas3/geometricshapes/Circle.as</p></td>
+<td headers="d17e16070 "><p>A type of
 geometric shape that defines a circle.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e16067 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/geometricshapes/EquilateralTriangle.as</p></td>
-<td headers="d17e16070 " data-valign="top" width="NaN%"><p>A subclass of
+<td headers="d17e16067 "><p>com/example/programmingas3/geometricshapes/EquilateralTriangle.as</p></td>
+<td headers="d17e16070 "><p>A subclass of
 RegularPolygon that defines a triangle with all sides the same
 length.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e16067 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/geometricshapes/Square.as</p></td>
-<td headers="d17e16070 " data-valign="top" width="NaN%"><p>A subclass of
+<td headers="d17e16067 "><p>com/example/programmingas3/geometricshapes/Square.as</p></td>
+<td headers="d17e16070 "><p>A subclass of
 RegularPolygon defining a rectangle with all four sides the same
 length.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e16067 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/geometricshapes/GeometricShapeFactory.as</p></td>
-<td headers="d17e16070 " data-valign="top" width="NaN%"><p>A class
+<td headers="d17e16067 "><p>com/example/programmingas3/geometricshapes/GeometricShapeFactory.as</p></td>
+<td headers="d17e16070 "><p>A class
 containing a “factory method” for creating shapes given a shape type and
 size.</p></td>
 </tr>

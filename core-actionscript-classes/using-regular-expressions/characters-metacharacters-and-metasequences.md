@@ -38,23 +38,22 @@ expressions:
 
 <div>
 
-<table data-border="1" data-cellpadding="4" data-cellspacing="0">
+<table>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
 </colgroup>
-<thead data-align="left">
+<thead>
 <tr class="header">
-<th data-valign="top" width="NaN%"><p>Metacharacter</p></th>
-<th data-valign="top" width="NaN%"><p>Description</p></th>
+<th><p>Metacharacter</p></th>
+<th><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td headers="d17e6310 " data-valign="top"
-width="NaN%"><p><samp>^</samp>
+<td headers="d17e6310 "><p><samp>^</samp>
 (caret)</p></td>
-<td headers="d17e6313 " data-valign="top" width="NaN%"><p>Matches at the
+<td headers="d17e6313 "><p>Matches at the
 start of the string. With the
 <samp>m</samp> (
 <samp>multiline</samp> ) flag
@@ -67,10 +66,9 @@ href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7ea5.html">Character
 classes</a>.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e6310 " data-valign="top"
-width="NaN%"><p><samp>$</samp>
+<td headers="d17e6310 "><p><samp>$</samp>
 (dollar sign)</p></td>
-<td headers="d17e6313 " data-valign="top" width="NaN%"><p>Matches at the
+<td headers="d17e6313 "><p>Matches at the
 end of the string. With the
 <samp>m</samp> (
 <samp>multiline</samp> ) flag
@@ -82,10 +80,9 @@ href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7ea7.html">Flags and
 properties</a>.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e6310 " data-valign="top"
-width="NaN%"><p><samp>\</samp>
+<td headers="d17e6310 "><p><samp>\</samp>
 (backslash)</p></td>
-<td headers="d17e6313 " data-valign="top" width="NaN%"><p>Escapes the
+<td headers="d17e6313 "><p>Escapes the
 special metacharacter meaning of special characters.</p>
 <p>Also, use the backslash character if you want to use a forward slash
 character in a regular expression literal, as in
@@ -94,10 +91,9 @@ character 1, followed by the forward slash character, followed by the
 character 2).</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e6310 " data-valign="top"
-width="NaN%"><p><samp>.</samp>
+<td headers="d17e6310 "><p><samp>.</samp>
 (dot)</p></td>
-<td headers="d17e6313 " data-valign="top" width="NaN%"><p>Matches any
+<td headers="d17e6313 "><p>Matches any
 single character.</p>
 <p>A dot matches a newline character (
 <samp>\n</samp> ) only if the
@@ -108,37 +104,33 @@ href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7ea7.html">Flags and
 properties</a>.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e6310 " data-valign="top"
-width="NaN%"><p><samp>*</samp>
+<td headers="d17e6310 "><p><samp>*</samp>
 (star)</p></td>
-<td headers="d17e6313 " data-valign="top" width="NaN%"><p>Matches the
+<td headers="d17e6313 "><p>Matches the
 previous item repeated zero or more times.</p>
 <p>For more information, see <a
 href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7eab.html">Quantifiers</a>.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e6310 " data-valign="top"
-width="NaN%"><p><samp>+</samp>
+<td headers="d17e6310 "><p><samp>+</samp>
 (plus)</p></td>
-<td headers="d17e6313 " data-valign="top" width="NaN%"><p>Matches the
+<td headers="d17e6313 "><p>Matches the
 previous item repeated one or more times.</p>
 <p>For more information, see <a
 href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7eab.html">Quantifiers</a>.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e6310 " data-valign="top"
-width="NaN%"><p><samp>?</samp>
+<td headers="d17e6310 "><p><samp>?</samp>
 (question mark)</p></td>
-<td headers="d17e6313 " data-valign="top" width="NaN%"><p>Matches the
+<td headers="d17e6313 "><p>Matches the
 previous item repeated zero times or one time.</p>
 <p>For more information, see <a
 href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7eab.html">Quantifiers</a>.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e6310 " data-valign="top"
-width="NaN%"><p><samp>(</samp>
+<td headers="d17e6310 "><p><samp>(</samp>
 and <samp>)</samp></p></td>
-<td headers="d17e6313 " data-valign="top" width="NaN%"><p>Defines groups
+<td headers="d17e6313 "><p>Defines groups
 within the regular expression. Use groups for the following:</p>
 <div>
 <ul class="incremental">
@@ -158,10 +150,9 @@ parenthetical group of the pattern:</p></li>
 href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7e9a.html">Groups</a>.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e6310 " data-valign="top"
-width="NaN%"><p><samp>[</samp>
+<td headers="d17e6310 "><p><samp>[</samp>
 and <samp>]</samp></p></td>
-<td headers="d17e6313 " data-valign="top" width="NaN%"><p>Defines a
+<td headers="d17e6313 "><p>Defines a
 character class, which defines possible matches for a single
 character:</p>
 <p><samp>/[aeiou]/</samp> matches
@@ -188,10 +179,9 @@ href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7ea5.html">Character
 classes</a>.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e6310 " data-valign="top"
-width="NaN%"><p><samp>|</samp>
+<td headers="d17e6310 "><p><samp>|</samp>
 <em>(pipe)</em></p></td>
-<td headers="d17e6313 " data-valign="top" width="NaN%"><p>Used for
+<td headers="d17e6313 "><p>Used for
 alternation, to match either the part on the left side or the part on
 the right side:</p>
 <p><samp>/abc|xyz/</samp> matches
@@ -214,21 +204,20 @@ expression pattern. The following table describes these metasequences:
 
 <div>
 
-<table data-border="1" data-cellpadding="4" data-cellspacing="0">
+<table>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
 </colgroup>
-<thead data-align="left">
+<thead>
 <tr class="header">
-<th data-valign="top" width="NaN%"><p>Metasequence</p></th>
-<th data-valign="top" width="NaN%"><p>Description</p></th>
+<th><p>Metasequence</p></th>
+<th><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td headers="d17e6566 " data-valign="top"
-width="NaN%"><p><samp>{</samp>
+<td headers="d17e6566 "><p><samp>{</samp>
 <samp>n</samp>
 <samp>}</samp></p>
 <p><samp>{</samp>
@@ -240,7 +229,7 @@ width="NaN%"><p><samp>{</samp>
 <samp>,</samp>
 <samp>n</samp>
 <samp>}</samp></p></td>
-<td headers="d17e6569 " data-valign="top" width="NaN%"><p>Specifies a
+<td headers="d17e6569 "><p>Specifies a
 numeric quantifier or quantifier range for the previous item:</p>
 <p><samp>/A{27}/</samp> matches
 the character <samp>A</samp>
@@ -258,89 +247,76 @@ repeated <samp>3</samp> to
 href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7eab.html">Quantifiers</a>.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e6566 " data-valign="top"
-width="NaN%"><p><samp>\b</samp></p></td>
-<td headers="d17e6569 " data-valign="top" width="NaN%"><p>Matches at the
+<td headers="d17e6566 "><p><samp>\b</samp></p></td>
+<td headers="d17e6569 "><p>Matches at the
 position between a word character and a nonword character. If the first
 or last character in the string is a word character, also matches the
 start or end of the string.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e6566 " data-valign="top"
-width="NaN%"><p><samp>\B</samp></p></td>
-<td headers="d17e6569 " data-valign="top" width="NaN%"><p>Matches at the
+<td headers="d17e6566 "><p><samp>\B</samp></p></td>
+<td headers="d17e6569 "><p>Matches at the
 position between two word characters. Also matches the position between
 two nonword characters.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e6566 " data-valign="top"
-width="NaN%"><p><samp>\d</samp></p></td>
-<td headers="d17e6569 " data-valign="top" width="NaN%"><p>Matches a
+<td headers="d17e6566 "><p><samp>\d</samp></p></td>
+<td headers="d17e6569 "><p>Matches a
 decimal digit.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e6566 " data-valign="top"
-width="NaN%"><p><samp>\D</samp></p></td>
-<td headers="d17e6569 " data-valign="top" width="NaN%"><p>Matches any
+<td headers="d17e6566 "><p><samp>\D</samp></p></td>
+<td headers="d17e6569 "><p>Matches any
 character other than a digit.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e6566 " data-valign="top"
-width="NaN%"><p><samp>\f</samp></p></td>
-<td headers="d17e6569 " data-valign="top" width="NaN%"><p>Matches a form
+<td headers="d17e6566 "><p><samp>\f</samp></p></td>
+<td headers="d17e6569 "><p>Matches a form
 feed character.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e6566 " data-valign="top"
-width="NaN%"><p><samp>\n</samp></p></td>
-<td headers="d17e6569 " data-valign="top" width="NaN%"><p>Matches the
+<td headers="d17e6566 "><p><samp>\n</samp></p></td>
+<td headers="d17e6569 "><p>Matches the
 newline character.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e6566 " data-valign="top"
-width="NaN%"><p><samp>\r</samp></p></td>
-<td headers="d17e6569 " data-valign="top" width="NaN%"><p>Matches the
+<td headers="d17e6566 "><p><samp>\r</samp></p></td>
+<td headers="d17e6569 "><p>Matches the
 return character.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e6566 " data-valign="top"
-width="NaN%"><p><samp>\s</samp></p></td>
-<td headers="d17e6569 " data-valign="top" width="NaN%"><p>Matches any
+<td headers="d17e6566 "><p><samp>\s</samp></p></td>
+<td headers="d17e6569 "><p>Matches any
 white-space character (a space, tab, newline, or return
 character).</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e6566 " data-valign="top"
-width="NaN%"><p><samp>\S</samp></p></td>
-<td headers="d17e6569 " data-valign="top" width="NaN%"><p>Matches any
+<td headers="d17e6566 "><p><samp>\S</samp></p></td>
+<td headers="d17e6569 "><p>Matches any
 character other than a white-space character.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e6566 " data-valign="top"
-width="NaN%"><p><samp>\t</samp></p></td>
-<td headers="d17e6569 " data-valign="top" width="NaN%"><p>Matches the
+<td headers="d17e6566 "><p><samp>\t</samp></p></td>
+<td headers="d17e6569 "><p>Matches the
 tab character.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e6566 " data-valign="top"
-width="NaN%"><p><samp>\u</samp>
+<td headers="d17e6566 "><p><samp>\u</samp>
 <samp>nnnn</samp></p></td>
-<td headers="d17e6569 " data-valign="top" width="NaN%"><p>Matches the
+<td headers="d17e6569 "><p>Matches the
 Unicode character with the character code specified by the hexadecimal
 number <em>nnnn</em>. For example,
 <samp>\u263a</samp> is the smiley
 character.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e6566 " data-valign="top"
-width="NaN%"><p><samp>\v</samp></p></td>
-<td headers="d17e6569 " data-valign="top" width="NaN%"><p>Matches a
+<td headers="d17e6566 "><p><samp>\v</samp></p></td>
+<td headers="d17e6569 "><p>Matches a
 vertical feed character.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e6566 " data-valign="top"
-width="NaN%"><p><samp>\w</samp></p></td>
-<td headers="d17e6569 " data-valign="top" width="NaN%"><p>Matches a word
+<td headers="d17e6566 "><p><samp>\w</samp></p></td>
+<td headers="d17e6569 "><p>Matches a word
 character ( <samp>AZ</samp> –,
 <samp>az</samp> –,
 <samp>0-9</samp> , or
@@ -352,16 +328,14 @@ non-English characters, such as
 <samp>ç</samp>.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e6566 " data-valign="top"
-width="NaN%"><p><samp>\W</samp></p></td>
-<td headers="d17e6569 " data-valign="top" width="NaN%"><p>Matches any
+<td headers="d17e6566 "><p><samp>\W</samp></p></td>
+<td headers="d17e6569 "><p>Matches any
 character other than a word character.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e6566 " data-valign="top"
-width="NaN%"><p><samp>\\x</samp>
+<td headers="d17e6566 "><p><samp>\\x</samp>
 <samp>nn</samp></p></td>
-<td headers="d17e6569 " data-valign="top" width="NaN%"><p>Matches the
+<td headers="d17e6569 "><p>Matches the
 character with the specified ASCII value, as defined by the hexadecimal
 number <em>nn</em>.</p></td>
 </tr>

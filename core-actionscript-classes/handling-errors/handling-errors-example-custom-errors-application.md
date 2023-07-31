@@ -21,51 +21,46 @@ The application consists of the following files:
 
 <div>
 
-<table data-border="1" data-cellpadding="4" data-cellspacing="0">
+<table>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
 </colgroup>
-<thead data-align="left">
+<thead>
 <tr class="header">
-<th data-valign="top" width="NaN%"><p>File</p></th>
-<th data-valign="top" width="NaN%"><p>Description</p></th>
+<th><p>File</p></th>
+<th><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td headers="d17e5613 " data-valign="top"
-width="NaN%"><p>CustomErrors.mxml</p>
+<td headers="d17e5613 "><p>CustomErrors.mxml</p>
 <p>or</p>
 <p>CustomErrors.fla</p></td>
-<td headers="d17e5616 " data-valign="top" width="NaN%"><p>The main
+<td headers="d17e5616 "><p>The main
 application file in Flash (FLA) or Flex (MXML)</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e5613 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/errors/ApplicationError.as</p></td>
-<td headers="d17e5616 " data-valign="top" width="NaN%"><p>A class that
+<td headers="d17e5613 "><p>com/example/programmingas3/errors/ApplicationError.as</p></td>
+<td headers="d17e5616 "><p>A class that
 serves as the base error class for both the FatalError and WarningError
 classes.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e5613 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/errors/FatalError.as</p></td>
-<td headers="d17e5616 " data-valign="top" width="NaN%"><p>A class that
+<td headers="d17e5613 "><p>com/example/programmingas3/errors/FatalError.as</p></td>
+<td headers="d17e5616 "><p>A class that
 defines a FatalError errorthrown by the application. This class extends
 the custom ApplicationError class.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e5613 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/errors/Validator.as</p></td>
-<td headers="d17e5616 " data-valign="top" width="NaN%"><p>A class that
+<td headers="d17e5613 "><p>com/example/programmingas3/errors/Validator.as</p></td>
+<td headers="d17e5616 "><p>A class that
 defines a single method that validates a user-supplied employee XML
 packet.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e5613 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/errors/WarningError.as</p></td>
-<td headers="d17e5616 " data-valign="top" width="NaN%"><p>A class that
+<td headers="d17e5613 "><p>com/example/programmingas3/errors/WarningError.as</p></td>
+<td headers="d17e5616 "><p>A class that
 defines a WarningError error thrown by the application. This class
 extends the custom ApplicationError class.</p></td>
 </tr>

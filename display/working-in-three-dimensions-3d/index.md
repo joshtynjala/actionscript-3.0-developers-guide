@@ -31,7 +31,7 @@ Stage 3D</a>.
 
 <div xmlns:adobe="http://www.adobe.com/saxon">
 
-<table data-border="0" data-cellpadding="0" data-cellspacing="0">
+<table>
 <colgroup>
 <col style="width: 25%" />
 <col style="width: 25%" />
@@ -40,14 +40,10 @@ Stage 3D</a>.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td colspan="2"
-style="padding-top: 0pt; padding-bottom: 0pt; height: 30px; vertical-align: middle"><h2
+<td colspan="2"><h2
 id="adobe-recommends">Adobe recommends</h2></td>
-<td colspan="2"
-style="text-align: right; padding-top: 0pt; padding-bottom: 0pt; height: 30px; vertical-align: middle;"><h3
-id="have-a-tutorial-you-would-like-to-share"><img
-src="../../img/TinyBlueTutIcon.png" data-border="0"
-style="vertical-align: text-bottom; margin-right: 7px;" /> <a
+<td colspan="2"><h3
+id="have-a-tutorial-you-would-like-to-share"><img src="../../img/TinyBlueTutIcon.png"/> <a
 href="http://www.adobe.com/community/publishing/download.html"
 target="_self">Have a tutorial you would like to share?</a></h3></td>
 </tr>
@@ -55,15 +51,15 @@ target="_self">Have a tutorial you would like to share?</a></h3></td>
 <td colspan="4" height="10"></td>
 </tr>
 <tr class="odd">
-<td style="padding-top: 12px" width="5%"><span> <img
+<td><span> <img
 src="../../img/marco_scabia.png" /> </span></td>
 <td width="45%"><h3 id="how-stage3d-works"><a href="http://goo.gl/KB34I"
 target="_self">How Stage3D works</a></h3>
 <span> <a href="http://goo.gl/sVKdP" target="_self">Marco Scabia:
 iFlash3D.com</a> </span></td>
-<td style="text-align: right; padding-top: 12px;" width="5%"><span> <img
+<td><span> <img
 src="../../img/marco_scabia.png" /> </span></td>
-<td style="text-align: right;" width="45%"><h3 id="what-is-agal"><a
+<td><h3 id="what-is-agal"><a
 href="http://goo.gl/kgZ3Y" target="_self">What is AGAL</a></h3>
 <span> <a href="http://goo.gl/sVKdP" target="_self">Marco Scabia:
 iFlash3D.com</a> </span></td>
@@ -72,14 +68,14 @@ iFlash3D.com</a> </span></td>
 <td colspan="4" height="10"></td>
 </tr>
 <tr class="odd">
-<td style="padding-top: 12px" width="5%"><span> <img
+<td><span> <img
 src="../../img/marco_scabia.png" /> </span></td>
 <td width="45%"><h3 id="vertex-and-fragment-shaders"><a
 href="http://goo.gl/EfT4p" target="_self">Vertex and fragment
 shaders</a></h3>
 <span> <a href="http://goo.gl/sVKdP" target="_self">Marco Scabia:
 iFlash3D.com</a> </span></td>
-<td style="text-align: right; padding-top: 12px;" width="5%"><span> <img
+<td><span> <img
 src="../../img/bytearrayORG.png" /> </span></td>
 <td style="text-align: right;" width="45%"><h3
 id="handling-scenarios-with-stage3d"><a href="http://goo.gl/cNLn5"
@@ -90,14 +86,14 @@ target="_self">Handling scenarios with Stage3D</a></h3>
 <td colspan="4" height="10"></td>
 </tr>
 <tr class="odd">
-<td style="padding-top: 12px" width="5%"><span> <img
+<td><span> <img
 src="../../img/adobe_logo.png" /> </span></td>
 <td width="45%"><h3 id="working-with-the-proscenium-framework"><a
 href="http://goo.gl/CA3iC" target="_self">Working with the Proscenium
 framework</a></h3>
 <span> Adobe </span></td>
-<td style="text-align: right; padding-top: 12px;" width="5%"></td>
-<td style="text-align: right;" width="45%"></td>
+<td></td>
+<td width="45%"></td>
 </tr>
 </tbody>
 </table>

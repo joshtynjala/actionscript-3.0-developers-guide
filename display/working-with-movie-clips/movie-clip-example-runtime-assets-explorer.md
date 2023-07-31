@@ -38,62 +38,55 @@ following files:
 
 <div>
 
-<table data-border="1" data-cellpadding="4" data-cellspacing="0">
+<table>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
 </colgroup>
-<thead data-align="left">
+<thead>
 <tr class="header">
-<th data-valign="top" width="NaN%"><p>File</p></th>
-<th data-valign="top" width="NaN%"><p>Description</p></th>
+<th><p>File</p></th>
+<th><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td headers="d17e24229 " data-valign="top"
-width="NaN%"><p>RuntimeAssetsExample.mxml</p>
+<td headers="d17e24229 "><p>RuntimeAssetsExample.mxml</p>
 <p>or</p>
 <p>RuntimeAssetsExample.fla</p></td>
-<td headers="d17e24232 " data-valign="top" width="NaN%"><p>The user
+<td headers="d17e24232 "><p>The user
 interface for the application for Flex (MXML) or Flash (FLA).</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e24229 " data-valign="top"
-width="NaN%"><p>RuntimeAssetsExample.as</p></td>
-<td headers="d17e24232 " data-valign="top" width="NaN%"><p>Document
+<td headers="d17e24229 "><p>RuntimeAssetsExample.as</p></td>
+<td headers="d17e24232 "><p>Document
 class for the Flash (FLA) application.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e24229 " data-valign="top"
-width="NaN%"><p>GeometricAssets.as</p></td>
-<td headers="d17e24232 " data-valign="top" width="NaN%"><p>An example
+<td headers="d17e24229 "><p>GeometricAssets.as</p></td>
+<td headers="d17e24232 "><p>An example
 class that implements the RuntimeAsset interface.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e24229 " data-valign="top"
-width="NaN%"><p>GeometricAssets.fla</p></td>
-<td headers="d17e24232 " data-valign="top" width="NaN%"><p>A FLA file
+<td headers="d17e24229 "><p>GeometricAssets.fla</p></td>
+<td headers="d17e24232 "><p>A FLA file
 linked to the GeometricAssets class (the document class of the FLA)
 containing symbols that are exported for ActionScript.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e24229 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/runtimeassetexplorer/RuntimeLibrary.as</p></td>
-<td headers="d17e24232 " data-valign="top" width="NaN%"><p>An interface
+<td headers="d17e24229 "><p>com/example/programmingas3/runtimeassetexplorer/RuntimeLibrary.as</p></td>
+<td headers="d17e24232 "><p>An interface
 that defines the required methods expected of all run-time asset SWF
 files that will be loaded into the explorer container.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e24229 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/runtimeassetexplorer/AnimatingBox.as</p></td>
-<td headers="d17e24232 " data-valign="top" width="NaN%"><p>The class of
+<td headers="d17e24229 "><p>com/example/programmingas3/runtimeassetexplorer/AnimatingBox.as</p></td>
+<td headers="d17e24232 "><p>The class of
 the library symbol in the shape of a rotating box.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e24229 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/runtimeassetexplorer/AnimatingStar.as</p></td>
-<td headers="d17e24232 " data-valign="top" width="NaN%"><p>The class of
+<td headers="d17e24229 "><p>com/example/programmingas3/runtimeassetexplorer/AnimatingStar.as</p></td>
+<td headers="d17e24232 "><p>The class of
 the library symbol in the shape of a rotating star.</p></td>
 </tr>
 </tbody>

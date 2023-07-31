@@ -22,38 +22,37 @@ classes. Each of these classes are located in the top-level namespace.
 
 <div>
 
-<table data-border="1" data-cellpadding="4" data-cellspacing="0">
+<table>
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
 <col style="width: 33%" />
 </colgroup>
-<thead data-align="left">
+<thead>
 <tr class="header">
-<th data-valign="top" width="NaN%"><p>Class name</p></th>
-<th data-valign="top" width="NaN%"><p>Description</p></th>
-<th data-valign="top" width="NaN%"><p>Notes</p></th>
+<th><p>Class name</p></th>
+<th><p>Description</p></th>
+<th><p>Notes</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td headers="d17e5266 " data-valign="top" width="NaN%"><p>Error</p></td>
-<td headers="d17e5269 " data-valign="top" width="NaN%"><p>The Error
+<td headers="d17e5266 "><p>Error</p></td>
+<td headers="d17e5269 "><p>The Error
 class is for throwing exceptions, and is the base class for the other
 exception classes defined in ECMAScript: EvalError, RangeError,
 ReferenceError, SyntaxError, TypeError, and URIError.</p></td>
-<td headers="d17e5272 " data-valign="top" width="NaN%"><p>The Error
+<td headers="d17e5272 "><p>The Error
 class serves as the base class for all run-time errors, and is the
 recommended base class for any custom error classes.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e5266 " data-valign="top"
-width="NaN%"><p>ArgumentError</p></td>
-<td headers="d17e5269 " data-valign="top" width="NaN%"><p>The
+<td headers="d17e5266 "><p>ArgumentError</p></td>
+<td headers="d17e5269 "><p>The
 ArgumentError class represents an error that occurs when the parameter
 values supplied during a function call do not match the parameters
 defined for that function.</p></td>
-<td headers="d17e5272 " data-valign="top" width="NaN%"><p>Some examples
+<td headers="d17e5272 "><p>Some examples
 of argument errors include the following:</p>
 <div>
 <ul class="incremental">
@@ -64,14 +63,13 @@ not.</p></li>
 </div></td>
 </tr>
 <tr class="odd">
-<td headers="d17e5266 " data-valign="top"
-width="NaN%"><p>EvalError</p></td>
-<td headers="d17e5269 " data-valign="top" width="NaN%"><p>An EvalError
+<td headers="d17e5266 "><p>EvalError</p></td>
+<td headers="d17e5269 "><p>An EvalError
 exception is thrown if any parameters are passed to the Function class’s
 constructor or if user code calls the
 <samp>eval()</samp>
 function.</p></td>
-<td headers="d17e5272 " data-valign="top" width="NaN%"><p>In
+<td headers="d17e5272 "><p>In
 ActionScript 3.0, support for the
 <samp>eval()</samp> function has
 been removed and attempts to use the function result in an error.</p>
@@ -80,20 +78,18 @@ been removed and attempts to use the function result in an error.</p>
 access variables, properties, objects, or movie clips by name.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e5266 " data-valign="top"
-width="NaN%"><p>RangeError</p></td>
-<td headers="d17e5269 " data-valign="top" width="NaN%"><p>A RangeError
+<td headers="d17e5266 "><p>RangeError</p></td>
+<td headers="d17e5269 "><p>A RangeError
 exception is thrown if a numeric value falls outside an acceptable
 range.</p></td>
-<td headers="d17e5272 " data-valign="top" width="NaN%"><p>For example, a
+<td headers="d17e5272 "><p>For example, a
 RangeError is thrown by the Timer class if a delay was either negative
 or was not finite. A RangeError could also be thrown if you attempted to
 add a display object at an invalid depth.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e5266 " data-valign="top"
-width="NaN%"><p>ReferenceError</p></td>
-<td headers="d17e5269 " data-valign="top" width="NaN%"><p>A
+<td headers="d17e5266 "><p>ReferenceError</p></td>
+<td headers="d17e5269 "><p>A
 ReferenceError exception is thrown when a reference to an undefined
 property is attempted on a sealed (nondynamic) object. Versions of the
 ActionScript compiler before ActionScript 3.0 did not throw an error
@@ -101,19 +97,18 @@ when access was attempted to a property that was
 <samp>undefined</samp>. However
 ActionScript 3.0 throws the ReferenceError exception in this
 condition.</p></td>
-<td headers="d17e5272 " data-valign="top" width="NaN%"><p>Exceptions for
+<td headers="d17e5272 "><p>Exceptions for
 undefined variables point to potential bugs, helping you improve
 software quality. However, if you are not used to having to initialize
 your variables, this new ActionScript behavior requires some changes in
 your coding habits.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e5266 " data-valign="top"
-width="NaN%"><p>SecurityError</p></td>
-<td headers="d17e5269 " data-valign="top" width="NaN%"><p>The
+<td headers="d17e5266 "><p>SecurityError</p></td>
+<td headers="d17e5269 "><p>The
 SecurityError exception is thrown when a security violation takes place
 and access is denied.</p></td>
-<td headers="d17e5272 " data-valign="top" width="NaN%"><p>Some examples
+<td headers="d17e5272 "><p>Some examples
 of security errors include the following:</p>
 <div>
 <ul class="incremental">
@@ -129,12 +124,11 @@ and the user denide the access to the device.</p></li>
 </div></td>
 </tr>
 <tr class="odd">
-<td headers="d17e5266 " data-valign="top"
-width="NaN%"><p>SyntaxError</p></td>
-<td headers="d17e5269 " data-valign="top" width="NaN%"><p>A SyntaxError
+<td headers="d17e5266 "><p>SyntaxError</p></td>
+<td headers="d17e5269 "><p>A SyntaxError
 exception is thrown when a parsing error occurs in your ActionScript
 code.</p></td>
-<td headers="d17e5272 " data-valign="top" width="NaN%"><p>A SyntaxError
+<td headers="d17e5272 "><p>A SyntaxError
 can be thrown under the following circumstances:</p>
 <div>
 <ul class="incremental">
@@ -146,12 +140,11 @@ class parses invalid XML.</p></li>
 </div></td>
 </tr>
 <tr class="even">
-<td headers="d17e5266 " data-valign="top"
-width="NaN%"><p>TypeError</p></td>
-<td headers="d17e5269 " data-valign="top" width="NaN%"><p>The TypeError
+<td headers="d17e5266 "><p>TypeError</p></td>
+<td headers="d17e5269 "><p>The TypeError
 exception is thrown when the actual type of an operand is different from
 the expected type.</p></td>
-<td headers="d17e5272 " data-valign="top" width="NaN%"><p>A TypeError
+<td headers="d17e5272 "><p>A TypeError
 can be thrown under the following circumstances:</p>
 <div>
 <ul class="incremental">
@@ -175,24 +168,22 @@ TypeError exception is thrown if a method in the RegExp class is
 </div></td>
 </tr>
 <tr class="odd">
-<td headers="d17e5266 " data-valign="top"
-width="NaN%"><p>URIError</p></td>
-<td headers="d17e5269 " data-valign="top" width="NaN%"><p>The URIError
+<td headers="d17e5266 "><p>URIError</p></td>
+<td headers="d17e5269 "><p>The URIError
 exception is thrown when one of the global URI handling functions is
 used in a way that is incompatible with its definition.</p></td>
-<td headers="d17e5272 " data-valign="top" width="NaN%"><p>A URIError can
+<td headers="d17e5272 "><p>A URIError can
 be thrown under the following circumstances:</p>
 <p>An invalid URI is specified for a Flash Player API function that
 expects a valid URI, such as
 <samp>Socket.connect()</samp>.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e5266 " data-valign="top"
-width="NaN%"><p>VerifyError</p></td>
-<td headers="d17e5269 " data-valign="top" width="NaN%"><p>A VerifyError
+<td headers="d17e5266 "><p>VerifyError</p></td>
+<td headers="d17e5269 "><p>A VerifyError
 exception is thrown when a malformed or corrupted SWF file is
 encountered.</p></td>
-<td headers="d17e5272 " data-valign="top" width="NaN%"><p>When a SWF
+<td headers="d17e5272 "><p>When a SWF
 file loads another SWF file, the parent SWF file can catch a VerifyError
 generated by the loaded SWF file.</p></td>
 </tr>
@@ -218,39 +209,37 @@ Flash Player and Adobe AIR).
 
 <div>
 
-<table data-border="1" data-cellpadding="4" data-cellspacing="0">
+<table>
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
 <col style="width: 33%" />
 </colgroup>
-<thead data-align="left">
+<thead>
 <tr class="header">
-<th data-valign="top" width="NaN%"><p>Class name</p></th>
-<th data-valign="top" width="NaN%"><p>Description</p></th>
-<th data-valign="top" width="NaN%"><p>Notes</p></th>
+<th><p>Class name</p></th>
+<th><p>Description</p></th>
+<th><p>Notes</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td headers="d17e5481 " data-valign="top"
-width="NaN%"><p>EOFError</p></td>
-<td headers="d17e5484 " data-valign="top" width="NaN%"><p>An EOFError
+<td headers="d17e5481 "><p>EOFError</p></td>
+<td headers="d17e5484 "><p>An EOFError
 exception is thrown when you attempt to read past the end of the
 available data.</p></td>
-<td headers="d17e5487 " data-valign="top" width="NaN%"><p>For example,
+<td headers="d17e5487 "><p>For example,
 an EOFError is thrown when one of the read methods in the IDataInput
 interface is called and there is insufficient data to satisfy the read
 request.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e5481 " data-valign="top"
-width="NaN%"><p>IllegalOperationError</p></td>
-<td headers="d17e5484 " data-valign="top" width="NaN%"><p>An
+<td headers="d17e5481 "><p>IllegalOperationError</p></td>
+<td headers="d17e5484 "><p>An
 IllegalOperationError exception is thrown when a method is not
 implemented or the implementation doesn't cover the current
 usage.</p></td>
-<td headers="d17e5487 " data-valign="top" width="NaN%"><p>Examples of
+<td headers="d17e5487 "><p>Examples of
 illegal operation error exceptions include the following:</p>
 <div>
 <ul class="incremental">
@@ -272,20 +261,18 @@ timeline.</p></li>
 </div></td>
 </tr>
 <tr class="odd">
-<td headers="d17e5481 " data-valign="top"
-width="NaN%"><p>IOError</p></td>
-<td headers="d17e5484 " data-valign="top" width="NaN%"><p>An IOError
+<td headers="d17e5481 "><p>IOError</p></td>
+<td headers="d17e5484 "><p>An IOError
 exception is thrown when some type of I/O exception occurs.</p></td>
-<td headers="d17e5487 " data-valign="top" width="NaN%"><p>You get this
+<td headers="d17e5487 "><p>You get this
 error, for example, when a read-write operation is attempted on a socket
 that is not connected or that has become disconnected.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e5481 " data-valign="top"
-width="NaN%"><p>MemoryError</p></td>
-<td headers="d17e5484 " data-valign="top" width="NaN%"><p>A MemoryError
+<td headers="d17e5481 "><p>MemoryError</p></td>
+<td headers="d17e5484 "><p>A MemoryError
 exception is thrown when a memory allocation request fails.</p></td>
-<td headers="d17e5487 " data-valign="top" width="NaN%"><p>By default,
+<td headers="d17e5487 "><p>By default,
 ActionScript Virtual Machine 2 does not impose a limit on how much
 memory an ActionScript program allocates. On a desktop system, memory
 allocation failures are infrequent. You see an error thrown when the
@@ -296,15 +283,14 @@ impossible because a 32-bit Microsoft® Windows® program can access only
 2 GB of address space.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e5481 " data-valign="top"
-width="NaN%"><p>ScriptTimeoutError</p></td>
-<td headers="d17e5484 " data-valign="top" width="NaN%"><p>A
+<td headers="d17e5481 "><p>ScriptTimeoutError</p></td>
+<td headers="d17e5484 "><p>A
 ScriptTimeoutError exception is thrown when a script timeout interval of
 15 seconds is reached. By catching a ScriptTimeoutError exception, you
 can handle the script timeout more gracefully. If there is no exception
 handler, the uncaught exception handler displays a dialog box with an
 error message.</p></td>
-<td headers="d17e5487 " data-valign="top" width="NaN%"><p>To prevent a
+<td headers="d17e5487 "><p>To prevent a
 malicious developer from catching the exception and staying in an
 infinite loop, only the first ScriptTimeoutError exception thrown in the
 course of a particular script can be caught. A subsequent
@@ -312,12 +298,11 @@ ScriptTimeoutError exception cannot be caught by your code and
 immediately goes to the uncaught exception handler.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e5481 " data-valign="top"
-width="NaN%"><p>StackOverflowError</p></td>
-<td headers="d17e5484 " data-valign="top" width="NaN%"><p>The
+<td headers="d17e5481 "><p>StackOverflowError</p></td>
+<td headers="d17e5484 "><p>The
 StackOverflowError exception is thrown when the stack available to the
 script has been exhausted.</p></td>
-<td headers="d17e5487 " data-valign="top" width="NaN%"><p>A
+<td headers="d17e5487 "><p>A
 StackOverflowError exception might indicate that infinite recursion has
 occurred.</p></td>
 </tr>

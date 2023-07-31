@@ -14,37 +14,33 @@ specify the bitmap loading scheme. The default loading scheme is synchronous.
 
 <div>
 
-<table data-border="1" data-cellpadding="4" data-cellspacing="0">
+<table>
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
 <col style="width: 33%" />
 </colgroup>
-<thead data-align="left">
+<thead>
 <tr class="header">
-<th data-valign="top" width="NaN%"><p>Bitmap Decoding Policy</p></th>
-<th data-valign="top" width="NaN%"><p>Bitmap Loading Scheme</p></th>
-<th data-valign="top" width="NaN%"><p>Description</p></th>
+<th><p>Bitmap Decoding Policy</p></th>
+<th><p>Bitmap Loading Scheme</p></th>
+<th><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td headers="d17e20992 " data-valign="top"
-width="NaN%"><p><samp>ImageDecodingPolicy.ON_DEMAND</samp></p></td>
-<td headers="d17e20995 " data-valign="top"
-width="NaN%"><p>Synchronous</p></td>
-<td headers="d17e20998 " data-valign="top" width="NaN%"><p>Loaded images
+<td headers="d17e20992 "><p><samp>ImageDecodingPolicy.ON_DEMAND</samp></p></td>
+<td headers="d17e20995 "><p>Synchronous</p></td>
+<td headers="d17e20998 "><p>Loaded images
 are decoded when the image data is accessed.</p>
 <p>Use this policy to decode smaller images. You can also use this
 policy when your application does not rely on complex effects and
 transitions.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e20992 " data-valign="top"
-width="NaN%"><p><samp>ImageDecodingPolicy.ON_LOAD</samp></p></td>
-<td headers="d17e20995 " data-valign="top"
-width="NaN%"><p>Asynchronous</p></td>
-<td headers="d17e20998 " data-valign="top" width="NaN%"><p>Loaded images
+<td headers="d17e20992 "><p><samp>ImageDecodingPolicy.ON_LOAD</samp></p></td>
+<td headers="d17e20995 "><p>Asynchronous</p></td>
+<td headers="d17e20998 "><p>Loaded images
 are decoded on load, before the
 <samp>COMPLETE</samp>
 event is dispatched.</p>

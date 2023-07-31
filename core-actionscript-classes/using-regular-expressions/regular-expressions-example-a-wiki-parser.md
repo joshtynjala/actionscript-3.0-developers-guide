@@ -22,45 +22,41 @@ application consists of the following files:
 
 <div>
 
-<table data-border="1" data-cellpadding="4" data-cellspacing="0">
+<table>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
 </colgroup>
-<thead data-align="left">
+<thead>
 <tr class="header">
-<th data-valign="top" width="NaN%"><p>File</p></th>
-<th data-valign="top" width="NaN%"><p>Description</p></th>
+<th><p>File</p></th>
+<th><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td headers="d17e8172 " data-valign="top"
-width="NaN%"><p>WikiEditor.mxml</p>
+<td headers="d17e8172 "><p>WikiEditor.mxml</p>
 <p>or</p>
 <p>WikiEditor.fla</p></td>
-<td headers="d17e8175 " data-valign="top" width="NaN%"><p>The main
+<td headers="d17e8175 "><p>The main
 application file in Flash (FLA) or Flex (MXML).</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e8172 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/regExpExamples/WikiParser.as</p></td>
-<td headers="d17e8175 " data-valign="top" width="NaN%"><p>A class that
+<td headers="d17e8172 "><p>com/example/programmingas3/regExpExamples/WikiParser.as</p></td>
+<td headers="d17e8175 "><p>A class that
 includes methods that use regular expressions to convert Wiki input text
 patterns to the equivalent HTML output.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e8172 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/regExpExamples/URLParser.as</p></td>
-<td headers="d17e8175 " data-valign="top" width="NaN%"><p>A class that
+<td headers="d17e8172 "><p>com/example/programmingas3/regExpExamples/URLParser.as</p></td>
+<td headers="d17e8175 "><p>A class that
 includes methods that use regular expressions to convert URL strings to
 HTML <samp>&lt;a&gt;</samp>
 hyperlink tags.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e8172 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/regExpExamples/CurrencyConverter.as</p></td>
-<td headers="d17e8175 " data-valign="top" width="NaN%"><p>A class that
+<td headers="d17e8172 "><p>com/example/programmingas3/regExpExamples/CurrencyConverter.as</p></td>
+<td headers="d17e8175 "><p>A class that
 includes methods that use regular expressions to convert U.S. dollar
 strings to euro strings.</p></td>
 </tr>

@@ -154,7 +154,7 @@ methods. For more information on regular expressions, see
 
 <div xmlns:adobe="http://www.adobe.com/saxon">
 
-<table data-border="0" data-cellpadding="0" data-cellspacing="0">
+<table>
 <colgroup>
 <col style="width: 25%" />
 <col style="width: 25%" />
@@ -163,25 +163,22 @@ methods. For more information on regular expressions, see
 </colgroup>
 <tbody>
 <tr class="odd">
-<td colspan="2"
-style="padding-top: 0pt; padding-bottom: 0pt; height: 30px; vertical-align: middle"><h2
+<td colspan="2"><h2
 id="adobe-recommends">Adobe recommends</h2></td>
-<td colspan="2"
-style="text-align: right; padding-top: 0pt; padding-bottom: 0pt; height: 30px; vertical-align: middle;"></td>
+<td colspan="2"></td>
 </tr>
 <tr class="even">
 <td colspan="4" height="10"></td>
 </tr>
 <tr class="odd">
-<td style="padding-top: 12px" width="5%"><span> <img
-src="../../img/dougrdotnet.png" /> </span></td>
-<td width="45%"><h3 id="trim-leading-and-trailing-00s-from-a-string"><a
+<td><span> <img src="../../img/dougrdotnet.png" /> </span></td>
+<td><h3 id="trim-leading-and-trailing-00s-from-a-string"><a
 href="http://goo.gl/GHGjc" target="_self">Trim Leading and Trailing 00s
 From a String</a></h3>
 <span> <a href="http://goo.gl/ql1TG" target="_self">Doug Reynolds</a>
 </span></td>
-<td style="text-align: right; padding-top: 12px;" width="5%"></td>
-<td style="text-align: right;" width="45%"></td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>

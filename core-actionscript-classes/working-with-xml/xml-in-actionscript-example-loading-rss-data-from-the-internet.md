@@ -62,37 +62,34 @@ application consists of the following files:
 
 <div>
 
-<table data-border="1" data-cellpadding="4" data-cellspacing="0">
+<table>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
 </colgroup>
-<thead data-align="left">
+<thead>
 <tr class="header">
-<th data-valign="top" width="NaN%"><p>File</p></th>
-<th data-valign="top" width="NaN%"><p>Description</p></th>
+<th><p>File</p></th>
+<th><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td headers="d17e10282 " data-valign="top"
-width="NaN%"><p>RSSViewer.mxml</p>
+<td headers="d17e10282 "><p>RSSViewer.mxml</p>
 <p>or</p>
 <p>RSSViewer.fla</p></td>
-<td headers="d17e10285 " data-valign="top" width="NaN%"><p>The main
+<td headers="d17e10285 "><p>The main
 application file in Flash (FLA) or Flex (MXML).</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e10282 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/rssViewer/RSSParser.as</p></td>
-<td headers="d17e10285 " data-valign="top" width="NaN%"><p>A class that
+<td headers="d17e10282 "><p>com/example/programmingas3/rssViewer/RSSParser.as</p></td>
+<td headers="d17e10285 "><p>A class that
 contains methods that use E4X to traverse RSS (XML) data and generate a
 corresponding HTML representation.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e10282 " data-valign="top"
-width="NaN%"><p>RSSData/ak.rss</p></td>
-<td headers="d17e10285 " data-valign="top" width="NaN%"><p>A sample RSS
+<td headers="d17e10282 "><p>RSSData/ak.rss</p></td>
+<td headers="d17e10285 "><p>A sample RSS
 file. The application is set up to read RSS data from the web, at a Flex
 RSS feed hosted by Adobe. However, you can easily change the application
 to read RSS data from this document, which uses a slightly different

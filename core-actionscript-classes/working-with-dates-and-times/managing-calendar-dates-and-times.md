@@ -168,7 +168,7 @@ the `dueDate` value.
 
 <div xmlns:adobe="http://www.adobe.com/saxon">
 
-<table data-border="0" data-cellpadding="0" data-cellspacing="0">
+<table>
 <colgroup>
 <col style="width: 25%" />
 <col style="width: 25%" />
@@ -177,17 +177,15 @@ the `dueDate` value.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td colspan="2"
-style="padding-top: 0pt; padding-bottom: 0pt; height: 30px; vertical-align: middle"><h2
+<td colspan="2"><h2
 id="adobe-recommends">Adobe recommends</h2></td>
-<td colspan="2"
-style="text-align: right; padding-top: 0pt; padding-bottom: 0pt; height: 30px; vertical-align: middle;"></td>
+<td colspan="2"></td>
 </tr>
 <tr class="even">
 <td colspan="4" height="10"></td>
 </tr>
 <tr class="odd">
-<td style="padding-top: 12px" width="5%"><span> <img
+<td><span> <img
 src="../../img/jabbyPanda.png" /> </span></td>
 <td width="45%"><h3
 id="in-math-operations-with-dates-in-actionscript"><a
@@ -195,8 +193,8 @@ href="http://goo.gl/ndMsl" target="_self">2 - 1 = 2 in math operations
 with dates in ActionScript</a></h3>
 <span> <a href="http://goo.gl/2ZBKN" target="_self">JabbyPanda</a>
 </span></td>
-<td style="text-align: right; padding-top: 12px;" width="5%"></td>
-<td style="text-align: right;" width="45%"></td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>

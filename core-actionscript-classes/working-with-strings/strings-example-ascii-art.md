@@ -45,65 +45,58 @@ application consists of the following files:
 
 <div>
 
-<table data-border="1" data-cellpadding="4" data-cellspacing="0">
+<table>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
 </colgroup>
-<thead data-align="left">
+<thead>
 <tr class="header">
-<th data-valign="top" width="NaN%"><p>File</p></th>
-<th data-valign="top" width="NaN%"><p>Description</p></th>
+<th><p>File</p></th>
+<th><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td headers="d17e1863 " data-valign="top"
-width="NaN%"><p>AsciiArtApp.mxml</p>
+<td headers="d17e1863 "><p>AsciiArtApp.mxml</p>
 <p>or</p>
 <p>AsciiArtApp.fla</p></td>
-<td headers="d17e1866 " data-valign="top" width="NaN%"><p>The main
+<td headers="d17e1866 "><p>The main
 application file in Flash (FLA) or Flex (MXML)</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e1863 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/asciiArt/AsciiArtBuilder.as</p></td>
-<td headers="d17e1866 " data-valign="top" width="NaN%"><p>The class that
+<td headers="d17e1863 "><p>com/example/programmingas3/asciiArt/AsciiArtBuilder.as</p></td>
+<td headers="d17e1866 "><p>The class that
 provides the main functionality of the application, including extracting
 image metadata from a text file, loading the images, and managing the
 image-to-text conversion process.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e1863 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/asciiArt/BitmapToAsciiConverter.as</p></td>
-<td headers="d17e1866 " data-valign="top" width="NaN%"><p>A class that
+<td headers="d17e1863 "><p>com/example/programmingas3/asciiArt/BitmapToAsciiConverter.as</p></td>
+<td headers="d17e1866 "><p>A class that
 provides the
 <samp>parseBitmapData()</samp>
 method for converting image data into a String version.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e1863 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/asciiArt/Image.as</p></td>
-<td headers="d17e1866 " data-valign="top" width="NaN%"><p>A class which
+<td headers="d17e1863 "><p>com/example/programmingas3/asciiArt/Image.as</p></td>
+<td headers="d17e1866 "><p>A class which
 represents a loaded bitmap image.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e1863 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/asciiArt/ImageInfo.as</p></td>
-<td headers="d17e1866 " data-valign="top" width="NaN%"><p>A class
+<td headers="d17e1863 "><p>com/example/programmingas3/asciiArt/ImageInfo.as</p></td>
+<td headers="d17e1866 "><p>A class
 representing metadata for an ASCII art image (such as title, image file
 URL, and so on).</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e1863 " data-valign="top"
-width="NaN%"><p>image/</p></td>
-<td headers="d17e1866 " data-valign="top" width="NaN%"><p>A folder
+<td headers="d17e1863 "><p>image/</p></td>
+<td headers="d17e1866 "><p>A folder
 containing images used by the application.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e1863 " data-valign="top"
-width="NaN%"><p>txt/ImageData.txt</p></td>
-<td headers="d17e1866 " data-valign="top" width="NaN%"><p>A
+<td headers="d17e1863 "><p>txt/ImageData.txt</p></td>
+<td headers="d17e1866 "><p>A
 tab-delimited text file, containing information on the images to be
 loaded by the application.</p></td>
 </tr>

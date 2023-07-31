@@ -7,42 +7,38 @@ patterns, as follows:
 
 <div>
 
-<table data-border="1" data-cellpadding="4" data-cellspacing="0">
+<table>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
 </colgroup>
-<thead data-align="left">
+<thead>
 <tr class="header">
-<th data-valign="top" width="NaN%"><p>Quantifier metacharacter</p></th>
-<th data-valign="top" width="NaN%"><p>Description</p></th>
+<th><p>Quantifier metacharacter</p></th>
+<th><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td headers="d17e7054 " data-valign="top"
-width="NaN%"><p><samp>*</samp>
+<td headers="d17e7054 "><p><samp>*</samp>
 (star)</p></td>
-<td headers="d17e7057 " data-valign="top" width="NaN%"><p>Matches the
+<td headers="d17e7057 "><p>Matches the
 previous item repeated zero or more times.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e7054 " data-valign="top"
-width="NaN%"><p><samp>+</samp>
+<td headers="d17e7054 "><p><samp>+</samp>
 (plus)</p></td>
-<td headers="d17e7057 " data-valign="top" width="NaN%"><p>Matches the
+<td headers="d17e7057 "><p>Matches the
 previous item repeated one or more times.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e7054 " data-valign="top"
-width="NaN%"><p><samp>?</samp>
+<td headers="d17e7054 "><p><samp>?</samp>
 (question mark)</p></td>
-<td headers="d17e7057 " data-valign="top" width="NaN%"><p>Matches the
+<td headers="d17e7057 "><p>Matches the
 previous item repeated zero times or one time.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e7054 " data-valign="top"
-width="NaN%"><p><samp>{</samp>
+<td headers="d17e7054 "><p><samp>{</samp>
 <samp>n</samp>
 <samp>}</samp></p>
 <p><samp>{</samp>
@@ -54,7 +50,7 @@ width="NaN%"><p><samp>{</samp>
 <samp>,</samp>
 <samp>n</samp>
 <samp>}</samp></p></td>
-<td headers="d17e7057 " data-valign="top" width="NaN%"><p>Specifies a
+<td headers="d17e7057 "><p>Specifies a
 numeric quantifier or quantifier range for the previous item:</p>
 <p><samp>/A{27}/</samp> matches the
 character A repeated 27 times.</p>

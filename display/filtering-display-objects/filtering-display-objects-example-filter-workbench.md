@@ -20,37 +20,35 @@ folder. The application consists of the following files:
 
 <div>
 
-<table data-border="1" data-cellpadding="4" data-cellspacing="0">
+<table>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
 </colgroup>
-<thead data-align="left">
+<thead>
 <tr class="header">
-<th data-valign="top" width="NaN%"><p>File</p></th>
-<th data-valign="top" width="NaN%"><p>Description</p></th>
+<th><p>File</p></th>
+<th><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td headers="d17e21949 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/filterWorkbench/FilterWorkbenchController.as</p></td>
-<td headers="d17e21952 " data-valign="top" width="NaN%"><p>Class that
+<td headers="d17e21949 "><p>com/example/programmingas3/filterWorkbench/FilterWorkbenchController.as</p></td>
+<td headers="d17e21952 "><p>Class that
 provides the main functionality of the application, including switching
 content to which filters are applied, and applying filters to
 content.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e21949 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/filterWorkbench/IFilterFactory.as</p></td>
-<td headers="d17e21952 " data-valign="top" width="NaN%"><p>Interface
+<td headers="d17e21949 "><p>com/example/programmingas3/filterWorkbench/IFilterFactory.as</p></td>
+<td headers="d17e21952 "><p>Interface
 defining common methods that are implemented by each of the filter
 factory classes. This interface defines the common functionality that
 the FilterWorkbenchController class uses to interact with the individual
 filter factory classes.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e21949 " data-valign="top" width="NaN%"><p>in folder
+<td headers="d17e21949 "><p>in folder
 com/example/programmingas3/filterWorkbench/:</p>
 <p>BevelFactory.as</p>
 <p>BlurFactory.as</p>
@@ -60,7 +58,7 @@ com/example/programmingas3/filterWorkbench/:</p>
 <p>GlowFactory.as</p>
 <p>GradientBevelFactory.as</p>
 <p>GradientGlowFactory.as</p></td>
-<td headers="d17e21952 " data-valign="top" width="NaN%"><p>Set of
+<td headers="d17e21952 "><p>Set of
 classes, each of which implements the IFilterFactory interface. Each of
 these classes provides the functionality of creating and setting values
 for a single type of filter. The filter property panels in the
@@ -69,49 +67,44 @@ particular filters, which the FilterWorkbenchController class retrieves
 and applies to the image content.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e21949 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/filterWorkbench/IFilterPanel.as</p></td>
-<td headers="d17e21952 " data-valign="top" width="NaN%"><p>Interface
+<td headers="d17e21949 "><p>com/example/programmingas3/filterWorkbench/IFilterPanel.as</p></td>
+<td headers="d17e21952 "><p>Interface
 defining common methods that are implemented by classes that define the
 user interface panels that are used to manipulate filter values in the
 application.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e21949 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/filterWorkbench/ColorStringFormatter.as</p></td>
-<td headers="d17e21952 " data-valign="top" width="NaN%"><p>Utility class
+<td headers="d17e21949 "><p>com/example/programmingas3/filterWorkbench/ColorStringFormatter.as</p></td>
+<td headers="d17e21952 "><p>Utility class
 that includes a method to convert a numeric color value to hexadecimal
 String format</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e21949 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/filterWorkbench/GradientColor.as</p></td>
-<td headers="d17e21952 " data-valign="top" width="NaN%"><p>Class that
+<td headers="d17e21949 "><p>com/example/programmingas3/filterWorkbench/GradientColor.as</p></td>
+<td headers="d17e21952 "><p>Class that
 serves as a value object, combining into a single object the three
 values (color, alpha, and ratio) that are associated with each color in
 the GradientBevelFilter and GradientGlowFilter</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e21949 " data-valign="top" width="NaN%"><p>User
+<td headers="d17e21949 "><p>User
 interface (Flex)</p></td>
-<td headers="d17e21952 " data-valign="top" width="NaN%"></td>
+<td headers="d17e21952 "></td>
 </tr>
 <tr class="even">
-<td headers="d17e21949 " data-valign="top"
-width="NaN%"><p>FilterWorkbench.mxml</p></td>
-<td headers="d17e21952 " data-valign="top" width="NaN%"><p>The main file
+<td headers="d17e21949 "><p>FilterWorkbench.mxml</p></td>
+<td headers="d17e21952 "><p>The main file
 defining the application’s user interface.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e21949 " data-valign="top"
-width="NaN%"><p>flexapp/FilterWorkbench.as</p></td>
-<td headers="d17e21952 " data-valign="top" width="NaN%"><p>Class that
+<td headers="d17e21949 "><p>flexapp/FilterWorkbench.as</p></td>
+<td headers="d17e21952 "><p>Class that
 provides the functionality for the main application’s user interface;
 this class is used as the code-behind class for the application MXML
 file.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e21949 " data-valign="top" width="NaN%"><p>In folder
+<td headers="d17e21949 "><p>In folder
 flexapp/filterPanels:</p>
 <p>BevelPanel.mxml</p>
 <p>BlurPanel.mxml</p>
@@ -121,59 +114,53 @@ flexapp/filterPanels:</p>
 <p>GlowPanel.mxml</p>
 <p>GradientBevelPanel.mxml</p>
 <p>GradientGlowPanel.mxml</p></td>
-<td headers="d17e21952 " data-valign="top" width="NaN%"><p>Set of MXML
+<td headers="d17e21952 "><p>Set of MXML
 components that provide the functionality for each panel that is used to
 set options for a single filter.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e21949 " data-valign="top"
-width="NaN%"><p>flexapp/ImageContainer.as</p></td>
-<td headers="d17e21952 " data-valign="top" width="NaN%"><p>A display
+<td headers="d17e21949 "><p>flexapp/ImageContainer.as</p></td>
+<td headers="d17e21952 "><p>A display
 object that serves as a container for the loaded image on the
 screen</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e21949 " data-valign="top"
-width="NaN%"><p>flexapp/controls/BGColorCellRenderer.as</p></td>
-<td headers="d17e21952 " data-valign="top" width="NaN%"><p>Custom cell
+<td headers="d17e21949 "><p>flexapp/controls/BGColorCellRenderer.as</p></td>
+<td headers="d17e21952 "><p>Custom cell
 renderer used to change the background color of a cell in the DataGrid
 component</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e21949 " data-valign="top"
-width="NaN%"><p>flexapp/controls/QualityComboBox.as</p></td>
-<td headers="d17e21952 " data-valign="top" width="NaN%"><p>Custom
+<td headers="d17e21949 "><p>flexapp/controls/QualityComboBox.as</p></td>
+<td headers="d17e21952 "><p>Custom
 control defining a combo box that can be used for the Quality setting in
 several filter panels.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e21949 " data-valign="top"
-width="NaN%"><p>flexapp/controls/TypeComboBox.as</p></td>
-<td headers="d17e21952 " data-valign="top" width="NaN%"><p>Custom
+<td headers="d17e21949 "><p>flexapp/controls/TypeComboBox.as</p></td>
+<td headers="d17e21952 "><p>Custom
 control defining a combo box that can be used for the Type setting in
 several filter panels.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e21949 " data-valign="top" width="NaN%"><p>User
+<td headers="d17e21949 "><p>User
 interface (Flash)</p></td>
-<td headers="d17e21952 " data-valign="top" width="NaN%"></td>
+<td headers="d17e21952 "></td>
 </tr>
 <tr class="even">
-<td headers="d17e21949 " data-valign="top"
-width="NaN%"><p>FilterWorkbench.fla</p></td>
-<td headers="d17e21952 " data-valign="top" width="NaN%"><p>The main file
+<td headers="d17e21949 "><p>FilterWorkbench.fla</p></td>
+<td headers="d17e21952 "><p>The main file
 defining the application’s user interface.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e21949 " data-valign="top"
-width="NaN%"><p>flashapp/FilterWorkbench.as</p></td>
-<td headers="d17e21952 " data-valign="top" width="NaN%"><p>Class that
+<td headers="d17e21949 "><p>flashapp/FilterWorkbench.as</p></td>
+<td headers="d17e21952 "><p>Class that
 provides the functionality for the main application’s user interface;
 this class is used as the document class for the application FLA
 file.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e21949 " data-valign="top" width="NaN%"><p>In folder
+<td headers="d17e21949 "><p>In folder
 flashapp/filterPanels:</p>
 <p>BevelPanel.as</p>
 <p>BlurPanel.as</p>
@@ -183,7 +170,7 @@ flashapp/filterPanels:</p>
 <p>GlowPanel.as</p>
 <p>GradientBevelPanel.as</p>
 <p>GradientGlowPanel.as</p></td>
-<td headers="d17e21952 " data-valign="top" width="NaN%"><p>Set of
+<td headers="d17e21952 "><p>Set of
 classes that provide the functionality for each panel that is used to
 set options for a single filter.</p>
 <p>For each class, there is also an associated MovieClip symbol in the
@@ -193,46 +180,41 @@ defined in BlurPanel.as). The components that make up the user interface
 are positioned and named within those symbols.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e21949 " data-valign="top"
-width="NaN%"><p>flashapp/ImageContainer.as</p></td>
-<td headers="d17e21952 " data-valign="top" width="NaN%"><p>A display
+<td headers="d17e21949 "><p>flashapp/ImageContainer.as</p></td>
+<td headers="d17e21952 "><p>A display
 object that serves as a container for the loaded image on the
 screen</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e21949 " data-valign="top"
-width="NaN%"><p>flashapp/BGColorCellRenderer.as</p></td>
-<td headers="d17e21952 " data-valign="top" width="NaN%"><p>Custom cell
+<td headers="d17e21949 "><p>flashapp/BGColorCellRenderer.as</p></td>
+<td headers="d17e21952 "><p>Custom cell
 renderer used to change the background color of a cell in the DataGrid
 component</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e21949 " data-valign="top"
-width="NaN%"><p>flashapp/ButtonCellRenderer.as</p></td>
-<td headers="d17e21952 " data-valign="top" width="NaN%"><p>Custom cell
+<td headers="d17e21949 "><p>flashapp/ButtonCellRenderer.as</p></td>
+<td headers="d17e21952 "><p>Custom cell
 renderer used to include a button component in a cell in the DataGrid
 component</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e21949 " data-valign="top" width="NaN%"><p>Filtered
+<td headers="d17e21949 "><p>Filtered
 image content</p></td>
-<td headers="d17e21952 " data-valign="top" width="NaN%"></td>
+<td headers="d17e21952 "></td>
 </tr>
 <tr class="odd">
-<td headers="d17e21949 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/filterWorkbench/ImageType.as</p></td>
-<td headers="d17e21952 " data-valign="top" width="NaN%"><p>This class
+<td headers="d17e21949 "><p>com/example/programmingas3/filterWorkbench/ImageType.as</p></td>
+<td headers="d17e21952 "><p>This class
 serves as a value object containing the type and URL of a single image
 file to which the application can load and apply filters. The class also
 includes a set of constants representing the actual image files
 available.</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e21949 " data-valign="top"
-width="NaN%"><p>images/sampleAnimation.swf,</p>
+<td headers="d17e21949 "><p>images/sampleAnimation.swf,</p>
 <p>images/sampleImage1.jpg,</p>
 <p>images/sampleImage2.jpg</p></td>
-<td headers="d17e21952 " data-valign="top" width="NaN%"><p>Images and
+<td headers="d17e21952 "><p>Images and
 other visual content to which filters are applied in the
 application.</p></td>
 </tr>

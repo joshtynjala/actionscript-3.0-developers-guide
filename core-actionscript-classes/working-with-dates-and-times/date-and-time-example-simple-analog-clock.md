@@ -17,36 +17,33 @@ A simple analog clock example illustrates these two date and time concepts:
 
   <div>
 
-  <table data-border="1" data-cellpadding="4" data-cellspacing="0">
+  <table>
   <colgroup>
   <col style="width: 50%" />
   <col style="width: 50%" />
   </colgroup>
-  <thead data-align="left">
+  <thead>
   <tr class="header">
-  <th data-valign="top" width="NaN%"><p>File</p></th>
-  <th data-valign="top" width="NaN%"><p>Description</p></th>
+  <th><p>File</p></th>
+  <th><p>Description</p></th>
   </tr>
   </thead>
   <tbody>
   <tr class="odd">
-  <td headers="d17e637 " data-valign="top"
-  width="NaN%"><p>SimpleClockApp.mxml</p>
+  <td headers="d17e637 "><p>SimpleClockApp.mxml</p>
   <p>or</p>
   <p>SimpleClockApp.fla</p></td>
-  <td headers="d17e640 " data-valign="top" width="NaN%"><p>The main
+  <td headers="d17e640 "><p>The main
   application file in Flash (FLA) or Flex (MXML).</p></td>
   </tr>
   <tr class="even">
-  <td headers="d17e637 " data-valign="top"
-  width="NaN%"><p>com/example/programmingas3/simpleclock/SimpleClock.as</p></td>
-  <td headers="d17e640 " data-valign="top" width="NaN%"><p>The main
+  <td headers="d17e637 "><p>com/example/programmingas3/simpleclock/SimpleClock.as</p></td>
+  <td headers="d17e640 "><p>The main
   application file.</p></td>
   </tr>
   <tr class="odd">
-  <td headers="d17e637 " data-valign="top"
-  width="NaN%"><p>com/example/programmingas3/simpleclock/AnalogClockFace.as</p></td>
-  <td headers="d17e640 " data-valign="top" width="NaN%"><p>Draws a round
+  <td headers="d17e637 "><p>com/example/programmingas3/simpleclock/AnalogClockFace.as</p></td>
+  <td headers="d17e640 "><p>Draws a round
   clock face and hour, minute, and seconds hands based on the
   time.</p></td>
   </tr>

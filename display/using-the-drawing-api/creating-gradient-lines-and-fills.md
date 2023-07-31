@@ -80,15 +80,14 @@ the same:
 
 <div>
 
-<table data-border="1" data-cellpadding="4" data-cellspacing="0">
+<table>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
 </colgroup>
 <tbody>
 <tr class="odd">
-<td data-valign="top"
-width="NaN%"><p><samp>width
+<td><p><samp>width
 = 100;</samp></p>
 <p><samp>height =
 100;</samp></p>
@@ -98,7 +97,7 @@ width="NaN%"><p><samp>width
 0;</samp></p>
 <p><samp>ty =
 0;</samp></p></td>
-<td data-valign="top" width="NaN%"><div
+<td><div
 xmlns:fn="http://www.w3.org/2005/xpath-functions"
 xmlns:fo="http://www.w3.org/1999/XSL/Format"
 xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -106,8 +105,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 </div></td>
 </tr>
 <tr class="even">
-<td data-valign="top"
-width="NaN%"><p><samp>width
+<td><p><samp>width
 = 100;</samp></p>
 <p><samp>height =
 100;</samp></p>
@@ -117,7 +115,7 @@ Math.PI/4; // 45°</samp></p>
 0;</samp></p>
 <p><samp>ty =
 0;</samp></p></td>
-<td data-valign="top" width="NaN%"><div
+<td><div
 xmlns:fn="http://www.w3.org/2005/xpath-functions"
 xmlns:fo="http://www.w3.org/1999/XSL/Format"
 xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -125,8 +123,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 </div></td>
 </tr>
 <tr class="odd">
-<td data-valign="top"
-width="NaN%"><p><samp>width
+<td><p><samp>width
 = 100;</samp></p>
 <p><samp>height =
 100;</samp></p>
@@ -136,7 +133,7 @@ Math.PI/2; // 90°</samp></p>
 0;</samp></p>
 <p><samp>ty =
 0;</samp></p></td>
-<td data-valign="top" width="NaN%"><div
+<td><div
 xmlns:fn="http://www.w3.org/2005/xpath-functions"
 xmlns:fo="http://www.w3.org/1999/XSL/Format"
 xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -154,15 +151,14 @@ method differ as indicated, but all other settings stay the same:
 
 <div>
 
-<table data-border="1" data-cellpadding="4" data-cellspacing="0">
+<table>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
 </colgroup>
 <tbody>
 <tr class="odd">
-<td data-valign="top"
-width="NaN%"><p><samp>width
+<td><p><samp>width
 = 50;</samp></p>
 <p><samp>height =
 100;</samp></p>
@@ -172,7 +168,7 @@ width="NaN%"><p><samp>width
 0;</samp></p>
 <p><samp>ty =
 0;</samp></p></td>
-<td data-valign="top" width="NaN%"><div
+<td><div
 xmlns:fn="http://www.w3.org/2005/xpath-functions"
 xmlns:fo="http://www.w3.org/1999/XSL/Format"
 xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -180,8 +176,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 </div></td>
 </tr>
 <tr class="even">
-<td data-valign="top"
-width="NaN%"><p><samp>width
+<td><p><samp>width
 = 50;</samp></p>
 <p><samp>height =
 100;</samp></p>
@@ -191,7 +186,7 @@ width="NaN%"><p><samp>width
 50;</samp></p>
 <p><samp>ty =
 0;</samp></p></td>
-<td data-valign="top" width="NaN%"><div
+<td><div
 xmlns:fn="http://www.w3.org/2005/xpath-functions"
 xmlns:fo="http://www.w3.org/1999/XSL/Format"
 xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -199,8 +194,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 </div></td>
 </tr>
 <tr class="odd">
-<td data-valign="top"
-width="NaN%"><p><samp>width
+<td><p><samp>width
 = 100;</samp></p>
 <p><samp>height =
 50;</samp></p>
@@ -210,7 +204,7 @@ Math.PI/2; // 90°</samp></p>
 0;</samp></p>
 <p><samp>ty =
 0;</samp></p></td>
-<td data-valign="top" width="NaN%"><div
+<td><div
 xmlns:fn="http://www.w3.org/2005/xpath-functions"
 xmlns:fo="http://www.w3.org/1999/XSL/Format"
 xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -218,8 +212,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 </div></td>
 </tr>
 <tr class="even">
-<td data-valign="top"
-width="NaN%"><p><samp>width
+<td><p><samp>width
 = 100;</samp></p>
 <p><samp>height =
 50;</samp></p>
@@ -229,7 +222,7 @@ Math.PI/2; // 90°</samp></p>
 0;</samp></p>
 <p><samp>ty =
 50;</samp></p></td>
-<td data-valign="top" width="NaN%"><div
+<td><div
 xmlns:fn="http://www.w3.org/2005/xpath-functions"
 xmlns:fo="http://www.w3.org/1999/XSL/Format"
 xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -247,15 +240,14 @@ following example shows:
 
 <div>
 
-<table data-border="1" data-cellpadding="4" data-cellspacing="0">
+<table>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
 </colgroup>
 <tbody>
 <tr class="odd">
-<td data-valign="top"
-width="NaN%"><p><samp>width
+<td><p><samp>width
 = 50;</samp></p>
 <p><samp>height =
 100;</samp></p>
@@ -265,7 +257,7 @@ width="NaN%"><p><samp>width
 25;</samp></p>
 <p><samp>ty =
 0;</samp></p></td>
-<td data-valign="top" width="NaN%"><div
+<td><div
 xmlns:fn="http://www.w3.org/2005/xpath-functions"
 xmlns:fo="http://www.w3.org/1999/XSL/Format"
 xmlns:xs="http://www.w3.org/2001/XMLSchema">

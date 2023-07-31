@@ -22,37 +22,34 @@ Samples/SpinningMoon folder. The application consists of the following files:
 
 <div>
 
-<table data-border="1" data-cellpadding="4" data-cellspacing="0">
+<table>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
 </colgroup>
-<thead data-align="left">
+<thead>
 <tr class="header">
-<th data-valign="top" width="NaN%"><p>File</p></th>
-<th data-valign="top" width="NaN%"><p>Description</p></th>
+<th><p>File</p></th>
+<th><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td headers="d17e20326 " data-valign="top"
-width="NaN%"><p>SpinningMoon.mxml</p>
+<td headers="d17e20326 "><p>SpinningMoon.mxml</p>
 <p>or</p>
 <p>SpinningMoon.fla</p></td>
-<td headers="d17e20329 " data-valign="top" width="NaN%"><p>The main
+<td headers="d17e20329 "><p>The main
 application file in Flex (MXML) or Flash (FLA).</p></td>
 </tr>
 <tr class="even">
-<td headers="d17e20326 " data-valign="top"
-width="NaN%"><p>com/example/programmingas3/moon/MoonSphere.as</p></td>
-<td headers="d17e20329 " data-valign="top" width="NaN%"><p>Class that
+<td headers="d17e20326 "><p>com/example/programmingas3/moon/MoonSphere.as</p></td>
+<td headers="d17e20329 "><p>Class that
 performs the functionality of loading, displaying, and animating the
 moon.</p></td>
 </tr>
 <tr class="odd">
-<td headers="d17e20326 " data-valign="top"
-width="NaN%"><p>moonMap.png</p></td>
-<td headers="d17e20329 " data-valign="top" width="NaN%"><p>Image file
+<td headers="d17e20326 "><p>moonMap.png</p></td>
+<td headers="d17e20329 "><p>Image file
 containing a photograph of the moon’s surface, which is loaded and used
 to create the animated, spinning moon.</p></td>
 </tr>

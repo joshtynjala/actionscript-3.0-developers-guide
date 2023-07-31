@@ -10,13 +10,13 @@ techniques. As an added benefit, the code you produce will be easier to read.
 
 <div xmlns:adobe="http://www.adobe.com/saxon">
 
-<table data-border="0" data-cellpadding="0" data-cellspacing="0">
+<table>
 <colgroup>
 <col style="width: 100%" />
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><table data-border="0" data-cellpadding="0" data-cellspacing="0">
+<td><table>
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
@@ -28,8 +28,7 @@ techniques. As an added benefit, the code you produce will be easier to read.
 </tr>
 <tr class="even">
 <td colspan="2" width="60%"></td>
-<td style="padding: 0"><table data-border="0" data-cellpadding="0"
-data-cellspacing="0">
+<td style="padding: 0"><table>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
