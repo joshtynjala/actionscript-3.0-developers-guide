@@ -63,26 +63,26 @@ multiple of 10:
 
     function ellipse1FrameHandler(e:Event):void
     {
-    ellipse1Back = setDepth(e, ellipse1Back);
-    e.currentTarget.z += ellipse1Back * 10;
+        ellipse1Back = setDepth(e, ellipse1Back);
+        e.currentTarget.z += ellipse1Back * 10;
     }
     function ellipse2FrameHandler(e:Event):void
     {
-    ellipse2Back = setDepth(e, ellipse1Back);
-    e.currentTarget.z += ellipse1Back * 20;
+        ellipse2Back = setDepth(e, ellipse1Back);
+        e.currentTarget.z += ellipse1Back * 20;
     }
     function setDepth(e:Event, d:int):int
     {
-    if(e.currentTarget.z > depth)
-    {
-        e.currentTarget.z = depth;
-        d = -1;
-    }
-    else if (e.currentTarget.z <  0)
-    {
-        e.currentTarget.z = 0;
-        d = 1;
-    }
+        if(e.currentTarget.z > depth)
+        {
+            e.currentTarget.z = depth;
+            d = -1;
+        }
+        else if (e.currentTarget.z <  0)
+        {
+            e.currentTarget.z = 0;
+            d = 1;
+        }
     }
 
 </div>

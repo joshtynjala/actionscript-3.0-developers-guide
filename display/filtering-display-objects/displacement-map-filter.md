@@ -63,20 +63,20 @@ the pixels in the entire image to shift horizontally to the left.
     // This function is called when the image finishes loading.
     function setupStage(event:Event):void
     {
-    // Center the loaded image on the Stage.
-    loader.x = (stage.stageWidth - loader.width) / 2;
-    loader.y = (stage.stageHeight - loader.height) / 2;
+        // Center the loaded image on the Stage.
+        loader.x = (stage.stageWidth - loader.width) / 2;
+        loader.y = (stage.stageHeight - loader.height) / 2;
 
-    // Create the displacement map image.
-    mapImage = new BitmapData(loader.width, loader.height, false, 0xFF0000);
+        // Create the displacement map image.
+        mapImage = new BitmapData(loader.width, loader.height, false, 0xFF0000);
 
-    // Create the displacement filter.
-    displacementMap = new DisplacementMapFilter();
-    displacementMap.mapBitmap = mapImage;
-    displacementMap.mapPoint = new Point(0, 0);
-    displacementMap.componentX = BitmapDataChannel.RED;
-    displacementMap.scaleX = 250;
-    loader.filters = [displacementMap];
+        // Create the displacement filter.
+        displacementMap = new DisplacementMapFilter();
+        displacementMap.mapBitmap = mapImage;
+        displacementMap.mapPoint = new Point(0, 0);
+        displacementMap.componentX = BitmapDataChannel.RED;
+        displacementMap.scaleX = 250;
+        loader.filters = [displacementMap];
     }
 
     loader.contentLoaderInfo.addEventListener(Event.COMPLETE, setupStage);
@@ -221,31 +221,31 @@ to create a magnifying glass effect on an image:
     // This function creates the displacement map filter at the mouse location.
     function magnify():void
     {
-    // Position the filter.
-    var filterX:Number = (loader.mouseX) - (map.width / 2);
-    var filterY:Number = (loader.mouseY) - (map.height / 2);
-    var pt:Point = new Point(filterX, filterY);
-    var xyFilter:DisplacementMapFilter = new DisplacementMapFilter();
-    xyFilter.mapBitmap = map;
-    xyFilter.mapPoint = pt;
-    // The red in the map image will control x displacement.
-    xyFilter.componentX = BitmapDataChannel.RED;
-    // The blue in the map image will control y displacement.
-    xyFilter.componentY = BitmapDataChannel.BLUE;
-    xyFilter.scaleX = 35;
-    xyFilter.scaleY = 35;
-    xyFilter.mode = DisplacementMapFilterMode.IGNORE;
-    loader.filters = [xyFilter];
+        // Position the filter.
+        var filterX:Number = (loader.mouseX) - (map.width / 2);
+        var filterY:Number = (loader.mouseY) - (map.height / 2);
+        var pt:Point = new Point(filterX, filterY);
+        var xyFilter:DisplacementMapFilter = new DisplacementMapFilter();
+        xyFilter.mapBitmap = map;
+        xyFilter.mapPoint = pt;
+        // The red in the map image will control x displacement.
+        xyFilter.componentX = BitmapDataChannel.RED;
+        // The blue in the map image will control y displacement.
+        xyFilter.componentY = BitmapDataChannel.BLUE;
+        xyFilter.scaleX = 35;
+        xyFilter.scaleY = 35;
+        xyFilter.mode = DisplacementMapFilterMode.IGNORE;
+        loader.filters = [xyFilter];
     }
 
     // This function is called when the mouse moves. If the mouse is
     // over the loaded image, it applies the filter.
     function moveMagnifier(event:MouseEvent):void
     {
-    if (loader.hitTestPoint(loader.mouseX, loader.mouseY))
-    {
-        magnify();
-    }
+        if (loader.hitTestPoint(loader.mouseX, loader.mouseY))
+        {
+            magnify();
+        }
     }
     loader.addEventListener(MouseEvent.MOUSE_MOVE, moveMagnifier);
 

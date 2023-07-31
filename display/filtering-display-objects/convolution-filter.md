@@ -62,18 +62,18 @@ the previous listing:
 
     function applyFilter(event:MouseEvent):void
     {
-    // Create the convolution matrix.
-    var matrix:Array = [0, 0, 0,
-                                     0, 0, 1,
-                                     0, 0, 0];
+        // Create the convolution matrix.
+        var matrix:Array = [0, 0, 0,
+                            0, 0, 1,
+                            0, 0, 0];
 
-    var convolution:ConvolutionFilter = new ConvolutionFilter();
-    convolution.matrixX = 3;
-    convolution.matrixY = 3;
-    convolution.matrix = matrix;
-    convolution.divisor = 1;
+        var convolution:ConvolutionFilter = new ConvolutionFilter();
+        convolution.matrixX = 3;
+        convolution.matrixY = 3;
+        convolution.matrix = matrix;
+        convolution.divisor = 1;
 
-    loader.filters = [convolution];
+        loader.filters = [convolution];
     }
 
     loader.addEventListener(MouseEvent.CLICK, applyFilter);
@@ -98,25 +98,25 @@ values for different effects using a three by three matrix:
 
 - Basic blur (divisor 5):
 
-           0 1 0
+       0 1 0
        1 1 1
        0 1 0
 
 - Sharpening (divisor 1):
 
-           0, -1, 0
+       0, -1, 0
       -1, 5, -1
        0, -1, 0
 
 - Edge detection (divisor 1):
 
-           0, -1, 0
+       0, -1, 0
       -1, 4, -1
        0, -1, 0
 
 - Embossing effect (divisor 1):
 
-          -2, -1, 0
+       -2, -1, 0
       -1, 1, 1
        0, 1, 2
 

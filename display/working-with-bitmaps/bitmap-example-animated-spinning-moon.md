@@ -318,7 +318,7 @@ The code does three things:
 
         if (sourceX >= textureMap.width / 2)
         {
-        sourceX = 0;
+            sourceX = 0;
         }
 
     The code checks if `sourceX` (the left edge of the rectangle) has reached
@@ -510,47 +510,47 @@ step-by-step discussion of how it works:
 
     private function createFisheyeMap(radius:int):BitmapData
     {
-    var diameter:int = 2 * radius;
+        var diameter:int = 2 * radius;
 
-    var result:BitmapData = new BitmapData(diameter,
-                                        diameter,
-                                        false,
-                                        0x808080);
+        var result:BitmapData = new BitmapData(diameter,
+                                            diameter,
+                                            false,
+                                            0x808080);
 
-    // Loop through the pixels in the image one by one
-    for (var i:int = 0; i < diameter; i++)
-    {
-        for (var j:int = 0; j < diameter; j++)
+        // Loop through the pixels in the image one by one
+        for (var i:int = 0; i < diameter; i++)
         {
-            // Calculate the x and y distances of this pixel from
-            // the center of the circle (as a percentage of the radius).
-            var pctX:Number = (i - radius) / radius;
-            var pctY:Number = (j - radius) / radius;
-
-            // Calculate the linear distance of this pixel from
-            // the center of the circle (as a percentage of the radius).
-            var pctDistance:Number = Math.sqrt(pctX * pctX + pctY * pctY);
-
-            // If the current pixel is inside the circle,
-            // set its color.
-            if (pctDistance < 1)
+            for (var j:int = 0; j < diameter; j++)
             {
-                // Calculate the appropriate color depending on the
-                // distance of this pixel from the center of the circle.
-                var red:int;
-                var green:int;
-                var blue:int;
-                var rgb:uint;
-                red = 128 * (1 + 0.75 * pctX * pctX * pctX / (1 - pctY * pctY));
-                green = 0;
-                blue = 0;
-                rgb = (red << 16 | green << 8 | blue);
-                // Set the pixel to the calculated color.
-                result.setPixel(i, j, rgb);
+                // Calculate the x and y distances of this pixel from
+                // the center of the circle (as a percentage of the radius).
+                var pctX:Number = (i - radius) / radius;
+                var pctY:Number = (j - radius) / radius;
+
+                // Calculate the linear distance of this pixel from
+                // the center of the circle (as a percentage of the radius).
+                var pctDistance:Number = Math.sqrt(pctX * pctX + pctY * pctY);
+
+                // If the current pixel is inside the circle,
+                // set its color.
+                if (pctDistance < 1)
+                {
+                    // Calculate the appropriate color depending on the
+                    // distance of this pixel from the center of the circle.
+                    var red:int;
+                    var green:int;
+                    var blue:int;
+                    var rgb:uint;
+                    red = 128 * (1 + 0.75 * pctX * pctX * pctX / (1 - pctY * pctY));
+                    green = 0;
+                    blue = 0;
+                    rgb = (red << 16 | green << 8 | blue);
+                    // Set the pixel to the calculated color.
+                    result.setPixel(i, j, rgb);
+                }
             }
         }
-    }
-    return result;
+        return result;
     }
 
 First, when the method is called it receives a parameter, `radius`, indicating
@@ -577,10 +577,10 @@ omitted) is shown here:
 
     for (var i:int = 0; i < diameter; i++)
     {
-    for (var j:int = 0; j < diameter; j++)
-    {
-        ...
-    }
+        for (var j:int = 0; j < diameter; j++)
+        {
+            ...
+        }
     }
 
 As the loops cycle through the pixels one by one, at each pixel a value (the
@@ -613,7 +613,7 @@ four steps:
 
         if (pctDistance < 1)
         {
-        ...
+            ...
         }
 
 4.  For those pixels that fall inside the circle, a color value is calculated

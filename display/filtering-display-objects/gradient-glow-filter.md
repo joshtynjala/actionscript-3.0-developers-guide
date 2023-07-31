@@ -51,15 +51,15 @@ addition, any time you click on the Stage, the strength of the blur increases.
     // Define functions to listen for two events.
     function onClick(event:MouseEvent):void
     {
-    gradientGlow.strength++;
-    shape.filters = [gradientGlow];
+        gradientGlow.strength++;
+        shape.filters = [gradientGlow];
     }
 
     function onMouseMove(event:MouseEvent):void
     {
-    gradientGlow.blurX = (stage.mouseX / stage.stageWidth) * 255;
-    gradientGlow.blurY = (stage.mouseY / stage.stageHeight) * 255;
-    shape.filters = [gradientGlow];
+        gradientGlow.blurX = (stage.mouseX / stage.stageWidth) * 255;
+        gradientGlow.blurY = (stage.mouseY / stage.stageHeight) * 255;
+        shape.filters = [gradientGlow];
     }
     stage.addEventListener(MouseEvent.CLICK, onClick);
     stage.addEventListener(MouseEvent.MOUSE_MOVE, onMouseMove);

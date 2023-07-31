@@ -25,12 +25,12 @@ properties and values:
 
 - `namespace` (String): `"Adobe::Example"`
 
-- `vendor` (String): ` "Bob Jones" `
+- `vendor` (String): `"Bob Jones"`
 
 - `version` (String): `"1"`
 
 - `description` (String):
-  ` "Creates a version of the specified image with the specified brightness" `
+  `"Creates a version of the specified image with the specified brightness"`
 
 Because metadata properties are dynamically added to the ShaderData object, you
 can use a `for..in` loop to examine the ShaderData object. Using this technique
@@ -50,10 +50,10 @@ example assumes a Shader instance named `myShader` is already created:
 
     for (var prop:String in shaderData)
     {
-    if (!(shaderData[prop] is ShaderInput) && !(shaderData[prop] is ShaderParameter))
-    {
-        metadata[metadata.length] = shaderData[prop];
-    }
+        if (!(shaderData[prop] is ShaderInput) && !(shaderData[prop] is ShaderParameter))
+        {
+            metadata[metadata.length] = shaderData[prop];
+        }
     }
 
     // do something with the metadata

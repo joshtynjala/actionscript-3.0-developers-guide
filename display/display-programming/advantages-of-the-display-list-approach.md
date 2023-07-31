@@ -154,22 +154,22 @@ The following code shows an example of a CustomCircle class:
 
     public class CustomCircle extends Shape
     {
-    var xPos:Number;
-    var yPos:Number;
-    var radius:Number;
-    var color:uint;
-    public function CustomCircle(xInput:Number,
+        var xPos:Number;
+        var yPos:Number;
+        var radius:Number;
+        var color:uint;
+        public function CustomCircle(xInput:Number,
                                         yInput:Number,
                                         rInput:Number,
                                         colorInput:uint)
-    {
-        xPos = xInput;
-        yPos = yInput;
-        radius = rInput;
-        color = colorInput;
-        this.graphics.beginFill(color);
-        this.graphics.drawCircle(xPos, yPos, radius);
-    }
+        {
+            xPos = xInput;
+            yPos = yInput;
+            radius = rInput;
+            color = colorInput;
+            this.graphics.beginFill(color);
+            this.graphics.drawCircle(xPos, yPos, radius);
+        }
     }
 
 </div>

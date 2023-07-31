@@ -40,7 +40,7 @@ portions of the image are rendered to the Stage as the image scrolls down.
 
     function scrollBitmap(event:Event):void
     {
-    myBitmapDataObject.scroll(1, 1);
+        myBitmapDataObject.scroll(1, 1);
     }
 
 </div>

@@ -133,7 +133,7 @@ container.</p></td>
 <td headers="d17e16823 " data-valign="top"
 width="NaN%"><p>BitmapData</p></td>
 <td headers="d17e16826 " data-valign="top"
-width="NaN%"><p><samp>                                             hitTest()                                         </samp></p></td>
+width="NaN%"><p><samp>hitTest()</samp></p></td>
 <td headers="d17e16829 " data-valign="top" width="NaN%"><p>Used to
 define the pixel in the BitmapData object as well as the point that you
 are checking for a hit.</p></td>
@@ -142,12 +142,12 @@ are checking for a hit.</p></td>
 <td headers="d17e16823 " data-valign="top"
 width="NaN%"><p>BitmapData</p></td>
 <td headers="d17e16826 " data-valign="top"
-width="NaN%"><p><samp>                                             applyFilter()                                         </samp></p>
-<p><samp>                                             copyChannel()                                         </samp></p>
-<p><samp>                                             merge()                                         </samp></p>
-<p><samp>                                             paletteMap()                                         </samp></p>
-<p><samp>                                             pixelDissolve()                                         </samp></p>
-<p><samp>                                             threshold()                                         </samp></p></td>
+width="NaN%"><p><samp>applyFilter()</samp></p>
+<p><samp>copyChannel()</samp></p>
+<p><samp>merge()</samp></p>
+<p><samp>paletteMap()</samp></p>
+<p><samp>pixelDissolve()</samp></p>
+<p><samp>threshold()</samp></p></td>
 <td headers="d17e16829 " data-valign="top" width="NaN%"><p>Used to
 define the positions of rectangles that define the operations.</p></td>
 </tr>
@@ -155,8 +155,8 @@ define the positions of rectangles that define the operations.</p></td>
 <td headers="d17e16823 " data-valign="top"
 width="NaN%"><p>Matrix</p></td>
 <td headers="d17e16826 " data-valign="top"
-width="NaN%"><p><samp>                                             deltaTransformPoint()                                         </samp></p>
-<p><samp>                                             transformPoint()                                         </samp></p></td>
+width="NaN%"><p><samp>deltaTransformPoint()</samp></p>
+<p><samp>transformPoint()</samp></p></td>
 <td headers="d17e16829 " data-valign="top" width="NaN%"><p>Used to
 define points for which you want to apply a transformation.</p></td>
 </tr>
@@ -164,9 +164,9 @@ define points for which you want to apply a transformation.</p></td>
 <td headers="d17e16823 " data-valign="top"
 width="NaN%"><p>Rectangle</p></td>
 <td headers="d17e16826 " data-valign="top"
-width="NaN%"><p><samp>                                             bottomRight                                         </samp></p>
-<p><samp>                                             size                                         </samp></p>
-<p><samp>                                             topLeft                                         </samp></p></td>
+width="NaN%"><p><samp>bottomRight</samp></p>
+<p><samp>size</samp></p>
+<p><samp>topLeft</samp></p></td>
 <td headers="d17e16829 " data-valign="top" width="NaN%"><p>Used to
 define these properties.</p></td>
 </tr>

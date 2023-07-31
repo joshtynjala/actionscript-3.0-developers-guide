@@ -183,8 +183,8 @@ You can also define `toJSON()` as a member of a subclass if the parent class is
 not marked final. For example, you can extend the ByteArray class and define a
 public `toJSON()` function:
 
-    package {
-
+    package
+    {
         import flash.utils.ByteArray;
         public class MyByteArray extends ByteArray
         {

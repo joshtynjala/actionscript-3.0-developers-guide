@@ -32,14 +32,14 @@ Your ActionScript code can access a shader created by Adobe Pixel Bender Toolkit
       var shader:Shader;
 
       function onLoadComplete(event:Event):void {
-      // Create a new shader and set the loaded data as its bytecode
-      shader = new Shader();
-      shader.byteCode = loader.data;
+        // Create a new shader and set the loaded data as its bytecode
+        shader = new Shader();
+        shader.byteCode = loader.data;
 
-      // You can also pass the bytecode to the Shader() constructor like this:
-      // shader = new Shader(loader.data);
+        // You can also pass the bytecode to the Shader() constructor like this:
+        // shader = new Shader(loader.data);
 
-       // do something with the shader
+        // do something with the shader
       }
 
 - Embedded in the SWF file: the shader file can be embedded in the SWF file at

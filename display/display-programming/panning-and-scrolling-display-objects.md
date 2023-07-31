@@ -37,25 +37,25 @@ property of the `scrollRect` Rectangle instance.
     // called when the "up" button is clicked
     function scrollUp(event:MouseEvent):void
     {
-    // Get access to the current scroll rectangle.
-    var rect:Rectangle = bigText.scrollRect;
-    // Decrease the y value of the rectangle by 20, effectively
-    // shifting the rectangle down by 20 pixels.
-    rect.y -= 20;
-    // Reassign the rectangle to the TextField to "apply" the change.
-    bigText.scrollRect = rect;
+        // Get access to the current scroll rectangle.
+        var rect:Rectangle = bigText.scrollRect;
+        // Decrease the y value of the rectangle by 20, effectively
+        // shifting the rectangle down by 20 pixels.
+        rect.y -= 20;
+        // Reassign the rectangle to the TextField to "apply" the change.
+        bigText.scrollRect = rect;
     }
 
     // called when the "down" button is clicked
     function scrollDown(event:MouseEvent):void
     {
-    // Get access to the current scroll rectangle.
-    var rect:Rectangle = bigText.scrollRect;
-    // Increase the y value of the rectangle by 20, effectively
-    // shifting the rectangle up by 20 pixels.
-    rect.y += 20;
-    // Reassign the rectangle to the TextField to "apply" the change.
-    bigText.scrollRect = rect;
+        // Get access to the current scroll rectangle.
+        var rect:Rectangle = bigText.scrollRect;
+        // Increase the y value of the rectangle by 20, effectively
+        // shifting the rectangle up by 20 pixels.
+        rect.y += 20;
+        // Reassign the rectangle to the TextField to "apply" the change.
+        bigText.scrollRect = rect;
     }
 
     up.addEventListener(MouseEvent.CLICK, scrollUp);

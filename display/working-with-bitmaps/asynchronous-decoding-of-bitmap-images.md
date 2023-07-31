@@ -30,7 +30,7 @@ specify the bitmap loading scheme. The default loading scheme is synchronous.
 <tbody>
 <tr class="odd">
 <td headers="d17e20992 " data-valign="top"
-width="NaN%"><p><samp>                                         ImageDecodingPolicy.ON_DEMAND                                     </samp></p></td>
+width="NaN%"><p><samp>ImageDecodingPolicy.ON_DEMAND</samp></p></td>
 <td headers="d17e20995 " data-valign="top"
 width="NaN%"><p>Synchronous</p></td>
 <td headers="d17e20998 " data-valign="top" width="NaN%"><p>Loaded images
@@ -41,7 +41,7 @@ transitions.</p></td>
 </tr>
 <tr class="even">
 <td headers="d17e20992 " data-valign="top"
-width="NaN%"><p><samp>                                         ImageDecodingPolicy.ON_LOAD                                     </samp></p></td>
+width="NaN%"><p><samp>ImageDecodingPolicy.ON_LOAD</samp></p></td>
 <td headers="d17e20995 " data-valign="top"
 width="NaN%"><p>Asynchronous</p></td>
 <td headers="d17e20998 " data-valign="top" width="NaN%"><p>Loaded images
@@ -83,60 +83,60 @@ synchronously and asynchronously:
 
     package
     {
-    import flash.display.Loader;
-    import flash.display.Sprite;
-    import flash.events.Event;
-    import flash.net.URLRequest;
-    import flash.system.ImageDecodingPolicy;
-    import flash.system.LoaderContext;
+        import flash.display.Loader;
+        import flash.display.Sprite;
+        import flash.events.Event;
+        import flash.net.URLRequest;
+        import flash.system.ImageDecodingPolicy;
+        import flash.system.LoaderContext;
 
-    public class AsyncTest extends Sprite
-    {
-        private var loaderContext:LoaderContext;
-        private var loader:Loader;
-        private var urlRequest:URLRequest;
-        public function AsyncTest()
+        public class AsyncTest extends Sprite
         {
-            //Load the image synchronously
-            loaderContext = new LoaderContext();
-            //Default behavior.
-            loaderContext.imageDecodingPolicy = ImageDecodingPolicy.ON_DEMAND;
-            loader = new Loader();
-            loadImageSync();
+            private var loaderContext:LoaderContext;
+            private var loader:Loader;
+            private var urlRequest:URLRequest;
+            public function AsyncTest()
+            {
+                //Load the image synchronously
+                loaderContext = new LoaderContext();
+                //Default behavior.
+                loaderContext.imageDecodingPolicy = ImageDecodingPolicy.ON_DEMAND;
+                loader = new Loader();
+                loadImageSync();
 
-            //Load the image asynchronously
-            loaderContext = new LoaderContext();
-            loaderContext.imageDecodingPolicy = ImageDecodingPolicy.ON_LOAD;
-            loader = new Loader();
-            loadImageASync();
-        }
+                //Load the image asynchronously
+                loaderContext = new LoaderContext();
+                loaderContext.imageDecodingPolicy = ImageDecodingPolicy.ON_LOAD;
+                loader = new Loader();
+                loadImageASync();
+            }
 
-        private function loadImageASync():void{
-            trace("Loading image asynchronously...");
-            urlRequest = new URLRequest("http://www.adobe.com/myimage.png");
-            urlRequest.useCache = false;
-            loader.load(urlRequest, loaderContext);
-            loader.contentLoaderInfo.addEventListener
-                (Event.COMPLETE, onAsyncLoadComplete);
-        }
+            private function loadImageASync():void{
+                trace("Loading image asynchronously...");
+                urlRequest = new URLRequest("http://www.adobe.com/myimage.png");
+                urlRequest.useCache = false;
+                loader.load(urlRequest, loaderContext);
+                loader.contentLoaderInfo.addEventListener
+                    (Event.COMPLETE, onAsyncLoadComplete);
+            }
 
-        private function onAsyncLoadComplete(event:Event):void{
-            trace("Async. Image Load Complete");
-        }
+            private function onAsyncLoadComplete(event:Event):void{
+                trace("Async. Image Load Complete");
+            }
 
-        private function loadImageSync():void{
-            trace("Loading image synchronously...");
-            urlRequest = new URLRequest("http://www.adobe.com/myimage.png");
-            urlRequest.useCache = false;
-            loader.load(urlRequest, loaderContext);
-            loader.contentLoaderInfo.addEventListener
-                (Event.COMPLETE, onSyncLoadComplete);
-        }
+            private function loadImageSync():void{
+                trace("Loading image synchronously...");
+                urlRequest = new URLRequest("http://www.adobe.com/myimage.png");
+                urlRequest.useCache = false;
+                loader.load(urlRequest, loaderContext);
+                loader.contentLoaderInfo.addEventListener
+                    (Event.COMPLETE, onSyncLoadComplete);
+            }
 
-        private function onSyncLoadComplete(event:Event):void{
-            trace("Sync. Image Load Complete");
+            private function onSyncLoadComplete(event:Event):void{
+                trace("Sync. Image Load Complete");
+            }
         }
-    }
     }
 
 For a demonstration of the effect of the different decoding policies, see

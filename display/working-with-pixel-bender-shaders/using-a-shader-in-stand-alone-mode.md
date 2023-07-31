@@ -36,7 +36,7 @@ finishes its work:
 
     function completeHandler(event:ShaderEvent):void
     {
-    // do something with the shader result
+        // do something with the shader result
     }
 
     job.addEventListener(ShaderEvent.COMPLETE, completeHandler);

@@ -102,16 +102,16 @@ flash.display.StageScaleMode class:
 
       function resizeDisplay(event:Event):void
       {
-      var swfWidth:int = swfStage.stageWidth;
-      var swfHeight:int = swfStage.stageHeight;
+          var swfWidth:int = swfStage.stageWidth;
+          var swfHeight:int = swfStage.stageHeight;
 
-      // Resize the main content area
-      var newContentHeight:Number = swfHeight - controlBar.height;
-      mainContent.height = newContentHeight;
-      mainContent.scaleX = mainContent.scaleY;
+          // Resize the main content area
+          var newContentHeight:Number = swfHeight - controlBar.height;
+          mainContent.height = newContentHeight;
+          mainContent.scaleX = mainContent.scaleY;
 
-      // Reposition the control bar.
-      controlBar.y = newContentHeight;
+          // Reposition the control bar.
+          controlBar.y = newContentHeight;
       }
 
 <div>
@@ -145,8 +145,8 @@ pixels to the current width and height of the stage. For example, the following
 code calculates the required scale factor for a display object named `client`:
 
     if(newWindow.stage.scaleMode != StageScaleMode.NO_SCALE){
-    client.scaleX = 72/newWindow.stage.stageWidth;
-    client.scaleY = 72/newWindow.stage.stageHeight;
+        client.scaleX = 72/newWindow.stage.stageWidth;
+        client.scaleY = 72/newWindow.stage.stageHeight;
     }
 
 <div>
@@ -206,9 +206,9 @@ code to embed Flash Player must include a `param` tag and `embed` attribute with
 the name `allowFullScreen` and value `true`, like this:
 
     <object>
-    ...
-    <param name="allowFullScreen" value="true" />
-    <embed ... allowFullScreen="true" />
+        ...
+        <param name="allowFullScreen" value="true" />
+        <embed ... allowFullScreen="true" />
     </object>
 
 In the Flash authoring tool, select File -\> Publish Settings and in the Publish
@@ -225,9 +225,9 @@ attribute. For example, if your HTML page uses the `AC_FL_RunContent()` function
 you should add the `allowFullScreen` parameter to that function call as follows:
 
     AC_FL_RunContent(
-    ...
-    'allowFullScreen','true',
-    ...
+        ...
+        'allowFullScreen','true',
+        ...
     ); //end AC code
 
 This does not apply to SWF files running in the stand-alone Flash Player.
@@ -262,9 +262,9 @@ attribute with the name `allowFullScreenInteractive` and value `true`, like
 this:
 
     <object>
-    ...
-    <param name="allowFullScreenInteractive" value="true" />
-    <embed ... allowFullScreenInteractive="true" />
+        ...
+        <param name="allowFullScreenInteractive" value="true" />
+        <embed ... allowFullScreenInteractive="true" />
     </object>
 
 In the Flash authoring tool, select File -\> Publish Settings and in the Publish
@@ -282,9 +282,9 @@ Builder), you should add the `allowFullScreenInteractive` parameter to that
 function call as follows:
 
     AC_FL_RunContent(
-    ...
-    'allowFullScreenInteractive','true',
-    ...
+        ...
+        'allowFullScreenInteractive','true',
+        ...
     ); //end AC code
 
 This does not apply to SWF files running in the stand-alone Flash Player.
@@ -327,16 +327,16 @@ as in this example:
 
     function fullScreenRedraw(event:FullScreenEvent):void
     {
-    if (event.fullScreen)
-    {
-        // Remove input text fields.
-        // Add a button that closes full-screen mode.
-    }
-    else
-    {
-        // Re-add input text fields.
-        // Remove the button that closes full-screen mode.
-    }
+        if (event.fullScreen)
+        {
+            // Remove input text fields.
+            // Add a button that closes full-screen mode.
+        }
+        else
+        {
+            // Re-add input text fields.
+            // Remove the button that closes full-screen mode.
+        }
     }
 
     mySprite.stage.addEventListener(FullScreenEvent.FULL_SCREEN, fullScreenRedraw);
@@ -432,8 +432,8 @@ stage to full-screen mode:
 
     import flash.geom.*;
     {
-    stage.fullScreenSourceRect = new Rectangle(0,0,320,240);
-    stage.displayState = StageDisplayState.FULL_SCREEN;
+        stage.fullScreenSourceRect = new Rectangle(0,0,320,240);
+        stage.displayState = StageDisplayState.FULL_SCREEN;
     }
 
 When this property is set to a valid rectangle and the `displayState` property

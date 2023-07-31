@@ -50,8 +50,8 @@ words, only a red circle will be visible.
 
     function maskSquare(event:MouseEvent):void
     {
-    square.mask = circle;
-    circle.removeEventListener(MouseEvent.CLICK, maskSquare);
+        square.mask = circle;
+        circle.removeEventListener(MouseEvent.CLICK, maskSquare);
     }
 
     circle.addEventListener(MouseEvent.CLICK, maskSquare);

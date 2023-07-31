@@ -32,7 +32,7 @@ may look like the following:
                 Expired At: 2005-04-12T01:00:00 Issuing Weather Forecast Office
                 Homepage: http://pajk.arh.noaa.gov
             </description>
-    </item>
+        </item>
         <item>
             <title>
                 Short Term Forecast - Haines Borough (Alaska)

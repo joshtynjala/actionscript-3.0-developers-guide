@@ -336,8 +336,8 @@ are used to create the desired BlurFilter instance:
 
     public function modifyFilter(blurX:Number = 4, blurY:Number = 4, quality:int = 1):void
     {
-    _filter = new BlurFilter(blurX, blurY, quality);
-    dispatchEvent(new Event(Event.CHANGE));
+        _filter = new BlurFilter(blurX, blurY, quality);
+        dispatchEvent(new Event(Event.CHANGE));
     }
 
 On the other hand, if the user selects the Convolution filter, that filter
@@ -348,17 +348,17 @@ called when the user selects a different value on the filter panel:
     private var _filter:ConvolutionFilter;
 
     public function modifyFilter(matrixX:Number = 0,
-                                                matrixY:Number = 0,
-                                                matrix:Array = null,
-                                                divisor:Number = 1.0,
-                                                bias:Number = 0.0,
-                                                preserveAlpha:Boolean = true,
-                                                clamp:Boolean = true,
-                                                color:uint = 0,
-                                                alpha:Number = 0.0):void
+                                    matrixY:Number = 0,
+                                    matrix:Array = null,
+                                    divisor:Number = 1.0,
+                                    bias:Number = 0.0,
+                                    preserveAlpha:Boolean = true,
+                                    clamp:Boolean = true,
+                                    color:uint = 0,
+                                    alpha:Number = 0.0):void
     {
-    _filter = new ConvolutionFilter(matrixX, matrixY, matrix, divisor, bias, preserveAlpha, clamp, color, alpha);
-    dispatchEvent(new Event(Event.CHANGE));
+        _filter = new ConvolutionFilter(matrixX, matrixY, matrix, divisor, bias, preserveAlpha, clamp, color, alpha);
+        dispatchEvent(new Event(Event.CHANGE));
     }
 
 Notice that in each case, when the filter values are changed, the factory object
@@ -474,23 +474,23 @@ method. That method, in turn, calls the `applyTemporaryFilter()` method:
 
     private function filterChange(event:Event):void
     {
-    applyTemporaryFilter();
+        applyTemporaryFilter();
     }
 
     private function applyTemporaryFilter():void
     {
-    var currentFilter:BitmapFilter = _filterFactory.getFilter();
+        var currentFilter:BitmapFilter = _filterFactory.getFilter();
 
-    // Add the current filter to the set temporarily
-    _currentFilters.push(currentFilter);
+        // Add the current filter to the set temporarily
+        _currentFilters.push(currentFilter);
 
-    // Refresh the filter set of the filter target
-    _currentTarget.filters = _currentFilters;
+        // Refresh the filter set of the filter target
+        _currentTarget.filters = _currentFilters;
 
-    // Remove the current filter from the set
-    // (This doesn't remove it from the filter target, since
-    // the target uses a copy of the filters array internally.)
-    _currentFilters.pop();
+        // Remove the current filter from the set
+        // (This doesn't remove it from the filter target, since
+        // the target uses a copy of the filters array internally.)
+        _currentFilters.pop();
     }
 
 The work of applying the filter to the display object occurs within the

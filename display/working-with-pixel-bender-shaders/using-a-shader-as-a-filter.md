@@ -91,58 +91,58 @@ the document class for the FLA file in Flash Professional:
 
     package
     {
-    import flash.display.GradientType;
-    import flash.display.Graphics;
-    import flash.display.Shader;
-    import flash.display.Shape;
-    import flash.display.Sprite;
-    import flash.filters.ShaderFilter;
-    import flash.events.Event;
-    import flash.geom.Matrix;
-    import flash.net.URLLoader;
-    import flash.net.URLLoaderDataFormat;
-    import flash.net.URLRequest;
+        import flash.display.GradientType;
+        import flash.display.Graphics;
+        import flash.display.Shader;
+        import flash.display.Shape;
+        import flash.display.Sprite;
+        import flash.filters.ShaderFilter;
+        import flash.events.Event;
+        import flash.geom.Matrix;
+        import flash.net.URLLoader;
+        import flash.net.URLLoaderDataFormat;
+        import flash.net.URLRequest;
 
-    public class InvertRGB extends Sprite
-    {
-        private var shader:Shader;
-        private var loader:URLLoader;
-
-        public function InvertRGB()
+        public class InvertRGB extends Sprite
         {
-            init();
+            private var shader:Shader;
+            private var loader:URLLoader;
+
+            public function InvertRGB()
+            {
+                init();
+            }
+
+            private function init():void
+            {
+                loader = new URLLoader();
+                loader.dataFormat = URLLoaderDataFormat.BINARY;
+                loader.addEventListener(Event.COMPLETE, onLoadComplete);
+                loader.load(new URLRequest("invertRGB.pbj"));
+            }
+
+
+            private function onLoadComplete(event:Event):void
+            {
+                shader = new Shader(loader.data);
+
+                var target:Shape = new Shape();
+                addChild(target);
+
+                var g:Graphics = target.graphics;
+                var c:Array = [0x990000, 0x445500, 0x007799];
+                var a:Array = [255, 255, 255];
+                var r:Array = [0, 127, 255];
+                var m:Matrix = new Matrix();
+                m.createGradientBox(w, h);
+                g.beginGradientFill(GradientType.LINEAR, c, a, r, m);
+                g.drawRect(10, 10, w, h);
+                g.endFill();
+
+                var invertFilter:ShaderFilter = new ShaderFilter(shader);
+                target.filters = [invertFilter];
+            }
         }
-
-        private function init():void
-        {
-            loader = new URLLoader();
-            loader.dataFormat = URLLoaderDataFormat.BINARY;
-            loader.addEventListener(Event.COMPLETE, onLoadComplete);
-            loader.load(new URLRequest("invertRGB.pbj"));
-        }
-
-
-        private function onLoadComplete(event:Event):void
-        {
-            shader = new Shader(loader.data);
-
-            var target:Shape = new Shape();
-            addChild(target);
-
-            var g:Graphics = target.graphics;
-            var c:Array = [0x990000, 0x445500, 0x007799];
-            var a:Array = [255, 255, 255];
-            var r:Array = [0, 127, 255];
-            var m:Matrix = new Matrix();
-            m.createGradientBox(w, h);
-            g.beginGradientFill(GradientType.LINEAR, c, a, r, m);
-            g.drawRect(10, 10, w, h);
-            g.endFill();
-
-            var invertFilter:ShaderFilter = new ShaderFilter(shader);
-            target.filters = [invertFilter];
-        }
-    }
     }
 
 For more information on applying filters, see

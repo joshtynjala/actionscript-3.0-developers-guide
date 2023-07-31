@@ -65,17 +65,17 @@ completely transparent:
     // frame) is what causes the animation to occur.
     function fadeCircle(event:Event):void
     {
-    circle.alpha -= .05;
+        circle.alpha -= .05;
 
-    if (circle.alpha <= 0)
-    {
-        circle.removeEventListener(Event.ENTER_FRAME, fadeCircle);
-    }
+        if (circle.alpha <= 0)
+        {
+            circle.removeEventListener(Event.ENTER_FRAME, fadeCircle);
+        }
     }
 
     function startAnimation(event:MouseEvent):void
     {
-    circle.addEventListener(Event.ENTER_FRAME, fadeCircle);
+        circle.addEventListener(Event.ENTER_FRAME, fadeCircle);
     }
 
     circle.addEventListener(MouseEvent.CLICK, startAnimation);

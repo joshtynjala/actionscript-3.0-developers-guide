@@ -55,7 +55,7 @@ object in this example:
     pictLdr.contentLoaderInfo.addEventListener(Event.COMPLETE, imgLoaded);
     function imgLoaded(event:Event):void
     {
-    container.addChild(pictLdr.content);
+        container.addChild(pictLdr.content);
     }
 
 </div>
@@ -111,8 +111,8 @@ listener to the LoaderInfo object, as in the following code:
 
     function loaded(event:Event):void
     {
-    var content:Sprite = event.target.content;
-    content.scaleX = 2;
+        var content:Sprite = event.target.content;
+        content.scaleX = 2;
     }
 
 For more information, see
@@ -334,7 +334,7 @@ use the new class:
     l.contentLoaderInfo.addEventListener(Event.COMPLETE, loadComplete);
     l.load("my.swf");
     function loadComplete(e:Event) {
-    trace('load complete!');
+        trace('load complete!');
     }
 
 This code can be updated to use ProLoader as follows:
@@ -347,7 +347,7 @@ This code can be updated to use ProLoader as follows:
     l.contentLoaderInfo.addEventListener(Event.COMPLETE, loadComplete);
     l.load("my.swf");
     function loadComplete(e:Event) {
-    trace('load complete!');
+        trace('load complete!');
     }
 
 </div>

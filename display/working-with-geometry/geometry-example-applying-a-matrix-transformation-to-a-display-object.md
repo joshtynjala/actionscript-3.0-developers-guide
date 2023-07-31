@@ -143,11 +143,11 @@ radians:
 
     if (unit == "degrees")
     {
-    angle = Math.PI * 2 * angle / 360;
+        angle = Math.PI * 2 * angle / 360;
     }
     if (unit == "gradients")
     {
-    angle = Math.PI * 2 * angle / 100;
+        angle = Math.PI * 2 * angle / 100;
     }
 
 A `skewMatrix` Matrix object is created and adjusted to apply the skew
@@ -183,8 +183,8 @@ matrix object:
 
     if (percent)
     {
-    xScale = xScale / 100;
-    yScale = yScale / 100;
+        xScale = xScale / 100;
+        yScale = yScale / 100;
     }
     sourceMatrix.scale(xScale, yScale);
     return sourceMatrix;
@@ -213,11 +213,11 @@ matrix object:
 
     if (unit == "degrees")
     {
-    angle = Math.PI * 2 * angle / 360;
+        angle = Math.PI * 2 * angle / 360;
     }
     if (unit == "gradients")
     {
-    angle = Math.PI * 2 * angle / 100;
+        angle = Math.PI * 2 * angle / 100;
     }
     sourceMatrix.rotate(angle);
     return sourceMatrix;
@@ -240,13 +240,13 @@ property of the `transform` property of the display object, to the
 `Matrix.transform()` method, as follows:
 
     tempMatrix = MatrixTransformer.transform(tempMatrix,
-      xScaleSlider.value,
-      yScaleSlider.value,
-      dxSlider.value,
-      dySlider.value,
-      rotationSlider.value,
-      skewSlider.value,
-      skewSide);
+        xScaleSlider.value,
+        yScaleSlider.value,
+        dxSlider.value,
+        dySlider.value,
+        rotationSlider.value,
+        skewSlider.value,
+        skewSide);
 
 The application then applies the return value to the `matrix` property of the
 `transform` property of the display object, triggering the transformation:

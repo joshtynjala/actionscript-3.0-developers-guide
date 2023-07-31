@@ -40,9 +40,9 @@ at the coordinate 50, 50 and traces the returned value.
 
     for (var i:uint = 0; i < 100; i++)
     {
-    var red:uint = 0xFF0000;
-    myBitmapData.setPixel(50, i, red);
-    myBitmapData.setPixel(i, 50, red);
+        var red:uint = 0xFF0000;
+        myBitmapData.setPixel(50, i, red);
+        myBitmapData.setPixel(i, 50, red);
     }
 
     var myBitmapImage:Bitmap = new Bitmap(myBitmapData);

@@ -38,7 +38,7 @@ timeline would make it so that clicking the button causes the animation to play:
     // bicycle animation to play.
     function playAnimation(event:MouseEvent):void
     {
-    bicycle.play();
+        bicycle.play();
     }
     // Register the function as a listener with the button.
     startButton.addEventListener(MouseEvent.CLICK, playAnimation);
@@ -69,14 +69,14 @@ the listener function, as follows:
     // it's called once per frame.
     function everyFrame(event:Event):void
     {
-    if (bicycle.currentFrame == 1)
-    {
-        bicycle.gotoAndStop(bicycle.totalFrames);
-    }
-    else
-    {
-        bicycle.prevFrame();
-    }
+        if (bicycle.currentFrame == 1)
+        {
+            bicycle.gotoAndStop(bicycle.totalFrames);
+        }
+        else
+        {
+            bicycle.prevFrame();
+        }
     }
     bicycle.addEventListener(Event.ENTER_FRAME, everyFrame);
 
@@ -137,7 +137,7 @@ following code:
 
     if (robot.currentLabel == "walking")
     {
-    // do something
+        // do something
     }
 
 Flash Player 11.3 and AIR 3.3 added the `frameLabel` event to the FrameLabel
@@ -155,7 +155,7 @@ handler for the `frameLabel` event:
     myFrameLabel.addEventListener(Event.FRAME_LABEL, onFrameLabel);
 
     function onFrameLabel(e:Event):void {
-    //do something
+        // do something
     }
 
 </div>

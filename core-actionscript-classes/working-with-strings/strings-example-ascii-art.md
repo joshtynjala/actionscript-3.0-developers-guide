@@ -27,8 +27,7 @@ application:
 xmlns:fo="http://www.w3.org/1999/XSL/Format"
 xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-![ASCII art - an image rendered with text
-characters](../../img/st_ascii_art.png)
+![ASCII art - an image rendered with text characters](../../img/st_ascii_art.png)
 
 <div>
 

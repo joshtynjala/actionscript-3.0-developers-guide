@@ -61,16 +61,16 @@ from a display object container:
 
     function traceDisplayList(container:DisplayObjectContainer,                                                indentString:String = ""):void
     {
-    var child:DisplayObject;
-    for (var i:uint=0; i < container.numChildren; i++)
-    {
-        child = container.getChildAt(i);
-        trace(indentString, child, child.name);
-        if (container.getChildAt(i) is DisplayObjectContainer)
+        var child:DisplayObject;
+        for (var i:uint=0; i < container.numChildren; i++)
         {
-            traceDisplayList(DisplayObjectContainer(child), indentString + "    ")
+            child = container.getChildAt(i);
+            trace(indentString, child, child.name);
+            if (container.getChildAt(i) is DisplayObjectContainer)
+            {
+                traceDisplayList(DisplayObjectContainer(child), indentString + "    ")
+            }
         }
-    }
     }
 
 <div>

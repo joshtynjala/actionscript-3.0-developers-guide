@@ -21,46 +21,46 @@ patterns, as follows:
 <tbody>
 <tr class="odd">
 <td headers="d17e7054 " data-valign="top"
-width="NaN%"><p><samp>                   *                  </samp>
+width="NaN%"><p><samp>*</samp>
 (star)</p></td>
 <td headers="d17e7057 " data-valign="top" width="NaN%"><p>Matches the
 previous item repeated zero or more times.</p></td>
 </tr>
 <tr class="even">
 <td headers="d17e7054 " data-valign="top"
-width="NaN%"><p><samp>                   +                  </samp>
+width="NaN%"><p><samp>+</samp>
 (plus)</p></td>
 <td headers="d17e7057 " data-valign="top" width="NaN%"><p>Matches the
 previous item repeated one or more times.</p></td>
 </tr>
 <tr class="odd">
 <td headers="d17e7054 " data-valign="top"
-width="NaN%"><p><samp>                   ?                  </samp>
+width="NaN%"><p><samp>?</samp>
 (question mark)</p></td>
 <td headers="d17e7057 " data-valign="top" width="NaN%"><p>Matches the
 previous item repeated zero times or one time.</p></td>
 </tr>
 <tr class="even">
 <td headers="d17e7054 " data-valign="top"
-width="NaN%"><p><samp>                   {                  </samp>
+width="NaN%"><p><samp>{</samp>
 <samp>n</samp>
 <samp>}</samp></p>
-<p><samp>                   {                  </samp>
+<p><samp>{</samp>
 <samp>n</samp>
 <samp>,}</samp></p>
 <p>and</p>
-<p><samp>                   {                  </samp>
+<p><samp>{</samp>
 <samp>n</samp>
 <samp>,</samp>
 <samp>n</samp>
 <samp>}</samp></p></td>
 <td headers="d17e7057 " data-valign="top" width="NaN%"><p>Specifies a
 numeric quantifier or quantifier range for the previous item:</p>
-<p><samp>                   /A{27}/                  </samp> matches the
+<p><samp>/A{27}/</samp> matches the
 character A repeated 27 times.</p>
-<p><samp>                   /A{3,}/                  </samp> matches the
+<p><samp>/A{3,}/</samp> matches the
 character A repeated 3 or more times.</p>
-<p><samp>                   /A{3,5}/                  </samp> matches
+<p><samp>/A{3,5}/</samp> matches
 the character A repeated 3 to 5 times.</p></td>
 </tr>
 </tbody>

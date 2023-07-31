@@ -162,14 +162,14 @@ At runtime, the following ActionScript:
 
     function frameFunc(event:Event)
     {
-    if (Wheel != null)
-    {
-        var mat:Matrix = Wheel.transform.matrix;
-        var pt = new Point(90, 0);
-        pt = mat.transformPoint(pt);
+        if (Wheel != null)
+        {
+            var mat:Matrix = Wheel.transform.matrix;
+            var pt = new Point(90, 0);
+            pt = mat.transformPoint(pt);
 
-        ik.moveTo(pt);
-    }
+            ik.moveTo(pt);
+        }
     }
 
 </div>
@@ -341,14 +341,14 @@ target position or as far as it can within the constraints set by its
 
     function frameFunc(event:Event)
     {
-    if (Wheel != null)
-    {
-        var mat:Matrix = Wheel.transform.matrix;
-        var pt = new Point(90,0);
-        pt = mat.transformPoint(pt);
+        if (Wheel != null)
+        {
+            var mat:Matrix = Wheel.transform.matrix;
+            var pt = new Point(90,0);
+            pt = mat.transformPoint(pt);
 
-        ik.moveTo(pt);
-    }
+            ik.moveTo(pt);
+        }
     }
 
 </div>
@@ -396,11 +396,11 @@ properties for the joint.
     var bone:IKBone = arm.getBoneByName("c");
     var joint:IKJoint = bone.tailJoint;
     if (arm.springsEnabled) {
-    joint.springStrength = 50; //medium spring strength
-    joint.springDamping = 10; //light damping resistance
-    if (joint.hasSpringAngle) {
-        joint.setSpringAngle(30); //set angle for rotational spring
-    }
+        joint.springStrength = 50; //medium spring strength
+        joint.springDamping = 10; //light damping resistance
+        if (joint.hasSpringAngle) {
+            joint.setSpringAngle(30); //set angle for rotational spring
+        }
     }
 
 </div>
@@ -434,11 +434,11 @@ exceeded.
 
     function timeLimitFunction(evt:IKEvent):void
     {
-    trace("timeLimit hit");
-    trace("time is " + evt.time);
-    trace("distance is " + evt.distance);
-    trace("iterationCount is " + evt.iterationCount);
-    trace("IKJoint is " + evt.joint.name);
+        trace("timeLimit hit");
+        trace("time is " + evt.time);
+        trace("distance is " + evt.distance);
+        trace("iterationCount is " + evt.iterationCount);
+        trace("IKJoint is " + evt.joint.name);
     }
 
 </div>

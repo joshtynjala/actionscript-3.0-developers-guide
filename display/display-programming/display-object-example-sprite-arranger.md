@@ -282,23 +282,23 @@ GeometricSprite subclasses, as the following example shows:
 
     public function addShape(shapeName:String, len:Number):void
     {
-    var newShape:GeometricSprite;
-    switch (shapeName)
-    {
-        case "Triangle":
-            newShape = new TriangleSprite(len);
-            break;
+        var newShape:GeometricSprite;
+        switch (shapeName)
+        {
+            case "Triangle":
+                newShape = new TriangleSprite(len);
+                break;
 
-        case "Square":
-            newShape = new SquareSprite(len);
-            break;
+            case "Square":
+                newShape = new SquareSprite(len);
+                break;
 
-        case "Circle":
-            newShape = new CircleSprite(len);
-            break;
-    }
-    newShape.alpha = 0.8;
-    this.addChild(newShape);
+            case "Circle":
+                newShape = new CircleSprite(len);
+                break;
+        }
+        newShape.alpha = 0.8;
+        this.addChild(newShape);
     }
 
 Each constructor method calls the `drawShape()` method, which uses the
@@ -329,7 +329,7 @@ information-reporting task by overriding the `toString()` method, as follows:
 
     public override function toString():String
     {
-    return this.shapeType + " of size " + this.size + " at " + this.x + ", " + this.y;
+        return this.shapeType + " of size " + this.size + " at " + this.x + ", " + this.y;
     }
 
 The `shapeType` property is set to the appropriate value in the constructor
@@ -348,8 +348,8 @@ string listing each child, as follows:
     var child:DisplayObject;
     for (var i:int=0; i < this.numChildren; i++)
     {
-    child = this.getChildAt(i);
-    desc += i + ": " + child + '\n';
+        child = this.getChildAt(i);
+        desc += i + ": " + child + '\n';
     }
 
 The resulting string is used to set the `text` property of the `outputTxt` text
@@ -438,11 +438,11 @@ application calls the corresponding method of the DrawingCanvas class:
 
     public function moveToBack(shape:GeometricSprite):void
     {
-    var index:int = this.getChildIndex(shape);
-    if (index > 0)
-    {
-        this.setChildIndex(shape, 0);
-    }
+        var index:int = this.getChildIndex(shape);
+        if (index > 0)
+        {
+            this.setChildIndex(shape, 0);
+        }
     }
 
 The method uses the `setChildIndex()` method (inherited from the
@@ -455,11 +455,11 @@ instance:
 
     public function moveDown(shape:GeometricSprite):void
     {
-    var index:int = this.getChildIndex(shape);
-    if (index > 0)
-    {
-        this.setChildIndex(shape, index - 1);
-    }
+        var index:int = this.getChildIndex(shape);
+        if (index > 0)
+        {
+            this.setChildIndex(shape, index - 1);
+        }
     }
 
 The `moveUp()` and `moveToFront()` methods work similarly to the `moveToBack()`

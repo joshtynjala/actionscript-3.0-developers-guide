@@ -88,16 +88,16 @@ the same:
 <tbody>
 <tr class="odd">
 <td data-valign="top"
-width="NaN%"><p><samp>                                             width
-= 100;                                         </samp></p>
-<p><samp>                                             height =
-100;                                         </samp></p>
-<p><samp>                                             rotation =
-0;                                         </samp></p>
-<p><samp>                                             tx =
-0;                                         </samp></p>
-<p><samp>                                             ty =
-0;                                         </samp></p></td>
+width="NaN%"><p><samp>width
+= 100;</samp></p>
+<p><samp>height =
+100;</samp></p>
+<p><samp>rotation =
+0;</samp></p>
+<p><samp>tx =
+0;</samp></p>
+<p><samp>ty =
+0;</samp></p></td>
 <td data-valign="top" width="NaN%"><div
 xmlns:fn="http://www.w3.org/2005/xpath-functions"
 xmlns:fo="http://www.w3.org/1999/XSL/Format"
@@ -107,16 +107,16 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 </tr>
 <tr class="even">
 <td data-valign="top"
-width="NaN%"><p><samp>                                             width
-= 100;                                         </samp></p>
-<p><samp>                                             height =
-100;                                         </samp></p>
-<p><samp>                                             rotation =
-Math.PI/4; // 45°                                         </samp></p>
-<p><samp>                                             tx =
-0;                                         </samp></p>
-<p><samp>                                             ty =
-0;                                         </samp></p></td>
+width="NaN%"><p><samp>width
+= 100;</samp></p>
+<p><samp>height =
+100;</samp></p>
+<p><samp>rotation =
+Math.PI/4; // 45°</samp></p>
+<p><samp>tx =
+0;</samp></p>
+<p><samp>ty =
+0;</samp></p></td>
 <td data-valign="top" width="NaN%"><div
 xmlns:fn="http://www.w3.org/2005/xpath-functions"
 xmlns:fo="http://www.w3.org/1999/XSL/Format"
@@ -126,16 +126,16 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 </tr>
 <tr class="odd">
 <td data-valign="top"
-width="NaN%"><p><samp>                                             width
-= 100;                                         </samp></p>
-<p><samp>                                             height =
-100;                                         </samp></p>
-<p><samp>                                             rotation =
-Math.PI/2; // 90°                                         </samp></p>
-<p><samp>                                             tx =
-0;                                         </samp></p>
-<p><samp>                                             ty =
-0;                                         </samp></p></td>
+width="NaN%"><p><samp>width
+= 100;</samp></p>
+<p><samp>height =
+100;</samp></p>
+<p><samp>rotation =
+Math.PI/2; // 90°</samp></p>
+<p><samp>tx =
+0;</samp></p>
+<p><samp>ty =
+0;</samp></p></td>
 <td data-valign="top" width="NaN%"><div
 xmlns:fn="http://www.w3.org/2005/xpath-functions"
 xmlns:fo="http://www.w3.org/1999/XSL/Format"
@@ -162,16 +162,16 @@ method differ as indicated, but all other settings stay the same:
 <tbody>
 <tr class="odd">
 <td data-valign="top"
-width="NaN%"><p><samp>                                             width
-= 50;                                         </samp></p>
-<p><samp>                                             height =
-100;                                         </samp></p>
-<p><samp>                                             rotation =
-0;                                         </samp></p>
-<p><samp>                                             tx =
-0;                                         </samp></p>
-<p><samp>                                             ty =
-0;                                         </samp></p></td>
+width="NaN%"><p><samp>width
+= 50;</samp></p>
+<p><samp>height =
+100;</samp></p>
+<p><samp>rotation =
+0;</samp></p>
+<p><samp>tx =
+0;</samp></p>
+<p><samp>ty =
+0;</samp></p></td>
 <td data-valign="top" width="NaN%"><div
 xmlns:fn="http://www.w3.org/2005/xpath-functions"
 xmlns:fo="http://www.w3.org/1999/XSL/Format"
@@ -181,16 +181,16 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 </tr>
 <tr class="even">
 <td data-valign="top"
-width="NaN%"><p><samp>                                             width
-= 50;                                         </samp></p>
-<p><samp>                                             height =
-100;                                         </samp></p>
-<p><samp>                                             rotation =
-0                                         </samp></p>
-<p><samp>                                             tx =
-50;                                         </samp></p>
-<p><samp>                                             ty =
-0;                                         </samp></p></td>
+width="NaN%"><p><samp>width
+= 50;</samp></p>
+<p><samp>height =
+100;</samp></p>
+<p><samp>rotation =
+0</samp></p>
+<p><samp>tx =
+50;</samp></p>
+<p><samp>ty =
+0;</samp></p></td>
 <td data-valign="top" width="NaN%"><div
 xmlns:fn="http://www.w3.org/2005/xpath-functions"
 xmlns:fo="http://www.w3.org/1999/XSL/Format"
@@ -200,16 +200,16 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 </tr>
 <tr class="odd">
 <td data-valign="top"
-width="NaN%"><p><samp>                                             width
-= 100;                                         </samp></p>
-<p><samp>                                             height =
-50;                                         </samp></p>
-<p><samp>                                             rotation =
-Math.PI/2; // 90°                                         </samp></p>
-<p><samp>                                             tx =
-0;                                         </samp></p>
-<p><samp>                                             ty =
-0;                                         </samp></p></td>
+width="NaN%"><p><samp>width
+= 100;</samp></p>
+<p><samp>height =
+50;</samp></p>
+<p><samp>rotation =
+Math.PI/2; // 90°</samp></p>
+<p><samp>tx =
+0;</samp></p>
+<p><samp>ty =
+0;</samp></p></td>
 <td data-valign="top" width="NaN%"><div
 xmlns:fn="http://www.w3.org/2005/xpath-functions"
 xmlns:fo="http://www.w3.org/1999/XSL/Format"
@@ -219,16 +219,16 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 </tr>
 <tr class="even">
 <td data-valign="top"
-width="NaN%"><p><samp>                                             width
-= 100;                                         </samp></p>
-<p><samp>                                             height =
-50;                                         </samp></p>
-<p><samp>                                             rotation =
-Math.PI/2; // 90°                                         </samp></p>
-<p><samp>                                             tx =
-0;                                         </samp></p>
-<p><samp>                                             ty =
-50;                                         </samp></p></td>
+width="NaN%"><p><samp>width
+= 100;</samp></p>
+<p><samp>height =
+50;</samp></p>
+<p><samp>rotation =
+Math.PI/2; // 90°</samp></p>
+<p><samp>tx =
+0;</samp></p>
+<p><samp>ty =
+50;</samp></p></td>
 <td data-valign="top" width="NaN%"><div
 xmlns:fn="http://www.w3.org/2005/xpath-functions"
 xmlns:fo="http://www.w3.org/1999/XSL/Format"
@@ -255,16 +255,16 @@ following example shows:
 <tbody>
 <tr class="odd">
 <td data-valign="top"
-width="NaN%"><p><samp>                                             width
-= 50;                                         </samp></p>
-<p><samp>                                             height =
-100;                                         </samp></p>
-<p><samp>                                             rotation =
-0;                                         </samp></p>
-<p><samp>                                             tx =
-25;                                         </samp></p>
-<p><samp>                                             ty =
-0;                                         </samp></p></td>
+width="NaN%"><p><samp>width
+= 50;</samp></p>
+<p><samp>height =
+100;</samp></p>
+<p><samp>rotation =
+0;</samp></p>
+<p><samp>tx =
+25;</samp></p>
+<p><samp>ty =
+0;</samp></p></td>
 <td data-valign="top" width="NaN%"><div
 xmlns:fn="http://www.w3.org/2005/xpath-functions"
 xmlns:fo="http://www.w3.org/1999/XSL/Format"

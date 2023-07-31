@@ -68,82 +68,82 @@ the document class for a FLA file in Flash Professional:
 
     package
     {
-    import flash.display.Shader;
-    import flash.display.Sprite;
-    import flash.events.Event;
-    import flash.geom.Point;
-    import flash.net.URLLoader;
-    import flash.net.URLLoaderDataFormat;
-    import flash.net.URLRequest;
+        import flash.display.Shader;
+        import flash.display.Sprite;
+        import flash.events.Event;
+        import flash.geom.Point;
+        import flash.net.URLLoader;
+        import flash.net.URLLoaderDataFormat;
+        import flash.net.URLRequest;
 
-    public class ThreePointGradient extends Sprite
-    {
-        private var canvas:Sprite;
-        private var shader:Shader;
-        private var loader:URLLoader;
-
-        private var topMiddle:Point;
-        private var bottomLeft:Point;
-        private var bottomRight:Point;
-
-        private var colorAngle:Number = 0.0;
-        private const d120:Number = 120 / 180 * Math.PI; // 120 degrees in radians
-
-
-        public function ThreePointGradient()
+        public class ThreePointGradient extends Sprite
         {
-            init();
+            private var canvas:Sprite;
+            private var shader:Shader;
+            private var loader:URLLoader;
+
+            private var topMiddle:Point;
+            private var bottomLeft:Point;
+            private var bottomRight:Point;
+
+            private var colorAngle:Number = 0.0;
+            private const d120:Number = 120 / 180 * Math.PI; // 120 degrees in radians
+
+
+            public function ThreePointGradient()
+            {
+                init();
+            }
+
+            private function init():void
+            {
+                canvas = new Sprite();
+                addChild(canvas);
+
+                var size:int = 400;
+                topMiddle = new Point(size / 2, 10);
+                bottomLeft = new Point(0, size - 10);
+                bottomRight = new Point(size, size - 10);
+
+                loader = new URLLoader();
+                loader.dataFormat = URLLoaderDataFormat.BINARY;
+                loader.addEventListener(Event.COMPLETE, onLoadComplete);
+                loader.load(new URLRequest("ThreePointGradient.pbj"));
+            }
+
+            private function onLoadComplete(event:Event):void
+            {
+                shader = new Shader(loader.data);
+
+                shader.data.point1.value = [topMiddle.x, topMiddle.y];
+                shader.data.point2.value = [bottomLeft.x, bottomLeft.y];
+                shader.data.point3.value = [bottomRight.x, bottomRight.y];
+
+                addEventListener(Event.ENTER_FRAME, updateShaderFill);
+            }
+
+            private function updateShaderFill(event:Event):void
+            {
+                colorAngle += .06;
+
+                var c1:Number = 1 / 3 + 2 / 3 * Math.cos(colorAngle);
+                var c2:Number = 1 / 3 + 2 / 3 * Math.cos(colorAngle + d120);
+                var c3:Number = 1 / 3 + 2 / 3 * Math.cos(colorAngle - d120);
+
+                shader.data.color1.value = [c1, c2, c3, 1.0];
+                shader.data.color2.value = [c3, c1, c2, 1.0];
+                shader.data.color3.value = [c2, c3, c1, 1.0];
+
+                canvas.graphics.clear();
+                canvas.graphics.beginShaderFill(shader);
+
+                canvas.graphics.moveTo(topMiddle.x, topMiddle.y);
+                canvas.graphics.lineTo(bottomLeft.x, bottomLeft.y);
+                canvas.graphics.lineTo(bottomRight.x, bottomLeft.y);
+
+                canvas.graphics.endFill();
+            }
         }
-
-        private function init():void
-        {
-            canvas = new Sprite();
-            addChild(canvas);
-
-            var size:int = 400;
-            topMiddle = new Point(size / 2, 10);
-            bottomLeft = new Point(0, size - 10);
-            bottomRight = new Point(size, size - 10);
-
-            loader = new URLLoader();
-            loader.dataFormat = URLLoaderDataFormat.BINARY;
-            loader.addEventListener(Event.COMPLETE, onLoadComplete);
-            loader.load(new URLRequest("ThreePointGradient.pbj"));
-        }
-
-        private function onLoadComplete(event:Event):void
-        {
-            shader = new Shader(loader.data);
-
-            shader.data.point1.value = [topMiddle.x, topMiddle.y];
-            shader.data.point2.value = [bottomLeft.x, bottomLeft.y];
-            shader.data.point3.value = [bottomRight.x, bottomRight.y];
-
-            addEventListener(Event.ENTER_FRAME, updateShaderFill);
-        }
-
-        private function updateShaderFill(event:Event):void
-        {
-            colorAngle += .06;
-
-            var c1:Number = 1 / 3 + 2 / 3 * Math.cos(colorAngle);
-            var c2:Number = 1 / 3 + 2 / 3 * Math.cos(colorAngle + d120);
-            var c3:Number = 1 / 3 + 2 / 3 * Math.cos(colorAngle - d120);
-
-            shader.data.color1.value = [c1, c2, c3, 1.0];
-            shader.data.color2.value = [c3, c1, c2, 1.0];
-            shader.data.color3.value = [c2, c3, c1, 1.0];
-
-            canvas.graphics.clear();
-            canvas.graphics.beginShaderFill(shader);
-
-            canvas.graphics.moveTo(topMiddle.x, topMiddle.y);
-            canvas.graphics.lineTo(bottomLeft.x, bottomLeft.y);
-            canvas.graphics.lineTo(bottomRight.x, bottomLeft.y);
-
-            canvas.graphics.endFill();
-        }
-    }
     }
 
 The following is the source code for the ThreePointGradient shader kernel, used
@@ -158,60 +158,60 @@ to create the “ThreePointGradient.pbj” Pixel Bender bytecode file:
     description : "Creates a gradient fill using three specified points and colors.";
     >
     {
-    parameter float2 point1 // coordinates of the first point
-    <
-        minValue:float2(0, 0);
-        maxValue:float2(4000, 4000);
-        defaultValue:float2(0, 0);
-    >;
+        parameter float2 point1 // coordinates of the first point
+        <
+            minValue:float2(0, 0);
+            maxValue:float2(4000, 4000);
+            defaultValue:float2(0, 0);
+        >;
 
-    parameter float4 color1 // color at the first point, opaque red by default
-    <
-        defaultValue:float4(1.0, 0.0, 0.0, 1.0);
-    >;
+        parameter float4 color1 // color at the first point, opaque red by default
+        <
+            defaultValue:float4(1.0, 0.0, 0.0, 1.0);
+        >;
 
-    parameter float2 point2 // coordinates of the second point
-    <
-        minValue:float2(0, 0);
-        maxValue:float2(4000, 4000);
-        defaultValue:float2(0, 500);
-    >;
+        parameter float2 point2 // coordinates of the second point
+        <
+            minValue:float2(0, 0);
+            maxValue:float2(4000, 4000);
+            defaultValue:float2(0, 500);
+        >;
 
-    parameter float4 color2 // color at the second point, opaque green by default
-    <
-        defaultValue:float4(0.0, 1.0, 0.0, 1.0);
-    >;
+        parameter float4 color2 // color at the second point, opaque green by default
+        <
+            defaultValue:float4(0.0, 1.0, 0.0, 1.0);
+        >;
 
-    parameter float2 point3 // coordinates of the third point
-    <
-        minValue:float2(0, 0);
-        maxValue:float2(4000, 4000);
-        defaultValue:float2(0, 500);
-    >;
+        parameter float2 point3 // coordinates of the third point
+        <
+            minValue:float2(0, 0);
+            maxValue:float2(4000, 4000);
+            defaultValue:float2(0, 500);
+        >;
 
-    parameter float4 color3 // color at the third point, opaque blue by default
-    <
-        defaultValue:float4(0.0, 0.0, 1.0, 1.0);
-    >;
+        parameter float4 color3 // color at the third point, opaque blue by default
+        <
+            defaultValue:float4(0.0, 0.0, 1.0, 1.0);
+        >;
 
-    output pixel4 dst;
+        output pixel4 dst;
 
-    void evaluatePixel()
-    {
-        float2 d2 = point2 - point1;
-        float2 d3 = point3 - point1;
+        void evaluatePixel()
+        {
+            float2 d2 = point2 - point1;
+            float2 d3 = point3 - point1;
 
-        // transformation to a new coordinate system
-        // transforms point 1 to origin, point2 to (1, 0), and point3 to (0, 1)
-        float2x2 mtrx = float2x2(d3.y, -d2.y, -d3.x, d2.x) / (d2.x * d3.y - d3.x * d2.y);
-        float2 pNew = mtrx * (outCoord() - point1);
+            // transformation to a new coordinate system
+            // transforms point 1 to origin, point2 to (1, 0), and point3 to (0, 1)
+            float2x2 mtrx = float2x2(d3.y, -d2.y, -d3.x, d2.x) / (d2.x * d3.y - d3.x * d2.y);
+            float2 pNew = mtrx * (outCoord() - point1);
 
-        // repeat the edge colors on the outside
-        pNew.xy = clamp(pNew.xy, 0.0, 1.0); // set the range to 0.0 ... 1.0
+            // repeat the edge colors on the outside
+            pNew.xy = clamp(pNew.xy, 0.0, 1.0); // set the range to 0.0 ... 1.0
 
-        // interpolating the output color or alpha value
-        dst = mix(mix(color1, color2, pNew.x), color3, pNew.y);
-    }
+            // interpolating the output color or alpha value
+            dst = mix(mix(color1, color2, pNew.x), color3, pNew.y);
+        }
     }
 
 <div>

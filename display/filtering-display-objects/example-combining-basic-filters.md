@@ -78,31 +78,31 @@ creating repeating actions, to create an animated traffic light simulation.
     // Swap the filters based on the count value.
     function trafficControl(event:TimerEvent):void
     {
-    if (count == 4)
-    {
-        count = 1;
-    }
+        if (count == 4)
+        {
+            count = 1;
+        }
 
-    switch (count)
-    {
-        case 1:
-            stopLight.filters = [innerShadow];
-            cautionLight.filters = [yellowGlow];
-            goLight.filters = [innerShadow];
-            break;
-        case 2:
-            stopLight.filters = [redGlow];
-            cautionLight.filters = [innerShadow];
-            goLight.filters = [innerShadow];
-            break;
-        case 3:
-            stopLight.filters = [innerShadow];
-            cautionLight.filters = [innerShadow];
-            goLight.filters = [greenGlow];
-            break;
-    }
+        switch (count)
+        {
+            case 1:
+                stopLight.filters = [innerShadow];
+                cautionLight.filters = [yellowGlow];
+                goLight.filters = [innerShadow];
+                break;
+            case 2:
+                stopLight.filters = [redGlow];
+                cautionLight.filters = [innerShadow];
+                goLight.filters = [innerShadow];
+                break;
+            case 3:
+                stopLight.filters = [innerShadow];
+                cautionLight.filters = [innerShadow];
+                goLight.filters = [greenGlow];
+                break;
+        }
 
-    count++;
+        count++;
     }
 
     // Create a timer to swap the filters at a 3 second interval.

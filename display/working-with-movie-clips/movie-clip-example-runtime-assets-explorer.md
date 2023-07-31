@@ -166,19 +166,19 @@ method body.
 
     package
     {
-    import flash.display.Sprite;
-    import com.example.programmingas3.runtimeassetexplorer.RuntimeLibrary;
+        import flash.display.Sprite;
+        import com.example.programmingas3.runtimeassetexplorer.RuntimeLibrary;
 
-    public class GeometricAssets extends Sprite implements RuntimeLibrary
-    {
-        public function GeometricAssets() {
+        public class GeometricAssets extends Sprite implements RuntimeLibrary
+        {
+            public function GeometricAssets() {
 
+            }
+            public function getAssets():Array {
+                return [ "com.example.programmingas3.runtimeassetexplorer.AnimatingBox",
+                        "com.example.programmingas3.runtimeassetexplorer.AnimatingStar" ];
+            }
         }
-        public function getAssets():Array {
-            return [ "com.example.programmingas3.runtimeassetexplorer.AnimatingBox",
-                     "com.example.programmingas3.runtimeassetexplorer.AnimatingStar" ];
-        }
-    }
     }
 
 If we were to create a second run-time library, we could create another FLA
@@ -197,13 +197,13 @@ analogous to that of AnimatingBox:
 
     package com.example.programmingas3.runtimeassetexplorer
     {
-    import flash.display.MovieClip;
+        import flash.display.MovieClip;
 
-    public class AnimatingStar extends MovieClip
-    {
-        public function AnimatingStar() {
+        public class AnimatingStar extends MovieClip
+        {
+            public function AnimatingStar() {
+            }
         }
-    }
     }
 
 </div>
@@ -250,10 +250,10 @@ When the run-time library is successfully loaded, Flash Player calls the
 
     private function runtimeAssetsLoadComplete(event:Event):void
     {
-    var rl:* = event.target.content;
-    var assetList:Array = rl.getAssets();
-    populateDropdown(assetList);
-    stage.frameRate = 60;
+        var rl:* = event.target.content;
+        var assetList:Array = rl.getAssets();
+        populateDropdown(assetList);
+        stage.frameRate = 60;
     }
 
 In this method, the variable rl represents the loaded SWF file. The code calls
@@ -265,10 +265,10 @@ user interface triggers the `addAsset()` method:
 
     private function addAsset():void
     {
-    var className:String = assetNameCbo.selectedItem.data;
-    var AssetClass:Class = getDefinitionByName(className) as Class;
-    var mc:MovieClip = new AssetClass();
-    ...
+        var className:String = assetNameCbo.selectedItem.data;
+        var AssetClass:Class = getDefinitionByName(className) as Class;
+        var mc:MovieClip = new AssetClass();
+        ...
     }
 
 which gets the classpath of whichever asset is currently selected in the

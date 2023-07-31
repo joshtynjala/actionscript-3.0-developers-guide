@@ -241,15 +241,15 @@ when the display object is clicked, the `addFilters()` function is called. In:
 
     function addFilters(event:MouseEvent):void
     {
-    // Make a copy of the filters array.
-    var filtersCopy:Array = myDisplayObject.filters;
+        // Make a copy of the filters array.
+        var filtersCopy:Array = myDisplayObject.filters;
 
-    // Make desired changes to the filters (in this case, adding filters).
-    filtersCopy.push(new BlurFilter());
-    filtersCopy.push(new DropShadowFilter());
+        // Make desired changes to the filters (in this case, adding filters).
+        filtersCopy.push(new BlurFilter());
+        filtersCopy.push(new DropShadowFilter());
 
-    // Apply the changes by reassigning the array to the filters property.
-    myDisplayObject.filters = filtersCopy;
+        // Apply the changes by reassigning the array to the filters property.
+        myDisplayObject.filters = filtersCopy;
     }
 
     myDisplayObject.addEventListener(MouseEvent.CLICK, addFilters);
@@ -332,7 +332,7 @@ following code determines which of a set of filters is a glow filter, and
 removes that filter from the set.
 
     // Example of removing a glow filter from a set of filters, where the
-    //filter you want to remove is the only GlowFilter instance applied
+    // filter you want to remove is the only GlowFilter instance applied
     // to the filtered object.
 
     var tempFilters:Array = filteredObject.filters;
@@ -342,11 +342,11 @@ removes that filter from the set.
     var numFilters:int = tempFilters.length;
     for (var i:int = 0; i < numFilters; i++)
     {
-    if (tempFilters[i] is GlowFilter)
-    {
-        glowIndex = i;
-        break;
-    }
+        if (tempFilters[i] is GlowFilter)
+        {
+            glowIndex = i;
+            break;
+        }
     }
 
     // Remove the glow filter from the array.
@@ -394,20 +394,20 @@ applied to the display object.
     var numFilters:int = masterFilterList.length;
     for (var i:int = 0; i < numFilters; i++)
     {
-    if (masterFilterList[i] == filterToRemove)
-    {
-        removeIndex = i;
-        break;
-    }
+        if (masterFilterList[i] == filterToRemove)
+        {
+            removeIndex = i;
+            break;
+        }
     }
 
     if (removeIndex >= 0)
     {
-    // Remove the filter from the array.
-    masterFilterList.splice(removeIndex, 1);
+        // Remove the filter from the array.
+        masterFilterList.splice(removeIndex, 1);
 
-    // Apply the new set of filters to the display object.
-    filteredObject.filters = masterFilterList;
+        // Apply the new set of filters to the display object.
+        filteredObject.filters = masterFilterList;
     }
 
 In this approach (when you’re comparing a stored filter reference to the items
