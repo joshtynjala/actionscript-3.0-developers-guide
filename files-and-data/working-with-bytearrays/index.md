@@ -1,0 +1,55 @@
+# Working with byte arrays
+
+<div>
+
+The ByteArray class allows you to read from and write to a binary stream of
+data, which is essentially an array of bytes. This class provides a way to
+access data at the most elemental level. Because computer data consists of
+bytes, or groups of 8 bits, the ability to read data in bytes means that you can
+access data for which classes and access methods do not exist. The ByteArray
+class allows you to parse any stream of data, from a bitmap to a stream of data
+traveling over the network, at the byte level.
+
+The `writeObject()` method allows you to write an object in serialized Action
+Message Format (AMF) to a ByteArray, while the `readObject()` method allows you
+to read a serialized object from a ByteArray to a variable of the original data
+type. You can serialize any object except for display objects, which are those
+objects that can be placed on the display list. You can also assign serialized
+objects back to custom class instances if the custom class is available to the
+runtime. After converting an object to AMF, you can efficiently transfer it over
+a network connection or save it to a file.
+
+The sample Adobe® AIR® application described here reads a .zip file as an
+example of processing a byte stream, extracting a list of the files that the
+.zip file contains and writing them to the desktop.
+
+- [Reading and writing a ByteArray](WS5b3ccc516d4fbf351e63e3d118666ade46-7d54.html)
+- [ByteArray example: Reading a .zip file](WS5b3ccc516d4fbf351e63e3d118666ade46-7d53.html)
+
+</div>
+
+<div>
+
+<div>
+
+More Help topics
+
+</div>
+
+<div>
+
+</div>
+
+![](images/flashplatformLinkIndicator.png)
+[flash.utils.ByteArray](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/utils/ByteArray.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/utils/ByteArray.html")
+
+![](images/flashplatformLinkIndicator.png)
+[flash.utils.IExternalizable](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/utils/IExternalizable.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/utils/IExternalizable.html")
+
+[Action Message Format specification](http://opensource.adobe.com/wiki/download/attachments/1114283/amf3_spec_05_05_08.pdf "http://opensource.adobe.com/wiki/download/attachments/1114283/amf3_spec_05_05_08.pdf")
+
+<div>
+
+</div>
+
+</div>
