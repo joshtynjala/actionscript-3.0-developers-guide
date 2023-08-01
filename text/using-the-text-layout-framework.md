@@ -352,7 +352,7 @@ than one column or text container to display.
 Apart from the root node, the remaining elements are loosely based on XHTML
 elements. The following diagram shows the hierarchy of the framework:
 
-![](images/te_textFlowHierarchy.png)
+![](../img/te_textFlowHierarchy.png)
 
 TextFlow Hierarchy
 

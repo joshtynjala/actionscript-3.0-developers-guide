@@ -12,12 +12,12 @@ Runtimes that support the StageVideo API include:
 Note: In Flash Player 11.4/AIR 3.4 and higher, you can use camera input with
 StageVideo.
 
-![](images/byline.png) Downloadable source code and additional details for the
-stage video feature are available at
+![](../../img/byline.png) Downloadable source code and additional details for
+the stage video feature are available at
 <a href="http://www.adobe.com/go/learn_as3_usingstagevideo_en"
 target="_self">Getting Started with Stage Video</a>.
 
-![](images/byline.png) For a StageVideo quick start tutorial, see
+![](../../img/byline.png) For a StageVideo quick start tutorial, see
 <a href="http://www.adobe.com/go/learn_as3_workingwithstagevideo_en"
 target="_self">Working with Stage Video</a>.
 

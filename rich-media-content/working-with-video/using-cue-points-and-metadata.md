@@ -97,7 +97,7 @@ The previous code generates output like the following:
     videocodecid: 4
     audiocodecid: 2
 
-![](images/tip_help.png) If your video does not have audio, the audio-related
+![](../../img/tip_help.png) If your video does not have audio, the audio-related
 metadata information (such as `audiodatarate`) returns `undefined` _because no
 audio information is added to the metadata during encoding._
 

@@ -142,4 +142,4 @@ second `for` loop cycles through the next set of 256 values, plotting them in
 reverse order this time, from right to left. The resulting waveform plots can
 produce an interesting mirror-image effect, as shown in the following image.
 
-![](images/so_soundVisualizer.png)
+![](../../img/so_soundVisualizer.png)

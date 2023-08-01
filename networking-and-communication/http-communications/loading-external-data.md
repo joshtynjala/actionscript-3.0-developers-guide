@@ -294,7 +294,7 @@ The file contains two parameters, `monthNames` and `dayNames`. Each parameter
 contains a comma-separated list that is parsed as strings. You can split this
 list into an array using the `String.split()` method.
 
-![](images/tip_help.png) Avoid using reserved words or language constructs as
+![](../../img/tip_help.png) Avoid using reserved words or language constructs as
 variable names in external data files, because doing so makes reading and
 debugging your code more difficult.
 
@@ -327,7 +327,7 @@ list of items, you can convert the string into an array by calling the
 
     var dayNameArray:Array = variables.dayNames.split(",");
 
-![](images/tip_help.png) If you are loading numeric data from external text
+![](../../img/tip_help.png) If you are loading numeric data from external text
 files, convert the values into numeric values by using a top-level function,
 such as `int()`, `uint()`, or `Number()` _._
 

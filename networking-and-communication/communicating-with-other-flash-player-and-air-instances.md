@@ -44,7 +44,7 @@ implement security measures. For more information, see the discussion of the
 class listing in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
-![](images/tip_help.png) It is possible to use LocalConnection objects to send
+![](../img/tip_help.png) It is possible to use LocalConnection objects to send
 and receive data within a single SWF file, but Adobe does not recommended doing
 so. Instead, use shared objects.
 

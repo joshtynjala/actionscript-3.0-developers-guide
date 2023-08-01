@@ -46,7 +46,7 @@ as shown here:
 This code adjusts the CSS styles so that the resulting HTML document appears
 like the following:
 
-![](images/HTMLControlCSSExample.png)
+![](../../img/HTMLControlCSSExample.png)
 
 Keep in mind that code can add styles to the page after the HTMLLoader object
 dispatches the `complete` event.

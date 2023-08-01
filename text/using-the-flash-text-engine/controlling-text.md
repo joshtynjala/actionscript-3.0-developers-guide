@@ -156,7 +156,7 @@ which adds/subtracts pixels from the left side of a character, and
 used, the tracking value is added to or subtracted from kerning values for each
 character pair.
 
-![Kerning and tracking effects](images/te_kerning_tracking.png)
+![Kerning and tracking effects](../../img/te_kerning_tracking.png)
 
 **A.** Kerning.OFF
 

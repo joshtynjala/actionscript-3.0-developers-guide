@@ -420,7 +420,7 @@ following code sends the file to a web server:
     	trace("uploaded");
     }
 
-![](images/tip_help.png) You can send data to the server with the
+![](../../img/tip_help.png) You can send data to the server with the
 `FileReference.upload()` method by using the `URLRequest.method` and
 `URLRequest.data` properties to send variables using the `POST` or `GET`
 _methods._
@@ -463,7 +463,7 @@ following events are dispatched:
   - The `url` parameter contains an invalid protocol. The
     `FileReference.upload()` method must use either HTTP or HTTPS.
 
-![](images/tip_help.png) Flash Player does not offer complete support for
+![](../../img/tip_help.png) Flash Player does not offer complete support for
 servers that require authentication. Only SWF files that are running in a
 browser using the browser plug-in or Microsoft ActiveX® control can provide a
 dialog box to prompt the user to enter a user name and password for

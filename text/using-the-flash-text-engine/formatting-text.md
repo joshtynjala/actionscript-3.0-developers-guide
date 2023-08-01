@@ -67,8 +67,7 @@ You can override these values by setting `TextBlock.baselineFontDescription` and
 several baselines within the text. These baselines include the ascent line and
 the descent line or the ideographic top, center, or bottom.
 
-![Text showing ascent line, baseline, decsent line and
-x-height](images/te_baseline_align2.png)
+![Text showing ascent line, baseline, decsent line and x-height](../../img/te_baseline_align2.png)
 
 **A.** Ascent
 

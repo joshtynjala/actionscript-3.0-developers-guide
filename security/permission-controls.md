@@ -7,7 +7,7 @@ exercise controls (security settings) over their own resources, and each
 resource has four stakeholders. Flash Player strictly enforces a hierarchy of
 authority for these controls, as the following illustration shows:
 
-![Hierarchy of authority](images/sc_hierarchy_securityControl.png)
+![Hierarchy of authority](../img/sc_hierarchy_securityControl.png)
 
 Hierarchy of security controls
 
