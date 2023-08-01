@@ -115,9 +115,9 @@ multicolumn text elements.
     		}
 
     		/**
-    		* Reads a set of style properties for a named style and then creates
-    		* a TextFormat object that uses the same properties.
-    		*/
+    		 * Reads a set of style properties for a named style and then creates
+    		 * a TextFormat object that uses the same properties.
+    		 */
     		public function getElFormat(styleName:String, ss:StyleSheet):ElementFormat
     		{
     			var style:Object = ss.getStyle(styleName);

@@ -292,8 +292,8 @@ specifically the alarm message:
             public var message:String;
 
             /**
-             *Constructor.
-             *@param message The text to display when the alarm goes off.
+             * Constructor.
+             * @param message The text to display when the alarm goes off.
              */
             public function AlarmEvent(message:String = "ALARM!")
             {
