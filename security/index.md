@@ -1,7 +1,5 @@
 # Security
 
-<div>
-
 Security is a key concern of Adobe, users, website owners, and content
 developers. For this reason, Adobe® Flash® Player and Adobe® AIR™ include a set
 of security rules and controls to safeguard the user, website owner, and content
@@ -33,13 +31,3 @@ at
 - [Shared objects](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c9a.html)
 - [Camera, microphone, clipboard, mouse, and keyboard access](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c99.html)
 - [AIR security](WS5b3ccc516d4fbf351e63e3d118666ade46-7fa3.html)
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

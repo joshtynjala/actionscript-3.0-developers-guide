@@ -1,7 +1,5 @@
 # Using the Flash Text Engine
 
-<div>
-
 The Adobe® Flash® Text Engine (FTE), available starting with Flash Player 10 and
 Adobe® AIR™1.5, provides low-level support for sophisticated control of text
 metrics, formatting, and bi-directional text. It offers improved text flow and
@@ -25,24 +23,6 @@ component. For more information, see
 - [Controlling text](WS9dd7ed846a005b294b857bfa122bd808ea6-7fee.html)
 - [Flash Text Engine example: News layout](WS9dd7ed846a005b294b857bfa122bd808ea6-7fe8.html)
 
-</div>
-
-<div>
-
-<div>
-
 More Help topics
 
-</div>
-
-<div>
-
-</div>
-
-[flash.text.engine package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/engine/package-detail.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/engine/package-detail.html")
-
-<div>
-
-</div>
-
-</div>
+[flash.text.engine package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/engine/package-detail.html)

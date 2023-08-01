@@ -1,24 +1,15 @@
 # Using native JSON functionality
 
-<div>
-
 ActionScript 3.0 provides a native API for encoding and decoding ActionScript
 objects using JavaScript Object Notation (JSON) format. The JSON class and
 supporting member functions follow the ECMA-262 5th edition specification with
 few variances.
 
 ![](../../img/byline.png) Community member Todd Anderson provides a comparison
-of the native JSON API and the third-party as3corelib JSON class. See <a
-href="http://blog.infrared5.com/2011/07/working-with-native-json-in-flash-player-11/"
-target="_self">Working with Native JSON in Flash Player 11</a>.
-
-</div>
-
-<div>
+of the native JSON API and the third-party as3corelib JSON class. See
+[Working with Native JSON in Flash Player 11](http://blog.infrared5.com/2011/07/working-with-native-json-in-flash-player-11/).
 
 ## Overview of the JSON API
-
-<div>
 
 The ActionScript JSON API consists of the JSON class and `toJSON()` member
 functions on a few native classes. For applications that require a custom JSON
@@ -41,13 +32,7 @@ the following signature:
 
     function(k, v):*
 
-</div>
-
-<div>
-
 ### toJSON() methods
-
-<div>
 
 The signature for `toJSON()` methods is
 
@@ -101,17 +86,7 @@ require you to use the class prototype to redefine `toJSON()`. The Dictionary
 class is declared dynamic, which gives you extra freedom in overriding
 `toJSON()`.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Defining custom JSON behavior
-
-<div>
 
 To implement your own JSON encoding and decoding for native classes, you can
 choose from several options:
@@ -125,13 +100,7 @@ choose from several options:
 
 - Using the `JSON.stringify() replacer` and `JSON.parser() reviver` parameters
 
-</div>
-
-<div>
-
 ### Defining toJSON() on the prototype of a built-in class
-
-<div>
 
 The native JSON implementation in ActionScript mirrors the ECMAScript JSON
 mechanism defined in ECMA-262, 5th edition. Since ECMAScript doesn't support
@@ -168,15 +137,7 @@ example, the following code overrides `Date.toJSON()`:
     trace(JSON.stringify(dt));
     // "any date format you like via toJSON: this.time:1317244361947 this.hours:14"
 
-</div>
-
-</div>
-
-<div>
-
 ### Defining or overriding toJSON() at the class level
-
-<div>
 
 Applications aren't always required to use prototypes to redefine `toJSON()`.
 You can also define `toJSON()` as a member of a subclass if the parent class is
@@ -208,14 +169,10 @@ public `toJSON()` function:
 If a class is dynamic, you can add a `toJSON` property to an object of that
 class and assign a function to it as follows:
 
-<div>
-
     var d:Dictionary = new Dictionary();
     trace(JSON.stringify((d))); // "Dictionary"
     d.toJSON = function(){return {c : "toJSON override."};} // overrides existing function
     trace(JSON.stringify((d))); // {"c":"toJSON override."}
-
-</div>
 
 You can override, define, or redefine `toJSON()` on any ActionScript class.
 However, most built-in ActionScript classes don't define `toJSON()`. The Object
@@ -229,15 +186,7 @@ internal JSON implementation. Avoid replacing this built-in functionality if
 possible. If you define a `toJSON()` member, the JSON class uses your logic
 instead of its own functionality.
 
-</div>
-
-</div>
-
-<div>
-
 ### Using the JSON.stringify() replacer parameter
-
-<div>
 
 Overriding `toJSON()` on the prototype is useful for changing a class's JSON
 export behavior throughout an application. In some cases, though, your export
@@ -275,15 +224,7 @@ parameter to return the `time` and `hours` values of a Date object:
             "holder[k].time:"+this[k].time + " holder[k].hours:"+this[k].hours;
     });
 
-</div>
-
-</div>
-
-<div>
-
 ### Using the JSON.parse() reviver parameter
-
-<div>
 
 The `reviver` parameter of the `JSON.parse()` method does the opposite of the
 `replacer` function: It converts a JSON string into a usable ActionScript
@@ -302,15 +243,7 @@ especially troublesome when objects are nested. In designing `toJSON()`,
 ActionScript objects that are exported while keeping the original objects
 intact.
 
-</div>
-
-</div>
-
-<div>
-
 ### Parsing example
-
-<div>
 
 The following example shows a strategy for reviving objects parsed from JSON
 strings. This example defines two classes: JSONGenericDictExample and
@@ -485,12 +418,11 @@ the stored JSONDictionaryExtnExample object from a private static array.
     trace("e_roundtrip: " + e_roundtrip); //[JSONDictionaryExtnExample <Bob=[e=40,v=2],
                                          //Bob=[e=10,v=1], Jan=[e=25,v=3]>]
 
-</div>
+More Help topics
 
-</div>
+![](../img/flashplatformLinkIndicator.png)
+[JSON class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/JSON.html)
 
-</div>
+[The prototype object](https://help.adobe.com/en_US/as3/learn/WS5b3ccc516d4fbf351e63e3d118a9b90204-7fa3.html)
 
-- [JSON class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/JSON.html)
-- [The prototype object](https://help.adobe.com/en_US/as3/learn/WS5b3ccc516d4fbf351e63e3d118a9b90204-7fa3.html)
-- [ECMA-262 specification](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/)
+[ECMA-262 specification](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/)

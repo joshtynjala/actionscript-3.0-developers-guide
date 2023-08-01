@@ -121,11 +121,11 @@ More Help topics
 
 </div>
 
-![](images/airLinkIndicator.png)
-[Specifying the required AIR version](https://help.adobe.com/en_US/air/build/WSe3d2d52902616553396777a311d6a2e014f-8000.html "https://help.adobe.com/en_US/air/build/WSe3d2d52902616553396777a311d6a2e014f-8000.html")
+![](../../img/airLinkIndicator.png)
+[Specifying the required AIR version](https://help.adobe.com/en_US/air/build/WSe3d2d52902616553396777a311d6a2e014f-8000.html)
 
-![](images/flexLinkIndicator.png)
-[Using compc, the component compiler](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fd2.html "https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fd2.html")
+![](../../img/flexLinkIndicator.png)
+[Using compc, the component compiler](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fd2.html)
 
 <div>
 

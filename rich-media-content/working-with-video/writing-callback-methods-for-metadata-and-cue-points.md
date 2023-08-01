@@ -331,8 +331,8 @@ More Help topics
 
 </div>
 
-![](images/flashmediaserverLinkIndicator.png)
-[Flash Media Server: Handling metadata in streams](https://help.adobe.com/en_US/FlashMediaServer/3.5_Deving/WS5b3ccc516d4fbf351e63e3d11a0773d117-7fc8.html#WS5b3ccc516d4fbf351e63e3d11a0773d117-7fdb "https://help.adobe.com/en_US/FlashMediaServer/3.5_Deving/WS5b3ccc516d4fbf351e63e3d11a0773d117-7fc8.html#WS5b3ccc516d4fbf351e63e3d11a0773d117-7fdb")
+![](../../img/flashmediaserverLinkIndicator.png)
+[Flash Media Server: Handling metadata in streams](https://help.adobe.com/en_US/FlashMediaServer/3.5_Deving/WS5b3ccc516d4fbf351e63e3d11a0773d117-7fc8.html#WS5b3ccc516d4fbf351e63e3d11a0773d117-7fdb)
 
 <div>
 

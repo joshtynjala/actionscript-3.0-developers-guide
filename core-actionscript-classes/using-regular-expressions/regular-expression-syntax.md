@@ -1,7 +1,5 @@
 # Regular expression syntax
 
-<div>
-
 This section describes all of the elements of ActionScript regular expression
 syntax. As you'll see, regular expressions can have many complexities and
 nuances. You can find detailed resources on regular expressions on the web and
@@ -46,7 +44,7 @@ You can use regular expressions with the following methods of the String class:
 see
 [Finding patterns in strings and replacing substrings](../working-with-strings/finding-substrings-and-patterns-in-strings.md).
 
-</div>
+More Help topics
 
 - [Creating an instance of a regular expression](./creating-an-instance-of-a-regular-expression.md)
 

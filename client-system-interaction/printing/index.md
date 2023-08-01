@@ -1,7 +1,5 @@
 # Printing
 
-<div>
-
 Flash runtimes (such as Adobe® Flash® Player and Adobe® AIR™) can communicate
 with an operating system's printing interface so that you can pass pages to the
 print spooler. Each page sent to the spooler can contain content that is
@@ -24,13 +22,3 @@ user's operating system.
 - [Printing example: Multiple-page printing](WS5b3ccc516d4fbf351e63e3d118a9b90204-7cc0.html)
 - [Printing example: Scaling, cropping, and responding](WS5b3ccc516d4fbf351e63e3d118a9b90204-7cc5.html)
 - [Printing example: Page setup and print options](WS059b243ca571213c-5fb15e5d124d9f70211-8000.html)
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

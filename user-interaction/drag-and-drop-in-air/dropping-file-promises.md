@@ -63,11 +63,11 @@ More Help topics
 
 </div>
 
-![](images/flashplatformLinkIndicator.png)
-[flash.desktop.IFilePromise](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/IFilePromise.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/IFilePromise.html")
+![](../../img/flashplatformLinkIndicator.png)
+[flash.desktop.IFilePromise](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/IFilePromise.html)
 
-![](images/flashplatformLinkIndicator.png)
-[air.desktop.URLFilePromise](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/air/desktop/URLFilePromise.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/air/desktop/URLFilePromise.html")
+![](../../img/flashplatformLinkIndicator.png)
+[air.desktop.URLFilePromise](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/air/desktop/URLFilePromise.html)
 
 <div>
 

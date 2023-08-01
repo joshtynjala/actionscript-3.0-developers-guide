@@ -171,18 +171,18 @@ More Help topics
 
 </div>
 
-![](images/flashLinkIndicator.png)
-[Embed fonts for consistent text appearance](https://help.adobe.com/en_US/flash/cs/using/WSb03e830bd6f770ee21a3597d124daee0526-8000.html "https://help.adobe.com/en_US/flash/cs/using/WSb03e830bd6f770ee21a3597d124daee0526-8000.html")
+![](../../img/flashLinkIndicator.png)
+[Embed fonts for consistent text appearance](https://help.adobe.com/en_US/flash/cs/using/WSb03e830bd6f770ee21a3597d124daee0526-8000.html)
 
-![](images/flexLinkIndicator.png)
-[Embedding assets](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fce.html "https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fce.html")
+![](../../img/flexLinkIndicator.png)
+[Embedding assets](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fce.html)
 
-![](images/flexLinkIndicator.png)
-[Fonts](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7f9e.html "https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7f9e.html")
+![](../../img/flexLinkIndicator.png)
+[Fonts](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7f9e.html)
 
-[Peter deHaan: Embedding fonts](http://www.adobe.com/devnet/flash/quickstart/embedding_fonts.html "http://www.adobe.com/devnet/flash/quickstart/embedding_fonts.html")
+[Peter deHaan: Embedding fonts](http://www.adobe.com/devnet/flash/quickstart/embedding_fonts.html)
 
-[Divillysausages.com: AS3 Font embedding masterclass](http://divillysausages.com/blog/as3_font_embedding_masterclass "http://divillysausages.com/blog/as3_font_embedding_masterclass")
+[Divillysausages.com: AS3 Font embedding masterclass](http://divillysausages.com/blog/as3_font_embedding_masterclass)
 
 <div>
 

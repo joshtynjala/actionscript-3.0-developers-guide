@@ -470,13 +470,13 @@ More Help topics
 
 </div>
 
-[Christian Cantrell: How to use CameraUI in a Cross-platform Way](http://blogs.adobe.com/cantrell/archives/2011/02/how-to-use-cameraui-in-a-cross-platform-way.html "http://blogs.adobe.com/cantrell/archives/2011/02/how-to-use-cameraui-in-a-cross-platform-way.html")
+[Christian Cantrell: How to use CameraUI in a Cross-platform Way](http://blogs.adobe.com/cantrell/archives/2011/02/how-to-use-cameraui-in-a-cross-platform-way.html)
 
-[Michaël CHAIZE: Android, AIR and the Camera](http://www.riagora.com/2010/07/android-air-and-the-camera/ "http://www.riagora.com/2010/07/android-air-and-the-camera/")
+[Michaël CHAIZE: Android, AIR and the Camera](http://www.riagora.com/2010/07/android-air-and-the-camera/)
 
-[Christophe Coenraets: Multi-User Video Tic-Tac-Toe](http://coenraets.org/blog/2010/08/multi-user-video-tic-tac-toe-for-android/ "http://coenraets.org/blog/2010/08/multi-user-video-tic-tac-toe-for-android/")
+[Christophe Coenraets: Multi-User Video Tic-Tac-Toe](http://coenraets.org/blog/2010/08/multi-user-video-tic-tac-toe-for-android/)
 
-[Mark Doherty: Android Radar app (source)](http://www.flashmobileblog.com/2010/10/14/facebook-connect-with-air-on-android/#comments "http://www.flashmobileblog.com/2010/10/14/facebook-connect-with-air-on-android/#comments")
+[Mark Doherty: Android Radar app (source)](http://www.flashmobileblog.com/2010/10/14/facebook-connect-with-air-on-android/#comments)
 
 [Lee Brimelow: How to access the camera on Android devices](http://www.gotoandlearn.com/play.php?id=124 "http://www.gotoandlearn.com/play.php?id=124")
 

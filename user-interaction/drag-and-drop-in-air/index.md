@@ -1,7 +1,5 @@
 # Drag and drop in AIR
 
-<div>
-
 Use the classes in the Adobe® AIR™ drag-and-drop API to support user-interface
 drag-and-drop gestures. A _gesture_ in this sense is an action by the user,
 mediated by both the operating system and your application, expressing an intent
@@ -31,8 +29,6 @@ formats include:
 
 - Object references (only valid within the originating application)
 
-<!-- -->
-
 - [Basics of drag and drop in AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7d85.html)
 - [Supporting the drag-out gesture](WS5b3ccc516d4fbf351e63e3d118666ade46-7d84.html)
 - [Supporting the drag-in gesture](WS5b3ccc516d4fbf351e63e3d118666ade46-7d83.html)
@@ -42,13 +38,3 @@ formats include:
 - [Example: Overriding the default HTML drag-in behavior](WSEF873500-5E80-418d-80D1-50B8D6CB20FC.html)
 - [Handling file drops in non-application HTML sandboxes](WSA15C8AF8-3317-46c5-B9B1-EAD3356A2555.html)
 - [Dropping file promises](WSb2ba3b1aad8a27b0cfd6c41228096d713-7fff.html)
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

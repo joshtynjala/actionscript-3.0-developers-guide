@@ -1,7 +1,5 @@
 # Keyboard input
 
-<div>
-
 Your application can capture and respond to keyboard input and can manipulate an
 IME to let users type non-ASCII text characters in multibyte languages. Note
 that this section assumes that you are already familiar with the ActionScript
@@ -20,28 +18,10 @@ advantage of their system IME in your applications.
 - [Using the IME class](WS5b3ccc516d4fbf351e63e3d118a9b90204-7cd5.html)
 - [Virtual keyboards](WSfffb011ac560372f2e63562a12dedf852e9-8000.html)
 
-</div>
-
-<div>
-
-<div>
-
 More Help topics
 
-</div>
+![](../../img/flashplatformLinkIndicator.png)
+[flash.events.KeyboardEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/KeyboardEvent.html)
 
-<div>
-
-</div>
-
-![](images/flashplatformLinkIndicator.png)
-[flash.events.KeyboardEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/KeyboardEvent.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/KeyboardEvent.html")
-
-![](images/flashplatformLinkIndicator.png)
-[flash.system.IME](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/system/IME.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/system/IME.html")
-
-<div>
-
-</div>
-
-</div>
+![](../../img/flashplatformLinkIndicator.png)
+[flash.system.IME](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/system/IME.html)

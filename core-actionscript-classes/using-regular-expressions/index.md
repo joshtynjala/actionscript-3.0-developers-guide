@@ -1,7 +1,5 @@
 # Using regular expressions
 
-<div>
-
 A regular expression describes a pattern that is used to find and manipulate
 matching text in strings. Regular expressions resemble strings, but they can
 include special codes to describe patterns and repetition. For example, the
@@ -23,6 +21,7 @@ expressions as defined in the ECMAScript edition 3 language specification
 - [Methods for using regular expressions with strings](./methods-for-using-regular-expressions-with-strings.md)
 - [Regular expressions example: A Wiki parser](./regular-expressions-example-a-wiki-parser.md)
 
-</div>
+More Help topics
 
-- [RegExp class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/RegExp.html)
+![](../../img/flashplatformLinkIndicator.png)
+[RegExp class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/RegExp.html)

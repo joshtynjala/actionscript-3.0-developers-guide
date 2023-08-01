@@ -23,26 +23,26 @@ More Help topics
 
 </div>
 
-![](images/flashplatformLinkIndicator.png)
-[flash.net.URLLoader](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/URLLoader.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/URLLoader.html")
+![](../../img/flashplatformLinkIndicator.png)
+[flash.net.URLLoader](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/URLLoader.html)
 
-![](images/flashplatformLinkIndicator.png)
-[flash.net.URLStream](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/URLStream.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/URLStream.html")
+![](../../img/flashplatformLinkIndicator.png)
+[flash.net.URLStream](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/URLStream.html)
 
-![](images/flashplatformLinkIndicator.png)
-[flash.net.URLRequest](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/URLRequest.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/URLRequest.html")
+![](../../img/flashplatformLinkIndicator.png)
+[flash.net.URLRequest](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/URLRequest.html)
 
-![](images/flashplatformLinkIndicator.png)
-[flash.net.URLRequestDefaults](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/URLRequestDefaults.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/URLRequestDefaults.html")
+![](../../img/flashplatformLinkIndicator.png)
+[flash.net.URLRequestDefaults](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/URLRequestDefaults.html)
 
-![](images/flashplatformLinkIndicator.png)
-[flash.net.URLRequestHeader](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/URLRequestHeader.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/URLRequestHeader.html")
+![](../../img/flashplatformLinkIndicator.png)
+[flash.net.URLRequestHeader](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/URLRequestHeader.html)
 
-![](images/flashplatformLinkIndicator.png)
-[flash.net.URLRequestMethod](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/URLRequestMethod.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/URLRequestMethod.html")
+![](../../img/flashplatformLinkIndicator.png)
+[flash.net.URLRequestMethod](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/URLRequestMethod.html)
 
-![](images/flashplatformLinkIndicator.png)
-[flash.net.URLVariables](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/URLVariables.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/URLVariables.html")
+![](../../img/flashplatformLinkIndicator.png)
+[flash.net.URLVariables](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/URLVariables.html)
 
 <div>
 

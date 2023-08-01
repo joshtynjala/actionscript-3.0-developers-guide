@@ -1,7 +1,5 @@
 # Mouse input
 
-<div>
-
 Your application can create interactivity by capturing and responding to mouse
 input. Note that this section assumes that you are already familiar with the
 ActionScript 3.0 event model. For more information, see
@@ -14,30 +12,12 @@ persistent cursor, stylus or touch input) during runtime, see
 - [Capturing mouse input](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d00.html)
 - [Mouse input example: WordSearch](WS5b3ccc516d4fbf351e63e3d118a9b90204-7cff.html)
 
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
 
 [Touch, multitouch and gesture input](WSb2ba3b1aad8a27b0-6ffb37601221e58cc29-8000.html)
 
-</div>
+![](../../img/flashplatformLinkIndicator.png)
+[flash.ui.Mouse](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Mouse.html)
 
-![](images/flashplatformLinkIndicator.png)
-[flash.ui.Mouse](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Mouse.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Mouse.html")
-
-![](images/flashplatformLinkIndicator.png)
-[flash.events.MouseEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/MouseEvent.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/MouseEvent.html")
-
-<div>
-
-</div>
-
-</div>
+![](../../img/flashplatformLinkIndicator.png)
+[flash.events.MouseEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/MouseEvent.html)

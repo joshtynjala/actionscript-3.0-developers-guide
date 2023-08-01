@@ -336,11 +336,10 @@ More Help topics
 
 </div>
 
-![](images/flashmediaserverLinkIndicator.png)
-[Flash Media Server: Supported codecs](https://help.adobe.com/en_US/FlashMediaServer/3.5_TechOverview/WS5b3ccc516d4fbf351e63e3d119ed944a1a-7ffa.html#WS5b3ccc516d4fbf351e63e3d119ed944a1a-7fe7 "https://help.adobe.com/en_US/FlashMediaServer/3.5_TechOverview/WS5b3ccc516d4fbf351e63e3d119ed944a1a-7ffa.html#WS5b3ccc516d4fbf351e63e3d119ed944a1a-7fe7")
+![](../../img/flashmediaserverLinkIndicator.png)
+[Flash Media Server: Supported codecs](https://help.adobe.com/en_US/FlashMediaServer/3.5_TechOverview/WS5b3ccc516d4fbf351e63e3d119ed944a1a-7ffa.html#WS5b3ccc516d4fbf351e63e3d119ed944a1a-7fe7)
 
-![](images/httpstreamingLinkIndicator.png)
-[Adobe HTTP Dynamic Streaming](https://help.adobe.com/en_US/HTTPStreaming/1.0/Using/index.html "https://help.adobe.com/en_US/HTTPStreaming/1.0/Using/index.html")
+[Adobe HTTP Dynamic Streaming](https://help.adobe.com/en_US/HTTPStreaming/1.0/Using/index.html)
 
 <div>
 

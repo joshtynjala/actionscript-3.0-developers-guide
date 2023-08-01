@@ -1,7 +1,5 @@
 # Working with byte arrays
 
-<div>
-
 The ByteArray class allows you to read from and write to a binary stream of
 data, which is essentially an array of bytes. This class provides a way to
 access data at the most elemental level. Because computer data consists of
@@ -26,30 +24,12 @@ example of processing a byte stream, extracting a list of the files that the
 - [Reading and writing a ByteArray](WS5b3ccc516d4fbf351e63e3d118666ade46-7d54.html)
 - [ByteArray example: Reading a .zip file](WS5b3ccc516d4fbf351e63e3d118666ade46-7d53.html)
 
-</div>
-
-<div>
-
-<div>
-
 More Help topics
 
-</div>
+![](../../img/flashplatformLinkIndicator.png)
+[flash.utils.ByteArray](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/utils/ByteArray.html)
 
-<div>
+![](../../img/flashplatformLinkIndicator.png)
+[flash.utils.IExternalizable](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/utils/IExternalizable.html)
 
-</div>
-
-![](images/flashplatformLinkIndicator.png)
-[flash.utils.ByteArray](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/utils/ByteArray.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/utils/ByteArray.html")
-
-![](images/flashplatformLinkIndicator.png)
-[flash.utils.IExternalizable](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/utils/IExternalizable.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/utils/IExternalizable.html")
-
-[Action Message Format specification](http://opensource.adobe.com/wiki/download/attachments/1114283/amf3_spec_05_05_08.pdf "http://opensource.adobe.com/wiki/download/attachments/1114283/amf3_spec_05_05_08.pdf")
-
-<div>
-
-</div>
-
-</div>
+[Action Message Format specification](http://opensource.adobe.com/wiki/download/attachments/1114283/amf3_spec_05_05_08.pdf)

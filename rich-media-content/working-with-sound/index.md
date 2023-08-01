@@ -1,7 +1,5 @@
 # Working with sound
 
-<div>
-
 ActionScript is made for immersive, interactive applications—and one often
 overlooked element of powerfully immersive applications is sound. You can add
 sound effects to a video game, audio feedback to an application user interface,
@@ -26,28 +24,10 @@ information, and capture sound from a user's microphone.
 - [Capturing sound input](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d1d.html)
 - [Sound example: Podcast Player](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d15.html)
 
-</div>
-
-<div>
-
-<div>
-
 More Help topics
 
-</div>
+![](../../img/flashplatformLinkIndicator.png)
+[flash.media package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/package-detail.html)
 
-<div>
-
-</div>
-
-![](images/flashplatformLinkIndicator.png)
-[flash.media package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/package-detail.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/package-detail.html")
-
-![](images/flashplatformLinkIndicator.png)
-[flash.events.SampleDataEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/SampleDataEvent.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/SampleDataEvent.html")
-
-<div>
-
-</div>
-
-</div>
+![](../../img/flashplatformLinkIndicator.png)
+[flash.events.SampleDataEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/SampleDataEvent.html)

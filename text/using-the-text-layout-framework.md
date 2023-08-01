@@ -1107,17 +1107,17 @@ More Help topics
 
 </div>
 
-["Flow" TLF markup application](http://sourceforge.net/projects/tlf.adobe/files/current/Flow.swf/download "http://sourceforge.net/projects/tlf.adobe/files/current/Flow.swf/download")
+["Flow" TLF markup application](http://sourceforge.net/projects/tlf.adobe/files/current/Flow.swf/download)
 
-[TLF 2.0 Lists Markup](http://blogs.adobe.com/tlf/2010/07/tlf-20-lists-markup.html "http://blogs.adobe.com/tlf/2010/07/tlf-20-lists-markup.html")
+[TLF 2.0 Lists Markup](http://blogs.adobe.com/tlf/2010/07/tlf-20-lists-markup.html)
 
-[TLF 2.0 SubParagraphGroupElements and typeName](http://blogs.adobe.com/tlf/2011/01/tlf-2-0-changes-subparagraphgroupelements-and-typename-applied-to-textfieldhtmlimporter-and-cssformatresolver.html "http://blogs.adobe.com/tlf/2011/01/tlf-2-0-changes-subparagraphgroupelements-and-typename-applied-to-textfieldhtmlimporter-and-cssformatresolver.html")
+[TLF 2.0 SubParagraphGroupElements and typeName](http://blogs.adobe.com/tlf/2011/01/tlf-2-0-changes-subparagraphgroupelements-and-typename-applied-to-textfieldhtmlimporter-and-cssformatresolver.html)
 
-[Padding changes in TLF 2.0](http://blogs.adobe.com/tlf/2010/11/padding-changes-in-tlf-2-0.html "http://blogs.adobe.com/tlf/2010/11/padding-changes-in-tlf-2-0.html")
+[Padding changes in TLF 2.0](http://blogs.adobe.com/tlf/2010/11/padding-changes-in-tlf-2-0.html)
 
-[TLF FlowElement and LinkElement Events and EventMirrors](http://blogs.adobe.com/tlf/2010/12/tlf-flowelement-linkelement-events-and-eventmirrors.html "http://blogs.adobe.com/tlf/2010/12/tlf-flowelement-linkelement-events-and-eventmirrors.html")
+[TLF FlowElement and LinkElement Events and EventMirrors](http://blogs.adobe.com/tlf/2010/12/tlf-flowelement-linkelement-events-and-eventmirrors.html)
 
-[TLF Floats](http://blogs.adobe.com/tlf/2010/07/floats.html "http://blogs.adobe.com/tlf/2010/07/floats.html")
+[TLF Floats](http://blogs.adobe.com/tlf/2010/07/floats.html)
 
 <div>
 

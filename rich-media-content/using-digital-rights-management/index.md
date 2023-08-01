@@ -1,7 +1,5 @@
 # Using digital rights management
 
-<div>
-
 Adobe® Access™ is a content protection solution. It lets content owners,
 distributors, and advertisers realize new sources of revenue by providing
 seamless access to premium content. Publishers use Adobe Access to encrypt
@@ -64,31 +62,13 @@ documentation included with Adobe Access.
 - [Delivering content](WS52621785137562065c5bbf86131a9559a30-8000.html)
 - [Open Source Media Framework](WS5262178513756206-afd4008131d686aef7-8000.html)
 
-</div>
-
-<div>
-
-<div>
-
 More Help topics
 
-</div>
+![](../../img/flashplatformLinkIndicator.png)
+[flash.net.drm package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/drm/package-detail.html)
 
-<div>
+![](../../img/flashplatformLinkIndicator.png)
+[flash.net.NetConnection](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetConnection.html)
 
-</div>
-
-![](images/flashplatformLinkIndicator.png)
-[flash.net.drm package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/drm/package-detail.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/drm/package-detail.html")
-
-![](images/flashplatformLinkIndicator.png)
-[flash.net.NetConnection](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetConnection.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetConnection.html")
-
-![](images/flashplatformLinkIndicator.png)
-[flash.net.NetStream](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetStream.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetStream.html")
-
-<div>
-
-</div>
-
-</div>
+![](../../img/flashplatformLinkIndicator.png)
+[flash.net.NetStream](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetStream.html)

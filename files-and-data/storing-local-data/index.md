@@ -1,7 +1,5 @@
 # Storing local data
 
-<div>
-
 You use the
 [SharedObject](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/SharedObject.html)
 class to store small amounts of data on the client computer. In Adobe AIR, you
@@ -23,13 +21,3 @@ information, see
 
 - [Shared objects](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d80.html)
 - [Encrypted local storage](WS5b3ccc516d4fbf351e63e3d118666ade46-7e31.html)
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

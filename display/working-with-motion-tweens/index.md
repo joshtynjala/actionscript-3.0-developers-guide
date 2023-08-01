@@ -1,7 +1,5 @@
 # Working with motion tweens
 
-<div>
-
 [Animating objects](../display-programming/animating-objects.md) describes how
 to implement scripted animation in ActionScript.
 
@@ -22,26 +20,10 @@ To create motion tweens, you must have a license for Flash Professional.
 - [Adding filters](./adding-filters.md)
 - [Associating a motion tween with its display objects](./associating-a-motion-tween-with-its-display-objects.md)
 
-</div>
+More Help topics
 
-<div>
+![](../../img/flashplatformLinkIndicator.png)
+[Motion tween animation](https://help.adobe.com/en_US/flash/cs/using/WS45E2B930-4637-4d57-B785-9C8D06B1F8F5.html)
 
-<div>
-
-</div>
-
-<div>
-
-</div>
-
-## More Help topics
-
-- [Motion tween animation](https://help.adobe.com/en_US/flash/cs/using/WS45E2B930-4637-4d57-B785-9C8D06B1F8F5.html)
-
-- [fl.motion package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/fl/motion/package-detail.html)
-
-<div>
-
-</div>
-
-</div>
+![](../../img/flashplatformLinkIndicator.png)
+[fl.motion package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/fl/motion/package-detail.html)

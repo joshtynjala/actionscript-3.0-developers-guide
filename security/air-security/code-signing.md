@@ -28,11 +28,11 @@ More Help topics
 
 </div>
 
-![](images/airLinkIndicator.png)
-[Signing AIR applications](https://help.adobe.com/en_US/air/build/WSfffb011ac560372f-19aa73f128cc9f05e8-8000.html "https://help.adobe.com/en_US/air/build/WSfffb011ac560372f-19aa73f128cc9f05e8-8000.html")
+![](../../img/airLinkIndicator.png)
+[Signing AIR applications](https://help.adobe.com/en_US/air/build/WSfffb011ac560372f-19aa73f128cc9f05e8-8000.html)
 
-![](images/airLinkIndicator.png)
-[ADT code signing options](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7f72.html "https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7f72.html")
+![](../../img/airLinkIndicator.png)
+[ADT code signing options](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7f72.html)
 
 <div>
 

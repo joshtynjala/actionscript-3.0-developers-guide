@@ -1,7 +1,5 @@
 # Scripting the AIR HTML Container
 
-<div>
-
 The
 [HTMLLoader](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/html/HTMLLoader.html)
 class serves as the container for HTML content in Adobe® AIR®. The class
@@ -23,12 +21,8 @@ AIR. You can assign the default HTMLHost implementation to another HTMLLoader
 object by setting the `htmlHost` property of the object using a new HTMLHost
 object created with the `defaultBehavior` parameter set to `true`.
 
-<div>
-
 Note: In the Adobe® Flex™ Framework, the HTMLLoader object is wrapped by the
 mx:HTML component. When using Flex, use the HTML component.
-
-</div>
 
 - [Display properties of HTMLLoader objects](WS5b3ccc516d4fbf351e63e3d118666ade46-7e79.html)
 - [Scrolling HTML content](WS5b3ccc516d4fbf351e63e3d118666ade46-7e65.html)
@@ -37,13 +31,3 @@ mx:HTML component. When using Flex, use the HTML component.
 - [Setting the character encoding to use for HTML content](WS5b3ccc516d4fbf351e63e3d118666ade46-7e7a.html)
 - [Defining browser-like user interfaces for HTML content](WS5b3ccc516d4fbf351e63e3d118666ade46-7e74.html)
 - [Creating subclasses of the HTMLLoader class](WS5b3ccc516d4fbf351e63e3d118666ade46-7e64.html)
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

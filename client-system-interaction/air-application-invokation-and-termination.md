@@ -628,23 +628,23 @@ More Help topics
 
 </div>
 
-![](images/flashplatformLinkIndicator.png)
-[flash.desktop.NativeApplication](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeApplication.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeApplication.html")
+![](../img/flashplatformLinkIndicator.png)
+[flash.desktop.NativeApplication](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeApplication.html)
 
-![](images/flashplatformLinkIndicator.png)
-[flash.events.InvokeEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/InvokeEvent.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/InvokeEvent.html")
+![](../img/flashplatformLinkIndicator.png)
+[flash.events.InvokeEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/InvokeEvent.html)
 
-![](images/flashplatformLinkIndicator.png)
-[flash.events.BrowserInvokeEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/BrowserInvokeEvent.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/BrowserInvokeEvent.html")
+![](../img/flashplatformLinkIndicator.png)
+[flash.events.BrowserInvokeEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/BrowserInvokeEvent.html)
 
-![](images/airLinkIndicator.png)
-[Launching an installed AIR application from the browser](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7cd2.html "https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7cd2.html")
+![](../img/airLinkIndicator.png)
+[Launching an installed AIR application from the browser](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7cd2.html)
 
-![](images/airLinkIndicator.png)
-[Setting AIR application properties](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html "https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html")
+![](../img/airLinkIndicator.png)
+[Setting AIR application properties](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html)
 
-![](images/airLinkIndicator.png)
-[Presenting a custom application update user interface](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ccd.html "https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ccd.html")
+![](../img/airLinkIndicator.png)
+[Presenting a custom application update user interface](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ccd.html)
 
 <div>
 

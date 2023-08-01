@@ -1,7 +1,5 @@
 # Programming HTML and JavaScript in AIR
 
-<div>
-
 A number of programming topics are unique to developing Adobe® AIR® applications
 with HTML and JavaScript. The following information is important whether you are
 programming an HTML-based AIR application or programming a SWF-based AIR
@@ -19,13 +17,3 @@ Flex™ component).
 - [Converting Date and RegExp objects](WS5b3ccc516d4fbf351e63e3d118666ade46-7f0a.html)
 - [Manipulating an HTML stylesheet from ActionScript](WS5b3ccc516d4fbf351e63e3d118666ade46-7f09.html)
 - [Cross-scripting content in different security sandboxes](WS5b3ccc516d4fbf351e63e3d118666ade46-7f08.html)
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

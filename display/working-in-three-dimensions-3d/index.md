@@ -1,7 +1,5 @@
 # Working in three dimensions (3D)
 
-<div>
-
 The Flash Player and AIR runtimes support 3D graphics in two ways. You can use
 three-dimensional display objects on the Flash display list. This is appropriate
 for adding three-dimensional effects to Flash content and for low polygon-count
@@ -17,19 +15,15 @@ renders the scene using shader programs that you provide. Hardware acceleration
 is used when a compatible graphics processing unit (GPU) with supported drivers,
 is available on the client computer.
 
-<a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Stage3D.html"
-target="_self">Stage3D</a> provides a very low-level API. In an application, you
-are encouraged to use a 3D framework that supports Stage3D. You can create your
-own framework or use one of several commercial and open source frameworks
-already available.
+[Stage3D](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Stage3D.html)
+provides a very low-level API. In an application, you are encouraged to use a 3D
+framework that supports Stage3D. You can create your own framework or use one of
+several commercial and open source frameworks already available.
 
 For more information about developing 3D applications using Stage3D and about
 available 3D frameworks, visit the
 <a href="http://goo.gl/hlzhB" target="_self">Flash Player Developer Center:
 Stage 3D</a>.
-
-<div xmlns:adobe="http://www.adobe.com/saxon">
 
 <table>
 <colgroup>
@@ -98,8 +92,6 @@ framework</a></h3>
 </tbody>
 </table>
 
-</div>
-
 - [Basics of 3D display objects](./basics-of-3d-objects.md)
 - [Understanding 3D display objects in Flash Player and the AIR runtime](./understanding-3d-display-objects-in-flash-player-and-the-air-runtime.md)
 - [Creating and moving 3D display objects](./creating-and-moving-3d-display-objects.md)
@@ -107,13 +99,3 @@ framework</a></h3>
 - [Example: Perspective projection](./example-perspective-projection.md)
 - [Performing complex 3D transformations](./performing-complex-3d-transformations.md)
 - [Using triangles for 3D effects](./using-triangles-for-3d-effects.md)
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

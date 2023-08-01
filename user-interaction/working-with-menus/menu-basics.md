@@ -536,8 +536,8 @@ More Help topics
 
 </div>
 
-![](images/flexLinkIndicator.png)
-[About the FlexNativeMenu control](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-7fea.html "https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-7fea.html")
+![](../../img/flexLinkIndicator.png)
+[About the FlexNativeMenu control](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-7fea.html)
 
 <div>
 

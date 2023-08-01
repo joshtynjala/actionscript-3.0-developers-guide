@@ -31,12 +31,12 @@ More Help topics
 
 </div>
 
-[Using the Flex web service component in Flash Professional](http://tv.adobe.com/watch/adc-presents/use-the-flex-webservice-component-in-flash/ "http://tv.adobe.com/watch/adc-presents/use-the-flex-webservice-component-in-flash/")
+[Using the Flex web service component in Flash Professional](http://tv.adobe.com/watch/adc-presents/use-the-flex-webservice-component-in-flash/)
 
-![](images/flexLinkIndicator.png)
-[Accessing server-side data](https://help.adobe.com/en_US/Flex/4.5/AccessingData/WS2db454920e96a9e51e63e3d11c0bf69084-7ff2.html "https://help.adobe.com/en_US/Flex/4.5/AccessingData/WS2db454920e96a9e51e63e3d11c0bf69084-7ff2.html")
+![](../../img/flexLinkIndicator.png)
+[Accessing server-side data](https://help.adobe.com/en_US/Flex/4.5/AccessingData/WS2db454920e96a9e51e63e3d11c0bf69084-7ff2.html)
 
-[Cristophe Coenraets: Real-time Trader Desktop for Android](http://coenraets.org/blog/air-for-android-samples/real-time-trader-desktop-for-android/ "http://coenraets.org/blog/air-for-android-samples/real-time-trader-desktop-for-android/")
+[Cristophe Coenraets: Real-time Trader Desktop for Android](http://coenraets.org/blog/air-for-android-samples/real-time-trader-desktop-for-android/)
 
 <div>
 

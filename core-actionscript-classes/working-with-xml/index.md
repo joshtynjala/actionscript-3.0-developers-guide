@@ -8,8 +8,6 @@ easy-to-use functionality for working with XML data. Using E4X, you will be able
 to develop code with XML data faster than was possible with previous programming
 techniques. As an added benefit, the code you produce will be easier to read.
 
-<div xmlns:adobe="http://www.adobe.com/saxon">
-
 <table>
 <colgroup>
 <col style="width: 100%" />
@@ -52,8 +50,6 @@ XML to find the data you need. </span></td>
 </tbody>
 </table>
 
-</div>
-
 - [Basics of XML](./basics-of-xml.md)
 - [The E4X approach to XML processing](./the-e4x-approach-to-xml-processing.md)
 - [XML objects](./xml-objects.md)
@@ -66,8 +62,12 @@ XML to find the data you need. </span></td>
 - [Reading external XML documents](./reading-external-xml-documents.md)
 - [XML in ActionScript example: Loading RSS data from the Internet](./xml-in-actionscript-example-loading-rss-data-from-the-internet.md)
 
-</div>
+More Help topics
 
-- [XML class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html)
-- [XMLList class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html)
-- [ECMA-457 specification](https://www.ecma-international.org/publications-and-standards/standards/ecma-357/)
+![](../../img/flashplatformLinkIndicator.png)
+[XML class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html)
+
+![](../../img/flashplatformLinkIndicator.png)
+[XMLList class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html)
+
+[ECMA-457 specification](https://www.ecma-international.org/publications-and-standards/standards/ecma-357/)

@@ -393,9 +393,9 @@ More Help topics
 
 </div>
 
-[Michael Chaize: AIR, Android, and the Microphone](http://www.riagora.com/2010/08/air-android-and-the-microphone/ "http://www.riagora.com/2010/08/air-android-and-the-microphone/")
+[Michael Chaize: AIR, Android, and the Microphone](http://www.riagora.com/2010/08/air-android-and-the-microphone/)
 
-[Christophe Coenraets: Voice Notes for Android](http://coenraets.org/blog/air-for-android-samples/voice-notes-for-android/ "http://coenraets.org/blog/air-for-android-samples/voice-notes-for-android/")
+[Christophe Coenraets: Voice Notes for Android](http://coenraets.org/blog/air-for-android-samples/voice-notes-for-android/)
 
 <div>
 

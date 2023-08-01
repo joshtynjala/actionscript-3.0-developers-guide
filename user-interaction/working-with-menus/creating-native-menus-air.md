@@ -193,10 +193,10 @@ More Help topics
 
 </div>
 
-![](images/flexLinkIndicator.png)
-[Using the Flex AIR components](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-8000.html "https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-8000.html")
+![](../../img/flexLinkIndicator.png)
+[Using the Flex AIR components](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-8000.html)
 
-[Developing cross-platform AIR applications](http://www.adobe.com/devnet/air/articles/developing_crossplatform.html "http://www.adobe.com/devnet/air/articles/developing_crossplatform.html")
+[Developing cross-platform AIR applications](http://www.adobe.com/devnet/air/articles/developing_crossplatform.html)
 
 <div>
 

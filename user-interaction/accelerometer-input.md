@@ -216,11 +216,11 @@ More Help topics
 
 </div>
 
-![](images/flashplatformLinkIndicator.png)
-[flash.sensors.Accelerometer](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/sensors/Accelerometer.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/sensors/Accelerometer.html")
+![](../img/flashplatformLinkIndicator.png)
+[flash.sensors.Accelerometer](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/sensors/Accelerometer.html)
 
-![](images/flashplatformLinkIndicator.png)
-[flash.events.AccelerometerEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/AccelerometerEvent.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/AccelerometerEvent.html")
+![](../img/flashplatformLinkIndicator.png)
+[flash.events.AccelerometerEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/AccelerometerEvent.html)
 
 <div>
 

@@ -1,7 +1,5 @@
 # Working with movie clips
 
-<div>
-
 The MovieClip class is the core class for animation and movie clip symbols that
 you create in your Adobe® Flash® development environment. It has all the
 behaviors and functionality of display objects, but with additional properties
@@ -14,6 +12,7 @@ and methods for controlling its timeline.
 - [Loading an external SWF file](./loading-an-external-swf-file.md)
 - [Movie clip example: RuntimeAssetsExplorer](./movie-clip-example-runtime-assets-explorer.md)
 
-- [flash.display.MovieClip class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/MovieClip.html)
+More Help Topics
 
-</div>
+![](../../img/flashplatformLinkIndicator.png)
+[flash.display.MovieClip class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/MovieClip.html)

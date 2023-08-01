@@ -324,9 +324,9 @@ More Help topics
 
 </div>
 
-[Christophe Coenraets: Employee Directory on AIR for Android](http://coenraets.org/blog/air-for-android-samples/employee-directory-for-android/ "http://coenraets.org/blog/air-for-android-samples/employee-directory-for-android/")
+[Christophe Coenraets: Employee Directory on AIR for Android](http://coenraets.org/blog/air-for-android-samples/employee-directory-for-android/)
 
-[Raymond Camden: jQuery and AIR - Moving from web page to application](http://insideria.com/2009/09/jquery-and-air---moving-from-w-1.html "http://insideria.com/2009/09/jquery-and-air---moving-from-w-1.html")
+[Raymond Camden: jQuery and AIR - Moving from web page to application](http://insideria.com/2009/09/jquery-and-air---moving-from-w-1.html)
 
 <div>
 

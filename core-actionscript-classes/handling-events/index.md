@@ -1,7 +1,5 @@
 # Handling events
 
-<div>
-
 An event-handling system allows programmers to respond to user input and system
 events in a convenient way. The ActionScript 3.0 event model is not only
 convenient, but also standards-compliant, and well integrated with the display
@@ -19,5 +17,3 @@ list. To gain a basic understanding of the display list, read
 - [Event objects](./event-objects.md)
 - [Event listeners](./event-listeners.md)
 - [Event handling example: Alarm Clock](./event-handling-example-alarm-clock.md)
-
-</div>

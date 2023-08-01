@@ -1,7 +1,5 @@
 # Display
 
-<div>
-
 - [Display programming](./display-programming/index.md)
 - [Working with geometry](./working-with-geometry/index.md)
 - [Using the drawing API](./using-the-drawing-api/index.md)
@@ -12,5 +10,3 @@
 - [Working with motion tweens](./working-with-motion-tweens/index.md)
 - [Working with inverse kinematics](./working-with-inverse-kinematics/index.md)
 - [Working in three dimensions (3D)](./working-in-three-dimensions-3d/index.md)
-
-</div>

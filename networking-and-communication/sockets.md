@@ -1018,8 +1018,8 @@ More Help topics
 
 </div>
 
-![](images/flashplatformLinkIndicator.png)
-[flash.net package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/package-detail.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/package-detail.html")
+![](../img/flashplatformLinkIndicator.png)
+[flash.net package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/package-detail.html)
 
 <div>
 

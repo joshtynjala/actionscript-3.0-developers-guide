@@ -295,17 +295,17 @@ More Help topics
 
 </div>
 
-![](images/airLinkIndicator.png)
-[Packaging an AIR application in a native installer](https://help.adobe.com/en_US/air/build/WS789ea67d3e73a8b22388411123785d839c-8000.html "https://help.adobe.com/en_US/air/build/WS789ea67d3e73a8b22388411123785d839c-8000.html")
+![](../img/airLinkIndicator.png)
+[Packaging an AIR application in a native installer](https://help.adobe.com/en_US/air/build/WS789ea67d3e73a8b22388411123785d839c-8000.html)
 
-![](images/airLinkIndicator.png)
-[Application profiles](https://help.adobe.com/en_US/air/build/WS144092a96ffef7cc16ddeea2126bb46b82f-8000.html "https://help.adobe.com/en_US/air/build/WS144092a96ffef7cc16ddeea2126bb46b82f-8000.html")
+![](../img/airLinkIndicator.png)
+[Application profiles](https://help.adobe.com/en_US/air/build/WS144092a96ffef7cc16ddeea2126bb46b82f-8000.html)
 
-![](images/flashplatformLinkIndicator.png)
+![](../img/flashplatformLinkIndicator.png)
 [flash.filesystem.File.openWithDefaultApplication()](<https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/File.html#openWithDefaultApplication()> "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/File.html#openWithDefaultApplication()")
 
-![](images/flashplatformLinkIndicator.png)
-[flash.desktop.NativeProcess](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeProcess.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeProcess.html")
+![](../img/flashplatformLinkIndicator.png)
+[flash.desktop.NativeProcess](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeProcess.html)
 
 <div>
 

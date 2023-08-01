@@ -1,7 +1,5 @@
 # Working with video
 
-<div>
-
 Flash video is one of the standout technologies on the Internet. However, the
 traditional presentation of video—in a rectangular screen with a progress bar
 and control buttons underneath—is only one possible use of video. Through
@@ -22,13 +20,3 @@ presentation, and playback.
 - [Advanced topics for video files](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d48.html)
 - [Video example: Video Jukebox](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d47.html)
 - [Using the StageVideo class for hardware accelerated presentation](WSe9ecd9e6b89aefd2-68d5ef8f12cc8511f6c-8000.html)
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

@@ -268,17 +268,17 @@ More Help topics
 
 </div>
 
-![](images/flashplatformLinkIndicator.png)
-[InteractiveObject](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/InteractiveObject.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/InteractiveObject.html")
+![](../img/flashplatformLinkIndicator.png)
+[InteractiveObject](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/InteractiveObject.html)
 
-![](images/flashplatformLinkIndicator.png)
-[Keyboard](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Keyboard.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Keyboard.html")
+![](../img/flashplatformLinkIndicator.png)
+[Keyboard](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Keyboard.html)
 
-![](images/flashplatformLinkIndicator.png)
-[Mouse](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Mouse.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Mouse.html")
+![](../img/flashplatformLinkIndicator.png)
+[Mouse](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Mouse.html)
 
-![](images/flashplatformLinkIndicator.png)
-[ContextMenu](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/ContextMenu.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/ContextMenu.html")
+![](../img/flashplatformLinkIndicator.png)
+[ContextMenu](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/ContextMenu.html)
 
 <div>
 

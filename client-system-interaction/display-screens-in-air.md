@@ -233,8 +233,8 @@ More Help topics
 
 </div>
 
-![](images/flashplatformLinkIndicator.png)
-[flash.display.Screen](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Screen.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Screen.html")
+![](../img/flashplatformLinkIndicator.png)
+[flash.display.Screen](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Screen.html)
 
 <div>
 

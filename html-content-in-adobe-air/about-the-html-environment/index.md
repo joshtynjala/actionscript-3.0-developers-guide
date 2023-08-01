@@ -1,7 +1,5 @@
 # About the HTML environment
 
-<div>
-
 Adobe® AIR® uses [WebKit](http://www.webkit.org) _(www.webkit.org_ ), also used
 by the Safari web browser, to parse, layout, and render HTML and JavaScript
 content. Using the AIR APIs in HTML content is optional. You can program in the
@@ -24,8 +22,6 @@ of your application.
 The following table lists the version of the Safari web browser that uses the
 version of WebKit equivalent to that used in AIR:
 
-<div>
-
 | AIR version | Safari version |
 | ----------- | -------------- |
 | 1.0         | 2.04           |
@@ -36,8 +32,6 @@ version of WebKit equivalent to that used in AIR:
 | 2.6         | 4.03           |
 | 2.7         | 4.03           |
 | 3           | 5.0.3          |
-
-</div>
 
 You can always determine the installed version of WebKit by examining the
 default user agent string returned by a HTMLLoader object:
@@ -71,33 +65,15 @@ and [Window transparency](WS5b3ccc516d4fbf351e63e3d118676a452d-7fe5.html).
 - [Overview of the HTML environment](WS5b3ccc516d4fbf351e63e3d118666ade46-7ec2.html)
 - [AIR and WebKit](WS5b3ccc516d4fbf351e63e3d118666ade46-7ec1.html)
 
-</div>
-
-<div>
-
-<div>
-
 More Help topics
 
-</div>
+[Webkit DOM Reference](http://developer.apple.com/safari/library/documentation/AppleApplications/Reference/WebKitDOMRef/index.html#//apple_ref/doc/uid/TP40006089)
 
-<div>
+[Safari HTML Reference](http://developer.apple.com/safari/library/documentation/AppleApplications/Reference/SafariHTMLRef/Introduction.html)
 
-</div>
+[Safari CSS Reference](http://developer.apple.com/safari/library/documentation/AppleApplications/Reference/SafariCSSRef/Introduction.html)
 
-[Webkit DOM Reference](http://developer.apple.com/safari/library/documentation/AppleApplications/Reference/WebKitDOMRef/index.html#//apple_ref/doc/uid/TP40006089 "http://developer.apple.com/safari/library/documentation/AppleApplications/Reference/WebKitDOMRef/index.html#//apple_ref/doc/uid/TP40006089")
+[www.webkit.org](http://www.webkit.org)
 
-[Safari HTML Reference](http://developer.apple.com/safari/library/documentation/AppleApplications/Reference/SafariHTMLRef/Introduction.html "http://developer.apple.com/safari/library/documentation/AppleApplications/Reference/SafariHTMLRef/Introduction.html")
-
-[Safari CSS Reference](http://developer.apple.com/safari/library/documentation/AppleApplications/Reference/SafariCSSRef/Introduction.html "http://developer.apple.com/safari/library/documentation/AppleApplications/Reference/SafariCSSRef/Introduction.html")
-
-[www.webkit.org](http://www.webkit.org "http://www.webkit.org")
-
-![](images/airLinkIndicator.png)
-[Updating AIR applications](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff2.html "https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff2.html")
-
-<div>
-
-</div>
-
-</div>
+![](../../img/airLinkIndicator.png)
+[Updating AIR applications](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff2.html)

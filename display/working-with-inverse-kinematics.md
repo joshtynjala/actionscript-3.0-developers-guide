@@ -1,7 +1,5 @@
 # Working with inverse kinematics
 
-<div>
-
 Inverse kinematics (IK) is a great technique for creating realistic motion.
 
 IK lets you create coordinated movements within a chain of connected parts
@@ -25,13 +23,7 @@ this effect is visible both at runtime and during authoring.
 To create inverse kinematics armatures, you must have a license for Flash
 Professional.
 
-</div>
-
-<div>
-
 ## Basics of Inverse Kinematics
-
-<div>
 
 Inverse kinematics (IK) lets you create life-like animation by linking parts so
 they move in relation to one another in a realistic manner.
@@ -48,8 +40,6 @@ Professional. Then you can access the IK classes to animate them at runtime.
 
 See the Using inverse kinematics section in _Using Flash Professional_ for
 detailed instructions on how to create an IK armature.
-
-<div>
 
 #### Important concepts and terms
 
@@ -79,17 +69,7 @@ Spring
 The quality of a bone that moves and reacts when the parent bone is moved and
 then incrementally diminishes over time.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Animating IK Armatures Overview
-
-<div>
 
 After creating an IK armature in Flash Professional, use the `fl.ik` classes to
 limit its movement, track its events, and animate it at runtime.
@@ -131,8 +111,6 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
 </div>
 
-<div>
-
 At runtime, the following ActionScript:
 
 - Gets information about the armature and its components
@@ -141,42 +119,27 @@ At runtime, the following ActionScript:
 
 - Moves the axle in conjunction with the rotation of the wheel
 
-</div>
+  import fl.ik.\*
 
-<div>
+  var tree:IKArmature = IKManager.getArmatureByName("Axle"); var bone:IKBone =
+  tree.getBoneByName("ikBone2"); var endEffector:IKJoint = bone.tailJoint; var
+  pos:Point = endEffector.position;
 
-    import fl.ik.*
+  var ik:IKMover = new IKMover(endEffector, pos); ik.limitByDistance = true;
+  ik.distanceLimit = 0.1; ik.limitByIteration = true; ik.iterationLimit = 10;
 
-    var tree:IKArmature = IKManager.getArmatureByName("Axle");
-    var bone:IKBone = tree.getBoneByName("ikBone2");
-    var endEffector:IKJoint = bone.tailJoint;
-    var pos:Point = endEffector.position;
+  Wheel.addEventListener(Event.ENTER_FRAME, frameFunc);
 
-    var ik:IKMover = new IKMover(endEffector, pos);
-    ik.limitByDistance = true;
-    ik.distanceLimit = 0.1;
-    ik.limitByIteration = true;
-    ik.iterationLimit = 10;
-
-    Wheel.addEventListener(Event.ENTER_FRAME, frameFunc);
-
-    function frameFunc(event:Event)
-    {
-        if (Wheel != null)
-        {
-            var mat:Matrix = Wheel.transform.matrix;
-            var pt = new Point(90, 0);
-            pt = mat.transformPoint(pt);
+  function frameFunc(event:Event) { if (Wheel != null) { var mat:Matrix =
+  Wheel.transform.matrix; var pt = new Point(90, 0); pt =
+  mat.transformPoint(pt);
 
             ik.moveTo(pt);
         }
-    }
 
-</div>
+  }
 
 The IK classes used to move the axle are:
-
-<div>
 
 - IKArmature: describes the armature, a tree structure consisting of bones and
   joints; must be created with Flash Professional
@@ -190,21 +153,12 @@ The IK classes used to move the axle are:
 
 - IKMover: initiates and controls IK movement of armatures
 
-</div>
-
-For complete and detailed descriptions of these classes, see the <a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/fl/ik/package-detail.html"
-target="_self">ik package</a>.
-
-</div>
-
-</div>
-
-<div>
+For complete and detailed descriptions of these classes, see the
+[fl.ik package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/fl/ik/package-detail.html)
+in the
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
 ## Getting information about an IK armature
-
-<div>
 
 First, declare variables for the armature, the bone, and the joint that make up
 the parts that you want to move.
@@ -213,21 +167,13 @@ The following code uses the `getArmatureByName()` method of the IKManager class
 to assign the value of the Axle armature to the IKArmature variable `tree`. The
 Axle armature was previously created with Flash Professional.
 
-<div>
-
     var tree:IKArmature = IKManager.getArmatureByName("Axle");
-
-</div>
 
 Similarly, the following code uses the `getBoneByName()` method of the
 IKArmature class to assign to the IKBone variable the value of the `ikBone2`
 bone.
 
-<div>
-
     var bone:IKBone = tree.getBoneByName("ikBone2");
-
-</div>
 
 The tail joint of the `ikBone2` bone is the part of the armature that attaches
 to the spinning wheel.
@@ -235,45 +181,25 @@ to the spinning wheel.
 The following line declares the variable `endEffector` and assigns to it the
 `tailjoint` property of the `ikBone2` bone:
 
-<div>
-
     var endEffector:IKJoint = home.tailjoint;
-
-</div>
-
-<div>
 
 The variable `pos` is a point that stores the current position of the
 `endEffector` joint.
 
     var pos:Point = endEffector.position;
 
-</div>
-
 In this example, `pos` is the position of the joint at the end of the axle where
 it connects to the wheel. The original value of this variable is obtained from
 the `position` property of the IKJoint.
 
-</div>
-
-</div>
-
-<div>
-
 ## Instantiating an IK Mover and Limiting Its Movement
 
-<div>
-
 An instance of the IKMover class moves the axle.
-
-<div>
 
 The following line instantiates the IKMover object `ik`, passing to its
 constructor the element to move and the starting point for the movement:
 
     var ik:IKMover = new IKMover(endEffector, pos);
-
-</div>
 
 The properties of the IKMover class let you limit the movement of an armature.
 You can limit movement based on the distance, iterations, and time of the
@@ -283,20 +209,12 @@ The following pairs of properties enforce these limits. The pairs consist of a
 Boolean value that indicates whether the movement is limited and an integer that
 specifies the limit:
 
-<div>
-
-<div>
-
 |                            |                      |                                                                                          |
 | -------------------------- | -------------------- | ---------------------------------------------------------------------------------------- |
 | Boolean property           | Integer property     | Limit set                                                                                |
 | `limitByDistance:Boolean`  | `distanceLimit:int`  | Sets the maximum distance in pixels that the IK engine moves for each iteration.         |
 | `limitByIteration:Boolean` | `iterationLimit:int` | Sets the maximum number of iterations the IK engine performs for each movement.          |
 | `limitByTime:Boolean`      | `timeLimit:int`      | Sets the maximum time in milliseconds allotted to the IK engine to perform the movement. |
-
-</div>
-
-</div>
 
 By default, all the Boolean values are set to `false`, so movement is not
 limited unless you explicitly set a Boolean value to `true`. To enforce a limit,
@@ -305,8 +223,6 @@ corresponding integer property. If you set the limit to a value without setting
 its corresponding Boolean property, the limit is ignored. In this case, the IK
 engine continues to move the object until another limit or the target position
 of the IKMover is reached.
-
-<div>
 
 In the following example, the maximum distance of the armature movement is set
 to 0.1 pixels per iteration. The maximum number of iterations for every movement
@@ -317,19 +233,7 @@ is set to ten.
     ik.limitByIteration = true;
     ik.iterationLimit = 10;
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Moving an IK Armature
-
-<div>
-
-<div>
 
 The IKMover moves the axle inside the event listener for the wheel. On each
 enterFrame event of the wheel, a new target position for the armature is
@@ -351,17 +255,7 @@ target position or as far as it can within the constraints set by its
         }
     }
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Using Springs
-
-<div>
 
 Inverse kinematics in Flash Professional CS5 supports bone spring. Bone spring
 can be set during authoring, and bone spring attributes can be added or modified
@@ -390,8 +284,6 @@ This example selects a bone by name and identifies its tailJoint. The code tests
 the parent armature to see if springs are enabled and then sets spring
 properties for the joint.
 
-<div>
-
     var arm:IKArmature = IKManager.getArmatureAt(0);
     var bone:IKBone = arm.getBoneByName("c");
     var joint:IKJoint = bone.tailJoint;
@@ -403,17 +295,7 @@ properties for the joint.
         }
     }
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Using IK Events
-
-<div>
 
 The IKEvent class lets you create an event object that contains information
 about IK Events. IKEvent information describes motion that has terminated
@@ -423,8 +305,6 @@ The following code shows an event listener and handler for tracking time limit
 events. This event handler reports on the time, distance, iteration count, and
 joint properties of an event that fires when the time limit of the IKMover is
 exceeded.
-
-<div>
 
     var ikmover:IKMover = new IKMover(endjoint, pos);
     ikMover.limitByTime = true;
@@ -441,28 +321,10 @@ exceeded.
         trace("IKJoint is " + evt.joint.name);
     }
 
-</div>
+More Help Topics
 
-</div>
+![](../img/flashplatformLinkIndicator.png)
+[fl.ik package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/fl/ik/package-detail.html)
 
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-<div>
-
-</div>
-
-- [fl.ik package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/fl/ik/package-detail.html)
-
-- [Inverse kinematics](https://help.adobe.com/en_US/flash/cs/using/WS58BD3A02-DA25-488f-B534-AE5463A24833.html)
-
-<div>
-
-</div>
-
-</div>
+![](../img/flashplatformLinkIndicator.png)
+[Inverse kinematics](https://help.adobe.com/en_US/flash/cs/using/WS58BD3A02-DA25-488f-B534-AE5463A24833.html)

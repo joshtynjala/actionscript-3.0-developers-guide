@@ -1,7 +1,5 @@
 # Working with application domains
 
-<div>
-
 The purpose of the ApplicationDomain class is to store a table of ActionScript
 3.0 definitions. All code in a SWF file is defined to exist in an application
 domain. You use application domains to partition classes that are in the same
@@ -163,5 +161,3 @@ loading a SWF using that application domain:
     var contextC:LoaderContext = new LoaderContext(false, appDomainC);
     var loaderC:Loader = new Loader();
     loaderC.load(new URLRequest("module3.swf"), contextC);
-
-</div>

@@ -66,11 +66,11 @@ More Help topics
 
 </div>
 
-![](images/flexLinkIndicator.png)
-[Flex: Spark VideoPlayer control](https://help.adobe.com/en_US/flex/using/WSc78f87379113c38b-669905c51221a3b97af-8000.html "https://help.adobe.com/en_US/flex/using/WSc78f87379113c38b-669905c51221a3b97af-8000.html")
+![](../../img/flexLinkIndicator.png)
+[Flex: Spark VideoPlayer control](https://help.adobe.com/en_US/flex/using/WSc78f87379113c38b-669905c51221a3b97af-8000.html)
 
-![](images/flashplatformLinkIndicator.png)
-[spark.components.VideoDisplay](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/spark/components/VideoDisplay.html?allClasses=1 "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/spark/components/VideoDisplay.html?allClasses=1")
+![](../../img/flashplatformLinkIndicator.png)
+[spark.components.VideoDisplay](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/spark/components/VideoDisplay.html?allClasses=1)
 
 <div>
 

@@ -1,7 +1,5 @@
 # Working with the file system
 
-<div>
-
 Flash® Player provides basic file reading and writing capabilities, via the
 FileReference class. For security reasons, when running in Flash Player, the
 user must always grant permission before you can read or write a file.
@@ -14,31 +12,13 @@ data to files, and so on.
 - [Using the FileReference class](WS5b3ccc516d4fbf351e63e3d118a9b90204-7cf8.html)
 - [Using the AIR file system API](WS789ea67d3e73a8b264d839a2122cf6e9175-8000.html)
 
-</div>
-
-<div>
-
-<div>
-
 More Help topics
 
-</div>
+![](../../img/flashplatformLinkIndicator.png)
+[flash.net.FileReference](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/FileReference.html)
 
-<div>
+![](../../img/flashplatformLinkIndicator.png)
+[flash.net.FileReferenceList](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/FileReferenceList.html)
 
-</div>
-
-![](images/flashplatformLinkIndicator.png)
-[flash.net.FileReference](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/FileReference.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/FileReference.html")
-
-![](images/flashplatformLinkIndicator.png)
-[flash.net.FileReferenceList](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/FileReferenceList.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/FileReferenceList.html")
-
-![](images/flashplatformLinkIndicator.png)
-[flash.filesystem.File](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/File.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/File.html")
-
-<div>
-
-</div>
-
-</div>
+![](../../img/flashplatformLinkIndicator.png)
+[flash.filesystem.File](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/File.html)

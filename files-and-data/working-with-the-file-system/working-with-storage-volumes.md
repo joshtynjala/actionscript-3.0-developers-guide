@@ -127,11 +127,11 @@ More Help topics
 
 </div>
 
-![](images/flashplatformLinkIndicator.png)
-[StorageVolume](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/StorageVolume.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/StorageVolume.html")
+![](../../img/flashplatformLinkIndicator.png)
+[StorageVolume](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/StorageVolume.html)
 
-![](images/flashplatformLinkIndicator.png)
-[StorageVolumeInfo](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/StorageVolumeInfo.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/StorageVolumeInfo.html")
+![](../../img/flashplatformLinkIndicator.png)
+[StorageVolumeInfo](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/StorageVolumeInfo.html)
 
 <div>
 

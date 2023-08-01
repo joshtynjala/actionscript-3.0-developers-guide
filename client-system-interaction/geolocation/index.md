@@ -1,7 +1,5 @@
 # Geolocation
 
-<div>
-
 If a device supports geolocation, you can use the geolocation API to obtain the
 current geographical location of the device. If the device supports this
 feature, you can obtain geolocation information. This information includes the
@@ -44,32 +42,12 @@ href="http://goo.gl/XpgZ1">Geolocation tips and quirks</a></h3>
 </tbody>
 </table>
 
-</div>
-
 - [Detecting geolocation changes](WS144092a96ffef7cc-66bf4d0212658dde8c4-7fff.html)
-
-</div>
-
-<div>
-
-<div>
 
 More Help topics
 
-</div>
+![](../../img/flashplatformLinkIndicator.png)
+[flash.sensors.Geolocation](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/sensors/Geolocation.html)
 
-<div>
-
-</div>
-
-![](images/flashplatformLinkIndicator.png)
-[flash.sensors.Geolocation](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/sensors/Geolocation.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/sensors/Geolocation.html")
-
-![](images/flashplatformLinkIndicator.png)
-[flash.events.GeolocationEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/GeolocationEvent.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/GeolocationEvent.html")
-
-<div>
-
-</div>
-
-</div>
+![](../../img/flashplatformLinkIndicator.png)
+[flash.events.GeolocationEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/GeolocationEvent.html)

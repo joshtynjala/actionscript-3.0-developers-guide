@@ -26,8 +26,6 @@ use the built-in noise functions to create textures and random noise.
 
 - <a href="http://flixel.org/" target="_self">Flixel</a>
 
-<!-- -->
-
 - [Basics of working with bitmaps](./basics-of-working-with-bitmaps.md)
 - [The Bitmap and BitmapData classes](./the-bitmap-and-bitmap-data-classes.md)
 - [Manipulating pixels](./manipulating-pixels.md)
@@ -39,7 +37,10 @@ use the built-in noise functions to create textures and random noise.
 - [Bitmap example: Animated spinning moon](./bitmap-example-animated-spinning-moon.md)
 - [Asynchronous decoding of bitmap images](./asynchronous-decoding-of-bitmap-images.md)
 
-- [flash.display.Bitmap class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Bitmap.html)
-- [flash.display.BitmapData class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/BitmapData.html)
+More Help Topics
 
-</div>
+![](../../img/flashplatformLinkIndicator.png)
+[flash.display.Bitmap class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Bitmap.html)
+
+![](../../img/flashplatformLinkIndicator.png)
+[flash.display.BitmapData class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/BitmapData.html)

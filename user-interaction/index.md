@@ -1,7 +1,5 @@
 # User interaction
 
-<div>
-
 - [Basics of user interaction](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e3b.html)
 - [Keyboard input](WSb2ba3b1aad8a27b061a6d2a61221e5dd56d-8000.html)
 - [Mouse input](WSb2ba3b1aad8a27b0-777dcc4d1221e5f3ee0-8000.html)
@@ -11,13 +9,3 @@
 - [Working with menus](WS5b3ccc516d4fbf351e63e3d118676a48d0-8000.html)
 - [Taskbar icons in AIR](WS5b3ccc516d4fbf351e63e3d118676a4af7-8000.html)
 - [Accelerometer input](WSb2ba3b1aad8a27b036ae443e1221e57e23b-8000.html)
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

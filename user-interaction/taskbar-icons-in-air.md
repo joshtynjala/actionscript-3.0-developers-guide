@@ -400,14 +400,14 @@ More Help topics
 
 </div>
 
-![](images/flashplatformLinkIndicator.png)
-[flash.desktop.NativeApplication](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeApplication.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeApplication.html")
+![](../img/flashplatformLinkIndicator.png)
+[flash.desktop.NativeApplication](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeApplication.html)
 
-![](images/flashplatformLinkIndicator.png)
-[flash.desktop.DockIcon](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/DockIcon.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/DockIcon.html")
+![](../img/flashplatformLinkIndicator.png)
+[flash.desktop.DockIcon](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/DockIcon.html)
 
-![](images/flashplatformLinkIndicator.png)
-[flash.desktop.SystemTrayIcon](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/SystemTrayIcon.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/SystemTrayIcon.html")
+![](../img/flashplatformLinkIndicator.png)
+[flash.desktop.SystemTrayIcon](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/SystemTrayIcon.html)
 
 <div>
 

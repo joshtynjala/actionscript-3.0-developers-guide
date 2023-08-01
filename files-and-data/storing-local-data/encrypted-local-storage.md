@@ -214,11 +214,11 @@ More Help topics
 
 </div>
 
-![](images/flashplatformLinkIndicator.png)
-[flash.data.EncryptedLocalStore](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/EncryptedLocalStore.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/EncryptedLocalStore.html")
+![](../../img/flashplatformLinkIndicator.png)
+[flash.data.EncryptedLocalStore](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/EncryptedLocalStore.html)
 
-![](images/airLinkIndicator.png)
-[About AIR publisher identifiers](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7cca.html "https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7cca.html")
+![](../../img/airLinkIndicator.png)
+[About AIR publisher identifiers](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7cca.html)
 
 <div>
 

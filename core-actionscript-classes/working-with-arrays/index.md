@@ -17,7 +17,10 @@ the same data type.
 - [Extending the Array class](./extending-the-array-class.md)
 - [Arrays example: PlayList](./arrays-example-playlist.md)
 
-</div>
+More Help topics
 
-- [Array class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html)
-- [Vector class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Vector.html)
+![](../../img/flashplatformLinkIndicator.png)
+[Array class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html)
+
+![](../../img/flashplatformLinkIndicator.png)
+[Vector class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Vector.html)

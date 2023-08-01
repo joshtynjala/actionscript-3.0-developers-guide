@@ -65,7 +65,7 @@ More Help topics
 
 </div>
 
-[Adobe Developer Connection: Measuring video consumption in Flash](http://www.adobe.com/devnet/video/articles/media-measurement-flash.html "http://www.adobe.com/devnet/video/articles/media-measurement-flash.html")
+[Adobe Developer Connection: Measuring video consumption in Flash](http://www.adobe.com/devnet/video/articles/media-measurement-flash.html)
 
 <div>
 

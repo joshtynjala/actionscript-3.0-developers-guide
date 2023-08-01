@@ -1,7 +1,5 @@
 # Using the TextField class
 
-<div>
-
 You can use an instance of the TextField class to display text or create a text
 input field on the screen in Adobe® Flash® Player or Adobe® AIR™. The TextField
 class is the basis for other text-based components, such as the TextArea
@@ -12,10 +10,10 @@ or database, or entered by a user interacting with your application. Within a
 text field, the text can appear as rendered HTML content, with images embedded
 in the rendered HTML. After you create an instance of a text field, you can use
 flash.text classes, such as TextFormat and StyleSheet, to control the appearance
-of the text. The <a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/package-detail.html"
-target="_self">flash.text package</a> contains nearly all the classes related to
-creating, managing, and formatting text in ActionScript.
+of the text. The
+[flash.text package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/package-detail.html)
+contains nearly all the classes related to creating, managing, and formatting
+text in ActionScript.
 
 You can format text by defining the formatting with a TextFormat object and
 assigning that object to the text field. If your text field contains HTML text,
@@ -39,26 +37,8 @@ flash.events.TextEvent class to respond to user actions related to text.
 - [Working with static text](WS8d7bb3e8da6fb92f-20050207122bd5f80cb-7fed.html)
 - [TextField Example: Newspaper-style text formatting](WS8d7bb3e8da6fb92f-20050207122bd5f80cb-7fe6.html)
 
-</div>
-
-<div>
-
-<div>
-
 More Help topics
 
-</div>
+[Text](https://help.adobe.com/en_US/Flash/10.0_UsingFlash/WSd60f23110762d6b883b18f10cb1fe1af6-7d54a.html)
 
-<div>
-
-</div>
-
-[Text](https://help.adobe.com/en_US/Flash/10.0_UsingFlash/WSd60f23110762d6b883b18f10cb1fe1af6-7d54a.html "https://help.adobe.com/en_US/Flash/10.0_UsingFlash/WSd60f23110762d6b883b18f10cb1fe1af6-7d54a.html")
-
-[MX text controls](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7d84.html "https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7d84.html")
-
-<div>
-
-</div>
-
-</div>
+[MX text controls](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7d84.html)

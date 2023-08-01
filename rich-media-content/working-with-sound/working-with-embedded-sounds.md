@@ -142,11 +142,11 @@ More Help topics
 
 </div>
 
-![](images/flexLinkIndicator.png)
-[Embedding assets](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fce.html "https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fce.html")
+![](../../img/flexLinkIndicator.png)
+[Embedding assets](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fce.html)
 
-![](images/as3LinkIndicator.png)
-[Embedded asset classes](https://help.adobe.com/en_US/as3/learn/WS5b3ccc516d4fbf351e63e3d118a9b90204-7f2e.html "https://help.adobe.com/en_US/as3/learn/WS5b3ccc516d4fbf351e63e3d118a9b90204-7f2e.html")
+![](../../img/as3LinkIndicator.png)
+[Embedded asset classes](https://help.adobe.com/en_US/as3/learn/WS5b3ccc516d4fbf351e63e3d118a9b90204-7f2e.html)
 
 <div>
 

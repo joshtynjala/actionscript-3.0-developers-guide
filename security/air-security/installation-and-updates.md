@@ -340,14 +340,14 @@ More Help topics
 
 </div>
 
-![](images/airLinkIndicator.png)
-[Distributing, Installing, and Running AIR applications](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7fcb.html "https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7fcb.html")
+![](../../img/airLinkIndicator.png)
+[Distributing, Installing, and Running AIR applications](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7fcb.html)
 
-![](images/airLinkIndicator.png)
-[Setting AIR application properties](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html "https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html")
+![](../../img/airLinkIndicator.png)
+[Setting AIR application properties](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html)
 
-![](images/airLinkIndicator.png)
-[Digitally signing an AIR file](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff0.html "https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff0.html")
+![](../../img/airLinkIndicator.png)
+[Digitally signing an AIR file](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff0.html)
 
 <div>
 

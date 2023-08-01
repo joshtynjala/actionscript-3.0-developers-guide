@@ -1,7 +1,5 @@
 # Working with dates and times
 
-<div>
-
 Timing might not be everything, but it's usually a key factor in software
 applications. ActionScript 3.0 provides powerful ways to manage calendar dates,
 times, and time intervals. Two main classes provide most of this timing
@@ -22,7 +20,10 @@ perform actions after a certain delay or at repeated intervals.
 - [Controlling time intervals](./controlling-time-intervals.md)
 - [Date and time example: Simple analog clock](./date-and-time-example-simple-analog-clock.md)
 
-</div>
+More Help topics
 
-- [Date class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Date.html)
-- [flash.utils.Timer class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/utils/Timer.html)
+![](../../img/flashplatformLinkIndicator.png)
+[Date class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Date.html)
+
+![](../../img/flashplatformLinkIndicator.png)
+[flash.utils.Timer class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/utils/Timer.html)

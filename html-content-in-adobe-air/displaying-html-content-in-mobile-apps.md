@@ -613,7 +613,7 @@ More Help topics
 
 </div>
 
-[Sean Voisen: Making the Most of StageWebView](http://voisen.org/blog/2010/10/making-the-most-of-stagewebview/ "http://voisen.org/blog/2010/10/making-the-most-of-stagewebview/")
+[Sean Voisen: Making the Most of StageWebView](http://voisen.org/blog/2010/10/making-the-most-of-stagewebview/)
 
 <div>
 

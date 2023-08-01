@@ -171,10 +171,10 @@ More Help topics
 
 </div>
 
-![](images/airLinkIndicator.png)
-[Android permissions](https://help.adobe.com/en_US/air/build/WS901d38e593cd1bac1e63e3d129d39606f2-8000.html "https://help.adobe.com/en_US/air/build/WS901d38e593cd1bac1e63e3d129d39606f2-8000.html")
+![](../../img/airLinkIndicator.png)
+[Android permissions](https://help.adobe.com/en_US/air/build/WS901d38e593cd1bac1e63e3d129d39606f2-8000.html)
 
-[Android: Security and Permissions](http://developer.android.com/guide/topics/security/security.html "http://developer.android.com/guide/topics/security/security.html")
+[Android: Security and Permissions](http://developer.android.com/guide/topics/security/security.html)
 
 <div>
 

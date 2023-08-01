@@ -1,7 +1,5 @@
 # Using the drawing API
 
-<div>
-
 Although imported images and artwork are important, the functionality known as
 the drawing API, which allows you to draw lines and shapes in ActionScript,
 gives you the freedom to start an application with the computer equivalent of a
@@ -21,6 +19,7 @@ elements, among many possibilities.
 - [Drawing API example: Algorithmic Visual Generator](./drawing-api-example-algorithmic-visual-generator.md)
 - [Advanced use of the drawing API](./advanced-use-of-the-drawing-api.md)
 
-- [flash.display.Graphics](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Graphics.html)
+More Help Topics
 
-</div>
+![](../../img/flashplatformLinkIndicator.png)
+[flash.display.Graphics](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Graphics.html)

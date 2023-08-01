@@ -1,7 +1,5 @@
 # Handling errors
 
-<div>
-
 To "handle" an error means that you build logic into your application to respond
 to, or fix, an error. Errors are generated either when an application is
 compiled or when a compiled application is running. When your application
@@ -26,7 +24,10 @@ and the advantages of the error-handling system in ActionScript 3.0.
 - [Comparing the Error classes](./comparing-the-error-classes.md)
 - [Handling errors example: CustomErrors application](./handling-errors-example-custom-errors-application.md)
 
-</div>
+More Help topics
 
-- [ActionScript language and syntax](https://help.adobe.com/en_US/as3/learn/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ec7.html)
-- [Object-oriented programming in ActionScript](https://help.adobe.com/en_US/as3/learn/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ec0.html)
+![](../../img/flashplatformLinkIndicator.png)
+[ActionScript language and syntax](https://help.adobe.com/en_US/as3/learn/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ec7.html)
+
+![](../../img/flashplatformLinkIndicator.png)
+[Object-oriented programming in ActionScript](https://help.adobe.com/en_US/as3/learn/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ec0.html)

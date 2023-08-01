@@ -1,7 +1,5 @@
 # Filtering display objects
 
-<div>
-
 Historically, the application of filter effects to bitmap images has been the
 domain of specialized image-editing software such as Adobe Photoshop® and Adobe
 Fireworks®. ActionScript 3.0 includes the flash.filters package, which contains
@@ -14,6 +12,7 @@ of the same effects that are available in graphics manipulation applications.
 - [Available display filters](./available-display-filters.md)
 - [Filtering display objects example: Filter Workbench](./filtering-display-objects-example-filter-workbench.md)
 
-- [flash.filters package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filters/package-detail.html)
+More Help Topics
 
-</div>
+![](../../img/flashplatformLinkIndicator.png)
+[flash.filters package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filters/package-detail.html)
