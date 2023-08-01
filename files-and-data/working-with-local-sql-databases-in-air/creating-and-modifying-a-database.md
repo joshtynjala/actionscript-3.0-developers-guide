@@ -168,7 +168,7 @@ on that database, using the same process that you use to execute a SQL statement
 such as `SELECT`, `INSERT`, and so forth. To create a table, you use a
 `CREATE TABLE` statement, which includes definitions of columns and constraints
 for the new table. For more information about executing SQL statements, see
-[Working with SQL statements](WS5b3ccc516d4fbf351e63e3d118666ade46-7d2c.html).
+[Working with SQL statements](./working-with-sql-statements.md).
 
 The following example demonstrates creating a table named "employees" in an
 existing database file, using asynchronous execution mode. Note that this code
@@ -334,4 +334,4 @@ database.
 
 More Help topics
 
-[Mind the Flex: Updating an existing AIR database](http://www.mindtheflex.com/?p=83 "http://www.mindtheflex.com/?p=83")
+[Mind the Flex: Updating an existing AIR database](http://www.mindtheflex.com/?p=83)

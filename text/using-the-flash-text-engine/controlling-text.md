@@ -218,7 +218,7 @@ TextBlock instance.
     textBlock.tabStops = tabStops
 
 For more information on Vectors, see
-[Working with arrays](WS5b3ccc516d4fbf351e63e3d118a9b90204-7fdc.html).
+[Working with arrays](../../core-actionscript-classes/working-with-arrays/index.md).
 
 The following example shows the effect of each of the TabStop alignment options.
 

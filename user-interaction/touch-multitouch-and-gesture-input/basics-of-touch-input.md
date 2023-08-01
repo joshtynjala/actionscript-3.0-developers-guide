@@ -4,19 +4,19 @@ When the Flash Platform is running in an environment that supports touch input,
 InteractiveObject instances can listen for touch events and call handlers.
 Generally, you handle touch, multitouch, and gesture events as you would other
 events in ActionScript (see
-[Handling events](WS5b3ccc516d4fbf351e63e3d118a9b90204-7fca.html) for basic
-information about event handling with ActionScript).
+[Handling events](../../core-actionscript-classes/handling-events/index.md) for
+basic information about event handling with ActionScript).
 
 However, for the Flash runtime to interpret a touch or gesture, the runtime must
 be running in a hardware and software environment that supports touch or
 multitouch input. See
-[Discovering input types](WSd45e9f3b9f8ebaf327952b631262a041087-8000.html) for a
-chart comparing different touch screen types. Additionally, if the runtime is
-running within a container application (such as a browser), then that container
-passes the input to the runtime. In some cases, the current hardware and
-operating system environment support multitouch, but the browser containing the
-Flash runtime interprets the input and does not pass it on to the runtime. Or,
-it can simply ignore the input altogether.
+[Discovering input types](../basics-of-user-interaction.md#discovering-input-types)
+for a chart comparing different touch screen types. Additionally, if the runtime
+is running within a container application (such as a browser), then that
+container passes the input to the runtime. In some cases, the current hardware
+and operating system environment support multitouch, but the browser containing
+the Flash runtime interprets the input and does not pass it on to the runtime.
+Or, it can simply ignore the input altogether.
 
 The following diagram shows the flow of input from user to runtime:
 
@@ -92,7 +92,7 @@ input available to the Flash runtime in its current context. Also, use the
 collection of discovery properties and methods to set your application to react
 to mouse events (instead of touch events in case some touch input is not
 supported by the environment). For more information, see
-[Touch support discovery](WS7aa9c23539e7935d-52b3e55a1259fd2d9db-8000.html).
+[Touch support discovery](./touch-support-discovery.md).
 
 ### Events
 
@@ -118,9 +118,8 @@ runtime environment, it can call the appropriate handler or establish the
 correct event object when the user interacts with the application. Or, the
 application can indicate that specific input cannot be handled in the current
 environment and provide the user with an alternative or information. For more
-information, see
-[Touch event handling](WS1ca064e08d7aa93023c59dfc1257b16a3d6-7ffe.html) and
-[Gesture event handling](WS1ca064e08d7aa93023c59dfc1257b16a3d6-7ffd.html).
+information, see [Touch event handling](./touch-event-handling.md) and
+[Gesture event handling](./gesture-event-handling.md).
 
 ### Phases
 

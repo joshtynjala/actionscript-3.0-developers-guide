@@ -3,9 +3,9 @@
 Adobe® AIR® and Adobe® Flash® Player applications can communicate with
 HTTP-based servers to load data, images, video and to exchange messages.
 
-- [Loading external data](WS5b3ccc516d4fbf351e63e3d118a9b90204-7cfd.html)
-- [Web service requests](WSb2ba3b1aad8a27b02a2e08d61220f3e44be-7fff.html)
-- [Opening a URL in another application](WS5b3ccc516d4fbf351e63e3d118666ade46-7cba.html)
+- [Loading external data](./loading-external-data.md)
+- [Web service requests](./web-service-requests.md)
+- [Opening a URL in another application](./opening-a-url-in-another-application.md)
 
 More Help topics
 

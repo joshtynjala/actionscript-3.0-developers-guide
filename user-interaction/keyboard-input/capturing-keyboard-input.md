@@ -48,7 +48,7 @@ This code assumes there is a TextField instance named `tf` on the Stage.
 
 The TextField class also reports a `textInput` event that you can listen for
 when a user enters text. For more information, see
-[Capturing text input](WS8d7bb3e8da6fb92f-20050207122bd5f80cb-7ff7.html).
+[Capturing text input](../../text/using-the-textfield-class/capturing-text-input.md).
 
 Note: In the AIR runtime, a keyboard event can be canceled. In the Flash Player
 runtime, a keyboard event cannot be canceled.

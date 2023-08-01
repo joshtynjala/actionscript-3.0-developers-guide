@@ -93,73 +93,73 @@ The ZIP file for Flash Professional CS5 and Flex 4 (download from
 contains the following examples:
 
 - AlarmClock (
-  [Event handling example: Alarm Clock](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e53.html))
+  [Event handling example: Alarm Clock](../core-actionscript-classes/working-with-dates-and-times/date-and-time-example-simple-analog-clock.md))
 
 - AlgorithmicVisualGenerator (
-  [Drawing API example: Algorithmic Visual Generator](WS5b3ccc516d4fbf351e63e3d118a9b90204-7dcf.html))
+  [Drawing API example: Algorithmic Visual Generator](../display/using-the-drawing-api/drawing-api-example-algorithmic-visual-generator.md))
 
 - ASCIIArt (
-  [Strings example: ASCII art](WS5b3ccc516d4fbf351e63e3d118a9b90204-7eee.html))
+  [Strings example: ASCII art](../core-actionscript-classes/working-with-strings/strings-example-ascii-art.md))
 
 - CapabilitiesExplorer (
-  [Capabilities example: Detecting system capabilities](WS5b3ccc516d4fbf351e63e3d118a9b90204-7cd4.html))
+  [Capabilities example: Detecting system capabilities](../client-system-interaction/client-system-environment/capabilities-example-detecting-system-capabilities.md))
 
 - CustomErrors (
-  [Handling errors example: CustomErrors application](WS5b3ccc516d4fbf351e63e3d118a9b90204-7ecd.html))
+  [Handling errors example: CustomErrors application](../core-actionscript-classes/handling-errors/handling-errors-example-custom-errors-application.md))
 
 - DisplayObjectTransformer (
-  [Geometry example: Applying a matrix transformation to a display object](WS5b3ccc516d4fbf351e63e3d118a9b90204-7dcb.html))
+  [Geometry example: Applying a matrix transformation to a display object](../display/working-with-geometry/geometry-example-applying-a-matrix-transformation-to-a-display-object.md))
 
 - FilterWorkbench (
-  [Filtering display objects example: Filter Workbench](WS5b3ccc516d4fbf351e63e3d118a9b90204-7db9.html))
+  [Filtering display objects example: Filter Workbench](../display/filtering-display-objects/filtering-display-objects-example-filter-workbench.md))
 
 - GlobalStockTicker (
-  [Example: Internationalizing a stock ticker application](WS9b644acd4ebe59998b99a90125fc4fecfb-7ff6.html))
+  [Example: Internationalizing a stock ticker application](../internationalizing-applications/internationalizing-applications/example-internationalizing-a-stock-ticker-application.md))
 
 - IntrovertIM_HTML (
-  [External API example: Communicating between ActionScript and JavaScript in a web browser](WS5b3ccc516d4fbf351e63e3d118a9b90204-7cb1.html))
+  [External API example: Communicating between ActionScript and JavaScript in a web browser](../networking-and-communication/using-the-external-api/external-api-example-communicating-between-actionscript-and-javascript-in-a-web-browser.md))
 
 - NewsLayout (
-  [TextField Example: Newspaper-style text formatting](WS8d7bb3e8da6fb92f-20050207122bd5f80cb-7fe6.html))
+  [TextField Example: Newspaper-style text formatting](../text/using-the-textfield-class/textfield-example-newspaper-style-text-formatting.md))
 
 - PlayList (
-  [Arrays example: PlayList](WS5b3ccc516d4fbf351e63e3d118a9b90204-7ee8.html))
+  [Arrays example: PlayList](../core-actionscript-classes/working-with-arrays/arrays-example-playlist.md))
 
 - PodcastPlayer (
-  [Sound example: Podcast Player](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d15.html))
+  [Sound example: Podcast Player](../rich-media-content/working-with-sound/sound-example-podcast-player.md))
 
 - ProjectionDragger (
-  [Example: Perspective projection](WSCE716DAD-9364-464f-AFE9-8E578525AD54.html))
+  [Example: Perspective projection](../display/working-in-three-dimensions-3d/example-perspective-projection.md))
 
 - ReorderByZ (
-  [Using Matrix3D objects for reordering display](WS18334A17-3F85-4d5a-ADB4-F5BF6196774C.html))
+  [Using Matrix3D objects for reordering display](../display/working-in-three-dimensions-3d/performing-complex-3d-transformations.md#using-matrix3d-objects-for-reordering-display))
 
 - RSSViewer (
-  [XML in ActionScript example: Loading RSS data from the Internet](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e69.html))
+  [XML in ActionScript example: Loading RSS data from the Internet](../core-actionscript-classes/working-with-xml/xml-in-actionscript-example-loading-rss-data-from-the-internet.md))
 
 - RuntimeAssetsExplorer (
-  [Movie clip example: RuntimeAssetsExplorer](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d9a.html))
+  [Movie clip example: RuntimeAssetsExplorer](../display/working-with-movie-clips/movie-clip-example-runtime-assets-explorer.md))
 
 - SimpleClock (
-  [Date and time example: Simple analog clock](WS5b3ccc516d4fbf351e63e3d118a9b90204-7f0e.html))
+  [Date and time example: Simple analog clock](../core-actionscript-classes/working-with-dates-and-times/date-and-time-example-simple-analog-clock.md))
 
 - SpinningMoon (
-  [Bitmap example: Animated spinning moon](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d61.html))
+  [Bitmap example: Animated spinning moon](../display/working-with-bitmaps/bitmap-example-animated-spinning-moon.md))
 
 - SpriteArranger (
-  [Display object example: SpriteArranger](WS5b3ccc516d4fbf351e63e3d118a9b90204-7f37.html))
+  [Display object example: SpriteArranger](../display/display-programming/display-object-example-sprite-arranger.md))
 
 - TelnetSocket (
-  [TCP socket example: Building a Telnet client](WS5b3ccc516d4fbf351e63e3d118a9b90204-7cf7.html))
+  [TCP socket example: Building a Telnet client](../networking-and-communication/sockets.md#tcp-socket-example-building-a-telnet-client))
 
 - VideoJukebox (
-  [Video example: Video Jukebox](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d47.html))
+  [Video example: Video Jukebox](../rich-media-content/working-with-video/video-example-video-jukebox.md))
 
 - WikiEditor (
-  [Regular expressions example: A Wiki parser](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e94.html))
+  [Regular expressions example: A Wiki parser](../core-actionscript-classes/using-regular-expressions/regular-expressions-example-a-wiki-parser.md))
 
 - WordSearch (
-  [Mouse input example: WordSearch](WS5b3ccc516d4fbf351e63e3d118a9b90204-7cff.html))
+  [Mouse input example: WordSearch](../user-interaction/mouse-input/mouse-input-example-word-search.md))
 
 Practical examples are also found with many of the Quick Start articles in the
 Flash Developer Center and Flex Developer Center.
@@ -498,7 +498,7 @@ object.
 Mobile devices have less processing power than desktop devices. Some
 CPU-intensive examples possibly perform slowly on mobile devices. For example,
 the example in
-[Drawing API example: Algorithmic Visual Generator](WS5b3ccc516d4fbf351e63e3d118a9b90204-7dcf.html)
+[Drawing API example: Algorithmic Visual Generator](../display/using-the-drawing-api/drawing-api-example-algorithmic-visual-generator.md)
 does extensive computations and drawing upon entering every frame. Running this
 example on a computer illustrates various drawing APIs. However, the example is
 not suitable on some mobile devices due to their performance limitations.

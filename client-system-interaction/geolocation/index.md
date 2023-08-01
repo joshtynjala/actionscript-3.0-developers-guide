@@ -9,7 +9,7 @@ location.
 The Geolocation class dispatches `update` events in response to the device's
 location sensor. The `update` event is a GeolocationEvent object.
 
-- [Detecting geolocation changes](WS144092a96ffef7cc-66bf4d0212658dde8c4-7fff.html)
+- [Detecting geolocation changes](./detecting-geolocation-changes.md)
 
 More Help topics
 

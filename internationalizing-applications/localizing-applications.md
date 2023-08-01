@@ -32,8 +32,8 @@ the following methods:
   on the operating system and user preferences. This is the preferred approach
   for applications that will run on the Flash Player 10.1 or later or AIR 2.0 or
   later runtimes. See
-  [Determining the locale](WS9b644acd4ebe59998b99a90125fc4fecfb-7ffc.html) for
-  more information.
+  [Determining the locale](./internationalizing-applications/determining-the-locale.md)
+  for more information.
 
 - User prompt — You can start the application in some default locale, and then
   ask the user to choose their preferred locale.

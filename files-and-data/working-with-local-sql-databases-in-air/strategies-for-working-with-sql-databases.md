@@ -47,21 +47,21 @@ Even if your application doesn't execute any statements when it first loads,
 instantiate a SQLConnection object and call its `open()` or `openAsync()` method
 ahead of time (such as after the initial application startup) to avoid delays
 when running statements. See
-[Connecting to a database](WS5b3ccc516d4fbf351e63e3d118666ade46-7d32.html).
+[Connecting to a database](./connecting-to-a-database.md).
 
 ### Reuse database connections
 
 If you access a certain database throughout the execution time of your
 application, keep a reference to the SQLConnection instance, and reuse it
 throughout the application, rather than closing and reopening the connection.
-See [Connecting to a database](WS5b3ccc516d4fbf351e63e3d118666ade46-7d32.html).
+See [Connecting to a database](./connecting-to-a-database.md).
 
 ### Favor asynchronous execution mode
 
 When writing data-access code, it can be tempting to execute operations
 synchronously rather than asynchronously, because using synchronous operations
 frequently requires shorter and less complex code. However, as described in
-[Using synchronous and asynchronous database operations](WS5b3ccc516d4fbf351e63e3d118666ade46-7d39.html),
+[Using synchronous and asynchronous database operations](./using-synchronous-and-asynchronous-database-operations.md),
 synchronous operations can have a performance impact that is obvious to users
 and detrimental to their experience with an application. The amount of time a
 single operation takes varies according to the operation and particularly the
@@ -91,7 +91,7 @@ In many cases, by using a separate SQLStatement instance for each SQL statement
 to be executed, multiple SQL operations can be queued up at one time, which
 makes asynchronous code like synchronous code in terms of how the code is
 written. For more information, see
-[Understanding the asynchronous execution model](WS5b3ccc516d4fbf351e63e3d118666ade46-7d2b.html).
+[Understanding the asynchronous execution model](./understanding-the-asynchronous-execution-model.md).
 
 ### Use separate SQL statements and don't change the SQLStatement's text property
 
@@ -112,5 +112,5 @@ possibility of SQL injection attacks. It makes it possible to use objects in
 queries (rather than only SQL literal values). It also makes statements run more
 efficiently because they can be reused without needing to be recompiled each
 time they're executed. See
-[Using parameters in statements](WS5b3ccc516d4fbf351e63e3d118666ade46-7d42.html)
-for more information.
+[Using parameters in statements](./using-parameters-in-statements.md) for more
+information.

@@ -72,7 +72,7 @@ that defines the endianness as well as the encoding format (such as UTF-16 or
 UTF-32).
 
 For an example of reading and writing to a text file, see
-[Example: Reading an XML file into an XML object](WS5b3ccc516d4fbf351e63e3d118666ade46-7dc5.html).
+[Example: Reading an XML file into an XML object](./example-reading-an-xml-file-into-an-xml-object.md).
 
 The `readObject()` and `writeObject()` are convenient ways to store and retrieve
 data for complex ActionScript objects. The data is encoded in AMF (ActionScript
@@ -89,7 +89,7 @@ decompression and decoding algorithms specific to MP3 files. MP3 files also may
 include ID3 tags that contain meta tag information about the file (such as the
 title and artist for a song). There are multiple versions of the ID3 format, but
 the simplest (ID3 version 1) is discussed in the
-[Example: Reading and writing data with random access](WS5b3ccc516d4fbf351e63e3d118666ade46-7dc4.html)
+[Example: Reading and writing data with random access](./example-reading-and-writing-data-with-random-access.md)
 section.
 
 Other files formats (for images, databases, application documents, and so on)

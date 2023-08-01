@@ -189,7 +189,7 @@ information, see
 [About configuring FLV files for hosting on a server](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d41.html).
 
 For more information on FLV files, see
-[Advanced topics for video files](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d48.html).
+[Advanced topics for video files](./advanced-topics-for-video-files.md).
 
 ### External vs embedded video
 

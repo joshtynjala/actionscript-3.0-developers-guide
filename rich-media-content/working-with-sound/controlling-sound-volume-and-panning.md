@@ -40,9 +40,8 @@ shows:
     SoundMixer.soundTransform = new SoundTransform(1, -1);
 
 You can also use a SoundTransform object to set volume and pan values for a
-Microphone object (see
-[Capturing sound input](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d1d.html)) and for
-Sprite objects and SimpleButton objects.
+Microphone object (see [Capturing sound input](./capturing-sound-input.md)) and
+for Sprite objects and SimpleButton objects.
 
 The following example alternates the panning of the sound from the left channel
 to the right channel and back while the sound plays.

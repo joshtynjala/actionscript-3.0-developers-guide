@@ -17,8 +17,8 @@ keyboard instead of a physical one. The classes in the Flash API let you:
 
 More Help topics
 
-[Controlling virtual keyboard behavior](WSfffb011ac560372f6bc38fcc12e0166e73b-8000.html)
+[Controlling virtual keyboard behavior](./controlling-virtual-keyboard-behavior.md)
 
-[Adding virtual keyboard support for interactive objects](WSfffb011ac560372f6bc38fcc12e0166e73b-7fff.html)
+[Adding virtual keyboard support for interactive objects](./adding-virtual-keyboard-support-for-interactive-objects.md)
 
-[Handling application display changes](WSfffb011ac560372f6bc38fcc12e0166e73b-7ffe.html)
+[Handling application display changes](./handling-application-display-changes.md)

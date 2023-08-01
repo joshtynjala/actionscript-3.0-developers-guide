@@ -11,8 +11,7 @@ less frequently, but will often need to do before you can perform these more
 common tasks. For example, before you can connect to a database and retrieve
 data from a table, you'll need to create the database and create the table
 structure in the database. Those less-frequent initial setup tasks are discussed
-in
-[Creating and modifying a database](WS5b3ccc516d4fbf351e63e3d118666ade46-7d49.html).
+in [Creating and modifying a database](./creating-and-modifying-a-database.md).
 
 You can choose to perform database operations asynchronously, meaning the
 database engine runs in the background and notifies you when the operation
@@ -21,24 +20,24 @@ synchronously. In that case the database operations are performed one after
 another and the entire application (including updates to the screen) waits for
 the operations to complete before executing other code. For more information on
 working in asynchronous or synchronous execution mode, see
-[Using synchronous and asynchronous database operations](WS5b3ccc516d4fbf351e63e3d118666ade46-7d39.html).
+[Using synchronous and asynchronous database operations](./using-synchronous-and-asynchronous-database-operations.md).
 
 More Help topics
 
-[Connecting to a database](WS5b3ccc516d4fbf351e63e3d118666ade46-7d32.html)
+[Connecting to a database](./connecting-to-a-database.md)
 
-[Working with SQL statements](WS5b3ccc516d4fbf351e63e3d118666ade46-7d2c.html)
+[Working with SQL statements](./working-with-sql-statements.md)
 
-[Using parameters in statements](WS5b3ccc516d4fbf351e63e3d118666ade46-7d42.html)
+[Using parameters in statements](./using-parameters-in-statements.md)
 
-[Retrieving data from a database](WS5b3ccc516d4fbf351e63e3d118666ade46-7d4c.html)
+[Retrieving data from a database](./retrieving-data-from-a-database.md)
 
-[Inserting data](WS5b3ccc516d4fbf351e63e3d118666ade46-7d4b.html)
+[Inserting data](./inserting-data.md)
 
-[Changing or deleting data](WS5b3ccc516d4fbf351e63e3d118666ade46-7d4a.html)
+[Changing or deleting data](./changing-or-deleting-data.md)
 
-[Working with multiple databases](WS5b3ccc516d4fbf351e63e3d118666ade46-7d33.html)
+[Working with multiple databases](./working-with-multiple-databases.md)
 
-[Handling database errors](WS5b3ccc516d4fbf351e63e3d118666ade46-7d1a.html)
+[Handling database errors](./handling-database-errors.md)
 
-[Working with database data types](WS5b3ccc516d4fbf351e63e3d118666ade46-7d48.html)
+[Working with database data types](./working-with-database-data-types.md)

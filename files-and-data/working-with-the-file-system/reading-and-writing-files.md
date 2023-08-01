@@ -6,12 +6,12 @@ class lets AIR applications read and write to the file system.
 
 More Help topics
 
-[Workflow for reading and writing files](WS5b3ccc516d4fbf351e63e3d118666ade46-7dc8.html)
+[Workflow for reading and writing files](./workflow-for-reading-and-writing-files.md)
 
-[Working with FileStream objects](WS5b3ccc516d4fbf351e63e3d118666ade46-7dc6.html)
+[Working with FileStream objects](./working-with-filestream-objects.md)
 
-[Using the load() and save() methods](WSAA022E3E-090D-4003-B31E-1D2C7A53867A.html)
+[Using the load() and save() methods](./using-the-load-and-save-methods.md)
 
-[Example: Reading an XML file into an XML object](WS5b3ccc516d4fbf351e63e3d118666ade46-7dc5.html)
+[Example: Reading an XML file into an XML object](./example-reading-an-xml-file-into-an-xml-object.md)
 
-[Example: Reading and writing data with random access](WS5b3ccc516d4fbf351e63e3d118666ade46-7dc4.html)
+[Example: Reading and writing data with random access](./example-reading-and-writing-data-with-random-access.md)

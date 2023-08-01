@@ -3,19 +3,19 @@
 The flash.globalization package makes it easier to create international software
 that adapts to the conventions of different languages and regions.
 
-- [Basics of internationalizing applications](WS9b644acd4ebe59998b99a90125fc4fecfb-8000.html)
-- [Overview of the flash.globalization package](WS9b644acd4ebe59998b99a90125fc4fecfb-7ffe.html)
-- [Determining the locale](WS9b644acd4ebe59998b99a90125fc4fecfb-7ffc.html)
-- [Formatting numbers](WS9b644acd4ebe59998b99a90125fc4fecfb-7ffb.html)
-- [Formatting currency values](WS9b644acd4ebe59998b99a90125fc4fecfb-7ffa.html)
-- [Formatting dates and times](WS9b644acd4ebe59998b99a90125fc4fecfb-7ff9.html)
-- [Sorting and comparing strings](WS9b644acd4ebe59998b99a90125fc4fecfb-7ff8.html)
-- [Case conversion](WS9b644acd4ebe59998b99a90125fc4fecfb-7ff7.html)
-- [Example: Internationalizing a stock ticker application](WS9b644acd4ebe59998b99a90125fc4fecfb-7ff6.html)
+- [Basics of internationalizing applications](./basics-of-internationalizing-applications.md)
+- [Overview of the flash.globalization package](./overview-of-the-flash-globalization-package.md)
+- [Determining the locale](./determining-the-locale.md)
+- [Formatting numbers](./formatting-numbers.md)
+- [Formatting currency values](./formatting-currency-values.md)
+- [Formatting dates and times](./formatting-dates-and-times.md)
+- [Sorting and comparing strings](./sorting-and-comparing-strings.md)
+- [Case conversion](./case-conversion.md)
+- [Example: Internationalizing a stock ticker application](./example-internationalizing-a-stock-ticker-application.md)
 
 More Help topics
 
-[Localizing applications](WS9b644acd4ebe59993a5b57f812214f2074b-8000.html)
+[Localizing applications](../localizing-applications.md)
 
 ![](../../img/flashplatformLinkIndicator.png)
 [flash.globalization package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/globalization/package-detail.html)

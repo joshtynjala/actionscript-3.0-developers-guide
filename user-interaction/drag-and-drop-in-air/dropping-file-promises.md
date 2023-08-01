@@ -41,9 +41,9 @@ you can put in a drag-and-drop clipboard:
 
 More Help topics
 
-[Dropping remote files](WSb2ba3b1aad8a27b0-3c3eacbd123c4109bdd-8000.html)
+[Dropping remote files](./dropping-file-promises.md)
 
-[Implementing the IFilePromise interface](WSb2ba3b1aad8a27b0-3c3eacbd123c4109bdd-7fff.html)
+[Implementing the IFilePromise interface](./implementing-the-ifilepromise-interface.md)
 
 ![](../../img/flashplatformLinkIndicator.png)
 [flash.desktop.IFilePromise](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/IFilePromise.html)

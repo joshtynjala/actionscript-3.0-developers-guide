@@ -18,16 +18,16 @@ The file system API lets you do the following (and more):
 
 More Help topics
 
-[AIR file basics](WS5b3ccc516d4fbf351e63e3d118666ade46-7dbb.html)
+[AIR file basics](./air-file-basics.md)
 
-[Working with File objects in AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7fe4.html)
+[Working with File objects in AIR](./working-with-file-objects-in-air.md)
 
-[Getting file system information](WS5b3ccc516d4fbf351e63e3d118666ade46-7fe3.html)
+[Getting file system information](./getting-file-system-information.md)
 
-[Working with directories](WS5b3ccc516d4fbf351e63e3d118666ade46-7d8e.html)
+[Working with directories](./working-with-directories.md)
 
-[Working with files](WS5b3ccc516d4fbf351e63e3d118666ade46-7d8d.html)
+[Working with files](./working-with-files.md)
 
-[Working with storage volumes](WS86fc450a3af174de-70f653dd1220e161719-8000.html)
+[Working with storage volumes](./working-with-storage-volumes.md)
 
-[Reading and writing files](WS5b3ccc516d4fbf351e63e3d118666ade46-7dc2.html)
+[Reading and writing files](./reading-and-writing-files.md)

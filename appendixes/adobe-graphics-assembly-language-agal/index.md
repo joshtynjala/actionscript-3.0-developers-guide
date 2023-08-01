@@ -4,7 +4,7 @@ The Adobe Graphics Assembly Language (AGAL) is a shader language for defining
 vertex and fragment rendering programs. The AGAL programs must be uploaded to
 the rendering context in the binary bytecode format described in this document.
 
-- [AGAL bytecode format](WSd6a006f2eb1dc31e-310b95831324724ec56-8000.html)
+- [AGAL bytecode format](./agal-bytecode-format.md)
 
 ## Adobe recommends
 

@@ -127,4 +127,4 @@ example in Flash Professional:
 
 These techniques for testing example code listings are explained in more detail
 in
-[How to Use ActionScript Examples](WS9b644acd4ebe5999-2734bf3c124372a52ff-8000.html).
+[How to Use ActionScript Examples](../../appendixes/how-to-use-actionscript-examples.md).

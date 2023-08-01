@@ -24,10 +24,10 @@ object created with the `defaultBehavior` parameter set to `true`.
 Note: In the Adobe® Flex™ Framework, the HTMLLoader object is wrapped by the
 mx:HTML component. When using Flex, use the HTML component.
 
-- [Display properties of HTMLLoader objects](WS5b3ccc516d4fbf351e63e3d118666ade46-7e79.html)
-- [Scrolling HTML content](WS5b3ccc516d4fbf351e63e3d118666ade46-7e65.html)
-- [Accessing the HTML history list](WS5b3ccc516d4fbf351e63e3d118666ade46-7e78.html)
-- [Setting the user agent used when loading HTML content](WS5b3ccc516d4fbf351e63e3d118666ade46-7e7b.html)
-- [Setting the character encoding to use for HTML content](WS5b3ccc516d4fbf351e63e3d118666ade46-7e7a.html)
-- [Defining browser-like user interfaces for HTML content](WS5b3ccc516d4fbf351e63e3d118666ade46-7e74.html)
-- [Creating subclasses of the HTMLLoader class](WS5b3ccc516d4fbf351e63e3d118666ade46-7e64.html)
+- [Display properties of HTMLLoader objects](./display-properties-of-htmlloader-objects.md)
+- [Scrolling HTML content](./scrolling-html-content.md)
+- [Accessing the HTML history list](./accessing-the-html-history-list.md)
+- [Setting the user agent used when loading HTML content](./setting-the-user-agent-when-loading-html-content.md)
+- [Setting the character encoding to use for HTML content](./setting-the-character-encoding-to-use-for-html-content.md)
+- [Defining browser-like user interfaces for HTML content](./defining-browser-like-user-interfaces-for-html-content.md)
+- [Creating subclasses of the HTMLLoader class](./creating-subclasses-of-the-htmlloader-class.md)

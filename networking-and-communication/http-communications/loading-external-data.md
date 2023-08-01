@@ -16,14 +16,14 @@ properties of necessary network request.
 You can set the following properties of a URLRequest object in any security
 sandbox:
 
-| Property       | Description                                                                                                                                                                                                                                                                                                           |
-| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| contentType    | The MIME content type of any data sent with the URL request. If no contentType is set, values are sent as `application/x-www-form-urlencoded`.                                                                                                                                                                        |
-| data           | An object containing data to be transmitted with the URL request.                                                                                                                                                                                                                                                     |
-| digest         | A string that uniquely identifies the signed Adobe platform component to be stored to (or retrieved from) the Adobe® Flash® Player cache.                                                                                                                                                                             |
-| method         | The HTTP request method, such as a GET or POST. (Content running in the AIR application security domain can specify strings other than `"GET"` or `"POST"` as the `method` property. Any HTTP verb is allowed and `"GET"` is the default method. See [AIR security](WS5b3ccc516d4fbf351e63e3d118666ade46-7fa3.html).) |
-| requestHeaders | The array of HTTP request headers to be appended to the HTTP request. Note that permission to set some headers is restricted in Flash Player as well as in AIR content running outside the application security sandbox.                                                                                              |
-| url            | Specifies the URL to be requested.                                                                                                                                                                                                                                                                                    |
+| Property       | Description                                                                                                                                                                                                                                                                                                 |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| contentType    | The MIME content type of any data sent with the URL request. If no contentType is set, values are sent as `application/x-www-form-urlencoded`.                                                                                                                                                              |
+| data           | An object containing data to be transmitted with the URL request.                                                                                                                                                                                                                                           |
+| digest         | A string that uniquely identifies the signed Adobe platform component to be stored to (or retrieved from) the Adobe® Flash® Player cache.                                                                                                                                                                   |
+| method         | The HTTP request method, such as a GET or POST. (Content running in the AIR application security domain can specify strings other than `"GET"` or `"POST"` as the `method` property. Any HTTP verb is allowed and `"GET"` is the default method. See [AIR security](../../security/air-security/index.md).) |
+| requestHeaders | The array of HTTP request headers to be appended to the HTTP request. Note that permission to set some headers is restricted in Flash Player as well as in AIR content running outside the application security sandbox.                                                                                    |
+| url            | Specifies the URL to be requested.                                                                                                                                                                                                                                                                          |
 
 In AIR, you can set additional properties of the URLRequest class, which are
 only available to AIR content running in the application security sandbox.
@@ -154,7 +154,7 @@ example, you can use them in the `src` attribute of an `img` tag.
 
 However, you can only use these AIR-specific URI schemes ( `app:` and
 `app-storage:`) in content in the application security sandbox. For more
-information, see [AIR security](WS5b3ccc516d4fbf351e63e3d118666ade46-7fa3.html).
+information, see [AIR security](../../security/air-security/index.md).
 
 ### Setting URL variables
 
@@ -203,7 +203,7 @@ The ActionScript 3.0 event-handling model is significantly different than the
 ActionScript 2.0 model, which used the `LoadVars.onData`,
 `LoadVars.onHTTPStatus`, and `LoadVars.onLoad` event handlers. For more
 information on handling events in ActionScript 3.0, see
-[Handling events](WS5b3ccc516d4fbf351e63e3d118a9b90204-7fca.html)
+[Handling events](../../core-actionscript-classes/handling-events/index.md)
 
 Downloaded data is not available until the download has completed. You can
 monitor the progress of the download (bytes loaded and bytes total) by listening

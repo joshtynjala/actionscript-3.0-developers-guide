@@ -145,7 +145,7 @@ if any exists. A callback function is a function that the runtime calls in
 response to some type of occurrence or event. In this example, the
 `onMetaData()` function is a stub that satisfies the requirement to provide the
 function. For more information, see
-[Writing callback methods for metadata and cue points](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d3f.html)
+[Writing callback methods for metadata and cue points](./writing-callback-methods-for-metadata-and-cue-points.md)
 
 #### Leaving full-screen mode
 
@@ -175,4 +175,4 @@ the Video class (or Camera class; Flash Player 11.4/AIR 3.4 and higher).
 For more information on hardware acceleration in full-screen mode, see
 [Working with full-screen mode](WS2E9C7F3B-6A7C-4c5d-8ADD-5B23446FBEEB.html).
 For more information on StageVideo, see
-[Using the StageVideo class for hardware accelerated presentation](WSe9ecd9e6b89aefd2-68d5ef8f12cc8511f6c-8000.html).
+[Using the StageVideo class for hardware accelerated presentation](./using-the-stagevideo-class-for-hardware-accelerated-presentation.md).

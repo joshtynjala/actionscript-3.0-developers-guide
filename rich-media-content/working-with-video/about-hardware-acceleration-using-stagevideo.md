@@ -135,6 +135,6 @@ can accept these limitations, use stage video whenever possible.
 
 More Help topics
 
-[Understanding video formats](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d46.html)
+[Understanding video formats](./understanding-video-formats.md)
 
-[Working with full-screen mode](WS2E9C7F3B-6A7C-4c5d-8ADD-5B23446FBEEB.html)
+[Working with full-screen mode](../../display/display-programming/setting-stage-properties.md#working-with-full-screen-mode)

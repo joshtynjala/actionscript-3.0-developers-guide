@@ -43,8 +43,8 @@ similar feature, the player can synthesize and dispatch transition events.
 
 More Help topics
 
-[Monitoring NetStream events](WS901d38e593cd1bac-1201e73713000d1f624-8000.html)
+[Monitoring NetStream events](./monitoring-netstream-events.md)
 
-[Detecting player domain](WS901d38e593cd1bac61bb910e130015e4804-8000.html)
+[Detecting player domain](./detecting-player-domain.md)
 
 [Adobe Developer Connection: Measuring video consumption in Flash](http://www.adobe.com/devnet/video/articles/media-measurement-flash.html)

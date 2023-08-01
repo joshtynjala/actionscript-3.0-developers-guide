@@ -28,14 +28,14 @@ italic text.
 In addition to the classes in the flash.text package, you can use the
 flash.events.TextEvent class to respond to user actions related to text.
 
-- [Displaying text](WS8d7bb3e8da6fb92f-20050207122bd5f80cb-8000.html)
-- [Selecting and manipulating text](WS8d7bb3e8da6fb92f-20050207122bd5f80cb-7ffa.html)
-- [Capturing text input](WS8d7bb3e8da6fb92f-20050207122bd5f80cb-7ff7.html)
-- [Restricting text input](WS8d7bb3e8da6fb92f-20050207122bd5f80cb-7ff6.html)
-- [Formatting text](WS8d7bb3e8da6fb92f-20050207122bd5f80cb-7ff5.html)
-- [Advanced text rendering](WS8d7bb3e8da6fb92f-20050207122bd5f80cb-7ff0.html)
-- [Working with static text](WS8d7bb3e8da6fb92f-20050207122bd5f80cb-7fed.html)
-- [TextField Example: Newspaper-style text formatting](WS8d7bb3e8da6fb92f-20050207122bd5f80cb-7fe6.html)
+- [Displaying text](./displaying-text.md)
+- [Selecting and manipulating text](./selecting-and-manipulating-text.md)
+- [Capturing text input](./capturing-text-input.md)
+- [Restricting text input](./restricting-text-input.md)
+- [Formatting text](./formatting-text.md)
+- [Advanced text rendering](./advanced-text-rendering.md)
+- [Working with static text](./working-with-static-text.md)
+- [TextField Example: Newspaper-style text formatting](./textfield-example-newspaper-style-text-formatting.md)
 
 More Help topics
 

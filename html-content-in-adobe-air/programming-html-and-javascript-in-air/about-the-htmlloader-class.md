@@ -28,7 +28,7 @@ default. You will want to set these dimensions when adding an HTMLLoader object
 to the stage. The HTMLLoader dispatches several events as a page loads. You can
 use these events to determine when it is safe to interact with the loaded page.
 These events are described in
-[Handling HTML-related events in AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7ecf.html).
+[Handling HTML-related events in AIR](../handling-html-related-events-in-air.md).
 
 Note: In the Flex framework, only classes that extend the UIComponent class can
 be added as children of a Flex Container components. For this reason, you cannot
@@ -115,7 +115,7 @@ the runtime dispatches a JavaScript error: "Adobe AIR runtime security violation
 for JavaScript code in the application security sandbox."
 
 To avoid this error, follow the coding practices described in the next section,
-[Avoiding security-related JavaScript errors](WS5b3ccc516d4fbf351e63e3d118666ade46-7f0e.html).
+[Avoiding security-related JavaScript errors](./avoiding-security-related-javascript-errors.md).
 
 For more information, see
-[HTML security in Adobe AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7f11.html).
+[HTML security in Adobe AIR](../../security/air-security/html-security-in-adobe-air.md).

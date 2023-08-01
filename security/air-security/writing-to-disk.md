@@ -15,7 +15,7 @@ This freedom comes with high responsibility for developers. Accidental
 application insecurities jeopardize not only the functionality of the
 application, but also the integrity of the user's computer. For this reason,
 developers should read
-[Best security practices for developers](WS5b3ccc516d4fbf351e63e3d118666ade46-7e59.html).
+[Best security practices for developers](./best-security-practices-for-developers.md).
 
 AIR developers can access and write files to the local file system using several
 URL scheme conventions:
@@ -49,4 +49,4 @@ put in a standard location:
 
 If an application is designed to interact with existing files in the user's file
 system, be sure to read
-[Best security practices for developers](WS5b3ccc516d4fbf351e63e3d118666ade46-7e59.html).
+[Best security practices for developers](./best-security-practices-for-developers.md).

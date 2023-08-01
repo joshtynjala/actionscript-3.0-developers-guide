@@ -11,7 +11,7 @@ particular to the domain of each SWF file that calls methods of the SharedObject
 class. Usually a shared object store is even more particular than a SWF file's
 domain: by default, each SWF file uses a shared object store particular to its
 entire origin URL. For more information on shared objects, see
-[Shared objects](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d80.html).
+[Shared objects](../files-and-data/storing-local-data/shared-objects.md).
 
 A SWF file can use the `localPath` parameter of the `SharedObject.getLocal()`
 and `SharedObject.getRemote()` methods to use a shared object store associated

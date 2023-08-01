@@ -10,7 +10,7 @@ domains, are accessible to content in the application security sandbox. However,
 content in other security security sandboxes observe the same rules as content
 running in Flash Player. For more information about the Flash Player security
 model in general, and the definition of sandboxes, see
-[Security](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d23.html).
+[Security](../../security/index.md).
 
 The content sandbox controls whether detailed sound data can be extracted from
 the sound using the `id3` property or the `SoundMixer.computeSpectrum()` method.

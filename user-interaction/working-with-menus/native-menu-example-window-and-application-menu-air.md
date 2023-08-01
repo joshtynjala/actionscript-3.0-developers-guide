@@ -1,7 +1,7 @@
 # Native menu example: Window and application menu (AIR)
 
 The following example creates the menu shown in
-[Native menu structure (AIR)](WS5b3ccc516d4fbf351e63e3d118666ade46-7de6.html).
+[Native menu structure (AIR)](./menu-basics.md#native-menu-structure-air).
 
 The menu is designed to work both on Windows, for which only window menus are
 supported, and on Mac OS X, for which only application menus are supported. To

@@ -20,7 +20,7 @@ The type of text within a text field is characterized by its source:
   You can set up a style sheet to format input text, or use the
   flash.text.TextFormat class to assign properties to the text field for the
   input content. For more information, see
-  [Capturing text input](WS8d7bb3e8da6fb92f-20050207122bd5f80cb-7ff7.html).
+  [Capturing text input](./capturing-text-input.md).
 
 - Static text
 
@@ -28,7 +28,7 @@ The type of text within a text field is characterized by its source:
   static text instance using ActionScript 3.0. However, you can use ActionScript
   classes like StaticText and TextSnapshot to manipulate an existing static text
   instance. For more information, see
-  [Working with static text](WS8d7bb3e8da6fb92f-20050207122bd5f80cb-7fed.html).
+  [Working with static text](./working-with-static-text.md).
 
 ## Modifying the text field contents
 
@@ -90,8 +90,7 @@ HTML tags and entities.
 
 Once you designate your content using the `htmlText` property, you can use style
 sheets or the `textformat` tag to manage the formatting of your content. For
-more information, see
-[Formatting text](WS8d7bb3e8da6fb92f-20050207122bd5f80cb-7ff5.html).
+more information, see [Formatting text](./formatting-text.md).
 
 ## Using images in text fields
 

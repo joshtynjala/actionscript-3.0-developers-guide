@@ -172,7 +172,7 @@ operating system:
 You can access the application storage directory via the
 `air.File.applicationStorageDirectory` property. You can access its contents
 using the `resolvePath()` method of the File class. For details, see
-[Working with the file system](WS5b3ccc516d4fbf351e63e3d118666ade46-7e4a.html).
+[Working with the file system](../../files-and-data/working-with-the-file-system/index.md).
 
 ## Updating Adobe AIR
 

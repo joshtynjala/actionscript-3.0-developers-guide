@@ -51,7 +51,7 @@ class gives you control over the mixed output.
 You can also use several other classes to perform more specific tasks when
 you're working with sound in ActionScript; for more information on all the
 sound-related classes, see
-[Understanding the sound architecture](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d26.html).
+[Understanding the sound architecture](./understanding-the-sound-architecture.md).
 
 #### Important concepts and terms
 

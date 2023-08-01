@@ -32,7 +32,7 @@ following code:
 These examples use the `readUTFBytes()` and `writeUTFBytes()` methods, because
 they assume that the files are in UTF-8 format. If not, you may need to use a
 different method (see
-[Data formats, and choosing the read and write methods to use](WS5b3ccc516d4fbf351e63e3d118666ade46-7db0.html)).
+[Data formats, and choosing the read and write methods to use](./data-formats-and-choosing-the-read-and-write-methods-to-use.md)).
 
 The previous examples use FileStream objects opened for synchronous operation.
 You can also open files for asynchronous operations (which rely on event

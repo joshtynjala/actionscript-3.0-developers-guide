@@ -90,8 +90,8 @@ method.
 
 For specific examples that demonstrate these steps, see the following topics:
 
-[Retrieving data from a database](WS5b3ccc516d4fbf351e63e3d118666ade46-7d4c.html)
+[Retrieving data from a database](./retrieving-data-from-a-database.md)
 
-[Inserting data](WS5b3ccc516d4fbf351e63e3d118666ade46-7d4b.html)
+[Inserting data](./inserting-data.md)
 
-[Changing or deleting data](WS5b3ccc516d4fbf351e63e3d118666ade46-7d4a.html)
+[Changing or deleting data](./changing-or-deleting-data.md)

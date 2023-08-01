@@ -400,7 +400,7 @@ XMLSocket object to connect to the server:
   domain other than the one where the content resides, you can create a
   cross-domain policy file on the server that allows access from specific
   domains. For details on cross-domain policy files, see
-  [AIR security](WS5b3ccc516d4fbf351e63e3d118666ade46-7fa3.html).
+  [AIR security](../security/air-security/index.md).
 
 Note: Setting up a server to communicate with the XMLSocket object can be
 challenging. If your application does not require real-time interactivity, use
@@ -850,7 +850,7 @@ The IPv6 values that Flash Player returns have the following exceptions:
 
 More Help topics
 
-[Connecting to sockets](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c63.html)
+[Connecting to sockets](../security/loading-data.md#connecting-to-sockets)
 
 ![](../img/flashplatformLinkIndicator.png)
 [flash.net package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/package-detail.html)

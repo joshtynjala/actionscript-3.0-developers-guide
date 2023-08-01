@@ -109,8 +109,7 @@ Data type (column affinity) constraint
 The runtime enforces the data type of columns' values, and an error occurs if an
 attempt is made to store a value of the incorrect type in a column. However, in
 many conditions values are converted to match the column's declared data type.
-See
-[Working with database data types](WS5b3ccc516d4fbf351e63e3d118666ade46-7d48.html)
+See [Working with database data types](./working-with-database-data-types.md)
 for more information.
 
 The runtime does not enforce constraints on foreign key values. In other words,

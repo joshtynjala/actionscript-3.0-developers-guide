@@ -57,18 +57,18 @@ subclasses of the DisplayObject class:
 
 - The TextField class, included in the flash.text package, is a display object
   for text display and input. For more information, see
-  [Basics of Working with text](WS8d7bb3e8da6fb92f-6724c60a122bd5c5b9e-8000.html).
+  [Basics of Working with text](../../text/basics-of-working-with-text.md).
 
 - The TextLine class, included in the flash.text.engine package, is the display
   object used to display lines of text composed by the Flash Text Engine and the
   Text Layout Framework. For more information, see
-  [Using the Flash Text Engine](WS9dd7ed846a005b294b857bfa122bd808ea6-8000.html)
+  [Using the Flash Text Engine](../../text/using-the-flash-text-engine/index.md)
   and
-  [Using the Text Layout Framework](WSb2ba3b1aad8a27b0-1b8898a412218ad3df9-8000.html).
+  [Using the Text Layout Framework](../../text/using-the-text-layout-framework.md).
 
 - The Video class, included in the flash.media package, is the display object
   used for displaying video files. For more information, see
-  [Working with video](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e1a.html).
+  [Working with video](../../rich-media-content/working-with-video/index.md).
 
 The following classes in the flash.display package extend the DisplayObject
 class, but you cannot create instances of them. Instead, they serve as parent
@@ -87,7 +87,7 @@ class.
   Sprite, Stage, and MovieClip objects are all subclasses of the
   InteractiveObject class. For more information on creating mouse and keyboard
   interaction, see
-  [Basics of user interaction](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e3b.html).
+  [Basics of user interaction](../../user-interaction/basics-of-user-interaction.md).
 
 - MorphShape — These objects are created when you create a shape tween in the
   Flash authoring tool. You cannot instantiate them using ActionScript, but they

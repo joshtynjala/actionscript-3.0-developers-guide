@@ -11,7 +11,7 @@ or `openAsync()` method of the FileStream object:
 The `fileMode` parameter (the second parameter of the `open()` and `openAsync()`
 methods), specifies the mode in which to open the file: for read, write, append,
 or update. For details, see the previous section,
-[FileStream open modes](WS5b3ccc516d4fbf351e63e3d118666ade46-7db2.html).
+[FileStream open modes](./filestream-open-modes.md).
 
 If you use the `openAsync()` method to open the file for asynchronous file
 operations, set up event listeners to handle the asynchronous events:
@@ -37,12 +37,12 @@ operations, set up event listeners to handle the asynchronous events:
 
 The file is opened for synchronous or asynchronous operations, depending upon
 whether you use the `open()` or `openAsync()` method. For details, see
-[AIR file basics](WS5b3ccc516d4fbf351e63e3d118666ade46-7dbb.html).
+[AIR file basics](./air-file-basics.md).
 
 If you set the `fileMode` parameter to `FileMode.READ` or `FileMode.UPDATE` in
 the open method of the FileStream object, data is read into the read buffer as
 soon as you open the FileStream object. For details, see
-[The read buffer and the bytesAvailable property of a FileStream object](WS5b3ccc516d4fbf351e63e3d118666ade46-7dac.html).
+[The read buffer and the bytesAvailable property of a FileStream object](./the-read-buffer-and-the-bytesavailable-property-of-a-filestream-object.md).
 
 You can call the `close()` method of a FileStream object to close the associated
 file, making it available for use by other applications.

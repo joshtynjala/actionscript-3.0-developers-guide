@@ -1,10 +1,10 @@
 # Setting size, scale, and orientation
 
-The section [Printing a page](WS5b3ccc516d4fbf351e63e3d118a9b90204-7cc7.html)
-details the steps for a basic print job, where the output directly reflects the
-printed equivalent of the screen size and position of the specified sprite.
-However, printers use different resolutions for printing, and can have settings
-that adversely affect the appearance of the printed sprite.
+The section [Printing a page](./printing-a-page.md) details the steps for a
+basic print job, where the output directly reflects the printed equivalent of
+the screen size and position of the specified sprite. However, printers use
+different resolutions for printing, and can have settings that adversely affect
+the appearance of the printed sprite.
 
 Flash runtimes can read an operating system's printing settings, but note that
 these properties are read-only: although you can respond to their values, you
@@ -65,7 +65,7 @@ area of the sprite is printed.
 
 If you want to scale a Sprite object before you print it, set the scale
 properties (see
-[Manipulating size and scaling objects](WS5b3ccc516d4fbf351e63e3d118a9b90204-7df3.html))
+[Manipulating size and scaling objects](../../display/display-programming/manipulating-size-and-scaling-objects.md))
 before calling the `PrintJob.addPage()` method, and set them back to their
 original values after printing. The scale of a Sprite object has no relation to
 the `printArea` property. In other words, if you specify a print area that is 50
@@ -74,7 +74,7 @@ the same 2500 pixels are printed, but the Sprite object is printed at the scaled
 size.
 
 For an example, see
-[Printing example: Scaling, cropping, and responding](WS5b3ccc516d4fbf351e63e3d118a9b90204-7cc5.html).
+[Printing example: Scaling, cropping, and responding](./printing-example-scaling-cropping-and-responding.md).
 
 ## Printing for landscape or portrait orientation
 

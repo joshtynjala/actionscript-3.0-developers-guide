@@ -78,8 +78,7 @@ For example, not all touch-enabled devices are capable or detecting the amount
 of pressure the user is applying to the touch screen. So, the
 `TouchEvent.pressure` property is not supported on those devices. Try testing
 for specific property support to ensure your application works, and see
-[Troubleshooting](WS1ca064e08d7aa930-581fb7b1257b16ff45-8000.html) for more
-information.
+[Troubleshooting](./troubleshooting.md) for more information.
 
 ## Touch event phases
 

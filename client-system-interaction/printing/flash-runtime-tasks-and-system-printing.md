@@ -80,7 +80,7 @@ a text field in an `if..else` statement, as the following code shows:
     }
 
 For a working example, see
-[Printing example: Scaling, cropping, and responding](WS5b3ccc516d4fbf351e63e3d118a9b90204-7cc5.html).
+[Printing example: Scaling, cropping, and responding](./printing-example-scaling-cropping-and-responding.md).
 
 ## Working with page properties
 
@@ -91,7 +91,7 @@ and content orientation on the paper. Because these are printer settings, not
 controlled by the Flash runtime, you cannot alter these settings; however, you
 can use them to align the content you send to the printer to match the current
 settings. For more information, see
-[Setting size, scale, and orientation](WS5b3ccc516d4fbf351e63e3d118a9b90204-7cc6.html).
+[Setting size, scale, and orientation](./setting-size-scale-and-orientation.md).
 
 ## Setting vector or bitmap rendering
 

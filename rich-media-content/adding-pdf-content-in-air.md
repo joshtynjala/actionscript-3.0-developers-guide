@@ -178,7 +178,7 @@ in PDF content. However, ActionScript can communicate with the JavaScript in the
 HTML page loaded in an HTMLLoader object that loads PDF content, and that
 JavaScript code can communicate with the JavaScript in the loaded PDF file. For
 more information, see
-[Programming HTML and JavaScript in AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7fa7.html).
+[Programming HTML and JavaScript in AIR](../html-content-in-adobe-air/programming-html-and-javascript-in-air/index.md).
 
 ## Known limitations for PDF content in AIR
 

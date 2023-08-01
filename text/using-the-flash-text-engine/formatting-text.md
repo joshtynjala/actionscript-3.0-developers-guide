@@ -5,7 +5,7 @@ A `TextBlock` object is a factory for creating lines of text. The content of a
 handles the formatting for the text. The ElementFormat class defines such
 properties as baseline alignment, kerning, tracking, text rotation, and font
 size, color, and case. It also includes a `FontDescription`, which is covered in
-detail in [Working with fonts](WS9dd7ed846a005b294b857bfa122bd808ea6-7ff3.html).
+detail in [Working with fonts](./working-with-fonts.md).
 
 ## Using the ElementFormat object
 

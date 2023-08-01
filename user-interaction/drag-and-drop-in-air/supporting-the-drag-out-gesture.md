@@ -19,7 +19,7 @@ perform the conversion. The function is called if and only if the receiving
 component or application reads the associated format.
 
 For more information on clipboard formats, see
-[Clipboard data formats](WS0579B9EE-CF1E-434e-A386-A04DC7786FC9.html).
+[Clipboard data formats](../copy-and-paste/clipboard-data-formats.md).
 
 The following example illustrates how to create a Clipboard object containing a
 bitmap in several formats: a Bitmap object, a native bitmap format, and a file

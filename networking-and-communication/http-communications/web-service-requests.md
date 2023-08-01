@@ -38,13 +38,13 @@ cross-domain XMLHttpRequests as long as that content is loaded into an iframe.
 
 More Help topics
 
-[Website controls (policy files)](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e08.html)
+[Website controls (policy files)](../../security/permission-controls.md#website-controls-policy-files)
 
-[REST-style web service requests](WSb2ba3b1aad8a27b061afd5d7127074bbf44-8000.html)
+[REST-style web service requests](./rest-style-web-service-requests.md)
 
-[XML-RPC web service requests](WSb2ba3b1aad8a27b061afd5d7127074bbf44-7fff.html)
+[XML-RPC web service requests](./xml-rpc-web-service-requests.md)
 
-[SOAP web service requests](WSb2ba3b1aad8a27b061afd5d7127074bbf44-7ffe.html)
+[SOAP web service requests](./soap-web-service-requests.md)
 
 ![](../../img/flexLinkIndicator.png)
 [Accessing server-side data](https://help.adobe.com/en_US/Flex/4.5/AccessingData/WS2db454920e96a9e51e63e3d11c0bf69084-7ff2.html)

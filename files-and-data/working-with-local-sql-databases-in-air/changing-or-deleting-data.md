@@ -12,4 +12,4 @@ instance's `text` property:
 - To delete one or more rows of data from a table, use a `DELETE` statement.
 
 For descriptions of these statements, see
-[SQL support in local databases](WS112915e91f2778507c29b8cc1256b9c36a3-8000.html).
+[SQL support in local databases](./working-with-sql-statements.md).

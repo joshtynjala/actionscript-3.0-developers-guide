@@ -21,8 +21,8 @@ The sample Adobe® AIR® application described here reads a .zip file as an
 example of processing a byte stream, extracting a list of the files that the
 .zip file contains and writing them to the desktop.
 
-- [Reading and writing a ByteArray](WS5b3ccc516d4fbf351e63e3d118666ade46-7d54.html)
-- [ByteArray example: Reading a .zip file](WS5b3ccc516d4fbf351e63e3d118666ade46-7d53.html)
+- [Reading and writing a ByteArray](./reading-and-writing-a-bytearray.md)
+- [ByteArray example: Reading a .zip file](./bytearray-example-reading-a-zip-file.md)
 
 More Help topics
 

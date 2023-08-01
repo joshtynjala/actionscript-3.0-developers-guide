@@ -146,4 +146,4 @@ information on the current printer setup:
   if the current printer can print color).
 
 See
-[Printing example: Page setup and print options](WS059b243ca571213c-5fb15e5d124d9f70211-8000.html).
+[Printing example: Page setup and print options](./printing-example-page-setup-and-print-options.md).

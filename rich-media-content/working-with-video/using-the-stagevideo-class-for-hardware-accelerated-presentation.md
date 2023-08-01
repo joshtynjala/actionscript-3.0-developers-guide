@@ -23,6 +23,6 @@ target="_self">Working with Stage Video</a>.
 
 More Help topics
 
-[About hardware acceleration using StageVideo](WSe9ecd9e6b89aefd2-68d5ef8f12cc8511f6c-7fff.html)
+[About hardware acceleration using StageVideo](./about-hardware-acceleration-using-stagevideo.md)
 
-[Using the StageVideo APIs](WSe9ecd9e6b89aefd2-68d5ef8f12cc8511f6c-7ffe.html)
+[Using the StageVideo APIs](./using-the-stagevideo-apis.md)

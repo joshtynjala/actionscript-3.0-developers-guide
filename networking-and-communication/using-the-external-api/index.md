@@ -43,7 +43,7 @@ as the external container. Thus, you can use the external interface to
 communicate between the ActionScript code in the loaded SWF and the JavaScript
 code in the HTML page loaded in the HTMLLoader.
 
-- [Basics of using the external API](WS5b3ccc516d4fbf351e63e3d118a9b90204-7caa.html)
-- [External API requirements and advantages](WS5b3ccc516d4fbf351e63e3d118a9b90204-7cab.html)
-- [Using the ExternalInterface class](WS5b3ccc516d4fbf351e63e3d118a9b90204-7cb2.html)
-- [External API example: Communicating between ActionScript and JavaScript in a web browser](WS5b3ccc516d4fbf351e63e3d118a9b90204-7cb1.html)
+- [Basics of using the external API](./basics-of-using-the-external-api.md)
+- [External API requirements and advantages](./external-api-requirements-and-advantages.md)
+- [Using the ExternalInterface class](./using-the-externalinterface-class.md)
+- [External API example: Communicating between ActionScript and JavaScript in a web browser](./external-api-example-communicating-between-actionscript-and-javascript-in-a-web-browser.md)

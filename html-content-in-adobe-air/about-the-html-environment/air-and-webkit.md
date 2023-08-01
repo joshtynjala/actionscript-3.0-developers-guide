@@ -17,10 +17,10 @@ identical).
 
 More Help topics
 
-[JavaScript in AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7eb3.html)
+[JavaScript in AIR](./javascript-in-air.md)
 
-[HTML in AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7eb2.html)
+[HTML in AIR](./html-in-air.md)
 
-[CSS in AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7eb0.html)
+[CSS in AIR](./css-in-air.md)
 
-[WebKit features not supported in AIR](WSb2ba3b1aad8a27b0-67c0013e126afbe6c4d-8000.html)
+[WebKit features not supported in AIR](./webkit-features-not-supported-in-air.md)

@@ -43,7 +43,7 @@ Keep in mind that the version of WebKit used in AIR is not identical to the open
 source version. Some features are not supported in AIR and the AIR version can
 include security and bug fixes not yet available in the corresponding WebKit
 version. See
-[WebKit features not supported in AIR](WSb2ba3b1aad8a27b0-67c0013e126afbe6c4d-8000.html).
+[WebKit features not supported in AIR](./webkit-features-not-supported-in-air.md).
 
 Because AIR applications run directly on the desktop, with full access to the
 file system, the security model for HTML content is more stringent than the
@@ -59,11 +59,12 @@ as it would in a typical web browser.
 
 HTML content in AIR does not display SWF or PDF content if alpha, scaling, or
 transparency settings are applied. For more information, see
-[Considerations when loading SWF or PDF content in an HTML page](WS5b3ccc516d4fbf351e63e3d118676a3e36-7ff9.html)
-and [Window transparency](WS5b3ccc516d4fbf351e63e3d118676a452d-7fe5.html).
+[Considerations when loading SWF or PDF content in an HTML page](../scripting-the-air-html-container/display-properties-of-htmlloader-objects.md#considerations-when-loading-swf-or-pdf-content-in-an-html-page)
+and
+[Window transparency](../../client-system-interaction/working-with-air-native-windows/basics-of-native-windows-in-air.md#window-transparency).
 
-- [Overview of the HTML environment](WS5b3ccc516d4fbf351e63e3d118666ade46-7ec2.html)
-- [AIR and WebKit](WS5b3ccc516d4fbf351e63e3d118666ade46-7ec1.html)
+- [Overview of the HTML environment](./overview-of-the-html-environment.md)
+- [AIR and WebKit](./air-and-webkit.md)
 
 More Help topics
 

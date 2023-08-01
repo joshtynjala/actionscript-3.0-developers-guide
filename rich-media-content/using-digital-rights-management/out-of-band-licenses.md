@@ -37,6 +37,6 @@ vouchers using the `DRMManager.storeVoucher()` method.
 
 More Help topics
 
-[Device registration](WS5262178513756206-23ef6621131a8f8c6f2-8000.html)
+[Device registration](./device-registration.md)
 
-[Factory reset](WS5262178513756206-6236898c131a9209b5d-8000.html)
+[Factory reset](./factory-reset.md)

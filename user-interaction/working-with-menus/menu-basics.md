@@ -263,7 +263,7 @@ items in the submenu. The NativeMenuItem object references the NativeMenu object
 through the NativeMenuItem `submenu` property.
 
 To view a code example that creates this menu see
-[Native menu example: Window and application menu (AIR)](WS5b3ccc516d4fbf351e63e3d118666ade46-7de7.html).
+[Native menu example: Window and application menu (AIR)](./native-menu-example-window-and-application-menu-air.md).
 
 ## Menu events
 

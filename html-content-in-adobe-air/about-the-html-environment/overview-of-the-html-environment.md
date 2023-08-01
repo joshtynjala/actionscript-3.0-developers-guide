@@ -89,7 +89,8 @@ allows application content to access designated methods and properties defined
 in the sandbox of the child. Sandbox bridges are established by setting the
 `parentSandboxBridge` and `childSandboxBridge` properties of the window object.
 For more information, see
-[HTML security in Adobe AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7f11.html) and
+[HTML security in Adobe AIR](../../security/air-security/html-security-in-adobe-air.md)
+and
 [HTML frame and iframe elements](WS5b3ccc516d4fbf351e63e3d118666ade46-7edb.html).
 
 ## About plug-ins and embedded objects
@@ -104,14 +105,14 @@ No other WebKit plug-ins are supported in AIR.
 
 More Help topics
 
-[HTML security in Adobe AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7f11.html)
+[HTML security in Adobe AIR](../../security/air-security/html-security-in-adobe-air.md)
 
-[HTML Sandboxes](WS5b3ccc516d4fbf351e63e3d118666ade46-7eb8.html)
+[HTML Sandboxes](./javascript-in-air.md#html-sandboxes)
 
-[HTML frame and iframe elements](WS5b3ccc516d4fbf351e63e3d118666ade46-7edb.html)
+[HTML frame and iframe elements](./html-in-air.md#html-frame-and-iframe-elements)
 
-[JavaScript Window object](WS5b3ccc516d4fbf351e63e3d118666ade46-7eb6.html)
+[JavaScript Window object](./javascript-in-air.md#javascript-window-object)
 
-[The XMLHttpRequest object](WS5b3ccc516d4fbf351e63e3d118666ade46-7eb5.html)
+[The XMLHttpRequest object](./javascript-in-air.md#the-xmlhttprequest-object)
 
-[Adding PDF content in AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7eb4.html)
+[Adding PDF content in AIR](../../rich-media-content/adding-pdf-content-in-air.md)

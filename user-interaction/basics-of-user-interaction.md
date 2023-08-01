@@ -3,7 +3,7 @@
 Your application can create interactivity by using ActionScript 3.0 to respond
 to user activity. Note that this section assumes that you are already familiar
 with the ActionScript 3.0 event model. For more information, see
-[Handling events](WS5b3ccc516d4fbf351e63e3d118a9b90204-7fca.html).
+[Handling events](../core-actionscript-classes/handling-events/index.md).
 
 ## Capturing user input
 

@@ -47,20 +47,20 @@ to specifically play content protected by Adobe Access.
 For an overview of Adobe Access, including creating policies, see the
 documentation included with Adobe Access.
 
-- [Understanding the protected content workflow](WS5b3ccc516d4fbf351e63e3d118666ade46-7ce3.html)
-- [DRM-related members and events of the NetStream class](WS5b3ccc516d4fbf351e63e3d118666ade46-7cdb.html)
-- [Using the DRMStatusEvent class](WS5b3ccc516d4fbf351e63e3d118666ade46-7cda.html)
-- [Using the DRMAuthenticateEvent class](WS5b3ccc516d4fbf351e63e3d118666ade46-7cd9.html)
-- [Using the DRMErrorEvent class](WS5b3ccc516d4fbf351e63e3d118666ade46-7cd8.html)
-- [Using the DRMManager class](WSe3d2d52902616553-41317b6911d1b4bfb29-8000.html)
-- [Using the DRMContentData class](WSe3d2d52902616553-41317b6911d1b4bfb29-7ffb.html)
-- [Updating Flash Player to support Adobe Access](WS7568cbd5c81a0ea6-4ef57b4b126d9b14f0e-8000.html)
-- [Out-of-band Licenses](WS5262178513756206-78d23af81315fed2b54-8000.html)
-- [Domain support](WS5262178513756206-ae26abd131600c5818-8000.html)
-- [Playing encrypted content using domain support](WS5262178513756206-78d23af81315fed2b54-7fff.html)
-- [License preview](WS526217851375620669910b54131a93d5a97-8000.html)
-- [Delivering content](WS52621785137562065c5bbf86131a9559a30-8000.html)
-- [Open Source Media Framework](WS5262178513756206-afd4008131d686aef7-8000.html)
+- [Understanding the protected content workflow](./understanding-the-protected-content-workflow.md)
+- [DRM-related members and events of the NetStream class](./drm-related-members-and-events-of-the-netstream-class.md)
+- [Using the DRMStatusEvent class](./using-the-drmstatusevent-class.md)
+- [Using the DRMAuthenticateEvent class](./using-the-drmauthenticateevent-class.md)
+- [Using the DRMErrorEvent class](./using-the-drmerrorevent-class.md)
+- [Using the DRMManager class](./using-the-drmmanager-class.md)
+- [Using the DRMContentData class](./using-the-drmcontentdata-class.md)
+- [Updating Flash Player to support Adobe Access](./updating-flash-player-to-support-adobe-access.md)
+- [Out-of-band Licenses](./out-of-band-licenses.md)
+- [Domain support](./domain-support.md)
+- [Playing encrypted content using domain support](./playing-encryped-content-using-domain-support.md)
+- [License preview](./license-preview.md)
+- [Delivering content](./delivering-content.md)
+- [Open Source Media Framework](./open-source-media-framework.md)
 
 More Help topics
 

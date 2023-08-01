@@ -128,9 +128,8 @@ Adobe Access.
 
     In the DRMStatusEvent listener, check that the voucher is valid (not null).
     In the DRMErrorEvent listener, handle DRMErrorEvents. See
-    [Using the DRMStatusEvent class](WS5b3ccc516d4fbf351e63e3d118666ade46-7cda.html)
-    and
-    [Using the DRMErrorEvent class](WS5b3ccc516d4fbf351e63e3d118666ade46-7cd8.html).
+    [Using the DRMStatusEvent class](./using-the-drmstatusevent-class.md) and
+    [Using the DRMErrorEvent class](./using-the-drmerrorevent-class.md).
 
 5.  Load the voucher (license) that is required to play the content.
 

@@ -6,9 +6,9 @@ Flex and Flash Player applications.
 Use the classes in the native menu API to define application, window, context,
 and pop-up menus in Adobe® AIR®.
 
-- [Menu basics](WS5b3ccc516d4fbf351e63e3d118666ade46-7f53.html)
-- [Creating native menus (AIR)](WS5b3ccc516d4fbf351e63e3d118666ade46-7de8.html)
-- [About context menus in HTML (AIR)](WS5b3ccc516d4fbf351e63e3d118666ade46-7de2.html)
-- [Displaying pop-up native menus (AIR)](WS5b3ccc516d4fbf351e63e3d118666ade46-7de3.html)
-- [Handling menu events](WS5b3ccc516d4fbf351e63e3d118666ade46-7de1.html)
-- [Native menu example: Window and application menu (AIR)](WS5b3ccc516d4fbf351e63e3d118666ade46-7de7.html)
+- [Menu basics](./menu-basics.md)
+- [Creating native menus (AIR)](./creating-native-menus-air.md)
+- [About context menus in HTML (AIR)](./about-context-menus-in-html-air.md)
+- [Displaying pop-up native menus (AIR)](./displaying-pop-up-native-menus-air.md)
+- [Handling menu events](./handling-menu-events.md)
+- [Native menu example: Window and application menu (AIR)](./native-menu-example-window-and-application-menu-air.md)

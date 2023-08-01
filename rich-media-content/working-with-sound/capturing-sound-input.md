@@ -319,7 +319,7 @@ captures 4 seconds of microphone data and plays it back using a Sound object:
     }
 
 For more information on playing back sounds from sound sample data, see
-[Working with dynamically generated audio](WSE523B839-C626-4983-B9C0-07CF1A087ED7.html).
+[Working with dynamically generated audio](./working-with-dynamically-generated-audio.md).
 
 More Help topics
 

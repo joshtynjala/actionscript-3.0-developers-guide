@@ -41,8 +41,8 @@ updates.)
 
 Authentication tokens can be transferred to other computers. To protect tokens,
 you can store them in the AIR Encrypted Local Store. See
-[Encrypted local storage](WS5b3ccc516d4fbf351e63e3d118666ade46-7e31.html) for
-more information.
+[Encrypted local storage](../../files-and-data/storing-local-data/encrypted-local-storage.md)
+for more information.
 
 ## DRMStatus Events
 

@@ -170,6 +170,6 @@ that an application can do once part of it is compromised.
 
 More Help topics
 
-[Cross-scripting content in different security sandboxes](WS5b3ccc516d4fbf351e63e3d118666ade46-7f08.html)
+[Cross-scripting content in different security sandboxes](../../html-content-in-adobe-air/programming-html-and-javascript-in-air/cross-scripting-content-in-different-security-sandboxes.md)
 
-[The AIR application sandbox](WS5b3ccc516d4fbf351e63e3d118666ade46-7e35.html)
+[The AIR application sandbox](../security-sandboxes.md#the-air-application-sandbox)

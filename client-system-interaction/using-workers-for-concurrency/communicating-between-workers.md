@@ -229,6 +229,6 @@ affect the integrity of the data.
 
 #### See also
 
-[Working with local SQL databases in AIR](WS5b3ccc516d4fbf351e63e3d118676a5497-7fb4.html)
+[Working with local SQL databases in AIR](../../files-and-data/working-with-local-sql-databases-in-air/index.md)
 
 [flash.concurrent package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/concurrent/package-detail.html)

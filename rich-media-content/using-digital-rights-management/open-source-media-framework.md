@@ -8,4 +8,4 @@ Site</a>.
 
 More Help topics
 
-[Workflow for playing protected content](WS5262178513756206-25967d03131d68aa744-8000.html)
+[Workflow for playing protected content](./workflow-for-playing-protected-content.md)

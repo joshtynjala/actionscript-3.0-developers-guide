@@ -8,6 +8,6 @@ The ActionScript concurrency apis are available on desktop platforms only in
 Flash Player 11.4 and later, and AIR 3.4 and later. Concurrency is not supported
 in AIR for mobile platforms.
 
-- [Understanding workers and concurrency](WS2f73111e7a180bd0-5856a8af1390d64d08c-8000.html)
-- [Creating and managing workers](WS2f73111e7a180bd0-5856a8af1390d64d08c-7fff.html)
-- [Communicating between workers](WS2f73111e7a180bd0-5856a8af1390d64d08c-7ffe.html)
+- [Understanding workers and concurrency](./understanding-workers-and-concurrency.md)
+- [Creating and managing workers](./creating-and-managing-workers.md)
+- [Communicating between workers](./communicating-between-workers.md)

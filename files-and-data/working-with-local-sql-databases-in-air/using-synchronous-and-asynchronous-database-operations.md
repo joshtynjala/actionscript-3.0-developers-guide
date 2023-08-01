@@ -30,6 +30,6 @@ to synchronous or asynchronous execution.
 
 More Help topics
 
-[Using synchronous database operations](WS5b3ccc516d4fbf351e63e3d118666ade46-7d18.html)
+[Using synchronous database operations](./using-synchronous-database-operations.md)
 
-[Understanding the asynchronous execution model](WS5b3ccc516d4fbf351e63e3d118666ade46-7d2b.html)
+[Understanding the asynchronous execution model](./understanding-the-asynchronous-execution-model.md)

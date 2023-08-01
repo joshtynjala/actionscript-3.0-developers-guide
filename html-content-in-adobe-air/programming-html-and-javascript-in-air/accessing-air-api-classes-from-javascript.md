@@ -54,4 +54,4 @@ access the advanced features that AIR provides, including:
 
 More Help topics
 
-[Using the AIRAliases.js file](WS5b3ccc516d4fbf351e63e3d118666ade46-7fcd.html)
+[Using the AIRAliases.js file](./using-the-airaliases-js-file.md)

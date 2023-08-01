@@ -36,12 +36,12 @@ be dispatched rapidly, as during a pan, rotate, or zoom operation. For example,
 you could stop animation within a component while the user resizes it using a
 zoom gesture.
 
-- [Basics of touch input](WS1ca064e08d7aa93023c59dfc1257b16a3d6-8000.html)
-- [Touch support discovery](WS7aa9c23539e7935d-52b3e55a1259fd2d9db-8000.html)
-- [Touch event handling](WS1ca064e08d7aa93023c59dfc1257b16a3d6-7ffe.html)
-- [Touch and drag](WS1ca064e08d7aa93023c59dfc1257b16a3d6-7ffc.html)
-- [Gesture event handling](WS1ca064e08d7aa93023c59dfc1257b16a3d6-7ffd.html)
-- [Troubleshooting](WS1ca064e08d7aa930-581fb7b1257b16ff45-8000.html)
+- [Basics of touch input](./basics-of-touch-input.md)
+- [Touch support discovery](./touch-support-discovery.md)
+- [Touch event handling](./touch-event-handling.md)
+- [Touch and drag](./touch-and-drag.md)
+- [Gesture event handling](./gesture-event-handling.md)
+- [Troubleshooting](./troubleshooting.md)
 
 More Help topics
 

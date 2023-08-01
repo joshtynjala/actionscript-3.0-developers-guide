@@ -51,4 +51,4 @@ For more information on F4V cue points, see
 [Using onXMPData()](WS48F8E9DF-A81C-4838-84CF-5F04EB8541FE.html).
 
 For more information on handling cue points and metadata, see
-[Writing callback methods for metadata and cue points](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d3f.html).
+[Writing callback methods for metadata and cue points](./writing-callback-methods-for-metadata-and-cue-points.md).

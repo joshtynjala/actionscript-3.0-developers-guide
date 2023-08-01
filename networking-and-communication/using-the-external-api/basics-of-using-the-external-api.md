@@ -131,7 +131,7 @@ listings to interact with the container.
 For full examples of using the external API to communicate with an HTML page,
 see the following topic:
 
-- [External API example: Communicating between ActionScript and JavaScript in a web browser](WS5b3ccc516d4fbf351e63e3d118a9b90204-7cb1.html)
+- [External API example: Communicating between ActionScript and JavaScript in a web browser](./external-api-example-communicating-between-actionscript-and-javascript-in-a-web-browser.md)
 
 Those examples include the full code, including ActionScript and container
 error-checking code, which you should use when writing code using the external

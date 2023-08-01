@@ -123,7 +123,7 @@ Often, when creating a web application it is helpful to store persistent
 information about the user's application state. HTML pages and applications
 typically use cookies for this purpose. In Flash Player, you can use the
 SharedObject class for the same purpose. See
-[Shared objects](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d80.html). (The
+[Shared objects](../files-and-data/storing-local-data/shared-objects.md). (The
 SharedObject class can be used in AIR applications, but there are fewer
 restrictions when just saving the data to a regular file.)
 
@@ -132,34 +132,32 @@ Flash Player or AIR application on the same computer, you can use the
 LocalConnection class. For example, two (or more) SWFs on the same web page can
 communicate with each other. Likewise, a SWF running on a web page can
 communicate with an AIR application. See
-[Communicating with other Flash Player and AIR instances](WS5b3ccc516d4fbf351e63e3d118666ade46-7c7e.html).
+[Communicating with other Flash Player and AIR instances](./communicating-with-other-flash-player-and-air-instances.md).
 
 When you need to communicate with other, non-SWF processes on the local
 computer, you can use the NativeProcess class added in AIR 2. The NativeProcess
 class allows your AIR application to launch and communicate with other
 applications. See
-[Communicating with native processes in AIR](WSb2ba3b1aad8a27b060d22f991220f00ad8a-8000.html).
+[Communicating with native processes in AIR](./communicating-with-native-processes-in-air.md).
 
 When you need information about the network environment of the computer on which
 an AIR application is running, you can use the following classes:
 
-- NetworkInfo—Provides information about the available network interfaces, such
-  as the computer's IP address. See
-  [Network interfaces](WSb2ba3b1aad8a27b04a6701d612482d399e5-8000.html).
+- NetworkInfo — Provides information about the available network interfaces,
+  such as the computer's IP address. See
+  [Network interfaces](#network-interfaces).
 
-- DNSResolver—Allows you to look up DNS records. See
-  [Domain Name System (DNS) records](WSb2ba3b1aad8a27b04a6701d612482d399e5-7fff.html).
+- DNSResolver — Allows you to look up DNS records. See
+  [Domain Name System (DNS) records](#domain-name-system-dns-records).
 
-- ServiceMonitor—Allows you to monitor the availability of a server. See
-  [Service monitoring](WS5b3ccc516d4fbf351e63e3d118666ade46-7cc0.html).
+- ServiceMonitor — Allows you to monitor the availability of a server. See
+  [Service monitoring](#service-monitoring).
 
-- URLMonitor—Allows you to monitor the availability of a resource at a
-  particular URL. See
-  [HTTP monitoring](WS5b3ccc516d4fbf351e63e3d118666ade46-7cbf.html).
+- URLMonitor — Allows you to monitor the availability of a resource at a
+  particular URL. See [HTTP monitoring](#http-monitoring).
 
 - SocketMonitor and SecureSocketMonitor—Allows you to monitor the availability
-  of a resource at a socket. See
-  [Socket monitoring](WS5b3ccc516d4fbf351e63e3d118666ade46-7cbe.html).
+  of a resource at a socket. See [Socket monitoring](#socket-monitoring).
 
 #### Important concepts and terms
 

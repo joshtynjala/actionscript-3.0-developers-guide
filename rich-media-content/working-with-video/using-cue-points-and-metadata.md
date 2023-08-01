@@ -50,7 +50,7 @@ The following output appears:
 
 This code uses one of several techniques to set the object on which the callback
 method runs. You can use other techniques; for more information, see
-[Writing callback methods for metadata and cue points](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d3f.html).
+[Writing callback methods for metadata and cue points](./writing-callback-methods-for-metadata-and-cue-points.md).
 
 ## Using video metadata
 

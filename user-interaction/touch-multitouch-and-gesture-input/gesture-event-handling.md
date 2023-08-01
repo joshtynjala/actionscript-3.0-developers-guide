@@ -85,8 +85,7 @@ event types are supported in all runtime environments. For example, not all
 touch-enabled devices are capable or detecting a multi-finger swipe. So, the
 InteractiveObject `gestureSwipe` events are not supported on those devices. Try
 testing for specific event support to ensure your application works, and see
-[Troubleshooting](WS1ca064e08d7aa930-581fb7b1257b16ff45-8000.html) for more
-information.
+[Troubleshooting](./troubleshooting.md) for more information.
 
 ## Gesture Event properties
 
@@ -126,8 +125,7 @@ environments. For example, not all touch-enabled devices are capable or
 detecting the rotation of a gesture on the screen. So, the
 `TransformGestureEvent.rotation` property is not supported on those devices. Try
 testing for specific property support to ensure your application works, and see
-[Troubleshooting](WS1ca064e08d7aa930-581fb7b1257b16ff45-8000.html) for more
-information.
+[Troubleshooting](./troubleshooting.md) for more information.
 
 ## Gesture phases
 

@@ -238,7 +238,7 @@ Each execution mode has benefits. While most aspects of each mode are similar,
 there are some differences you'll want to keep in mind when working in each
 mode. For more information on these topics, and suggestions for working in each
 mode, see
-[Using synchronous and asynchronous database operations](WS5b3ccc516d4fbf351e63e3d118666ade46-7d39.html).
+[Using synchronous and asynchronous database operations](./using-synchronous-and-asynchronous-database-operations.md).
 
 More Help topics
 

@@ -201,7 +201,7 @@ always opaque
 
 There are also security-related restrictions for using full-screen mode with
 Flash Player in a browser. These restrictions are described in
-[Security](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d23.html).
+[Security](../../security/index.md).
 
 #### Enabling full-screen interactive mode in Flash Player 11.3 and higher
 

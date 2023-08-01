@@ -198,7 +198,7 @@ displays the contents of the loaded file using the `trace()` method.
 
 In Adobe AIR, the FileStream class provides additional functionality for reading
 data from a local file. See
-[Reading and writing files](WS5b3ccc516d4fbf351e63e3d118666ade46-7dc2.html).
+[Reading and writing files](./reading-and-writing-files.md).
 
 ## Saving data to local files
 
@@ -361,7 +361,7 @@ process until it is complete.
 
 In Adobe AIR, the FileStream class provides additional functionality for writing
 data to a local file. See
-[Reading and writing files](WS5b3ccc516d4fbf351e63e3d118666ade46-7dc2.html).
+[Reading and writing files](./reading-and-writing-files.md).
 
 ## Uploading files to a server
 

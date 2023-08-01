@@ -171,7 +171,7 @@ The `Event.ENTER_FRAME` event can be dispatched many times per second. In some
 cases, you won't want to display playback progress that frequently. In those
 cases, your application can set up its own timing mechanism using the
 flash.util.Timer class; see
-[Working with dates and times](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e52.html).
+[Working with dates and times](../../core-actionscript-classes/working-with-dates-and-times/index.md).
 
 ## Stopping streaming sounds
 

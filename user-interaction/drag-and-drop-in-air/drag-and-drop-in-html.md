@@ -35,7 +35,7 @@ You can also use the `-webkit-user-drag` CSS property to control whether an
 element as a whole can be dragged. However, the contents of the element are
 treated separately. The user could still drag a selected portion of the text.
 For more information, see
-[CSS in AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7eb0.html).
+[CSS in AIR](../../html-content-in-adobe-air/about-the-html-environment/css-in-air.md).
 
 ## Drag-and-drop events in HTML
 

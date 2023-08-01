@@ -293,7 +293,7 @@ To allow safe cross-scripting, you can use a sandbox bridge to provide a limited
 interface between application content and non-application content. In HTML
 content, you can also map pages of your application into a non-application
 sandbox to allow the code on that page to cross-script external content. See
-[AIR security](WS5b3ccc516d4fbf351e63e3d118666ade46-7fa3.html).
+[AIR security](../../security/air-security/index.md).
 
 #### Loading a SWF file or image
 
@@ -470,7 +470,7 @@ shape position based on the `enterFrame` event.
 This example provides a rudimentary introduction to some advanced techniques
 that cross over the boundaries between JavaScript and ActionScript in AIR. If
 your are unfamiliar with using ActionScript display objects, refer to
-[Display programming](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e58.html).
+[Display programming](../../display/display-programming/index.md).
 
 ## Example: Creating a native window
 

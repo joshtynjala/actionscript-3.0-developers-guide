@@ -47,9 +47,9 @@ the movement to a single gesture input event. Set:
 TransformGestureEvent, PressAndTapGestureEvent, or GestureEvent classes to
 handle input.
 
-See [Touch event handling](WS1ca064e08d7aa93023c59dfc1257b16a3d6-7ffe.html) for
-an example that uses the `Multitouch.inputMode` property to set the input type
-before handling a touch event.
+See [Touch event handling](./touch-event-handling.md) for an example that uses
+the `Multitouch.inputMode` property to set the input type before handling a
+touch event.
 
 ## Test for touch input support
 
@@ -62,7 +62,7 @@ example, provide mouse event handling or information about what features are
 available, or not, in the current environment.
 
 You can also use the API for keyboard, touch, and mouse support, see
-[Discovering input types](WSd45e9f3b9f8ebaf327952b631262a041087-8000.html).
+[Discovering input types](../basics-of-user-interaction.md#discovering-input-types).
 
 For more information about compatibility testing, see
-[Troubleshooting](WS1ca064e08d7aa930-581fb7b1257b16ff45-8000.html).
+[Troubleshooting](./troubleshooting.md).

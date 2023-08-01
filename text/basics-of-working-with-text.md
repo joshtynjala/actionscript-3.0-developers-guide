@@ -42,11 +42,11 @@ viewport. The StageText instance displays in front of any display objects.
 
 For more information on these topics, see:
 
-- [Using the TextField class](WSb2ba3b1aad8a27b07258e35912218ac0e60-8000.html)
+- [Using the TextField class](./using-the-textfield-class/index.md)
 
-- [Using the Flash Text Engine](WS9dd7ed846a005b294b857bfa122bd808ea6-8000.html)
+- [Using the Flash Text Engine](./using-the-flash-text-engine/index.md)
 
-- [Using the Text Layout Framework](WSb2ba3b1aad8a27b0-1b8898a412218ad3df9-8000.html)
+- [Using the Text Layout Framework](./using-the-text-layout-framework.md)
 
 - <a href="http://goo.gl/A0L15" target="_self">Native text input with
   StageText</a>

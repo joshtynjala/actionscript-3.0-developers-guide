@@ -307,7 +307,7 @@ value read will still reflect the old setting. On all platforms, the
 NativeWindow object dispatches the `displayStateChange` event when the display
 state changes. If you need to take some action based on the new state of the
 window, always do so in a `displayStateChange` event handler. See
-[Listening for window events](WS5b3ccc516d4fbf351e63e3d118666ade46-7e07.html).
+[Listening for window events](./listening-for-window-events.md).
 
 ## Example: Minimizing, maximizing, restoring and closing a window
 
@@ -464,7 +464,7 @@ will still reflect the old settings. On all platforms, the NativeWindow object
 dispatches the `resize` event when the window resizes. If you need to take some
 action, such as laying out controls in the window, based on the new size or
 state of the window, always do so in a `resize` event handler. See
-[Listening for window events](WS5b3ccc516d4fbf351e63e3d118666ade46-7e07.html).
+[Listening for window events](./listening-for-window-events.md).
 
 The scale mode of the stage determines how the window stage and its contents
 behaves when a window is resized. Keep in mind that the stage scale modes are
@@ -499,7 +499,7 @@ read will still reflect the old setting. On all platforms, the NativeWindow
 object dispatches the `move` event when the position changes. If you need to
 take some action based on the new position of the window, always do so in a
 `move` event handler. See
-[Listening for window events](WS5b3ccc516d4fbf351e63e3d118666ade46-7e07.html).
+[Listening for window events](./listening-for-window-events.md).
 
 ## Example: Resizing and moving windows
 

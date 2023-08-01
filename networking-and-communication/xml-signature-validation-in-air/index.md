@@ -21,6 +21,6 @@ the loaded bytes. This is particularly valuable when the downloaded resource is
 a SWF file or other active content that you want to run in the application
 security sandbox.
 
-- [Basics of XML signature validation](WSe3d2d52902616553-16c3561611c42fb32b6-8000.html)
-- [About XML signatures](WS0d09d76dc8b209fc-4cec51c711c2bd135a5-8000.html)
-- [Implementing the IURIDereferencer interface](WS93f497c3840e6eaf-6419d18d11c4e2bbf5a-8000.html)
+- [Basics of XML signature validation](./basics-of-xml-signature-validation.md)
+- [About XML signatures](./about-xml-signatures.md)
+- [Implementing the IURIDereferencer interface](./implementing-the-iuridereferencer-interface.md)

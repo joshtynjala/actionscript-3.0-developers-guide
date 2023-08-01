@@ -21,8 +21,7 @@ mp3 format. They cannot directly load or play sound files in other formats, such
 as WAV or AIFF. However, starting with Flash Player 9.0.115.0, AAC audio files
 can be loaded and played using the NetStream class. This is the same technique
 as is used for loading and playing video content. For more information on this
-technique, see
-[Working with video](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e1a.html).
+technique, see [Working with video](../working-with-video/index.md).
 
 Using Adobe Flash Professional, you can import WAV or AIFF sound files and then
 embed them into your application's SWF files in the mp3 format. The Flash

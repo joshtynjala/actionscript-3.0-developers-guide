@@ -5,10 +5,10 @@ how to determine what features are supported and how to build multilingual
 applications using the user's installed input method editor (IME) if available.
 It also shows typical uses for application domains.
 
-- [Basics of the client system environment](WS5b3ccc516d4fbf351e63e3d118a9b90204-7cd3.html)
-- [Using the System class](WS5b3ccc516d4fbf351e63e3d118a9b90204-7cd6.html)
-- [Using the Capabilities class](WS5b3ccc516d4fbf351e63e3d118a9b90204-7cd8.html)
-- [Capabilities example: Detecting system capabilities](WS5b3ccc516d4fbf351e63e3d118a9b90204-7cd4.html)
+- [Basics of the client system environment](./basics-of-the-client-system-environment.md)
+- [Using the System class](./using-the-system-class.md)
+- [Using the Capabilities class](./using-the-capabilities-class.md)
+- [Capabilities example: Detecting system capabilities](./capabilities-example-detecting-system-capabilities.md)
 
 More Help topics
 

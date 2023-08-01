@@ -12,7 +12,7 @@ The runtime assigns the `touchPointID` value to the event object for a touch
 event. Use this value to respond to a specific touch point in the case the
 environment supports multiple, simultaneous, touch points (even if it does not
 handle gestures). For more information about the `touchPointID` property, see
-[Touch Point ID](WSedf167eee00ebe75-2fd6c0b41270ca3ed61-8000.html).
+[Touch Point ID](./touch-event-handling.md#touch-point-id).
 
 The following code shows a simple start drag event handler and a stop drag event
 handler for a touch event. The variable `bg` is a display object that contains

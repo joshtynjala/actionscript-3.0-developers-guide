@@ -28,7 +28,7 @@ Some APIs allow you to launch content in a web browser. For security reasons,
 some URI schemes are prohibited when using these APIs in AIR. The list of
 prohibited schemes depends on the security sandbox of the code using the API.
 (For details on security sandboxes, see
-[AIR security](WS5b3ccc516d4fbf351e63e3d118666ade46-7fa3.html).)
+[AIR security](../../security/air-security/index.md).)
 
 #### Application sandbox (AIR only)
 
