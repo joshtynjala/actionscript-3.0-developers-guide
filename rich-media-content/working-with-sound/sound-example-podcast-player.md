@@ -27,9 +27,8 @@ techniques:
 - Pausing and resuming sound playback
 
 To get the application files for this sample, see
-<a href="http://www.adobe.com/go/learn_programmingAS3samples_flash"
-target="_self">www.adobe.com/go/learn_programmingAS3samples_flash</a>. The
-Podcast Player application files can be found in the folder
+[_FlashPlatformAS3DevGuideExamples.zip_](https://github.com/joshtynjala/flash-platform-as3-dev-guide-examples/releases/tag/original).
+The Podcast Player application files can be found in the folder
 Samples/PodcastPlayer. The application consists of the following files:
 
 <div>

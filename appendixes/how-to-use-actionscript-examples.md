@@ -49,9 +49,9 @@ The types of ActionScript 3.0 code examples are:
 - Class-based examples (found primarily in the
   [ActionScript 3.0 Language Reference](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html))
 
-- Practical examples containing multiple source files (download source ZIP files
+- Practical examples containing multiple source files (download source ZIP file
   from
-  [www.adobe.com/go/learn_programmingAS3samples_flash](http://www.adobe.com/go/learn_programmingAS3samples_flash))
+  [_FlashPlatformAS3DevGuideExamples.zip_](https://github.com/joshtynjala/flash-platform-as3-dev-guide-examples/releases/tag/original))
 
 <div>
 
@@ -115,7 +115,7 @@ Practical examples are normally delivered as ZIP archive files.
 List of Developer Guide examples in the ZIP file
 
 The ZIP file for Flash Professional CS5 and Flex 4 (download from
-[www.adobe.com/go/learn_programmingAS3samples_flash](http://www.adobe.com/go/learn_programmingAS3samples_flash))
+[_FlashPlatformAS3DevGuideExamples.zip_](https://github.com/joshtynjala/flash-platform-as3-dev-guide-examples/releases/tag/original))
 contains the following examples:
 
 - AlarmClock (

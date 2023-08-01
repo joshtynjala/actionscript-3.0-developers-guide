@@ -16,9 +16,8 @@ techniques are:
 - Converting an array to a character-delimited string
 
 To get the application files for this sample, see
-<a href="http://www.adobe.com/go/learn_programmingAS3samples_flash"
-target="_self">www.adobe.com/go/learn_programmingAS3samples_flash</a>. The
-PlayList application files can be found in the Samples/PlayList folder. The
+[_FlashPlatformAS3DevGuideExamples.zip_](https://github.com/joshtynjala/flash-platform-as3-dev-guide-examples/releases/tag/original).
+The PlayList application files can be found in the Samples/PlayList folder. The
 application consists of the following files:
 
 <div>

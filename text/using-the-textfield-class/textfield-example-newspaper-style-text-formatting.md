@@ -19,10 +19,9 @@ This example illustrates the following ActionScript programming techniques:
 - Using the TextLineMetrics class to get information about text display size
 
 To get the application files for this sample, see
-<a href="http://www.adobe.com/go/learn_programmingAS3samples_flash"
-target="_self">www.adobe.com/go/learn_programmingAS3samples_flash</a>. The News
-Layout application files can be found in the folder Samples/NewsLayout. The
-application consists of the following files:
+[_FlashPlatformAS3DevGuideExamples.zip_](https://github.com/joshtynjala/flash-platform-as3-dev-guide-examples/releases/tag/original).
+The News Layout application files can be found in the folder Samples/NewsLayout.
+The application consists of the following files:
 
 <div>
 

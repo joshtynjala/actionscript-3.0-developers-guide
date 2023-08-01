@@ -28,13 +28,10 @@ Before beginning, note that each of the SWF files to run in Flash Player must be
 located in the same security sandbox. For more information, see
 [Security sandboxes](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e3f.html).
 
-To get the application files for this sample, download the <a
-href="https://help.adobe.com/support/documentation/en/flash/10/Flash_ActionScript3.0_samples_CS4.zip"
-target="_self">Flash Professional Samples</a>
-<a href="http://www.adobe.com/go/learn_programmingAS3samples_flash"
-target="_self"></a>. The RuntimeAssetsExplorer application files can be found in
-the folder Samples/RuntimeAssetsExplorer. The application consists of the
-following files:
+To get the application files for this sample, download the
+[_FlashPlatformAS3DevGuideExamples.zip_](https://github.com/joshtynjala/flash-platform-as3-dev-guide-examples/releases/tag/original).
+The RuntimeAssetsExplorer application files can be found in the folder
+Samples/RuntimeAssetsExplorer. The application consists of the following files:
 
 <div>
 

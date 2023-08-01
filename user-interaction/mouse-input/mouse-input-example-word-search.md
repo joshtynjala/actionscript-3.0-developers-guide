@@ -14,7 +14,7 @@ twice.This example demonstrates the following features of ActionScript 3.0:
 - Maintaining a score based on user interaction
 
 To get the application files for this sample, see
-[www.adobe.com/go/learn_programmingAS3samples_flash](http://www.adobe.com/go/learn_programmingAS3samples_flash).
+[_FlashPlatformAS3DevGuideExamples.zip_](https://github.com/joshtynjala/flash-platform-as3-dev-guide-examples/releases/tag/original).
 The WordSearch application files can be found in the folder Samples/WordSearch.
 The application consists of the following files:
 

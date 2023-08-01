@@ -32,9 +32,9 @@ you drop it. Watch the boxes that enclose the space stretch and become distorted
 when you move the projection center far from the center of the stage.
 
 To get the application files for this sample, see
-<a href="http://www.adobe.com/go/learn_programmingAS3samples_flash"
-target="_self">www.adobe.com/go/learn_programmingAS3samples_flash</a>. The
-ProjectionDragger application files are in the Samples/ProjectionDragger folder.
+[_FlashPlatformAS3DevGuideExamples.zip_](https://github.com/joshtynjala/flash-platform-as3-dev-guide-examples/releases/tag/original).
+The ProjectionDragger application files are in the Samples/ProjectionDragger
+folder.
 
 <div>
 

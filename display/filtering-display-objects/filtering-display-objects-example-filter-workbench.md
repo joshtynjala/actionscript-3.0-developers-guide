@@ -13,10 +13,9 @@ techniques:
 - Applying multiple filters to a display object
 
 To get the application files for this sample, see
-<a href="http://www.adobe.com/go/learn_programmingAS3samples_flash"
-target="_self">www.adobe.com/go/learn_programmingAS3samples_flash</a>. The
-Filter Workbench application files can be found in the Samples/FilterWorkbench
-folder. The application consists of the following files:
+[_FlashPlatformAS3DevGuideExamples.zip_](https://github.com/joshtynjala/flash-platform-as3-dev-guide-examples/releases/tag/original).
+The Filter Workbench application files can be found in the
+Samples/FilterWorkbench folder. The application consists of the following files:
 
 <div>
 

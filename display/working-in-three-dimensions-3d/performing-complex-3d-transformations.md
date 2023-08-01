@@ -221,9 +221,8 @@ reorders the faces of the box after rotations have been applied to the it:
 </div>
 
 To get the application files for this sample, see
-<a href="http://www.adobe.com/go/learn_programmingAS3samples_flash"
-target="_self">www.adobe.com/go/learn_programmingAS3samples_flash</a>. The
-application files are in the Samples/ReorderByZ folder.
+[_FlashPlatformAS3DevGuideExamples.zip_](https://github.com/joshtynjala/flash-platform-as3-dev-guide-examples/releases/tag/original).
+The application files are in the Samples/ReorderByZ folder.
 
 </div>
 

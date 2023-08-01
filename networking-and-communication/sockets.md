@@ -214,7 +214,7 @@ following techniques:
 - Handling received data from a remote server
 
 To get the application files for this sample, see
-[www.adobe.com/go/learn_programmingAS3samples_flash](http://www.adobe.com/go/learn_programmingAS3samples_flash).
+[_FlashPlatformAS3DevGuideExamples.zip_](https://github.com/joshtynjala/flash-platform-as3-dev-guide-examples/releases/tag/original).
 The Telnet application files can be found in the Samples/Telnet folder. The
 application consists of the following files:
 

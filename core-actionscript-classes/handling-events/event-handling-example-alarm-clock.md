@@ -15,14 +15,10 @@ including:
 
 - Creating a custom event type
 
-To get the Flash Professional application files for this sample, see
-<a href="http://www.adobe.com/go/learn_programmingAS3samples_flash"
-target="_self">http://www.adobe.com/go/learn_programmingAS3samples_flash</a> .
-To get the Flex application files for this sample, see
-<a href="http://www.adobe.com/go/as3examples"
-target="_self">http://www.adobe.com/go/as3examples</a>. The Alarm Clock
-application files can be found in the Samples/AlarmClock folder. The application
-includes these files:
+To get the application files for this sample, see
+[_FlashPlatformAS3DevGuideExamples.zip_](https://github.com/joshtynjala/flash-platform-as3-dev-guide-examples/releases/tag/original).
+The Alarm Clock application files can be found in the Samples/AlarmClock folder.
+The application includes these files:
 
 <div>
 

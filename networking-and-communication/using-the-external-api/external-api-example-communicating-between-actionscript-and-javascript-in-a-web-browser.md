@@ -21,7 +21,7 @@ techniques demonstrated by this example include the following:
   performing those calls
 
 To get the application files for this sample, see
-[www.adobe.com/go/learn_programmingAS3samples_flash](http://www.adobe.com/go/learn_programmingAS3samples_flash).
+[_FlashPlatformAS3DevGuideExamples.zip_](https://github.com/joshtynjala/flash-platform-as3-dev-guide-examples/releases/tag/original).
 The Introvert IM application files can be found in the Samples/IntrovertIM_HTML
 folder. The application consists of the following files:
 

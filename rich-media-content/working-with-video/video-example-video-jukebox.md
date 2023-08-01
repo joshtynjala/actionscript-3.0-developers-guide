@@ -20,10 +20,9 @@ ActionScript 3.0:
 - Resizing a video object on the display list based on the net stream's metadata
 
 To get the application files for this sample, see
-<a href="http://www.adobe.com/go/learn_programmingAS3samples_flash"
-target="_self">www.adobe.com/go/learn_programmingAS3samples_flash</a>. The Video
-Jukebox application files can be found in the folder Samples/VideoJukebox. The
-application consists of the following files:
+[_FlashPlatformAS3DevGuideExamples.zip_](https://github.com/joshtynjala/flash-platform-as3-dev-guide-examples/releases/tag/original).
+The Video Jukebox application files can be found in the folder
+Samples/VideoJukebox. The application consists of the following files:
 
 <div>
 

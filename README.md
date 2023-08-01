@@ -5,6 +5,11 @@ by Adobe Systems Incorporated. The full text of this documentation has been
 converted to Markdown, for ease of readability and to provide an easy base for
 transforming the content into other formats.
 
+_Note:_ The sample projects referenced in this documentation are available from
+the
+[flash-platform-as3-dev-guide-examples](https://github.com/joshtynjala/flash-platform-as3-dev-guide-examples)
+repository.
+
 Copyright © Adobe Systems Incorporated. All rights reserved.
 
 This guide is licensed for use under the terms of the Creative Commons
