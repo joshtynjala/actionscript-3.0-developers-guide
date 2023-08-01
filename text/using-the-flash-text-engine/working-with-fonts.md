@@ -23,13 +23,13 @@ sfnt-wrapped CID, or Naked CID.
 <div>
 
 The `fontName` property of the `FontDescription` object can be a single name or
-a comma-separated list of names. For example, in a list such as “Arial,
-Helvetica, \_sans”, the text engine looks for “Arial” first, then “Helvetica”,
-and finally “\_sans”, if it can’t find either of the first two fonts. The set of
-font names include three generic device font names: “\_sans”, “\_serif”, and
-“\_typewriter”. They map to specific device fonts, depending on the playback
+a comma-separated list of names. For example, in a list such as "Arial,
+Helvetica, \_sans", the text engine looks for "Arial" first, then "Helvetica",
+and finally "\_sans", if it can't find either of the first two fonts. The set of
+font names include three generic device font names: "\_sans", "\_serif", and
+"\_typewriter". They map to specific device fonts, depending on the playback
 system. It is good practice to specify default names such as these in all font
-descriptions that use device fonts. If no `fontName` is specified, “\_serif” is
+descriptions that use device fonts. If no `fontName` is specified, "\_serif" is
 used as the default.
 
 The `fontPosture` property can either be set to the default (
@@ -94,7 +94,7 @@ to `RenderingMode.NORMAL` to match the type of rendering used by Flash Player 7
 or earlier versions.
 
 When CFF rendering is selected, a second property, `cffHinting`, controls how a
-font’s horizontal stems are fit to the subpixel grid. The default value,
+font's horizontal stems are fit to the subpixel grid. The default value,
 `CFFHinting.HORIZONTAL_STEM`, uses CFF hinting. Setting this property to
 `CFFHinting.NONE` removes hinting, which is appropriate for animation or for
 large font sizes.
@@ -123,7 +123,7 @@ property is automatically set to `true`. Attempting to modify a locked
 to fully define such an object before assigning it to a `ElementFormat`.
 
 If you want to modify an existing `FontDescription`, first check its `locked`
-property. If it’s `true`, use the `clone()` method to create an unlocked copy of
+property. If it's `true`, use the `clone()` method to create an unlocked copy of
 the object. The properties of this unlocked object can be changed, and it can
 then be assigned to the `ElementFormat`. Any new lines created from this
 `TextElement` have the new formatting. Previous lines created from this same

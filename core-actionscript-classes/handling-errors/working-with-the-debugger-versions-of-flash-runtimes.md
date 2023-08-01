@@ -24,18 +24,18 @@ error type and error number. For example, consider the following code:
     }
 
 If the `readBoolean()` method throws an EOFError in the debugger version of
-Flash Player, the following message displays in the `tf` text field: “EOFError:
-Error \#2030: End of file was encountered.”
+Flash Player, the following message displays in the `tf` text field: "EOFError:
+Error \#2030: End of file was encountered."
 
 <div>
 
 The same code in a release version of Flash Player or Adobe AIR would display
-the following text: “EOFError: Error \#2030.”
+the following text: "EOFError: Error \#2030."
 
 <div>
 
 Note: The debugger players broadcast an event named "allComplete"; avoid
-creating custom events with the name “allComplete”. Otherwise, you will
+creating custom events with the name "allComplete". Otherwise, you will
 encounter unpredictable behavior when debugging.
 
 </div>
@@ -44,10 +44,9 @@ encounter unpredictable behavior when debugging.
 
 To keep resources and size to a minimum in the release versions, error message
 strings are not present. You can look up the error number in the documentation
-(the appendixes of the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/runtimeErrors.html"
-target="_self">ActionScript 3.0 Reference for the Adobe Flash Platform</a>) to
-correlate to an error message. Alternatively, you can reproduce the error using
-the debugger versions of Flash Player and AIR to see the full message.
+(the appendixes of the
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html))
+to correlate to an error message. Alternatively, you can reproduce the error
+using the debugger versions of Flash Player and AIR to see the full message.
 
 </div>

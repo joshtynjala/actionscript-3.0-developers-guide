@@ -3,7 +3,7 @@
 <div>
 
 Two methods were added to
-[the Sprite class](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Sprite.html)
+[the Sprite class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Sprite.html)
 to provide additional support for touch-enabled applications supporting
 touch-point input: `Sprite.startTouchDrag()` and `Sprite.stopTouchDrag()`. These
 methods behave the same as `Sprite.startDrag()` and `Sprite.stopDrag()` do for

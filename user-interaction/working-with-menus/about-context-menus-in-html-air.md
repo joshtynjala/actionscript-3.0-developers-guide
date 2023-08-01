@@ -6,7 +6,7 @@ In HTML content displayed using the HTMLLoader object, the `contextmenu` event
 can be used to display a context menu. By default, a context menu is displayed
 automatically when the user invokes the context menu event on selected text (by
 right-clicking or command-clicking the text). To prevent the default menu from
-opening, listen for the `contextmenu` event and call the event object’s
+opening, listen for the `contextmenu` event and call the event object's
 `preventDefault()` method:
 
     function showContextMenu(event){

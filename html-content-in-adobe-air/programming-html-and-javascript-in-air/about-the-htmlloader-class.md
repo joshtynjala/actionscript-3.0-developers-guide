@@ -3,7 +3,7 @@
 <div>
 
 The
-[HTMLLoader](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/html/HTMLLoader.html)
+[HTMLLoader](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/html/HTMLLoader.html)
 class of Adobe AIR defines the display object that can display HTML content in
 an AIR application. SWF-based applications can add an HTMLLoader control to an
 existing window or create an HTML window that automatically contains a
@@ -51,7 +51,7 @@ Flex container.
 </div>
 
 You can also render HTML text by using the TextField class, but its capabilities
-are limited. The Adobe® Flash® Player’s TextField class supports a subset of
+are limited. The Adobe® Flash® Player's TextField class supports a subset of
 HTML markup, but because of size limitations, its capabilities are limited. (The
 HTMLLoader class included in Adobe AIR is not available in Flash Player.)
 
@@ -115,7 +115,7 @@ the `loadString()` method is placed in the application sandbox.
 The files you install with the AIR application have access to the AIR APIs. For
 security reasons, content from other sources do not. For example, this
 restriction prevents content from a remote domain (such as http://example.com)
-from reading the contents the user’s desktop directory (or worse).
+from reading the contents the user's desktop directory (or worse).
 
 Because there are security loopholes that can be exploited through calling the
 `eval()` function (and related APIs), content installed with the application, by
@@ -143,8 +143,8 @@ details, see
 [Cross-scripting content in different security sandboxes](WS5b3ccc516d4fbf351e63e3d118666ade46-7f08.html).
 
 If you call code that is restricted from use in a sandbox for security reasons,
-the runtime dispatches a JavaScript error: “Adobe AIR runtime security violation
-for JavaScript code in the application security sandbox.”
+the runtime dispatches a JavaScript error: "Adobe AIR runtime security violation
+for JavaScript code in the application security sandbox."
 
 To avoid this error, follow the coding practices described in the next section,
 [Avoiding security-related JavaScript errors](WS5b3ccc516d4fbf351e63e3d118666ade46-7f0e.html).

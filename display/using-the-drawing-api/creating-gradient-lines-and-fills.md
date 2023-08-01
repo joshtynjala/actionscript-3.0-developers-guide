@@ -32,8 +32,8 @@ advanced customizing.
 
 Although the fifth parameter, the transformation matrix, is optional, it is
 commonly used because it provides an easy and powerful way to control the
-gradient’s appearance. This parameter accepts a Matrix instance. The easiest way
-to create a Matrix object for a gradient is to use the Matrix class’s
+gradient's appearance. This parameter accepts a Matrix instance. The easiest way
+to create a Matrix object for a gradient is to use the Matrix class's
 `createGradientBox()` method.
 
 </div>
@@ -49,7 +49,7 @@ flash.display.Graphics class to define gradients for use in shapes. When you
 define a gradient, you supply a matrix as one of the parameters of these
 methods.
 
-The easiest way to define the matrix is by using the Matrix class’s
+The easiest way to define the matrix is by using the Matrix class's
 `createGradientBox()` method, which creates a matrix that is used to define the
 gradient. You define the scale, rotation, and position of the gradient using the
 parameters passed to the `createGradientBox()` method. The `createGradientBox()`
@@ -308,7 +308,7 @@ and height of the gradient matrix rather than the width or height that is drawn
 using the Graphics object. When drawing with the Graphics object, you draw what
 exists at those coordinates in the gradient matrix. Even if you use one of the
 shape methods of a Graphics object such as `drawRect()`, the gradient does not
-stretch itself to the size of the shape that is drawn—the gradient’s size must
+stretch itself to the size of the shape that is drawn—the gradient's size must
 be specified in the gradient matrix itself.
 
 The following illustrates the visual difference between the dimensions of the

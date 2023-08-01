@@ -34,7 +34,7 @@ dispatched when an exception is thrown from native asynchronous code. In this
 case, it is dispatched when the video file contains metadata or cue point
 information, and the appropriate listeners have not been defined. The previous
 code handles the `asyncError` event and ignores the error if you are not
-interested in the video file’s metadata or cue point information. If you had an
+interested in the video file's metadata or cue point information. If you had an
 FLV with metadata and several cue points, the `trace()` function would display
 the following error messages:
 
@@ -51,7 +51,7 @@ methods within your applications.
 
 <div>
 
-## Set the NetStream object’s client property to an Object
+## Set the NetStream object's client property to an Object
 
 <div>
 
@@ -100,7 +100,7 @@ encountered a cue point, no errors would be generated even though no
 
 <div>
 
-The following code sets the NetStream object’s `client` property to a custom
+The following code sets the NetStream object's `client` property to a custom
 class, CustomClient, which defines handlers for the callback methods:
 
     var nc:NetConnection = new NetConnection();
@@ -130,7 +130,7 @@ The CustomClient class is as follows:
 The CustomClient class defines a handler for the `onMetaData` callback handler.
 If a cue point was encountered and the `onCuePoint` callback handler was called,
 an `asyncError` event ( `AsyncErrorEvent.ASYNC_ERROR`) would be dispatched
-saying “flash.net.NetStream was unable to invoke callback onCuePoint.” To
+saying "flash.net.NetStream was unable to invoke callback onCuePoint." To
 prevent this error, you would either need to define an `onCuePoint` callback
 method in your CustomClient class, or define an event handler for the
 `asyncError` event.
@@ -282,7 +282,7 @@ you could use the following code:
 
 <div>
 
-## Set the NetStream object’s client property to this
+## Set the NetStream object's client property to this
 
 <div>
 
@@ -332,7 +332,7 @@ More Help topics
 </div>
 
 ![](images/flashmediaserverLinkIndicator.png)
-[Flash Media Server: Handling metadata in streams](http://help.adobe.com/en_US/FlashMediaServer/3.5_Deving/WS5b3ccc516d4fbf351e63e3d11a0773d117-7fc8.html#WS5b3ccc516d4fbf351e63e3d11a0773d117-7fdb "http://help.adobe.com/en_US/FlashMediaServer/3.5_Deving/WS5b3ccc516d4fbf351e63e3d11a0773d117-7fc8.html#WS5b3ccc516d4fbf351e63e3d11a0773d117-7fdb")
+[Flash Media Server: Handling metadata in streams](https://help.adobe.com/en_US/FlashMediaServer/3.5_Deving/WS5b3ccc516d4fbf351e63e3d11a0773d117-7fc8.html#WS5b3ccc516d4fbf351e63e3d11a0773d117-7fdb "https://help.adobe.com/en_US/FlashMediaServer/3.5_Deving/WS5b3ccc516d4fbf351e63e3d11a0773d117-7fc8.html#WS5b3ccc516d4fbf351e63e3d11a0773d117-7fdb")
 
 <div>
 

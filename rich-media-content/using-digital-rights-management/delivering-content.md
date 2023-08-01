@@ -9,8 +9,8 @@ HTTP, HTTP Dynamic Streaming, RTMP, or RTMPE.
 
 <div>
 
-However, you may get some issues due to the necessity of the protected content’s
-metadata (usually in the form of a ‘.metadata’ file) before Adobe Access can
+However, you may get some issues due to the necessity of the protected content's
+metadata (usually in the form of a '.metadata' file) before Adobe Access can
 acquire a license to decrypt the content. Specifically, with the RTMP/RTMPE
 protocol, only FLV and F4V data can be delivered to the client through the Flash
 Media Server (FMS). Because of this, the client must retrieve the metadata blob

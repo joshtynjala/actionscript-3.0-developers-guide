@@ -3,7 +3,7 @@
 <div>
 
 Use the `prependChild()` method or the `appendChild()` method to add a property
-to the beginning or end of an XML object’s list of properties, as the following
+to the beginning or end of an XML object's list of properties, as the following
 example shows:
 
     var x1:XML = <p>Line 1</p>

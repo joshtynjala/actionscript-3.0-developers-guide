@@ -31,7 +31,7 @@ pages loaded from example.com.
 Since this technique places the application content into a different sandbox,
 code within that content is also no longer subject to the restrictions on the
 execution of code in evaluated strings. You can use this sandbox mapping
-technique to ease these restrictions even when you don’t need to cross-script
+technique to ease these restrictions even when you don't need to cross-script
 remote content. Mapping content in this way can be especially useful when
 working with one of the many JavaScript frameworks or with existing code that
 relies on evaluating strings. However, you should consider and guard against the
@@ -163,7 +163,7 @@ object containing a function and a property to its parent:
     interface.storeID = "abc"
     window.childSandboxBridge = interface;
 
-If this child content was loaded into an iframe assigned an id of “child”, you
+If this child content was loaded into an iframe assigned an id of "child", you
 could access the interface from parent content by reading the
 `childSandboxBridge` property of the frame:
 

@@ -58,11 +58,11 @@ words, only a red circle will be visible.
 
 The display object that is acting as a mask can be draggable, animated, resized
 dynamically, and can use separate shapes within a single mask. The mask display
-object doesn’t necessarily need to be added to the display list. However, if you
+object doesn't necessarily need to be added to the display list. However, if you
 want the mask object to scale when the Stage is scaled or if you want to enable
 user interaction with the mask (such as user-controlled dragging and resizing),
 the mask object must be added to the display list. The actual z-index
-(front-to-back order) of the display objects doesn’t matter, as long as the mask
+(front-to-back order) of the display objects doesn't matter, as long as the mask
 object is added to the display list. (The mask object will not appear on the
 screen except as a mask.) If the mask object is a MovieClip instance with
 multiple frames, it plays all the frames in its timeline, the same as it would

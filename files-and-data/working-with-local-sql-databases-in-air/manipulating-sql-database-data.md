@@ -2,16 +2,16 @@
 
 <div>
 
-There are some common tasks that you perform when you’re working with local SQL
+There are some common tasks that you perform when you're working with local SQL
 databases. These tasks include connecting to a database, adding data to tables,
 and retrieving data from tables in a database. There are also several issues
-you’ll want to keep in mind while performing these tasks, such as working with
+you'll want to keep in mind while performing these tasks, such as working with
 data types and handling errors.
 
-Note that there are also several database tasks that are things you’ll deal with
+Note that there are also several database tasks that are things you'll deal with
 less frequently, but will often need to do before you can perform these more
 common tasks. For example, before you can connect to a database and retrieve
-data from a table, you’ll need to create the database and create the table
+data from a table, you'll need to create the database and create the table
 structure in the database. Those less-frequent initial setup tasks are discussed
 in
 [Creating and modifying a database](WS5b3ccc516d4fbf351e63e3d118666ade46-7d49.html).

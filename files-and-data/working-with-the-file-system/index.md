@@ -29,13 +29,13 @@ More Help topics
 </div>
 
 ![](images/flashplatformLinkIndicator.png)
-[flash.net.FileReference](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/FileReference.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/FileReference.html")
+[flash.net.FileReference](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/FileReference.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/FileReference.html")
 
 ![](images/flashplatformLinkIndicator.png)
-[flash.net.FileReferenceList](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/FileReferenceList.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/FileReferenceList.html")
+[flash.net.FileReferenceList](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/FileReferenceList.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/FileReferenceList.html")
 
 ![](images/flashplatformLinkIndicator.png)
-[flash.filesystem.File](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/File.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/File.html")
+[flash.filesystem.File](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/File.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/File.html")
 
 <div>
 

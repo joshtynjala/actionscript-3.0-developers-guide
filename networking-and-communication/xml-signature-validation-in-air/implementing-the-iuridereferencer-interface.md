@@ -160,7 +160,7 @@ gracefully handle unsupported syntax).
 The signature of an AIR application is an example of an enveloping signature.
 The files in the application are listed in a Manifest element. The Manifest
 element is addressed in the Reference URI attribute using the string,
-“#PackageContents”, which refers to the Id of the Manifest element:
+"#PackageContents", which refers to the Id of the Manifest element:
 
     <Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="PackageSignature">
     	<SignedInfo>
@@ -203,7 +203,7 @@ element is addressed in the Reference URI attribute using the string,
 
 A dereferencer for validating this signature must take the URI string
 containing, `"#PackageContents"` from the Reference element, and return the
-Manifest element in a ByteArray object. The “#” symbol refers to the value of an
+Manifest element in a ByteArray object. The "#" symbol refers to the value of an
 element Id attribute.
 
 The following example implements a dereferencer for validating AIR application
@@ -419,7 +419,7 @@ object.
 <div>
 
 Note: Before validating remote external references, consider whether your
-application could be vulnerable to a “phone home” or similar type of attack by a
+application could be vulnerable to a "phone home" or similar type of attack by a
 maliciously constructed signature document.
 
 </div>

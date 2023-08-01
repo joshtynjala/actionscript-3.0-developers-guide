@@ -4,7 +4,7 @@
 
 You can control the transparency of a display object to make it partially (or
 completely transparent), or change the transparency to make the object appear to
-fade in or out. The DisplayObject class’s `alpha` property defines the
+fade in or out. The DisplayObject class's `alpha` property defines the
 transparency (or more accurately, the opacity) of a display object. The `alpha`
 property can be set to any value between 0 and 1, where 0 is completely
 transparent, and 1 is completely opaque. For example, these lines of code make

@@ -3,7 +3,7 @@
 <div>
 
 This section describes all of the elements of ActionScript regular expression
-syntax. As you’ll see, regular expressions can have many complexities and
+syntax. As you'll see, regular expressions can have many complexities and
 nuances. You can find detailed resources on regular expressions on the web and
 in bookstores. Keep in mind that different programming environments implement
 regular expressions in different ways. ActionScript 3.0 implements regular
@@ -17,7 +17,7 @@ by any digit:
 
     /ABC\d/
 
-The `\d` code represents “any digit.” The backslash (`\`) character is called
+The `\d` code represents "any digit." The backslash (`\`) character is called
 the escape character, and combined with the character that follows it (in this
 case the letter d), it has special meaning in the regular expression.
 

@@ -65,7 +65,7 @@ not.</p></li>
 <tr class="odd">
 <td headers="d17e5266 "><p>EvalError</p></td>
 <td headers="d17e5269 "><p>An EvalError
-exception is thrown if any parameters are passed to the Function class’s
+exception is thrown if any parameters are passed to the Function class's
 constructor or if user code calls the
 <samp>eval()</samp>
 function.</p></td>
@@ -117,7 +117,7 @@ security sandbox boundary.</p></li>
 <li><p>An attempt was made to access a URL not permitted by the security
 sandbox.</p></li>
 <li><p>A socket connection was attempted to a port but the necessary
-socket policy file wasn’t present.</p></li>
+socket policy file wasn't present.</p></li>
 <li><p>An attempt was made to access the user's camera or microphone,
 and the user denide the access to the device.</p></li>
 </ul>
@@ -151,7 +151,7 @@ can be thrown under the following circumstances:</p>
 <li><p>An actual parameter of a function or method could not be coerced
 to the formal parameter type.</p></li>
 <li><p>A value is assigned to a variable and cannot be coerced to the
-variable’s type.</p></li>
+variable's type.</p></li>
 <li><p>The right side of the
 <samp>is</samp> or
 <samp>instanceof</samp>
@@ -163,7 +163,7 @@ is used illegally.</p></li>
 therefore ambiguous.</p></li>
 <li><p>A method is called on an incompatible object. For example, a
 TypeError exception is thrown if a method in the RegExp class is
-“grafted” onto a generic object and then called.</p></li>
+"grafted" onto a generic object and then called.</p></li>
 </ul>
 </div></td>
 </tr>
@@ -247,8 +247,8 @@ illegal operation error exceptions include the following:</p>
 functionality than the Stage can support. For example, if you attempt to
 get or set a mask on the Stage (using
 <samp>stage.mask</samp>),
-the Flash runtime throws an IllegalOperationError with the message “The
-Stage class does not implement this property or method.”</p></li>
+the Flash runtime throws an IllegalOperationError with the message "The
+Stage class does not implement this property or method."</p></li>
 <li><p>A subclass inherits a method it does not require and does not
 want to support.</p></li>
 <li><p>Certain accessibility methods are called when Flash Player is

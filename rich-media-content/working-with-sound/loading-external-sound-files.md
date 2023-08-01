@@ -3,7 +3,7 @@
 <div>
 
 Each instance of the Sound class exists to load and trigger the playback of a
-specific sound resource. An application can’t reuse a Sound object to load more
+specific sound resource. An application can't reuse a Sound object to load more
 than one sound. If it wants to load a new sound resource, it should create a new
 Sound object.
 
@@ -19,10 +19,10 @@ When a value for the URLRequest parameter is supplied, the new Sound object
 starts loading the specified sound resource automatically.
 
 In all but the simplest cases, your application should pay attention to the
-sound’s loading progress and watch for errors during loading. For example, if
+sound's loading progress and watch for errors during loading. For example, if
 the click sound is fairly large, it might not be completely loaded by the time
 the user clicks the button that triggers the sound. Trying to play an unloaded
-sound could cause a run-time error. It’s safer to wait for the sound to load
+sound could cause a run-time error. It's safer to wait for the sound to load
 completely before letting users take actions that might start sounds playing.
 
 A Sound object dispatches a number of different events during the sound loading
@@ -37,7 +37,7 @@ table lists the events that can be dispatched by a Sound object.
 | open ( `Event.OPEN`)                 | Dispatched right before the sound loading operation begins.                                                                      |
 | progress ( `ProgressEvent.PROGRESS`) | Dispatched periodically during the sound loading process when data is received from the file or stream.                          |
 | id3 ( `Event.ID3`)                   | Dispatched when ID3 data is available for an mp3 sound.                                                                          |
-| complete ( `Event.COMPLETE`)         | Dispatched when all of the sound resource’s data has been loaded.                                                                |
+| complete ( `Event.COMPLETE`)         | Dispatched when all of the sound resource's data has been loaded.                                                                |
 | ioError ( `IOErrorEvent.IO_ERROR`)   | Dispatched when a sound file cannot be located or when the loading process is interrupted before all sound data can be received. |
 
 </div>

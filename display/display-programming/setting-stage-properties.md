@@ -28,9 +28,10 @@ loaded. For details, see
 <div>
 
 The `frameRate` property of the Stage class is used to set the frame rate for
-all SWF files loaded into the application. For more information, see the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Stage.html#frameRate"
-target="_self">ActionScript 3.0 Reference for the Adobe Flash Platform</a>.
+all SWF files loaded into the application. For more information, see the
+[`Stage.frameRate`](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Stage.html#frameRate)
+property description in the
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
 </div>
 
@@ -44,7 +45,7 @@ target="_self">ActionScript 3.0 Reference for the Adobe Flash Platform</a>.
 
 When the portion of the screen representing Flash Player or AIR is resized, the
 runtime automatically adjusts the Stage contents to compensate. The Stage
-class’s `scaleMode` property determines how the Stage contents are adjusted.
+class's `scaleMode` property determines how the Stage contents are adjusted.
 This property can be set to four different values, defined as constants in the
 flash.display.StageScaleMode class:
 
@@ -55,7 +56,7 @@ flash.display.StageScaleMode class:
 
 - `StageScaleMode.SHOW_ALL` scales the SWF to fit entirely within the new stage
   dimensions without changing the content aspect ratio. This scale mode displays
-  all of the content, but can result in “letterbox” borders, like the black bars
+  all of the content, but can result in "letterbox" borders, like the black bars
   that appear when viewing a wide-screen movie on a standard television.
 
 - `StageScaleMode.NO_BORDER` scales the SWF to entirely fill the new stage
@@ -71,7 +72,7 @@ flash.display.StageScaleMode class:
   pixel dimensions of the resized stage. (In the other scale modes, the
   `stageWidth` and `stageHeight` properties always reflect the original width
   and height of the SWF.) In addition, when `scaleMode` is set to
-  `StageScaleMode.NO_SCALE` and the SWF file is resized, the Stage class’s
+  `StageScaleMode.NO_SCALE` and the SWF file is resized, the Stage class's
   `resize` event is dispatched, allowing you to make adjustments accordingly.
 
   Consequently, having `scaleMode` set to `StageScaleMode.NO_SCALE` allows you
@@ -169,8 +170,8 @@ used in these types of windows.
 
 <div>
 
-Full-screen mode allows you to set a movie’s stage to fill a viewer’s entire
-monitor without any container borders or menus. The Stage class’s `displayState`
+Full-screen mode allows you to set a movie's stage to fill a viewer's entire
+monitor without any container borders or menus. The Stage class's `displayState`
 property is used to toggle full-screen mode on and off for a SWF. The
 `displayState` property can be set to one of the values defined by the constants
 in the flash.display.StageDisplayState class. To turn on full-screen mode, set
@@ -296,7 +297,7 @@ This does not apply to SWF files running in the stand-alone Flash Player.
 #### Full screen stage size and scaling
 
 The `Stage.fullScreenHeight` and `Stage.fullScreenWidth` properties return the
-height and the width of the monitor that’s used when going to full-screen size,
+height and the width of the monitor that's used when going to full-screen size,
 if that state is entered immediately. These values can be incorrect if the user
 has the opportunity to move the browser from one monitor to another after you
 retrieve these values but before entering full-screen mode. If you retrieve
@@ -306,19 +307,21 @@ with multiple monitors, the SWF content expands to fill only one monitor. Flash
 Player and AIR use a metric to determine which monitor contains the greatest
 portion of the SWF, and uses that monitor for full-screen mode. The
 fullScreenHeight and fullScreenWidth properties only reflect the size of the
-monitor that is used for full-screen mode. For more information, see
-`Stage.fullScreenHeight` and `Stage.fullScreenWidth` in the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Stage.html#fullScreenHeight"
-target="_self">ActionScript 3.0 Reference for the Adobe Flash Platform</a>.
+monitor that is used for full-screen mode. For more information, see the
+[`Stage.fullScreenHeight`](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Stage.html#fullScreenHeight)
+and
+[`Stage.fullScreenWidth`](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Stage.html#fullScreenWidth)
+property descriptions in the
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
 Stage scaling behavior for full-screen mode is the same as under normal mode;
-the scaling is controlled by the Stage class’s `scaleMode` property. If the
-`scaleMode` property is set to `StageScaleMode.NO_SCALE`, the Stage’s
+the scaling is controlled by the Stage class's `scaleMode` property. If the
+`scaleMode` property is set to `StageScaleMode.NO_SCALE`, the Stage's
 `stageWidth` and `stageHeight` properties change to reflect the size of the
 screen area occupied by the SWF (the entire screen, in this case); if viewed in
 the browser the HTML parameter for this controls the setting.
 
-You can use the Stage class’s `fullScreen` event to detect and respond when
+You can use the Stage class's `fullScreen` event to detect and respond when
 full-screen mode is turned on or off. For example, you might want to reposition,
 add, or remove items from the screen when entering or leaving full-screen mode,
 as in this example:
@@ -420,7 +423,7 @@ coordinates of the mouse location.
 
 #### Hardware scaling in full-screen mode
 
-You can use the Stage class’s `fullScreenSourceRect` property to set Flash
+You can use the Stage class's `fullScreenSourceRect` property to set Flash
 Player or AIR to scale a specific region of the stage to full-screen mode. Flash
 Player and AIR scale in hardware, if available, using the graphics and video
 card on a user's computer, and generally display content more quickly than
@@ -440,7 +443,7 @@ When this property is set to a valid rectangle and the `displayState` property
 is set to full-screen mode, Flash Player and AIR scale the specified area. The
 actual Stage size in pixels within ActionScript does not change. Flash Player
 and AIR enforce a minimum limit for the size of the rectangle to accommodate the
-standard “Press Esc to exit full-screen mode” message. This limit is usually
+standard "Press Esc to exit full-screen mode" message. This limit is usually
 around 260 by 30 pixels but can vary depending on platform and Flash Player
 version.
 

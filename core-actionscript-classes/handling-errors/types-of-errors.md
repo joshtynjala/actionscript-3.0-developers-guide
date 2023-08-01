@@ -49,7 +49,7 @@ terms:
 - _Asynchronous_ _errors_ are run-time errors that occur outside of the normal
   program flow. They generate events and event listeners catch them. An
   asynchronous operation is one in which a function initiates an operation, but
-  doesn’t wait for it to complete. You can create an error event listener to
+  doesn't wait for it to complete. You can create an error event listener to
   wait for the application or user to try some operation. If the operation
   fails, you catch the error with an event listener and respond to the error
   event. Then, the event listener calls an event handler function to respond to
@@ -97,11 +97,11 @@ terms:
   uncaught exception.
 
   When an uncaught error happens, the runtime dispatches an `uncaughtError`
-  event. This event is also known as a “global error handler.” This event is
-  dispatched by the SWF’s UncaughtErrorEvents object, which is available through
+  event. This event is also known as a "global error handler." This event is
+  dispatched by the SWF's UncaughtErrorEvents object, which is available through
   the `LoaderInfo.uncaughtErrorEvents` property. If no listeners are registered
   for the `uncaughtError` event, the runtime ignores uncaught errors and tries
-  to continue running, as long as the error doesn’t stop the SWF.
+  to continue running, as long as the error doesn't stop the SWF.
 
   In addition to dispatching the `uncaughtError` event, debugger versions of the
   Flash runtime respond to uncaught errors by terminating the current script.

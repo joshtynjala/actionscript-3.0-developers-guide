@@ -14,7 +14,7 @@ skin, or use your video in any less traditional way that you want. Working with
 video in ActionScript involves working with a combination of several classes:
 
 - <a
-  href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/Video.html"
+  href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/Video.html"
   target="_self">Video class</a>: The classic video content box on the Stage is
   an instance of the Video class. The Video class is a display object, so it can
   be manipulated using the same techniques that can be applied to other display
@@ -34,24 +34,24 @@ video in ActionScript involves working with a combination of several classes:
   [Guidelines and limitations](WSe9ecd9e6b89aefd2-70150d4b12ccd2cd415-7ffe.html).
 
 - <a
-  href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetStream.html"
-  target="_self">NetStream class</a>: When you’re loading a video file to be
+  href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetStream.html"
+  target="_self">NetStream class</a>: When you're loading a video file to be
   controlled by ActionScript, a NetStream instance represents the source of the
   video content—in this case, a stream of video data. Using a NetStream instance
   also involves using a NetConnection object, which is the connection to the
   video file—like the tunnel that the video data is fed through.
 
 - <a
-  href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/Camera.html"
-  target="_self">Camera class</a>: When you’re working with video data from a
-  camera connected to the user’s computer, a Camera instance represents the
-  source of the video content—the user’s camera and the video data it makes
+  href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/Camera.html"
+  target="_self">Camera class</a>: When you're working with video data from a
+  camera connected to the user's computer, a Camera instance represents the
+  source of the video content—the user's camera and the video data it makes
   available. New in Flash Player 11.4 and AIR 3.4, you can use a camera to feed
   StageVideo.
 
-When you’re loading external video, you can load the file from a standard web
+When you're loading external video, you can load the file from a standard web
 server for progressive download, or you can work with streaming video delivered
-by a specialized server such as Adobe’s Flash® Media Server.
+by a specialized server such as Adobe's Flash® Media Server.
 
 <div>
 
@@ -65,7 +65,7 @@ additional data that is associated with that moment in time.
 Encoding  
 The process of taking video data in one format and converting it to another
 video data format; for example, taking a high-resolution source video and
-converting it to a format that’s suitable for Internet delivery.
+converting it to a format that's suitable for Internet delivery.
 
 Frame  
 A single segment of video information; each frame is like a still image
@@ -75,7 +75,7 @@ high speed, the illusion of motion is created.
 Keyframe  
 A video frame which contains the full information for the frame. Other frames
 that follow a keyframe only contain information about how they differ from the
-keyframe, rather than containing the full frame’s worth of information.
+keyframe, rather than containing the full frame's worth of information.
 
 Metadata  
 Information about a video file that is embedded within the video file and
@@ -86,12 +86,12 @@ When a video file is delivered from a standard web server, the video data is
 loaded using progressive download, meaning the video information loads in
 sequence. This has the benefit that the video can begin playing before the
 entire file is downloaded; however, it prevents you from jumping ahead to a part
-of the video that hasn’t loaded.
+of the video that hasn't loaded.
 
 Streaming  
 As an alternative to progressive download, a special video server can be used to
 deliver video over the Internet using a technique known as streaming (sometimes
-called “true streaming”). With streaming, the viewer’s computer never downloads
+called "true streaming"). With streaming, the viewer's computer never downloads
 the entire video at one time. To speed up download times, at any moment the
 computer only needs a portion of the total video information. Because a special
 server controls the delivery of the video content, any part of the video can be

@@ -8,7 +8,7 @@ ActionScript, you can examine the shader and extract its metadata.
 
 When you create a Shader instance and link it to a Pixel Bender shader, a
 ShaderData object containing data about the shader is created and stored in the
-Shader object’s `data` property. The ShaderData class doesn’t define any
+Shader object's `data` property. The ShaderData class doesn't define any
 properties of its own. However, at run time a property is dynamically added to
 the ShaderData object for each metadata value defined in the shader source code.
 The name given to each property is the same as the name specified in the
@@ -41,7 +41,7 @@ When you use a `for..in` loop to examine a ShaderData object, check the data
 type of each property to determine whether the property is an input (a
 ShaderInput instance), a parameter (a ShaderParameter instance), or a metadata
 value (a String instance). The following example shows how to use a `for..in`
-loop to examine the dynamic properties of a shader’s `data` property. Each
+loop to examine the dynamic properties of a shader's `data` property. Each
 metadata value is added to a Vector instance named `metadata`. Note that this
 example assumes a Shader instance named `myShader` is already created:
 

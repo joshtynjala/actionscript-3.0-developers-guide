@@ -37,15 +37,15 @@ The drag-and-drop API contains the following classes.
 <td><div>
 <ul class="incremental">
 <li><p><a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeDragManager.html">NativeDragManager</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeDragManager.html">NativeDragManager</a></p></li>
 <li><p><a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeDragOptions.html">NativeDragOptions</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeDragOptions.html">NativeDragOptions</a></p></li>
 <li><p><a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/Clipboard.html">Clipboard</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/Clipboard.html">Clipboard</a></p></li>
 <li><p><a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/air/desktop/URLFilePromise.html">URLFilePromise</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/air/desktop/URLFilePromise.html">URLFilePromise</a></p></li>
 <li><p><a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/IFilePromise.html">IFilePromise</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/IFilePromise.html">IFilePromise</a></p></li>
 </ul>
 </div>
 <p>Constants used with the drag-and-drop API are defined in the
@@ -53,18 +53,18 @@ following classes:</p>
 <div>
 <ul class="incremental">
 <li><p><a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeDragActions.html">NativeDragActions</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeDragActions.html">NativeDragActions</a></p></li>
 <li><p><a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/ClipboardFormats.html">ClipboardFormat</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/ClipboardFormats.html">ClipboardFormat</a></p></li>
 <li><p><a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/ClipboardTransferMode.html">ClipboardTransferModes</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/ClipboardTransferMode.html">ClipboardTransferModes</a></p></li>
 </ul>
 </div></td>
 </tr>
 <tr class="even">
 <td><p>flash.events</p></td>
 <td><p><a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/NativeDragEvent.html">NativeDragEvent</a></p></td>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/NativeDragEvent.html">NativeDragEvent</a></p></td>
 </tr>
 </tbody>
 </table>

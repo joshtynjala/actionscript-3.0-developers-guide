@@ -20,7 +20,7 @@ program without the ads.
 In another example, a consumer wants to view content offline while traveling
 with no Internet access. This offline workflow is supported in AIR applications.
 After registering and paying the publisher for the content, the user can access
-and download the content and associated AIR application from the publisher’s
+and download the content and associated AIR application from the publisher's
 website. Using the AIR application, the user can view the content offline during
 the permitted period. The content can also be shared with other devices in the
 same device group using domains ( **New in 3.0** ).
@@ -79,13 +79,13 @@ More Help topics
 </div>
 
 ![](images/flashplatformLinkIndicator.png)
-[flash.net.drm package](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/drm/package-detail.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/drm/package-detail.html")
+[flash.net.drm package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/drm/package-detail.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/drm/package-detail.html")
 
 ![](images/flashplatformLinkIndicator.png)
-[flash.net.NetConnection](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetConnection.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetConnection.html")
+[flash.net.NetConnection](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetConnection.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetConnection.html")
 
 ![](images/flashplatformLinkIndicator.png)
-[flash.net.NetStream](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetStream.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetStream.html")
+[flash.net.NetStream](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetStream.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetStream.html")
 
 <div>
 

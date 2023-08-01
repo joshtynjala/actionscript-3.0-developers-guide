@@ -21,7 +21,7 @@ core classes. You can invoke it four different ways.
 
 First, if given no parameters, theDate()` constructor returns a Date object
 containing the current date and time, in local time based on your time zone.
-Here’s an example:
+Here's an example:
 
     var now:Date = new Date();
 
@@ -50,13 +50,12 @@ local time:
 
 Fourth, you can pass a single string parameter to the `Date()` constructor. It
 will try to parse that string into date or time components and then return a
-corresponding Date object. If you use this approach, it’s a good idea to enclose
+corresponding Date object. If you use this approach, it's a good idea to enclose
 the `Date()` constructor in a `try..catch` block to trap any parsing errors. The
 `Date()` constructor accepts a number of different string formats (which are
-listed in the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Date.html#Date%28%29"
-target="_self">ActionScript 3.0 Reference for the Adobe Flash Platform</a>). The
-following statement initializes a new Date object using a string value:
+listed in the
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html)).
+The following statement initializes a new Date object using a string value:
 
     var nextDay:Date = new Date("Mon May 1 2006 11:30:00 AM");
 
@@ -163,7 +162,7 @@ to calculate another:
     var dueDate:Date = new Date(invoiceDate.getTime() + (30 * millisecondsPerDay));
 
 Next, the `millisecondsPerDay` constant is multiplied by 30 to represent 30
-days’ time and the result is added to the `invoiceDate` value and used to set
+days' time and the result is added to the `invoiceDate` value and used to set
 the `dueDate` value.
 
 <div xmlns:adobe="http://www.adobe.com/saxon">
@@ -213,7 +212,7 @@ with dates in ActionScript</a></h3>
 
 Date and time arithmetic comes in handy when you want to convert dates from one
 time zone to another. So does the `getTimezoneOffset()` method, which returns
-the value in minutes by which the Date object’s time zone differs from UTC. It
+the value in minutes by which the Date object's time zone differs from UTC. It
 returns a value in minutes because not all time zones are set to even-hour
 increments—some have half-hour offsets from neighboring zones.
 

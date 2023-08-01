@@ -37,7 +37,7 @@ local-with-networking sandbox load local content other than SWF files (such as
 images), however they cannot access data in the loaded content.
 
 When loading a SWF file from a non-trusted source (such as a domain other than
-that of the Loader object’s root SWF file), you may want to define a mask for
+that of the Loader object's root SWF file), you may want to define a mask for
 the Loader object, to prevent the loaded content (which is a child of the Loader
 object) from drawing to portions of the Stage outside of that mask, as in the
 following code:
@@ -80,9 +80,9 @@ content can be used:
   `SecurityDomain.currentDomain`. If you specify `SecurityDomain.currentDomain`,
   this requests that the loaded SWF file be _imported_ to the sandbox of the
   loading SWF file, meaning that it operates as though it had been loaded from
-  the loading SWF file’s own server. This is only permitted if a URL policy file
-  is found on the loaded SWF file’s server, allowing access by the loading SWF
-  file’s domain. If the required policy file is found, the loader and loadee can
+  the loading SWF file's own server. This is only permitted if a URL policy file
+  is found on the loaded SWF file's server, allowing access by the loading SWF
+  file's domain. If the required policy file is found, the loader and loadee can
   freely script each other once the load begins, since they are in the same
   sandbox. Note that sandbox importing can mostly be replaced by performing an
   ordinary load and then having the loaded SWF file call the
@@ -94,7 +94,7 @@ content can be used:
   ActionScript 3.0 (not an image or a SWF file written in ActionScript 1.0 or
   2.0). When loading the file, you can specify that the file be placed into a
   particular application domain, rather than the default of being placed in a
-  new application domain that is a child of the loading SWF file’s application
+  new application domain that is a child of the loading SWF file's application
   domain. Note that application domains are subunits of security domains, and
   thus you can specify a target application domain only if the SWF file that you
   are loading is from your own security domain, either because it is from your
@@ -172,7 +172,7 @@ the following code:
     <img src = 'filename.jpg' checkPolicyFile = 'true' id = 'instanceName' >
 
 When you load a SWF using an `<img>` tag in a text field, you can permit access
-to that SWF file’s data through a call to the `Security.allowDomain()` method.
+to that SWF file's data through a call to the `Security.allowDomain()` method.
 
 When you use an `<img>` tag in a text field to load an external file (as opposed
 to using a Bitmap class embedded within your SWF), a Loader object is

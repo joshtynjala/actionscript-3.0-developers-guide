@@ -51,9 +51,9 @@ The menu classes include:
 <td><div>
 <ul class="incremental">
 <li><p><a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeMenu.html">NativeMenu</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeMenu.html">NativeMenu</a></p></li>
 <li><p><a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeMenuItem.html">NativeMenuItem</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeMenuItem.html">NativeMenuItem</a></p></li>
 </ul>
 </div></td>
 </tr>
@@ -62,9 +62,9 @@ href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/d
 <td><div>
 <ul class="incremental">
 <li><p><a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/ContextMenu.html">ContextMenu</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/ContextMenu.html">ContextMenu</a></p></li>
 <li><p><a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/ContextMenuItem.html">ContextMenuItem</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/ContextMenuItem.html">ContextMenuItem</a></p></li>
 </ul>
 </div></td>
 </tr>
@@ -73,9 +73,9 @@ href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/u
 <td><div>
 <ul class="incremental">
 <li><p><a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/Event.html">Event</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/Event.html">Event</a></p></li>
 <li><p><a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/ContextMenuEvent.html">ContextMenuEvent</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/ContextMenuEvent.html">ContextMenuEvent</a></p></li>
 </ul>
 </div></td>
 </tr>
@@ -280,7 +280,7 @@ Native menus are hierarchical in nature. NativeMenu objects contain child
 NativeMenuItem objects. NativeMenuItem objects that represent submenus, in turn,
 can contain NativeMenu objects. The top- or root-level menu object in the
 structure represents the menu bar for application and window menus. (Context,
-icon, and pop-up menus don’t have a menu bar).
+icon, and pop-up menus don't have a menu bar).
 
 The following diagram illustrates the structure of a typical menu. The root menu
 represents the menu bar and contains two menu items referencing a _File_ submenu
@@ -341,7 +341,7 @@ Immediately before a menu is displayed, the menu and its menu items dispatch a
 
 The `preparing` and `displaying` events give you an opportunity to update the
 menu contents or item appearance before it is shown to the user. For example, in
-the listener for the `displaying` event of an “Open Recent” menu, you could
+the listener for the `displaying` event of an "Open Recent" menu, you could
 change the menu items to reflect the current list of recently viewed documents.
 
 If you remove the menu item whose keyboard shortcut triggered a `preparing`
@@ -406,7 +406,7 @@ letter. Constants for the key codes to use for the modifier keys are defined in
 the Keyboard class.
 
 The assigned key equivalent string is automatically displayed beside the menu
-item name. The format depends on the user’s operating system and system
+item name. The format depends on the user's operating system and system
 preferences.
 
 <div>
@@ -459,7 +459,7 @@ On Windows, only a single letter is significant. By default, the significant
 letter is the first character in the label, but if you assign a mnemonic to the
 menu item, then the significant character becomes the designated letter. If two
 items in a menu have the same significant character (whether or not a mnemonic
-has been assigned), then the user’s keyboard interaction with the menu changes
+has been assigned), then the user's keyboard interaction with the menu changes
 slightly. Instead of pressing a single letter to select the menu or command, the
 user must press the letter as many times as necessary to highlight the desired
 item and then press the enter key to complete the selection. To maintain a
@@ -470,8 +470,8 @@ On Linux, no default mnemonic is provided. You must specify a value for the
 `mnemonicIndex` property of a menu item to provide a mnemonic.
 
 Specify the mnemonic character as an index into the label string. The index of
-the first character in a label is 0. Thus, to use “r” as the mnemonic for a menu
-item labeled, “Format,” you would set the `mnemonicIndex` property equal to 2.
+the first character in a label is 0. Thus, to use "r" as the mnemonic for a menu
+item labeled, "Format," you would set the `mnemonicIndex` property equal to 2.
 
     var item:NativeMenuItem = new NativeMenuItem("Format");
     item.mnemonicIndex = 2;
@@ -496,7 +496,7 @@ Set to `true` to display a check mark next to the item label.
 
 enabled  
 Toggle the value between `true` and `false` to control whether the command is
-enabled. Disabled items are visually “grayed-out” and do not dispatch `select`
+enabled. Disabled items are visually "grayed-out" and do not dispatch `select`
 events.
 
     var item:NativeMenuItem = new NativeMenuItem("Format");
@@ -513,7 +513,7 @@ events.
 <div>
 
 The `data` property of the NativeMenuItem class allows you to reference an
-arbitrary object in each item. For example, in an “Open Recent” menu, you could
+arbitrary object in each item. For example, in an "Open Recent" menu, you could
 assign the File object for each document to each menu item.
 
     var file:File = File.applicationStorageDirectory.resolvePath("GreatGatsby.pdf")
@@ -537,7 +537,7 @@ More Help topics
 </div>
 
 ![](images/flexLinkIndicator.png)
-[About the FlexNativeMenu control](http://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-7fea.html "http://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-7fea.html")
+[About the FlexNativeMenu control](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-7fea.html "https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-7fea.html")
 
 <div>
 

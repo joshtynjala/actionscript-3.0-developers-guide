@@ -15,7 +15,7 @@ versions of WebKit. A WebKit update in a new version of AIR _may_ result in
 unexpected changes in a deployed AIR application. These changes may affect the
 behavior or appearance of HTML content in an application. For example,
 improvements or corrections in WebKit rendering may change the layout of
-elements in an application’s user interface. For this reason, it is highly
+elements in an application's user interface. For this reason, it is highly
 recommended that you provide an update mechanism in your application. Should you
 need to update your application due to a change in the WebKit version included
 in AIR, the AIR update mechanism can prompt the user to install the new version
@@ -94,7 +94,7 @@ More Help topics
 [www.webkit.org](http://www.webkit.org "http://www.webkit.org")
 
 ![](images/airLinkIndicator.png)
-[Updating AIR applications](http://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff2.html "http://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff2.html")
+[Updating AIR applications](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff2.html "https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff2.html")
 
 <div>
 

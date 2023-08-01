@@ -57,12 +57,12 @@ German locale assumes that currency amounts are in Euros:
 
 </div>
 
-In most cases, do not rely on the default currency for a locale. If the user’s
+In most cases, do not rely on the default currency for a locale. If the user's
 default locale is not supported, then the CurrencyFormatter class assigns a
 fallback locale. The fallback locale can have a different default currency. In
 addition, you normally want the currency formats to look correct to your user,
-even if the amounts are not in the user’s local currency. For example, a
-Canadian user can want to see a German company’s prices in Euros, but formatted
+even if the amounts are not in the user's local currency. For example, a
+Canadian user can want to see a German company's prices in Euros, but formatted
 in the Canadian style.
 
 The CurrencyFormatter.setCurrency() method specifies the exact currency string
@@ -94,11 +94,11 @@ currency string uses: a currency symbol, like a dollar sign or Euro sign, or a
 three character ISO currency string, such as USD or EUR. For example, an amount
 in Canadian dollars could be displayed as \$200 for a user in Canada. For a user
 in the United States, however, it could be displayed as CAD 200. Use the method
-formattingWithCurrencySymbolIsSafe() to determine whether the amount’s currency
-symbol would be ambiguous or incorrect given the user’s locale settings.
+formattingWithCurrencySymbolIsSafe() to determine whether the amount's currency
+symbol would be ambiguous or incorrect given the user's locale settings.
 
 The following example formats a value in Euros into a format for the en-US
-locale. Depending on the user’s locale, the output string uses either the ISO
+locale. Depending on the user's locale, the output string uses either the ISO
 currency code or the currency symbol.
 
     var cf:CurrencyFormatter = new CurrencyFormatter( "en-CA");

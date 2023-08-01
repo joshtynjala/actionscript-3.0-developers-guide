@@ -123,7 +123,7 @@ class constructor, which you can reuse in your Array subclass constructor:
 
 The TypedArray constructor shares most of the code from the Array constructor,
 with only four changes to the code. First, the parameter list includes a new
-required parameter of type Class that allows specification of the array’s data
+required parameter of type Class that allows specification of the array's data
 type. Second, the data type passed to the constructor is assigned to the
 `dataType` variable. Third, in the `else` statement, the value of the `length`
 property is assigned after the `for` loop so that `length` includes only

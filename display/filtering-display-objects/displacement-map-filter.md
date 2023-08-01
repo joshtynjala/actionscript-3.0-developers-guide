@@ -101,7 +101,7 @@ The properties used to define the displacement are as follows:
   only shift .5 pixels horizontally. By setting it to 250, the image shifts by
   approximately 125 pixels.
 
-These settings cause the filtered image’s pixels to shift 250 pixels to the
+These settings cause the filtered image's pixels to shift 250 pixels to the
 left. The direction (left or right) and amount of shift is based on the color
 value of the pixels in the map image. Conceptually, the filter goes through the
 pixels of the filtered image one by one (at least, the pixels in the region
@@ -116,10 +116,10 @@ the following with each pixel:
 2.  It determines the value of the specified color channel in the map pixel. In
     this case, the x component color channel is the red channel, so the filter
     looks to see what the value of the red channel of the map image is at the
-    pixel in question. Since the map image is solid red, the pixel’s red channel
+    pixel in question. Since the map image is solid red, the pixel's red channel
     is 0xFF, or 255. This is used as the displacement value.
 
-3.  It compares the displacement value to the “middle” value (127, which is
+3.  It compares the displacement value to the "middle" value (127, which is
     halfway between 0 and 255). If the displacement value is lower than the
     middle value, the pixel shifts in a positive direction (to the right for x
     displacement; down for y displacement). On the other hand, if the
@@ -138,7 +138,7 @@ the following with each pixel:
     to the left.
 
 Because no values are specified for y component and y scale, the defaults (which
-cause no displacement) are used—that’s why the image doesn’t shift at all in the
+cause no displacement) are used—that's why the image doesn't shift at all in the
 vertical direction.
 
 The default filter mode setting, `WRAP` is used in the example, so as the pixels
@@ -268,14 +268,14 @@ magnified.](../../img/fo_displacement_map_filter_sample.png)
 </div>
 
 The code then loads an image and, as the mouse moves, applies the displacement
-filter to the portion of the image that’s under the mouse. The gradient circles
+filter to the portion of the image that's under the mouse. The gradient circles
 used as the displacement map image causes the displaced region to spread out
 away from the pointer. Notice that the gray regions of the displacement map
-image don’t cause any displacement. The gray color is `0x7F7F7F`. The blue and
+image don't cause any displacement. The gray color is `0x7F7F7F`. The blue and
 red channels of that shade of gray exactly match the middle shade of those color
 channels, so there is no displacement in a gray area of the map image. Likewise,
 in the center of the circle there is no displacement. Although the color there
-isn’t gray, that color’s blue channel and red channel are identical to the blue
+isn't gray, that color's blue channel and red channel are identical to the blue
 channel and red channel of medium gray, and since blue and red are the colors
 that cause displacement, no displacement happens there.
 

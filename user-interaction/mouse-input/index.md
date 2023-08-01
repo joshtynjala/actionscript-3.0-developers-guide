@@ -31,10 +31,10 @@ More Help topics
 </div>
 
 ![](images/flashplatformLinkIndicator.png)
-[flash.ui.Mouse](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Mouse.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Mouse.html")
+[flash.ui.Mouse](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Mouse.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Mouse.html")
 
 ![](images/flashplatformLinkIndicator.png)
-[flash.events.MouseEvent](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/MouseEvent.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/MouseEvent.html")
+[flash.events.MouseEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/MouseEvent.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/MouseEvent.html")
 
 <div>
 

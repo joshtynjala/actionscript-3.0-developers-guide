@@ -26,7 +26,7 @@ and SoundTransform classes.
 
 The SoundChannel class controls the playback of a single sound. The
 `SoundChannel.position` property can be thought of as a playhead, indicating the
-current point in the sound data that’s being played.
+current point in the sound data that's being played.
 
 When an application calls the `Sound.play()` method, a new instance of the
 SoundChannel class is created to control the playback.
@@ -62,7 +62,7 @@ However, a sound can be played starting from any point. You can record the
 position of the sound at the time it was stopped, and then replay the sound
 starting at that position later.
 
-For example, let’s say your code loads and plays a sound file like this:
+For example, let's say your code loads and plays a sound file like this:
 
     var snd:Sound = new Sound(new URLRequest("bigSound.mp3"));
     var channel:SoundChannel = snd.play();
@@ -117,7 +117,7 @@ mechanism and track the position of the sound playhead.
 
 To calculate what percentage of a sound has been played, you can divide the
 value of the `SoundChannel.position` property by the length of the sound data
-that’s being played:
+that's being played:
 
     var playbackPercent:uint = 100 * (channel.position / snd.length);
 
@@ -181,10 +181,10 @@ loaded, and then it calculates and displays the current playback percentage.
 
 When the entire sound has been played, the `onPlaybackComplete()` method
 executes, removing the event listener for the `Event.ENTER_FRAME` event so that
-it doesn’t try to display progress updates after playback is done.
+it doesn't try to display progress updates after playback is done.
 
 The `Event.ENTER_FRAME` event can be dispatched many times per second. In some
-cases, you won’t want to display playback progress that frequently. In those
+cases, you won't want to display playback progress that frequently. In those
 cases, your application can set up its own timing mechanism using the
 flash.util.Timer class; see
 [Working with dates and times](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e52.html).

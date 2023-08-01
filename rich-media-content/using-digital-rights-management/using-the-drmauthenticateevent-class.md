@@ -42,7 +42,7 @@ The DRMAuthenticateEvent class includes the following properties:
 <td headers="d17e36520 "><p>authenticationType</p></td>
 <td headers="d17e36523 "><p>Indicates
 whether the supplied credentials are for authenticating against Adobe
-Access (“drm”) or a proxy server (“proxy”). For example, the "proxy"
+Access ("drm") or a proxy server ("proxy"). For example, the "proxy"
 option allows the application to authenticate against a proxy server if
 necessary before the user can access the Internet. Unless anonymous
 authentication is used, after the proxy authentication, the user must
@@ -57,7 +57,7 @@ content file header provided by the server. It contains information
 about the context of the encrypted content.</p>
 <p>This header string can be passed on to the Flash application to
 enable the application to construct a user name-password dialog box. The
-header string can be used as the dialog box’s instructions. For example,
+header string can be used as the dialog box's instructions. For example,
 the header can be "Please type in your user name and password".</p></td>
 </tr>
 <tr class="odd">
@@ -131,7 +131,7 @@ the video stream has been made is not included here.)
 <div>
 
 In the case where protected content requires user authentication, the AIR
-application must usually retrieve the user’s authentication credentials via a
+application must usually retrieve the user's authentication credentials via a
 user interface.
 
 The following is a Flex example of a simple user interface for retrieving user

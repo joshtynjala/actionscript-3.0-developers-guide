@@ -52,7 +52,7 @@ event every second and continues for 60 seconds:
     var oneMinuteTimer:Timer = new Timer(1000, 60);
 
 The Timer object dispatches a TimerEvent object each time the given interval is
-reached. A TimerEvent object’s event type is `timer` (defined by the constant
+reached. A TimerEvent object's event type is `timer` (defined by the constant
 `TimerEvent.TIMER`). A TimerEvent object contains the same properties as a
 standard Event object.
 

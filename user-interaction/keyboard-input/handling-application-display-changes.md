@@ -8,7 +8,7 @@ the application descriptor to `none`:
 
     <softKeyboardBehavior>none</softKeyboardBehavior>
 
-When you turn off the automatic behavior, it is your application’s
+When you turn off the automatic behavior, it is your application's
 responsibility to make any necessary adjustments to the application display. A
 softKeyboardActivate event is dispatched when the keyboard opens. When the
 `softKeyboardActivate` event is dispatched, the `softKeyboardRect` property of

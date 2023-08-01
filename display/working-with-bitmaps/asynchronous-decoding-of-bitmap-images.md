@@ -3,7 +3,7 @@
 <div>
 
 When you work with bitmap images, you can asynchronously decode and load the
-bitmap images to improve your application’s perceived performance. Decoding a
+bitmap images to improve your application's perceived performance. Decoding a
 bitmap image asynchronously can take the same time as decoding the image
 synchronously in many cases. However, the bitmap image gets decoded in a
 separate thread before the associated `Loader` object sends the `COMPLETE`
@@ -46,7 +46,7 @@ are decoded on load, before the
 event is dispatched.</p>
 <p>Ideal for larger images (greater than 10 MP). When you are developing
 AIR-based mobile applications with page transitions, use this bitmap
-loading policy to improve your application’s perceived
+loading policy to improve your application's perceived
 performance.</p></td>
 </tr>
 </tbody>

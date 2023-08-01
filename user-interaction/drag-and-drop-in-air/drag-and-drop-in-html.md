@@ -271,7 +271,7 @@ event. The following string values can be used:
 | "none"       | No drag operations are allowed.                                                                              |
 | "copy"       | The data will be copied to the destination, leaving the original in place.                                   |
 | "link"       | The data will be shared with the drop destination using a link back to the original.                         |
-| "move”       | The data will be copied to the destination and removed from the original location.                           |
+| "move"       | The data will be copied to the destination and removed from the original location.                           |
 | "copyLink"   | The data can be copied or linked.                                                                            |
 | "copyMove"   | The data can be copied or moved.                                                                             |
 | "linkMove"   | The data can be linked or moved.                                                                             |

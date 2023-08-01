@@ -7,7 +7,7 @@ above a target object. The position and intensity of this light source can be
 modified to produce a variety of different drop shadow effects.
 
 The DropShadowFilter class uses an algorithm that is similar to the blur
-filter’s algorithm. The main difference is that the drop shadow filter has a few
+filter's algorithm. The main difference is that the drop shadow filter has a few
 more properties that you can modify to simulate different light-source
 attributes (such as alpha, color, offset and brightness).
 

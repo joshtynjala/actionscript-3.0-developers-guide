@@ -6,9 +6,9 @@ Using a shader as a filter is like using any of the other filters in
 ActionScript. When you use a shader as a filter, the filtered image (a display
 object or BitmapData object) is passed to the shader. The shader uses the input
 image to create the filter output, which is usually a modified version of the
-original image. If the filtered object is a display object the shader’s output
+original image. If the filtered object is a display object the shader's output
 is displayed on the screen in place of the filtered display object. If the
-filtered object is a BitmapData object, the shader’s output becomes the content
+filtered object is a BitmapData object, the shader's output becomes the content
 of the BitmapData object whose `applyFilter()` method is called.
 
 To use a shader as a filter, you first create the Shader object as described in
@@ -31,14 +31,14 @@ for any input beyond the first one.
 
 In some cases, a filter changes the dimensions of the original image. For
 example, a typical drop shadow effect adds extra pixels containing the shadow
-that’s added to the image. When you use a shader that changes the image
+that's added to the image. When you use a shader that changes the image
 dimensions, set the `leftExtension`, `rightExtension`, `topExtension`, and
 `bottomExtension` properties to indicate by how much you want the image size to
 change.
 
 The following example demonstrates using a shader as a filter. The filter in
 this example inverts the red, green, and blue channel values of an image. The
-result is the “negative” version of the image.
+result is the "negative" version of the image.
 
 <div>
 
@@ -79,11 +79,11 @@ The important ActionScript code is in these two methods:
 
   </div>
 
-The shader that this example uses is the “invertRGB.pbk” sample Pixel Bender
+The shader that this example uses is the "invertRGB.pbk" sample Pixel Bender
 kernel that is included with the Pixel Bender Toolkit. The source code is
-available in the file “invertRGB.pbk” in the Pixel Bender Toolkit installation
+available in the file "invertRGB.pbk" in the Pixel Bender Toolkit installation
 directory. Compile the source code and save the bytecode file with the name
-“invertRGB.pbj” in the same directory as your ActionScript source code.
+"invertRGB.pbj" in the same directory as your ActionScript source code.
 
 The following is the ActionScript code for this example. Use this class as the
 main application class for an ActionScript-only project in Flash Builder, or as

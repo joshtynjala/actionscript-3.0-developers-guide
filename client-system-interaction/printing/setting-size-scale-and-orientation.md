@@ -8,14 +8,14 @@ printed equivalent of the screen size and position of the specified sprite.
 However, printers use different resolutions for printing, and can have settings
 that adversely affect the appearance of the printed sprite.
 
-Flash runtimes can read an operating system’s printing settings, but note that
+Flash runtimes can read an operating system's printing settings, but note that
 these properties are read-only: although you can respond to their values, you
-can’t set them. So, for example, you can find out the printer’s page size
+can't set them. So, for example, you can find out the printer's page size
 setting and adjust your content to fit the size. You can also determine a
-printer’s margin settings and page orientation. To respond to the printer
-settings, specify a print area, adjust for the difference between a screen’s
-resolution and a printer’s point measurements, or transform your content to meet
-the size or orientation settings of the user’s printer.
+printer's margin settings and page orientation. To respond to the printer
+settings, specify a print area, adjust for the difference between a screen's
+resolution and a printer's point measurements, or transform your content to meet
+the size or orientation settings of the user's printer.
 
 </div>
 
@@ -36,13 +36,13 @@ parameter:
       private var rect1:Rectangle = new Rectangle(0, 0, 400, 200);
       myPrintJob.addPage(sheet, rect1);
 
-- If you haven’t already specified a Rectangle object, you can do it within the
+- If you haven't already specified a Rectangle object, you can do it within the
   call itself, as in the following example:
 
       myPrintJob.addPage(sheet, new Rectangle(0, 0, 100, 100));
 
 - If you plan to provide values for the third parameter in the `addPage()` call,
-  but don’t want to specify a rectangle, you can use `null` for the second
+  but don't want to specify a rectangle, you can use `null` for the second
   parameter, as in the following;
 
       myPrintJob.addPage(sheet, null, options);
@@ -123,7 +123,7 @@ response to the printer settings, as the following example illustrates:
 
 Note: If you plan to read the system setting for content orientation on the
 paper, remember to import the
-[PrintJobOrientation class](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/printing/PrintJobOrientation.html).
+[PrintJobOrientation class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/printing/PrintJobOrientation.html).
 The PrintJobOrientation class provides constant values that define the content
 orientation on the page. You import the class using the following statement:
 
@@ -150,7 +150,7 @@ some logic into an `if` statement. The following code shows an example:
     	mySprite.scaleY = .75;
     }
 
-In addition, a page’s margin settings can be determined by comparing the page
+In addition, a page's margin settings can be determined by comparing the page
 and paper dimensions, as the following example illustrates:
 
     margin_height = (myPrintJob.paperHeight - myPrintJob.pageHeight) / 2;

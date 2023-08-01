@@ -11,7 +11,7 @@ instance name. If you have named movie clips that are nested inside other named
 movie clips, those child movie clips are treated like properties of the parent
 movie clip—you can access the child movie clip using dot syntax. For example, if
 a movie clip with the instance name `childClip` is nested within another clip
-with the instance name `parentClip`, you can make the child clip’s timeline
+with the instance name `parentClip`, you can make the child clip's timeline
 animation play by calling this code:
 
     parentClip.childClip.play();
@@ -32,8 +32,9 @@ remain the same, others have changed. All properties prefixed with an underscore
 have been renamed. For example, `_width` and `_height` properties are now
 accessed as `width` and `height`, while `_xscale` and `_yscale` are now accessed
 as `scaleX` and `scaleY`. For a complete list of the properties and methods of
-the MovieClip class, consult the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/MovieClip.html"
-target="_self">ActionScript 3.0 Reference for the Adobe Flash Platform</a>.
+the MovieClip class, consult the
+[MovieClip](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/MovieClip.html)
+class listing in the
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
 </div>

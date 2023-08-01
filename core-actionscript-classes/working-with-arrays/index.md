@@ -19,5 +19,5 @@ the same data type.
 
 </div>
 
-- [Array class](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html)
-- [Vector class](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Vector.html)
+- [Array class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html)
+- [Vector class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Vector.html)

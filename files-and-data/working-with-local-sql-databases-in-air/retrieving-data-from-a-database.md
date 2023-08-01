@@ -16,15 +16,15 @@ application.
 <div>
 
 To retrieve existing data from a database, you use a
-[SQLStatement](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLStatement.html)
-instance. Assign the appropriate SQL `SELECT` statement to the instance’s `text`
+[SQLStatement](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLStatement.html)
+instance. Assign the appropriate SQL `SELECT` statement to the instance's `text`
 property, then call its `execute()` method.
 
 For details on the syntax of the `SELECT` statement, see
 [SQL support in local databases](WS112915e91f2778507c29b8cc1256b9c36a3-8000.html).
 
 The following example demonstrates executing a `SELECT` statement to retrieve
-data from a table named “products,” using asynchronous execution mode:
+data from a table named "products," using asynchronous execution mode:
 
     var selectStmt:SQLStatement = new SQLStatement();
 
@@ -112,7 +112,7 @@ data from a table named “products,” using asynchronous execution mode:
     </mx:WindowedApplication>
 
 The following example demonstrates executing a `SELECT` statement to retrieve
-data from a table named “products,” using synchronous execution mode:
+data from a table named "products," using synchronous execution mode:
 
     var selectStmt:SQLStatement = new SQLStatement();
 
@@ -194,9 +194,9 @@ data from a table named “products,” using synchronous execution mode:
 In asynchronous execution mode, when the statement finishes executing, the
 SQLStatement instance dispatches a `result` event ( `SQLEvent.RESULT`)
 indicating that the statement was run successfully. Alternatively, if a
-[Responder](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/Responder.html)
+[Responder](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/Responder.html)
 object is passed as an argument to the `execute()` method, the Responder
-object’s result handler function is called. In synchronous execution mode,
+object's result handler function is called. In synchronous execution mode,
 execution pauses until the `execute()` operation completes, then continues on
 the next line of code.
 
@@ -212,13 +212,13 @@ the next line of code.
 
 Once the `SELECT` statement has finished executing, the next step is to access
 the data that was retrieved. You retrieve the result data from executing a
-`SELECT` statement by calling the SQLStatement object’s `getResult()` method:
+`SELECT` statement by calling the SQLStatement object's `getResult()` method:
 
     var result:SQLResult = selectStatement.getResult();
 
 The `getResult()` method returns a
-[SQLResult](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLResult.html)
-object. The SQLResult object’s `data` property is an Array containing the
+[SQLResult](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLResult.html)
+object. The SQLResult object's `data` property is an Array containing the
 results of the `SELECT` statement:
 
     var numResults:int = result.data.length;
@@ -230,9 +230,9 @@ results of the `SELECT` statement:
 
 Each row of data in the `SELECT` result set becomes an Object instance contained
 in the `data` Array. That object has properties whose names match the result
-set’s column names. The properties contain the values from the result set’s
+set's column names. The properties contain the values from the result set's
 columns. For example, suppose a `SELECT` statement specifies a result set with
-three columns named “itemId,” “itemName,” and “price.” For each row in the
+three columns named "itemId," "itemName," and "price." For each row in the
 result set, an Object instance is created with properties named `itemId`,
 `itemName`, and `price`. Those properties contain the values from their
 respective columns.
@@ -245,7 +245,7 @@ example uses asynchronous execution mode. When the execution completes, the
 using `SQLStatement.getResult()` and displayed using the `trace()` method. Note
 that this listing assumes there is a SQLConnection instance named `conn` that
 has already been instantiated and is already connected to the database. It also
-assumes that the “employees” table has already been created and populated with
+assumes that the "employees" table has already been created and populated with
 data.
 
     import flash.data.SQLConnection;
@@ -356,14 +356,14 @@ data.
 
 The following code listing demonstrates the same techniques as the preceding
 one, but uses synchronous execution mode. The example defines a
-[SQLStatement](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLStatement.html)
+[SQLStatement](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLStatement.html)
 instance whose text is a `SELECT` statement. The statement retrieves rows
 containing the `firstName` and `lastName` column values of all the rows of a
 table named `employees`. The resulting rows of data are accessed using
 `SQLStatement.getResult()` and displayed using the `trace()` method. Note that
 this listing assumes there is a SQLConnection instance named `conn` that has
 already been instantiated and is already connected to the database. It also
-assumes that the “employees” table has already been created and populated with
+assumes that the "employees" table has already been created and populated with
 data.
 
     import flash.data.SQLConnection;
@@ -475,7 +475,7 @@ By default, each row returned by a `SELECT` statement is created as an Object
 instance with properties named for the result set's column names and with the
 value of each column as the value of its associated property. However, before
 executing a SQL `SELECT` statement, you can set the `itemClass` property of the
-[SQLStatement](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLStatement.html)
+[SQLStatement](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLStatement.html)
 instance to a class. By setting the `itemClass` property, each row returned by
 the `SELECT` statement is created as an instance of the designated class. The
 runtime assigns result column values to property values by matching the column
@@ -509,15 +509,15 @@ You can improve the perceived performance of your application by instructing the
 runtime to return a specific number of result rows at a time. Doing so causes
 the initial result data to return more quickly. It also allows you to divide the
 result rows into sets, so that the user interface is updated after each set of
-rows is processed. Note that it’s only practical to use this technique in
+rows is processed. Note that it's only practical to use this technique in
 asynchronous execution mode.
 
 To retrieve `SELECT` results in parts, specify a value for the
-`SQLStatement.execute()` method’s first parameter (the `prefetch` parameter).
+`SQLStatement.execute()` method's first parameter (the `prefetch` parameter).
 The `prefetch` parameter indicates the number of rows to retrieve the first time
 the statement executes. When you call a
-[SQLStatement](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLStatement.html)
-instance’s `execute()` method, specify a `prefetch` parameter value and only
+[SQLStatement](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLStatement.html)
+instance's `execute()` method, specify a `prefetch` parameter value and only
 that many rows are retrieved:
 
     var stmt:SQLStatement = new SQLStatement();
@@ -531,11 +531,11 @@ that many rows are retrieved:
 
 The statement dispatches the `result` event, indicating that the first set of
 result rows is available. The resulting
-[SQLResult](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLResult.html)
-instance’s `data` property contains the rows of data, and its `complete`
+[SQLResult](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLResult.html)
+instance's `data` property contains the rows of data, and its `complete`
 property indicates whether there are additional result rows to retrieve. To
-retrieve additional result rows, call the SQLStatement instance’s `next()`
-method. Like the `execute()` method, the `next()` method’s first parameter is
+retrieve additional result rows, call the SQLStatement instance's `next()`
+method. Like the `execute()` method, the `next()` method's first parameter is
 used to indicate how many rows to retrieve the next time the result event is
 dispatched.
 

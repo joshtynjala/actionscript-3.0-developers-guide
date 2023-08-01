@@ -171,8 +171,8 @@ of Japanese text and justifies it using the `PUSH_IN_KINSOKU` option.
 <div>
 
 Kerning and tracking affect the distance between adjacent pairs of characters in
-a text block. Kerning controls how character pairs “fit” together, such as the
-pairs “WA” or “Va”. Kerning is set in the `ElementFormat` object. It is enabled
+a text block. Kerning controls how character pairs "fit" together, such as the
+pairs "WA" or "Va". Kerning is set in the `ElementFormat` object. It is enabled
 by default ( `Kerning.ON`), and can be set to OFF or AUTO, in which case kerning
 is only applied between characters if neither is Kanji, Hiragana, or Katakana.
 

@@ -2,7 +2,7 @@
 
 <div>
 
-A shared object, sometimes referred to as a “Flash cookie,” is a data file that
+A shared object, sometimes referred to as a "Flash cookie," is a data file that
 can be created on your computer by the sites that you visit. Shared objects are
 most often used to enhance your web-browsing experience—for example, by allowing
 you to personalize the look and feel of a website that you frequently visit.
@@ -16,8 +16,8 @@ you to personalize the look and feel of a website that you frequently visit.
 <div>
 
 Shared objects function like browser cookies. You use the
-[SharedObject](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/SharedObject.html)
-class to store data on the user’s local hard disk and call that data during the
+[SharedObject](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/SharedObject.html)
+class to store data on the user's local hard disk and call that data during the
 same session or in a later session. Applications can access only their own
 SharedObject data, and only if they are running on the same domain. The data is
 not sent to the server and is not accessible by other applications running on
@@ -61,7 +61,7 @@ properties:
 
 - They can store simple data types (such as String, Array, and Date).
 
-- They are stored in a location specified by the application (within the user’s
+- They are stored in a location specified by the application (within the user's
   home directory).
 
 - They are never transmitted between the client and server.
@@ -77,7 +77,7 @@ properties:
 <div>
 
 Using the
-[SharedObject](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/SharedObject.html)
+[SharedObject](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/SharedObject.html)
 class, you can create and delete shared objects, as well as detect the current
 size of a SharedObject object that you are using.
 
@@ -94,7 +94,7 @@ size of a SharedObject object that you are using.
 <div>
 
 To create a
-[SharedObject](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/SharedObject.html)
+[SharedObject](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/SharedObject.html)
 object, use the `SharedObject.getLocal()` method, which has the following
 syntax:
 
@@ -105,16 +105,16 @@ The following example creates a shared object called mySO:
     public var mySO:SharedObject;
     mySO = SharedObject.getLocal("preferences");
 
-This creates a file on the client’s machine called preferences.sol.
+This creates a file on the client's machine called preferences.sol.
 
 The term _local_ refers to the location of the shared object. In this case,
-Adobe® Flash® Player stores the SharedObject file locally in the client’s home
+Adobe® Flash® Player stores the SharedObject file locally in the client's home
 directory.
 
 When you create a shared object, Flash Player creates a new directory for the
 application and domain inside its sandbox. It also creates a \*.sol file that
 stores the SharedObject data. The default location of this file is a
-subdirectory of the user’s home directory. The following table shows the default
+subdirectory of the user's home directory. The following table shows the default
 locations of this directory:
 
 <div>
@@ -192,8 +192,8 @@ local storage for the domain that is requesting access.
 <div>
 
 You can use the optional _pathname_ parameter to specify a location for the
-[SharedObject](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/SharedObject.html)
-file. This file must be a subdirectory of that domain’s SharedObject directory.
+[SharedObject](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/SharedObject.html)
+file. This file must be a subdirectory of that domain's SharedObject directory.
 For example, if you request an application on the localhost and specify the
 following:
 
@@ -221,8 +221,8 @@ SharedObject file.
 <div>
 
 You add data to a
-[SharedObject](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/SharedObject.html)
-’s \*.sol file using the `data` property of the SharedObject object. To add new
+[SharedObject](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/SharedObject.html)
+'s \*.sol file using the `data` property of the SharedObject object. To add new
 data to the shared object, use the following syntax:
 
     sharedObject_name.data.variable = value;
@@ -238,8 +238,8 @@ properties and their values to a SharedObject:
     mySO.data.adminPrivileges = currentUserIsAdmin;
 
 After you assign values to the `data` property, you must instruct Flash Player
-to write those values to the SharedObject’s file. To force Flash Player to write
-the values to the SharedObject’s file, use the `SharedObject`. `flush()` method,
+to write those values to the SharedObject's file. To force Flash Player to write
+the values to the SharedObject's file, use the `SharedObject`. `flush()` method,
 as follows:
 
     mySO.flush();
@@ -250,7 +250,7 @@ the user with an opportunity to increase the available space that Flash Player
 has to store the data if that data exceeds the default settings. Therefore, it
 is a good practice to call `SharedObject.flush()`.
 
-When using the `flush()` method to write shared objects to a user’s hard drive,
+When using the `flush()` method to write shared objects to a user's hard drive,
 you should be careful to check whether the user has explicitly disabled local
 storage using the Flash Player Settings Manager (
 [www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager07.html](http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager07.html)),
@@ -264,7 +264,7 @@ as shown in the following example:
 
 #### Storing objects in shared objects
 
-You can store simple objects such as Arrays or Strings in a SharedObject’s
+You can store simple objects such as Arrays or Strings in a SharedObject's
 `data` property.
 
 The following example is an ActionScript class that defines methods that control
@@ -497,7 +497,7 @@ example shows:
     public var mySO2:SharedObject = SharedObject.getLocal("history");
 
 This creates a preferences.sol file and a history.sol file in the Flex
-application’s local directory.
+application's local directory.
 
 </div>
 
@@ -577,9 +577,9 @@ the following example shows:
 <div>
 
 To destroy a
-[SharedObject](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/SharedObject.html)
+[SharedObject](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/SharedObject.html)
 on the client, use the `SharedObject.clear()` method. This does not destroy
-directories in the default path for the application’s shared objects.
+directories in the default path for the application's shared objects.
 
 The following example deletes the SharedObject file from the client:
 
@@ -599,7 +599,7 @@ The following example deletes the SharedObject file from the client:
 
 The following example shows that you can store simple objects, such as a Date
 object, in a
-[SharedObject](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/SharedObject.html)
+[SharedObject](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/SharedObject.html)
 object without having to manually serialize and deserialize those objects.
 
 The following example begins by welcoming you as a first-time visitor. When you

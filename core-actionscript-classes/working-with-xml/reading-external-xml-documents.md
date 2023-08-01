@@ -22,8 +22,9 @@ with a valid URL:
     }
 
 You can also use the XMLSocket class to set up an asynchronous XML socket
-connection with a server. For more information, see the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html"
-target="_self">ActionScript 3.0 Reference for the Adobe Flash Platform</a>.
+connection with a server. For more information, see the
+[XMLSocket](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/XMLSocket.html)
+class listing in the
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
 </div>

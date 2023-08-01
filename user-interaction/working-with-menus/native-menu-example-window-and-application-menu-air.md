@@ -18,9 +18,9 @@ operating system.
 The example also illustrates menu event handling. The `select` event is handled
 at the item level and also at the menu level. Each menu in the chain from the
 menu containing the selected item to the root menu responds to the `select`
-event. The `displaying` event is used with the “Open Recent” menu. Just before
+event. The `displaying` event is used with the "Open Recent" menu. Just before
 the menu is opened, the items in the menu are refreshed from the recent
-Documents array (which doesn’t actually change in this example). Although not
+Documents array (which doesn't actually change in this example). Although not
 shown in this example, you can also listen for `displaying` events on individual
 items.
 

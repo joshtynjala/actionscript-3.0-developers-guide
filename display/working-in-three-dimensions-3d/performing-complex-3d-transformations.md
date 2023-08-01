@@ -11,8 +11,8 @@ class. You don't have to worry about explicitly setting or calculating the
 values of each element in the matrix.
 
 After you set the `z` property of a display object to a numeric value, you can
-retrieve the object’s transformation matrix using the Matrix3D property of the
-display object’s Transform object:
+retrieve the object's transformation matrix using the Matrix3D property of the
+display object's Transform object:
 
 <div>
 

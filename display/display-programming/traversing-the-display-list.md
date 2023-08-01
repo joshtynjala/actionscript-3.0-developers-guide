@@ -2,7 +2,7 @@
 
 <div>
 
-As you’ve seen, the display list is a tree structure. At the top of the tree is
+As you've seen, the display list is a tree structure. At the top of the tree is
 the Stage, which can contain multiple display objects. Those display objects
 that are themselves display object containers can contain other display objects,
 or display object containers.
@@ -37,7 +37,7 @@ index position:
     trace(container.getChildAt(0) is TextField); // true
 
 You can also access child objects by name. Each display object has a name
-property, and if you don’t assign it, Flash Player or AIR assigns a default
+property, and if you don't assign it, Flash Player or AIR assigns a default
 value, such as `"instance1"`. For example, the following code shows how to use
 the `getChildByName()` method to access a child display object with the name
 `"banana loader"`:

@@ -10,14 +10,14 @@ credentials or the application denies further attempts. The application is
 responsible for listening to any other DRM error events to detect, identify, and
 handle the DRM-related errors.
 
-Even with valid user credentials, the terms of the content’s voucher can still
+Even with valid user credentials, the terms of the content's voucher can still
 prevent a user from viewing the encrypted content. For example, a user can be
 denied access for attempting to view content in an unauthorized application. An
 unauthorized application is one that the publisher of the encrypted content has
 not validated. In this case, a DRMErrorEvent object is dispatched.
 
 The error events can also be fired if the content is corrupted or if the
-application’s version does not match what the voucher specifies. The application
+application's version does not match what the voucher specifies. The application
 must provide appropriate mechanism for handling errors.
 
 </div>
@@ -29,7 +29,7 @@ must provide appropriate mechanism for handling errors.
 <div>
 
 For a complete list of errors, see the
-[Runtime Error Codes](http://help.adobe.com/en_US/Flash/CS5/AS3LR/runtimeErrors.html)
+[Runtime Error Codes](https://help.adobe.com/en_US/Flash/CS5/AS3LR/runtimeErrors.html)
 in the ActionScript 3.0 Reference. The DRM-related errors start at error 3300.
 
 </div>

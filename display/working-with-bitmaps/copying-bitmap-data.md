@@ -31,7 +31,7 @@ clone beside the original parent square:
 The `copyPixels()` method is a quick and easy way of copying pixels from one
 BitmapData object to another. The method takes a rectangular snapshot (defined
 by the `sourceRect` parameter) of the source image and copies it to another
-rectangular area (of equal size). The location of the newly “pasted” rectangle
+rectangular area (of equal size). The location of the newly "pasted" rectangle
 is defined within the `destPoint` parameter.
 
 The `copyChannel()` method samples a predefined color channel value (alpha, red,

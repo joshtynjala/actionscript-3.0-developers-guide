@@ -58,7 +58,7 @@ message is received from the container.</p></td>
 </tr>
 <tr class="even">
 <td><p>com/example/programmingas3/introvertIM/IMStatus.as</p></td>
-<td><p>Enumeration whose values represent the different “availability”
+<td><p>Enumeration whose values represent the different "availability"
 status values that can be selected in the application.</p></td>
 </tr>
 <tr class="odd">
@@ -179,7 +179,7 @@ to call the JavaScript function `isReady()`, as follows:
 
 The `isReady()` function simply returns the value of the `jsReady` variable.
 That variable is initially `false` ; once the `onload` event of the web page has
-been triggered, the variable’s value is changed to `true`. In other words, if
+been triggered, the variable's value is changed to `true`. In other words, if
 ActionScript calls the `isReady()` function before the page is loaded,
 JavaScript returns `false` to `ExternalInterface.call("isReady")`, and
 consequently the ActionScript `isContainerReady()` method returns `false`. Once
@@ -242,7 +242,7 @@ The `setCallBacks()` method finishes the task of preparing for communication
 with the container by calling `ExternalInterface.addCallback()` to register the
 two methods that will be available to be called from JavaScript. In this code,
 the first parameter—the name by which the method is known to JavaScript (
-`"newMessage"` and `"getStatus"`)—is the same as the method’s name in
+`"newMessage"` and `"getStatus"`)—is the same as the method's name in
 ActionScript. (In this case, there was no benefit to using different names, so
 the same name was reused for simplicity.) Finally, the
 `ExternalInterface.call()` method is used to call the JavaScript function
@@ -272,8 +272,8 @@ In another example from the `isContainerReady()` method, ActionScript calls the
     var result:Boolean = ExternalInterface.call("isReady");
 
 You can also pass parameters to JavaScript functions using the external API. For
-instance, consider the IMManager class’s `sendMessage()` method, which is called
-when the user is sending a new message to his or her “conversation partner”:
+instance, consider the IMManager class's `sendMessage()` method, which is called
+when the user is sending a new message to his or her "conversation partner":
 
     public function sendMessage(message:String):void
     {
@@ -301,8 +301,8 @@ application is no exception. Not only does the Flash Player IM client call
 JavaScript to send messages, but the HTML form calls JavaScript code to send
 messages to and ask for information from the SWF file as well. For example, when
 the SWF file notifies the container that it has finished establishing contact
-and it’s ready to communicate, the first thing the browser does is call the
-IMManager class’s `getStatus()` method to retrieve the initial user availability
+and it's ready to communicate, the first thing the browser does is call the
+IMManager class's `getStatus()` method to retrieve the initial user availability
 status from the SWF IM client. This is done in the web page, in the
 `updateStatus()` function, as follows:
 
@@ -333,8 +333,8 @@ the IMManager class. Three things happen in this line of code:
   `embed` tag used to include the SWF file.
 
 - Using the reference to the SWF file, the `getStatus()` method is called as
-  though it’s a method of the SWF object. In this case the function name “
-  `getStatus` ” is used because that’s the name under which the ActionScript
+  though it's a method of the SWF object. In this case the function name "
+  `getStatus` " is used because that's the name under which the ActionScript
   function is registered using `ExternalInterface.addCallback()`.
 
 - The `getStatus()` ActionScript method returns a value, and that value is
@@ -343,14 +343,14 @@ the IMManager class. Three things happen in this line of code:
 
 <div>
 
-Note: If you’re following along in the code, you’ve probably noticed that in the
+Note: If you're following along in the code, you've probably noticed that in the
 source code for the `updateStatus()` function, the line of code that calls the
 `getSWF()` function, is actually written as follows: var currentStatus =
 getSWF("\${application}").getStatus(); The `${application}` text is a
 placeholder in the HTML page template; when Adobe Flash Builder generates the
 actual HTML page for the application, this placeholder text is replaced by the
-same text that is used as the `object` tag’s `id` attribute and the `embed`
-tag’s `name` attribute ( `IntrovertIMApp` in the example). That is the value
+same text that is used as the `object` tag's `id` attribute and the `embed`
+tag's `name` attribute ( `IntrovertIMApp` in the example). That is the value
 that is expected by the `getSWF()` function.
 
 </div>
@@ -386,7 +386,7 @@ The `newMessage()` ActionScript method expects one parameter, so the JavaScript
 
 <div>
 
-Because of differences in how browsers access content, it’s important to always
+Because of differences in how browsers access content, it's important to always
 use JavaScript to detect which browser the user is running and to access the
 movie according to the browser-specific syntax, using the window or document
 object, as shown in the `getSWF()` JavaScript function in this example:
@@ -407,7 +407,7 @@ object, as shown in the `getSWF()` JavaScript function in this example:
     	...
     </script>
 
-If your script does not detect the user’s browser type, the user might see
+If your script does not detect the user's browser type, the user might see
 unexpected behavior when playing SWF files in an HTML container.
 
 </div>

@@ -5,7 +5,7 @@
 You can select dynamic or input text. Since the text selection properties and
 methods of the TextField class use index positions to set the range of text to
 manipulate, you can programmatically select dynamic or input text even if you
-don’t know the content.
+don't know the content.
 
 <div>
 
@@ -55,7 +55,7 @@ field is added to the display list.
 <div>
 
 The TextField `selectionBeginIndex` and `selectionEndIndex` properties, which
-are “read-only” so they can’t be set to programmatically select text, can be
+are "read-only" so they can't be set to programmatically select text, can be
 used to capture whatever the user has currently selected. Additionally, input
 text fields can use the `caretIndex` property.
 

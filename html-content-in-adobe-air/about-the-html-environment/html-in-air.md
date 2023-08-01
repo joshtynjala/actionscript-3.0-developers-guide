@@ -247,7 +247,7 @@ AIR supports `data:` URLs for the following elements:
 
 - img
 
-- input type=”image”
+- input type="image"
 
 - CSS rules allowing images (such as background-image)
 

@@ -113,7 +113,7 @@ capturing groups:
 #### Using noncapturing groups and lookahead groups
 
 A noncapturing group is one that is used for grouping only; it is not
-“collected,” and it does not match numbered backreferences. Use `(?:` and `)` to
+"collected," and it does not match numbered backreferences. Use `(?:` and `)` to
 define noncapturing groups, as follows:
 
     var pattern = /(?:com|org|net);

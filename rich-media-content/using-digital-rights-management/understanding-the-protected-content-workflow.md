@@ -57,7 +57,7 @@ specifically to play content protected by Adobe Access:
 If an error has not occurred and the user was successfully authorized to view
 the content, the NetStream object dispatches a DRMStatusEvent object. The
 application then begins playback. The DRMStatusEvent object holds the related
-voucher information, which identifies the user’s policy and permissions. For
+voucher information, which identifies the user's policy and permissions. For
 example, it holds information regarding whether the content can be made
 available offline or when the license expires. The application can use this data
 to inform the user of the status of their policy. For example, the application
@@ -65,7 +65,7 @@ can display the number of remaining days the user has for viewing the content in
 a status bar.
 
 If the user is allowed offline access, the voucher is cached, and the encrypted
-content is downloaded to the user’s machine. The content is made accessible for
+content is downloaded to the user's machine. The content is made accessible for
 the duration defined in the license caching duration. The `detail` property in
 the event contains `"DRM.voucherObtained"`. The application decides where to
 store the content locally in order for it to be available offline. You can also
@@ -83,7 +83,7 @@ AIR.
 
 </div>
 
-It is the application’s responsibility to explicitly handle the error events.
+It is the application's responsibility to explicitly handle the error events.
 These events include cases where the user inputs valid credentials, but the
 voucher protecting the encrypted content restricts the access to the content.
 For example, an authenticated user cannot access content if the rights have not
@@ -107,7 +107,7 @@ Adobe Access.
 
 <div>
 
-1.  Using a URLLoader object, load the bytes of the protected content’s metadata
+1.  Using a URLLoader object, load the bytes of the protected content's metadata
     file. Set this object to a variable, such as `metadata_bytes`.
 
     All content controlled by Adobe Access has Adobe Access metadata. When the
@@ -264,7 +264,7 @@ this `DRMContentData` will use that particular DRM module. However, there are 2
 
 Since there is no `DRMContentData` associated, invoking these `DRMManager` APIs
 will use the latest DRM module from the disk. This may become a problem if an
-update of the DRM module happens in the middle of the application’s DRM
+update of the DRM module happens in the middle of the application's DRM
 workflow. Consider the following scenario:
 
 1.  The application creates a `DRMContentData` object `contentData1`, which uses
@@ -403,7 +403,7 @@ DRM-protected media file using `preloadEmbeddedMetadata()`:
     object is `flash.net.drm.AuthenticationMethod.USERNAME_AND_PASSWORD`,
     authenticate the user on the media rights server before loading the voucher.
     The `serverURL` and `domain` properties of the DRMContentData object can be
-    passed to the DRMManager `authenticate()` method, along with the user’s
+    passed to the DRMManager `authenticate()` method, along with the user's
     credentials.
 
 7.  The `onPlayStatus()` callback function is invoked when file parsing is

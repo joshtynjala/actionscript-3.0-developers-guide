@@ -5,7 +5,7 @@
 A socket is a type of network connection established between two computer
 processes. Typically, the processes are running on two different computers
 attached to the same Internet Protocol (IP) network. However, the connected
-processes can be running on the same computer using the special “local host” IP
+processes can be running on the same computer using the special "local host" IP
 address.
 
 Adobe Flash Player supports client-side Transport Control Protocol (TCP)
@@ -39,7 +39,7 @@ Datagram Protocol (UDP) messages with the DatagramSocket class.
 The Transmission Control Protocol (TCP) provides a way to exchange messages over
 a persistent network connection. TCP guarantees that any messages sent arrive in
 the correct order (barring major network problems). TCP connections require a
-“client” and a “server.” Flash Player can create client sockets. Adobe AIR can,
+"client" and a "server." Flash Player can create client sockets. Adobe AIR can,
 additionally, create server sockets.
 
 The following ActionScript APIs provide TCP connections:
@@ -87,7 +87,7 @@ to mail and news servers.
 Flash Player can interface with a server by using the binary protocol of that
 server directly. Some servers use the big-endian byte order, and some use the
 little-endian byte order. Most servers on the Internet use the big-endian byte
-order because “network byte order” is big-endian. The little-endian byte order
+order because "network byte order" is big-endian. The little-endian byte order
 is popular because the Intel® x86 architecture uses it. You should use the
 endian byte order that matches the byte order of the server that is sending or
 receiving data. All operations that are performed by the IDataInput and
@@ -108,13 +108,13 @@ Those methods must be used to write to and read from the Socket.
 
 For more information, see:
 
-- [Socket](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/Socket.html)
+- [Socket](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/Socket.html)
 
-- [IDataInput](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/utils/IDataInput.html)
+- [IDataInput](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/utils/IDataInput.html)
 
-- [IDataOutput](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/utils/IDataOutput.html)
+- [IDataOutput](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/utils/IDataOutput.html)
 
-- [socketData event](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/events/ProgressEvent.html#SOCKET_DATA)
+- [socketData event](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/events/ProgressEvent.html#SOCKET_DATA)
 
 </div>
 
@@ -131,7 +131,7 @@ Sockets Layer version 4 (SSLv4) or Transport Layer Security version 1 (TLSv1). A
 secure socket provides three benefits: server authentication, data integrity,
 and message confidentiality. The runtime authenticates a server using the server
 certificate and its relationship to the root or intermediate certificate
-authority certificates in the user’s trust store. The runtime relies on the
+authority certificates in the user's trust store. The runtime relies on the
 cryptography algorithms used by the SSL and TLS protocol implementations to
 provide data integrity and message confidentiality.
 
@@ -155,7 +155,7 @@ validation results:
   example, the certificate could have been altered, corrupted, or it could be
   the wrong type of certificate.
 
-- Invalid chain—one or more of the certificates in the server’s chain of
+- Invalid chain—one or more of the certificates in the server's chain of
   certificates are invalid.
 
 - Principal mismatch—the host name of the server and the certificate common name
@@ -170,7 +170,7 @@ validation results:
   `serverCertificateStatus` property has this status value before you call
   `connect()` and before either a `connect` or an `ioError` event is dispatched.
 
-- Untrusted signers—the certificate does not “chain” to a trusted root
+- Untrusted signers—the certificate does not "chain" to a trusted root
   certificate in the trust store of the client computer.
 
 Communicating with a SecureSocket object requires a server that uses a secure
@@ -183,15 +183,15 @@ SecureSocket object on the current client computer.
 
 For more information, see:
 
-- [SecureSocket](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/SecureSocket.html)
+- [SecureSocket](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/SecureSocket.html)
 
-- [CertificateStatus](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/CertificateStatus.html)
+- [CertificateStatus](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/CertificateStatus.html)
 
-- [IDataInput](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/utils/IDataInput.html)
+- [IDataInput](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/utils/IDataInput.html)
 
-- [IDataOutput](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/utils/IDataOutput.html)
+- [IDataOutput](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/utils/IDataOutput.html)
 
-- [socketData event](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/events/ProgressEvent.html#SOCKET_DATA)
+- [socketData event](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/events/ProgressEvent.html#SOCKET_DATA)
 
 </div>
 
@@ -419,7 +419,7 @@ component to scroll to the bottom. The `msg()` method is as follows:
     	setScroll();
     }
 
-If you didn’t automatically scroll the contents of the TextArea component, users
+If you didn't automatically scroll the contents of the TextArea component, users
 would need to manually drag the scroll bars on the text area to see the latest
 response from the server.
 
@@ -434,7 +434,7 @@ response from the server.
 <div>
 
 The `setScroll()` method contains a single line of ActionScript that scrolls the
-TextArea component’s contents vertically so the user can see the last line of
+TextArea component's contents vertically so the user can see the last line of
 the returned text. The following snippet shows the `setScroll()` method:
 
     public function setScroll():void
@@ -639,12 +639,12 @@ Java compiler, which creates a Java class file named SimpleServer.class.
 
 You can start the XMLSocket server by opening a command prompt and typing
 `java SimpleServer`. The SimpleServer.class file can be located anywhere on your
-local computer or network; it doesn’t need to be placed in the root directory of
+local computer or network; it doesn't need to be placed in the root directory of
 your web server.
 
 <div>
 
-![](images/tip_help.png) If you’re unable to start the server because the files
+![](images/tip_help.png) If you're unable to start the server because the files
 are not located within the Java classpath, try starting the server with
 `java -classpath . SimpleServer` _._
 
@@ -685,7 +685,7 @@ terminated by a newline ( `\n` _) character._
 </div>
 
 For more information, see
-[XMLSocket](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/XMLSocket.html).
+[XMLSocket](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/XMLSocket.html).
 
 </div>
 
@@ -725,7 +725,7 @@ the `close()` method.
 
 The following code example illustrates how to create a socket server
 application. The example listens for incoming connections on port 8087. When a
-connection is received, the example sends a message (the string “Connected.”) to
+connection is received, the example sends a message (the string "Connected.") to
 the client socket. Thereafter, the server echoes any messages received back to
 the client.
 
@@ -821,11 +821,11 @@ the client.
 
 For more information, see:
 
-- [ServerSocket](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/ServerSocket.html)
+- [ServerSocket](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/ServerSocket.html)
 
-- [ServerSocketConnectEvent](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/events/ServerSocketConnectEvent.html)
+- [ServerSocketConnectEvent](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/events/ServerSocketConnectEvent.html)
 
-- [Socket](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/Socket.html)
+- [Socket](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/Socket.html)
 
 </div>
 
@@ -842,7 +842,7 @@ For more information, see:
 The Universal Datagram Protocol (UDP) provides a way to exchange messages over a
 stateless network connection. UDP provides no guarantees that messages are
 delivered in order or even that messages are delivered at all. With UDP, the
-operating system’s network code usually spends less time marshaling, tracking,
+operating system's network code usually spends less time marshaling, tracking,
 and acknowledging messages. Thus, UDP messages typically arrive at the
 destination application with a shorter delay than do TCP messages.
 
@@ -870,7 +870,7 @@ and DatagramSocketDataEvent classes. To send or receive a UDP message:
 
 The following code example illustrates how an application can send and receive
 UDP messages. The example sends a single message containing the string,
-“Hello.”, to the target computer. It also traces the contents of any messages
+"Hello.", to the target computer. It also traces the contents of any messages
 received.
 
     package
@@ -945,11 +945,11 @@ Keep in mind the following considerations when using UDP sockets:
 
 For more information, see:
 
-- [DatagramSocket](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/DatagramSocket.html)
+- [DatagramSocket](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/DatagramSocket.html)
 
-- [DatagramSocketDataEvent](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/events/DatagramSocketDataEvent.html)
+- [DatagramSocketDataEvent](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/events/DatagramSocketDataEvent.html)
 
-- [ByteArray](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/utils/ByteArray.html)
+- [ByteArray](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/utils/ByteArray.html)
 
 </div>
 
@@ -1019,7 +1019,7 @@ More Help topics
 </div>
 
 ![](images/flashplatformLinkIndicator.png)
-[flash.net package](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/package-detail.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/package-detail.html")
+[flash.net package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/package-detail.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/package-detail.html")
 
 <div>
 

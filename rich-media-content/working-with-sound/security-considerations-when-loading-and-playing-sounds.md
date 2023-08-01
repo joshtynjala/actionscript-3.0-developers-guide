@@ -2,11 +2,11 @@
 
 <div>
 
-Your application’s ability to access sound data can be limited according to the
+Your application's ability to access sound data can be limited according to the
 Flash Player or AIR security model. Each sound is subject to the restrictions of
 two different security sandboxes, the sandbox for the content itself (the
-“content sandbox”), and the sandbox for the application or object that loads and
-plays the sound (the “owner sandbox”). For AIR application content in the
+"content sandbox"), and the sandbox for the application or object that loads and
+plays the sound (the "owner sandbox"). For AIR application content in the
 application security sandbox, all sounds, including those loaded from other
 domains, are accessible to content in the application security sandbox. However,
 content in other security security sandboxes observe the same rules as content
@@ -16,7 +16,7 @@ model in general, and the definition of sandboxes, see
 
 The content sandbox controls whether detailed sound data can be extracted from
 the sound using the `id3` property or the `SoundMixer.computeSpectrum()` method.
-It doesn’t restrict the loading or playing of the sound file itself.
+It doesn't restrict the loading or playing of the sound file itself.
 
 The domain of origin of the sound file defines the security limitations of the
 content sandbox. Generally, if a sound file is located in the same domain or

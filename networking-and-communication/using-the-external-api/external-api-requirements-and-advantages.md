@@ -3,7 +3,7 @@
 <div>
 
 The external API is the portion of ActionScript that provides a mechanism for
-communication between ActionScript and code running in an “external application”
+communication between ActionScript and code running in an "external application"
 that is acting as a container for Flash Player (commonly a web browser or
 stand-alone projector application). In ActionScript 3.0, the functionality of
 the external API is provided by the ExternalInterface class. In Flash Player
@@ -49,7 +49,7 @@ external API offers the following improved functionality compared with
   much more flexibility than `fscommand()`.
 
 - You can pass various data types (such as Boolean, Number, and String); you
-  aren’t limited to String parameters.
+  aren't limited to String parameters.
 
 - You can receive the value of a call, and that value returns immediately to
   ActionScript (as the return value of the call you make).
@@ -57,7 +57,7 @@ external API offers the following improved functionality compared with
 <div>
 
 Important: If the name given to the Flash Player instance in an HTML page (the
-`object` tag’s `id` attribute) includes a hyphen ( `-`) or other characters that
+`object` tag's `id` attribute) includes a hyphen ( `-`) or other characters that
 are defined as operators in JavaScript (such as `+`, `*`, `/`, `\`, `.`, and so
 on), ExternalInterface calls from ActionScript will not work when the container
 web page is viewed in Internet Explorer.In addition, if the HTML tags that

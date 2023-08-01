@@ -27,11 +27,10 @@ with the ActionScript 3.0 XML class that is part of E4X. In ActionScript 3.0,
 the legacy classes—XMLDocument, XMLNode, XMLParser, and XMLTag—are included in
 the flash.xml package primarily for legacy support. The new E4X classes are core
 classes; you need not import a package to use them. For details on the legacy
-ActionScript 2.0 XML classes, see the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/xml/package-detail.html"
-target="_self">flash.xml package</a> in the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html"
-target="_self">ActionScript 3.0 Reference for the Adobe Flash Platform</a>.
+ActionScript 2.0 XML classes, see the
+[flash.xml package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/xml/package-detail.html)
+in the
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
 </div>
 

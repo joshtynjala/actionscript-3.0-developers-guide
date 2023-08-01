@@ -6,18 +6,18 @@ The following example builds a simple video jukebox which dynamically loads a
 list of videos to play back in a sequential order. This allows you to build an
 application that lets a user browse through a series of video tutorials, or
 perhaps specifies which advertisements should be played back before delivering
-the user’s requested video. This example demonstrates the following features of
+the user's requested video. This example demonstrates the following features of
 ActionScript 3.0:
 
-- Updating a playhead based on a video file’s playback progress
+- Updating a playhead based on a video file's playback progress
 
-- Listening for and parsing a video file’s metadata
+- Listening for and parsing a video file's metadata
 
 - Handling specific codes in a net stream
 
 - Loading, playing, pausing, and stopping a dynamically loaded FLV
 
-- Resizing a video object on the display list based on the net stream’s metadata
+- Resizing a video object on the display list based on the net stream's metadata
 
 To get the application files for this sample, see
 <a href="http://www.adobe.com/go/learn_programmingAS3samples_flash"
@@ -77,7 +77,7 @@ object and a URLRequest object, as seen in the following code:
     uldr.addEventListener(Event.COMPLETE, xmlCompleteHandler);
     uldr.load(new URLRequest(PLAYLIST_XML_URL));
 
-This code is placed in the VideoJukebox class’s constructor so the file is
+This code is placed in the VideoJukebox class's constructor so the file is
 loaded before any other code is run. As soon as the XML file has finished
 loading, the `xmlCompleteHandler()` method is called which parses the external
 file into an XML object, as seen in the following code:
@@ -118,7 +118,7 @@ To build the user interface you need to drag five Button instances onto the
 display list and give them the following instance names: `playButton`,
 `pauseButton`, `stopButton`, `backButton`, and `forwardButton`.
 
-For each of these Button instances, you’ll need to assign a handler for the
+For each of these Button instances, you'll need to assign a handler for the
 `click` event, as seen in the following snippet:
 
     playButton.addEventListener(MouseEvent.CLICK, buttonClickHandler);
@@ -154,8 +154,8 @@ button instance was clicked, as seen in the following code:
     }
 
 Next, add a Slider instance to the display list and give it an instance name of
-`volumeSlider`. The following code sets the slider instance’s `liveDragging`
-property to `true` and defines an event listener for the slider instance’s
+`volumeSlider`. The following code sets the slider instance's `liveDragging`
+property to `true` and defines an event listener for the slider instance's
 `change` event:
 
     volumeSlider.value = volumeTransform.volume;
@@ -173,7 +173,7 @@ snippet:
     positionBar.mode = ProgressBarMode.MANUAL;
 
 Finally add a Label instance to the display list and give it an instance name of
-`positionLabel`. This Label instance’s value will be set by the timer instance
+`positionLabel`. This Label instance's value will be set by the timer instance
 
 </div>
 
@@ -181,12 +181,12 @@ Finally add a Label instance to the display list and give it an instance name of
 
 <div>
 
-## Listening for a video object’s metadata
+## Listening for a video object's metadata
 
 <div>
 
 When Flash Player encounters metadata for each of the loaded videos, the
-`onMetaData()` callback handler is called on the NetStream object’s `client`
+`onMetaData()` callback handler is called on the NetStream object's `client`
 property. The following code initializes an Object and sets up the specified
 callback handler:
 
@@ -265,8 +265,8 @@ a video stream cannot be found. The following code lists the
     }
 
 The previous code evaluates the code property of the info object and filters
-whether the code is “NetStream.Play.Start”, “NetStream.Play.StreamNotFound”, or
-“NetStream.Play.Stop”. All other codes will be ignored. If the net stream is
+whether the code is "NetStream.Play.Start", "NetStream.Play.StreamNotFound", or
+"NetStream.Play.Stop". All other codes will be ignored. If the net stream is
 starting the code starts the Timer instance which updates the playhead. If the
 net stream cannot be found or is stopped, the Timer instance is stopped and the
 application attempts to play the next video in the playlist.
@@ -359,7 +359,7 @@ visible:
 The final method, `playNextVideo()`, increments the video index and calls the
 `playVideo()` method. If the current video is the last video in the playlist,
 the `clear()` method is called on the Video object and the progress bar
-instance’s `visible` property is set to `false`:
+instance's `visible` property is set to `false`:
 
     private function playNextVideo():void
     {

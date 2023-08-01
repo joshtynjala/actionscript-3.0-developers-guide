@@ -50,10 +50,10 @@ working securely with remote content.
 
 Because HTML in AIR retains its normal, page-based organization, the HTML
 environment completely refreshes if the top frame of your HTML content
-“navigates” to a different page. You can use frames and iframes to maintain data
+"navigates" to a different page. You can use frames and iframes to maintain data
 persistence in AIR, much the same as you would for a web application running in
 a browser. Define your main application objects in the top frame and they
-persist as long as you don’t allow the frame to navigate to a new page. Use
+persist as long as you don't allow the frame to navigate to a new page. Use
 child frames or iframes to load and display the transient parts of the
 application. (There are a variety of ways to maintain data persistence that can
 be used in addition to, or instead of, frames. These include cookies, local
@@ -189,8 +189,8 @@ As discussed in the introduction to this topic,
 the runtime enforces rules and provides mechanisms for overcoming possible
 security vulnerabilities in HTML and JavaScript. This topic lists those
 restrictions. If code attempts to call these restricted APIs, the runtime throws
-an error with the message “Adobe AIR runtime security violation for JavaScript
-code in the application security sandbox.”
+an error with the message "Adobe AIR runtime security violation for JavaScript
+code in the application security sandbox."
 
 For more information, see
 [Avoiding security-related JavaScript errors](WS5b3ccc516d4fbf351e63e3d118666ade46-7f0e.html).
@@ -266,7 +266,7 @@ Dynamically generated code, such as that which is made when calling the `eval()`
 function, would pose a security risk if allowed within the application sandbox.
 For example, an application may inadvertently execute a string loaded from a
 network domain, and that string may contain malicious code. For example, this
-could be code to delete or alter files on the user’s computer. Or it could be
+could be code to delete or alter files on the user's computer. Or it could be
 code that reports back the contents of a local file to an untrusted network
 domain.
 
@@ -404,7 +404,7 @@ sandboxes (not from application or remote sandboxes).
 <div>
 
 If a window that is created via a call to the JavaScript `window.open()` method
-displays content from a non-application security sandbox, the window’s title
+displays content from a non-application security sandbox, the window's title
 begins with the title of the main (launching) window, followed by a colon
 character. You cannot use code to move that portion of the title of the window
 off screen.

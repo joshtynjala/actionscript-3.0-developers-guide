@@ -152,7 +152,7 @@ disabled, as the following code shows:
 
 If a warning error instead of a fatal error occurs, the error message is
 displayed in the `statusText` TextArea instance, but the `xmlText` TextField and
-Button component instances aren’t disabled. The `showWarningError()` method
+Button component instances aren't disabled. The `showWarningError()` method
 displays the custom error message in the `statusText` text area. The message
 also asks the user to decide if they want to proceed with validating the XML or
 cancel the script. The following excerpt shows the `showWarningError()` method:
@@ -218,7 +218,7 @@ as follows:
     }
 
 To be validated, an employee must belong to one (and only one) cost center. If
-the employee doesn’t belong to any cost centers, the method throws a FatalError,
+the employee doesn't belong to any cost centers, the method throws a FatalError,
 which bubbles up to the `validateData()` method in the main application file. If
 the employee belongs to more than one cost center, a WarningError is thrown. The
 final check in the XML validator is that the user has exactly one social
@@ -248,7 +248,7 @@ severity, and an XML object that contains the custom error codes and messages.
 This class also defines two static constants that are used to define the
 severity of each error type.
 
-The ApplicationError class’s constructor method is as follows:
+The ApplicationError class's constructor method is as follows:
 
     public function ApplicationError()
     {
@@ -286,7 +286,7 @@ be assigned to only one cost center. If more than one error has the same error
 code, ActionScript returns the error message only for the first result found (
 `message[0]` in the returned XMLList object).
 
-The next method in this class, `getTitle()`, doesn’t take any parameters and
+The next method in this class, `getTitle()`, doesn't take any parameters and
 returns a string value that contains the error ID for this specific error. This
 value is used to help you easily identify the exact error that occurred during
 validation of the XML packet. The following excerpt shows the `getTitle()`
@@ -320,8 +320,8 @@ the specific error number and message that occurred.
 The FatalError class extends the custom ApplicationError class and defines three
 methods: the FatalError constructor, `getTitle()`, and `toString()`. The first
 method, the FatalError constructor, takes a single integer argument, `errorID`,
-and sets the error’s severity using the static constant values defined in the
-ApplicationError class, and gets the specific error’s error message by calling
+and sets the error's severity using the static constant values defined in the
+ApplicationError class, and gets the specific error's error message by calling
 the `getMessageText()` method in the ApplicationError class. The FatalError
 constructor is as follows:
 
@@ -334,7 +334,7 @@ constructor is as follows:
 
 The next method in the FatalError class, `getTitle()`, overrides the
 `getTitle()` method defined earlier in the ApplicationError class, and appends
-the text “-- FATAL” in the title to inform the user that a fatal error has
+the text "-- FATAL" in the title to inform the user that a fatal error has
 occurred. The `getTitle()` method is as follows:
 
     public override function getTitle():String

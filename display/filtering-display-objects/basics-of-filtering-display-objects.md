@@ -32,7 +32,7 @@ border. The effect is commonly used for raised or indented buttons and similar
 graphics.
 
 Convolution  
-Distorting pixels in an image by combining each pixel’s value with the values of
+Distorting pixels in an image by combining each pixel's value with the values of
 some or all of its neighboring pixels, using various ratios.
 
 Displacement  

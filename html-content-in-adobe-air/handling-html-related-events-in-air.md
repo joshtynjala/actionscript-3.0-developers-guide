@@ -340,8 +340,8 @@ When HTML content navigates, or when HTML content is discarded because a window
 that contains it is closed, the event listeners that reference objects on the
 unloaded page are not automatically removed. When an object dispatches an event
 to a handler that has already been unloaded, you see the following error
-message: “The application attempted to reference a JavaScript object in an HTML
-page that is no longer loaded.”
+message: "The application attempted to reference a JavaScript object in an HTML
+page that is no longer loaded."
 
 To avoid this error, remove JavaScript event listeners in an HTML page before it
 goes away. In the case of page navigation (within an HTMLLoader object), remove

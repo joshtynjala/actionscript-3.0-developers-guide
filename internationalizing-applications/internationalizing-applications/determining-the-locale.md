@@ -34,7 +34,7 @@ system (script) and region. For example:
     trace(loc.getRegion()); // ES
 
 In this example, the `LocaleID()` constructor retrieved data about the locale
-that best matches the language code “es” for that user.
+that best matches the language code "es" for that user.
 
 </div>
 
@@ -50,14 +50,14 @@ including:
 - Hard-code a single locale ID into the application. This approach is common,
   but it does not support internationalization of the application.
 
-- Use the locale ID preferences from the user’s operating system, or browser, or
+- Use the locale ID preferences from the user's operating system, or browser, or
   other user preferences. This technique usually results in the best locale
   settings for the user, but it is not always accurate. There is a risk that the
-  operating system settings do not reflect the user’s actual preferences. For
+  operating system settings do not reflect the user's actual preferences. For
   example, the user could be using a shared computer and be unable to change the
-  operating system’s preferred locales.
+  operating system's preferred locales.
 
-- After setting the locale ID based on the user’s preferences, let the user
+- After setting the locale ID based on the user's preferences, let the user
   select from a list of supported locales. This strategy is normally the best
   option if your application can support more than one locale.
 
@@ -65,7 +65,7 @@ You can implement this third option as follows:
 
 <div>
 
-1.  Retrieve a list of the user’s preferred locales or languages from a user
+1.  Retrieve a list of the user's preferred locales or languages from a user
     profile, browser settings, operating system settings, or a cookie. (Your
     application would need to implement this logic itself. The
     flash.globalization library does not support reading such preferences
@@ -103,7 +103,7 @@ retrieves only the two-character ISO 639-1 language code—not the full locale
 ID—and it only supports a specific set of locales.
 
 With AIR 1.5, you can use the `flash.system.Capabilities.languages` property.
-This property provides an array of the user’s preferred user interface
+This property provides an array of the user's preferred user interface
 languages. Thus, it does not have the limitations of `Capabilities.language`.
 
 </div>

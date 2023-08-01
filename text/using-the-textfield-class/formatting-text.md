@@ -93,7 +93,7 @@ styles to HTML text by using a StyleSheet object:
 After creating a StyleSheet object, the example code creates a simple object to
 hold a set of style declaration properties. Then it calls the
 `StyleSheet.setStyle()` method, which adds the new style to the style sheet with
-the name “.darkred”. Next, it applies the style sheet formatting by assigning
+the name ".darkred". Next, it applies the style sheet formatting by assigning
 the StyleSheet object to the TextField `styleSheet` property.
 
 For CSS styles to take effect, the style sheet should be applied to the

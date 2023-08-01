@@ -3,7 +3,7 @@
 <div>
 
 The Algorithmic Visual Generator example dynamically draws to the stage several
-“satellites”, or circles moving in a circular orbit. Among the features explored
+"satellites", or circles moving in a circular orbit. Among the features explored
 are:
 
 - Using the drawing API to draw a basic shape with dynamic appearances
@@ -12,7 +12,7 @@ are:
 
 - Conveying animation by clearing the stage on each frame and redrawing
 
-The example in the previous subsection animated a solitary “satellite” using the
+The example in the previous subsection animated a solitary "satellite" using the
 `Event.ENTER_FRAME` event. This example expands upon this, building a control
 panel with series of sliders that immediately update the visual display of
 several satellites. This example formalizes the code into external classes and
@@ -46,7 +46,7 @@ This folder contains the following files:
 
 The application first creates three listeners. The first listens for a
 dispatched event from the control panel that a rebuild of the satellites is
-necessary. The second listens to changes to the size of the SWF file’s stage.
+necessary. The second listens to changes to the size of the SWF file's stage.
 The third listens for each passing frame in the SWF file and to redraw using the
 `doEveryFrame()` function.
 
@@ -86,7 +86,7 @@ satellites in this array.
 
 <div>
 
-The `doEveryFrame()` function is the heart of the application’s animation
+The `doEveryFrame()` function is the heart of the application's animation
 process. It is called for every frame, at a rate equal the framerate of the SWF
 file. Because the variables of the draw change slightly, this conveys the
 appearance of animation.

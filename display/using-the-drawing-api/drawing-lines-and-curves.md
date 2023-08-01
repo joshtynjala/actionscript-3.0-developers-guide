@@ -25,11 +25,11 @@ the same series of steps:
 To draw with the `graphics` property of a Shape, Sprite, or MovieClip instance,
 you must first define the style (line size and color, fill color) to use when
 drawing. Just like when you use the drawing tools in Adobe® Flash® Professional
-or another drawing application, when you’re using ActionScript to draw you can
+or another drawing application, when you're using ActionScript to draw you can
 draw with or without a stroke, and with or without a fill color. You specify the
 appearance of the stroke using the `lineStyle()` or `lineGradientStyle()`
 method. To create a solid line, use the `lineStyle()` method. When calling this
-method, the most common values you’ll specify are the first three parameters:
+method, the most common values you'll specify are the first three parameters:
 line thickness, color, and alpha. For example, this line of code tells the Shape
 named `myShape` to draw lines that are 2 pixels thick, red (0x990000), and 75%
 opaque:
@@ -40,9 +40,9 @@ The default value for the alpha parameter is 1.0 (100%), so you can leave that
 parameter off if you want a completely opaque line. The `lineStyle()` method
 also accepts two additional parameters for pixel hinting and scale mode; for
 more information about using those parameters see the description of the
-`Graphics.lineStyle()` method in the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Graphics.html#lineStyle()"
-target="_self">ActionScript 3.0 Reference for the Adobe Flash Platform</a>.
+[`Graphics.lineStyle()`](<https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Graphics.html#lineStyle()>)
+method in the
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
 To create a gradient line, use the `lineGradientStyle()` method. This method is
 described in
@@ -53,7 +53,7 @@ If you want to create a filled shape, you call the `beginFill()`,
 before starting the drawing. The most basic of these, the `beginFill()` method,
 accepts two parameters: the fill color, and (optionally) an alpha value for the
 fill color. For example, if you want to draw a shape with a solid green fill,
-you would use the following code (assuming you’re drawing on an object named
+you would use the following code (assuming you're drawing on an object named
 `myShape`):
 
     myShape.graphics.beginFill(0x00FF00);
@@ -67,7 +67,7 @@ indicate the starting point for your drawing. The Graphics instance has a
 drawing point, like the tip of a pen on a piece of paper. Wherever the drawing
 point is located, that is where the next drawing action will begin. Initially a
 Graphics object begins with its drawing point at the point 0, 0 in the
-coordinate space of the object on which it’s drawing. To start the drawing at a
+coordinate space of the object on which it's drawing. To start the drawing at a
 different point, you can first call the `moveTo()` method before calling one of
 the drawing methods. This is analogous to lifting the pen tip off of the paper
 and moving it to a new position.

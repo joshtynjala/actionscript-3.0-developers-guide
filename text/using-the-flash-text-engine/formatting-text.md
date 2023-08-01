@@ -122,8 +122,8 @@ x-height
 
 In the `ElementFormat` object, three properties determine baseline and alignment
 characteristics. The `alignmentBaseline` property sets the main baseline of a
-`TextElement` or `GraphicElement`. This baseline is the “snap-to” line for the
-element, and it’s to this position that the dominant baseline of all text
+`TextElement` or `GraphicElement`. This baseline is the "snap-to" line for the
+element, and it's to this position that the dominant baseline of all text
 aligns.
 
 The `dominantBaseline` property specifies which of the various baselines of the
@@ -178,11 +178,11 @@ setting both text block and glyph rotation:
 
 | Constant   | Value        | Description                                                                                                                          |
 | ---------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
-| AUTO       | “auto”       | Specifies 90 degree counter-clockwise rotation. Typically used with vertical Asian text to rotate only glyphs that require rotation. |
-| ROTATE_0   | “rotate_0”   | Specifies no rotation.                                                                                                               |
-| ROTATE_180 | “rotate_180” | Specifies 180 degree rotation.                                                                                                       |
-| ROTATE_270 | “rotate_270” | Specifies 270 degree rotation.                                                                                                       |
-| ROTATE_90  | “rotate_90”  | Specifies 90 degree clockwise rotation.                                                                                              |
+| AUTO       | "auto"       | Specifies 90 degree counter-clockwise rotation. Typically used with vertical Asian text to rotate only glyphs that require rotation. |
+| ROTATE_0   | "rotate_0"   | Specifies no rotation.                                                                                                               |
+| ROTATE_180 | "rotate_180" | Specifies 180 degree rotation.                                                                                                       |
+| ROTATE_270 | "rotate_270" | Specifies 270 degree rotation.                                                                                                       |
+| ROTATE_90  | "rotate_90"  | Specifies 90 degree clockwise rotation.                                                                                              |
 
 </div>
 
@@ -195,8 +195,8 @@ text line.
 To rotate the glyphs within a block of text or a segment, set the
 `ElementFormat.textRotation` property to the number of degrees that you want the
 glyphs to rotate. A glyph is the shape that makes up a character, or a part of a
-character that consists of multiple glyphs. The letter “a” and the dot on an
-“i”, for example, are glyphs.
+character that consists of multiple glyphs. The letter "a" and the dot on an
+"i", for example, are glyphs.
 
 Rotating glyphs is relevant in some Asian languages in which you want to rotate
 the lines to vertical but not rotate the characters within the lines. For more
@@ -255,7 +255,7 @@ When an `ElementFormat` object is assigned to any type of `ContentElement`, its
 to fully define such an object before assigning it to a `TextElement` instance.
 
 If you want to modify an existing `ElementFormat` instance, first check its
-`locked` property. If it’s `true`, use the `clone()` method to create an
+`locked` property. If it's `true`, use the `clone()` method to create an
 unlocked copy of the object. The properties of this unlocked object can be
 changed, and it can then be assigned to the `TextElement` instance. Any new
 lines created from it have the new formatting. Previous lines created from this

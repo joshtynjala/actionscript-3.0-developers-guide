@@ -47,7 +47,7 @@ The types of ActionScript 3.0 code examples are:
   set)
 
 - Class-based examples (found primarily in the
-  [ActionScript 3.0 Language Reference](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html))
+  [ActionScript 3.0 Language Reference](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html))
 
 - Practical examples containing multiple source files (download source ZIP files
   from
@@ -92,7 +92,7 @@ declaration, and a constructor function.
 
 #### Practical examples containing multiple source files
 
-Many of the topics in the ActionScript 3.0 Developer’s Guide conclude with
+Many of the topics in the ActionScript 3.0 Developer's Guide conclude with
 practical examples that show how to use certain ActionScript features in a
 practical, real-world context. These examples usually contain multiple files
 including:
@@ -260,7 +260,7 @@ To run a class-based example in Flash Professional:
     <div>
 
     Note: Some of the class-based examples, such as the
-    [flashx.textLayout.container.ContainerController class example](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/container/ContainerController.html#includeExamplesSummary),
+    [flashx.textLayout.container.ContainerController class example](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/container/ContainerController.html#includeExamplesSummary),
     include multiple levels in the package declaration (
     `package flashx.textLayout.container.examples {`). For these examples, save
     the file in a sub folder that matches the package declaration
@@ -366,7 +366,7 @@ To run a class-based example in Flash Builder:
     <div>
 
     Note: Some of the class-based examples, such as the
-    [flashx.textLayout.container.ContainerController class example](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/container/ContainerController.html#includeExamplesSummary),
+    [flashx.textLayout.container.ContainerController class example](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/container/ContainerController.html#includeExamplesSummary),
     include multiple levels in the package declaration (
     `package flashx.textLayout.container.examples {`). For these examples, save
     the file in a sub folder that matches the package declaration
@@ -451,7 +451,7 @@ example in the browser, do the following:
 
 </div>
 
-To copy files to a web server and run the example in the device’s browser, do
+To copy files to a web server and run the example in the device's browser, do
 the following:
 
 <div>
@@ -501,7 +501,7 @@ pertinent code snippets in your mobile applications.
 #### Text fields instead of trace statements
 
 When running an example on a mobile device, you cannot see the output from the
-example’s trace statements. To see the output, create an instance of the
+example's trace statements. To see the output, create an instance of the
 TextField class. Then, append the text from the trace statements to the `text`
 property of the text field.
 
@@ -546,7 +546,7 @@ following:
 The `appendText()` method accepts only one value as a parameter. That value is a
 string (either a String instance or a string literal). To print the value of a
 non-string variable, first convert the value to a String. The easiest way to do
-that is to call the object’s `toString()` method:
+that is to call the object's `toString()` method:
 
     var albumYear:int = 1999;
     traceField.appendText("albumYear = ");
@@ -582,11 +582,11 @@ on a mobile device. For more information, see
 
 Also, the user interfaces of many examples are designed for a desktop or laptop
 computer. For example, most of the practical examples in the ActionScript 3.0
-Developer’s Guide are well-suited for desktop viewing. Therefore, the entire
-Stage is sometimes not visible on the mobile device’s screen. The ability to pan
-through the browser’s contents depends on the browser. Furthermore, the examples
+Developer's Guide are well-suited for desktop viewing. Therefore, the entire
+Stage is sometimes not visible on the mobile device's screen. The ability to pan
+through the browser's contents depends on the browser. Furthermore, the examples
 are not designed to catch and handle scrolling or panning events. Therefore,
-some examples’ user interfaces are not suitable for running on the small screen.
+some examples' user interfaces are not suitable for running on the small screen.
 Adobe recommends that you run the examples on a computer to learn the
 ActionScript, and then use pertinent code snippets in your mobile applications.
 
@@ -601,9 +601,9 @@ For more information, see
 
 Some examples require you to give a field the focus. By giving a field the
 focus, you can, for example, enter text or select a button. To give a field
-focus, use the mobile device’s pointer device, such as a stylus or your finger.
-Or, use the mobile device’s navigation keys to give a field focus. To select a
-button that has the focus, use the mobile device’s Select key as you would use
+focus, use the mobile device's pointer device, such as a stylus or your finger.
+Or, use the mobile device's navigation keys to give a field focus. To select a
+button that has the focus, use the mobile device's Select key as you would use
 Enter on a computer. On some devices, tapping twice on a button selects it.
 
 For more information about focus, see

@@ -3,10 +3,10 @@
 <div>
 
 When you use a shader to create a drawing fill, you use the drawing api methods
-to create a vector shape. The shader’s output is used to fill in the shape, in
+to create a vector shape. The shader's output is used to fill in the shape, in
 the same way that any bitmap image can be used as a bitmap fill with the drawing
 api. To create a shader fill, at the point in your code at which you want to
-start drawing the shape, call the Graphics object’s `beginShaderFill()` method.
+start drawing the shape, call the Graphics object's `beginShaderFill()` method.
 Pass the Shader object as the first argument to the `beginShaderFill()` method,
 as shown in this listing:
 
@@ -35,7 +35,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 <div>
 
 Note: The code for this example was written by Petri Leskinen. Thank you Petri
-for sharing this example. You can see more of Petri’s examples and tutorials at
+for sharing this example. You can see more of Petri's examples and tutorials at
 <a href="http://pixelero.wordpress.com/"
 target="_self">http://pixelero.wordpress.com/</a>.
 
@@ -58,7 +58,7 @@ The ActionScript code is in three methods:
 
 - `updateShaderFill()`: The `updateShaderFill()` method is called once per
   frame, creating the animation effect. In this method, the code calculates and
-  sets the shader parameters’ values. The code then calls the
+  sets the shader parameters' values. The code then calls the
   `beginShaderFill()` method to create a shader fill and calls other drawing api
   methods to draw the shader result in a triangle.
 
@@ -147,7 +147,7 @@ the document class for a FLA file in Flash Professional:
     }
 
 The following is the source code for the ThreePointGradient shader kernel, used
-to create the “ThreePointGradient.pbj” Pixel Bender bytecode file:
+to create the "ThreePointGradient.pbj" Pixel Bender bytecode file:
 
     <languageVersion : 1.0;>
     kernel ThreePointGradient

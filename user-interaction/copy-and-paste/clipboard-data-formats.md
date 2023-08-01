@@ -207,7 +207,7 @@ assigned to the destination text.
 
 Notice that if you edit the source text before pressing the Paste button, the
 edit will be reflected in the pasted text, even when the edit occurs after the
-copy button was pressed. This is because the rendering function doesn’t copy the
+copy button was pressed. This is because the rendering function doesn't copy the
 source text until the paste button is pressed. (When using deferred rendering in
 a real application, you might want to store or protect the source data in some
 way to prevent this problem.)

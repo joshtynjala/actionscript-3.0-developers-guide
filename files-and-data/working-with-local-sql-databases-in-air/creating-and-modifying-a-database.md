@@ -17,7 +17,7 @@ they are necessary for most applications.
 <div>
 
 To create a database file, you first create a
-[SQLConnection](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLConnection.html)
+[SQLConnection](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLConnection.html)
 instance. You call its `open()` method to open it in synchronous execution mode,
 or its `openAsync()` method to open it in asynchronous execution mode. The
 `open()` and `openAsync()` methods are used to open a connection to a database.
@@ -27,7 +27,7 @@ method creates a database file at that file location and open a connection to
 the newly created database.
 
 Whether you call the `open()` method or the `openAsync()` method to create a
-database, the database file’s name can be any valid filename, with any filename
+database, the database file's name can be any valid filename, with any filename
 extension. If you call the `open()` or `openAsync()` method with `null` for the
 `reference` parameter, a new in-memory database is created rather than a
 database file on disk.
@@ -36,7 +36,7 @@ The following code listing shows the process of creating a database file (a new
 database) using asynchronous execution mode. In this case, the database file is
 saved in the
 [Pointing to the application storage directory](WS5b3ccc516d4fbf351e63e3d118676a4c56-7fc6.html),
-with the filename “DBSample.db”:
+with the filename "DBSample.db":
 
     import flash.data.SQLConnection;
     import flash.events.SQLErrorEvent;
@@ -110,7 +110,7 @@ Note: Although the File class lets you point to a specific native file path,
 doing so can lead to applications that will not work across platforms. For
 example, the path C:\Documents and Settings\joe\test.db only works on Windows.
 For these reasons, it is best to use the static properties of the
-[File class](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/filesystem/File.html)
+[File class](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/filesystem/File.html)
 such as `File.applicationStorageDirectory`, as well as the `resolvePath()`
 method (as shown in the previous example). For more information, see
 [Paths of File objects](WS5b3ccc516d4fbf351e63e3d118666ade46-7d9e.html).
@@ -187,17 +187,17 @@ operations synchronously:
 <div>
 
 Creating a table in a database involves
-[executing a SQL statement](<http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLStatement.html#execute()>)
+[executing a SQL statement](<https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLStatement.html#execute()>)
 on that database, using the same process that you use to execute a SQL statement
 such as `SELECT`, `INSERT`, and so forth. To create a table, you use a
 `CREATE TABLE` statement, which includes definitions of columns and constraints
 for the new table. For more information about executing SQL statements, see
 [Working with SQL statements](WS5b3ccc516d4fbf351e63e3d118666ade46-7d2c.html).
 
-The following example demonstrates creating a table named “employees” in an
+The following example demonstrates creating a table named "employees" in an
 existing database file, using asynchronous execution mode. Note that this code
 assumes there is a
-[SQLConnection](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLConnection.html)
+[SQLConnection](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLConnection.html)
 instance named `conn` that is already instantiated and is already connected to a
 database.
 
@@ -281,10 +281,10 @@ database.
     	</mx:Script>
     </mx:WindowedApplication>
 
-The following example demonstrates how to create a table named “employees” in an
+The following example demonstrates how to create a table named "employees" in an
 existing database file, using synchronous execution mode. Note that this code
 assumes there is a
-[SQLConnection](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLConnection.html)
+[SQLConnection](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLConnection.html)
 instance named `conn` that is already instantiated and is already connected to a
 database.
 

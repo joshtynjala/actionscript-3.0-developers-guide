@@ -37,8 +37,8 @@ particular points in a video file where you might want users to seek. For
 example, your video might have multiple chapters or segments, and you can
 control the video by embedding navigation cue points in the video file.
 
-For more information on encoding Adobe video files with cue points, see “Embed
-cue points” in _Using Flash_ .
+For more information on encoding Adobe video files with cue points, see "Embed
+cue points" in _Using Flash_ .
 
 You can access cue point parameters by writing ActionScript. Cue point
 parameters are a part of the event object received by the callback handler.

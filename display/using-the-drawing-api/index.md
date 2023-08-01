@@ -21,6 +21,6 @@ elements, among many possibilities.
 - [Drawing API example: Algorithmic Visual Generator](./drawing-api-example-algorithmic-visual-generator.md)
 - [Advanced use of the drawing API](./advanced-use-of-the-drawing-api.md)
 
-- [flash.display.Graphics](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Graphics.html)
+- [flash.display.Graphics](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Graphics.html)
 
 </div>

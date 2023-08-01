@@ -58,8 +58,8 @@ Flash Player 10 does not. In Flash Player 10, only socket policy files can
 authorize socket connections.
 
 Like URL policy files, socket policy files support a meta-policy statement that
-specifies which ports can serve policy files. However, instead of “master-only,”
-the default meta-policy for socket policy files is “all.” That is, unless the
+specifies which ports can serve policy files. However, instead of "master-only,"
+the default meta-policy for socket policy files is "all." That is, unless the
 master policy file specifies a more restrictive setting, Flash Player assumes
 that any socket on the host can serve a socket policy file.
 
@@ -103,9 +103,9 @@ To retrieve a socket policy file from port 843 or from the same port as a main
 socket connection, call the `Socket.connect()` or `XMLSocket.connect()` method.
 Flash Player first checks for a master policy file on port 843. If it finds one,
 it checks to see if the file contains a meta-policy statement that prohibits
-socket policy files on the target port. If access isn’t prohibited, Flash Player
+socket policy files on the target port. If access isn't prohibited, Flash Player
 first looks for the appropriate `allow-access-from` statement in the master
-policy file. If it doesn’t find one, it then looks for a socket policy file on
+policy file. If it doesn't find one, it then looks for a socket policy file on
 the same port as the main socket connection.
 
 To retrieve a socket policy file a different location, first call the
@@ -118,7 +118,7 @@ Call the `Security.loadPolicyFile()` method before calling the
 `Socket.connect()` or `XMLSocket.connect()` method. Flash Player then waits
 until it has fulfilled your policy file request before deciding whether to allow
 your main connection. However, if the master policy file specifies that the
-target location can’t serve policy files, the call to `loadPolicyFile()` has no
+target location can't serve policy files, the call to `loadPolicyFile()` has no
 effect, even if there is a policy file at that location.
 
 If you are implementing a socket server and you need to provide a socket policy

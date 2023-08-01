@@ -115,7 +115,7 @@ loaded by the application.</p></td>
 
 This example uses the common practice of storing application data separate from
 the application itself; that way, if the data changes (for example, if another
-image is added or an image’s title changes), there is no need to recreate the
+image is added or an image's title changes), there is no need to recreate the
 SWF file. In this case, the image metadata, including the image title, the URL
 of the actual image file, and some values that are used to manipulate the image,
 are stored in a text file (the txt/ImageData.txt file in the project). The
@@ -140,8 +140,8 @@ loaded:
   white or completely black.
 
 As soon as the application starts, the AsciiArtBuilder class loads and parses
-the contents of the text file in order to create the “stack” of images that it
-will display, using the following code from the AsciiArtBuilder class’s
+the contents of the text file in order to create the "stack" of images that it
+will display, using the following code from the AsciiArtBuilder class's
 `parseImageInfo()` method:
 
     var lines:Array = _imageInfoLoader.data.split("\n");
@@ -191,7 +191,7 @@ One of the design decisions for this application is that all the image titles
 are displayed using a standard format, with the first letter of each word
 capitalized (except for a few words that are commonly not capitalized in English
 titles). Rather than assume that the text file contains properly formatted
-titles, the application formats the titles while they’re being extracted from
+titles, the application formats the titles while they're being extracted from
 the text file.
 
 In the previous code listing, as part of extracting individual image metadata
@@ -199,7 +199,7 @@ values, the following line of code is used:
 
             imageInfo.title = normalizeTitle(imageProperties[1]);
 
-In that code, the image’s title from the text file is passed through the
+In that code, the image's title from the text file is passed through the
 `normalizeTitle()` method before it is stored in the ImageInfo object:
 
     private function normalizeTitle(title:String):String
@@ -216,7 +216,7 @@ In that code, the image’s title from the text file is passed through the
 
 This method uses the `split()` method to divide the title into individual words
 (separated by the space character), passes each word through the
-`capitalizeFirstLetter()` method, and then uses the Array class’s `join()`
+`capitalizeFirstLetter()` method, and then uses the Array class's `join()`
 method to combine the words back into a single string again.
 
 As its name suggests, the `capitalizeFirstLetter()` method actually does the
@@ -251,8 +251,8 @@ work of capitalizing the first letter of each word:
         }
 
 In English, the initial character of each word in a title is _not_ capitalized
-if it is one of the following words: “and,” “the,” “in,” “an,” “or,” “at,” “of,”
-or “a.” (This is a simplified version of the rules.) To execute this logic, the
+if it is one of the following words: "and," "the," "in," "an," "or," "at," "of,"
+or "a." (This is a simplified version of the rules.) To execute this logic, the
 code first uses a `switch` statement to check if the word is one of the words
 that should not be capitalized. If so, the code simply jumps out of the `switch`
 statement. On the other hand, if the word should be capitalized, that is done in
@@ -316,7 +316,7 @@ techniques (omitted here for brevity), it converts the red, green, and blue
 color values of an individual pixel to a single grayscale value (a number from 0
 to 255). The code then divides that value by 4 (as shown) to convert it to a
 value in the 0-63 scale, which is stored in the variable `index`. (The 0-63
-scale is used because the “palette” of available ASCII characters used by this
+scale is used because the "palette" of available ASCII characters used by this
 application contains 64 values.) The palette of characters is defined as a
 String instance in the BitmapToAsciiConverter class:
 
@@ -331,7 +331,7 @@ retrieved from the `palette` String using the `charAt()` method. It is then
 appended to the `result` String instance using the concatenation assignment
 operator ( `+=` ). In addition, at the end of each row of pixels, a newline
 character is concatenated to the end of the `result` String, forcing the line to
-wrap to create a new row of character “pixels.”
+wrap to create a new row of character "pixels."
 
 </div>
 

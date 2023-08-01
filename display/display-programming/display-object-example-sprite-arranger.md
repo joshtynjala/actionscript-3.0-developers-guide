@@ -92,7 +92,7 @@ multiple sides.</p></td>
 <td headers="d17e16067 "><p>com/example/programmingas3/geometricshapes/RegularPolygon.as</p></td>
 <td headers="d17e16070 "><p>A type of
 geometric shape that has sides of equal length positioned symmetrically
-around the shape’s center.</p></td>
+around the shape's center.</p></td>
 </tr>
 <tr class="even">
 <td headers="d17e16067 "><p>com/example/programmingas3/geometricshapes/Circle.as</p></td>
@@ -114,7 +114,7 @@ length.</p></td>
 <tr class="odd">
 <td headers="d17e16067 "><p>com/example/programmingas3/geometricshapes/GeometricShapeFactory.as</p></td>
 <td headers="d17e16070 "><p>A class
-containing a “factory method” for creating shapes given a shape type and
+containing a "factory method" for creating shapes given a shape type and
 size.</p></td>
 </tr>
 </tbody>
@@ -131,7 +131,7 @@ size.</p></td>
 <div>
 
 The SpriteArranger application lets the user add a variety of display objects to
-the on-screen “canvas.”
+the on-screen "canvas."
 
 The DrawingCanvas class defines a drawing area, a type of display object
 container, to which the user can add on-screen shapes. These on-screen shapes
@@ -179,7 +179,7 @@ constructor function:
     this.height = 200;
 
 The `initCanvas()` method then calls the `drawBounds()` method, which draws the
-canvas using the DrawingCanvas class’s `graphics` property. The `graphics`
+canvas using the DrawingCanvas class's `graphics` property. The `graphics`
 property is inherited from the Shape class.
 
     this.graphics.clear();
@@ -239,7 +239,7 @@ described in _Learning ActionScript 3.0_.
 
 The GeometricSprite class defines the `drawShape()` method, which is further
 refined in the override definitions in each subclass of GeometricSprite. For
-more information, see the “Adding display objects to the canvas” section, which
+more information, see the "Adding display objects to the canvas" section, which
 follows.
 
 The GeometricSprite class also provides the following methods:
@@ -327,7 +327,7 @@ the DrawingCanvas instance:
     Circle of size 50 at 0, 0
 
 The `describeChildren()` method of the DrawingCanvas class loops through the
-canvas’s child list, using the `numChildren` property (inherited from the
+canvas's child list, using the `numChildren` property (inherited from the
 DisplayObjectContainer class) to set the limit of the `for` loop. It generates a
 string listing each child, as follows:
 
@@ -371,7 +371,7 @@ rectangle, as follows:
     this.addChild(this.selectionIndicator);
 
 If this is not the first time the `onMouseDown()` method is called, the method
-simply sets the `selectionIndicator` shape’s `visible` property (inherited from
+simply sets the `selectionIndicator` shape's `visible` property (inherited from
 the DisplayObject class), as follows:
 
     this.selectionIndicator.visible = true;

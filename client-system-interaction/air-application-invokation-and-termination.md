@@ -151,7 +151,7 @@ strings, unless enclosed in double quotes:
 | Arguments         | Array            |
 | tick tock         | {tick,tock}      |
 | tick "tick tock"  | {tick,tick tock} |
-| "tick" “tock”     | {tick,tock}      |
+| "tick" "tock"     | {tick,tock}      |
 | \\tick\\ \\tock\\ | {"tick","tock"}  |
 
 </div>
@@ -331,7 +331,7 @@ as follows:
 
 - `InvokeEventReason.NOTIFICATION` (iOS only) - The application was invoked
   through APNs. For more information on APNs, see
-  [Use push notifications](http://help.adobe.com/en_US/air/build/WSd6d4f896b3a8801b7be2f55d138e29d5e40-8000.html).
+  [Use push notifications](https://help.adobe.com/en_US/air/build/WSd6d4f896b3a8801b7be2f55d138e29d5e40-8000.html).
 
 - `InvokeEventReason.OPEN_URL` - The application was invoked by another
   application or by the system.
@@ -411,7 +411,7 @@ permitted if the application descriptor file sets `allowBrowserInvocation` to
 
     <allowBrowserInvocation>true</allowBrowserInvocation>
 
-When the application is invoked via the browser, the application’s
+When the application is invoked via the browser, the application's
 NativeApplication object dispatches a BrowserInvokeEvent object.
 
 To receive BrowserInvokeEvent events, call the `addEventListener()` method of
@@ -566,7 +566,7 @@ observe the following good practices for exiting the application:
 
 1.  Always dispatch an `exiting` event through the NativeApplication object
     before calling `exit()` in application code and check that another component
-    of your application doesn’t cancel the event.
+    of your application doesn't cancel the event.
 
         public function applicationExit():void {
         	var exitingEvent:Event = new Event(Event.EXITING, false, true);
@@ -583,7 +583,7 @@ observe the following good practices for exiting the application:
     all windows have been closed. Only use synchronous methods during cleanup to
     ensure that they finish before the application quits.
 
-    If the order in which your windows are closed doesn’t matter, then you can
+    If the order in which your windows are closed doesn't matter, then you can
     loop through the `NativeApplication.nativeApplication.openedWindows` array
     and close each window in turn. If order _does_ matter, provide a means of
     closing the windows in the correct sequence.
@@ -629,22 +629,22 @@ More Help topics
 </div>
 
 ![](images/flashplatformLinkIndicator.png)
-[flash.desktop.NativeApplication](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeApplication.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeApplication.html")
+[flash.desktop.NativeApplication](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeApplication.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeApplication.html")
 
 ![](images/flashplatformLinkIndicator.png)
-[flash.events.InvokeEvent](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/InvokeEvent.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/InvokeEvent.html")
+[flash.events.InvokeEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/InvokeEvent.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/InvokeEvent.html")
 
 ![](images/flashplatformLinkIndicator.png)
-[flash.events.BrowserInvokeEvent](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/BrowserInvokeEvent.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/BrowserInvokeEvent.html")
+[flash.events.BrowserInvokeEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/BrowserInvokeEvent.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/BrowserInvokeEvent.html")
 
 ![](images/airLinkIndicator.png)
-[Launching an installed AIR application from the browser](http://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7cd2.html "http://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7cd2.html")
+[Launching an installed AIR application from the browser](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7cd2.html "https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7cd2.html")
 
 ![](images/airLinkIndicator.png)
-[Setting AIR application properties](http://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html "http://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html")
+[Setting AIR application properties](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html "https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html")
 
 ![](images/airLinkIndicator.png)
-[Presenting a custom application update user interface](http://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ccd.html "http://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ccd.html")
+[Presenting a custom application update user interface](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ccd.html "https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ccd.html")
 
 <div>
 

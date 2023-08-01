@@ -25,23 +25,23 @@ time the statement is executed there is a slight variation. Specifically, the
 actual values that are inserted in the table are different because they are
 specific to the inventory item being added.
 
-In cases where you have a SQL statement that’s used multiple times with
+In cases where you have a SQL statement that's used multiple times with
 different values in the statement, the best approach is to use a SQL statement
 that includes parameters rather than literal values in the SQL text. A parameter
 is a placeholder in the statement text that is replaced with an actual value
 each time the statement is executed. To use parameters in a SQL statement, you
 create the
-[SQLStatement](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLStatement.html)
+[SQLStatement](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLStatement.html)
 instance as usual. For the actual SQL statement assigned to the `text` property,
 use parameter placeholders rather than literal values. You then define the value
 for each parameter by setting the value of an element in the SQLStatement
-instance’s `parameters` property. The `parameters` property is an associative
+instance's `parameters` property. The `parameters` property is an associative
 array, so you set a particular value using the following syntax:
 
     statement.parameters[parameter_identifier] = value;
 
-The _parameter_identifier_ is a string if you’re using a named parameter, or an
-integer index if you’re using an unnamed parameter.
+The _parameter_identifier_ is a string if you're using a named parameter, or an
+integer index if you're using an unnamed parameter.
 
 </div>
 
@@ -55,7 +55,7 @@ integer index if you’re using an unnamed parameter.
 
 A parameter can be a named parameter. A named parameter has a specific name that
 the database uses to match the parameter value to its placeholder location in
-the statement text. A parameter name consists of the “:” or “@” character
+the statement text. A parameter name consists of the ":" or "@" character
 followed by a name, as in the following examples:
 
     :itemName
@@ -89,7 +89,7 @@ The following code listing demonstrates the use of named parameters:
 
 As an alternative to using named parameters, you can also use unnamed
 parameters. To use an unnamed parameter you denote a parameter in a SQL
-statement using a “?” character. Each parameter is assigned a numeric index,
+statement using a "?" character. Each parameter is assigned a numeric index,
 according to the order of the parameters in the statement, starting with index 0
 for the first parameter. The following example demonstrates a version of the
 previous example, using unnamed parameters:
@@ -160,7 +160,7 @@ this technique** :
     statement.text = sql;
 
 Using statement parameters instead of concatenating user-entered values into a
-statement's text prevents a SQL injection attack. SQL injection can’t happen
+statement's text prevents a SQL injection attack. SQL injection can't happen
 because the parameter values are treated explicitly as substituted values,
 rather than becoming part of the literal statement text. The following is the
 recommended alternative to the previous listing:

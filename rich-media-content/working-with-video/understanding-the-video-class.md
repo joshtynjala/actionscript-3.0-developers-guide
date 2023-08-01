@@ -11,7 +11,7 @@ ways to use Video in your projects:
 - Load a video file dynamically using the NetConnection and NetStream classes
   and display the video in a Video object.
 
-- Capture input from the user’s camera. For more information, see
+- Capture input from the user's camera. For more information, see
   [Working with cameras](WSfffb011ac560372f3fa68e8912e3ab6b8cb-8000.html).
 
 - Use the FLVPlayback component.

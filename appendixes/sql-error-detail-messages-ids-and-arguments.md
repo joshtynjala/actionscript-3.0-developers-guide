@@ -6,7 +6,7 @@ The SQLError class represents various errors that can occur while working with
 an Adobe AIR local SQL database. For any given exception, the SQLError instance
 has a `details` property containing an English error message. In addition, each
 error message has an associated unique identifier that is available in the
-SQLError object’s `detailID` property. Using the `detailID` property, an
+SQLError object's `detailID` property. Using the `detailID` property, an
 application can identify the specific details error message. The application can
 provide alternate text for the end user in the language of his or her locale.
 The argument values in the `detailArguments` array can be substituted in the

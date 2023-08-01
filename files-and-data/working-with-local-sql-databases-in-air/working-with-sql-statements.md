@@ -4,7 +4,7 @@
 
 An individual SQL statement (a query or command) is represented in the runtime
 as a
-[SQLStatement](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLStatement.html)
+[SQLStatement](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLStatement.html)
 object. Follow these steps to create and execute a SQL statement:
 
 <div>
@@ -21,9 +21,9 @@ The SQLStatement object represents the SQL statement in your application.
 
 #### Specify which database the query runs against.
 
-To do this, set the SQLStatement object’s `sqlConnection` property to the
-[SQLConnection](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLConnection.html)
-instance that’s connected with the desired database.
+To do this, set the SQLStatement object's `sqlConnection` property to the
+[SQLConnection](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLConnection.html)
+instance that's connected with the desired database.
 
     // A SQLConnection named "conn" has been created previously
     selectData.sqlConnection = conn;
@@ -35,7 +35,7 @@ instance that’s connected with the desired database.
 #### Specify the actual SQL statement.
 
 Create the statement text as a String and assign it to the SQLStatement
-instance’s `text` property.
+instance's `text` property.
 
     selectData.text = "SELECT col1, col2 FROM my_table WHERE col1 = :param1";
 
@@ -46,7 +46,7 @@ instance’s `text` property.
 #### Define functions to handle the result of the execute operation (asynchronous execution mode only).
 
 Use the `addEventListener()` method to register functions as listeners for the
-SQLStatement instance’s `result` and `error` events.
+SQLStatement instance's `result` and `error` events.
 
     // using listener methods and addEventListener()
 
@@ -64,7 +64,7 @@ SQLStatement instance’s `result` and `error` events.
     }
 
 Alternatively, you can specify listener methods using a
-[Responder](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/Responder.html)
+[Responder](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/Responder.html)
 object. In that case you create the Responder instance and link the listener
 methods to it.
 
@@ -88,7 +88,7 @@ methods to it.
 
 #### If the statement text includes parameter definitions, assign values for those parameters.
 
-To assign parameter values, use the SQLStatement instance’s `parameters`
+To assign parameter values, use the SQLStatement instance's `parameters`
 associative array property.
 
     selectData.parameters[":param1"] = 25;
@@ -99,13 +99,13 @@ associative array property.
 
 #### Execute the SQL statement.
 
-Call the SQLStatement instance’s `execute()` method.
+Call the SQLStatement instance's `execute()` method.
 
     // using synchronous execution mode
     // or listener methods in asynchronous execution mode
     selectData.execute();
 
-Additionally, if you’re using a Responder instead of event listeners in
+Additionally, if you're using a Responder instead of event listeners in
 asynchronous execution mode, pass the Responder instance to the `execute()`
 method.
 

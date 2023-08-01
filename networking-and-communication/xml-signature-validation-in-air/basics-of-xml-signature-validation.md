@@ -48,9 +48,9 @@ The XML signature validation API includes the following classes:
 <td><div>
 <ul class="incremental">
 <li><p><a
-href="http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/security/XMLSignatureValidator.html">XMLSignatureValidator</a></p></li>
+href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/security/XMLSignatureValidator.html">XMLSignatureValidator</a></p></li>
 <li><p><a
-href="http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/security/IURIDereferencer.html">IURIDereferencer</a>
+href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/security/IURIDereferencer.html">IURIDereferencer</a>
 (interface)</p></li>
 </ul>
 </div>
@@ -59,13 +59,13 @@ classes:</p>
 <div>
 <ul class="incremental">
 <li><p><a
-href="http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/security/ReferencesValidationSetting.html">ReferencesValidationSetting</a></p></li>
+href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/security/ReferencesValidationSetting.html">ReferencesValidationSetting</a></p></li>
 <li><p><a
-href="http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/security/RevocationCheckSettings.html">RevocationCheckSettings</a></p></li>
+href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/security/RevocationCheckSettings.html">RevocationCheckSettings</a></p></li>
 <li><p><a
-href="http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/security/SignatureStatus.html">SignatureStatus</a></p></li>
+href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/security/SignatureStatus.html">SignatureStatus</a></p></li>
 <li><p><a
-href="http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/security/SignerTrustSettings.html">SignerTrustSettings</a></p></li>
+href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/security/SignerTrustSettings.html">SignerTrustSettings</a></p></li>
 </ul>
 </div></td>
 </tr>
@@ -74,9 +74,9 @@ href="http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/security/SignerTrustSett
 <td><div>
 <ul class="incremental">
 <li><p><a
-href="http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/events/Event.html">Event</a></p></li>
+href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/events/Event.html">Event</a></p></li>
 <li><p><a
-href="http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/events/ErrorEvent.html">ErrorEvent</a></p></li>
+href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/events/ErrorEvent.html">ErrorEvent</a></p></li>
 </ul>
 </div></td>
 </tr>
@@ -316,7 +316,7 @@ The `identityStatus` property can have the following values:
     timestamp is present in the signature. If the signature is timestamped, the
     certificate will be considered valid as long as it was valid at the time the
     document was signed. (The certificate used by the timestamp service to sign
-    the timestamp must chain to a trusted root certificate on the user’s
+    the timestamp must chain to a trusted root certificate on the user's
     computer.)
 
   - The signing certificate is trusted. A certificate is trusted if the

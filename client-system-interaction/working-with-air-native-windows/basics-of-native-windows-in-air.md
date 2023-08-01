@@ -75,7 +75,7 @@ AIR supports three distinct APIs for working with windows:
   are forwarded to the underlying native window object.
 
 - The Flex framework mx:WindowedApplication and mx:Window classes provide a Flex
-  “wrapper” for the NativeWindow class. The WindowedApplication component
+  "wrapper" for the NativeWindow class. The WindowedApplication component
   replaces the Application component when you create an AIR application with
   Flex and must always be used as the initial window in your Flex application.
 
@@ -171,17 +171,17 @@ The native window API contains the following classes:
 <td><div>
 <ul class="incremental">
 <li><p><a
-href="http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/NativeWindow.html">NativeWindow</a></p></li>
+href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/NativeWindow.html">NativeWindow</a></p></li>
 <li><p><a
-href="http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/NativeWindow.html">NativeWindowInitOptions</a></p></li>
+href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/NativeWindow.html">NativeWindowInitOptions</a></p></li>
 <li><p><a
-href="http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/NativeWindowDisplayState.html">NativeWindowDisplayState</a></p></li>
+href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/NativeWindowDisplayState.html">NativeWindowDisplayState</a></p></li>
 <li><p><a
-href="http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/NativeWindowResize.html">NativeWindowResize</a></p></li>
+href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/NativeWindowResize.html">NativeWindowResize</a></p></li>
 <li><p><a
-href="http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/NativeWindowSystemChrome.html">NativeWindowSystemChrome</a></p></li>
+href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/NativeWindowSystemChrome.html">NativeWindowSystemChrome</a></p></li>
 <li><p><a
-href="http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/NativeWindowType.html">NativeWindowType</a></p></li>
+href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/NativeWindowType.html">NativeWindowType</a></p></li>
 </ul>
 </div></td>
 </tr>
@@ -190,9 +190,9 @@ href="http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/NativeWindowType
 <td><div>
 <ul class="incremental">
 <li><p><a
-href="http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/NativeWindow.html">NativeWindowBoundsEvent</a></p></li>
+href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/NativeWindow.html">NativeWindowBoundsEvent</a></p></li>
 <li><p><a
-href="http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/NativeWindow.html">NativeWindowDisplayStateEvent</a></p></li>
+href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/NativeWindow.html">NativeWindowDisplayStateEvent</a></p></li>
 </ul>
 </div></td>
 </tr>
@@ -247,7 +247,9 @@ of events that occurs when a user clicks the maximize button of a window:
 
     For detailed information about the window API classes, methods, properties,
     and events, see the
-    [ActionScript 3.0 Reference for the Adobe Flash Platform](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
+    [NativeWindow](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeWindow.html)
+    class listing in the
+    [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
 </div>
 
@@ -323,7 +325,7 @@ buttons, border, and resize grippers.
 
 You can set the `systemChrome` property to `standard` or `none`. Choose
 `standard` system chrome to give your window the set of standard controls
-created and styled by the user’s operating system. Choose `none` to provide your
+created and styled by the user's operating system. Choose `none` to provide your
 own chrome for the window. Use the constants defined in the
 NativeWindowSystemChrome class to reference the system chrome settings in code.
 
@@ -362,7 +364,7 @@ chrome:
     </s:WindowedApplication>
 
 For more information, see
-[Using Flex 4: About the AIR window containers: Controlling window chrome](http://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-7fd8.html#WSacd9bdd0c5c09f4a-690d4877120e8b878b0-7fd7)
+[Using Flex 4: About the AIR window containers: Controlling window chrome](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-7fd8.html#WSacd9bdd0c5c09f4a-690d4877120e8b878b0-7fd7)
 
 </div>
 
@@ -401,7 +403,7 @@ including other display objects in the same window, other windows, and the
 desktop.
 
 Transparent windows are useful when you want to create applications with borders
-that are irregular in shape or that “fade out” or appear to be invisible.
+that are irregular in shape or that "fade out" or appear to be invisible.
 However, rendering large alpha-blended areas can be slow, so the effect should
 be used conservatively.
 
@@ -409,7 +411,7 @@ be used conservatively.
 
 Important: On Linux, mouse events do not pass through fully transparent pixels.
 You should avoid creating windows with large, fully transparent areas since you
-may invisibly block the user’s access to other windows or items on their
+may invisibly block the user's access to other windows or items on their
 desktop. On Mac OS X and Windows, mouse events do pass through fully transparent
 pixels.
 
@@ -506,7 +508,7 @@ palettes and dialogs. For example, if you displayed a Save dialog in association
 with a document window, making the document window own the dialog will keep the
 dialog in front of the document window automatically.
 
-- [NativeWindow.owner](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeWindow.html#owner)
+- [NativeWindow.owner](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeWindow.html#owner)
 
 - [Christian Cantrell: Owned windows in AIR 2.6](http://blogs.adobe.com/cantrell/archives/2011/03/owned-windows-in-air-2-6.html)
 
@@ -676,10 +678,10 @@ More Help topics
 </div>
 
 ![](images/flexLinkIndicator.png)
-[Using the Flex AIR components](http://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-8000.html "http://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-8000.html")
+[Using the Flex AIR components](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-8000.html "https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-8000.html")
 
 ![](images/airLinkIndicator.png)
-[Setting AIR application properties](http://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html "http://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html")
+[Setting AIR application properties](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html "https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html")
 
 <div>
 

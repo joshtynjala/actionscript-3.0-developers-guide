@@ -32,7 +32,7 @@ The following classes can be used to send and receive data across a network:
 <tbody>
 <tr class="odd">
 <td><p><a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Loader.html">Loader</a></p></td>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Loader.html">Loader</a></p></td>
 <td><p>SWF, PNG, JPEG, GIF</p></td>
 <td><p>HTTP, HTTPS</p></td>
 <td><p>Loads supported data types and converts the data into a display
@@ -42,7 +42,7 @@ display content dynamically</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><a
-href="http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/URLLoader.html">URLLoader</a></p></td>
+href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/URLLoader.html">URLLoader</a></p></td>
 <td><p>Any (text, XML, binary, etc.)</p></td>
 <td><p>HTTP, HTTPS</p></td>
 <td><p>Loads arbitrary formats of data. Your application is responsible
@@ -52,7 +52,7 @@ the URLLoader class</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/FileReference.html">FileReference</a></p></td>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/FileReference.html">FileReference</a></p></td>
 <td><p>Any</p></td>
 <td><p>HTTP</p></td>
 <td><p>Upload and download files.</p>
@@ -61,7 +61,7 @@ the FileReference class</a></p></td>
 </tr>
 <tr class="even">
 <td><p><a
-href="http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/NetConnection.html">NetConnection</a></p></td>
+href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/NetConnection.html">NetConnection</a></p></td>
 <td><p>Video, audio, ActionScript Message Format (AMF)</p></td>
 <td><p>HTTP, HTTPS, RTMP, RTMFP</p></td>
 <td><p>Connects to video, audio and remote object streams.</p>
@@ -70,7 +70,7 @@ with video</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a
-href="http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/media/Sound.html">Sound</a></p></td>
+href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/media/Sound.html">Sound</a></p></td>
 <td><p>Audio</p></td>
 <td><p>HTTP</p></td>
 <td><p>Loads and plays supported audio formats.</p>
@@ -79,7 +79,7 @@ external sound files</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><a
-href="http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/XMLSocket.html">XMLSocket</a></p></td>
+href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/XMLSocket.html">XMLSocket</a></p></td>
 <td><p>XML</p></td>
 <td><p>TCP</p></td>
 <td><p>Exchanges XML messages with an XMLSocket server.</p>
@@ -88,7 +88,7 @@ sockets</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a
-href="http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/Socket.html">Socket</a></p></td>
+href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/Socket.html">Socket</a></p></td>
 <td><p>Any</p></td>
 <td><p>TCP</p></td>
 <td><p>Connects to a TCP socket server.</p>
@@ -97,7 +97,7 @@ client sockets</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><a
-href="http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/SecureSocket.html">SecureSocket</a>
+href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/SecureSocket.html">SecureSocket</a>
 (AIR)</p></td>
 <td><p>Any</p></td>
 <td><p>TCP with SSLv3 or TLSv1</p></td>
@@ -108,7 +108,7 @@ client sockets (AIR)</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a
-href="http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/ServerSocket.html">ServerSocket</a>
+href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/ServerSocket.html">ServerSocket</a>
 (AIR)</p></td>
 <td><p>Any</p></td>
 <td><p>TCP</p></td>
@@ -118,7 +118,7 @@ sockets</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><a
-href="http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/DatagramSocket.html">DatagramSocket</a>
+href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/DatagramSocket.html">DatagramSocket</a>
 (AIR)</p></td>
 <td><p>Any</p></td>
 <td><p>UDP</p></td>
@@ -132,7 +132,7 @@ sockets (AIR)</a></p></td>
 </div>
 
 Often, when creating a web application it is helpful to store persistent
-information about the user’s application state. HTML pages and applications
+information about the user's application state. HTML pages and applications
 typically use cookies for this purpose. In Flash Player, you can use the
 SharedObject class for the same purpose. See
 [Shared objects](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d80.html). (The
@@ -156,7 +156,7 @@ When you need information about the network environment of the computer on which
 an AIR application is running, you can use the following classes:
 
 - NetworkInfo—Provides information about the available network interfaces, such
-  as the computer’s IP address. See
+  as the computer's IP address. See
   [Network interfaces](WSb2ba3b1aad8a27b04a6701d612482d399e5-8000.html).
 
 - DNSResolver—Allows you to look up DNS records. See
@@ -182,7 +182,7 @@ when programming networking and communications code:
 
 External data  
 Data that is stored in some form outside of the application, and loaded into the
-application when needed. This data could be stored in a file that’s loaded
+application when needed. This data could be stored in a file that's loaded
 directly, or stored in a database or other form that is retrieved by calling
 scripts or programs running on a server.
 
@@ -197,7 +197,7 @@ variables can be sent as a single message.
 MIME type  
 A standard code used to identify the type of a given file in Internet
 communication. Any given file type has a specific code that is used to identify
-it. When sending a file or message, a computer (such as a web server or a user’s
+it. When sending a file or message, a computer (such as a web server or a user's
 Flash Player or AIR instance) will specify the type of file being sent.
 
 HTTP  
@@ -293,11 +293,11 @@ interface on the client computer:
 
 For more information, see:
 
-- [NetworkInfo](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/NetworkInfo.html)
+- [NetworkInfo](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/NetworkInfo.html)
 
-- [NetworkInterface](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/NetworkInterface.html)
+- [NetworkInterface](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/NetworkInterface.html)
 
-- [InterfaceAddress](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/InterfaceAddress.html)
+- [InterfaceAddress](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/InterfaceAddress.html)
 
 - [Flexpert: Detecting the network connection type with Flex 4.5](http://www.flexpert.be/2011/04/detecting-the-network-connection-type-with-flex-4-5/)
 
@@ -314,7 +314,7 @@ For more information, see:
 Your AIR application can run in environments with uncertain and changing network
 connectivity. To help an application manage connections to online resources,
 Adobe AIR sends a network change event whenever a network connection becomes
-available or unavailable. Both the NetworkInfo object and the application’s
+available or unavailable. Both the NetworkInfo object and the application's
 NativeApplication object dispatch the `networkChange` event. To react to this
 event, add a listener:
 
@@ -528,17 +528,17 @@ string to use depends on the record type:
 
 | Record class | Query string                                  | Example query string      |
 | ------------ | --------------------------------------------- | ------------------------- |
-| ARecord      | host name                                     | “example.com”             |
-| AAAARecord   | host name                                     | “example.com”             |
-| MXRecord     | host name                                     | “example.com”             |
-| PTRRecord    | IP address                                    | “208.77.188.166”          |
-| SRVRecord    | Service identifier: \_service.\_protocol.host | “\_sip.\_tcp.example.com” |
+| ARecord      | host name                                     | "example.com"             |
+| AAAARecord   | host name                                     | "example.com"             |
+| MXRecord     | host name                                     | "example.com"             |
+| PTRRecord    | IP address                                    | "208.77.188.166"          |
+| SRVRecord    | Service identifier: \_service.\_protocol.host | "\_sip.\_tcp.example.com" |
 
 </div>
 
 </div>
 
-The following code example looks up the IP address of the host “example.com”.
+The following code example looks up the IP address of the host "example.com".
 
     package
     {
@@ -580,19 +580,19 @@ The following code example looks up the IP address of the host “example.com”
 
 For more information, see:
 
-- [DNSResolver](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/dns/DNSResolver.html)
+- [DNSResolver](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/dns/DNSResolver.html)
 
-- [DNSResolverEvent](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/events/DNSResolverEvent.html)
+- [DNSResolverEvent](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/events/DNSResolverEvent.html)
 
-- [ARecord](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/dns/ARecord.html)
+- [ARecord](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/dns/ARecord.html)
 
-- [AAAARecord](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/dns/AAAARecord.html)
+- [AAAARecord](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/dns/AAAARecord.html)
 
-- [MXRecord](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/dns/MXRecord.html)
+- [MXRecord](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/dns/MXRecord.html)
 
-- [PTRRecord](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/dns/PTRRecord.html)
+- [PTRRecord](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/dns/PTRRecord.html)
 
-- [SRVRecord](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/dns/SRVRecord.html)
+- [SRVRecord](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/dns/SRVRecord.html)
 
 </div>
 

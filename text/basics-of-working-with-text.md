@@ -65,11 +65,11 @@ The following reference list contains important terms involved with text
 handling:
 
 Cascading style sheets  
-A standard syntax for specifying styles and formatting for content that’s
+A standard syntax for specifying styles and formatting for content that's
 structured in XML (or HTML) format.
 
 Device font  
-A font that is installed on the user’s machine.
+A font that is installed on the user's machine.
 
 Dynamic text field  
 A text field whose contents can be changed by ActionScript but not by user

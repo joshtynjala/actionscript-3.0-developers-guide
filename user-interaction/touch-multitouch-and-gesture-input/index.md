@@ -28,7 +28,7 @@ type of gesture to assign to the input.
 
 </div>
 
-Both touch and gesture input can be multitouch input depending on the user’s
+Both touch and gesture input can be multitouch input depending on the user's
 device. ActionScript provides API for handling touch events, gesture events, and
 individually tracked touch events for multitouch input.
 
@@ -68,22 +68,22 @@ More Help topics
 </div>
 
 ![](images/flashplatformLinkIndicator.png)
-[flash.ui.Multitouch](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Multitouch.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Multitouch.html")
+[flash.ui.Multitouch](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Multitouch.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Multitouch.html")
 
 ![](images/flashplatformLinkIndicator.png)
-[flash.events.TouchEvent](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/TouchEvent.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/TouchEvent.html")
+[flash.events.TouchEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/TouchEvent.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/TouchEvent.html")
 
 ![](images/flashplatformLinkIndicator.png)
-[flash.events.GestureEvent](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/GestureEvent.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/GestureEvent.html")
+[flash.events.GestureEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/GestureEvent.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/GestureEvent.html")
 
 ![](images/flashplatformLinkIndicator.png)
-[flash.events.TransformGestureEvent](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/TransformGestureEvent.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/TransformGestureEvent.html")
+[flash.events.TransformGestureEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/TransformGestureEvent.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/TransformGestureEvent.html")
 
 ![](images/flashplatformLinkIndicator.png)
-[flash.events.GesturePhase](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/GesturePhase.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/GesturePhase.html")
+[flash.events.GesturePhase](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/GesturePhase.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/GesturePhase.html")
 
 ![](images/flashplatformLinkIndicator.png)
-[flash.events.PressAndTapGestureEvent](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/PressAndTapGestureEvent.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/PressAndTapGestureEvent.html")
+[flash.events.PressAndTapGestureEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/PressAndTapGestureEvent.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/PressAndTapGestureEvent.html")
 
 [Paul Trani: Touch Events and Gestures on Mobile](http://www.paultrani.com/blog/index.php/2011/02/touch-events-and-gestures-on-mobile/ "http://www.paultrani.com/blog/index.php/2011/02/touch-events-and-gestures-on-mobile/")
 

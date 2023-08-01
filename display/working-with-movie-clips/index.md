@@ -14,6 +14,6 @@ and methods for controlling its timeline.
 - [Loading an external SWF file](./loading-an-external-swf-file.md)
 - [Movie clip example: RuntimeAssetsExplorer](./movie-clip-example-runtime-assets-explorer.md)
 
-- [flash.display.MovieClip class](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/MovieClip.html)
+- [flash.display.MovieClip class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/MovieClip.html)
 
 </div>

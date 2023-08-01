@@ -25,10 +25,10 @@ following quick start articles on the Adobe Developer Connection:
 
 Adobe AIR includes a SQL-based relational database engine that runs within the
 runtime, with data stored locally in database files on the computer on which the
-AIR application runs (for example, on the computer’s hard drive). Because the
+AIR application runs (for example, on the computer's hard drive). Because the
 database runs and data files are stored locally, a database can be used by an
 AIR application regardless of whether a network connection is available. Thus,
-the runtime’s local SQL database engine provides a convenient mechanism for
+the runtime's local SQL database engine provides a convenient mechanism for
 storing persistent, local application data, particularly if you have experience
 with SQL and relational databases.
 
@@ -41,7 +41,7 @@ with SQL and relational databases.
 <div>
 
 The AIR local SQL database functionality can be used for any purpose for which
-you might want to store application data on a user’s local computer. Adobe AIR
+you might want to store application data on a user's local computer. Adobe AIR
 includes several mechanisms for storing data locally, each of which has
 different advantages. The following are some possible uses for a local SQL
 database in your AIR application:
@@ -57,10 +57,10 @@ database in your AIR application:
 
 - For a network-aware application, a database can be used to store a local cache
   of application data, or to store data temporarily when a network connection
-  isn’t available. You could create a mechanism for synchronizing the local
+  isn't available. You could create a mechanism for synchronizing the local
   database with the network data store.
 
-- For any application, a database can be used to store individual users’
+- For any application, a database can be used to store individual users'
   application settings, such as user options or application information like
   window size and position.
 
@@ -75,7 +75,7 @@ database in your AIR application:
 <div>
 
 An individual Adobe AIR local SQL database is stored as a single file in the
-computer’s file system. The runtime includes the SQL database engine that
+computer's file system. The runtime includes the SQL database engine that
 manages creation and structuring of database files and manipulation and
 retrieval of data from a database file. The runtime does not specify how or
 where database data is stored on the file system; rather, each database is
@@ -88,7 +88,7 @@ constraints of the operating system. Each user can have a separate database file
 for their specific data, or a database file can be accessed by all application
 users on a single computer for shared data. Because the data is local to a
 single computer, data is not automatically shared among users on different
-computers. The local SQL database engine doesn’t provide any capability to
+computers. The local SQL database engine doesn't provide any capability to
 execute SQL statements against a remote or server-based database.
 
 </div>
@@ -103,10 +103,10 @@ execute SQL statements against a remote or server-based database.
 
 A relational database is a mechanism for storing (and retrieving) data on a
 computer. Data is organized into tables: rows represent records or items, and
-columns (sometimes called “fields”) divide each record into individual values.
-For example, an address book application could contain a “friends” table. Each
+columns (sometimes called "fields") divide each record into individual values.
+For example, an address book application could contain a "friends" table. Each
 row in the table would represent a single friend stored in the database. The
-table’s columns would represent data such as first name, last name, birth date,
+table's columns would represent data such as first name, last name, birth date,
 and so forth. For each friend row in the table, the database stores a separate
 value for each column.
 
@@ -116,30 +116,30 @@ any data that has a one-to-many relationship—where a single record can be
 related to multiple records of a different type—should be divided among
 different tables. For example, suppose you want your address book application to
 store multiple phone numbers for each friend; this is a one-to-many
-relationship. The “friends” table would contain all the personal information for
-each friend. A separate “phone numbers” table would contain all the phone
+relationship. The "friends" table would contain all the personal information for
+each friend. A separate "phone numbers" table would contain all the phone
 numbers for all the friends.
 
 In addition to storing the data about friends and phone numbers, each table
 would need a piece of data to keep track of the relationship between the two
 tables—to match individual friend records with their phone numbers. This data is
 known as a primary key—a unique identifier that distinguishes each row in a
-table from other rows in that table. The primary key can be a “natural key,”
-meaning it’s one of the items of data that naturally distinguishes each record
-in a table. In the “friends” table, if you knew that none of your friends share
+table from other rows in that table. The primary key can be a "natural key,"
+meaning it's one of the items of data that naturally distinguishes each record
+in a table. In the "friends" table, if you knew that none of your friends share
 a birth date, you could use the birth date column as the primary key (a natural
-key) of the “friends” table. If there isn’t a natural key, you would create a
-separate primary key column such as a “friend id” —an artificial value that the
+key) of the "friends" table. If there isn't a natural key, you would create a
+separate primary key column such as a "friend id" —an artificial value that the
 application uses to distinguish between rows.
 
 Using a primary key, you can set up relationships between multiple tables. For
-example, suppose the “friends” table has a column “friend id” that contains a
-unique number for each row (each friend). The related “phone numbers” table can
-be structured with two columns: one with the “friend id” of the friend to whom
+example, suppose the "friends" table has a column "friend id" that contains a
+unique number for each row (each friend). The related "phone numbers" table can
+be structured with two columns: one with the "friend id" of the friend to whom
 the phone number belongs, and one with the actual phone number. That way, no
 matter how many phone numbers a single friend has, they can all be stored in the
-“phone numbers” table and can be linked to the related friend using the “friend
-id” primary key. When a primary key from one table is used in a related table to
+"phone numbers" table and can be linked to the related friend using the "friend
+id" primary key. When a primary key from one table is used in a related table to
 specify the connection between the records, the value in the related table is
 known as a foreign key. Unlike many databases, the AIR local database engine
 does not allow you to create foreign key constraints, which are constraints that
@@ -187,11 +187,11 @@ classes in the flash.data package:
 
 <div>
 
-| Class                                                                                                 | Description                                                                                                                                                                                                       |
-| ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [flash.data.SQLConnection](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLConnection.html) | Provides the means to create and open databases (database files), as well as methods for performing database-level operations and for controlling database transactions.                                          |
-| [flash.data.SQLStatement](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLStatement.html)   | Represents a single SQL statement (a single query or command) that is executed on a database, including defining the statement text and setting parameter values.                                                 |
-| [flash.data.SQLResult](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLResult.html)         | Provides a way to get information about or results from executing a statement, such as the result rows from a `SELECT` statement, the number of rows affected by an `UPDATE` or `DELETE` statement, and so forth. |
+| Class                                                                                                  | Description                                                                                                                                                                                                       |
+| ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [flash.data.SQLConnection](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLConnection.html) | Provides the means to create and open databases (database files), as well as methods for performing database-level operations and for controlling database transactions.                                          |
+| [flash.data.SQLStatement](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLStatement.html)   | Represents a single SQL statement (a single query or command) that is executed on a database, including defining the statement text and setting parameter values.                                                 |
+| [flash.data.SQLResult](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLResult.html)         | Provides a way to get information about or results from executing a statement, such as the result rows from a `SELECT` statement, the number of rows affected by an `UPDATE` or `DELETE` statement, and so forth. |
 
 </div>
 
@@ -200,13 +200,13 @@ these classes in the flash.data package:
 
 <div>
 
-| Class                                                                                                       | Description                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| [flash.data.SQLSchemaResult](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLSchemaResult.html)   | Serves as a container for database schema results generated by calling the `SQLConnection.loadSchema()` method. |
-| [flash.data.SQLTableSchema](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLTableSchema.html)     | Provides information describing a single table in a database.                                                   |
-| [flash.data.SQLViewSchema](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLViewSchema.html)       | Provides information describing a single view in a database.                                                    |
-| [flash.data.SQLIndexSchema](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLIndexSchema.html)     | Provides information describing a single column of a table or view in a database.                               |
-| [flash.data.SQLTriggerSchema](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLTriggerSchema.html) | Provides information describing a single trigger in a database.                                                 |
+| Class                                                                                                        | Description                                                                                                     |
+| ------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- |
+| [flash.data.SQLSchemaResult](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLSchemaResult.html)   | Serves as a container for database schema results generated by calling the `SQLConnection.loadSchema()` method. |
+| [flash.data.SQLTableSchema](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLTableSchema.html)     | Provides information describing a single table in a database.                                                   |
+| [flash.data.SQLViewSchema](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLViewSchema.html)       | Provides information describing a single view in a database.                                                    |
+| [flash.data.SQLIndexSchema](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLIndexSchema.html)     | Provides information describing a single column of a table or view in a database.                               |
+| [flash.data.SQLTriggerSchema](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLTriggerSchema.html) | Provides information describing a single trigger in a database.                                                 |
 
 </div>
 
@@ -215,12 +215,12 @@ SQLConnection class and the SQLColumnSchema class:
 
 <div>
 
-| Class                                                                                                                   | Description                                                                                                                                                                                          |
-| ----------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [flash.data.SQLMode](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLMode.html)                               | Defines a set of constants representing the possible values for the `openMode` parameter of the `SQLConnection.open()` and `SQLConnection.openAsync()` methods.                                      |
-| [flash.data.SQLColumnNameStyle](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLColumnNameStyle.html)         | Defines a set of constants representing the possible values for the `SQLConnection.columnNameStyle` property.                                                                                        |
-| [flash.data.SQLTransactionLockType](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLTransactionLockType.html) | Defines a set of constants representing the possible values for the option parameter of the `SQLConnection.begin()` method.                                                                          |
-| [flash.data.SQLCollationType](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLCollationType.html)             | Defines a set of constants representing the possible values for the `SQLColumnSchema.defaultCollationType` property and the `defaultCollationType` parameter of the `SQLColumnSchema()` constructor. |
+| Class                                                                                                                    | Description                                                                                                                                                                                          |
+| ------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [flash.data.SQLMode](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLMode.html)                               | Defines a set of constants representing the possible values for the `openMode` parameter of the `SQLConnection.open()` and `SQLConnection.openAsync()` methods.                                      |
+| [flash.data.SQLColumnNameStyle](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLColumnNameStyle.html)         | Defines a set of constants representing the possible values for the `SQLConnection.columnNameStyle` property.                                                                                        |
+| [flash.data.SQLTransactionLockType](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLTransactionLockType.html) | Defines a set of constants representing the possible values for the option parameter of the `SQLConnection.begin()` method.                                                                          |
+| [flash.data.SQLCollationType](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLCollationType.html)             | Defines a set of constants representing the possible values for the `SQLColumnSchema.defaultCollationType` property and the `defaultCollationType` parameter of the `SQLColumnSchema()` constructor. |
 
 </div>
 
@@ -229,11 +229,11 @@ events (and supporting constants) that you use:
 
 <div>
 
-| Class                                                                                                       | Description                                                                                                                                                                                                      |
-| ----------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [flash.events.SQLEvent](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/events/SQLEvent.html)             | Defines the events that a SQLConnection or SQLStatement instance dispatches when any of its operations execute successfully. Each operation has an associated event type constant defined in the SQLEvent class. |
-| [flash.events.SQLErrorEvent](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/events/SQLErrorEvent.html)   | Defines the event that a SQLConnection or SQLStatement instance dispatches when any of its operations results in an error.                                                                                       |
-| [flash.events.SQLUpdateEvent](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/events/SQLUpdateEvent.html) | Defines the event that a SQLConnection instances dispatches when table data in one of its connected databases changes as a result of an `INSERT`, `UPDATE`, or `DELETE` SQL statement being executed.            |
+| Class                                                                                                        | Description                                                                                                                                                                                                      |
+| ------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [flash.events.SQLEvent](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/events/SQLEvent.html)             | Defines the events that a SQLConnection or SQLStatement instance dispatches when any of its operations execute successfully. Each operation has an associated event type constant defined in the SQLEvent class. |
+| [flash.events.SQLErrorEvent](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/events/SQLErrorEvent.html)   | Defines the event that a SQLConnection or SQLStatement instance dispatches when any of its operations results in an error.                                                                                       |
+| [flash.events.SQLUpdateEvent](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/events/SQLUpdateEvent.html) | Defines the event that a SQLConnection instances dispatches when table data in one of its connected databases changes as a result of an `INSERT`, `UPDATE`, or `DELETE` SQL statement being executed.            |
 
 </div>
 
@@ -242,10 +242,10 @@ about database operation errors:
 
 <div>
 
-| Class                                                                                                             | Description                                                                                                                                                                  |
-| ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [flash.errors.SQLError](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/errors/SQLError.html)                   | Provides information about a database operation error, including the operation that was being attempted and the cause of the failure.                                        |
-| [flash.errors.SQLErrorOperation](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/errors/SQLErrorOperation.html) | Defines a set of constants representing the possible values for the SQLError class’s `operation` property, which indicates the database operation that resulted in an error. |
+| Class                                                                                                              | Description                                                                                                                                                                  |
+| ------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [flash.errors.SQLError](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/errors/SQLError.html)                   | Provides information about a database operation error, including the operation that was being attempted and the cause of the failure.                                        |
+| [flash.errors.SQLErrorOperation](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/errors/SQLErrorOperation.html) | Defines a set of constants representing the possible values for the SQLError class's `operation` property, which indicates the database operation that resulted in an error. |
 
 </div>
 
@@ -259,10 +259,10 @@ about database operation errors:
 
 <div>
 
-When you’re writing code to work with a local SQL database, you specify that
+When you're writing code to work with a local SQL database, you specify that
 database operations execution in one of two execution modes: asynchronous or
 synchronous execution mode. In general, the code examples show how to perform
-each operation in both ways, so that you can use the example that’s most
+each operation in both ways, so that you can use the example that's most
 appropriate for your needs.
 
 In asynchronous execution mode, you give the runtime an instruction and the
@@ -284,14 +284,14 @@ Conceptually, it is simpler to code operations as a single sequence of steps—a
 set of synchronous operations—rather than a set of operations split into several
 event listener methods. In addition to asynchronous database operations, Adobe
 AIR also allows you to execute database operations synchronously. In synchronous
-execution mode, operations don’t run in the background. Instead they run in the
+execution mode, operations don't run in the background. Instead they run in the
 same execution sequence as all other application code. You tell the database
 engine to perform an operation. The code then pauses at that point while the
 database engine does its work. When the operation completes, execution continues
 with the next line of your code.
 
 Whether operations execute asynchronously or synchronously is set at the
-SQLConnection level. Using a single database connection, you can’t execute some
+SQLConnection level. Using a single database connection, you can't execute some
 operations or statements synchronously and others asynchronously. You specify
 whether a SQLConnection operates in synchronous or asynchronous execution mode
 by calling a SQLConnection method to open the database. If you call
@@ -303,7 +303,7 @@ asynchronous execution mode unless you close and reopen the connection to the
 database.
 
 Each execution mode has benefits. While most aspects of each mode are similar,
-there are some differences you’ll want to keep in mind when working in each
+there are some differences you'll want to keep in mind when working in each
 mode. For more information on these topics, and suggestions for working in each
 mode, see
 [Using synchronous and asynchronous database operations](WS5b3ccc516d4fbf351e63e3d118666ade46-7d39.html).

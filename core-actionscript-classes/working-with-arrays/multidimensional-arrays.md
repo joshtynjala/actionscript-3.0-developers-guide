@@ -32,7 +32,7 @@ track task lists for each day of the week. The first array, `masterTaskList`, is
 created using the Array class constructor. Each element of the array represents
 a day of the week, with index 0 representing Monday, and index 6 representing
 Sunday. These elements can be thought of as the rows in the table. You can
-create each day’s task list by assigning an array literal to each of the seven
+create each day's task list by assigning an array literal to each of the seven
 elements that you create in the `masterTaskList` array. The array literals
 represent the columns in the table.
 
@@ -48,12 +48,12 @@ represent the columns in the table.
 You can access individual items on any of the task lists using the array access
 (`[]`) operator. The first set of brackets represents the day of the week, and
 the second set of brackets represents the task list for that day. For example,
-to retrieve the second task from Wednesday’s list, first use index 2 for
+to retrieve the second task from Wednesday's list, first use index 2 for
 Wednesday, and then use index 1 for the second task in the list.
 
     trace(masterTaskList[2][1]); // output: dentist
 
-To retrieve the first task from Sunday’s list, use index 6 for Sunday and index
+To retrieve the first task from Sunday's list, use index 6 for Sunday and index
 0 for the first task on the list.
 
     trace(masterTaskList[6][0]); // output: mow lawn

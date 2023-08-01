@@ -216,7 +216,7 @@ operating system:
 - On Mac OS: the storage directory of an application varies by AIR version:
 
   - **AIR 3.2 and earlier** - `<appData>/<appId>/Local Store/` where `<appData>`
-    is the user's “preferences folder,” typically:
+    is the user's "preferences folder," typically:
     `/Users/<user>/Library/Preferences`
 
   - **AIR 3.3 and higher** -
@@ -227,7 +227,7 @@ operating system:
 
 - On Windows: the storage directory of an application is
   `<appData>\<appId>\Local Store\` where `<appData>` is the user's CSIDL_APPDATA
-  “Special Folder,” typically:
+  "Special Folder," typically:
   `C:\Documents and Settings\<user>\Application Data`
 
 - On Linux: `<appData>/<appID>/Local Store/` where `<appData>` is
@@ -318,9 +318,9 @@ They include the following:
 
 | Registry setting            | Description                                                                                                                                                                        |
 | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| AppInstallDisabled          | Specifies that AIR application installation and uninstallation are allowed. Set to 0 for “allowed,” set to 1 for “disallowed.”                                                     |
-| UntrustedAppInstallDisabled | Specifies that installation of untrusted AIR applications (applications that do not includes a trusted certificate) is allowed. Set to 0 for “allowed,” set to 1 for “disallowed.” |
-| UpdateDisabled              | Specifies that updating the runtime is allowed, either as a background task or as part of an explicit installation. Set to 0 for “allowed,” set to 1 for “disallowed.”             |
+| AppInstallDisabled          | Specifies that AIR application installation and uninstallation are allowed. Set to 0 for "allowed," set to 1 for "disallowed."                                                     |
+| UntrustedAppInstallDisabled | Specifies that installation of untrusted AIR applications (applications that do not includes a trusted certificate) is allowed. Set to 0 for "allowed," set to 1 for "disallowed." |
+| UpdateDisabled              | Specifies that updating the runtime is allowed, either as a background task or as part of an explicit installation. Set to 0 for "allowed," set to 1 for "disallowed."             |
 
 </div>
 
@@ -341,13 +341,13 @@ More Help topics
 </div>
 
 ![](images/airLinkIndicator.png)
-[Distributing, Installing, and Running AIR applications](http://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7fcb.html "http://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7fcb.html")
+[Distributing, Installing, and Running AIR applications](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7fcb.html "https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7fcb.html")
 
 ![](images/airLinkIndicator.png)
-[Setting AIR application properties](http://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html "http://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html")
+[Setting AIR application properties](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html "https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html")
 
 ![](images/airLinkIndicator.png)
-[Digitally signing an AIR file](http://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff0.html "http://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff0.html")
+[Digitally signing an AIR file](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff0.html "https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff0.html")
 
 <div>
 

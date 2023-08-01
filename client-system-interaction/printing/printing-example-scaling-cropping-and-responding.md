@@ -14,7 +14,7 @@ The following code scales the dimensions of the `txt` display object (but not
 the green box background), and the text field ends up cropped by the dimensions
 of the specified rectangle. After printing, the text field is returned to its
 original size for display on screen. If the user cancels the print job from the
-operating system’s Print dialog box, the content in the Flash runtime changes to
+operating system's Print dialog box, the content in the Flash runtime changes to
 alert the user that the job has been canceled.
 
     package

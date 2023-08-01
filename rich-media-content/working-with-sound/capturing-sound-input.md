@@ -3,10 +3,10 @@
 <div>
 
 The Microphone class lets your application connect to a microphone or other
-sound input device on the user’s system and broadcast the input audio to that
-system’s speakers or send the audio data to a remote server, such as Flash Media
+sound input device on the user's system and broadcast the input audio to that
+system's speakers or send the audio data to a remote server, such as Flash Media
 Server. You can access the raw audio data from the microphone and record or
-process it; you can also send the audio directly to the system’s speakers or
+process it; you can also send the audio directly to the system's speakers or
 send compressed audio data to a remote server. You can use either Speex or
 Nellymoser codec for data sent to a remote server. (The Speex codec is supported
 starting with Flash Player 10 and Adobe AIR 1.5.)
@@ -26,18 +26,18 @@ as shown below:
     var mic:Microphone = Microphone.getMicrophone();
 
 Calling the `Microphone.getMicrophone()` method without a parameter returns the
-first sound input device discovered on the user’s system.
+first sound input device discovered on the user's system.
 
 A system can have more than one sound input device attached to it. Your
 application can use the `Microphone.names` property to get an array of the names
 of all available sound input devices. Then it can call the
 `Microphone.getMicrophone()` method with an `index` parameter that matches the
-index value of a device’s name in the array.
+index value of a device's name in the array.
 
 A system might not have a microphone or other sound input device attached to it.
 You can use the `Microphone.names` property or the `Microphone.getMicrophone()`
 method to check whether the user has a sound input device installed. If the user
-doesn’t have a sound input device installed, the `names` array has a length of
+doesn't have a sound input device installed, the `names` array has a length of
 zero, and the `getMicrophone()` method returns a value of `null`.
 
 When your application calls the `Microphone.getMicrophone()` method, Flash
@@ -65,8 +65,8 @@ as shown in this example:
     	}
     }
 
-The `StatusEvent.code` property will contain “Microphone.Unmuted” if access was
-allowed, or “Microphone.Muted” if access was denied.
+The `StatusEvent.code` property will contain "Microphone.Unmuted" if access was
+allowed, or "Microphone.Muted" if access was denied.
 
 The `Microphone.muted` property is set to `true` or `false` when the user allows
 or denies microphone access, respectively. However, the `muted` property is not
@@ -156,7 +156,7 @@ can only use 16 kHz.
 <div>
 
 To conserve bandwidth and processing resources, Flash Player tries to detect
-when no sound is being transmitted by a microphone. When the microphone’s
+when no sound is being transmitted by a microphone. When the microphone's
 activity level stays below the silence level threshold for a period of time,
 Flash Player stops transmitting the audio input and dispatches a simple
 ActivityEvent instead. If you use the Speex codec (available in Flash Player 10
@@ -264,7 +264,7 @@ Additional audio capabilities are available when using ActionScript with a
 streaming media server such as Flash Media Server.
 
 In particular, your application can attach a Microphone object to a NetStream
-object and transmit data directly from the user’s microphone to the server.
+object and transmit data directly from the user's microphone to the server.
 Audio data can also be streamed from the server to an application and played
 back as part of a MovieClip or by using a Video object.
 

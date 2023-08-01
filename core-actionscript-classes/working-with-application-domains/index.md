@@ -19,7 +19,7 @@ LoaderContext object to `ApplicationDomain.currentDomain`. By putting the loaded
 SWF file in the same application domain, you can access its classes directly.
 This can be useful if you are loading a SWF file that contains embedded media,
 which you can access via their associated class names, or if you want to access
-the loaded SWF file’s methods.
+the loaded SWF file's methods.
 
 The following example assumes it has access to a separate Greeter.swf file that
 defines a public method named welcome():
@@ -54,11 +54,10 @@ defines a public method named welcome():
         }
     }
 
-Also see the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/system/ApplicationDomain.html#includeExamplesSummary"
-target="_self">ApplicationDomain class example</a> of the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/system/ApplicationDomain.html#includeExamplesSummary"
-target="_self">ActionScript 3.0 Reference for the Adobe Flash Platform</a>.
+Also see the
+[ApplicationDomain class example](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/system/ApplicationDomain.html#includeExamplesSummary)
+in the
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
 Other things to keep in mind when you work with application domains include the
 following:
@@ -126,7 +125,7 @@ domain, and starts loading a SWF using that application domain:
 Usage B:  
 Add new class definitions to current class definitions. The application domain
 of module1.swf is set to the current domain (Application domain 1). This lets
-you add to the application’s current set of class definitions with new class
+you add to the application's current set of class definitions with new class
 definitions. This could be used for a run-time shared library of the main
 application. The loaded SWF is treated as a remote shared library (RSL). Use
 this technique to load RSLs by a preloader before the application starts.
@@ -141,7 +140,7 @@ domain:
     loaderB.load(new URLRequest("module1.swf"), contextB);
 
 Usage C:  
-Use the parent’s class definitions by creating a new child domain of the current
+Use the parent's class definitions by creating a new child domain of the current
 domain. The application domain of module3.swf is a child of the current domain,
 and the child uses the parent's versions of all classes. One use of this
 technique might be a module of a multiple-screen rich Internet application

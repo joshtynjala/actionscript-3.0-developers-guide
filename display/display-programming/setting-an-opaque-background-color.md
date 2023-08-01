@@ -25,7 +25,7 @@ optimize performance:
 In this case, the background color of the Shape named `myShape` is set to red
 (`0xFF0000`). Assuming the Shape instance contains a drawing of a green
 triangle, on a Stage with a white background, this would show up as a green
-triangle with red in the empty space in the Shape instance’s bounding box (the
+triangle with red in the empty space in the Shape instance's bounding box (the
 rectangle that completely encloses the Shape).
 
 <div xmlns:fn="http://www.w3.org/2005/xpath-functions"

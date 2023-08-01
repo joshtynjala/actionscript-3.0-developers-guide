@@ -65,7 +65,7 @@ milliseconds:
 
 The actual time between geolocation updates may be greater or lesser than this
 value. Any change in the update interval affects all registered listeners. If
-you don’t call the `setRequestedUpdateInterval()` method, the application
+you don't call the `setRequestedUpdateInterval()` method, the application
 receives updates based on the device's default interval.
 
 The user can prevent an application from accessing geolocation data. For

@@ -3,7 +3,7 @@
 <div>
 
 The <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Matrix.html"
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Matrix.html"
 target="_self">Matrix</a> class represents a transformation matrix that
 determines how to map points from one coordinate space to another. You can
 perform various graphical transformations on a display object by setting the
@@ -71,18 +71,17 @@ The first line sets a Matrix object to the existing transformation matrix used
 by the `myDisplayObject` display object (the `matrix` property of the
 `transformation` property of the `myDisplayObject` display object). This way,
 the Matrix class methods that you call have a cumulative effect on the display
-object’s existing position, scale, and rotation.
+object's existing position, scale, and rotation.
 
 <div>
 
 Note: The ColorTransform class is also included in the flash.geometry package.
 This class is used to set the `colorTransform` property of a Transform object.
 Since it does not apply any geometrical transformation, it is not discussed, in
-detail, here. For more information, see the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/ColorTransform.html"
-target="_self">ColorTransform</a> class in the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/ColorTransform.html"
-target="_self">ActionScript 3.0 Reference for the Adobe Flash Platform</a>.
+detail, here. For more information, see the
+[ColorTransform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/ColorTransform.html)
+class listing in the
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
 </div>
 

@@ -5,7 +5,7 @@
 Since many applications can run without building the logic to handle errors,
 developers are tempted to postpone building error handling into their
 applications. However, without error handling, an application can easily stall
-or frustrate the user if something doesn’t work as expected. ActionScript 2.0
+or frustrate the user if something doesn't work as expected. ActionScript 2.0
 has an Error class that allows you to build logic into custom functions to throw
 an exception with a specific message. Because error handling is critical for
 making a user-friendly application, ActionScript 3.0 includes an expanded
@@ -13,9 +13,8 @@ architecture for catching errors.
 
 <div>
 
-Note: While the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html"
-target="_self">ActionScript 3.0 Reference for the Adobe Flash Platform</a>
+Note: While the
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html)
 documents the exceptions thrown by many methods, it might not include all
 possible exceptions for each method. A method might throw an exception for
 syntax errors or other problems that are not noted explicitly in the method
@@ -92,9 +91,9 @@ ActionScript 3.0 includes many tools for error handling, including:
 
 <div>
 
-As long as your application doesn’t encounter a problematic condition, it can
-still run successfully if you don’t build error-handling logic into your code.
-However, if you don’t actively handle errors and your application does encounter
+As long as your application doesn't encounter a problematic condition, it can
+still run successfully if you don't build error-handling logic into your code.
+However, if you don't actively handle errors and your application does encounter
 a problem, your users will never know why your application fails when it does.
 
 There are different ways you can approach error handling in your application.

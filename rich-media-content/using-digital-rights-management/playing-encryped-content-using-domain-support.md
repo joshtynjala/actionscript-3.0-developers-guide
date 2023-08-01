@@ -19,7 +19,7 @@ To play encrypted content using Adobe Access, perform the following steps:
 
         <div>
 
-        - Obtain user’s username and password. Invoke
+        - Obtain user's username and password. Invoke
           `DRMManager.authenticate(deviceGroup.serverURL, deviceGroup.domain, username, password)`.
 
         - Obtain a cached/pre-generated authentication token and invoke
@@ -42,7 +42,7 @@ To play encrypted content using Adobe Access, perform the following steps:
 </div>
 
 To export the license for the content, any of the devices can provide the
-license’s raw bytes using the `DRMVoucher.toByteArray()` method after obtaining
+license's raw bytes using the `DRMVoucher.toByteArray()` method after obtaining
 the license from the Adobe Access License Server. Content providers typically
 limit the number of devices in a device group. If the limit is reached, you may
 need to call the `DRMManager.removeFromDeviceGroup()` method on an unused device

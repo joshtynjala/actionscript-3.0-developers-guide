@@ -12,7 +12,7 @@ The runtime classes are organized in a package structure, as in the following:
 
 - `window.runtime.flash.data.SQLDatabase`
 
-  Included in the AIR SDK is an AIRAliases.js file that provide “alias”
+  Included in the AIR SDK is an AIRAliases.js file that provide "alias"
   definitions that let you access the runtime classes with less typing. For
   example, you can access the classes listed above by simply typing the
   following:

@@ -4,7 +4,7 @@
 
 The Flash application can send a license preview request, meaning that the
 application can carry out a preview operation before asking the user to buy the
-content in order to determine whether the user’s machine actually meets all the
+content in order to determine whether the user's machine actually meets all the
 criteria required for playback. License preview refers to the client's ability
 to preview the license (to see what rights the license allows) as opposed to
 previewing the content (viewing a small portion of the content before deciding

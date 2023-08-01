@@ -47,7 +47,7 @@ then fades out.
 For content that is running in a browser, keyboard usage is restricted in
 full-screen mode. In Flash Player 9, only keyboard shortcuts that return the
 application to normal mode, such as pressing the Escape key, are supported.
-Users can’t enter text in text fields or navigate around the screen. In Flash
+Users can't enter text in text fields or navigate around the screen. In Flash
 Player 10 and later, certain non-printing keys (specifically the arrow keys,
 space, and Tab key) are supported. However, text input is still prohibited.
 

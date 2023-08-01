@@ -65,10 +65,9 @@ shows:
     }
 
 To read XML data from a socket connection, use the XMLSocket class. For more
-information, see the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/XMLSocket.html"
-target="_self">XMLSocket class</a> in the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html"
-target="_self">ActionScript 3.0 Reference for the Adobe Flash Platform</a>.
+information, see the
+[XMLSocket](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/XMLSocket.html)
+class listing in the
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
 </div>

@@ -193,7 +193,7 @@ The IK classes used to move the axle are:
 </div>
 
 For complete and detailed descriptions of these classes, see the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/fl/ik/package-detail.html"
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/fl/ik/package-detail.html"
 target="_self">ik package</a>.
 
 </div>
@@ -376,14 +376,14 @@ of their joint. If no other translation (rotation, x, or y) is enabled, the
 spring settings have no effect.
 
 Spring damping is a percent value from the default 0 (no resistance) to 100
-(heavily damped). Damping changes the amount of time between a bone’s initial
+(heavily damped). Damping changes the amount of time between a bone's initial
 movement and its return to a rest position.
 
 You can check to see if springs are enabled for an IKArmature object by checking
 its `IKArmature.springsEnabled` property. The other spring properties and
 methods belong to individual IKJoint objects. A joint can be enabled for angular
 rotation and translation along the x- and y-axes. You can position a rotational
-joint’s spring angle with `IKJoint.setSpringAngle` and a translational joint’s
+joint's spring angle with `IKJoint.setSpringAngle` and a translational joint's
 spring position with `IKJoint.setSpringPt`.
 
 This example selects a bone by name and identifies its tailJoint. The code tests
@@ -457,9 +457,9 @@ exceeded.
 
 </div>
 
-- [fl.ik package](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/fl/ik/package-detail.html)
+- [fl.ik package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/fl/ik/package-detail.html)
 
-- [Inverse kinematics](http://help.adobe.com/en_US/flash/cs/using/WS58BD3A02-DA25-488f-B534-AE5463A24833.html)
+- [Inverse kinematics](https://help.adobe.com/en_US/flash/cs/using/WS58BD3A02-DA25-488f-B534-AE5463A24833.html)
 
 <div>
 

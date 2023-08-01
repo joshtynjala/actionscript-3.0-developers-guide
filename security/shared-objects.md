@@ -4,13 +4,13 @@
 
 Flash Player provides the ability to use _shared objects_ , which are
 ActionScript objects that persist outside of a SWF file, either locally on a
-user’s file system or remotely on an RTMP server. Shared objects, like other
+user's file system or remotely on an RTMP server. Shared objects, like other
 media in Flash Player, are partitioned into security sandboxes. However, the
 sandbox model for shared objects is somewhat different, because shared objects
 are not resources that can ever be accessed across domain boundaries. Instead,
 shared objects are always retrieved from a shared object store that is
 particular to the domain of each SWF file that calls methods of the SharedObject
-class. Usually a shared object store is even more particular than a SWF file’s
+class. Usually a shared object store is even more particular than a SWF file's
 domain: by default, each SWF file uses a shared object store particular to its
 entire origin URL. For more information on shared objects, see
 [Shared objects](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d80.html).
@@ -49,25 +49,25 @@ If the calling SWF file is not from an HTTPS URL, specifying `true` for the
 `secure` parameter of the `SharedObject.getLocal()` method or the
 `SharedObject.getRemote()` method results in a SecurityError exception.
 
-The choice of a shared object store is based on a SWF file’s origin URL. This is
+The choice of a shared object store is based on a SWF file's origin URL. This is
 true even in the two situations where a SWF file does not originate from a
 simple URL: import loading and dynamic loading. Import loading refers to the
 situation where you load a SWF file with the `LoaderContext.securityDomain`
 property set to `SecurityDomain.currentDomain`. In this situation, the loaded
-SWF file will have a pseudo-URL that begins with its loading SWF file’s domain
+SWF file will have a pseudo-URL that begins with its loading SWF file's domain
 and then specifies its actual origin URL. Dynamic loading refers to the loading
 of a SWF file using the `Loader.loadBytes()` method. In this situation, the
-loaded SWF file will have a pseudo-URL that begins with its loading SWF file’s
+loaded SWF file will have a pseudo-URL that begins with its loading SWF file's
 full URL followed by an integer ID. In both the import loading and dynamic
-loading cases, a SWF file’s pseudo-URL can be examined using the
+loading cases, a SWF file's pseudo-URL can be examined using the
 `LoaderInfo.url` property. The pseudo-URL is treated exactly like a real URL for
 the purposes of choosing a shared object store. You can specify a shared object
 `localPath` parameter that uses part or all of the pseudo-URL.
 
 Users and administrators can elect to disable the use of _third-party shared
 objects_ . This is the usage of shared objects by any SWF file that is executing
-in a web browser, when that SWF file’s origin URL is from a different domain
-than the URL shown in the browser’s address bar. Users and administrators may
+in a web browser, when that SWF file's origin URL is from a different domain
+than the URL shown in the browser's address bar. Users and administrators may
 choose to disable third-party shared object usage for reasons of privacy,
 wishing to avoid cross-domain tracking. In order to avoid this restriction, you
 may wish to ensure that any SWF file using shared objects is loaded only within

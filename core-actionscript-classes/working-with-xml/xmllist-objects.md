@@ -62,9 +62,10 @@ There are a few additional methods:
 
 - `valueOf()`
 
-For details on these methods, see the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html"
-target="_self">ActionScript 3.0 Reference for the Adobe Flash Platform</a>.
+For details on these methods, see the
+[XMLList](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html)
+class listing in the
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
 For an XMLList object that contains exactly one XML element, you can use all
 properties and methods of the XML class, because an XMLList with one XML element

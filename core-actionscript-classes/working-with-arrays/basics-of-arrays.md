@@ -2,16 +2,16 @@
 
 <div>
 
-Often in programming you’ll need to work with a set of items rather than a
+Often in programming you'll need to work with a set of items rather than a
 single object. For example, in a music player application, you might want to
-have a list of songs waiting to be played. You wouldn’t want to have to create a
+have a list of songs waiting to be played. You wouldn't want to have to create a
 separate variable for each song on that list. It would be preferable to have all
 the Song objects together in a bundle, and be able to work with them as a group.
 
 An array is a programming element that acts as a container for a set of items,
 such as a list of songs. Most commonly all the items in an array are instances
 of the same class, but that is not a requirement in ActionScript. The individual
-items in an array are known as the array’s _elements_. You can think of an array
+items in an array are known as the array's _elements_. You can think of an array
 as a file drawer for variables. Variables can be added as elements in the array,
 which is like placing a folder into the file drawer. You can work with the array
 as a single variable (like carrying the whole drawer to a different location).
@@ -19,23 +19,23 @@ You can work with the variables as a group (like flipping through the folders
 one by one searching for a piece of information). You can also access them
 individually (like opening the drawer and selecting a single folder).
 
-For example, imagine you’re creating a music player application where a user can
+For example, imagine you're creating a music player application where a user can
 select multiple songs and add them to a playlist. In your ActionScript code, you
 have a method named `addSongsToPlaylist()`, which accepts a single array as a
 parameter. No matter how many songs you want to add to the list (a few, a lot,
 or even only one), you call the `addSongsToPlaylist()` method only one time,
 passing it the array containing the Song objects. Inside the
-`addSongsToPlaylist()` method, you can use a loop to go through the array’s
+`addSongsToPlaylist()` method, you can use a loop to go through the array's
 elements (the songs) one by one and actually add them to the playlist.
 
 The most common type of ActionScript array is an _indexed array_. In an indexed
 array each item is stored in a numbered slot (known as an _index_). Items are
 accessed using the number, like an address. Indexed arrays work well for most
-programming needs. The Array class is one common class that’s used to represent
+programming needs. The Array class is one common class that's used to represent
 an indexed array.
 
 Often, an indexed array is used to store multiple items of the same type
-(objects that are instances of the same class). The Array class doesn’t have any
+(objects that are instances of the same class). The Array class doesn't have any
 means for restricting the type of items it contains. The Vector class is a type
 of indexed array in which all the items in a single array are the same type.
 Using a Vector instance instead of an Array instance can also provide
@@ -81,7 +81,7 @@ Element
 A single item in an array.
 
 Index  
-The numeric “address” used to identify a single element in an indexed array.
+The numeric "address" used to identify a single element in an indexed array.
 
 Indexed array  
 The standard type of array that stores each element in a numbered position, and
@@ -95,13 +95,13 @@ Multidimensional array
 An array containing items that are arrays rather than single values.
 
 T  
-The standard convention that’s used in this documentation to represent the base
+The standard convention that's used in this documentation to represent the base
 type of a Vector instance, whatever that base type happens to be. The T
 convention is used to represent a class name, as shown in the Type parameter
-description. (“T” stands for “type,” as in “data type.”).
+description. ("T" stands for "type," as in "data type.").
 
 Type parameter  
-The syntax that’s used with the Vector class name to specify the Vector’s base
+The syntax that's used with the Vector class name to specify the Vector's base
 type (the data type of the objects that it stores). The syntax consists of a
 period (`.`), then the data type name surrounded by angle brackets (`<>`). Put
 together, it looks like this: `Vector.<T>`. In this documentation, the class

@@ -39,7 +39,7 @@ following groups:
 
   In ActionScript 3.0, all elements that appear on screen in an application are
   types of _display objects_. The flash.display package includes a <a
-  href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/DisplayObject.html"
+  href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/DisplayObject.html"
   target="_self">DisplayObject</a> class, which is a base class extended by a
   number of other classes. These different classes represent different types of
   display objects, such as vector shapes, movie clips, and text fields, to name
@@ -53,7 +53,7 @@ following groups:
   objects that are also display objects.
 
   The <a
-  href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/DisplayObjectContainer.html"
+  href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/DisplayObjectContainer.html"
   target="_self">DisplayObjectContainer</a> class is a subclass of the
   DisplayObject class. A DisplayObjectContainer object can contain multiple
   display objects in its _child_ _list_. For example, the following illustration
@@ -65,15 +65,15 @@ following groups:
   xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
   ![<Sprite containing display objects>](../../img/dp_bananaFrame.png) A.  
-  A SimpleButton object. This type of display object has different “up,” “down,”
-  and “over” states.
+  A SimpleButton object. This type of display object has different "up," "down,"
+  and "over" states.
 
   B.  
   A Bitmap object. In this case, the Bitmap object was loaded from an external
   JPEG through a Loader object.
 
   C.  
-  A Shape object. The “picture frame” contains a rounded rectangle that is drawn
+  A Shape object. The "picture frame" contains a rounded rectangle that is drawn
   in ActionScript. This Shape object has a Drop Shadow filter applied to it.
 
   D.  
@@ -110,7 +110,7 @@ images.
 Blending mode  
 A specification of how the contents of two overlapping images should interact.
 Commonly an opaque image on top of another image simply blocks the image
-underneath so that it isn’t visible at all; however, different blending modes
+underneath so that it isn't visible at all; however, different blending modes
 cause the colors of the images to blend together in different ways so the
 resulting content is some combination of the two images.
 
@@ -118,7 +118,7 @@ Display list
 The hierarchy of display objects that will be rendered as visible screen content
 by Flash Player and AIR. The Stage is the root of the display list, and all the
 display objects that are attached to the Stage or one of its children form the
-display list (even if the object isn’t actually rendered, for example if it’s
+display list (even if the object isn't actually rendered, for example if it's
 outside the boundaries of the Stage).
 
 Display object  
@@ -134,14 +134,14 @@ Main class of the SWF file
 The class that defines the behavior for the outermost display object in a SWF
 file, which conceptually is the class for the SWF file itself. For instance, in
 a SWF created in Flash authoring, the main class is the document class. It has a
-“main timeline” which contains all other timelines; the main class of the SWF
+"main timeline" which contains all other timelines; the main class of the SWF
 file is the class of which the main timeline is an instance.
 
 Masking  
 A technique of hiding from view certain parts of an image (or conversely, only
 allowing certain parts of an image to display). The portions of the mask image
 become transparent, so content underneath shows through. The term is related to
-painter’s masking tape that is used to prevent paint from being applied to
+painter's masking tape that is used to prevent paint from being applied to
 certain areas.
 
 Stage  

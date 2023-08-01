@@ -21,7 +21,7 @@ The key difference between synchronous and asynchronous execution is that in
 synchronous mode you write the code as a single series of steps. In contrast, in
 asynchronous code you register event listeners and often divide operations among
 listener methods. When a database is
-[connected in synchronous execution mode](<http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLConnection.html#open()>),
+[connected in synchronous execution mode](<https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLConnection.html#open()>),
 you can execute a series of database operations in succession within a single
 code block. The following example demonstrates this technique:
 
@@ -60,7 +60,7 @@ code block. The following example demonstrates this technique:
     conn.commit();
 
 As you can see, you call the same methods to perform database operations whether
-you’re using synchronous or asynchronous execution. The key differences between
+you're using synchronous or asynchronous execution. The key differences between
 the two approaches are executing an operation that depends on another operation
 and handling errors.
 
@@ -74,7 +74,7 @@ and handling errors.
 
 <div>
 
-When you’re using synchronous execution mode, you don’t need to write code that
+When you're using synchronous execution mode, you don't need to write code that
 listens for an event to determine when an operation completes. Instead, you can
 assume that if an operation in one line of code completes successfully,
 execution continues with the next line of code. Consequently, to perform an
@@ -130,13 +130,13 @@ demonstrates these operations:
 
 <div>
 
-In synchronous execution mode, you don’t listen for an error event to determine
+In synchronous execution mode, you don't listen for an error event to determine
 that an operation has failed. Instead, you surround any code that could trigger
 errors in a set of `try..catch..finally` code blocks. You wrap the
 error-throwing code in the `try` block. Write the actions to perform in response
 to each type of error in separate `catch` blocks. Place any code that you want
 to always execute regardless of success or failure (for example, closing a
-database connection that’s no longer needed) in a `finally` block. The following
+database connection that's no longer needed) in a `finally` block. The following
 example demonstrates using `try..catch..finally` blocks for error handling. It
 builds on the previous example by adding error handling code:
 

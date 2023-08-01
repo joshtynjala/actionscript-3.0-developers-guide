@@ -18,7 +18,7 @@ error classes:
 
   For example, you can create a new `toString()` method that formats your error
   messages in a certain way. You can also define a `lookupErrorString()` method
-  that takes an error code and retrieves the proper message based on the user’s
+  that takes an error code and retrieves the proper message based on the user's
   language preference.
 
 A specialized error class must extend the core ActionScript Error class. Here is

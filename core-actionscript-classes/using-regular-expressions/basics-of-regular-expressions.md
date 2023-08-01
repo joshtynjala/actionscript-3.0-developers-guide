@@ -9,8 +9,8 @@ digits) or to replace portions of a text value that matches a particular
 pattern.
 
 Regular expressions can be simple. For example, suppose you wanted to confirm
-that a particular string matches “ABC,” or wanted to replace every occurrence of
-“ABC” in a string with some other text. In that case, you could use the
+that a particular string matches "ABC," or wanted to replace every occurrence of
+"ABC" in a string with some other text. In that case, you could use the
 following regular expression, which defines the pattern consisting of the
 letters A, B, and C in sequence:
 

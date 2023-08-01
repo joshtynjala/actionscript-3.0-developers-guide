@@ -55,18 +55,18 @@ The NumberFormatter class formats numeric values (of type int, uint, or Number)
 according to the conventions of a specific locale.
 
 The following example shows the simplest way to format a number using the
-default formatting properties provided by the user’s operating system:
+default formatting properties provided by the user's operating system:
 
     var nf:NumberFormatter = new NumberFormatter(LocaleID.DEFAULT);
     trace(nf.formatNumber(-123456.789))
 
-The result vary based on the user’s locale settings and user preferences. For
-example, if the user’s locale is fr-FR then the formatted value would be:
+The result vary based on the user's locale settings and user preferences. For
+example, if the user's locale is fr-FR then the formatted value would be:
 
 -123.456,789
 
 If you only want to format a number for a specific locale, regardless of the
-user’s settings, set the locale name specifically. For example:
+user's settings, set the locale name specifically. For example:
 
     var nf:NumberFormatter = new NumberFormatter("de-CH");
     trace(nf.formatNumber(-123456.789));

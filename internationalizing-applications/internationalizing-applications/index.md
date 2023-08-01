@@ -32,13 +32,13 @@ More Help topics
 </div>
 
 ![](images/flashplatformLinkIndicator.png)
-[flash.globalization package](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/globalization/package-detail.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/globalization/package-detail.html")
+[flash.globalization package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/globalization/package-detail.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/globalization/package-detail.html")
 
 ![](images/flexLinkIndicator.png)
-[Localization](http://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fcf.html "http://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fcf.html")
+[Localization](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fcf.html "https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fcf.html")
 
 ![](images/airLinkIndicator.png)
-[Localizing AIR applications](http://help.adobe.com/en_US/air/build/WSB2927578-20D8-4065-99F3-00ACE6511EEE.html "http://help.adobe.com/en_US/air/build/WSB2927578-20D8-4065-99F3-00ACE6511EEE.html")
+[Localizing AIR applications](https://help.adobe.com/en_US/air/build/WSB2927578-20D8-4065-99F3-00ACE6511EEE.html "https://help.adobe.com/en_US/air/build/WSB2927578-20D8-4065-99F3-00ACE6511EEE.html")
 
 [Charles Bihis: Want to Localize your Flex/AIR Apps?](http://blogs.adobe.com/charles/2011/02/want-to-localize-your-flexair-apps-its-easy-ill-show-you-how-again.html "http://blogs.adobe.com/charles/2011/02/want-to-localize-your-flexair-apps-its-easy-ill-show-you-how-again.html")
 

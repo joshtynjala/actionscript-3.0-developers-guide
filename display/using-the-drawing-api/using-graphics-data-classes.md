@@ -4,7 +4,7 @@
 
 The enhanced drawing API includes a set of classes in the flash.display package
 that implement the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/IGraphicsData.html"
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/IGraphicsData.html"
 target="_self">IGraphicsData</a> interface. These classes act as value objects
 (data containers) that represent the drawing methods of the drawing API.
 
@@ -12,21 +12,21 @@ target="_self">IGraphicsData</a> interface. These classes act as value objects
 
 The following classes implement the IGraphicsData interface:
 
-- [GraphicsBitmapFill](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/GraphicsBitmapFill.html)
+- [GraphicsBitmapFill](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/GraphicsBitmapFill.html)
 
-- [GraphicsEndFill](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/GraphicsEndFill.html)
+- [GraphicsEndFill](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/GraphicsEndFill.html)
 
-- [GraphicsGradientFill](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/GraphicsGradientFill.html)
+- [GraphicsGradientFill](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/GraphicsGradientFill.html)
 
-- [GraphicsPath](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/GraphicsPath.html)
+- [GraphicsPath](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/GraphicsPath.html)
 
-- [GraphicsShaderFill](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/GraphicsShaderFill.html)
+- [GraphicsShaderFill](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/GraphicsShaderFill.html)
 
-- [GraphicsSolidFill](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/GraphicsSolidFill.html)
+- [GraphicsSolidFill](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/GraphicsSolidFill.html)
 
-- [GraphicsStroke](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/GraphicsStroke.html)
+- [GraphicsStroke](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/GraphicsStroke.html)
 
-- [GraphicsTrianglePath](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/GraphicsTrianglePath.html)
+- [GraphicsTrianglePath](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/GraphicsTrianglePath.html)
 
 </div>
 
@@ -109,7 +109,7 @@ represent in the flash.display.Graphics class:
 </div>
 
 In addition, the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/GraphicsPath.html"
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/GraphicsPath.html"
 target="_self">GraphicsPath class</a> has its own `GraphicsPath.moveTo()`,
 `GraphicsPath.lineTo()`, `GraphicsPath.curveTo()`, `GraphicsPath.wideLineTo()`,
 and `GraphicsPath.wideMoveTo()` utility methods to easily define those commands
@@ -124,7 +124,7 @@ or updating the commands and data values directly.
 
 <div>
 
-Once you have a collection of IGraphicsData instances, use the Graphics class’s
+Once you have a collection of IGraphicsData instances, use the Graphics class's
 `drawGraphicsData()` method to render the graphics. The `drawGraphicsData()`
 method carries out a set of drawing instructions from a vector of IGraphicsData
 instances in sequential order:
@@ -195,7 +195,7 @@ when using multiple `Graphics.lineTo()` or `Graphics.moveTo()` commands.
 <div>
 
 In addition to drawing vector content to a display object, in Flash Player 11.6
-and Adobe AIR 3.6 and later you can use the Graphics class’s
+and Adobe AIR 3.6 and later you can use the Graphics class's
 `readGraphicsData()` method to obtain a data representation of the vector
 graphics content of a display object. This can be used to create a snapshot of a
 graphic to save, copy, create a spritesheet at run time, and more.
@@ -206,7 +206,7 @@ with the `drawGraphicsData()` method.
 
 There are several limitations to reading vector graphics with the
 `readGraphicsData()` method. For more information, see the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Graphics.html#readGraphicsData()"
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Graphics.html#readGraphicsData()"
 target="_self">readGraphicsData() entry in the ActionScript Language
 Reference</a>.
 

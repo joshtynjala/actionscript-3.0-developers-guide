@@ -67,7 +67,7 @@ from another third-party library, you can return that object when `toJSON()`
 encounters your property. JSON then recurses into the third-party object. The
 encoding process flow behaves as follows:
 
-- If `toJSON()` returns an object that doesn’t evaluate to a string,
+- If `toJSON()` returns an object that doesn't evaluate to a string,
   `stringify()` recurses into that object.
 
 - If `toJSON()` returns a string, `stringify()` wraps that value in another
@@ -80,7 +80,7 @@ JSON encoding algorithm and also allows JSON to recurse into nested objects.
 The `toJSON()` method is not defined in the Object class or in most other native
 classes. Its absence tells JSON to perform its standard traversal over the
 object's public properties. If you like, you can also use `toJSON()` to expose
-your object’s private properties.
+your object's private properties.
 
 A few native classes pose challenges that the ActionScript libraries can't solve
 effectively for all use cases. For these classes, ActionScript provides a
@@ -221,10 +221,10 @@ You can override, define, or redefine `toJSON()` on any ActionScript class.
 However, most built-in ActionScript classes don't define `toJSON()`. The Object
 class does not define `toJSON` in its default prototype or declare it as a class
 member. Only a handful of native classes define the method as a prototype
-function. Thus, in most classes you can’t override `toJSON()` in the traditional
+function. Thus, in most classes you can't override `toJSON()` in the traditional
 sense.
 
-Native classes that don’t define `toJSON()` are serialized to JSON by the
+Native classes that don't define `toJSON()` are serialized to JSON by the
 internal JSON implementation. Avoid replacing this built-in functionality if
 possible. If you define a `toJSON()` member, the JSON class uses your logic
 instead of its own functionality.
@@ -239,7 +239,7 @@ instead of its own functionality.
 
 <div>
 
-Overriding `toJSON()` on the prototype is useful for changing a class’s JSON
+Overriding `toJSON()` on the prototype is useful for changing a class's JSON
 export behavior throughout an application. In some cases, though, your export
 logic might apply only to special cases under transient conditions. To
 accommodate such small-scope changes, you can use the `replacer` parameter of
@@ -295,7 +295,7 @@ returns any type:
 In this function, `k` is a key, and `v` is the value of `k`. Like `stringify()`,
 `parse()` traverses the JSON key-value pairs and applies the `reviver`
 function—if one exists—to each pair. A potential problem is the fact that the
-JSON class does not output an object’s ActionScript class name. Thus, it can be
+JSON class does not output an object's ActionScript class name. Thus, it can be
 challenging to know which type of object to revive. This problem can be
 especially troublesome when objects are nested. In designing `toJSON()`,
 `replacer`, and `reviver` functions, you can devise ways to identify the
@@ -315,7 +315,7 @@ intact.
 The following example shows a strategy for reviving objects parsed from JSON
 strings. This example defines two classes: JSONGenericDictExample and
 JSONDictionaryExtnExample. Class JSONGenericDictExample is a custom dictionary
-class. Each record contains a person’s name and birthday, as well as a unique
+class. Each record contains a person's name and birthday, as well as a unique
 ID. Each time the JSONGenericDictExample constructor is called, it adds the
 newly created object to an internal static array with a statically incrementing
 integer as its ID. Class JSONGenericDictExample also defines a `revive()` method
@@ -491,6 +491,6 @@ the stored JSONDictionaryExtnExample object from a private static array.
 
 </div>
 
-- [JSON class](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/JSON.html)
-- [The prototype object](http://help.adobe.com/en_US/as3/learn/WS5b3ccc516d4fbf351e63e3d118a9b90204-7fa3.html)
+- [JSON class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/JSON.html)
+- [The prototype object](https://help.adobe.com/en_US/as3/learn/WS5b3ccc516d4fbf351e63e3d118a9b90204-7fa3.html)
 - [ECMA-262 specification](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/)

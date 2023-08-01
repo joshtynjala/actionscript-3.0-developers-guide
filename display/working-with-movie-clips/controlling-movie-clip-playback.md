@@ -29,7 +29,7 @@ main timeline,
 
     bicycle.stop();
 
-the bicycle will not move (its animation will not play). The bicycle’s movement
+the bicycle will not move (its animation will not play). The bicycle's movement
 could start through some other user interaction. For example, if you had a
 button named `startButton`, the following code on a keyframe on the main
 timeline would make it so that clicking the button causes the animation to play:
@@ -60,7 +60,7 @@ either of these methods stops playback and moves the playhead one frame forward
 or backward, respectively.
 
 Using the `play()` method is analogous to calling `nextFrame()` every time the
-movie clip object’s `enterFrame` event is triggered. Along these lines, you
+movie clip object's `enterFrame` event is triggered. Along these lines, you
 could make the `bicycle` movie clip play backwards by creating an event listener
 for the `enterFrame` event and telling `bicycle` to go to its previous frame in
 the listener function, as follows:
@@ -84,7 +84,7 @@ In normal playback, if a movie clip contains more than a single frame, it will
 loop indefinitely when playing; that is, it will return to Frame 1 if it
 progresses past its final frame. When you use `prevFrame()` or `nextFrame()`,
 this behavior does not happen automatically (calling `prevFrame()` when the
-playhead is on Frame 1 doesn’t move the playhead to the last frame). The `if`
+playhead is on Frame 1 doesn't move the playhead to the last frame). The `if`
 condition in the example above checks to see if the playhead has progressed
 backwards to the first frame, and sets the playhead ahead to its final frame,
 effectively creating a continuous loop of the movie clip playing backwards.
@@ -110,7 +110,7 @@ The advantages of using frame labels instead of numbers are particularly evident
 when creating a complex movie clip. When the number of frames, layers, and
 tweens in an animation becomes large, consider labeling important frames with
 explanatory descriptions that represent shifts in the behavior of the movie clip
-(for example, “off,” “walking,” or “running”). This improves code readability
+(for example, "off," "walking," or "running"). This improves code readability
 and also provides flexibility, since ActionScript calls that go to a labeled
 frame are pointers to a single reference—the label—rather than a specific frame
 number. If later on you decide to move a particular segment of the animation to
@@ -190,7 +190,7 @@ a Scene object that represents the scene that is currently playing.
 
 The Scene class has several properties that give information about a scene. The
 `labels` property returns an array of FrameLabel objects representing the frame
-labels in that scene. The `name` property returns the scene’s name as a string.
+labels in that scene. The `name` property returns the scene's name as a string.
 The `numFrames` property returns an int representing the total number of frames
 in the scene.
 

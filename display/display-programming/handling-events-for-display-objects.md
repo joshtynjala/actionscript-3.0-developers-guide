@@ -31,9 +31,9 @@ For more information, see
 
 One important issue to keep in mind when working with display object events is
 the effect that event listeners can have on whether display objects are
-automatically removed from memory (garbage collected) when they’re removed from
+automatically removed from memory (garbage collected) when they're removed from
 the display list. If a display object has objects subscribed as listeners to its
-events, that display object will not be removed from memory even when it’s
+events, that display object will not be removed from memory even when it's
 removed from the display list, because it will still have references to those
 listener objects. For more information, see
 [Managing event listeners](../../core-actionscript-classes/handling-events/event-listeners.md#managing-event-listeners).

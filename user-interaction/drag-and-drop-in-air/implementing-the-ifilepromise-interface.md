@@ -49,7 +49,7 @@ functions and properties:
   be set at runtime.
 
 - `get isAsync():Boolean` — Informs the AIR runtime whether the data provider
-  object provides it’s data asynchronously or synchronously.
+  object provides it's data asynchronously or synchronously.
 
 - `close():void` — Called by the runtime when the data is fully read (or an
   error prevents further reading). You can use this function to cleanup

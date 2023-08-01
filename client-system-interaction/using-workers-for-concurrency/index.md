@@ -3,7 +3,7 @@
 <div>
 
 ActionScript workers make it possible to execute code concurrently, or in other
-words, to execute code in the background without interrupting the main code’s
+words, to execute code in the background without interrupting the main code's
 execution.
 
 The ActionScript concurrency apis are available on desktop platforms only in

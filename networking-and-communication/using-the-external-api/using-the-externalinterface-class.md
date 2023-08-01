@@ -38,7 +38,7 @@ interface communication, as follows:
 <div>
 
 Note: The `ExternalInterface.available` property reports whether the current
-container is a type that supports ExternalInterface connectivity. It doesn’t
+container is a type that supports ExternalInterface connectivity. It doesn't
 tell you if JavaScript is enabled in the current browser.
 
 </div>
@@ -93,11 +93,11 @@ Player ActiveX control to dispatch its `FlashCall` event. The specified function
 name and any parameters are serialized into an XML string by Flash Player. The
 container can access that information in the `request` property of the event
 object and use it to determine how to execute its own code. To return a value to
-ActionScript, the container code calls the ActiveX object’s `SetReturnValue()`
+ActionScript, the container code calls the ActiveX object's `SetReturnValue()`
 method, passing the result (serialized into an XML string) as a parameter of
 that method. For more information about the XML format used for this
 communication, see
-[The external API’s XML format](WS5b3ccc516d4fbf351e63e3d118a9b90204-7caf.html).
+[The external API's XML format](WS5b3ccc516d4fbf351e63e3d118a9b90204-7caf.html).
 
 Whether the container is a web browser or another ActiveX container, if the call
 fails or the container method does not specify a return value, `null` is
@@ -118,10 +118,10 @@ appropriate attribute in the `object` and `embed` tags.
 
 <div>
 
-A container can only call ActionScript code that’s in a function—no other
+A container can only call ActionScript code that's in a function—no other
 ActionScript code can be called by a container. To call an ActionScript function
 from the container application, you must do two things: register the function
-with the ExternalInterface class, and then call it from the container’s code.
+with the ExternalInterface class, and then call it from the container's code.
 
 First, you must register your ActionScript function to indicate that it should
 be made available to the container. Use the `ExternalInterface.addCallback()`
@@ -146,7 +146,7 @@ Once an ActionScript function has been registered with the ExternalInterface
 class, the container can actually call the function. How this is done varies
 according to the type of container. For example, in JavaScript code in a web
 browser, the ActionScript function is called using the registered function name
-as though it’s a method of the Flash Player browser object (that is, a method of
+as though it's a method of the Flash Player browser object (that is, a method of
 the JavaScript object representing the `object` or `embed` tag). In other words,
 parameters are passed and a result is returned as though a local function is
 being called.
@@ -167,7 +167,7 @@ serialized into an XML-formatted string. Then the call is actually performed by
 calling the `CallFunction()` method of the ActiveX control with the XML string
 as a parameter. For more information about the XML format used for this
 communication, see
-[The external API’s XML format](WS5b3ccc516d4fbf351e63e3d118a9b90204-7caf.html).
+[The external API's XML format](WS5b3ccc516d4fbf351e63e3d118a9b90204-7caf.html).
 
 In either case, the return value of the ActionScript function is passed back to
 the container code, either directly as a value when the caller is JavaScript
@@ -180,7 +180,7 @@ an ActiveX container.
 
 <div>
 
-## The external API’s XML format
+## The external API's XML format
 
 <div>
 
@@ -324,7 +324,7 @@ limited to C# applications.
 </div>
 
 When you are building your own applications using the external API with an
-ActiveX container application, you’ll probably find it convenient to write a
+ActiveX container application, you'll probably find it convenient to write a
 proxy that will perform the task of converting native function calls to the
 serialized XML format. For an example of a proxy class written in C#, see Inside
 the ExternalInterfaceProxy class.

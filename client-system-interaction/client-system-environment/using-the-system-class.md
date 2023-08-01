@@ -3,17 +3,17 @@
 <div>
 
 The System class contains methods and properties that allow you to interact with
-the user’s operating system and retrieve the current memory usage of the
+the user's operating system and retrieve the current memory usage of the
 runtime. The methods and properties of the System class also allow you to listen
 for `imeComposition` events, instruct the runtime to load external text files
-using the user’s current code page or to load them as Unicode, or set the
-contents of the user’s clipboard.
+using the user's current code page or to load them as Unicode, or set the
+contents of the user's clipboard.
 
 </div>
 
 <div>
 
-## Getting data about the user’s system at run time
+## Getting data about the user's system at run time
 
 <div>
 
@@ -57,12 +57,12 @@ interprets the text as Unicode.
 <div>
 
 The System class includes a method called `setClipboard()` that allows the Flash
-runtime to set the contents of the user’s clipboard with a specified string. For
+runtime to set the contents of the user's clipboard with a specified string. For
 security reasons, there is no `Security.getClipboard()` method, since such a
 method could potentially allow malicious sites to access the data last copied to
-the user’s clipboard.
+the user's clipboard.
 
-The following code illustrates how an error message can be copied to the user’s
+The following code illustrates how an error message can be copied to the user's
 clipboard when a security error occurs. The error message can be useful if the
 user wants to report a potential bug with an application.
 

@@ -8,7 +8,7 @@ feature, you can obtain geolocation information. This information includes the
 altitude, accuracy, heading, speed, and timestamp of the latest change in the
 location.
 
-The Geolocation class dispatches `update` events in response to the device’s
+The Geolocation class dispatches `update` events in response to the device's
 location sensor. The `update` event is a GeolocationEvent object.
 
 <div xmlns:adobe="http://www.adobe.com/saxon">
@@ -63,10 +63,10 @@ More Help topics
 </div>
 
 ![](images/flashplatformLinkIndicator.png)
-[flash.sensors.Geolocation](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/sensors/Geolocation.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/sensors/Geolocation.html")
+[flash.sensors.Geolocation](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/sensors/Geolocation.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/sensors/Geolocation.html")
 
 ![](images/flashplatformLinkIndicator.png)
-[flash.events.GeolocationEvent](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/GeolocationEvent.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/GeolocationEvent.html")
+[flash.events.GeolocationEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/GeolocationEvent.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/GeolocationEvent.html")
 
 <div>
 

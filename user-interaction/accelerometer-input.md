@@ -86,7 +86,7 @@ listed for each API entry. However the current environment at run time
 determines the availability of this feature. For example, you can compile code
 using the Accelerometer class properties for Flash Player 10.1, but you need to
 use the `Accelerometer.isSupported` property to test for the availability of the
-Accelerometer feature on the user’s device. If `Accelerometer.isSupported` is
+Accelerometer feature on the user's device. If `Accelerometer.isSupported` is
 `true` at runtime, then Accelerometer support currently exists.
 
 </div>
@@ -103,17 +103,17 @@ To use the accelerometer sensor, instantiate an Accelerometer object and
 register for `update` events it dispatches. The `update` event is an
 Accelerometer event object. The event has four properties, and each are numbers:
 
-- `accelerationX` —Acceleration along the x-axis, measured in g’s. The x-axis
+- `accelerationX` —Acceleration along the x-axis, measured in g's. The x-axis
   runs from the left to the right of the device when it is in the upright
   position. (The device is upright when the top of the device is facing up.) The
   acceleration is positive if the device moves toward the right.
 
-- `accelerationY` —Acceleration along the y-axis, measured in g’s. The y-axis
+- `accelerationY` —Acceleration along the y-axis, measured in g's. The y-axis
   runs from the bottom to the top of the device when it is in the upright
   position. (The device is upright when the top of the device is facing up.) The
   acceleration is positive if the device moves up relative to this axis.
 
-- `accelerationZ` —Acceleration along the z-axis, measured in g’s. The Z axis
+- `accelerationZ` —Acceleration along the z-axis, measured in g's. The Z axis
   runs perpendicular to the face of the device. The acceleration is positive if
   you move the device so that the face of the device points up. The acceleration
   is negative if the face of the device points towards the ground.
@@ -160,7 +160,7 @@ milliseconds:
 
 The actual time between accelerometer updates may be greater or lesser than this
 value. Any change in the update interval affects all registered listeners. If
-you don’t call the `setRequestedUpdateInterval()` method, the application
+you don't call the `setRequestedUpdateInterval()` method, the application
 receives updates based on the device's default interval.
 
 Accelerometer data has some degree of inaccuracy. You can use a moving average
@@ -217,10 +217,10 @@ More Help topics
 </div>
 
 ![](images/flashplatformLinkIndicator.png)
-[flash.sensors.Accelerometer](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/sensors/Accelerometer.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/sensors/Accelerometer.html")
+[flash.sensors.Accelerometer](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/sensors/Accelerometer.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/sensors/Accelerometer.html")
 
 ![](images/flashplatformLinkIndicator.png)
-[flash.events.AccelerometerEvent](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/AccelerometerEvent.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/AccelerometerEvent.html")
+[flash.events.AccelerometerEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/AccelerometerEvent.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/AccelerometerEvent.html")
 
 <div>
 

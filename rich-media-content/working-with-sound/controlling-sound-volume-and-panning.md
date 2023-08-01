@@ -88,8 +88,8 @@ SoundTransform object as a parameter.
 While the sound plays, the `onEnterFrame()` method executes repeatedly. The
 `onEnterFrame()` method uses the `Math.sin()` function to generate a value
 between -1 and 1, a range that corresponds to the acceptable values of the
-`SoundTransform.pan` property. The SoundTransform object’s `pan` property is set
-to the new value, and then the channel’s `soundTransform` property is set to use
+`SoundTransform.pan` property. The SoundTransform object's `pan` property is set
+to the new value, and then the channel's `soundTransform` property is set to use
 the altered SoundTransform object.
 
 To run this example, replace the filename bigSound.mp3 with the name of a local

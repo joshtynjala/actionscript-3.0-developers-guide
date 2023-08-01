@@ -34,10 +34,10 @@ has been loaded:
     }
 
 This code starts by creating a Sound object and telling it to listen for the
-`Event.ID3` event. When the sound file’s ID3 metadata is loaded, the
+`Event.ID3` event. When the sound file's ID3 metadata is loaded, the
 `onID3InfoReceived()` method is called. The target of the Event object that is
 passed to the `onID3InfoReceived()` method is the original Sound object, so the
-method then gets the Sound object’s `id3` property and then iterates through all
+method then gets the Sound object's `id3` property and then iterates through all
 of its named properties to trace their values.
 
 </div>

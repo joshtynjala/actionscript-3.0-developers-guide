@@ -8,7 +8,7 @@ and order display objects, apply filters and masks, draw vector and bitmap
 graphics, and perform three-dimensional transformations using the ActionScript
 display programming API. The primary classes used for display programming are
 part of the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/package-detail.html"
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/package-detail.html"
 target="_self">flash.display package</a>.
 
 <div>

@@ -5,9 +5,9 @@
 Filters allow you to apply a range of effects to bitmap and display objects,
 ranging from drop shadows to bevels and blurs. Each filter is defined as a
 class, so applying filters involves creating instances of filter objects, which
-is no different from constructing any other object. Once you’ve created an
+is no different from constructing any other object. Once you've created an
 instance of a filter object, it can easily be applied to a display object by
-using the object’s `filters` property, or in the case of a BitmapData object, by
+using the object's `filters` property, or in the case of a BitmapData object, by
 using the `applyFilter()` method.
 
 </div>
@@ -26,7 +26,7 @@ following code:
     var myFilter:DropShadowFilter = new DropShadowFilter();
 
 Although not shown here, the `DropShadowFilter()` constructor (like all the
-filter classes’ constructors) accepts several optional parameters that can be
+filter classes' constructors) accepts several optional parameters that can be
 used to customize the appearance of the filter effect.
 
 </div>
@@ -41,7 +41,7 @@ used to customize the appearance of the filter effect.
 
 Once you've constructed a filter object, you can apply it to a display object or
 a BitmapData object; how you apply the filter depends on the object to which
-you’re applying it.
+you're applying it.
 
 <div>
 
@@ -51,7 +51,7 @@ When you apply filter effects to a display object, you apply them through the
 `filters` property. The `filters` property of a display object is an Array
 instance, whose elements are the filter objects applied to the display object.
 To apply a single filter to a display object, create the filter instance, add it
-to an Array instance, and assign that Array object to the display object’s
+to an Array instance, and assign that Array object to the display object's
 `filters` property:
 
     import flash.display.Bitmap;
@@ -90,7 +90,7 @@ previously created display object:
     // Assign the filters array to the display object to apply the filter.
     myDisplayObject.filters = filtersArray;
 
-When you’re creating the array containing the filters, you can create it using
+When you're creating the array containing the filters, you can create it using
 the `new Array()` constructor (as shown in the previous examples) or you can use
 Array literal syntax, wrapping the filters in square brackets (`[]`). For
 instance, this line of code:
@@ -105,11 +105,11 @@ If you apply multiple filters to display objects, they are applied in a
 cumulative, sequential manner. For example, if a filters array has two elements,
 a bevel filter added first and a drop shadow filter added second, the drop
 shadow filter is applied to both the bevel filter and the display object. This
-is because of the drop shadow filter’s second position in the filters array. If
+is because of the drop shadow filter's second position in the filters array. If
 you want to apply filters in a noncumulative manner, apply each filter to a new
 copy of the display object.
 
-If you’re only assigning one or a few filters to a display object, you can
+If you're only assigning one or a few filters to a display object, you can
 create the filter instance and assign it to the object in a single statement.
 For example, the following line of code applies a blur filter to a display
 object called `myDisplayObject`:
@@ -132,7 +132,7 @@ value to the `filters` property:
 
     myDisplayObject.filters = null;
 
-If you’ve applied multiple filters to an object and want to remove only one of
+If you've applied multiple filters to an object and want to remove only one of
 the filters, you must go through several steps to change the `filters` property
 array. For more information, see
 [Potential issues for working with filters](./creating-and-applying-filters.md#potential-issues-for-working-with-filters).
@@ -144,7 +144,7 @@ array. For more information, see
 #### Applying a filter to a BitmapData object
 
 Applying a filter to a BitmapData object requires the use of the BitmapData
-object’s `applyFilter()` method:
+object's `applyFilter()` method:
 
     var rect:Rectangle = new Rectangle();
     var origin:Point = new Point();
@@ -191,7 +191,7 @@ does not change, the final image does not need updating.
 <div>
 
 There are several potential sources of confusion or trouble to keep in mind when
-you’re working with filters.
+you're working with filters.
 
 <div>
 
@@ -199,7 +199,7 @@ you’re working with filters.
 
 To apply a filter to a display object, bitmap caching must be enabled for that
 object. When you apply a filter to a display object whose `cacheAsBitmap`
-property is set to `false`, the object’s `cacheAsBitmap` property is
+property is set to `false`, the object's `cacheAsBitmap` property is
 automatically set to `true`. If you later remove all the filters from the
 display object, the `cacheAsBitmap` property is reset to the last value it was
 set to.
@@ -210,7 +210,7 @@ set to.
 
 #### Changing filters at run time
 
-If a display object already has one or more filters applied to it, you can’t
+If a display object already has one or more filters applied to it, you can't
 change the set of filters by adding additional filters to or removing filters
 from the `filters` property array. Instead, to add to or change the set of
 filters being applied, you must make your changes to a separate array, then
@@ -220,7 +220,7 @@ to be applied to the object. The simplest way to do this is to read the
 this temporary array. You then reassign this array back to the `filters`
 property of the display object. In more complex cases, you might need to keep a
 separate master array of filters. You make any changes to that master filter
-array, and reassign the master array to the display object’s `filters` property
+array, and reassign the master array to the display object's `filters` property
 after each change.
 
 </div>
@@ -263,13 +263,13 @@ when the display object is clicked, the `addFilters()` function is called. In:
 If a display object has multiple filters applied to it, and you want to remove
 one of the filters while the other filters continue to be applied to the object,
 you copy the filters into a temporary array, remove the unwanted filter from
-that array, and reassign the temporary array to the display object’s `filters`
+that array, and reassign the temporary array to the display object's `filters`
 property. Several ways to remove one or more elements from any array are
 described in
 [Retrieving values and removing array elements](../../core-actionscript-classes/working-with-arrays/indexed-arrays.md#retrieving-values-and-removing-array-elements).
 
 The most straightforward situation is to remove the top-most filter on the
-object (the last filter applied to the object). You use the Array class’s
+object (the last filter applied to the object). You use the Array class's
 `pop()` method to remove the filter from the array:
 
     // Example of removing the top-most filter from a display object
@@ -284,7 +284,7 @@ object (the last filter applied to the object). You use the Array class’s
     filteredObject.filters = tempFilters;
 
 Similarly, to remove the bottom-most filter (the first one applied to the
-object) you use the same code, substituting the Array class’s `shift()` method
+object) you use the same code, substituting the Array class's `shift()` method
 in place of the `pop()` method.
 
 To remove a filter from the middle of an array of filters (assuming that the
@@ -311,7 +311,7 @@ from a display object:
 
 <div>
 
-#### Determining a filter’s index
+#### Determining a filter's index
 
 You need to know which filter to remove from the array, so that you know the
 index of the filter. You must either know (by virtue of the way the application
@@ -410,11 +410,11 @@ applied to the display object.
         filteredObject.filters = masterFilterList;
     }
 
-In this approach (when you’re comparing a stored filter reference to the items
+In this approach (when you're comparing a stored filter reference to the items
 in the filters array to determine which filter to remove), you _must_ keep a
 separate copy of the filters array—the code does not work if you compare the
 stored filter reference to the elements in a temporary array copied from the
-display object’s `filters` property. This is because internally, when you assign
+display object's `filters` property. This is because internally, when you assign
 an array to the `filters` property, the runtime makes a copy of each filter
 object in the array. Those copies (rather than the original objects) are applied
 to the display object, and when you read the `filters` property into a temporary
@@ -429,10 +429,10 @@ comparing it to the filters in a temporary filters array, no match is found.
 
 #### Filters and object transformations
 
-No filtered region—a drop shadow, for example—outside of a display object’s
+No filtered region—a drop shadow, for example—outside of a display object's
 bounding box rectangle is considered to be part of the surface for the purposes
 of hit detection (determining if an instance overlaps or intersects with another
-instance). Because the DisplayObject class’s hit detection methods are
+instance). Because the DisplayObject class's hit detection methods are
 vector-based, you cannot perform a hit detection on the bitmap result. For
 example, if you apply a bevel filter to a button instance, hit detection is not
 available on the beveled portion of the instance.

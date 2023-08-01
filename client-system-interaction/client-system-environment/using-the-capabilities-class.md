@@ -4,17 +4,17 @@
 
 The Capabilities class allows developers to determine the environment in which
 an application is being run. Using various properties of the Capabilities class,
-you can find out the resolution of the user’s system, whether the user’s system
-supports accessibility software, and the language of the user’s operating
+you can find out the resolution of the user's system, whether the user's system
+supports accessibility software, and the language of the user's operating
 system, as well as the currently installed version of the Flash runtime.
 
 By checking the properties in the Capabilities class, you can customize your
-application to work best with the specific user’s environment. For example, by
+application to work best with the specific user's environment. For example, by
 checking the `Capabilities.screenResolutionX` and
 `Capabilities.screenResolutionY` properties, you can determine the display
-resolution the user’s system is using and decide which video size may be most
+resolution the user's system is using and decide which video size may be most
 appropriate. Or you can check the `Capabilities.hasMP3` property to see if the
-user’s system supports mp3 playback before attempting to load an external mp3
+user's system supports mp3 playback before attempting to load an external mp3
 file.
 
 The following code uses a regular expression to parse the Flash runtime version
@@ -37,7 +37,7 @@ that the client is using:
     	trace("Unable to match RegExp.");
     }
 
-If you want to send the user’s system capabilities to a server-side script so
+If you want to send the user's system capabilities to a server-side script so
 that the information can be stored in a database, you can use the following
 ActionScript code:
 

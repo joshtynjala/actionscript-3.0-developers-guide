@@ -30,7 +30,7 @@ metacharacters, with special meaning, in character classes:
 | Metacharacter | Meaning in character classes                                                                           |
 | ------------- | ------------------------------------------------------------------------------------------------------ |
 | `]`           | Defines the end of the character class.                                                                |
-| `-`           | Defines a range of characters (see the following section “Ranges of characters in character classes”). |
+| `-`           | Defines a range of characters (see the following section "Ranges of characters in character classes"). |
 | `\`           | Defines metasequences and undoes the special meaning of metacharacters.                                |
 
 </div>

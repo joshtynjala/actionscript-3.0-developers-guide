@@ -26,7 +26,7 @@ that represents the alpha channel (transparency) value of the selected pixel.
 
 Alternatively, if you simply want to change the color or transparency of a pixel
 contained within a bitmap, you can use the `setPixel()` or `setPixel32()`
-method. To set a pixel’s color, simply pass in the x, y coordinates and the
+method. To set a pixel's color, simply pass in the x, y coordinates and the
 color value to one of these methods.
 
 The following example uses `setPixel()` to draw a cross on a green BitmapData

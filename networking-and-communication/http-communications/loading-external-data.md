@@ -121,9 +121,10 @@ with one exception. The credentials passed to the `setLoginCredentialsForHost()`
 method are used for requests made in any application domain within the AIR
 application.
 
-For more information, see the URLRequestDefaults class in the
-[ActionScript 3.0 Reference for the Adobe Flash Platform](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/URLRequestDefaults.html)
-_._
+For more information, see the
+[URLRequestDefaults](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/URLRequestDefaults.html)
+class listing in the
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
 </div>
 
@@ -300,7 +301,7 @@ downloaded, the `complete` event is dispatched. By setting the URLLoader
 `dataFormat` property, you can receive the data as text, raw binary data, or as
 a URLVariables object.
 
-The `URLLoader.load()` method (and optionally the URLLoader class’s constructor)
+The `URLLoader.load()` method (and optionally the URLLoader class's constructor)
 takes a single parameter, `request`, which is a URLRequest object. A URLRequest
 object contains all of the information for a single HTTP request, such as the
 target URL, request method ( `GET` or `POST`), additional header information,
@@ -372,7 +373,7 @@ response returned.
 When you build dynamic applications, it can be useful to load data from external
 files or from server-side scripts. This lets you build dynamic applications
 without having to edit or recompile your application. For example, if you build
-a “tip of the day” application, you can write a server-side script that
+a "tip of the day" application, you can write a server-side script that
 retrieves a random tip from a database and saves it to a text file once a day.
 Then your application can load the contents of a static text file instead of
 querying the database each time.
@@ -416,7 +417,7 @@ debugging your code more difficult.
 <div>
 
 Once the data has loaded, the `complete` event is dispatched, and the contents
-of the external document are available to use in the URLLoader’s `data`
+of the external document are available to use in the URLLoader's `data`
 property, as the following code shows:
 
     function completeHandler(event)
@@ -567,10 +568,10 @@ XML methods and properties.
 <div>
 
 In addition to loading external data files, you can also use the URLVariables
-class to send variables to a server-side script and process the server’s
+class to send variables to a server-side script and process the server's
 response. This is useful, for example, if you are programming a game and want to
-send the user’s score to a server to calculate whether it should be added to the
-high scores list, or even send a user’s login information to a server for
+send the user's score to a server to calculate whether it should be added to the
+high scores list, or even send a user's login information to a server for
 validation. A server-side script can process the user name and password,
 validate it against a database, and return confirmation of whether the
 user-supplied credentials are valid.

@@ -46,7 +46,7 @@ application file in Flash (FLA) or Flex (MXML).</p></td>
 <td headers="d17e4092 "><p>com/example/programmingas3/playlist/PlayList.as</p></td>
 <td headers="d17e4095 "><p>A class
 representing a list of songs. It uses an Array to store the list, and
-manages the sorting of the list’s items..</p></td>
+manages the sorting of the list's items..</p></td>
 </tr>
 <tr class="odd">
 <td headers="d17e4092 "><p>com/example/programmingas3/playlist/Song.as</p></td>
@@ -94,8 +94,8 @@ whether the list needs to be sorted ( `_needToSort` ) and which property the
 song list is sorted by at a given time ( `_currentSort` ).
 
 As with all objects, declaring an Array instance is only half the job of
-creating an Array. Before accessing an Array instance’s properties or methods,
-it must be instantiated, which is done in the PlayList class’s constructor.
+creating an Array. Before accessing an Array instance's properties or methods,
+it must be instantiated, which is done in the PlayList class's constructor.
 
         public function PlayList()
         {
@@ -119,7 +119,7 @@ initial sort-by property.
 <div>
 
 When a user enters a new song into the application, the code in the data entry
-form calls the PlayList class’s `addSong()` method.
+form calls the PlayList class's `addSong()` method.
 
         /**
          * Adds a song to the playlist.
@@ -130,7 +130,7 @@ form calls the PlayList class’s `addSong()` method.
             this._needToSort = true;
         }
 
-Inside `addSong()`, the `_songs` array’s `push()` method is called, adding the
+Inside `addSong()`, the `_songs` array's `push()` method is called, adding the
 Song object that was passed to `addSong()` as a new element in that array. With
 the `push()` method, the new element is added to the end of the array,
 regardless of any sorting that might have been applied previously. This means
@@ -140,7 +140,7 @@ In theory, the `sortList()` method could be called immediately, removing the
 need to keep track of whether the list is sorted or not at a given time. In
 practice, however, there is no need for the list of songs to be sorted until
 immediately before it is retrieved. By deferring the sorting operation, the
-application doesn’t perform sorting that is unnecessary if, for example, several
+application doesn't perform sorting that is unnecessary if, for example, several
 songs are added to the list before it is retrieved.
 
 </div>
@@ -229,7 +229,7 @@ class in the `sortList()` method, as follows:
         }
 
 When sorting by title or artist, it makes sense to sort alphabetically, but when
-sorting by year, it’s most logical to perform a numeric sort. The `switch`
+sorting by year, it's most logical to perform a numeric sort. The `switch`
 statement is used to define the appropriate sorting option, stored in the
 variable `sortOptions`, according to the value specified in the `sortProperty`
 parameter. Here again the named enumeration members are used to distinguish
@@ -255,7 +255,7 @@ list is currently sorted.
 In addition to using an array to maintain the song list in the PlayList class,
 in this example arrays are also used in the Song class to help manage the list
 of genres to which a given song belongs. Consider this snippet from the Song
-class’s definition:
+class's definition:
 
     private var _genres:String;
 
@@ -295,7 +295,7 @@ an Array:
 The `genres` `set` accessor behaves exactly the same as the constructor; it
 accepts an Array and calls the `join()` method to convert it to a
 semicolon-separated String. The `get` accessor performs the opposite operation:
-the `_genres` variable’s `split()` method is called, splitting the String into
+the `_genres` variable's `split()` method is called, splitting the String into
 an array of values using the specified delimiter (the literal string value `";"`
 as before).
 

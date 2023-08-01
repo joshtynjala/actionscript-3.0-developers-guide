@@ -2,16 +2,16 @@
 
 <div>
 
-Because Flash runtimes dispatch pages to the operating system’s printing
+Because Flash runtimes dispatch pages to the operating system's printing
 interface, be aware of the tasks managed by Flash runtimes and the tasks managed
-by an operating system’s own printing interface. Flash runtimes can initiate a
-print job, read some of a printer’s page settings, pass the content for a print
+by an operating system's own printing interface. Flash runtimes can initiate a
+print job, read some of a printer's page settings, pass the content for a print
 job to the operating system, and verify if the user or system has canceled a
 print job. Other processes, such as displaying printer specific dialog boxes,
-canceling a spooled print job, or reporting on the printer’s status, are all
+canceling a spooled print job, or reporting on the printer's status, are all
 handled by the operating system. Flash runtimes are able to respond if there is
 a problem initiating or formatting a print job, but can report back only on
-certain properties or conditions from the operating system’s printing interface.
+certain properties or conditions from the operating system's printing interface.
 As a developer, your code needs to respond to these properties or conditions.
 
 </div>
@@ -101,7 +101,7 @@ For a working example, see
 <div>
 
 Once the user clicks OK in the Print dialog box and `PrintJob.start()` returns
-`true`, you can access the properties defined by the printer’s settings. These
+`true`, you can access the properties defined by the printer's settings. These
 settings include the paper width, paper height ( `pageHeight` and `pageWidth`),
 and content orientation on the paper. Because these are printer settings, not
 controlled by the Flash runtime, you cannot alter these settings; however, you
@@ -129,17 +129,17 @@ converts any vector graphics to bitmap images.
 You specify bitmap printing by passing a PrintJobOptions object as the third
 parameter of `PrintJob.addPage()`.
 
-For Flash Player and AIR prior to AIR 2, set the PrintJobOptions object’s
+For Flash Player and AIR prior to AIR 2, set the PrintJobOptions object's
 `printAsBitmap` parameter set to `true`, as follows:
 
     var options:PrintJobOptions = new PrintJobOptions();
     options.printAsBitmap = true;
     myPrintJob.addPage(mySprite, null, options);
 
-If you don’t specify a value for the third parameter, the print job uses the
+If you don't specify a value for the third parameter, the print job uses the
 default, which is vector printing.
 
-For AIR 2 and later, use the PrintJobOptions object’s `printMethod` property to
+For AIR 2 and later, use the PrintJobOptions object's `printMethod` property to
 specify the print method. This property accepts three values, which are defined
 as constants in the PrintMethod class:
 

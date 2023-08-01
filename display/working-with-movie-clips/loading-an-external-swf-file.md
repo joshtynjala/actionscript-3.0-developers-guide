@@ -9,7 +9,7 @@ external SWF file, your ActionScript needs to do four things:
 
 2.  Create a new Loader object.
 
-3.  Call the Loader object’s `load()` method, passing the URLRequest instance as
+3.  Call the Loader object's `load()` method, passing the URLRequest instance as
     a parameter.
 
 4.  Call the `addChild()` method on a display object container (such as the main
@@ -24,7 +24,7 @@ Ultimately, the code looks like this:
     addChild(loader);
 
 This same code can be used to load an external image file such as a JPEG, GIF,
-or PNG image, by specifying the image file’s url rather than a SWF file’s url. A
+or PNG image, by specifying the image file's url rather than a SWF file's url. A
 SWF file, unlike an image file, may contain ActionScript. Thus, although the
 process of loading a SWF file may be identical to loading an image, when loading
 an external SWF file both the SWF file doing the loading and the SWF file being
@@ -111,7 +111,7 @@ of ActionScript.
 
 </div>
 
-In the following table, “Supported functionality” refers to content running in
+In the following table, "Supported functionality" refers to content running in
 Flash Player 9 or later. Content running in Flash Player 8 or earlier can load,
 display, execute, and cross-script only ActionScript 1.0 and 2.0.
 

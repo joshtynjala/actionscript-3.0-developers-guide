@@ -27,9 +27,9 @@ current code is running) using the static `Worker.current` property.
 
 Just as the main swf runs within the primordial worker, a background worker
 executes the code of a single swf file. To use a background worker, you must
-author and compile the worker’s code as a swf file. To create the background
-worker, the parent worker needs access to that swf file’s bytes as a ByteArray
-object. You pass that ByteArray to the WorkerDomain object’s `createWorker()`
+author and compile the worker's code as a swf file. To create the background
+worker, the parent worker needs access to that swf file's bytes as a ByteArray
+object. You pass that ByteArray to the WorkerDomain object's `createWorker()`
 method to actually create the worker.
 
 There are three main ways to get the background worker swf as a ByteArray
@@ -58,7 +58,7 @@ ByteArray:
 
 The worker swf is compiled into the main swf as a ByteArray subclass named
 BgWorker_ByteClass. Creating an instance of that class gives you a ByteArray
-pre-populated with the worker swf’s bytes.
+pre-populated with the worker swf's bytes.
 
 </div>
 
@@ -88,8 +88,8 @@ domain as the main swf or included in an AIR application package.
     	// ... set up worker communication and start the worker
     }
 
-When the URLLoader finishes loading the swf file, the swf’s bytes are available
-in the URLLoader object’s `data` property ( `event.target.data` in the example).
+When the URLLoader finishes loading the swf file, the swf's bytes are available
+in the URLLoader object's `data` property ( `event.target.data` in the example).
 
 </div>
 
@@ -102,7 +102,7 @@ in the URLLoader object’s `data` property ( `event.target.data` in the example
 <div>
 
 You can use a single swf as both the main swf and the worker swf. Use the main
-display class’s `loaderInfo.bytes` property to access the swf’s bytes.
+display class's `loaderInfo.bytes` property to access the swf's bytes.
 
     // The primordial worker's main class constructor
     public function PrimordialWorkerClass()
@@ -132,9 +132,9 @@ display class’s `loaderInfo.bytes` property to access the swf’s bytes.
     }
 
 If you use this technique, use an `if` statement to branch the swf file code
-within the main class’s constructor or a method it calls. To determine whether
+within the main class's constructor or a method it calls. To determine whether
 the code is running in the main worker or the background worker, check the
-current Worker object’s `isPrimordial` property, as shown in the example.
+current Worker object's `isPrimordial` property, as shown in the example.
 
 </div>
 
@@ -144,18 +144,18 @@ current Worker object’s `isPrimordial` property, as shown in the example.
 
 <div>
 
-## Starting a worker’s execution
+## Starting a worker's execution
 
 <div>
 
 Once you have created a worker, you start its code executing by calling the
-Worker object’s `start()` method. The `start()` operation doesn’t happen
+Worker object's `start()` method. The `start()` operation doesn't happen
 immediately. To know when the worker is running, register a listener for the
-Worker object’s `workerState` event. That event is dispatched when the Worker
+Worker object's `workerState` event. That event is dispatched when the Worker
 object switches states in its lifecycle, such as when it starts executing code.
-In your `workerState` event handler, check that the Worker object’s `state`
+In your `workerState` event handler, check that the Worker object's `state`
 property is `WorkerState.RUNNING`. At that point the worker is running and its
-main class’s constructor has run. The following code listing shows an example of
+main class's constructor has run. The following code listing shows an example of
 registering for the `workerState` event and calling the `start()` method:
 
     // listen for worker state changes to know when the worker is running
@@ -184,12 +184,12 @@ registering for the `workerState` event and calling the `start()` method:
 <div>
 
 At any time you can access the set of running workers in your application using
-the WorkerDomain class’s `listWorkers()` method. This method returns the set of
+the WorkerDomain class's `listWorkers()` method. This method returns the set of
 workers whose `state` property is `WorkerState.RUNNING`, including the
-primordial worker. If a worker hasn’t been started or if its execution has
+primordial worker. If a worker hasn't been started or if its execution has
 already been stopped, it is not included.
 
-If you no longer need a worker, you can call the Worker object’s `terminate()`
+If you no longer need a worker, you can call the Worker object's `terminate()`
 method to shut down the worker and release its memory and other system
 resources.
 

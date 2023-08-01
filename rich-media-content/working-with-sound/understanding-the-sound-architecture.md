@@ -6,9 +6,9 @@ Your applications can load sound data from five main sources:
 
 - External sound files loaded at run time
 
-- Sound resources embedded within the application’s SWF file
+- Sound resources embedded within the application's SWF file
 
-- Sound data from a microphone attached to the user’s system
+- Sound data from a microphone attached to the user's system
 
 - Sound data streamed from a remote media server, such as Flash Media Server
 
@@ -27,10 +27,10 @@ technique, see
 [Working with video](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e1a.html).
 
 Using Adobe Flash Professional, you can import WAV or AIFF sound files and then
-embed them into your application’s SWF files in the mp3 format. The Flash
+embed them into your application's SWF files in the mp3 format. The Flash
 Authoring tool also lets you compress embedded sound files to reduce their file
 size, though this size reduction comes at the expense of sound quality. For more
-information see “Importing Sounds” in _Using Flash_ .
+information see "Importing Sounds" in _Using Flash_ .
 
 The ActionScript 3.0 sound architecture makes use of the following classes in
 the flash.media package.
@@ -45,7 +45,7 @@ the flash.media package.
 | flash.media.SoundMixer         | The SoundMixer class controls playback and security properties that pertain to all sounds in an application. In effect, multiple sound channels are mixed through a common SoundMixer object, so property values in the SoundMixer object will affect all SoundChannel objects that are currently playing.     |
 | flash.media.SoundTransform     | The SoundTransform class contains values that control sound volume and panning. A SoundTransform object can be applied to an individual SoundChannel object, to the global SoundMixer object, or to a Microphone object, among others.                                                                         |
 | flash.media.ID3Info            | An ID3Info object contains properties that represent ID3 metadata information that is often stored in mp3 sound files.                                                                                                                                                                                         |
-| flash.media.Microphone         | The Microphone class represents a microphone or other sound input device attached to the user’s computer. Audio input from a microphone can be routed to local speakers or sent to a remote server. The Microphone object controls the gain, sampling rate, and other characteristics of its own sound stream. |
+| flash.media.Microphone         | The Microphone class represents a microphone or other sound input device attached to the user's computer. Audio input from a microphone can be routed to local speakers or sent to a remote server. The Microphone object controls the gain, sampling rate, and other characteristics of its own sound stream. |
 | flash.media.AudioPlaybackMode  | The AudioPlaybackMode class defines constants for the `audioPlaybackMode` property of the SoundMixer class.                                                                                                                                                                                                    |
 
 </div>

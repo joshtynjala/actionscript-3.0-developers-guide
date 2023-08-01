@@ -23,7 +23,7 @@ rendering.
 - [Specifying shader input and parameter values](./specifying-shader-input-and-parameter-values.md)
 - [Using a shader](./using-a-shader.md)
 
-- [flash.display.Shader](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Shader.html)
-- [flash.filters.ShaderFilter](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filters/ShaderFilter.html)
+- [flash.display.Shader](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Shader.html)
+- [flash.filters.ShaderFilter](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filters/ShaderFilter.html)
 
 </div>

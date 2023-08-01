@@ -80,10 +80,10 @@ on Mac OS, Windows, and Linux. These properties include:
   case, the contents may not be accessible using the native path. The
   application directory is read-only.
 
-- `File.desktopDirectory` —the user’s desktop directory. If a platform does not
+- `File.desktopDirectory` —the user's desktop directory. If a platform does not
   define a desktop directory, another location on the file system is used.
 
-- `File.documentsDirectory` —the user’s documents directory. If a platform does
+- `File.documentsDirectory` —the user's documents directory. If a platform does
   not define a documents directory, another location on the file system is used.
 
 - `File.userDirectory` —the user directory. If a platform does not define a user
@@ -100,7 +100,7 @@ or user directories, `File.documentsDirectory`, `File.desktopDirectory`, and
 </div>
 
 These properties have different values on different operating systems. For
-example, Mac and Windows each have a different native path to the user’s desktop
+example, Mac and Windows each have a different native path to the user's desktop
 directory. However, the `File.desktopDirectory` property points to an
 appropriate directory path on every platform. To write applications that work
 well across platforms, use these properties as the basis for referencing other
@@ -331,11 +331,11 @@ There are different ways to set a File object to point to a directory.
 
 <div>
 
-### Pointing to the user’s home directory
+### Pointing to the user's home directory
 
 <div>
 
-You can point a File object to the user’s home directory. The following code
+You can point a File object to the user's home directory. The following code
 sets a File object to point to an AIR Test subdirectory of the home directory:
 
     var file:File = File.userDirectory.resolvePath("AIR Test");
@@ -346,7 +346,7 @@ sets a File object to point to an AIR Test subdirectory of the home directory:
 
 <div>
 
-### Pointing to the user’s documents directory
+### Pointing to the user's documents directory
 
 <div>
 
@@ -502,15 +502,15 @@ URL to access files in the application directory rather than a native path.
 
 <div>
 
-You can point a File object to the operating system’s temporary or cache
+You can point a File object to the operating system's temporary or cache
 directory using the `File.cacheDirectory` property. This directory contains
 temporary files that are not required for the application to run and will not
 cause problems or data loss for the user if they are deleted.
 
 In most operating systems the cache directory is a temporary directory. On iOS,
-the cache directory corresponds to the application library’s Caches directory.
+the cache directory corresponds to the application library's Caches directory.
 Files in this directory are not backed up to online storage, and can potentially
-be deleted by the operating system if the device’s available storage space is
+be deleted by the operating system if the device's available storage space is
 too low. For more information, see
 [Controlling file backup and caching](WS2f73111e7a180bd0-2c8d6a0213c56230816-8000.html).
 
@@ -534,7 +534,7 @@ information on mounted storage volumes (see
 <div>
 
 Note: The root of the file system is not readable on Android. A File object
-referencing the directory with the native path, “/”, is returned, but the
+referencing the directory with the native path, "/", is returned, but the
 properties of that object do not have accurate values. For example,
 `spaceAvailable` is always 0.
 
@@ -751,7 +751,7 @@ selected files. The `browseForOpenMultiple` () method dispatches a
 is of type FileListEvent, which has a `files` property that is an array of File
 objects (pointing to the selected files).
 
-For example, the following code presents the user with an “Open” dialog box in
+For example, the following code presents the user with an "Open" dialog box in
 which the user can select a file:
 
     var fileToOpen:File = File.documentsDirectory;
@@ -899,7 +899,7 @@ ability to automatically back up application files to a remote storage. In
 addition, on iOS there are restrictions on whether files can be backed up and
 also where files of different purposes can be stored.
 
-The following summarize how to comply with Apple’s guidelines for file backup
+The following summarize how to comply with Apple's guidelines for file backup
 and storage. For further information see the next sections.
 
 - To specify that a file does not need to be backed up and (iOS only) can be
@@ -912,7 +912,7 @@ and storage. For further information see the next sections.
   deleted by the operating system, save the file in one of the application
   library directories such as the application storage directory (
   `File.applicationStorageDirectory`) or the documents directory (
-  `File.documentsDirectory`). Set the File object’s `preventBackup` property to
+  `File.documentsDirectory`). Set the File object's `preventBackup` property to
   `true`. This is required by Apple for content that can be regenerated or
   downloaded again, but which is required for proper functioning of your
   application during offline use.
@@ -921,9 +921,9 @@ and storage. For further information see the next sections.
 
 #### Specifying files for backup
 
-In order to save backup space and reduce network bandwidth use, Apple’s
+In order to save backup space and reduce network bandwidth use, Apple's
 guidelines for iOS and Mac applications specify that only files that contain
-user-entered data or data that otherwise can’t be regenerated or re-downloaded
+user-entered data or data that otherwise can't be regenerated or re-downloaded
 should be designated for backup.
 
 By default all files in the application library folders are backed up. On Mac OS
@@ -936,11 +936,11 @@ directories are backed up to server storage by default.
 If you are saving a file in one of those locations that can be re-created by
 your application, you should flag the file so the operating system knows not to
 back it up. To indicate that a file should not be backed up, set the File
-object’s `preventBackup` property to `true`.
+object's `preventBackup` property to `true`.
 
 Note that on iOS, for a file in any of the application library folders, even if
-the file’s `preventBackup` property is set to `true` the file is flagged as a
-persistent file that the operating system shouldn’t delete.
+the file's `preventBackup` property is set to `true` the file is flagged as a
+persistent file that the operating system shouldn't delete.
 
 </div>
 
@@ -948,7 +948,7 @@ persistent file that the operating system shouldn’t delete.
 
 #### Controlling file caching and deletion
 
-Apple’s guidelines for iOS applications specify that as much as possible,
+Apple's guidelines for iOS applications specify that as much as possible,
 content that can be regenerated should be made available to the operating system
 to delete in case the device runs low on storage space.
 
@@ -960,14 +960,14 @@ Save files that can be regenerated by the application and are safe to delete in
 case of low storage space in the application cache directory. You access the
 cache directory using the `File.cacheDirectory` static property.
 
-On iOS the cache directory corresponds to the application’s cache directory
+On iOS the cache directory corresponds to the application's cache directory
 (\<Application Home\>/Library/Caches). On other operating systems, this
 directory is mapped to a comparable directory. For example, on Mac OS X it also
 maps to the Caches directory in the application library. On Android the cache
-directory maps to the application’s cache directory. On Windows, the cache
+directory maps to the application's cache directory. On Windows, the cache
 directory maps to the operating system temp directory. On both Android and
 Windows, this is the same directory that is accessed by a call to the File
-class’s `createTempDirectory()` and `createTempFile()` methods.
+class's `createTempDirectory()` and `createTempFile()` methods.
 
 </div>
 
@@ -1073,7 +1073,7 @@ to `true`.
 The File class includes the `isPackage` and `isSymbolicLink` properties for
 checking if a File object references a package or symbolic link.
 
-The following code iterates through the user’s desktop directory, listing
+The following code iterates through the user's desktop directory, listing
 subdirectories that are _not_ packages:
 
     var desktopNodes:Array = File.desktopDirectory.getDirectoryListing();
@@ -1085,7 +1085,7 @@ subdirectories that are _not_ packages:
     	}
     }
 
-The following code iterates through the user’s desktop directory, listing files
+The following code iterates through the user's desktop directory, listing files
 and directories that are _not_ symbolic links:
 
     var desktopNodes:Array = File.desktopDirectory.getDirectoryListing();
@@ -1099,7 +1099,7 @@ and directories that are _not_ symbolic links:
 
 The `canonicalize()` method changes the path of a symbolic link to point to the
 file or directory to which the link refers. The following code iterates through
-the user’s desktop directory, and reports the paths referenced by files that are
+the user's desktop directory, and reports the paths referenced by files that are
 symbolic links:
 
     var desktopNodes:Array = File.desktopDirectory.getDirectoryListing();
@@ -1171,7 +1171,7 @@ In AIR 2, you can open a file using the application registered by the operating
 system to open it. For example, an AIR application can open a DOC file with the
 application registered to open it. Use the `openWithDefaultApplication()` method
 of a File object to open the file. For example, the following code opens a file
-named test.doc on the user’s desktop and opens it with the default application
+named test.doc on the user's desktop and opens it with the default application
 for DOC files:
 
 <div>
@@ -1186,7 +1186,7 @@ for DOC files:
 
 <div>
 
-Note: On Linux, the file’s MIME type, not the filename extension, determines the
+Note: On Linux, the file's MIME type, not the filename extension, determines the
 default application for a file.
 
 </div>

@@ -66,7 +66,7 @@ The new print workflow consists of the following steps:
 
 <div>
 
-The `showPageSetupDialog()` method displays the operating system’s Page Setup
+The `showPageSetupDialog()` method displays the operating system's Page Setup
 dialog, if the current environment supports it. Always check the
 `supportsPageSetupDialog` property before calling this method. Here is a simple
 example:
@@ -80,8 +80,8 @@ example:
     }
 
 The method can optionally be called with a
-[](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/printing/PrintUIOptions.html)
-[PrintUIOptions class](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/printing/PrintUIOptions.html)
+[](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/printing/PrintUIOptions.html)
+[PrintUIOptions class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/printing/PrintUIOptions.html)
 property to control which options are displayed in the Page Setup dialog. The
 min and max page numbers can be set. The following example limits printing to
 the first three pages:
@@ -142,7 +142,7 @@ Here is an example of setting this property:
     myPrintJob.start();
 
 The `copies` property gets the value for the number of copies set in the
-operating system’s Print dialog. The `firstPage` and `lastPage` properties get
+operating system's Print dialog. The `firstPage` and `lastPage` properties get
 the page range. The `orientation` property gets the paper orientation setting.
 These properties can be set to override the values from the Print dialog. The
 following example sets these properties:

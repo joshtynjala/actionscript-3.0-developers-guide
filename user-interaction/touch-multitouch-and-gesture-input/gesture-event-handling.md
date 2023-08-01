@@ -4,11 +4,11 @@
 
 Handle gesture events in the same way as basic touch events. You can listen for
 a series of gesture events defined by the event type constants in the
-[TransformGestureEvent](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/TransformGestureEvent.html)
+[TransformGestureEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/TransformGestureEvent.html)
 class, the
-[GestureEvent](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/GestureEvent.html)
+[GestureEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/GestureEvent.html)
 class and the
-[PressAndTapGestureEvent](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/PressAndTapGestureEvent.html)
+[PressAndTapGestureEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/PressAndTapGestureEvent.html)
 class.
 
 <div>
@@ -200,7 +200,7 @@ gesture. Change the object again once the pan gesture is complete.
 
 <div>
 
-Note: The frequency of the update phase depends on the runtime’s environment.
+Note: The frequency of the update phase depends on the runtime's environment.
 Some operating system and hardware combinations do not relay updates at all.
 
 </div>
@@ -211,12 +211,12 @@ Some operating system and hardware combinations do not relay updates at all.
 
 <div>
 
-### Gesture phase is “all” for simple gesture events
+### Gesture phase is "all" for simple gesture events
 
 <div>
 
 Some gesture event objects do not track individual phases of the gesture event,
-and instead populate the event object’s phase property with the value all. The
+and instead populate the event object's phase property with the value all. The
 simple gestures swipe and two-finger tap do not track the event by multiple
 phases. The `phase` property of the event object for an InteractiveObject
 listening for the `gestureSwipe` or `gestureTwoFingerTap` events is always `all`

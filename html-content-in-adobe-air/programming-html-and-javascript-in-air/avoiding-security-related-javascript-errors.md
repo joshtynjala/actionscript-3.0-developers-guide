@@ -3,8 +3,8 @@
 <div>
 
 If you call code that is restricted from use in a sandbox due to these security
-restrictions, the runtime dispatches a JavaScript error: “Adobe AIR runtime
-security violation for JavaScript code in the application security sandbox.” To
+restrictions, the runtime dispatches a JavaScript error: "Adobe AIR runtime
+security violation for JavaScript code in the application security sandbox." To
 avoid this error, follow these coding practices.
 
 </div>

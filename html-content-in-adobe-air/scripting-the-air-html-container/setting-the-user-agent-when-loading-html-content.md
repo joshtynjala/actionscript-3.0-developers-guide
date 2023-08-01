@@ -11,9 +11,9 @@ passed to the `load()` method is _not_ used.
 You can set the default user agent string used by all HTMLLoader objects in an
 application domain by setting the `URLRequestDefaults.userAgent` property. The
 static
-[URLRequestDefaults](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/URLRequestDefaults.html)
+[URLRequestDefaults](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/URLRequestDefaults.html)
 properties apply as defaults for all
-[URLRequest](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/URLRequest.html)
+[URLRequest](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/URLRequest.html)
 objects, not only URLRequests used with the `load()` method of HTMLLoader
 objects. Setting the `userAgent` property of an HTMLLoader overrides the default
 `URLRequestDefaults.userAgent` setting.

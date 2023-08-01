@@ -12,7 +12,7 @@ methods that let you work with the HTML history list:
 | Class member       | Description                                                                                                                                                                                                                      |
 | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `historyLength`    | The overall length of the history list, including back and forward entries.                                                                                                                                                      |
-| `historyPosition`  | The current position in the history list. History items before this position represent “back” navigation, and items after this position represent “forward” navigation.                                                          |
+| `historyPosition`  | The current position in the history list. History items before this position represent "back" navigation, and items after this position represent "forward" navigation.                                                          |
 | `getHistoryAt()`   | Returns the URLRequest object corresponding to the history entry at the specified position in the history list.                                                                                                                  |
 | `historyBack()`    | Navigates back in the history list, if possible.                                                                                                                                                                                 |
 | `historyForward()` | Navigates forward in the history list, if possible.                                                                                                                                                                              |
@@ -21,7 +21,7 @@ methods that let you work with the HTML history list:
 </div>
 
 Items in the history list are stored as objects of type
-[HTMLHistoryItem](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/html/HTMLHistoryItem.html).
+[HTMLHistoryItem](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/html/HTMLHistoryItem.html).
 The HTMLHistoryItem class has the following properties:
 
 <div>

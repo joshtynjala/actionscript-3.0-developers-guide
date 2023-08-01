@@ -129,7 +129,7 @@ characters do not:
 
 #### The s (dotall) flag
 
-If the `s` (`dotall` or “dot all”) flag is not set, a dot (`.`) in a regular
+If the `s` (`dotall` or "dot all") flag is not set, a dot (`.`) in a regular
 expression pattern does not match a newline character (`\n`). So for the
 following example, there is no match:
 

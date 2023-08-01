@@ -211,7 +211,7 @@ tallying the score are needed. The `searchForWord()` method contains both:
     	return -1;
     }
 
-This function loops through all of the words in the dictionary. If the user’s
+This function loops through all of the words in the dictionary. If the user's
 word matches a word in the dictionary, its position in the dictionary is
 returned. The `submitWord()` method then checks the response and updates the
 score if the position is valid.

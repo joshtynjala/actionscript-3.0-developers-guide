@@ -81,7 +81,7 @@ local content using Flash. </span></td>
 <div>
 
 Each FileReference object represents a single data file on the local machine.
-The properties of the FileReference class contain information about the file’s
+The properties of the FileReference class contain information about the file's
 size, type, name, filename extension, creator, creation date, and modification
 date.
 
@@ -127,7 +127,7 @@ Once you have created a FileReference object, you can do the following:
 
 - Call the `FileReference.load()` method. This method begins loading data from a
   file selected previously using the `browse()` method. The `load()` method
-  can’t be called until the `browse()` operation completes (the user selects a
+  can't be called until the `browse()` operation completes (the user selects a
   file).
 
 - Call the `FileReference.save()` method. This method opens a dialog box and
@@ -169,7 +169,7 @@ need to put a policy file on the server containing the file if that server is
 not in the same domain as the SWF file initiating the upload or download.
 
 See
-[FileReference](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/FileReference.html).
+[FileReference](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/FileReference.html).
 
 </div>
 
@@ -197,7 +197,7 @@ in Adobe AIR in the application security sandbox
 </div>
 
 The `FileReference.load()` method returns immediately after being called, but
-the data being loaded isn’t available immediately. The FileReference object
+the data being loaded isn't available immediately. The FileReference object
 dispatches events to invoke listener methods at each step of the loading
 process.
 
@@ -217,7 +217,7 @@ process.
   the file.
 
 Once the FileReference object dispatches the complete event, the loaded data can
-be accessed as a ByteArray in the FileReference object’s `data` property.
+be accessed as a ByteArray in the FileReference object's `data` property.
 
 The following example shows how to prompt the user to select a file and then
 load the data from that file into memory:
@@ -284,7 +284,7 @@ The example code first creates the FileReference object named `fileRef` and then
 calls its `browse()` method. The `browse()` method opens a dialog box that
 prompts the user to select a file. When a file is selected, the code invokes the
 `onFileSelected()` method. This method adds listeners for the `progress` and
-`complete` events and then calls the FileReference object’s `load()` method. The
+`complete` events and then calls the FileReference object's `load()` method. The
 other handler methods in the example simply output messages to report on the
 progress of the load operation. When the loading completes, the application
 displays the contents of the loaded file using the `trace()` method.
@@ -355,8 +355,8 @@ method determines how the data is written to the file:
   file with no conversion.
 
 - If it is some other object, then the `FileReference.save()` method calls the
-  object’s `toString()` method and then saves the resulting String value to a
-  UTF-8 text file. If the object’s `toString()` method can’t be called, then an
+  object's `toString()` method and then saves the resulting String value to a
+  UTF-8 text file. If the object's `toString()` method can't be called, then an
   error is thrown.
 
 If the value of the `data` parameter is `null`, then an error is thrown.
@@ -717,7 +717,7 @@ request with the following elements:
 
 - `Content-Type` with a value of `multipart/form-data.`
 
-- `Content-Disposition` with a `name` attribute set to “ `Filedata` ” and a
+- `Content-Disposition` with a `name` attribute set to " `Filedata` " and a
   `filename` attribute set to the name of the original file. You can specify a
   custom `name` attribute by passing a value for the `uploadDataFieldName`
   parameter in the `FileReference.upload()` method.
@@ -826,7 +826,7 @@ To set the default name to currentnews.xml instead of index.xml, specify the
     fileToDownload.download(request, "currentnews.xml");
 
 Renaming a file can be useful if the server filename was not intuitive or was
-server-generated. It’s also good to explicitly specify the `defaultFileName`
+server-generated. It's also good to explicitly specify the `defaultFileName`
 parameter when you download a file using a server-side script, instead of
 downloading the file directly. For example, you need to specify the
 `defaultFileName` parameter if you have a server-side script that downloads

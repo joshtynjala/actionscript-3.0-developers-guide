@@ -103,7 +103,7 @@ For more information, see
 [Author (developer) controls](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c96.html).
 
 The `frameRate` property is a special case—any SWF file can read the `frameRate`
-property. However, only those in the Stage owner’s security sandbox (or those
+property. However, only those in the Stage owner's security sandbox (or those
 granted permission by a call to the `Security.allowDomain()` method) can change
 the property.
 

@@ -8,7 +8,7 @@ games, and is often used to add polish and useful interaction clues to other
 applications.
 
 The fundamental idea behind scripted animation is that a change needs to take
-place, and that change needs to be divided into increments over time. It’s easy
+place, and that change needs to be divided into increments over time. It's easy
 to make something repeat in ActionScript, using a common looping statement.
 However, a loop will run through all its iterations before updating the display.
 To create scripted animation, you need to write ActionScript that performs some
@@ -22,7 +22,7 @@ time, until it reaches its destination. After each move the screen would update,
 making the cross-Stage motion visible to the viewer.
 
 From a practical standpoint, it makes sense to synchronize scripted animation
-with the SWF file’s frame rate (in other words, make one animation change each
+with the SWF file's frame rate (in other words, make one animation change each
 time a new frame displays or would display), since that defines how frequently
 Flash Player or AIR updates the screen. Each display object has an `enterFrame`
 event that is dispatched according to the frame rate of the SWF file—one event
@@ -37,7 +37,7 @@ redrawn in its new location, creating motion.
 Note: Another way to perform an action repeatedly over time is to use the Timer
 class. A Timer instance triggers an event notification each time a specified
 amount of time has past. You could write code that performs animation by
-handling the Timer class’s timer event, setting the time interval to a small one
+handling the Timer class's timer event, setting the time interval to a small one
 (some fraction of a second). For more information about using the Timer class,
 see
 [Controlling time intervals](../../core-actionscript-classes/working-with-dates-and-times/controlling-time-intervals.md).
@@ -83,7 +83,7 @@ completely transparent:
 When the user clicks the circle, the function `fadeCircle()` is subscribed as a
 listener of the `enterFrame` event, meaning it begins to be called once per
 frame. That function fades `circle` by changing its `alpha` property, so once
-per frame the circle’s `alpha` decreases by .05 (5 percent) and the screen is
+per frame the circle's `alpha` decreases by .05 (5 percent) and the screen is
 updated. Eventually, when the `alpha` value is 0 ( `circle` is completely
 transparent), the `fadeCircle()` function is removed as an event listener,
 ending the animation.

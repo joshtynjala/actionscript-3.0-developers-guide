@@ -60,7 +60,7 @@ A simple analog clock example illustrates these two date and time concepts:
 
 <div>
 
-The clock example is simple, but it’s a good idea to organize even simple
+The clock example is simple, but it's a good idea to organize even simple
 applications well so you could easily expand them in the future. To that end,
 the SimpleClock application uses the SimpleClock class to handle the startup and
 time-keeping tasks, and then uses another class named AnalogClockFace to
@@ -172,7 +172,7 @@ The `AnalogClockFace.draw()` method simply draws the clock face and hands.
 <div>
 
 Most of the code in the AnalogClockFace class involves setting up the clock
-face’s display elements. When the AnalogClockFace is initialized, it draws a
+face's display elements. When the AnalogClockFace is initialized, it draws a
 circular outline, places a numeric text label at each hour mark, and then
 creates three Shape objects, one each for the hour hand, the minute hand, and
 the second hand on the clock.
@@ -190,7 +190,7 @@ Once the SimpleClock application is running, it calls the
             showTime(currentTime);
         }
 
-This method saves the current time in a variable, so the time can’t change in
+This method saves the current time in a variable, so the time can't change in
 the middle of drawing the clock hands. Then it calls the `showTime()` method to
 display the hands, as the following shows:
 

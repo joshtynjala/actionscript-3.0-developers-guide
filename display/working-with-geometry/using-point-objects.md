@@ -3,7 +3,7 @@
 <div>
 
 A <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Point.html"
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Point.html"
 target="_self">Point</a> object defines a Cartesian pair of coordinates. It
 represents location in a two-dimensional coordinate system, where _x_ represents
 the horizontal axis and _y_ represents the vertical axis.

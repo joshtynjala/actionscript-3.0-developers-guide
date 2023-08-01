@@ -10,7 +10,7 @@ SWF file is used for all or part of the user interface of a desktop application.
 
 As you work on more advanced applications, you may find a need to set up
 communication between the SWF file and the container application. For instance,
-it’s common for a web page to display text or other information in HTML, and
+it's common for a web page to display text or other information in HTML, and
 include a SWF file to display dynamic visual content such as a chart or video.
 In such a case, you might want to make it so that when users click a button on
 the web page, it changes something in the SWF file. ActionScript contains a
@@ -35,12 +35,12 @@ Player. You can create a projector file using Flash Professional or the
 standalone Flash Player. Projectors are commonly used to distribute SWF files by
 CD-ROM or in similar situations where download size is not an issue and the SWF
 author wants to be certain the user will be able to run the SWF file, regardless
-of whether Flash Player is installed on the user’s computer.
+of whether Flash Player is installed on the user's computer.
 
 Proxy  
 A go-between application or code that calls code in one application (the
-“external application”) on behalf of another application (the “calling
-application”), and returns values to the calling application. A proxy can be
+"external application") on behalf of another application (the "calling
+application"), and returns values to the calling application. A proxy can be
 used for various reasons, including:
 
 - To simplify the process of making external function calls by converting native
@@ -88,7 +88,7 @@ listings to interact with the container.
 5.  Deselect the HTML check box. Now that the HTML page is generated, you are
     going to modify it to add the appropriate JavaScript code. Deselecting the
     HTML check box ensures that after you modify the HTML page, Flash will not
-    overwrite your changes with a new HTML page when it’s publishing the SWF
+    overwrite your changes with a new HTML page when it's publishing the SWF
     file.
 
 6.  Click OK to close the Publish Settings dialog box.
@@ -109,7 +109,7 @@ listings to interact with the container.
 10. Copy the ActionScript code listing into the Script pane.
 
 11. From the main menu, choose File \> Publish to update the SWF file with the
-    changes that you’ve made.
+    changes that you've made.
 
 12. Using a web browser, open the HTML page you edited to view the page and test
     communication between ActionScript and the HTML page.

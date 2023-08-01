@@ -12,6 +12,6 @@ the properties of objects that are used in other classes.
 - [Using Matrix objects](./using-matrix-objects.md)
 - [Geometry example: Applying a matrix transformation to a display object](./geometry-example-applying-a-matrix-transformation-to-a-display-object.md)
 
-- [flash.geom package](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/package-detail.html)
+- [flash.geom package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/package-detail.html)
 
 </div>

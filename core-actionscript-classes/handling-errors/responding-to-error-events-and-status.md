@@ -23,7 +23,7 @@ Error events fit into one of two categories:
   The flash.events.ErrorEvent class contains the properties and methods for
   managing errors related to networking and communication operations in a
   running application. The AsyncErrorEvent, IOErrorEvent, and SecurityErrorEvent
-  classes extend the ErrorEvent class. If you’re using the debugger version of a
+  classes extend the ErrorEvent class. If you're using the debugger version of a
   Flash runtime, a dialog box informs you at run-time of any error events
   without listener functions that the player encounters.
 
@@ -33,7 +33,7 @@ Error events fit into one of two categories:
   properties of the networking and communication classes. If a Flash runtime
   encounters a problem when reading or writing data, the value of the
   `netStatus.info.level` or `status.level` properties (depending on the class
-  object you’re using) is set to the value `"error"`. You respond to this error
+  object you're using) is set to the value `"error"`. You respond to this error
   by checking if the `level` property contains the value `"error"` in your event
   handler function.
 
@@ -52,7 +52,7 @@ The following example uses both a `try..catch` statement and error event
 handlers to display any errors detected while trying to read a local file. You
 can add more sophisticated handling code to provide a user with options or
 otherwise handle the error automatically in the places indicated by the comment
-“your error-handling code here”:
+"your error-handling code here":
 
     package
     {
@@ -130,7 +130,7 @@ the change in `level` value and track communication errors.
 
 The following example uses a `netStatusHandler()` function to test the value of
 the `level` property. If the `level` property indicates that an error has been
-encountered, the code traces the message “Video stream failed”.
+encountered, the code traces the message "Video stream failed".
 
     package
     {

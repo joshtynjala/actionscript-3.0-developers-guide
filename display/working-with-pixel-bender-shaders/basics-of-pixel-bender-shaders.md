@@ -24,7 +24,7 @@ In ActionScript, three types of effects can be easily created using a shader:
 - filter
 
 A shader can also be executed in stand-alone mode. Using stand-alone mode a
-shader’s result is accessed directly rather than pre-specifying its intended
+shader's result is accessed directly rather than pre-specifying its intended
 use. The result can be accessed as image data or as binary or number data. The
 data need not be image data at all. In this way you can give a shader a set of
 data as an input. The shader processes the data, and you can access the result
@@ -62,7 +62,7 @@ Bender source code.
 
 Shader  
 For the purposes of this document, a shader is a set of functionality written in
-the Pixel Bender language. A shader’s code creates a visual effect or performs a
+the Pixel Bender language. A shader's code creates a visual effect or performs a
 calculation. In either case, the shader returns a set of data (usually the
 pixels of an image). The shader performs the same operation on each data point,
 with the only difference being the coordinates of the output pixel.The shader is
@@ -90,7 +90,7 @@ and the same value is used throughout the shader execution.
 #### Working through the code examples
 
 You may want to test the example code listings that are provided. Testing the
-code involves running the code and viewing the results in the SWF that’s
+code involves running the code and viewing the results in the SWF that's
 created. All the examples create content using the drawing API which uses or is
 modified by the shader effect.
 
@@ -100,15 +100,15 @@ Pixel Bender Toolkit to compile the source code to a Pixel Bender bytecode file.
 Follow these steps to create the Pixel Bender bytecode file:
 
 1.  Open Adobe Pixel Bender Toolkit. If necessary, from the Build menu choose
-    “Turn on Flash Player warnings and errors.”
+    "Turn on Flash Player warnings and errors."
 
 2.  Copy the Pixel Bender code listing and paste it into the code editor pane of
     the Pixel Bender Toolkit.
 
-3.  From the File menu, choose “Export kernel filter for Flash Player.”
+3.  From the File menu, choose "Export kernel filter for Flash Player."
 
 4.  Save the Pixel Bender bytecode file in the same directory as the Flash
-    document. The file’s name should match the name specified in the example
+    document. The file's name should match the name specified in the example
     description.
 
 The ActionScript part of each example is written as a class file. To test the
@@ -117,7 +117,7 @@ example in Flash Professional:
 1.  Create an empty Flash document and save it to your computer.
 
 2.  Create a new ActionScript file and save it in the same directory as the
-    Flash document. The file’s name should match the name of the class in the
+    Flash document. The file's name should match the name of the class in the
     code listing. For instance, if the code listing defines a class named
     MyApplication, use the name MyApplication.as to save the ActionScript file.
 

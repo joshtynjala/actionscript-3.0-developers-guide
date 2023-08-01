@@ -90,7 +90,7 @@ loading code or content, it will be partitioned in a separate security sandbox.
 There are a few barriers to loading content:
 
 - By default, local SWF files (those loaded from a non-network address, such as
-  a user’s hard drive) are classified in the local-with-filesystem sandbox.
+  a user's hard drive) are classified in the local-with-filesystem sandbox.
   These files cannot load content from the network. For more information, see
   [Local sandboxes](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c8f.html).
 

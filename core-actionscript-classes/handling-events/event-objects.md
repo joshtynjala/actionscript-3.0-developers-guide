@@ -32,7 +32,7 @@ important:
 - Event object types are represented by constants and stored in the `Event.type`
   property.
 
-- Whether an event’s default behavior can be prevented is represented by a
+- Whether an event's default behavior can be prevented is represented by a
   Boolean value and stored in the `Event.cancelable` property.
 
 - Event flow information is contained in the remaining properties.
@@ -178,7 +178,7 @@ that is farthest away from the Stage as the event target.
 
 For complex SWF files, especially those in which buttons are routinely decorated
 with smaller child objects, the `target` property may not be used frequently
-because it will often point to a button’s child object instead of the button. In
+because it will often point to a button's child object instead of the button. In
 these situations, the common practice is to add event listeners to the button
 and use the `currentTarget` property because it points to the button, whereas
 the `target` property may point to a child of the button.
@@ -243,7 +243,7 @@ subclass will work properly.
 You can call either the `Event.stopPropagation()` method or the
 `Event.stopImmediatePropagation()` method to prevent an event object from
 continuing on its way through the event flow. The two methods are nearly
-identical and differ only in whether the current node’s other event listeners
+identical and differ only in whether the current node's other event listeners
 are allowed to execute:
 
 - The `Event.stopPropagation()` method prevents the event object from moving on
@@ -271,7 +271,7 @@ event. To check whether `preventDefault()` has already been called on an event
 object, call the `isDefaultPrevented()` method, which returns a value of `true`
 if the method has already been called and `false` otherwise.
 
-The `preventDefault()` method will work only if the event’s default behavior can
+The `preventDefault()` method will work only if the event's default behavior can
 be cancelled. You can check whether this is the case by referring to the API
 documentation for that event type, or by using ActionScript to examine the
 `cancelable` property of the event object.

@@ -80,7 +80,7 @@ function named _getStatus()_ . Both of these are properties of the `window`
 object of the page. Also, the `window.document` object includes a named P
 element (with the ID _p1_ ).
 
-The page loads an ActionScript file, “ASLibrary.swf,” that contains a class,
+The page loads an ActionScript file, "ASLibrary.swf," that contains a class,
 ASClass. ASClass defines a function named `accessDOM()` that simply traces the
 values of these JavaScript objects. The `accessDOM()` method takes the
 JavaScript Window object as an argument. Using this Window reference, it can
@@ -122,10 +122,10 @@ More Help topics
 </div>
 
 ![](images/airLinkIndicator.png)
-[Specifying the required AIR version](http://help.adobe.com/en_US/air/build/WSe3d2d52902616553396777a311d6a2e014f-8000.html "http://help.adobe.com/en_US/air/build/WSe3d2d52902616553396777a311d6a2e014f-8000.html")
+[Specifying the required AIR version](https://help.adobe.com/en_US/air/build/WSe3d2d52902616553396777a311d6a2e014f-8000.html "https://help.adobe.com/en_US/air/build/WSe3d2d52902616553396777a311d6a2e014f-8000.html")
 
 ![](images/flexLinkIndicator.png)
-[Using compc, the component compiler](http://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fd2.html "http://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fd2.html")
+[Using compc, the component compiler](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fd2.html "https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fd2.html")
 
 <div>
 

@@ -19,7 +19,7 @@ need to refresh the application layout.
 Alternately, if your application only supports the portrait aspect ratio or only
 supports the landscape aspect ratio, you can turn off auto-orientation and set
 the supported aspect ratio in the AIR application descriptor. This design
-strategy provides consistent behavior and selects the “best” orientation for the
+strategy provides consistent behavior and selects the "best" orientation for the
 selected aspect ratio. For example, if you specify the landscape aspect ratio,
 the orientation chosen is appropriate for devices with landscape-mode, slide-out
 keyboards.

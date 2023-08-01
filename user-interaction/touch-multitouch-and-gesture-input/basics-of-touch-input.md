@@ -41,7 +41,7 @@ Flow of input from user to the Flash Platform runtime
 Fortunately, the ActionScript API for developing touch applications includes
 classes, methods, and properties to determine the support for touch or
 multitouch input in the runtime environment. The API you use to determine
-support for touch input are the “discovery API” for touch event handling.
+support for touch input are the "discovery API" for touch event handling.
 
 <div>
 
@@ -182,7 +182,7 @@ point of touch on a screen. Or, use the phases to track specific properties of a
 gesture, as the gesture evolves.
 
 For touch point events, track how long the user rests on a specific interactive
-object. An application can track multiple, simultaneous touch points’ phases
+object. An application can track multiple, simultaneous touch points' phases
 individually, and handle each accordingly.
 
 For a gesture, interpret specific information about the transformation of the

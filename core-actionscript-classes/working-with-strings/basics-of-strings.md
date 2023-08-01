@@ -51,7 +51,7 @@ contains no characters.
 String  
 A textual value (sequence of characters).
 
-String literal (or “literal string”)  
+String literal (or "literal string")  
 A string value written explicitly in code, written as a text value surrounded by
 double quotation marks or single quotation marks.
 

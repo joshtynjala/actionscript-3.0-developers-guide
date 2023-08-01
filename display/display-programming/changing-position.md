@@ -3,7 +3,7 @@
 <div>
 
 The most basic manipulation to any display object is positioning it on the
-screen. To set a display object’s position, change the object’s `x` and `y`
+screen. To set a display object's position, change the object's `x` and `y`
 properties.
 
     myShape.x = 17;
@@ -31,10 +31,10 @@ parent content.
 
 <div>
 
-It’s important to remember that the `x` and `y` properties always refer to the
+It's important to remember that the `x` and `y` properties always refer to the
 position of the display object relative to the 0,0 coordinate of its parent
-display object’s axes. So for a Shape instance (such as a circle) contained
-inside a Sprite instance, setting the Shape object’s `x` and `y` properties to 0
+display object's axes. So for a Shape instance (such as a circle) contained
+inside a Sprite instance, setting the Shape object's `x` and `y` properties to 0
 will place the circle at the top-left corner of the Sprite, which is not
 necessarily the top-left corner of the Stage. To position an object relative to
 the global Stage coordinates, you can use the `globalToLocal()` method of any
@@ -75,7 +75,7 @@ display object to convert coordinates from global (Stage) coordinates to local
     circle.x = targetPoint.x;
     circle.y = targetPoint.y;
 
-You can likewise use the DisplayObject class’s `localToGlobal()` method to
+You can likewise use the DisplayObject class's `localToGlobal()` method to
 convert local coordinates to Stage coordinates.
 
 </div>
@@ -91,7 +91,7 @@ convert local coordinates to Stage coordinates.
 You can let a user move display objects with mouse using two different
 techniques in ActionScript. In both cases, two mouse events are used: when the
 mouse button is pressed down, the object is told to follow the mouse cursor, and
-when it’s released, the object is told to stop following the mouse cursor.
+when it's released, the object is told to stop following the mouse cursor.
 
 <div>
 
@@ -146,7 +146,7 @@ As a consequence of the fact that only one object can be dragged at a time using
 it stops whatever object is currently being dragged.
 
 If you need to drag more than one display object, or to avoid the possibility of
-conflicts where more than one object might potentially use `startDrag()`, it’s
+conflicts where more than one object might potentially use `startDrag()`, it's
 best to use the mouse-following technique to create the dragging effect. With
 this technique, when the mouse button is pressed, a function is subscribed as a
 listener to the `mouseMove` event of the Stage. This function, which is then
@@ -214,7 +214,7 @@ of the display list, and thus always appears on top of any other content.
 
 The following code (adapted from the previous example) allows two display
 objects, a circle and a square, to be moved with the mouse. Whenever the mouse
-button is pressed over either one, that item is moved to the top of the Stage’s
+button is pressed over either one, that item is moved to the top of the Stage's
 display list, so that the dragged item always appears on top. (Code that is new
 or changed from the previous listing appears in boldface.)
 
@@ -277,9 +277,9 @@ or changed from the previous listing appears in boldface.)
     square.addEventListener(MouseEvent.MOUSE_UP, stopDragging);
 
 To extend this effect further, such as for a game where tokens or cards are
-moved among piles, you could add the dragged object to the Stage’s display list
-when it’s “picked up,” and then add it to another display list—such as the
-“pile” where it is dropped—when the mouse button is released.
+moved among piles, you could add the dragged object to the Stage's display list
+when it's "picked up," and then add it to another display list—such as the
+"pile" where it is dropped—when the mouse button is released.
 
 Finally, to enhance the effect, you could apply a drop shadow filter to the
 display object when it is clicked (when you start dragging it) and remove the

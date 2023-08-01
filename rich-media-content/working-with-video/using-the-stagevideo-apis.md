@@ -7,7 +7,7 @@ device performance. The runtime creates and maintains this mechanism; as a
 developer, your role is to configure your application to take advantage of it.
 
 To use stage video, you implement a framework of event handlers that detect when
-stage video is and isn’t available. When you receive notification that stage
+stage video is and isn't available. When you receive notification that stage
 video is available, you retrieve a StageVideo object from the
 `Stage.stageVideos` property. The runtime populates this Vector object with one
 or more StageVideo objects. You can then use one of the provided StageVideo
@@ -292,7 +292,7 @@ Reported render states include:
 Render states indicate when hardware accelerated decoding is in use, regardless
 of which class is currently playing video. Check the `StageVideoEvent.status`
 property to learn whether the necessary decoding is available. If this property
-is set to “unavailable”, the StageVideo object cannot play the video. This
+is set to "unavailable", the StageVideo object cannot play the video. This
 status requires that you immediately reattach the NetStream object to a Video
 object. Other statuses inform your application of the current rendering
 conditions.

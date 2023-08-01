@@ -49,8 +49,8 @@ The `AllowScriptAccess` parameter can have one of three possible values:
 
 - When `AllowScriptAccess` is `"never"`, the SWF file cannot communicate with
   any HTML page. Using this value has been deprecated since the release of Adobe
-  Flash CS4 Professional. It is not recommended and shouldn’t be necessary if
-  you don’t serve untrusted SWF files from your own domain. If you do need to
+  Flash CS4 Professional. It is not recommended and shouldn't be necessary if
+  you don't serve untrusted SWF files from your own domain. If you do need to
   serve untrusted SWF files, Adobe recommends that you create a distinct
   subdomain and place all untrusted content there.
 
@@ -117,18 +117,18 @@ fails if all of the following conditions apply:
 <div>
 
 For more information on outbound URL access, see the following entries in the
-_ActionScript 3.0 Reference for the Adobe Flash Platform:_
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html):
 
 - The
-  [flash.system.fscommand()](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/system/package.html#fscommand%28%29)
+  [flash.system.fscommand()](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/system/package.html#fscommand%28%29)
   function
 
 - The
-  [call()](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/external/ExternalInterface.html#call%28%29)
+  [call()](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/external/ExternalInterface.html#call%28%29)
   method of the ExternalInterface class
 
 - The
-  ` `[`flash.net.navigateToURL()`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/package.html#navigateToURL%28%29)
+  ` `[`flash.net.navigateToURL()`](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/package.html#navigateToURL%28%29)
   function
 
 </div>

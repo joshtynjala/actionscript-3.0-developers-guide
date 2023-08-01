@@ -151,7 +151,7 @@ This example uses the URLLoader utility class to retrieve text-based data from a
 remote location or a local file. The Podcast Player first creates a URLLoader
 object to get a list of RSS feeds in XML format from the playerconfig.xml file.
 Next, when the user selects a specific feed from the list, a new URLLoader
-object is created to read the RSS data from that feed’s URL.
+object is created to read the RSS data from that feed's URL.
 
 </div>
 

@@ -20,8 +20,8 @@ matrix. The matrix includes nine values:
     N    N    N
 
 When the convolution filter is applied to a certain pixel, it will look at the
-color value of the pixel itself (“P” in the example), as well as the values of
-the surrounding pixels (labeled “N” in the example). However, by setting values
+color value of the pixel itself ("P" in the example), as well as the values of
+the surrounding pixels (labeled "N" in the example). However, by setting values
 in the matrix, you specify how much priority certain pixels have in affecting
 the resulting image.
 
@@ -32,10 +32,10 @@ leave an image exactly as it was:
     0    1    0
     0    0    0
 
-The reason the image is unchanged is because the original pixel’s value has a
+The reason the image is unchanged is because the original pixel's value has a
 relative strength of 1 in determining the final pixel color, while the
-surrounding pixels’ values have relative strength of 0—meaning their colors
-don’t affect the final image.
+surrounding pixels' values have relative strength of 0—meaning their colors
+don't affect the final image.
 
 Similarly, this matrix will cause the pixels of an image to shift one pixel to
 the left:
@@ -46,7 +46,7 @@ the left:
 
 Notice that in this case, the pixel itself has no effect on the final value of
 the pixel displayed in that location on the final image—only the value of the
-pixel to the right is used to determine the pixel’s resulting value.
+pixel to the right is used to determine the pixel's resulting value.
 
 In ActionScript, you create the matrix as a combination of an Array instance
 containing the values and two properties specifying the number of rows and
@@ -78,13 +78,13 @@ the previous listing:
 
     loader.addEventListener(MouseEvent.CLICK, applyFilter);
 
-Something that isn’t obvious in this code is the effect of using values other
+Something that isn't obvious in this code is the effect of using values other
 than 1 or 0 in the matrix. For example, the same matrix, with the number 8
 instead of 1 in the right-hand position, performs the same action (shifting the
 pixels to the left). In addition, it affects the colors of the image, making
 them 8 times brighter. This is because the final pixel color values are
 calculated by multiplying the matrix values by the original pixel colors, adding
-the values together, and dividing by the value of the filter’s `divisor`
+the values together, and dividing by the value of the filter's `divisor`
 property. Notice that in the example code, the `divisor` property is set to 1.
 As a general rule, if you want the brightness of the colors to stay about the
 same as in the original image, you should make the divisor equal to the sum of
@@ -92,7 +92,7 @@ the matrix values. So with a matrix where the values add up to 8, and a divisor
 of 1, the resulting image is going to be roughly 8 times brighter than the
 original image.
 
-Although the effect of this matrix isn’t very noticeable, other matrix values
+Although the effect of this matrix isn't very noticeable, other matrix values
 can be used to create various effects. Here are several standard sets of matrix
 values for different effects using a three by three matrix:
 
@@ -122,7 +122,7 @@ values for different effects using a three by three matrix:
 
   Notice that with most of these effects, the divisor is 1. This is because the
   negative matrix values added to the positive matrix values result in 1 (or 0
-  in the case of edge detection, but the `divisor` property’s value cannot be
+  in the case of edge detection, but the `divisor` property's value cannot be
   0).
 
 </div>

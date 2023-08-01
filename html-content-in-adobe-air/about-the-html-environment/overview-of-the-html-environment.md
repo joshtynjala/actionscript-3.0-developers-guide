@@ -11,8 +11,10 @@ Sprite class, can be added to the display list of a stage like any other display
 object. The Adobe® ActionScript® 3.0 properties of the class are described in
 [Scripting the AIR HTML Container](WS5b3ccc516d4fbf351e63e3d118666ade46-7ebd.html)
 and also in the
-_[ActionScript 3.0 Reference for the Adobe Flash Platform](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html)_
-. In the Flex framework, the AIR HTMLLoader class is wrapped in a mx:HTML
+[HTMLLoader](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/html/HTMLLoader.html)
+class listing in the
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
+In the Flex framework, the AIR HTMLLoader class is wrapped in a mx:HTML
 component. The mx:HTML component extends the UIComponent class, so it can be
 used directly with other Flex containers. The JavaScript environment within the
 mx:HTML component is otherwise identical.
@@ -138,7 +140,7 @@ For more information, see
 
 AIR supports the Adobe® Acrobat® plug-in. Users must have Acrobat or Adobe®
 Reader® 8.1 (or better) to display PDF content. The HTMLLoader object provides a
-property for checking whether a user’s system can display PDF. SWF file content
+property for checking whether a user's system can display PDF. SWF file content
 can also be displayed within the HTML environment, but this capability is built
 in to AIR and does not use an external plug-in.
 

@@ -79,14 +79,14 @@ For example, this XML document contains the information about a music album:
         <lastplayed>2006-10-17-08:31</lastplayed>
     </song>
 
-Each element is distinguished by a set of _tags_ —the element’s name wrapped in
+Each element is distinguished by a set of _tags_ —the element's name wrapped in
 angle brackets (less-than and greater-than signs). The opening tag, indicating
 the start of the element, has the element name:
 
     <title>
 
 The closing tag, which marks the end of the element, has a forward slash before
-the element’s name:
+the element's name:
 
     </title>
 
@@ -99,9 +99,9 @@ is identical to this element:
 
     <lastplayed></lastplayed>
 
-In addition to the element’s content contained between the opening and closing
+In addition to the element's content contained between the opening and closing
 tags, an element can also include other values, known as _attributes_, defined
-in the element’s opening tag. For example, this XML element defines a single
+in the element's opening tag. For example, this XML element defines a single
 attribute named `length`, with the value `"4:19"`:
 
     <song length="4:19"></song>
@@ -138,8 +138,8 @@ XML-structured information. The two main classes are as follows:
   multiple children or a single-value element within a document.
 
 - XMLList: Represents a set of XML elements. An XMLList object is used when
-  there are multiple XML elements that are “siblings” (at the same level, and
-  contained by the same parent, in the XML document’s hierarchy). For instance,
+  there are multiple XML elements that are "siblings" (at the same level, and
+  contained by the same parent, in the XML document's hierarchy). For instance,
   an XMLList instance would be the easiest way to work with this set of XML
   elements (presumably contained in an XML document):
 

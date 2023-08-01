@@ -30,7 +30,7 @@ The main classes in the package include:
 
 <div>
 
-The flash.globalization package doesn’t handle resource localization. However
+The flash.globalization package doesn't handle resource localization. However
 you can use the flash.globalization locale ID as the key value for retrieving
 localized resources using other techniques. For example, you can localize
 application resources built with Flex using the ResourceManager and
@@ -87,7 +87,7 @@ are specific to the locale. This step can include tasks such as:
 
 The flash.globalization service classes all follow a similar pattern for
 identifying errors. They also share a pattern for falling back from an
-unavailable requested locale to one that the user’s operating system supports.
+unavailable requested locale to one that the user's operating system supports.
 
 The following example shows how to check for errors and fallbacks when
 instantiating service classes. Each service class has a lastOperationStatus

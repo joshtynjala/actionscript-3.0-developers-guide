@@ -112,7 +112,7 @@ The following is the code for the AIR music store:
     </mx:WindowedApplication>
 
 The StoreAPI object calls the main application to retrieve the regular album
-price, but returns “Not available” when the `getSaleAlbumPrice()` method is
+price, but returns "Not available" when the `getSaleAlbumPrice()` method is
 called. The following code defines the StoreAPI class:
 
     public class StoreAPI
@@ -138,7 +138,7 @@ called. The following code defines the StoreAPI class:
     }
 
 The following code represents an example of a PriceQuoter SWF file that reports
-the store’s price, but cannot report the sale price:
+the store's price, but cannot report the sale price:
 
     package
     {

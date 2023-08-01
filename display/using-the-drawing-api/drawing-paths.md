@@ -13,7 +13,7 @@ series of `Graphics.lineTo()`, `Graphics.curveTo()`, or `Graphics.moveTo()`
 commands for the Flash runtime to execute in a single statement.
 
 The <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/GraphicsPathCommand.html"
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/GraphicsPathCommand.html"
 target="_self">GraphicsPathCommand</a> enumeration class defines a set of
 constants that correspond to drawing commands. You pass a series of these
 constants (wrapped in a Vector instance) as a parameter for the

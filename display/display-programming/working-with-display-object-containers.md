@@ -90,7 +90,7 @@ stack, use this line of code:
 
     container.addChild(ball_A);
 
-This code effectively removes `ball_A` from its location in `container` ’s
+This code effectively removes `ball_A` from its location in `container` 's
 display list, and re-adds it to the top of the list—which has the end result of
 moving it to the top of the stack.
 
@@ -104,7 +104,7 @@ DisplayObjectContainer object:
     trace(container.getChildAt(1).name); // ball_C
     trace(container.getChildAt(2).name); // ball_B
 
-If you remove a display object from the parent container’s child list, the
+If you remove a display object from the parent container's child list, the
 higher elements on the list each move down a position in the child index. For
 example, continuing with the previous code, the following code shows how the
 display object that was at position 2 in the `container` DisplayObjectContainer
@@ -145,7 +145,7 @@ class):
 
 If you add a display object that is contained in one display object container to
 another display object container, it is removed from the first display object
-container’s child list.
+container's child list.
 
 In addition to the methods described above, the DisplayObjectContainer class
 defines several methods for working with child display objects, including the
@@ -167,11 +167,10 @@ following:
 - `swapChildrenAt()` : Swaps the front-to-back order of two display objects,
   specified by their index values.
 
-For more information, see the relevant entries in the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/DisplayObjectContainer.html"
-target="_self">ActionScript 3.0 Reference for the Adobe Flash Platform</a>
-<a href="http://www.adobe.com/go/learn_flashcs4_langref_en"
-target="_self"></a>.
+For more information, see the
+[DisplayObjectContainer](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/DisplayObjectContainer.html)
+class listing in the
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
 Recall that a display object that is off the display list—one that is not
 included in a display object container that is a child of the Stage—is known as

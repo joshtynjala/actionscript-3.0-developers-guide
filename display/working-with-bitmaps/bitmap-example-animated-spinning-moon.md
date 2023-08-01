@@ -4,7 +4,7 @@
 
 The Animated spinning moon example demonstrates techniques for working with
 Bitmap objects and bitmap image data (BitmapData objects). The example creates
-an animation of a spinning, spherical moon using a flat image of the moon’s
+an animation of a spinning, spherical moon using a flat image of the moon's
 surface as the raw image data. The following techniques are demonstrated:
 
 - Loading an external image and accessing its raw image data
@@ -50,7 +50,7 @@ moon.</p></td>
 <tr class="odd">
 <td headers="d17e20326 "><p>moonMap.png</p></td>
 <td headers="d17e20329 "><p>Image file
-containing a photograph of the moon’s surface, which is loaded and used
+containing a photograph of the moon's surface, which is loaded and used
 to create the animated, spinning moon.</p></td>
 </tr>
 </tbody>
@@ -67,7 +67,7 @@ to create the animated, spinning moon.</p></td>
 <div>
 
 The first main task this sample performs is loading an external image file,
-which is a photograph of the moon’s surface. The loading operation is handled by
+which is a photograph of the moon's surface. The loading operation is handled by
 two methods in the MoonSphere class: the `MoonSphere()` constructor, where the
 loading process is initiated, and the `imageLoadComplete()` method, which is
 called when the external image is completely loaded.
@@ -82,14 +82,14 @@ follows:
     imageLoader.load(new URLRequest("moonMap.png"));
 
 The first line declares the Loader instance named `imageLoader`. The third line
-actually starts the loading process by calling the Loader object’s `load()`
+actually starts the loading process by calling the Loader object's `load()`
 method, passing a URLRequest instance representing the URL of the image to load.
 The second line sets up the event listener that will be triggered when the image
 has completely loaded. Notice that the `addEventListener()` method is not called
-on the Loader instance itself; instead, it’s called on the Loader object’s
-`contentLoaderInfo` property. The Loader instance itself doesn’t dispatch events
+on the Loader instance itself; instead, it's called on the Loader object's
+`contentLoaderInfo` property. The Loader instance itself doesn't dispatch events
 relating to the content being loaded. Its `contentLoaderInfo` property, however,
-contains a reference to the LoaderInfo object that’s associated with the content
+contains a reference to the LoaderInfo object that's associated with the content
 being loaded into the Loader object (the external image in this case). That
 LoaderInfo object does provide several events relating to the progress and
 completion of loading the external content, including the `complete` event
@@ -97,14 +97,14 @@ completion of loading the external content, including the `complete` event
 when the image has completely loaded.
 
 While starting the external image loading is an important part of the process,
-it’s equally important to know what to do when it finishes loading. As shown in
+it's equally important to know what to do when it finishes loading. As shown in
 the code above, the `imageLoadComplete()` function is called when the image is
 loaded. That function does several things with the loaded image data, described
 subsequently. However, to use the image data, it needs to access that data. When
 a Loader object is used to load an external image, the loaded image becomes a
 Bitmap instance, which is attached as a child display object of the Loader
 object. In this case, the Loader instance is available to the event listener
-method as part of the event object that’s passed to the method as a parameter.
+method as part of the event object that's passed to the method as a parameter.
 The first lines of the `imageLoadComplete()` method are as follows:
 
     private function imageLoadComplete(event:Event):void
@@ -113,7 +113,7 @@ The first lines of the `imageLoadComplete()` method are as follows:
         ...
     }
 
-Notice that the event object parameter is named `event`, and it’s an instance of
+Notice that the event object parameter is named `event`, and it's an instance of
 the Event class. Every instance of the Event class has a `target` property,
 which refers to the object triggering the event (in this case, the LoaderInfo
 instance on which the `addEventListener()` method was called, as described
@@ -143,7 +143,7 @@ A basic definition of animation is the illusion of motion, or change, created by
 changing an image over time. In this sample, the goal is to create the illusion
 of a spherical moon rotating around its vertical axis. However, for the purposes
 of the animation, you can ignore the spherical distortion aspect of the sample.
-Consider the actual image that’s loaded and used as the source of the moon image
+Consider the actual image that's loaded and used as the source of the moon image
 data:
 
 <div xmlns:fn="http://www.w3.org/2005/xpath-functions"
@@ -154,9 +154,9 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
 </div>
 
-As you can see, the image is not one or several spheres; it’s a rectangular
+As you can see, the image is not one or several spheres; it's a rectangular
 photograph of the surface of the moon. Because the photo was taken exactly at
-the moon’s equator, the parts of the image that are closer to the top and bottom
+the moon's equator, the parts of the image that are closer to the top and bottom
 of the image are stretched and distorted. To remove the distortion from the
 image and make it appear spherical, we will use a displacement map filter, as
 described later. However, because this source image is a rectangle, to create
@@ -167,7 +167,7 @@ Notice that the image actually contains two copies of the moon surface
 photograph next to each other. This image is the source image from which image
 data is copied repeatedly to create the appearance of motion. By having two
 copies of the image next to each other, a continuous, uninterrupted scrolling
-effect can more easily be created. Let’s walk through the process of the
+effect can more easily be created. Let's walk through the process of the
 animation step-by-step to see how this works.
 
 The process actually involves two separate ActionScript objects. First, there is
@@ -202,7 +202,7 @@ call indicate several things:
 - The second parameter, a new Rectangle instance, specifies from which part of
   `textureMap` the image snapshot should be taken; in this case the snapshot is
   a rectangle starting from the top left corner of `textureMap` (indicated by
-  the first two `Rectangle()` parameters: `0, 0`) and the rectangle snapshot’s
+  the first two `Rectangle()` parameters: `0, 0`) and the rectangle snapshot's
   width and height match the `width` and `height` properties of `sphere`.
 
 - The third parameter, a new Point instance with x and y values of `0`, defines
@@ -222,7 +222,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 </div>
 
 Remember, however, that this is just the initial state of `sphere` —the first
-image content that’s copied onto `sphere`.
+image content that's copied onto `sphere`.
 
 With the source image loaded and `sphere` created, the final task performed by
 the `imageLoadComplete()` method is to set up the animation. The animation is
@@ -266,7 +266,7 @@ The code does three things:
 
         sourceX += 1;
 
-    As you’ll see, `sourceX` is used to determine the location in `textureMap`
+    As you'll see, `sourceX` is used to determine the location in `textureMap`
     from which the pixels will be copied onto `sphere` so this code has the
     effect of moving the rectangle one pixel to the right on `textureMap`. Going
     back to the visual representation, after several cycles of animation the
@@ -342,7 +342,7 @@ The code does three things:
                                 new Point(0, 0));
 
 Remember that this code is called repeatedly, every 15 milliseconds. As the
-source rectangle’s location is continuously shifted, and the pixels are copied
+source rectangle's location is continuously shifted, and the pixels are copied
 onto `sphere`, the appearance on the screen is that the moon photo image
 represented by `sphere` continuously slides. In other words, the moon appears to
 rotate continuously.
@@ -387,16 +387,16 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
 </div>
 
-Simply hiding parts of the photo using a circle-shaped mask isn’t enough to
+Simply hiding parts of the photo using a circle-shaped mask isn't enough to
 create a realistic-looking rotating-sphere effect. Because of the way the photo
-of the moon’s surface was taken, its dimensions aren’t proportional; the
+of the moon's surface was taken, its dimensions aren't proportional; the
 portions of the image that are more toward the top or bottom of the image are
 more distorted and stretched compared to the portions in the equator. To distort
-the appearance of the moon photo to make it look three-dimensional, we’ll use a
+the appearance of the moon photo to make it look three-dimensional, we'll use a
 displacement map filter.
 
 A displacement map filter is a type of filter that is used to distort an image.
-In this case, the moon photo will be “distorted” to make it look more realistic,
+In this case, the moon photo will be "distorted" to make it look more realistic,
 by squeezing the top and bottom of the image horizontally, while leaving the
 middle unchanged. Assuming the filter operates on a square-shaped portion of the
 photo, squeezing the top and bottom but not the middle will turn the square into
@@ -449,9 +449,9 @@ the actual photographic slide that can be presented through a slide projector. A
 filter can be applied directly to a BitmapData object, which would be comparable
 to drawing directly onto a photographic slide to alter the image. A filter can
 also be applied to any display object, including a Bitmap instance; this would
-be like placing a filter in front of the slide projector’s lens to distort the
+be like placing a filter in front of the slide projector's lens to distort the
 output shown on the screen (without altering the original slide at all). Because
-the raw bitmap data is accessible through a Bitmap instance’s bitmapData
+the raw bitmap data is accessible through a Bitmap instance's bitmapData
 property, the filter could have been applied directly to the raw bitmap data.
 However, in this case, it makes sense to apply the filter to the Bitmap display
 object rather than to the bitmap data.
@@ -482,7 +482,7 @@ the source image.
 
 Consequently, to use the displacement map filter to create a sphere effect, the
 sample needs the appropriate map image—one that has a gray background and a
-circle that’s filled with a gradient of a single color (red) going horizontally
+circle that's filled with a gradient of a single color (red) going horizontally
 from dark to light, as shown here:
 
 <div xmlns:fn="http://www.w3.org/2005/xpath-functions"
@@ -496,12 +496,12 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 Because only one map image and filter are used in this sample, the map image is
 only created once, in the `imageLoadComplete()` method (in other words, when the
 external image finishes loading). The map image, named `fisheyeLens`, is created
-by calling the MoonSphere class’s `createFisheyeMap()` method:
+by calling the MoonSphere class's `createFisheyeMap()` method:
 
     var fisheyeLens:BitmapData = createFisheyeMap(radius);
 
 Inside the `createFisheyeMap()` method, the map image is actually drawn one
-pixel at a time using the BitmapData class’s `setPixel()` method. The complete
+pixel at a time using the BitmapData class's `setPixel()` method. The complete
 code for the `createFisheyeMap()` method is listed here, followed by a
 step-by-step discussion of how it works:
 
@@ -569,7 +569,7 @@ loop goes through each column of the image from left to right (using the
 variable `i` to represent the horizontal position of the pixel currently being
 manipulated), while the inner loop goes through each pixel of the current column
 from top to bottom (with the variable `j` representing the vertical position of
-the current pixel). The code for the loops (with the inner loop’s contents
+the current pixel). The code for the loops (with the inner loop's contents
 omitted) is shown here:
 
     for (var i:int = 0; i < diameter; i++)

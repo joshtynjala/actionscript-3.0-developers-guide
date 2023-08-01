@@ -171,8 +171,8 @@ done when necessary and appropriate. Examples of justified uses include:
 <div>
 
 Note: AIR does not enforce proper use of the `alwaysInFront` property. However,
-if your application disrupts a user’s workflow, it is likely to be consigned to
-that same user’s trash can.
+if your application disrupts a user's workflow, it is likely to be consigned to
+that same user's trash can.
 
 </div>
 
@@ -365,7 +365,7 @@ minimized because its owner is minimized.
 
 Note: The behavior that results from maximizing an AIR window is different from
 the Mac OS X standard behavior. Rather than toggling between an
-application-defined “standard” size and the last size set by the user, AIR
+application-defined "standard" size and the last size set by the user, AIR
 windows toggle between the size last set by the application or user and the full
 usable area of the screen.
 
@@ -599,9 +599,12 @@ Like the `startResize()` method, when the `startMove()` method is called from a
 `mouseDown` event, the move process is mouse-driven and completes when the
 operating system receives a `mouseUp` event.
 
-For more information about the `startResize()` and `startMove()` methods, see
-the
-[ActionScript 3.0 Reference for the Adobe Flash Platform](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
+For more information, see the
+[`startResize()`](<https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeWindow.html#startResize()>)
+and
+[`startMove()`](<https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeWindow.html#startMove()>)
+method listings in the
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
 To move a window programmatically, set the `x`, `y`, or `bounds` properties of
 the window to the desired position. When you set the bounds, the window size and

@@ -111,7 +111,7 @@ The beginning of the program performs the following tasks:
 
 - Defines File ( `zfile`) and FileStream ( `zStream`) objects to represent the
   .zip file, and specifies the location of the .zip file from which the files
-  are extracted—a file named “HelloAIR.zip” in the desktop directory.
+  are extracted—a file named "HelloAIR.zip" in the desktop directory.
 
       // File variables for accessing .zip file
       var zfile:File = File.desktopDirectory.resolvePath("HelloAIR.zip");
@@ -241,7 +241,7 @@ name and the byte array containing the file data.
 In the previously mentioned example,
 `bytes.uncompress(CompressionAlgorithm.DEFLATE)` will work only in AIR
 applications. To get deflated data uncompressed for both AIR and Flash Player,
-invoke ByteArray’s `inflate()` function.
+invoke ByteArray's `inflate()` function.
 
 The closing braces indicate the end of the `while` loop, and of the `init()`
 method and the Flex application code, except for the `outFile()` method.

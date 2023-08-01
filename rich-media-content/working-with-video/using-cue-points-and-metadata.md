@@ -303,7 +303,7 @@ number such as 55, 77, 100, and so on.</p></td>
 <td headers="d17e33645 "><p>audiocodecid</p></td>
 <td headers="d17e33648 "><p>A string that
 indicates the audio codec (code/decode technique) that was used - for
-example “.Mp3” or “mp4a”</p></td>
+example ".Mp3" or "mp4a"</p></td>
 </tr>
 <tr class="odd">
 <td headers="d17e33645 "><p>audiodatarate</p></td>
@@ -371,7 +371,7 @@ Optional.</p></td>
 <tr class="odd">
 <td headers="d17e33645 "><p>tags</p></td>
 <td headers="d17e33648 "><p>An array of
-key-value pairs that represent the information in the “ilst” atom, which
+key-value pairs that represent the information in the "ilst" atom, which
 is the equivalent of ID3 tags for MP4 files. iTunes uses these tags. Can
 be used to display artwork, if available.</p></td>
 </tr>
@@ -385,7 +385,7 @@ sample description ID.</p></td>
 <td headers="d17e33645 "><p>videocodecid</p></td>
 <td headers="d17e33648 "><p>A string that
 is the codec version that was used to encode the video. - for example,
-“avc1” or “VP6F”</p></td>
+"avc1" or "VP6F"</p></td>
 </tr>
 <tr class="even">
 <td headers="d17e33645 "><p>videodatarate</p></td>
@@ -563,7 +563,7 @@ start time of 7695905817600 divided by a framerate of 254016000000 equals 30:30.
 </div>
 
 To see the complete raw XMP metadata, which includes the framerate, remove the
-comment identifiers (//’s) preceding the second and third `trace()` statements
+comment identifiers (//'s) preceding the second and third `trace()` statements
 at the beginning of the `onXMPData()` function.
 
 <div>

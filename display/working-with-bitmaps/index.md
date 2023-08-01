@@ -39,7 +39,7 @@ use the built-in noise functions to create textures and random noise.
 - [Bitmap example: Animated spinning moon](./bitmap-example-animated-spinning-moon.md)
 - [Asynchronous decoding of bitmap images](./asynchronous-decoding-of-bitmap-images.md)
 
-- [flash.display.Bitmap class](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Bitmap.html)
-- [flash.display.BitmapData class](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/BitmapData.html)
+- [flash.display.Bitmap class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Bitmap.html)
+- [flash.display.BitmapData class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/BitmapData.html)
 
 </div>

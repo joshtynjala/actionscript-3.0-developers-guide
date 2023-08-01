@@ -55,7 +55,7 @@ functionality.</p></td>
 <td headers="d17e12087 "><p>com/example/programmingas3/clock/AlarmEvent.as</p></td>
 <td headers="d17e12090 "><p>A custom
 event class (a subclass of flash.events.Event) which serves as the event
-object for the AlarmClock class’s
+object for the AlarmClock class's
 <samp>alarm</samp> event.</p></td>
 </tr>
 <tr class="even">
@@ -89,7 +89,7 @@ which is described in
 [Date and time example: Simple analog clock](../working-with-dates-and-times/date-and-time-example-simple-analog-clock.md).
 The AlarmClock class extends the SimpleClock class from that example by adding
 the functionality required for an alarm clock, including setting the alarm time
-and providing notification when the alarm “goes off.”
+and providing notification when the alarm "goes off."
 
 Providing notification when something happens is the job that events are made
 for. The AlarmClock class exposes the Alarm event, which other objects can
@@ -139,18 +139,18 @@ The Timer instance defined in the AlarmClock class is named `alarmTimer`. The
 AlarmClock instance, does two things with the `alarmTimer` variable. First, the
 variable is instantiated with parameters instructing the Timer instance to wait
 0 milliseconds and only trigger its timer event one time. After instantiating
-`alarmTimer`, the code calls that variable’s `addEventListener()` method to
-indicate that it wants to listen to that variable’s `timer` event. A Timer
+`alarmTimer`, the code calls that variable's `addEventListener()` method to
+indicate that it wants to listen to that variable's `timer` event. A Timer
 instance works by dispatching its `timer` event after a specified amount of time
 has passed. The AlarmClock class will need to know when the `timer` event is
 dispatched in order to set off its own alarm. By calling `addEventListener()`,
 the AlarmClock code registers itself as a listener with `alarmTimer`. The two
 parameters indicate that the AlarmClock class wants to listen for the `timer`
 event (indicated by the constant `TimerEvent.TIMER`), and that when the event
-happens, the AlarmClock class’s `onAlarm()` method should be called in response
+happens, the AlarmClock class's `onAlarm()` method should be called in response
 to the event.
 
-In order to actually set the alarm, the AlarmClock class’s `setAlarm()` method
+In order to actually set the alarm, the AlarmClock class's `setAlarm()` method
 is called, as follows:
 
         /**
@@ -187,12 +187,12 @@ is called, as follows:
 This method does several things, including storing the alarm message and
 creating a Date object (`alarmTime`) representing the actual moment in time when
 the alarm is to go off. Of most relevance to the current discussion, in the
-final several lines of the method, the `alarmTimer` variable’s timer is set and
+final several lines of the method, the `alarmTimer` variable's timer is set and
 activated. First, its `reset()` method is called, stopping the timer and
 resetting it in case it is already running. Next, the current time (represented
-by the `now` variable) is subtracted from the `alarmTime` variable’s value to
+by the `now` variable) is subtracted from the `alarmTime` variable's value to
 determine how many milliseconds need to pass before the alarm goes off. The
-Timer class doesn’t trigger its `timer` event at an absolute time, so it is this
+Timer class doesn't trigger its `timer` event at an absolute time, so it is this
 relative time difference that is assigned to the `delay` property of
 `alarmTimer`. Finally, the `start()` method is called to actually start the
 timer.
@@ -214,7 +214,7 @@ called.
 
 A method that is registered as an event listener must be defined with the
 appropriate signature (that is, the set of parameters and return type of the
-method). To be a listener for the Timer class’s `timer` event, a method must
+method). To be a listener for the Timer class's `timer` event, a method must
 define one parameter whose data type is TimerEvent (flash.events.TimerEvent), a
 subclass of the Event class. When the Timer instance calls its event listeners,
 it passes a TimerEvent instance as the event object.
@@ -234,13 +234,13 @@ code to receive notifications when the alarm goes off. For a class to use the
 event-handling framework built into ActionScript, that class must implement the
 flash.events.IEventDispatcher interface. Most commonly, this is done by
 extending the flash.events.EventDispatcher class, which provides a standard
-implementation of IEventDispatcher (or by extending one of EventDispatcher’s
+implementation of IEventDispatcher (or by extending one of EventDispatcher's
 subclasses). As described previously, the AlarmClock class extends the
 SimpleClock class, which (through a chain of inheritance) extends the
 EventDispatcher class. All of this means that the AlarmClock class already has
 built-in functionality to provide its own events.
 
-Other code can register to be notified of the AlarmClock class’s `alarm` event
+Other code can register to be notified of the AlarmClock class's `alarm` event
 by calling the `addEventListener()` method that AlarmClock inherits from
 EventDispatcher. When an AlarmClock instance is ready to notify other code that
 its `alarm` event has been raised, it does so by calling the `dispatchEvent()`
@@ -249,10 +249,10 @@ method, which is also inherited from EventDispatcher.
             var alarm:AlarmEvent = new AlarmEvent(this.alarmMessage);
             this.dispatchEvent(alarm);
 
-These lines of code are taken from the AlarmClock class’s `onAlarm()` method
-(shown in its entirety previously). The AlarmClock instance’s `dispatchEvent()`
+These lines of code are taken from the AlarmClock class's `onAlarm()` method
+(shown in its entirety previously). The AlarmClock instance's `dispatchEvent()`
 method is called, which in turn notifies all the registered listeners that the
-AlarmClock instance’s `alarm` event has been triggered. The parameter that is
+AlarmClock instance's `alarm` event has been triggered. The parameter that is
 passed to `dispatchEvent()` is the event object that will be passed along to the
 listener methods. In this case, it is an instance of the AlarmEvent class, an
 Event subclass created specifically for this example.
@@ -273,7 +273,7 @@ of the Event class. However, in some cases it is useful to provide additional
 information to event listeners. A common way to accomplish this is to define a
 new class, a subclass of the Event class, and use an instance of that class as
 the event object. In this example, an AlarmEvent instance is used as the event
-object when the AlarmClock class’s `alarm` event is dispatched. The AlarmEvent
+object when the AlarmClock class's `alarm` event is dispatched. The AlarmEvent
 class, shown here, provides additional information about the `alarm` event,
 specifically the alarm message:
 
@@ -313,13 +313,13 @@ inherited functionality, the AlarmEvent class defines a property `message` that
 contains the text of the alarm message associated with the event; the `message`
 value is passed in as a parameter in the AlarmEvent constructor. The AlarmEvent
 class also defines the constant `ALARM`, which can be used to refer to the
-specific event (`alarm`) when calling the AlarmClock class’s
+specific event (`alarm`) when calling the AlarmClock class's
 `addEventListener()` method.
 
 In addition to adding custom functionality, every Event subclass must override
 the inherited `clone()` method as part of the ActionScript event-handling
 framework. Event subclasses can also optionally override the inherited
-`toString()` method to include the custom event’s properties in the value
+`toString()` method to include the custom event's properties in the value
 returned when the `toString()` method is called.
 
         /**

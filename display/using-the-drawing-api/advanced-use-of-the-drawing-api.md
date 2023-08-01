@@ -18,7 +18,7 @@ following sections: [Drawing Paths](./drawing-paths.md),
 [Using graphics data classes](./using-graphics-data-classes.md), and
 [About using drawTriangles()](./about-using-drawtriangles.md).
 
-The following tasks are things you’ll likely want to accomplish using the
+The following tasks are things you'll likely want to accomplish using the
 advanced drawing API in ActionScript:
 
 - Using Vector objects to store data for drawing methods
@@ -53,10 +53,10 @@ this section:
 - Winding: The direction of a path as interpreted by the renderer; either
   positive (clockwise) or negative (counter-clockwise).
 
-- GraphicsStroke: A class for setting the line style. While the term “stroke”
-  isn’t part of the drawing API enhancements, the use of a class to designate a
+- GraphicsStroke: A class for setting the line style. While the term "stroke"
+  isn't part of the drawing API enhancements, the use of a class to designate a
   line style with its own fill property is part of the new drawing API. You can
-  dynamically adjust a line’s style using the GraphicsStroke class.
+  dynamically adjust a line's style using the GraphicsStroke class.
 
 - Fill object: Objects created using display classes like
   flash.display.GraphicsBitmapFill and flash.display.GraphicsGradientFill that

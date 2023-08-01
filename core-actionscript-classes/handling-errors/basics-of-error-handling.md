@@ -27,15 +27,15 @@ calculate interest rates in a banking application. Again, both of these types of
 errors can often be detected and corrected ahead of time by diligently testing
 your application.
 
-Ideally, you’ll want to identify and remove all errors from your application
+Ideally, you'll want to identify and remove all errors from your application
 before it is released to end users. However, not all errors can be foreseen or
 prevented. For example, suppose your ActionScript application loads information
 from a particular website that is outside your control. If at some point that
-website isn’t available, the part of your application that depends on that
-external data won’t behave correctly. The most important aspect of error
+website isn't available, the part of your application that depends on that
+external data won't behave correctly. The most important aspect of error
 handling involves preparing for these unknown cases and handling them
 gracefully. Users need to continue to use your application, or at least get a
-friendly error message explaining why it isn’t working.
+friendly error message explaining why it isn't working.
 
 Run-time errors are represented in two ways in ActionScript:
 
@@ -51,9 +51,8 @@ Run-time errors are represented in two ways in ActionScript:
   instance of that class to the methods that are subscribed to the error event.
 
 To determine whether a particular method can trigger an error or error event,
-see the method’s entry in the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html"
-target="_self">ActionScript 3.0 Reference for the Adobe Flash Platform</a>.
+see the method's entry in the
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
 <div>
 
@@ -63,7 +62,7 @@ The following reference list contains important terms for programming error
 handling routines:
 
 Asynchronous  
-A program command such as a method call that doesn’t provide an immediate
+A program command such as a method call that doesn't provide an immediate
 result; instead it gives a result (or error) in the form of an event.
 
 Catch  
@@ -76,18 +75,18 @@ Debugger version
 A special version of the Flash runtime, such as the Flash Player dubugger
 version or the AIR Debug Launcher (ADL), that contains code for notifying users
 of run-time errors. In the standard version of Flash Player or Adobe AIR (the
-one that most users have), errors that aren’t handled by your ActionScript code
+one that most users have), errors that aren't handled by your ActionScript code
 are ignored. In the debugger versions (which are included with Adobe Flash CS4
 Professional and Adobe Flash Builder), a warning message appears when an
 unhandled error happens.
 
 Exception  
 An error that happens while an application is running and that the Flash runtime
-can’t resolve on its own.
+can't resolve on its own.
 
 Re-throw  
 When your code catches an exception, the Flash runtime no longer notifies other
-objects of the exception. If it’s important for other objects to receive the
+objects of the exception. If it's important for other objects to receive the
 exception, your code must _re-throw_ the exception to start the notification
 process again.
 

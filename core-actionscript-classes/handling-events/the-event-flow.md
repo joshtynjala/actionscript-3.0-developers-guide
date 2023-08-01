@@ -45,9 +45,9 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 </div>
 
 If a user clicks on `Child1 Node`, Flash Player or AIR dispatches an event
-object into the event flow. As the following image shows, the object’s journey
+object into the event flow. As the following image shows, the object's journey
 starts at `Stage`, moves down to `Parent Node`, then moves to `Child1 Node`, and
-then “bubbles” back up to `Stage`, moving through `Parent Node` again on its
+then "bubbles" back up to `Stage`, moving through `Parent Node` again on its
 journey back to `Stage`.
 
 <div xmlns:fn="http://www.w3.org/2005/xpath-functions"
@@ -72,7 +72,7 @@ along the event flow.
 
 The ability to add event listeners along the event flow is useful when a user
 interface component comprises more than one object. For example, a button object
-often contains a text object that serves as the button’s label. Without the
+often contains a text object that serves as the button's label. Without the
 ability to add a listener to the event flow, you would have to add a listener to
 both the button object and the text object to ensure that you receive
 notification about click events that occur anywhere on the button. The existence
@@ -90,6 +90,6 @@ participating in the capture and bubbling phases.
 
 To find out how a particular event type behaves, you can either check the API
 documentation or examine the event object's properties. Examining the event
-object’s properties is described in the following section.
+object's properties is described in the following section.
 
 </div>

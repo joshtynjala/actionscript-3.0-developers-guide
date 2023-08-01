@@ -3,7 +3,7 @@
 <div>
 
 A <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Rectangle.html"
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Rectangle.html"
 target="_self">Rectangle</a> object defines a rectangular area. A Rectangle
 object has a position, defined by the _x_ and _y_ coordinates of its upper-left
 corner, a `width` property, and a `height` property. You can define these
@@ -43,7 +43,7 @@ object.
     trace(rect1); // (x=20, y=30, w=100, h=50)
 
 As the following code shows, when you change the `left` or `top` property of a
-Rectangle object, the rectangle is repositioned. The rectangle’s `x` and `y`
+Rectangle object, the rectangle is repositioned. The rectangle's `x` and `y`
 properties match the `left` and `top` properties, respectively. However, the
 position of the lower-left corner of the Rectangle object does not change, so it
 is resized.

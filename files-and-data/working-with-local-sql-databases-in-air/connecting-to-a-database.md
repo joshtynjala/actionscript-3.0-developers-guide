@@ -4,20 +4,20 @@
 
 Before you can perform any database operations, first open a connection to the
 database file. A
-[SQLConnection](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLConnection.html)
+[SQLConnection](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLConnection.html)
 instance is used to represent a connection to one or more databases. The first
-database that is connected using a SQLConnection instance is known as the “main”
+database that is connected using a SQLConnection instance is known as the "main"
 database. This database is connected using the `open()` method (for synchronous
 execution mode) or the `openAsync()` method (for asynchronous execution mode).
 
 If you open a database using the asynchronous `openAsync()` operation, register
-for the SQLConnection instance’s `open` event in order to know when the
-`openAsync()` operation completes. Register for the SQLConnection instance’s
+for the SQLConnection instance's `open` event in order to know when the
+`openAsync()` operation completes. Register for the SQLConnection instance's
 `error` event to determine if the operation fails.
 
 The following example shows how to open an existing database file for
-asynchronous execution. The database file is named “DBSample.db” and is located
-in the user’s
+asynchronous execution. The database file is named "DBSample.db" and is located
+in the user's
 [Pointing to the application storage directory](WS5b3ccc516d4fbf351e63e3d118676a4c56-7fc6.html).
 
     import flash.data.SQLConnection;
@@ -87,8 +87,8 @@ in the user’s
     </mx:WindowedApplication>
 
 The following example shows how to open an existing database file for
-synchronous execution. The database file is named “DBSample.db” and is located
-in the user’s
+synchronous execution. The database file is named "DBSample.db" and is located
+in the user's
 [Pointing to the application storage directory](WS5b3ccc516d4fbf351e63e3d118676a4c56-7fc6.html).
 
     import flash.data.SQLConnection;
@@ -149,9 +149,9 @@ Notice that in the `openAsync()` method call in the asynchronous example, and
 the `open()` method call in the synchronous example, the second argument is the
 constant `SQLMode.UPDATE`. Specifying `SQLMode.UPDATE` for the second parameter
 ( `openMode`) causes the runtime to dispatch an error if the specified file
-doesn’t exist. If you pass `SQLMode.CREATE` for the `openMode` parameter (or if
+doesn't exist. If you pass `SQLMode.CREATE` for the `openMode` parameter (or if
 you leave the `openMode` parameter off), the runtime attempts to create a
-database file if the specified file doesn’t exist. However, if the file exists
+database file if the specified file doesn't exist. However, if the file exists
 it is opened, which is the same as if you use `SQLMode.Update`. You can also
 specify `SQLMode.READ` for the `openMode` parameter to open an existing database
 in a read-only mode. In that case data can be retrieved from the database but no

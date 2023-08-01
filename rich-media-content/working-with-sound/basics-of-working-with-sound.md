@@ -8,7 +8,7 @@ play back sound using either Adobe® Flash® Player or Adobe® AIR™ and
 ActionScript.
 
 When sound data is converted to digital form, it has various characteristics,
-such as the sound’s volume and whether it is stereo or mono sound. When you play
+such as the sound's volume and whether it is stereo or mono sound. When you play
 back a sound in ActionScript, you can adjust these characteristics as well—make
 the sound louder, or make it seem to be coming from a certain direction, for
 instance.
@@ -20,10 +20,10 @@ ActionScript.
 
 - Load an external sound file such as an mp3 file into the SWF.
 
-- Embed the sound information into the SWF file directly when it’s being
+- Embed the sound information into the SWF file directly when it's being
   created.
 
-- Capture audio from a microphone attached to a user’s computer.
+- Capture audio from a microphone attached to a user's computer.
 
 - Stream audio from a server.
 
@@ -37,21 +37,21 @@ ActionScript 3.0, Flash Player and AIR support sound files that are stored in
 the mp3 format. They cannot directly load or play sound files in other formats
 like WAV or AIFF.
 
-While you’re working with sound in ActionScript, you’ll likely work with several
+While you're working with sound in ActionScript, you'll likely work with several
 classes from the flash.media package. The Sound class is the class you use to
 get access to audio information by loading a sound file or assigning a function
 to an event that samples sound data and then starting playback. Once you start
 playing a sound, Flash Player and AIR give you access to a SoundChannel object.
-Since an audio file that you’ve loaded may only be one of several sounds that
-you play on a user’s computer, each individual sound that’s playing uses its own
+Since an audio file that you've loaded may only be one of several sounds that
+you play on a user's computer, each individual sound that's playing uses its own
 SoundChannel object; the combined output of all the SoundChannel objects mixed
-together is what actually plays over the computer’s speakers. You use this
+together is what actually plays over the computer's speakers. You use this
 SoundChannel instance to control properties of the sound and to stop its
 playback. Finally, if you want to control the combined audio, the SoundMixer
 class gives you control over the mixed output.
 
 You can also use several other classes to perform more specific tasks when
-you’re working with sound in ActionScript; for more information on all the
+you're working with sound in ActionScript; for more information on all the
 sound-related classes, see
 [Understanding the sound architecture](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d26.html).
 

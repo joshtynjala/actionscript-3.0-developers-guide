@@ -5,9 +5,9 @@
 Normally when a display object is scaled (for example, stretched horizontally),
 the resulting distortion is spread equally across the object, so that each part
 is stretched the same amount. For graphics and design elements, this is probably
-what you want. However, sometimes it’s preferable to have control over which
+what you want. However, sometimes it's preferable to have control over which
 portions of the display object stretch and which portions remain unchanged. One
-common example of this is a button that’s a rectangle with rounded corners. With
+common example of this is a button that's a rectangle with rounded corners. With
 normal scaling, the corners of the button will stretch, making the corner radius
 change as the button resizes.
 
@@ -22,7 +22,7 @@ corners>](../../img/dp_9-slice-scale-wrong.png)
 
 However, in this case it would be preferable to have control over the scaling—to
 be able to designate certain areas which should scale (the straight sides and
-middle) and areas which shouldn’t (the corners)—so that scaling happens without
+middle) and areas which shouldn't (the corners)—so that scaling happens without
 visible distortion.
 
 <div xmlns:fn="http://www.w3.org/2005/xpath-functions"
@@ -37,7 +37,7 @@ distortion>](../../img/dp_9-slice-scale-right.png)
 You can use 9-slice scaling (Scale-9) to create display objects where you have
 control over how the objects scale. With 9-slice scaling, the display object is
 divided into nine separate rectangles (a 3 by 3 grid, like the grid of a
-tic-tac-toe board). The rectangles aren’t necessarily the same size—you
+tic-tac-toe board). The rectangles aren't necessarily the same size—you
 designate where the grid lines are placed. Any content that lies in the four
 corner rectangles (such as the rounded corners of a button) will not be
 stretched or compressed when the display object scales. The top-center and
@@ -53,20 +53,20 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
 </div>
 
-Keeping this in mind, if you’re creating a display object and you want certain
+Keeping this in mind, if you're creating a display object and you want certain
 content to never scale, you just have to make sure that the dividing lines of
 the 9-slice scaling grid are placed so that the content ends up in one of the
 corner rectangles.
 
 In ActionScript, setting a value for the `scale9Grid` property of a display
 object turns on 9-slice scaling for the object and defines the size of the
-rectangles in the object’s Scale-9 grid. You use an instance of the Rectangle
+rectangles in the object's Scale-9 grid. You use an instance of the Rectangle
 class as the value for the `scale9Grid` property, as follows:
 
     myButton.scale9Grid = new Rectangle(32, 27, 71, 64);
 
 The four parameters of the Rectangle constructor are the x coordinate, y
-coordinate, width, and height. In this example, the rectangle’s top-left corner
+coordinate, width, and height. In this example, the rectangle's top-left corner
 is placed at the point x: 32, y: 27 on the display object named `myButton`. The
 rectangle is 71 pixels wide and 64 pixels tall (so its right edge is at the x
 coordinate 103 on the display object and its bottom edge is at the y coordinate

@@ -25,4 +25,4 @@ expressions as defined in the ECMAScript edition 3 language specification
 
 </div>
 
-- [RegExp class](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/RegExp.html)
+- [RegExp class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/RegExp.html)

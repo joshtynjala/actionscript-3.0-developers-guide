@@ -4,7 +4,7 @@
 
 When a sound file or video file is playing back while its data is still being
 loaded, it is said to be _streaming_ . External sound files that are loaded from
-a remote server are often streamed so that the user doesn’t have to wait for all
+a remote server are often streamed so that the user doesn't have to wait for all
 the sound data to load before listening to the sound.
 
 The `SoundMixer.bufferTime` property represents the number of milliseconds of

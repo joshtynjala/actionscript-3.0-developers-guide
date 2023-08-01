@@ -3,7 +3,7 @@
 <div>
 
 The ActionScript 3.0 external API (
-[flash.external.ExternalInterface](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/external/ExternalInterface.html))
+[flash.external.ExternalInterface](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/external/ExternalInterface.html))
 enables straightforward communication between ActionScript and the container
 application within which Adobe Flash Player is running. Use the
 ExternalInterface API to create interaction between a SWF document and

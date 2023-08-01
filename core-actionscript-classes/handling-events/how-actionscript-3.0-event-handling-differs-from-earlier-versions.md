@@ -104,7 +104,7 @@ behavior to occur, you can cancel it using the new event-handling system. When a
 user inputs text into a TextField object, Flash Player or AIR creates an
 instance of the TextEvent class to represent that user input. To prevent Flash
 Player or AIR from displaying the text in the TextField object, you must access
-that specific TextEvent instance and call that instance’s `preventDefault()`
+that specific TextEvent instance and call that instance's `preventDefault()`
 method.
 
 Not all default behaviors can be prevented. For example, Flash Player and AIR
@@ -132,7 +132,7 @@ programmatically.
 
 <div>
 
-#### What’s new for event listeners in ActionScript 3.0
+#### What's new for event listeners in ActionScript 3.0
 
 For developers with experience using the ActionScript 2.0 `addListener()`
 method, it may be helpful to point out the differences between the ActionScript

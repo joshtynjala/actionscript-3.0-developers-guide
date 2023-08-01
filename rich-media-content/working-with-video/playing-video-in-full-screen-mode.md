@@ -90,9 +90,8 @@ additional lines of code that scale just the video to full screen.
 Though this example invokes an event handler in response to a mouse click, the
 technique of going to full-screen mode is the same for both Flash Player and
 AIR. Define the rectangle that you want to scale and then set the
-`Stage.displayState` property. For more information, see the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html"
-target="_self">ActionScript 3.0 Reference for the Adobe Flash Platform</a>.
+`Stage.displayState` property. For more information, see the
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
 The complete example, which follows, adds code that creates the connection and
 the NetStream object for the video and begins to play it.

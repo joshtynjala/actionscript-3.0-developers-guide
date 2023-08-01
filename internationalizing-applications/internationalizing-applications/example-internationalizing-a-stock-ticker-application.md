@@ -93,7 +93,7 @@ Global Stock Ticker example.</p></td>
 
 <div>
 
-The application’s main user interface elements are:
+The application's main user interface elements are:
 
 - a combo box for selecting a Locale
 
@@ -101,7 +101,7 @@ The application’s main user interface elements are:
 
 - a DataGrid that displays data for six companies in each market
 
-- a chart that shows simulated historical data for the selected company’s stock
+- a chart that shows simulated historical data for the selected company's stock
 
 The application stores all of its sample data about locales, markets, and
 company stocks in the StockDataModel class. A real application would retrieve
@@ -110,7 +110,7 @@ example, all the data is hard coded in the StockDataModel class.
 
 <div>
 
-Note: The data displayed in the financial chart doesn’t necessarily match the
+Note: The data displayed in the financial chart doesn't necessarily match the
 data shown in the DataGrid control. The chart is randomly redrawn each time a
 different company is selected. It is for illustration purposes only.
 
@@ -185,7 +185,7 @@ console if there is a problem with the requested locale. (A real application
 should react based on such errors rather than just tracing them).
 
 After creating the CurrencyFormatter object, the setLocale() method sets the
-formatter’s currency ISO code, currency symbol, and fractionalDigits properties
+formatter's currency ISO code, currency symbol, and fractionalDigits properties
 to previously determined values. (Those values are set each time the user
 selects a new market from the Markets combo box).
 

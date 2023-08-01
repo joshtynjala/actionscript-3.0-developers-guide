@@ -5,7 +5,7 @@
 <div>
 
 Use the
-[Multitouch class](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Multitouch.html)
+[Multitouch class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Multitouch.html)
 properties to set the scope of touch input your application handles. Then, test
 the environment to ensure that support exists for the events your ActionScript
 handles. Specifically, first establish the type of touch input for your
@@ -82,7 +82,7 @@ before handling a touch event.
 <div>
 
 Other properties of the Multitouch class provide values for fine-tuning your
-application to the current environment’s touch support. The Flash runtime
+application to the current environment's touch support. The Flash runtime
 populates values for the number of simultaneous touch points allowed or gestures
 available. If the runtime is in an environment that does not support the touch
 event handling your application needs, provide the user with an alternative. For

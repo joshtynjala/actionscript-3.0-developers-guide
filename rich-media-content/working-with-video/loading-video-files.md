@@ -5,7 +5,7 @@
 Loading videos using the NetStream and NetConnection classes is a multistep
 process. As a best practice, the steps of adding the Video object to the display
 list, attaching the NetStream object to the Video instance, and calling the
-NetStream object’s `play()` method should be performed in the specified order:
+NetStream object's `play()` method should be performed in the specified order:
 
 1.  Create a NetConnection object. If you are connecting to a local video file
     or one that is not using a server such as Adobe's Flash Media Server 2, pass
@@ -41,14 +41,14 @@ NetStream object’s `play()` method should be performed in the specified order:
         	// ignore error
         }
 
-4.  Attach the NetStream object to the Video object using the Video object’s
+4.  Attach the NetStream object to the Video object using the Video object's
     `attachNetStream()` method, as seen in the following snippet:
 
         vid.attachNetStream(ns);
 
-5.  Call the NetStream object’s `play()` method with the video file url as an
+5.  Call the NetStream object's `play()` method with the video file url as an
     argument to start the video playing. The following snippet loads and plays a
-    video file named “video.mp4” in the same directory as the SWF file:
+    video file named "video.mp4" in the same directory as the SWF file:
 
         ns.play("video.mp4");
 
@@ -67,10 +67,10 @@ More Help topics
 </div>
 
 ![](images/flexLinkIndicator.png)
-[Flex: Spark VideoPlayer control](http://help.adobe.com/en_US/flex/using/WSc78f87379113c38b-669905c51221a3b97af-8000.html "http://help.adobe.com/en_US/flex/using/WSc78f87379113c38b-669905c51221a3b97af-8000.html")
+[Flex: Spark VideoPlayer control](https://help.adobe.com/en_US/flex/using/WSc78f87379113c38b-669905c51221a3b97af-8000.html "https://help.adobe.com/en_US/flex/using/WSc78f87379113c38b-669905c51221a3b97af-8000.html")
 
 ![](images/flashplatformLinkIndicator.png)
-[spark.components.VideoDisplay](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/spark/components/VideoDisplay.html?allClasses=1 "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/spark/components/VideoDisplay.html?allClasses=1")
+[spark.components.VideoDisplay](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/spark/components/VideoDisplay.html?allClasses=1 "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/spark/components/VideoDisplay.html?allClasses=1")
 
 <div>
 

@@ -13,7 +13,7 @@ text field, the text can appear as rendered HTML content, with images embedded
 in the rendered HTML. After you create an instance of a text field, you can use
 flash.text classes, such as TextFormat and StyleSheet, to control the appearance
 of the text. The <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/package-detail.html"
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/package-detail.html"
 target="_self">flash.text package</a> contains nearly all the classes related to
 creating, managing, and formatting text in ActionScript.
 
@@ -53,9 +53,9 @@ More Help topics
 
 </div>
 
-[Text](http://help.adobe.com/en_US/Flash/10.0_UsingFlash/WSd60f23110762d6b883b18f10cb1fe1af6-7d54a.html "http://help.adobe.com/en_US/Flash/10.0_UsingFlash/WSd60f23110762d6b883b18f10cb1fe1af6-7d54a.html")
+[Text](https://help.adobe.com/en_US/Flash/10.0_UsingFlash/WSd60f23110762d6b883b18f10cb1fe1af6-7d54a.html "https://help.adobe.com/en_US/Flash/10.0_UsingFlash/WSd60f23110762d6b883b18f10cb1fe1af6-7d54a.html")
 
-[MX text controls](http://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7d84.html "http://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7d84.html")
+[MX text controls](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7d84.html "https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7d84.html")
 
 <div>
 

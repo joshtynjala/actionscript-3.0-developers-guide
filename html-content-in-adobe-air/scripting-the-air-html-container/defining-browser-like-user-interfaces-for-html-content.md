@@ -4,7 +4,7 @@
 
 JavaScript provides several APIs for controlling the window displaying the HTML
 content. In AIR, these APIs can be overridden by implementing a custom
-[HTMLHost](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/html/HTMLHost.html)
+[HTMLHost](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/html/HTMLHost.html)
 class.
 
 </div>
@@ -425,7 +425,7 @@ the `htmlHost` property to null for new windows, if desired.
 </div>
 
 The object passed as a parameter to the `createWindow()` method is an
-[HTMLWindowCreateOptions](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/html/HTMLWindowCreateOptions.html)
+[HTMLWindowCreateOptions](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/html/HTMLWindowCreateOptions.html)
 object. The HTMLWindowCreateOptions class includes properties that report the
 values set in the `features` parameter string in the call to `window.open()`:
 
@@ -579,12 +579,12 @@ interface:
 
 <div>
 
-| Parameter           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `visible`           | A Boolean value that specifies whether the window is initially visible ( `true`) or not ( `false`).                                                                                                                                                                                                                                                                                                                                                                                 |
-| `windowInitOptions` | A [NativeWindowInitOptions](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/NativeWindowInitOptions.html) object. The NativeWindowInitOptions class defines initialization options for a NativeWindow object, including the following: whether the window is minimizable, maximizable, or resizable, whether the window has system chrome or custom chrome, whether the window is transparent or not (for windows that do not use system chrome), and the type of window. |
-| `scrollBarsVisible` | Whether there are scroll bars ( `true`) or not ( `false`).                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| `bounds`            | A [Rectangle](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/geom/Rectangle.html) object defining the position and size of the new window.                                                                                                                                                                                                                                                                                                                                       |
+| Parameter           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `visible`           | A Boolean value that specifies whether the window is initially visible ( `true`) or not ( `false`).                                                                                                                                                                                                                                                                                                                                                                                  |
+| `windowInitOptions` | A [NativeWindowInitOptions](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/NativeWindowInitOptions.html) object. The NativeWindowInitOptions class defines initialization options for a NativeWindow object, including the following: whether the window is minimizable, maximizable, or resizable, whether the window has system chrome or custom chrome, whether the window is transparent or not (for windows that do not use system chrome), and the type of window. |
+| `scrollBarsVisible` | Whether there are scroll bars ( `true`) or not ( `false`).                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| `bounds`            | A [Rectangle](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/geom/Rectangle.html) object defining the position and size of the new window.                                                                                                                                                                                                                                                                                                                                       |
 
 </div>
 

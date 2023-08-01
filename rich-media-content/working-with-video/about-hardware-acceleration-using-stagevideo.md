@@ -154,7 +154,7 @@ features. Stage video enforces the following constraints:
 - You can place the video only on full pixel boundaries.
 
 - Though GPU rendering is the best available for the given device hardware, it
-  is not 100% “pixel identical” across devices. Slight variations occur due to
+  is not 100% "pixel identical" across devices. Slight variations occur due to
   driver and platform differences.
 
 - A few devices do not support all required color spaces. For example, some

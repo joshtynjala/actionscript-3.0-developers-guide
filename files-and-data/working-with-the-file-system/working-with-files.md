@@ -127,8 +127,10 @@ objects</a>.</p></td>
 
 </div>
 
-For details on these properties, see the File class entry in the
-[ActionScript 3.0 Reference for the Adobe Flash Platform](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/File.html).
+For details on these properties, see the
+[File](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/File.html)
+class listing in the
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
 </div>
 
@@ -164,7 +166,7 @@ existing target file is overwritten. This parameter is optional. If you set it
 to `false` (the default value), the operation dispatches an IOErrorEvent event
 if the target file exists (and the file is not copied).
 
-The “Async” versions of the copy and move methods work asynchronously. Use the
+The "Async" versions of the copy and move methods work asynchronously. Use the
 `addEventListener()` method to monitor completion of the task or error
 conditions, as in the following code:
 

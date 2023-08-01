@@ -14,6 +14,6 @@ of the same effects that are available in graphics manipulation applications.
 - [Available display filters](./available-display-filters.md)
 - [Filtering display objects example: Filter Workbench](./filtering-display-objects-example-filter-workbench.md)
 
-- [flash.filters package](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filters/package-detail.html)
+- [flash.filters package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filters/package-detail.html)
 
 </div>

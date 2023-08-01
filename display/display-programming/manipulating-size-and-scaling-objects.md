@@ -42,8 +42,8 @@ change to accommodate the scaling values you provide.
 
 These properties represent the relative size of the display object compared to
 its original size. The `scaleX` and `scaleY` properties use fraction (decimal)
-values to represent percentage. For example, if a display object’s `width` has
-been changed so that it’s half as wide as its original size, the object’s
+values to represent percentage. For example, if a display object's `width` has
+been changed so that it's half as wide as its original size, the object's
 `scaleX` property will have the value `.5`, meaning 50 percent. If its height
 has been doubled, its `scaleY` property will have the value `2`, meaning 200
 percent.

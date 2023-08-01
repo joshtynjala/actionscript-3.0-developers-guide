@@ -7,7 +7,7 @@ Flash authoring tool and want to control that content with ActionScript.
 Whenever you create a movie clip symbol in Flash, Flash adds the symbol to the
 library of that Flash document. By default, this symbol becomes an instance of
 the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/MovieClip.html"
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/MovieClip.html"
 target="_self">MovieClip class</a>, and as such has the properties and methods
 of the MovieClip class.
 
@@ -17,7 +17,7 @@ unless its playback is altered using ActionScript. It is this timeline that
 distinguishes the MovieClip class, allowing you to create animation through
 motion or shape tweens through the Flash authoring tool. By contrast, with a
 display object that is an instance of the Sprite class, you can create animation
-only by programmatically changing the object’s values.
+only by programmatically changing the object's values.
 
 In previous versions of ActionScript, the MovieClip class was the base class of
 all instances on the Stage. In ActionScript 3.0, a movie clip is only one of
@@ -52,7 +52,7 @@ frames are played quickly in sequence, the effect of animation is created.
 
 Timeline  
 The metaphorical representation of the series of frames that make up a movie
-clip’s animation sequence. The timeline of a MovieClip object is equivalent to
+clip's animation sequence. The timeline of a MovieClip object is equivalent to
 the timeline in the Flash authoring tool.
 
 Playhead  

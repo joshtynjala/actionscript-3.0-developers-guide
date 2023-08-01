@@ -109,10 +109,9 @@ stream, as demonstrated in the following code:
         // Error #2029: This URLStream object does not have an open stream.
     }
 
-As you become more familiar with the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html"
-target="_self">ActionScript 3.0 Reference for the Adobe Flash Platform</a>,
-you’ll notice which methods throw exceptions, as detailed in each method’s
+As you become more familiar with the
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html),
+you'll notice which methods throw exceptions, as detailed in each method's
 description.
 
 </div>

@@ -12,7 +12,7 @@ by the runtimes, that govern what a code or content executing within a given
 sandbox can access.
 
 For more information on Flash Player security, see the Flash Player Developer
-Center topic “Security” at
+Center topic "Security" at
 [www.adobe.com/go/devnet_security_en](http://www.adobe.com/go/devnet_security_en).
 
 </div>
@@ -38,7 +38,7 @@ and
 Remote SWF files cannot load any local files or resources.
 
 For more information on Flash Player security, see the Flash Player Developer
-Center topic “Security” at
+Center topic "Security" at
 [www.adobe.com/go/devnet_security_en](http://www.adobe.com/go/devnet_security_en).
 
 </div>
@@ -152,9 +152,10 @@ restricted API is the FileStream class, which contains methods for reading and
 writing to the local file system.
 
 ActionScript APIs that are only available to content in the application security
-sandbox are indicated with the AIR logo in the _ActionScript 3.0 Reference for
-Adobe Flash Platform_ . Using these APIs in other sandboxes causes the runtime
-to throw a SecurityError exception.
+sandbox are indicated with the AIR logo in the
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
+Using these APIs in other sandboxes causes the runtime to throw a SecurityError
+exception.
 
 For HTML content (in an HTMLLoader object), all AIR JavaScript APIs (those that
 are available via the `window.runtime` property, or via the `air` object when
@@ -252,7 +253,7 @@ For more information on local sandboxes, see
 #### Adobe Flash Professional
 
 You can configure a SWF file for the local-with-filesystem sandbox or the
-local-with-networking sandbox by setting the document’s publish settings in the
+local-with-networking sandbox by setting the document's publish settings in the
 authoring tool.
 
 </div>
@@ -263,8 +264,8 @@ authoring tool.
 
 You can configure a SWF file for the local-with-filesystem sandbox or the
 local-with-networking sandbox by setting the `use-network` flag in the Adobe
-Flex compiler. For more information, see “About the application compiler
-options” in _Building and Deploying Adobe Flex 3 Applications_ .
+Flex compiler. For more information, see "About the application compiler
+options" in _Building and Deploying Adobe Flex 3 Applications_ .
 
 </div>
 

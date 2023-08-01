@@ -2,7 +2,7 @@
 
 <div>
 
-The enhanced drawing API also introduces the concept of path “winding”: the
+The enhanced drawing API also introduces the concept of path "winding": the
 direction for a path. The winding for a path is either positive (clockwise) or
 negative (counter-clockwise). The order in which the renderer interprets the
 coordinates provided by the vector for the data parameter determines the
@@ -32,7 +32,7 @@ Negatively wound (counter-clockwise)
 </div>
 
 Additionally, notice that the `Graphics.drawPath()` method has an optional third
-parameter called “winding”:
+parameter called "winding":
 
     drawPath(commands:Vector.<int>, data:Vector.<Number>, winding:String = "evenOdd"):void
 

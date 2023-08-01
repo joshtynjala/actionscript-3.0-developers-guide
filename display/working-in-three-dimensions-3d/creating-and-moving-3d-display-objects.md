@@ -9,7 +9,7 @@ property, a new Transform object is created for the display object. Setting the
 new Transform object. The Transform object contains a `Matrix3D` property that
 governs how the display object is represented in 3D space.
 
-The following code sets the coordinates for a display object called “leaf”:
+The following code sets the coordinates for a display object called "leaf":
 
 <div>
 
@@ -33,10 +33,10 @@ the `matrix3D` property of the Transform object of the leaf:
 </div>
 
 For information about the properties of the Transform object, see the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Transform.html"
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Transform.html"
 target="_self">Transform</a> class. For information about the properties of the
 Matrix3D object, see the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Matrix3D.html"
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Matrix3D.html"
 target="_self">Matrix3D</a> class.
 
 </div>
@@ -98,7 +98,7 @@ multiple of 10:
 <div>
 
 You can rotate an object in three different ways, depending on how you set the
-object’s rotation properties: `rotationX`, `rotationY`, and `rotationZ`.
+object's rotation properties: `rotationX`, `rotationY`, and `rotationZ`.
 
 The figure below shows two squares that are not rotated:
 

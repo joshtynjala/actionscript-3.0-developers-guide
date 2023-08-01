@@ -7,7 +7,7 @@
 Basic touch events are handled the same way you handle other events, like mouse
 events, in ActionScript. You can listen for a series of touch events defined by
 the event type constants in the
-[TouchEvent class](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Multitouch.html).
+[TouchEvent class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Multitouch.html).
 
 <div>
 
@@ -92,7 +92,7 @@ point in the Stage space that the touch occurred) in the text field:
 <div>
 
 See the
-[TouchEvent](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/TouchEvent.html)
+[TouchEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/TouchEvent.html)
 class for the properties available through the event object.
 
 <div>
@@ -155,7 +155,7 @@ give the user visual feedback as they touch and move a display object:
 <div>
 
 Note: The initial touch listener is attached to mySprite, but the listeners for
-moving and ending the touch event are not. If the users’s finger or pointing
+moving and ending the touch event are not. If the users's finger or pointing
 devices moves ahead of the display object, the Stage continues to listen for the
 touch event.
 
@@ -193,7 +193,7 @@ The following example establishes a variable `touchMoveID` to test for the
 correct `touchPointID` value before responding to a touch move event. Otherwise,
 other touch input triggers the event handler, too. Notice the listeners for the
 move and end phases are on the stage, not the display object. The stage listens
-for the move or end phases in case the user’s touch moves beyond the display
+for the move or end phases in case the user's touch moves beyond the display
 object boundaries.
 
     Multitouch.inputMode = MultitouchInputMode.TOUCH_POINT;

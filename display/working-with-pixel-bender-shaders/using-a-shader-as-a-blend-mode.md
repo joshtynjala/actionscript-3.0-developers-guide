@@ -7,7 +7,7 @@ defines the appearance resulting from two display objects being blended together
 visually. To use a shader as a blend mode, assign your Shader object to the
 `blendShader` property of the foreground display object. Assigning a value other
 than `null` to the `blendShader` property automatically sets the display
-object’s `blendMode` property to `BlendMode.SHADER`. The following listing
+object's `blendMode` property to `BlendMode.SHADER`. The following listing
 demonstrates using a shader as a blend mode. Note that this example assumes that
 there is a display object named `foreground` contained in the same parent on the
 display list as other display content, with `foreground` overlapping the other
@@ -20,7 +20,7 @@ two inputs. As the example shows, you do not set the input values in your code.
 Instead, the two blended images are automatically used as shader inputs. The
 foreground image is set as the second image. (This is the display object to
 which the blend mode is applied.) A background image is created by taking the
-composite of all the pixels behind the foreground image’s bounding box. This
+composite of all the pixels behind the foreground image's bounding box. This
 background image is set as the first input image. If you use a shader that
 expects more than two inputs, you provide a value for any input beyond the first
 two.
@@ -28,12 +28,12 @@ two.
 The following example demonstrates using a shader as a blend mode. This example
 uses a lighten blend mode based on luminosity. The result of the blend is that
 the lightest pixel value from either of the blended objects becomes the pixel
-that’s displayed.
+that's displayed.
 
 <div>
 
 Note: The code for this example was written by Mario Klingemann. Thank you Mario
-for sharing this example. You can see more of Mario’s work and read his writing
+for sharing this example. You can see more of Mario's work and read his writing
 at <a href="http://www.quasimondo.com/"
 target="_self">www.quasimondo.com/</a>.
 
@@ -52,7 +52,7 @@ The important ActionScript code is in these two methods:
 
   The `foregroundShape` ellipse is the foreground object of the blend. The
   background image of the blend is formed by the part of `backdrop` and the part
-  of `backgroundShape` that are overlapped by the `foregroundShape` object’s
+  of `backgroundShape` that are overlapped by the `foregroundShape` object's
   bounding box. The `foregroundShape` object is the front-most object in the
   display list. It partially overlaps `backgroundShape` and completely overlaps
   `backdrop`. Because of this overlap, without a blend mode applied, the orange
@@ -68,7 +68,7 @@ The important ActionScript code is in these two methods:
   </div>
 
   However, with the blend mode applied, the brighter part of the green ellipse
-  “shows through” because it is lighter than the portion of `foregroundShape`
+  "shows through" because it is lighter than the portion of `foregroundShape`
   that overlaps it:
 
   <div xmlns:fn="http://www.w3.org/2005/xpath-functions"
@@ -158,7 +158,7 @@ the document class for the FLA file in Flash Professional:
     }
 
 The following is the source code for the LumaLighten shader kernel, used to
-create the “LumaLighten.pbj” Pixel Bender bytecode file:
+create the "LumaLighten.pbj" Pixel Bender bytecode file:
 
     <languageVersion : 1.0;>
     kernel LumaLighten

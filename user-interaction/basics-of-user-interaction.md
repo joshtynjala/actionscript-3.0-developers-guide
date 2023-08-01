@@ -32,13 +32,13 @@ object derived from InteractiveObject are applicable to all the others.
 
 #### Important concepts and terms
 
-It’s important to familiarize yourself with the following key user interaction
+It's important to familiarize yourself with the following key user interaction
 terms before proceeding:
 
 Character code  
 A numeric code representing a character in the current character set (associated
-with a key being pressed on the keyboard). For example, “D” and “d” have
-different character codes even though they’re created by the same key on a U.S.
+with a key being pressed on the keyboard). For example, "D" and "d" have
+different character codes even though they're created by the same key on a U.S.
 English keyboard.
 
 Context menu  
@@ -167,34 +167,34 @@ ActionScript to test if the device on which the runtime is currently deployed:
 The input discovery ActionScript APIs include:
 
 - <a
-  href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/system/Capabilities.html#touchscreenType"
+  href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/system/Capabilities.html#touchscreenType"
   target="_self">flash.system.Capabilities.touchscreenType property</a>: A value
   provided at runtime indicating what input type is supported in the current
   environment.
 
 - <a
-  href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/system/TouchscreenType.html"
+  href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/system/TouchscreenType.html"
   target="_self">flash.system.TouchscreenType class</a>: A class of enumeration
   value constants for the Capabilities.touchscreenType property.
 
 - <a
-  href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Mouse.html#supportsCursor"
+  href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Mouse.html#supportsCursor"
   target="_self">flash.ui.Mouse.supportsCursor property</a>: A value provided at
   runtime indicating if a persistent cursor is available or not.
 
 - <a
-  href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Keyboard.html#physicalKeyboardType"
+  href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Keyboard.html#physicalKeyboardType"
   target="_self">flash.ui.Keyboard.physicalKeyboardType property</a>: A value
   provided at runtime indicating if a full physical keyboard is available or a
   numeric keypad, only, or no keyboard at all.
 
 - <a
-  href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/KeyboardType.html"
+  href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/KeyboardType.html"
   target="_self">flash.ui.KeyboardType class</a>: A class of enumeration value
   constants for the flash.ui.Keyboard.physicalKeyboardType property.
 
 - <a
-  href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Keyboard.html#hasVirtualKeyboard"
+  href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Keyboard.html#hasVirtualKeyboard"
   target="_self">flash.ui.Keyboard.hasVirtualKeyboard property</a>: A value
   provided at runtime indicating if a virtual keyboard is provided to the user
   (either in place of a physical keyboard, or in addition to a physical
@@ -202,7 +202,7 @@ The input discovery ActionScript APIs include:
 
 </div>
 
-The input discovery APIs let you take advantage of a user’s device capabilities,
+The input discovery APIs let you take advantage of a user's device capabilities,
 or provide alternatives when those capabilities are not present. These API are
 especially useful for developing mobile and touch-enabled applications. For
 example, if you have an interface for a mobile device that has small buttons for
@@ -235,7 +235,7 @@ following compatibility chart:
 | Traditional Desktop                                                                                                             | true           | false                     | false                     | true                    |
 | Capacitive Touchscreen Devices (tablets, PDAs, and phones that detect subtle human touch, such as the Apple iPhone or Palm Pre) | false          | true                      | false                     | false                   |
 | Resistive Touchscreen devices (tablets, PDAs, and phones that detect precise, high-pressure contact, such as the HTC Fuze)      | false          | false                     | true                      | false                   |
-| Non-Touchscreen devices (feature phones and devices that run applications but don’t have screens that detect contact)           | false          | false                     | false                     | true                    |
+| Non-Touchscreen devices (feature phones and devices that run applications but don't have screens that detect contact)           | false          | false                     | false                     | true                    |
 
 </div>
 
@@ -269,16 +269,16 @@ More Help topics
 </div>
 
 ![](images/flashplatformLinkIndicator.png)
-[InteractiveObject](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/InteractiveObject.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/InteractiveObject.html")
+[InteractiveObject](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/InteractiveObject.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/InteractiveObject.html")
 
 ![](images/flashplatformLinkIndicator.png)
-[Keyboard](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Keyboard.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Keyboard.html")
+[Keyboard](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Keyboard.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Keyboard.html")
 
 ![](images/flashplatformLinkIndicator.png)
-[Mouse](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Mouse.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Mouse.html")
+[Mouse](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Mouse.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Mouse.html")
 
 ![](images/flashplatformLinkIndicator.png)
-[ContextMenu](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/ContextMenu.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/ContextMenu.html")
+[ContextMenu](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/ContextMenu.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/ContextMenu.html")
 
 <div>
 

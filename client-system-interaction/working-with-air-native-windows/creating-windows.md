@@ -576,8 +576,7 @@ shape position based on the `enterFrame` event.
 This example provides a rudimentary introduction to some advanced techniques
 that cross over the boundaries between JavaScript and ActionScript in AIR. If
 your are unfamiliar with using ActionScript display objects, refer to
-[Display programming](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e58.html) in the
-_ActionScript 3.0 Developer’s Guide_ .
+[Display programming](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e58.html).
 
 </div>
 
@@ -630,7 +629,7 @@ More Help topics
 </div>
 
 ![](images/flexLinkIndicator.png)
-[Using the Flex AIR components](http://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-8000.html "http://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-8000.html")
+[Using the Flex AIR components](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-8000.html "https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-8000.html")
 
 <div>
 

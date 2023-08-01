@@ -49,7 +49,7 @@ standard streams. For more information, see
 
 The following code sample shows how to launch a test.exe application in the
 application directory. The application passes the argument `"hello"` as a
-command-line argument, and it adds an event listener to the process’s standard
+command-line argument, and it adds an event listener to the process's standard
 output stream:
 
 <div>
@@ -96,7 +96,7 @@ of the `start()` method of a NativeProcess object.
 
 For example, the following code shows how to launch a test.exe application in
 the application directory. The application passes the argument `"hello"` and
-sets the user’s documents directory as the working directory:
+sets the user's documents directory as the working directory:
 
 <div>
 
@@ -257,7 +257,7 @@ will not stall. In this case, you will not have access to the data.
 
 <div>
 
-The native process API can run any executable on the user’s system. Take extreme
+The native process API can run any executable on the user's system. Take extreme
 care when constructing and executing commands. If any part of a command to be
 executed originates from an external source, carefully validate that the command
 is safe to execute. Likewise, your AIR application should validate any data
@@ -296,16 +296,16 @@ More Help topics
 </div>
 
 ![](images/airLinkIndicator.png)
-[Packaging an AIR application in a native installer](http://help.adobe.com/en_US/air/build/WS789ea67d3e73a8b22388411123785d839c-8000.html "http://help.adobe.com/en_US/air/build/WS789ea67d3e73a8b22388411123785d839c-8000.html")
+[Packaging an AIR application in a native installer](https://help.adobe.com/en_US/air/build/WS789ea67d3e73a8b22388411123785d839c-8000.html "https://help.adobe.com/en_US/air/build/WS789ea67d3e73a8b22388411123785d839c-8000.html")
 
 ![](images/airLinkIndicator.png)
-[Application profiles](http://help.adobe.com/en_US/air/build/WS144092a96ffef7cc16ddeea2126bb46b82f-8000.html "http://help.adobe.com/en_US/air/build/WS144092a96ffef7cc16ddeea2126bb46b82f-8000.html")
+[Application profiles](https://help.adobe.com/en_US/air/build/WS144092a96ffef7cc16ddeea2126bb46b82f-8000.html "https://help.adobe.com/en_US/air/build/WS144092a96ffef7cc16ddeea2126bb46b82f-8000.html")
 
 ![](images/flashplatformLinkIndicator.png)
-[flash.filesystem.File.openWithDefaultApplication()](<http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/File.html#openWithDefaultApplication()> "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/File.html#openWithDefaultApplication()")
+[flash.filesystem.File.openWithDefaultApplication()](<https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/File.html#openWithDefaultApplication()> "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/File.html#openWithDefaultApplication()")
 
 ![](images/flashplatformLinkIndicator.png)
-[flash.desktop.NativeProcess](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeProcess.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeProcess.html")
+[flash.desktop.NativeProcess](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeProcess.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeProcess.html")
 
 <div>
 

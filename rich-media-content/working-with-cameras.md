@@ -2,18 +2,18 @@
 
 <div>
 
-A camera attached to a user’s computer can serve as a source of video data that
+A camera attached to a user's computer can serve as a source of video data that
 you can display and manipulate using ActionScript. The <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/Camera.html"
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/Camera.html"
 target="_self">Camera</a> class is the mechanism built into ActionScript for
 working with a computer or device camera.
 
 On mobile devices, you can also use the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/CameraUI.html"
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/CameraUI.html"
 target="_self">CameraUI</a> class. The CameraUI class launches a separate camera
 application to allow the user to capture a still image or video. When the user
 is finished, your application can access the image or video through a <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/MediaPromise.html"
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/MediaPromise.html"
 target="_self">MediaPromise</a> object.
 
 </div>
@@ -24,18 +24,18 @@ target="_self">MediaPromise</a> object.
 
 <div>
 
-The Camera object allows you to connect to the user’s local camera and broadcast
+The Camera object allows you to connect to the user's local camera and broadcast
 the video either locally (back to the user) or remotely to a server (such as
 Flash Media Server).
 
 Using the Camera class, you can access the following kinds of information about
-the user’s camera:
+the user's camera:
 
-- Which cameras installed on the user’s computer or device are available
+- Which cameras installed on the user's computer or device are available
 
 - Whether a camera is installed
 
-- Whether Flash Player is allowed or denied access to the user’s camera
+- Whether Flash Player is allowed or denied access to the user's camera
 
 - Which camera is currently active
 
@@ -43,7 +43,7 @@ the user’s camera:
 
 The Camera class includes several useful methods and properties for working with
 camera objects. For example, the static `Camera.names` property contains an
-array of camera names currently installed on the user’s computer. You can also
+array of camera names currently installed on the user's computer. You can also
 use the `name` property to display the name of the currently active camera.
 
 <div>
@@ -66,11 +66,11 @@ particularly on mobile devices.
 
 Connecting to a camera can require less code than using the NetConnection and
 NetStream classes to load a video. The camera class can also quickly become
-tricky because with Flash Player, you need a user’s permission to connect to
+tricky because with Flash Player, you need a user's permission to connect to
 their camera before you can access it.
 
 The following code demonstrates how you can use the Camera class to connect to a
-user’s local camera:
+user's local camera:
 
     var cam:Camera = Camera.getCamera();
     var vid:Video = new Video();
@@ -94,7 +94,7 @@ new Camera instance you use the static `Camera.getCamera()` method.
 
 <div>
 
-When writing an application that connects to a user’s camera, you need to
+When writing an application that connects to a user's camera, you need to
 account for the following in your code:
 
 - Check if the user has a camera currently installed. Handle the case where no
@@ -103,10 +103,10 @@ account for the following in your code:
 - For Flash Player only, check if the user has explicitly allowed access to the
   camera. For security reasons the player displays the Flash Player Settings
   dialog which lets the user allow or deny access to their camera. This prevents
-  Flash Player from connecting to a user’s camera and broadcasting a video
+  Flash Player from connecting to a user's camera and broadcasting a video
   stream without their permission. If a user clicks allow, your application can
-  connect to the user’s camera. If the user clicks deny, your application will
-  be unable to access the user’s camera. Your applications should always handle
+  connect to the user's camera. If the user clicks deny, your application will
+  be unable to access the user's camera. Your applications should always handle
   both cases gracefully.
 
 - For AIR only, check whether the Camera class is supported for the device
@@ -125,11 +125,11 @@ account for the following in your code:
 
 <div>
 
-## Connecting to a user’s camera
+## Connecting to a user's camera
 
 <div>
 
-The first step when connecting to a user’s camera is to create a new camera
+The first step when connecting to a user's camera is to create a new camera
 instance by creating a variable of type Camera and initializing it to the return
 value of the static `Camera.getCamera()` method.
 
@@ -139,7 +139,7 @@ it.
 The third step is to add the video object to the display list. You need to
 perform steps 2 and 3 because the Camera class does not extend the DisplayObject
 class so it cannot be added directly to the display list. To display the
-camera’s captured video, you create a new video object and call the
+camera's captured video, you create a new video object and call the
 `attachCamera()` method.
 
 The following code shows these three steps:
@@ -168,7 +168,7 @@ for further information.
 
 <div>
 
-Before you attempt to use any methods or properties on a camera instance, you’ll
+Before you attempt to use any methods or properties on a camera instance, you'll
 want to verify that the user has a camera installed. There are two ways to check
 whether the user has a camera installed:
 
@@ -204,9 +204,9 @@ whether the user has a camera installed:
       	trace("User has at least 1 camera installed.");
       }
 
-Since the Camera class doesn’t extend the DisplayObject class, it cannot be
+Since the Camera class doesn't extend the DisplayObject class, it cannot be
 directly added to the display list using the `addChild()` method. In order to
-display the camera’s captured video, you need to create a new Video object and
+display the camera's captured video, you need to create a new Video object and
 call the `attachCamera()` method on the Video instance.
 
 This snippet shows how you can attach the camera if one exists; if not, the
@@ -249,17 +249,17 @@ In the AIR application sandbox, the application can access any camera without
 the user's permission. On Android, however, the application must specify the
 Android CAMERA permission in the application descriptor.
 
-Before Flash Player can display a camera’s output, the user must explicitly
+Before Flash Player can display a camera's output, the user must explicitly
 allow Flash Player to access the camera. When the `attachCamera()` method gets
 called Flash Player displays the Flash Player Settings dialog box which prompts
 the user to either allow or deny Flash Player access to the camera and
 microphone. If the user clicks the Allow button, Flash Player displays the
-camera’s output in the Video instance on the Stage. If the user clicks the Deny
+camera's output in the Video instance on the Stage. If the user clicks the Deny
 button, Flash Player is unable to connect to the camera and the Video object
 does not display anything.
 
 If you want to detect whether the user allowed Flash Player access to the
-camera, you can listen for the camera’s `status` event ( `StatusEvent.STATUS`),
+camera, you can listen for the camera's `status` event ( `StatusEvent.STATUS`),
 as seen in the following code:
 
     var cam:Camera = Camera.getCamera();
@@ -282,8 +282,8 @@ Allow or Deny. You can detect which button the user clicked, using one of two
 methods:
 
 - The `event` parameter of the `statusHandler()` function contains a code
-  property which contains the string “Camera.Muted” or “Camera.Unmuted”. If the
-  value is “Camera.Muted” the user clicked the Deny button and Flash Player is
+  property which contains the string "Camera.Muted" or "Camera.Unmuted". If the
+  value is "Camera.Muted" the user clicked the Deny button and Flash Player is
   unable to access the camera. You can see an example of this in the following
   snippet:
 
@@ -340,10 +340,10 @@ the camera is not dynamic.
 By default, new instances of the Video class are 320 pixels wide by 240 pixels
 high. In order to maximize video quality you should always ensure that your
 video object matches the same dimensions as the video being returned by the
-camera object. You can get the camera object’s width and height by using the
-Camera class’s `width` and `height` properties, you can then set the video
-object’s `width` and `height` properties to match the camera objects dimensions,
-or you can pass the camera’s width and height to the Video class’s constructor
+camera object. You can get the camera object's width and height by using the
+Camera class's `width` and `height` properties, you can then set the video
+object's `width` and `height` properties to match the camera objects dimensions,
+or you can pass the camera's width and height to the Video class's constructor
 method, as seen in the following snippet:
 
     var cam:Camera = Camera.getCamera();
@@ -355,9 +355,9 @@ method, as seen in the following snippet:
     }
 
 Since the `getCamera()` method returns a reference to a camera object (or `null`
-if no cameras are available) you can access the camera’s methods and properties
+if no cameras are available) you can access the camera's methods and properties
 even if the user denies access to their camera. This allows you to set the size
-of the video instance using the camera’s native height and width.
+of the video instance using the camera's native height and width.
 
     var vid:Video;
     var cam:Camera = Camera.getCamera();
@@ -405,8 +405,8 @@ For information about full-screen mode, see the full-screen mode section under
 <div>
 
 The camera class contains several properties which allow you to monitor the
-Camera object’s current status. For example, the following code displays several
-of the camera’s properties using a Timer object and a text field instance on the
+Camera object's current status. For example, the following code displays several
+of the camera's properties using a Timer object and a text field instance on the
 display list:
 
     var vid:Video;
@@ -450,7 +450,7 @@ display list:
     	tf.appendText("quality: " + cam.quality + "\n");
     }
 
-Every 1/10 of a second (100 milliseconds) the Timer object’s `timer` event is
+Every 1/10 of a second (100 milliseconds) the Timer object's `timer` event is
 dispatched and the `timerHandler()` function updates the text field on the
 display list.
 

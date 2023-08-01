@@ -3,7 +3,7 @@
 <div>
 
 The
-[EncryptedLocalStore](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/EncryptedLocalStore.html)
+[EncryptedLocalStore](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/EncryptedLocalStore.html)
 class (ELS) provides an encrypted local storage mechanism that you can be use as
 a small cache for an application's private data. ELS data cannot be shared
 between applications. The intent of ELS is to allow an application to store
@@ -34,7 +34,7 @@ On Android, the data stored by the EncryptedLocalStorage class are not
 encrypted. Instead the data is protected by the user-level security provided by
 the operating system. The Android operating system assigns every application a
 separate user ID. Applications can only access their own files and files created
-in public locations (such as the removable storage card). Note that on “rooted”
+in public locations (such as the removable storage card). Note that on "rooted"
 Android devices, applications running with root privileges CAN access the files
 of other applications. Thus on a rooted device, the encrypted local store does
 not provide as high a level of data protection as it does on on a non-rooted
@@ -55,17 +55,17 @@ existing data in the encrypted local store unless:
 
 #### Limitations of the encrypted local store
 
-The data in the encrypted local store is protected by the user’s operating
+The data in the encrypted local store is protected by the user's operating
 system account credentials. Other entities cannot access the data in the store
 unless they can login as that user. However, the data is not secure against
 access by other applications run by an authenticated user.
 
-Because the user must be authenticated for these attacks to work, the user’s
+Because the user must be authenticated for these attacks to work, the user's
 private data is still protected (unless the user account itself is compromised).
 However, data that your application may want to keep secret from users, such as
 keys used for licensing or digital rights management, is not secure. Thus the
 ELS is not an appropriate location for storing such information. It is only an
-appropriate place for storing a user’s private data, such as passwords.
+appropriate place for storing a user's private data, such as passwords.
 
 Data in the ELS can be lost for a variety of reasons. For example, the user
 could uninstall the application and delete the encrypted file. Or, the publisher
@@ -128,7 +128,7 @@ For example, the following code stores a string in the encrypted local store:
 
 The third parameter of the `setItem()` method, the `stronglyBound` parameter, is
 optional. When this parameter is set to `true`, the encrypted local store binds
-the stored item to the storing AIR application’s digital signature and bits:
+the stored item to the storing AIR application's digital signature and bits:
 
     var str:String = "Bob";
     var bytes:ByteArray = new ByteArray();
@@ -155,7 +155,7 @@ ID as the original can continue to access the data.
 <div>
 
 Note: In practice, setting `stronglyBound` to `true` does not add any additional
-data protection. A “malicious” user could still alter an application to gain
+data protection. A "malicious" user could still alter an application to gain
 access to items stored in the ELS. Furthermore, data is protected from external,
 non-user threats just as strongly whether `stronglyBound` is set to `true` or
 `false`. For these reasons, setting `stronglyBound` to `true` is discouraged.
@@ -215,10 +215,10 @@ More Help topics
 </div>
 
 ![](images/flashplatformLinkIndicator.png)
-[flash.data.EncryptedLocalStore](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/EncryptedLocalStore.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/EncryptedLocalStore.html")
+[flash.data.EncryptedLocalStore](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/EncryptedLocalStore.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/EncryptedLocalStore.html")
 
 ![](images/airLinkIndicator.png)
-[About AIR publisher identifiers](http://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7cca.html "http://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7cca.html")
+[About AIR publisher identifiers](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7cca.html "https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7cca.html")
 
 <div>
 

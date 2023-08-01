@@ -2,14 +2,14 @@
 
 <div>
 
-The IME class lets you manipulate the operating system’s IME within Flash Player
+The IME class lets you manipulate the operating system's IME within Flash Player
 or Adobe AIR.
 
 Using ActionScript, you can determine the following:
 
 - If an IME is installed on the user's computer ( `Capabilities.hasIME`)
 
-- If the IME is enabled or disabled on the user’s computer ( `IME.enabled`)
+- If the IME is enabled or disabled on the user's computer ( `IME.enabled`)
 
 - The conversion mode the current IME is using ( `IME.conversionMode`)
 
@@ -52,7 +52,7 @@ activate it before you can call any IME method or property.
 <div>
 
 Before you call any of the IME methods or properties, you should always check to
-see if the user’s computer currently has an IME installed and enabled. The
+see if the user's computer currently has an IME installed and enabled. The
 following code illustrates how to check that the user has an IME both installed
 and active before you call any methods:
 
@@ -74,7 +74,7 @@ and active before you call any methods:
 
 The previous code first checks to see if the user has an IME installed using the
 `Capabilities.hasIME` property. If this property is set to `true,` the code then
-checks whether the user’s IME is currently enabled, using the `IME.enabled`
+checks whether the user's IME is currently enabled, using the `IME.enabled`
 property.
 
 </div>
@@ -142,7 +142,7 @@ IMEConversionMode class.
 
 <div>
 
-When you change the conversion mode of the user’s IME, you need to make sure
+When you change the conversion mode of the user's IME, you need to make sure
 that the code is wrapped in a `try..catch` block, because setting a conversion
 mode using the `conversionMode` property can throw an error if the IME is unable
 to set the conversion mode. The following code demonstrates how to use a
@@ -167,7 +167,7 @@ to set the conversion mode. The following code demonstrates how to use a
 
 The previous code first creates a text field, which is used to display a status
 message to the user. Next, if the IME is installed, the code enables the IME and
-sets the conversion mode to Korean. If the user’s computer does not have a
+sets the conversion mode to Korean. If the user's computer does not have a
 Korean IME installed, an error is thrown by Flash Player or AIR and is caught by
 the `try..catch` block. The `try..catch` block displays the error message in the
 previously created text field.
@@ -182,12 +182,12 @@ previously created text field.
 
 <div>
 
-In some cases, you may want to disable the user’s IME while they type
+In some cases, you may want to disable the user's IME while they type
 characters. For example, if you had a text field that only accepts numeric
 input, you may not want the IME to come up and slow down data entry.
 
 The following example demonstrates how you can listen for the
-`FocusEvent.FOCUS_IN` and `FocusEvent.FOCUS_OUT` events and disable the user’s
+`FocusEvent.FOCUS_IN` and `FocusEvent.FOCUS_OUT` events and disable the user's
 IME accordingly:
 
     var phoneTxt:TextField = new TextField();

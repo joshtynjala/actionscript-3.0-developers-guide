@@ -34,7 +34,7 @@ as a pop-up menu as shown in the following sections:
 
 #### Setting the application menu or window menu
 
-It’s important that your code accommodate both application menus (supported on
+It's important that your code accommodate both application menus (supported on
 Mac OS) and window menus (supported on other operating systems)
 
     var root:NativeMenu = new NativeMenu();
@@ -74,7 +74,7 @@ FlexNativeMenu classes instead of the NativeMenu class.
 
 #### Setting a dock icon menu or system tray icon menu
 
-It’s important that your code accommodate both application menus (supported on
+It's important that your code accommodate both application menus (supported on
 Mac OS) and window menus (supported on other operating systems)
 
     if (NativeApplication.supportsSystemTrayIcon)
@@ -116,7 +116,7 @@ or modify the standard menu items.
 <div>
 
 To create a submenu, you add a NativeMenuItem object to the parent menu and then
-assign the NativeMenu object defining the submenu to the item’s `submenu`
+assign the NativeMenu object defining the submenu to the item's `submenu`
 property. AIR provides two ways to create submenu items and their associated
 menu object:
 
@@ -194,7 +194,7 @@ More Help topics
 </div>
 
 ![](images/flexLinkIndicator.png)
-[Using the Flex AIR components](http://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-8000.html "http://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-8000.html")
+[Using the Flex AIR components](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-8000.html "https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-8000.html")
 
 [Developing cross-platform AIR applications](http://www.adobe.com/devnet/air/articles/developing_crossplatform.html "http://www.adobe.com/devnet/air/articles/developing_crossplatform.html")
 

@@ -29,7 +29,7 @@ method, and additionally specifies that the fill color has an alpha of 50%
 In a Sprite or MovieClip object, the drawing content created with the `graphics`
 property always appears behind all child display objects that are contained by
 the object. Also, the `graphics` property content is not a separate display
-object so it does not appear in the list of a Sprite or MovieClip object’s
+object so it does not appear in the list of a Sprite or MovieClip object's
 children. For example, the following Sprite object has a circle drawn with its
 `graphics` property, and it has a TextField object in its list of child display
 objects:

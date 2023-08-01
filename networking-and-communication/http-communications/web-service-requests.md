@@ -65,7 +65,7 @@ More Help topics
 </div>
 
 ![](images/flexLinkIndicator.png)
-[Accessing server-side data](http://help.adobe.com/en_US/Flex/4.5/AccessingData/WS2db454920e96a9e51e63e3d11c0bf69084-7ff2.html "http://help.adobe.com/en_US/Flex/4.5/AccessingData/WS2db454920e96a9e51e63e3d11c0bf69084-7ff2.html")
+[Accessing server-side data](https://help.adobe.com/en_US/Flex/4.5/AccessingData/WS2db454920e96a9e51e63e3d11c0bf69084-7ff2.html "https://help.adobe.com/en_US/Flex/4.5/AccessingData/WS2db454920e96a9e51e63e3d11c0bf69084-7ff2.html")
 
 [Adobe BlazeDS](http://opensource.adobe.com/wiki/display/blazeds/BlazeDS "http://opensource.adobe.com/wiki/display/blazeds/BlazeDS")
 

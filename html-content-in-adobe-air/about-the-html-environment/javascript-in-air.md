@@ -59,7 +59,7 @@ get references to objects, properties, or methods that are not explicitly
 exposed. Only simple data types, functions, and anonymous objects can be passed
 across the bridge. However, you must still avoid explicitly exposing potentially
 dangerous functions. If, for example, you exposed an interface that allowed
-remote content to read and write files anywhere on a user’s system, then you
+remote content to read and write files anywhere on a user's system, then you
 might be giving remote content the means to do considerable harm to your users.
 
 </div>

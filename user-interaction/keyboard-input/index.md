@@ -35,10 +35,10 @@ More Help topics
 </div>
 
 ![](images/flashplatformLinkIndicator.png)
-[flash.events.KeyboardEvent](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/KeyboardEvent.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/KeyboardEvent.html")
+[flash.events.KeyboardEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/KeyboardEvent.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/KeyboardEvent.html")
 
 ![](images/flashplatformLinkIndicator.png)
-[flash.system.IME](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/system/IME.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/system/IME.html")
+[flash.system.IME](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/system/IME.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/system/IME.html")
 
 <div>
 

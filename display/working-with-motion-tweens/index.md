@@ -36,9 +36,9 @@ To create motion tweens, you must have a license for Flash Professional.
 
 ## More Help topics
 
-- [Motion tween animation](http://help.adobe.com/en_US/flash/cs/using/WS45E2B930-4637-4d57-B785-9C8D06B1F8F5.html)
+- [Motion tween animation](https://help.adobe.com/en_US/flash/cs/using/WS45E2B930-4637-4d57-B785-9C8D06B1F8F5.html)
 
-- [fl.motion package](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/fl/motion/package-detail.html)
+- [fl.motion package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/fl/motion/package-detail.html)
 
 <div>
 

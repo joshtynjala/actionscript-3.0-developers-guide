@@ -15,8 +15,8 @@ its order in a sorted list.
 
 When searching, you often want to ignore differences in case or diacritics, to
 increase the chance of finding relevant matches. For example, a search for the
-characters “cote” in a French document conceivably returns matches for “cote”,
-“côte”, and “coté”.
+characters "cote" in a French document conceivably returns matches for "cote",
+"côte", and "coté".
 
 </div>
 
@@ -49,7 +49,7 @@ French-France locale. Then it sorts two words that differ only by diacritical
 marks. This shows that the SORTING comparison distinguishes between accented and
 non-accented characters.
 
-The sorting is performed by passing a reference to the Collator object’s sort()
+The sorting is performed by passing a reference to the Collator object's sort()
 method as a parameter to the Array.sort() method. This technique is one of the
 most efficient ways of using a Collator object to control sort order.
 
@@ -68,7 +68,7 @@ MATCHING comparison values accented and non-accented characters the same.
 <div>
 
 By default, the Collator class uses string comparison rules obtained from the
-operating system based on the locale and the user’s system preferences. You can
+operating system based on the locale and the user's system preferences. You can
 customize the behavior of the compare() and equals() methods by explicitly
 setting various properties. The following table lists the properties and the
 effect they have upon comparisons:

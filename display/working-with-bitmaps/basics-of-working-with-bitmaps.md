@@ -2,7 +2,7 @@
 
 <div>
 
-When you work with digital images, you’re likely to encounter two main types of
+When you work with digital images, you're likely to encounter two main types of
 graphics: bitmap and vector. Bitmap graphics, also known as raster graphics, are
 composed of tiny squares (pixels) that are arranged in a rectangular grid
 formation. Vector graphics are composed of mathematically generated geometric
@@ -26,7 +26,7 @@ color depth value of 16 bits per pixel cannot represent the same number of
 colors as an image that has a color depth of 48 bits. As a result, the 48-bit
 image will have smoother degrees of shading than its 16-bit counterpart.
 
-Because bitmap graphics are resolution-dependent, they don’t scale very well.
+Because bitmap graphics are resolution-dependent, they don't scale very well.
 This is most noticeable when bitmap images are scaled up in size. Scaling up a
 bitmap usually results in a loss of detail and quality.
 
@@ -58,7 +58,7 @@ as such usually results in large file sizes.
 The Graphics Interchange Format (GIF) was originally developed by CompuServe in
 1987 as a means to transmit images with 256 colors (8-bit color). The format
 provides small file sizes and is ideal for web-based images. Because of this
-format’s limited color palette, GIF images are generally not suitable for
+format's limited color palette, GIF images are generally not suitable for
 photographs, which typically require high degrees of shading and color
 gradients. GIF images permit single-bit transparency, which allows colors to be
 mapped as clear (or transparent). This results in the background color of a web
@@ -87,7 +87,7 @@ applied to an image allows you to manipulate image quality and file size.
 The Portable Network Graphics (PNG) format was produced as an open-source
 alternative to the patented GIF file format. PNGs support up to 64-bit color
 depth, allowing for up to 16 million colors. Because PNG is a relatively new
-format, some older browsers don’t support PNG files. Unlike JPGs, PNGs use
+format, some older browsers don't support PNG files. Unlike JPGs, PNGs use
 lossless compression, which means that none of the image data is lost when the
 image is saved. PNG files also support alpha transparency, which allows for up
 to 256 levels of transparency.
@@ -139,7 +139,7 @@ The level of transparency (or more accurately, opacity) in a color or an image.
 The amount of alpha is often described as the _alpha channel_ value.
 
 ARGB color  
-A color scheme where each pixel’s color is a mixture of red, green, and blue
+A color scheme where each pixel's color is a mixture of red, green, and blue
 color values, and its transparency is specified as an alpha value.
 
 Color channel  
@@ -162,7 +162,7 @@ detail contained in the image. Resolution is often expressed in terms of width
 and height in number of pixels.
 
 RGB color  
-A color scheme where each pixel’s color is represented as a mixture of red,
+A color scheme where each pixel's color is represented as a mixture of red,
 green, and blue color values.
 
 </div>

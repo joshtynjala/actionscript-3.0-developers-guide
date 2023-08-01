@@ -12,11 +12,11 @@ of a computer screen are dynamic and can change, while printed content is
 inherently static; and in planning printing, consider the constraints of fixed
 page size and the possibility of multipage printing.
 
-Even though these differences seem obvious, it’s important to keep them in mind
+Even though these differences seem obvious, it's important to keep them in mind
 when setting up printing with ActionScript. Accurate printing depends on a
-combination of the values specified by you and the characteristics of the user’s
+combination of the values specified by you and the characteristics of the user's
 printer. The PrintJob class includes properties that allow you to determine the
-important characteristics of the user’s printer.
+important characteristics of the user's printer.
 
 <div>
 

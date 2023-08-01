@@ -5,23 +5,23 @@
 The NetStream class offers four main methods for controlling video playback:
 
 ` `<a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetStream.html#pause()"
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetStream.html#pause()"
 target="_self"><samp>pause()</samp></a>: Pauses playback of a video stream. If
 the video is already paused, calling this method does nothing.
 
 ` `<a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetStream.html#resume()"
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetStream.html#resume()"
 target="_self"><samp>resume()</samp></a>: Resumes playback of a video stream
 that is paused. If the video is already playing, calling this method does
 nothing.
 
 ` `<a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetStream.html#seek()"
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetStream.html#seek()"
 target="_self"><samp>seek()</samp></a>: Seeks the keyframe closest to the
 specified location (an offset, in seconds, from the beginning of the stream).
 
 ` `<a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetStream.html#togglePause()"
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetStream.html#togglePause()"
 target="_self"><samp>togglePause()</samp></a>: Pauses or resumes playback of a
 stream.
 
@@ -101,7 +101,7 @@ was already playing.
 In order to listen for the beginning and end of a video stream, you need to add
 an event listener to the NetStream instance to listen for the `netStatus` event.
 The following code demonstrates how to listen for the various codes throughout
-the video’s playback:
+the video's playback:
 
     ns.addEventListener(NetStatusEvent.NET_STATUS, statusHandler);
     function statusHandler(event:NetStatusEvent):void
@@ -124,8 +124,8 @@ The previous code generates the following output:
     NetStream.Buffer.Flush
 
 The two codes that you want to specifically listen for are
-“NetStream.Play.Start” and “NetStream.Play.Stop” which signal the beginning and
-end of the video’s playback. The following snippet uses a switch statement to
+"NetStream.Play.Start" and "NetStream.Play.Stop" which signal the beginning and
+end of the video's playback. The following snippet uses a switch statement to
 filter these two codes and trace a message:
 
     function statusHandler(event:NetStatusEvent):void

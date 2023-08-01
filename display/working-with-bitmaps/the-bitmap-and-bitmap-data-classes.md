@@ -92,7 +92,7 @@ with an orange background that is 50 percent transparent:
 
 To render a newly created BitmapData object to the screen, assign it to or wrap
 it in a Bitmap instance. To do this, you can either pass the BitmapData object
-as a parameter of the Bitmap object’s constructor, or you can assign it to the
+as a parameter of the Bitmap object's constructor, or you can assign it to the
 `bitmapData` property of an existing Bitmap instance. You must also add the
 Bitmap instance to the display list by calling the `addChild()` or
 `addChildAt()` methods of the display object container that will contain the

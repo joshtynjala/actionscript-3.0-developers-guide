@@ -9,7 +9,7 @@ creating and connecting to encrypted database files. When you use an encrypted
 database, in order to connect to the database an application must provide the
 correct encryption key. If the incorrect encryption key (or no key) is provided,
 the application is not able to connect to the database. Consequently, the
-application can’t read data from the database or write to or change data in the
+application can't read data from the database or write to or change data in the
 database.
 
 To use an encrypted database, you must create the database as an encrypted
@@ -55,12 +55,12 @@ For more information about these considerations, see
 
 Other than an encrypted database, an alternative mechanism for keeping sensitive
 data private is the
-[encrypted local store](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/EncryptedLocalStore.html).
+[encrypted local store](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/EncryptedLocalStore.html).
 With the encrypted local store, you store a single
-[ByteArray](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/utils/ByteArray.html)
+[ByteArray](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/utils/ByteArray.html)
 value using a String key. Only the AIR application that stores the value can
 access it, and only on the computer on which it is stored. With the encrypted
-local store, it isn’t necessary to create your own encryption key. For these
+local store, it isn't necessary to create your own encryption key. For these
 reasons, the encrypted local store is most suitable for easily storing a single
 value or set of values that can easily be encoded in a ByteArray. An encrypted
 database is most suitable for larger data sets where structured data storage and
@@ -79,11 +79,11 @@ store, see
 <div>
 
 To use an encrypted database, the database file must be encrypted when it is
-created. Once a database is created as unencrypted, it can’t be encrypted later.
-Likewise, an encrypted database can’t be unencrypted later. If needed you can
+created. Once a database is created as unencrypted, it can't be encrypted later.
+Likewise, an encrypted database can't be unencrypted later. If needed you can
 change the encryption key of an encrypted database. For details, see
 [Changing the encryption key of a database](WS09F24BEF-BEE3-4d36-9190-7CA9B0F24DA1.html).
-If you have an existing database that’s not encrypted and you want to use
+If you have an existing database that's not encrypted and you want to use
 database encryption, you can create a new encrypted database and copy the
 existing table structure and data to the new database.
 
@@ -91,16 +91,16 @@ Creating an encrypted database is nearly identical to creating an unencrypted
 database, as described in
 [Creating a database](WS5b3ccc516d4fbf351e63e3d118666ade46-7d44.html). You first
 create a
-[SQLConnection](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLConnection.html)
+[SQLConnection](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLConnection.html)
 instance that represents the connection to the database. You create the database
-by calling the SQLConnection object’s `open()` method or `openAsync()` method,
-specifying for the database location a file that doesn’t exist yet. The only
+by calling the SQLConnection object's `open()` method or `openAsync()` method,
+specifying for the database location a file that doesn't exist yet. The only
 difference when creating an encrypted database is that you provide a value for
-the `encryptionKey` parameter (the `open()` method’s fifth parameter and the
-`openAsync()` method’s sixth parameter).
+the `encryptionKey` parameter (the `open()` method's fifth parameter and the
+`openAsync()` method's sixth parameter).
 
 A valid `encryptionKey` parameter value is a
-[ByteArray](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/utils/ByteArray.html)
+[ByteArray](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/utils/ByteArray.html)
 object containing exactly 16 bytes.
 
 The following examples demonstrate creating an encrypted database. For
@@ -138,25 +138,25 @@ an encrypted database is like connecting to an unencrypted database. That
 procedure is described in greater detail in
 [Connecting to a database](WS5b3ccc516d4fbf351e63e3d118666ade46-7d32.html). You
 use the `open()` method to
-[open a connection in synchronous execution mode](<http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLConnection.html#open()>),
+[open a connection in synchronous execution mode](<https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLConnection.html#open()>),
 or the `openAsync()` method to
-[open a connection in asynchronous execution mode](<http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLConnection.html#openAsync()>).
+[open a connection in asynchronous execution mode](<https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLConnection.html#openAsync()>).
 The only difference is that to open an encrypted database, you specify the
-correct value for the `encryptionKey` parameter (the `open()` method’s fifth
-parameter and the `openAsync()` method’s sixth parameter).
+correct value for the `encryptionKey` parameter (the `open()` method's fifth
+parameter and the `openAsync()` method's sixth parameter).
 
-If the encryption key that’s provided is not correct, an error occurs. For the
+If the encryption key that's provided is not correct, an error occurs. For the
 `open()` method, a
-[SQLError](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/errors/SQLError.html)
+[SQLError](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/errors/SQLError.html)
 exception is thrown. For the `openAsync()` method, the
-[SQLConnection](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLConnection.html)
+[SQLConnection](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLConnection.html)
 object dispatches a
-[SQLErrorEvent](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/events/SQLErrorEvent.html),
+[SQLErrorEvent](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/events/SQLErrorEvent.html),
 whose `error` property contains a
-[SQLError](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/errors/SQLError.html)
+[SQLError](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/errors/SQLError.html)
 object. In either case, the SQLError object generated by the exception has the
 `errorID` property value 3138. That error ID corresponds to the error message
-“File opened is not a database file.”
+"File opened is not a database file."
 
 The following example demonstrates opening an encrypted database in asynchronous
 execution mode. For simplicity, in this example the encryption key is hard-coded
@@ -245,14 +245,14 @@ see
 <div>
 
 When a database is encrypted, you can change the encryption key for the database
-at a later time. To change a database’s encryption key, first open a connection
+at a later time. To change a database's encryption key, first open a connection
 to the database by creating a
-[SQLConnection](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLConnection.html)
+[SQLConnection](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLConnection.html)
 instance and calling its `open()` or `openAsync()` method. Once the database is
 connected, call the `reencrypt()` method, passing the new encryption key as an
 argument.
 
-Like most database operations, the `reencrypt()` method’s behavior varies
+Like most database operations, the `reencrypt()` method's behavior varies
 depending on whether the database connection uses synchronous or asynchronous
 execution mode. If you use the `open()` method to connect to the database, the
 `reencrypt()` operation runs synchronously. When the operation finishes,
@@ -285,8 +285,8 @@ interrupted or fails (for example, if the application is closed before the
 operation finishes) the transaction is rolled back. In that case, the original
 encryption key is still the encryption key for the database.
 
-The `reencrypt()` method can’t be used to remove encryption from a database.
-Passing a `null` value or encryption key that’s not a 16-byte ByteArray to the
+The `reencrypt()` method can't be used to remove encryption from a database.
+Passing a `null` value or encryption key that's not a 16-byte ByteArray to the
 `reencrypt()` method results in an error.
 
 </div>
@@ -302,16 +302,16 @@ Passing a `null` value or encryption key that’s not a 16-byte ByteArray to the
 The section
 [Uses for an encrypted database](WS8FAE5151-90D9-45e0-8ABD-09C17C4E6D36.html)
 presents several cases in which you would want to use an encrypted database.
-It’s obvious that the usage scenarios of different applications (including these
+It's obvious that the usage scenarios of different applications (including these
 and other scenarios) have different privacy requirements. The way you architect
 the use of encryption in your application plays an important part in controlling
-how private a database’s data is. For example, if you are using an encrypted
+how private a database's data is. For example, if you are using an encrypted
 database to keep personal data private, even from other users of the same
-machine, then each user’s database needs its own encryption key. For the
+machine, then each user's database needs its own encryption key. For the
 greatest security, your application can generate the key from a user-entered
 password. Basing the encryption key on a password ensures that even if another
-person is able to impersonate the user’s account on the machine, the data still
-can’t be accessed. On the other end of the privacy spectrum, suppose you want a
+person is able to impersonate the user's account on the machine, the data still
+can't be accessed. On the other end of the privacy spectrum, suppose you want a
 database file to be readable by any user of your application but not to other
 applications. In that case every installed copy of the application needs access
 to a shared encryption key.
@@ -322,7 +322,7 @@ your application data. The following list provides design suggestions for
 various levels of data privacy:
 
 - To make a database accessible to any user who has access to the application on
-  any machine, use a single key that’s available to all instances of the
+  any machine, use a single key that's available to all instances of the
   application. For example, the first time an application runs it can download
   the shared encryption key from a server using a secure protocol such as SSL.
   It can then save the key in the encrypted local store for future use. As an
@@ -331,7 +331,7 @@ various levels of data privacy:
 
 - To make a database accessible to a single user on any machine, generate the
   encryption key from a user secret (such as a password). In particular, do not
-  use any value that’s tied to a particular computer (such as a value stored in
+  use any value that's tied to a particular computer (such as a value stored in
   the encrypted local store) to generate the key. As an alternative, encrypt the
   data per-user on the machine, and synchronize the data with a remote data
   store such as a server to make the data portable.
@@ -349,7 +349,7 @@ in mind when designing an application to use an encrypted database:
   length and complexity restrictions on passwords. A short password that uses
   only basic characters can be guessed quickly.
 
-- The source code of an AIR application is stored on a user’s machine in plain
+- The source code of an AIR application is stored on a user's machine in plain
   text (for HTML content) or an easily decompilable binary format (for SWF
   content). Because the source code is accessible, two points to remember are:
 
@@ -385,7 +385,7 @@ in mind when designing an application to use an encrypted database:
 
 This example application demonstrates one technique for generating an encryption
 key. This application is designed to provide the highest level of privacy and
-security for users’ data. One important aspect of securing private data is to
+security for users' data. One important aspect of securing private data is to
 require the user to enter a password each time the application connects to the
 database. Consequently, as shown in this example, an application that requires
 this level of privacy should never directly store the database encryption key.
@@ -403,7 +403,7 @@ that demonstrates how to use that class. For the complete source code, see
 
 <div>
 
-It isn’t necessary to understand the details of how the EncryptionKeyGenerator
+It isn't necessary to understand the details of how the EncryptionKeyGenerator
 class works to use it in your application. If you are interested in the details
 of how the class generates an encryption key for a database, see
 [Understanding the EncryptionKeyGenerator class](WS495D91DF-659A-4a6f-8944-EA08072C2D4C.html).
@@ -446,7 +446,7 @@ Follow these steps to use the EncryptionKeyGenerator class in your application:
     tests the password against certain strong password validation requirements.
     If the validation fails, an error occurs. As the example code shows, you can
     check the password ahead of time by calling the EncryptionKeyGenerator
-    object’s `validateStrongPassword()` method. That way you can determine
+    object's `validateStrongPassword()` method. That way you can determine
     whether the password meets the minimum requirements for a strong password
     and avoid an error.
 
@@ -465,7 +465,7 @@ Follow these steps to use the EncryptionKeyGenerator class in your application:
 
     Note: To maintain the highest level of security and privacy for data, an
     application must require the user to enter a password each time the
-    application connects to the database. Do not store the user’s password or
+    application connects to the database. Do not store the user's password or
     the database encryption key directly. Doing so exposes security risks.
     Instead, as demonstrated in this example, an application should use the same
     technique to derive the encryption key from the password both when creating
@@ -479,7 +479,7 @@ Follow these steps to use the EncryptionKeyGenerator class in your application:
     key. In order to be able to re-create the encryption key, the salt value is
     stored in the Encrypted Local Store (ELS) of your AIR application. By
     default, the EncryptionKeyGenerator class uses a particular String as the
-    ELS key. Although unlikely, it’s possible that the key can conflict with
+    ELS key. Although unlikely, it's possible that the key can conflict with
     another key your application uses. Instead of using the default key, you
     might want to specify your own ELS key. In that case, specify a custom key
     by passing it as the second `getEncryptionKey()` parameter, as shown here:
@@ -491,7 +491,7 @@ Follow these steps to use the EncryptionKeyGenerator class in your application:
 
     With an encryption key returned by the `getEncryptionKey()` method, your
     code can create a new encrypted database or attempt to open the existing
-    encrypted database. In either case you use the SQLConnection class’s
+    encrypted database. In either case you use the SQLConnection class's
     `open()` or `openAsync()` method, as described in
     [Creating an encrypted database](WS00469B81-CE46-48d3-A825-A179339FA9B4.html)
     and
@@ -515,7 +515,7 @@ Follow these steps to use the EncryptionKeyGenerator class in your application:
     to connect to an existing database) and if the error ID matches the constant
     `EncryptionKeyGenerator.ENCRYPTED_DB_PASSWORD_ERROR_ID`. If both of these
     conditions are true, it probably means that the password the user entered is
-    incorrect. (It could also mean that the specified file isn’t a database file
+    incorrect. (It could also mean that the specified file isn't a database file
     at all.) The following is the code that checks the error ID:
 
         if (!createNewDB && event.error.errorID == EncryptionKeyGenerator.ENCRYPTED_DB_PASSWORD_ERROR_ID)
@@ -540,8 +540,8 @@ Follow these steps to use the EncryptionKeyGenerator class in your application:
 
 <div>
 
-The following is the complete code for the example application “Generating and
-using an encryption key.” The code consists of two parts.
+The following is the complete code for the example application "Generating and
+using an encryption key." The code consists of two parts.
 
 The example uses the EncryptionKeyGenerator class to create an encryption key
 from a password. The EncryptionKeyGenerator class is included in the open-source
@@ -783,7 +783,7 @@ timeline. The following is the code for the application:
 
 <div>
 
-It isn’t necessary to understand the inner workings of the
+It isn't necessary to understand the inner workings of the
 EncryptionKeyGenerator class to use it to create a secure encryption key for
 your application database. The process for using the class is explained in
 [Using the EncryptionKeyGenerator class to obtain a secure encryption key](WS44EC31A7-61B1-4e0a-8C61-D720AA95DE03.html).
@@ -815,11 +815,11 @@ When code calls the `getEncryptionKey()` method, it passes in a password as a
 parameter. The password is used as the basis for the encryption key. By using a
 piece of information that only the user knows, this design ensures that only the
 user who knows the password can access the data in the database. Even if an
-attacker accesses the user’s account on the computer, the attacker can’t get
+attacker accesses the user's account on the computer, the attacker can't get
 into the database without knowing the password. For maximum security, the
 application never stores the password.
 
-An application’s code creates an EncryptionKeyGenerator instance and calls its
+An application's code creates an EncryptionKeyGenerator instance and calls its
 `getEncryptionKey()` method, passing a user-entered password as an argument (the
 variable `password` in this example):
 
@@ -838,7 +838,7 @@ The regular expression that checks this pattern is defined as a constant named
 
     private static const STRONG_PASSWORD_PATTERN:RegExp = /(?=^.{8,32}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/;
 
-The code that checks the password is in the EncryptionKeyGenerator class’s
+The code that checks the password is in the EncryptionKeyGenerator class's
 `validateStrongPassword()` method. The code is as follows:
 
     public function vaidateStrongPassword(password:String):Boolean
@@ -852,7 +852,7 @@ The code that checks the password is in the EncryptionKeyGenerator class’s
     }
 
 Internally the `getEncryptionKey()` method calls the EncryptionKeyGenerator
-class’s `validateStrongPassword()` method and, if the password isn’t valid,
+class's `validateStrongPassword()` method and, if the password isn't valid,
 throws an exception. The `validateStrongPassword()` method is a public method so
 that application code can check a password without calling the
 `getEncryptionKey()` method to avoid causing an error.
@@ -868,7 +868,7 @@ that application code can check a password without calling the
 <div>
 
 Later in the process, the password is required to be 256 bits long. Rather than
-require each user to enter a password that’s exactly 256 bits (32 characters)
+require each user to enter a password that's exactly 256 bits (32 characters)
 long, the code creates a longer password by repeating the password characters.
 
 The `getEncryptionKey()` method calls the `concatenatePassword()` method to
@@ -904,7 +904,7 @@ The following is the code for the `concatenatePassword()` method:
     }
 
 If the password is less than 256 bits, the code concatenates the password with
-itself to make it 256 bits. If the length doesn’t work out exactly, the last
+itself to make it 256 bits. If the length doesn't work out exactly, the last
 repetition is shortened to get exactly 256 bits.
 
 </div>
@@ -924,7 +924,7 @@ that even if a user chooses a real word or common term as a password, the
 password-plus-salt combination that the system uses is a random value. This
 randomness helps guard against a dictionary attack, where an attacker uses a
 list of words to attempt to guess a password. In addition, by generating the
-salt value and storing it in the encrypted local store, it is tied to the user’s
+salt value and storing it in the encrypted local store, it is tied to the user's
 account on the machine on which the database file is located.
 
 If the application is calling the `getEncryptionKey()` method for the first
@@ -946,7 +946,7 @@ If the code is creating a new salt value, the `makeSalt()` method generates a
 256-bit random value. Because the value is eventually stored in the encrypted
 local store, it is generated as a ByteArray object. The `makeSalt()` method uses
 the `Math.random()` method to randomly generate the value. The `Math.random()`
-method can’t generate 256 bits at one time. Instead, the code uses a loop to
+method can't generate 256 bits at one time. Instead, the code uses a loop to
 call `Math.random()` eight times. Each time, a random uint value between 0 and
 4294967295 (the maximum uint value) is generated. A uint value is used for
 convenience, because a uint uses exactly 32 bits. By writing eight uint values
@@ -967,8 +967,8 @@ the `makeSalt()` method:
 
 When the code is saving the salt to the Encrypted Local Store (ELS) or
 retrieving the salt from the ELS, it needs a String key under which the salt is
-saved. Without knowing the key, the salt value can’t be retrieved. In that case,
-the encryption key can’t be re-created each time to reopen the database. By
+saved. Without knowing the key, the salt value can't be retrieved. In that case,
+the encryption key can't be re-created each time to reopen the database. By
 default, the EncryptionKeyGenerator uses a predefined ELS key that is defined in
 the constant `SALT_ELS_KEY`. Instead of using the default key, application code
 can also specify an ELS key to use in the call to the `getEncryptionKey()`
@@ -1022,14 +1022,14 @@ to combine using the XOR operator.
 
 Within the loop, first 32 bits (4 bytes) are extracted from the `passwordString`
 parameter. Those bits are extracted and converted into a uint ( `o1`) in a
-two-part process. First, the `charCodeAt()` method gets each character’s numeric
+two-part process. First, the `charCodeAt()` method gets each character's numeric
 value. Next, that value is shifted to the appropriate position in the uint using
 the bitwise left shift operator ( `<<`) and the shifted value is added to `o1`.
 For example, the first character ( `i`) becomes the first 8 bits by using the
 bitwise left shift operator ( `<<`) to shift the bits left by 24 bits and
 assigning that value to `o1`. The second character `(i + 1`) becomes the second
 8 bits by shifting its value left 16 bits and adding the result to `o1`. The
-third and fourth characters’ values are added the same way.
+third and fourth characters' values are added the same way.
 
     	// ...
 
@@ -1109,13 +1109,13 @@ Consequently, the final step is to select 128 bits from the hashed result to use
 as the actual encryption key.
 
 In the EncryptionKeyGenerator class, the code reduces the key to 128 bits by
-calling the `generateEncryptionKey()` method. It then returns that method’s
+calling the `generateEncryptionKey()` method. It then returns that method's
 result as the result of the `getEncryptionKey()` method:
 
     var encryptionKey:ByteArray = generateEncryptionKey(hashedKey);
     return encryptionKey;
 
-It isn’t necessary to use the first 128 bits as the encryption key. You could
+It isn't necessary to use the first 128 bits as the encryption key. You could
 select a range of bits starting at some arbitrary point, you could select every
 other bit, or use some other way of selecting bits. The important thing is that
 the code selects 128 distinct bits, and that the same 128 bits are used each
@@ -1136,7 +1136,7 @@ loop counts from 0 to 31 (32 characters) in increments of 2 characters.
 Within the loop, the code first determines the starting position for the current
 pair of characters. Since the desired range starts at the character at index
 position 17 (the 18th byte), the `position` variable is assigned the current
-iterator value ( `i`) plus 17. The code uses the String object’s `substr()`
+iterator value ( `i`) plus 17. The code uses the String object's `substr()`
 method to extract the two characters at the current position. Those characters
 are stored in the variable `hex`. Next, the code uses the `parseInt()` method to
 convert the `hex` String to a decimal integer value. It stores that value in the

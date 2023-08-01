@@ -23,29 +23,29 @@ database is a critical part of your application.
 
 Most connection errors have to do with how the runtime interacts with the
 operating system, the file system, and the database file. For example, a
-connection error occurs if the user doesn’t have permission to create a database
+connection error occurs if the user doesn't have permission to create a database
 file in a particular location on the file system. The following strategies help
 to prevent connection errors:
 
 Use user-specific database files  
 Rather than using a single database file for all users who use the application
 on a single computer, give each user their own database file. The file should be
-located in a directory that’s associated with the user’s account. For example,
-it could be in the application’s storage directory, the user’s documents folder,
-the user’s desktop, and so forth.
+located in a directory that's associated with the user's account. For example,
+it could be in the application's storage directory, the user's documents folder,
+the user's desktop, and so forth.
 
 Consider different user types  
 Test your application with different types of user accounts, on different
-operating systems. Don’t assume that the user has administrator permission on
-the computer. Also, don’t assume that the individual who installed the
-application is the user who’s running the application.
+operating systems. Don't assume that the user has administrator permission on
+the computer. Also, don't assume that the individual who installed the
+application is the user who's running the application.
 
 Consider various file locations  
 If you allow a user to specify where to save a database file or select a file to
 open, consider the possible file locations that the users might use. In
 addition, consider defining limits on where users can store (or from where they
 can open) database files. For example, you might only allow users to open files
-that are within their user account’s storage location.
+that are within their user account's storage location.
 
 If a connection error occurs, it most likely happens on the first attempt to
 create or open the database. This means that the user is unable to do any
@@ -80,10 +80,10 @@ tests that exercise every possible option and variation in the code.
 Use statement parameters and avoid concatenating (dynamically generating) SQL  
 Using parameters, and avoiding dynamically built SQL statements, means that the
 same SQL statement text is used each time a statement is executed. Consequently,
-it’s much easier to test your statements and limit the possible variation. If
+it's much easier to test your statements and limit the possible variation. If
 you must dynamically generate a SQL statement, keep the dynamic parts of the
 statement to a minimum. Also, carefully validate any user input to make sure it
-won’t cause syntax errors.
+won't cause syntax errors.
 
 To recover from a syntax error, an application would need complex logic to be
 able to examine a SQL statement and correct its syntax. By following the
@@ -114,7 +114,7 @@ In other words, in terms of the specified unique column or columns, each row
 must be distinct.
 
 Primary key constraint  
-In terms of the data that a constraint allows and doesn’t allow, a primary key
+In terms of the data that a constraint allows and doesn't allow, a primary key
 constraint is identical to a unique constraint.
 
 Not null constraint  
@@ -123,47 +123,47 @@ in every row, that column must have a value.
 
 Check constraint  
 Allows you to specify an arbitrary constraint on one or more tables. A common
-check constraint is a rule that define that a column’s value must be within
-certain bounds (for example, that a numeric column’s value must be larger than
+check constraint is a rule that define that a column's value must be within
+certain bounds (for example, that a numeric column's value must be larger than
 0). Another common type of check constraint specifies relationships between
-column values (for example, that a column’s value must be different from the
+column values (for example, that a column's value must be different from the
 value of another column in the same row).
 
 Data type (column affinity) constraint  
-The runtime enforces the data type of columns’ values, and an error occurs if an
+The runtime enforces the data type of columns' values, and an error occurs if an
 attempt is made to store a value of the incorrect type in a column. However, in
-many conditions values are converted to match the column’s declared data type.
+many conditions values are converted to match the column's declared data type.
 See
 [Working with database data types](WS5b3ccc516d4fbf351e63e3d118666ade46-7d48.html)
 for more information.
 
 The runtime does not enforce constraints on foreign key values. In other words,
-foreign key values aren’t required to match an existing primary key value.
+foreign key values aren't required to match an existing primary key value.
 
 In addition to the predefined constraint types, the runtime SQL engine supports
 the use of triggers. A trigger is like an event handler. It is a predefined set
 of instructions that are carried out when a certain action happens. For example,
 a trigger could be defined that runs when data is inserted into or deleted from
 a particular table. One possible use of a trigger is to examine data changes and
-cause an error to occur if specified conditions aren’t met. Consequently, a
+cause an error to occur if specified conditions aren't met. Consequently, a
 trigger can serve the same purpose as a constraint, and the strategies for
 preventing and recovering from constraint errors also apply to trigger-generated
 errors. However, the error id for trigger-generated errors is different from the
 error id for constraint errors.
 
 The set of constraints that apply to a particular table is determined while
-you’re designing an application. Consciously designing constraints makes it
+you're designing an application. Consciously designing constraints makes it
 easier to design your application to prevent and recover from constraint errors.
 However, constraint errors are difficult to systematically predict and prevent.
-Prediction is difficult because constraint errors don’t appear until application
+Prediction is difficult because constraint errors don't appear until application
 data is added. Constraint errors occur with data that is added to a database
-after it’s created. These errors are often a result of the relationship between
+after it's created. These errors are often a result of the relationship between
 new data and data that already exists in the database. The following strategies
 can help you avoid many constraint errors:
 
 Carefully plan database structure and constraints  
 The purpose of constraints is to enforce application rules and help protect the
-integrity of the database’s data. When you’re planning your application,
+integrity of the database's data. When you're planning your application,
 consider how to structure your database to support your application. As part of
 that process, identify rules for your data, such as whether certain values are
 required, whether a value has a default, whether duplicate values are allowed,
@@ -197,7 +197,7 @@ prevent a constraint error from occurring.
 
 In many ways constraint errors are more difficult to prevent than other types of
 errors. Fortunately, there are several strategies to recover from constraint
-errors in ways that don’t make the application unstable or unusable:
+errors in ways that don't make the application unstable or unusable:
 
 Use conflict algorithms  
 When you define a constraint on a column, and when you create an `INSERT` or
@@ -208,7 +208,7 @@ take. The database engine can end a single statement or a whole transaction. It
 can ignore the error. It can even remove old data and replace it with the data
 that the code is attempting to store.
 
-For more information see the section “ON CONFLICT (conflict algorithms)” in the
+For more information see the section "ON CONFLICT (conflict algorithms)" in the
 [SQL support in local databases](WS112915e91f2778507c29b8cc1256b9c36a3-8000.html).
 
 Provide corrective feedback  

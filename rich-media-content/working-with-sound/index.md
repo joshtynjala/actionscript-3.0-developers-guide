@@ -8,9 +8,9 @@ sound effects to a video game, audio feedback to an application user interface,
 or even make a program that analyzes mp3 files loaded over the Internet, with
 sound at the core of the application.
 
-You can load external audio files and work with audio that’s embedded in a SWF.
+You can load external audio files and work with audio that's embedded in a SWF.
 You can control the audio, create visual representations of the sound
-information, and capture sound from a user’s microphone.
+information, and capture sound from a user's microphone.
 
 - [Basics of working with sound](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d27.html)
 - [Understanding the sound architecture](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d26.html)
@@ -41,10 +41,10 @@ More Help topics
 </div>
 
 ![](images/flashplatformLinkIndicator.png)
-[flash.media package](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/package-detail.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/package-detail.html")
+[flash.media package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/package-detail.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/package-detail.html")
 
 ![](images/flashplatformLinkIndicator.png)
-[flash.events.SampleDataEvent](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/SampleDataEvent.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/SampleDataEvent.html")
+[flash.events.SampleDataEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/SampleDataEvent.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/SampleDataEvent.html")
 
 <div>
 

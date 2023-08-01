@@ -18,7 +18,7 @@ is used when a compatible graphics processing unit (GPU) with supported drivers,
 is available on the client computer.
 
 <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Stage3D.html"
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Stage3D.html"
 target="_self">Stage3D</a> provides a very low-level API. In an application, you
 are encouraged to use a 3D framework that supports Stage3D. You can create your
 own framework or use one of several commercial and open source frameworks

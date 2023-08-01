@@ -89,7 +89,7 @@ Bitmap transformations provide the illusion of perspective or "texture" on a
 three-dimensional object. Specifically, you can distort a bitmap toward a
 vanishing point so the image appears to shrink as it moves toward the vanishing
 point. Or, you can use a two-dimensional bitmap to create a surface for a
-three-dimensional object, providing the illusion of texture or “wrapping” on
+three-dimensional object, providing the illusion of texture or "wrapping" on
 that three-dimensional object.
 
 <div xmlns:fn="http://www.w3.org/2005/xpath-functions"
@@ -184,7 +184,7 @@ information for three-dimensional transformations: the T value. The T value in
 uvtData represents the 3D perspective, or more specifically, the scale factor of
 the associated vertex. UVT mapping adds perspective correction to UV mapping.
 For example, if an object is positioned in 3D space away from the viewpoint so
-that it appears to be 50% its “original” size, the T value of that object would
+that it appears to be 50% its "original" size, the T value of that object would
 be 0.5. Since triangles are drawn to represent objects in 3D space, their
 locations along the z-axis determine their T values. The equation that
 determines the T value is:
@@ -239,7 +239,7 @@ parameter (x, and y). With UV values alone, uvtData.length == vertices.length.
 With the inclusion of a T value, uvtData.length = 1.5\*vertices.length.
 
 The following example shows a plane being rotated in 3D space using UVT data.
-This example uses an image called ocean.jpg and a “helper” class, ImageLoader,
+This example uses an image called ocean.jpg and a "helper" class, ImageLoader,
 to load the ocean.jpg image so it can be assigned to the BitmapData object.
 
 Here is the ImageLoader class source (save this code into a file named
@@ -351,7 +351,7 @@ rotating. Save this code in a file named Spinning3dOcean.as:
     }
 
 To test this example, save these two class files in the same directory as an
-image named “ocean.jpg”. You can see how the original bitmap is transformed to
+image named "ocean.jpg". You can see how the original bitmap is transformed to
 appear as if it is vanishing in the distance and rotating in 3D space.
 
 </div>
@@ -368,7 +368,7 @@ appear as if it is vanishing in the distance and rotating in 3D space.
 
 Culling is the process that determines which surfaces of a three-dimensional
 object the renderer should not render because they are hidden from the current
-viewpoint. In 3D space, the surface on the “back” of a three-dimensional object
+viewpoint. In 3D space, the surface on the "back" of a three-dimensional object
 is hidden from the viewpoint:
 
 <div xmlns:fn="http://www.w3.org/2005/xpath-functions"
@@ -447,7 +447,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
 <div>
 
-A cube “unwrapped” to show the path direction. When “wrapped”, the back side
+A cube "unwrapped" to show the path direction. When "wrapped", the back side
 path direction is reversed.
 
 </div>
@@ -460,7 +460,7 @@ parameter of the `drawTriangles()` method to `TriangleCulling.NEGATIVE`:
 
     container.graphics.drawTriangles(vertices, indices, uvtData, TriangleCulling.NEGATIVE);
 
-Notice the “back” side of the image is not rendered as the object rotates.
+Notice the "back" side of the image is not rendered as the object rotates.
 
 </div>
 

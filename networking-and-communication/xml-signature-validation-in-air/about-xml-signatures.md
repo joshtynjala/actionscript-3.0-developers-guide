@@ -74,7 +74,7 @@ The key elements of a signature are:
   same document as the XML signature or may be external.
 
 - SignatureValue — Contains a digest of the SignedInfo element encrypted with
-  the signer’s private key.
+  the signer's private key.
 
 - KeyInfo — Contains the signing certificate, as well as any additional
   certificates needed to establish the chain of trust. Note that although the
@@ -128,7 +128,7 @@ Even if a certificate is issued by a trusted certification authority, you must
 still decide whether the certificate belongs to someone you trust. In many use
 cases, this decision is passed along to the end-user. For example, when an AIR
 application is installed, the AIR installer displays the identifying information
-from the publisher’s certificate when asking the user to verify whether they
+from the publisher's certificate when asking the user to verify whether they
 want to install the application. In other cases, you might have to compare the
 public key or other certificate information to a list of acceptable keys. (This
 list must be secured, perhaps by its own signature, or by storing in the AIR
@@ -137,7 +137,7 @@ encrypted local store, so that the list itself cannot be tampered with.)
 <div>
 
 Note: While you can elect to trust the signing certificate without independent
-verification—such as when a signature is “self-signed”—you do not thereby gain
+verification—such as when a signature is "self-signed"—you do not thereby gain
 much assurance of anything by verifying the signature. Without knowing who
 created a signature, the assurance that the signature has not been tampered
 with, is of little, if any, value. The signature could be a validly signed
@@ -163,7 +163,7 @@ certificate was valid at the time of signing.
 
 A timestamp is a signed digital message from a timestamp service that certifies
 that the data was signed at a particular time and date. Timestamps are issued by
-timestamp authorities and signed by the timestamp authority’s own certificate.
+timestamp authorities and signed by the timestamp authority's own certificate.
 The timestamp authority certificate embedded in the timestamp must be trusted on
 the current machine for the timestamp to be considered valid. The
 XMLSignatureValidator does not provide an API for designating a different

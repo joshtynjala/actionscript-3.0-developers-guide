@@ -21,7 +21,7 @@ Any meaningful data stream is organized into a format that you can analyze to
 find the information that you want. A record in a simple employee file, for
 example, would probably include an ID number, a name, an address, a phone
 number, and so on. An MP3 audio file contains an ID3 tag that identifies the
-title, author, album, publishing date, and genre of the file that’s being
+title, author, album, publishing date, and genre of the file that's being
 downloaded. The format allows you to know the order in which to expect the data
 on the data stream. It allows you to read the byte stream intelligently.
 
@@ -113,7 +113,7 @@ The `length` and `bytesAvailable` properties tell you how long a ByteArray is
 and how many bytes remain in it from the current position to the end. The
 following example illustrates how you can use these properties. The example
 writes a String of text to the ByteArray and then reads the ByteArray one byte
-at a time until it encounters either the character “a” or the end (
+at a time until it encounters either the character "a" or the end (
 `bytesAvailable <= 0`).
 
     var bytes:ByteArray = new ByteArray();
@@ -250,7 +250,7 @@ and `ObjectEncoding.AMF3`.
 The following example calls `writeObject()` to write an XML object to a
 ByteArray, which it then compresses using the Deflate algorithm and writes to
 the `order` file on the desktop. The example uses a label to display the message
-“Wrote order file to desktop!” in the AIR window when it is finished.
+"Wrote order file to desktop!" in the AIR window when it is finished.
 
     import flash.filesystem.*;
     import flash.display.Sprite;

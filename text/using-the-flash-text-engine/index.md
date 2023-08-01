@@ -39,7 +39,7 @@ More Help topics
 
 </div>
 
-[flash.text.engine package](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/engine/package-detail.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/engine/package-detail.html")
+[flash.text.engine package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/engine/package-detail.html "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/engine/package-detail.html")
 
 <div>
 

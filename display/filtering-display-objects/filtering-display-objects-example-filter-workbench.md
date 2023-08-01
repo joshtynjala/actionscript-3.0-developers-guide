@@ -94,12 +94,12 @@ interface (Flex)</p></td>
 <tr class="even">
 <td headers="d17e21949 "><p>FilterWorkbench.mxml</p></td>
 <td headers="d17e21952 "><p>The main file
-defining the application’s user interface.</p></td>
+defining the application's user interface.</p></td>
 </tr>
 <tr class="odd">
 <td headers="d17e21949 "><p>flexapp/FilterWorkbench.as</p></td>
 <td headers="d17e21952 "><p>Class that
-provides the functionality for the main application’s user interface;
+provides the functionality for the main application's user interface;
 this class is used as the code-behind class for the application MXML
 file.</p></td>
 </tr>
@@ -150,12 +150,12 @@ interface (Flash)</p></td>
 <tr class="even">
 <td headers="d17e21949 "><p>FilterWorkbench.fla</p></td>
 <td headers="d17e21952 "><p>The main file
-defining the application’s user interface.</p></td>
+defining the application's user interface.</p></td>
 </tr>
 <tr class="odd">
 <td headers="d17e21949 "><p>flashapp/FilterWorkbench.as</p></td>
 <td headers="d17e21952 "><p>Class that
-provides the functionality for the main application’s user interface;
+provides the functionality for the main application's user interface;
 this class is used as the document class for the application FLA
 file.</p></td>
 </tr>
@@ -175,7 +175,7 @@ classes that provide the functionality for each panel that is used to
 set options for a single filter.</p>
 <p>For each class, there is also an associated MovieClip symbol in the
 library of the main application FLA file, whose name matches the name of
-the class (for example, the symbol “BlurPanel” is linked to the class
+the class (for example, the symbol "BlurPanel" is linked to the class
 defined in BlurPanel.as). The components that make up the user interface
 are positioned and named within those symbols.</p></td>
 </tr>
@@ -273,7 +273,7 @@ user can also apply multiple filters by customizing one filter, clicking the
 Apply button, customizing another filter, clicking the Apply button, and so
 forth.
 
-There are a few features and limitations in the application’s filter panels:
+There are a few features and limitations in the application's filter panels:
 
 - The color matrix filter includes a set of controls for directly manipulating
   common image properties including brightness, contrasts, saturation, and hue.
@@ -306,7 +306,7 @@ classes are known as _factory classes_ because their purpose is to create
 instances of other objects, much like a real-world factory creates individual
 products.)
 
-Whenever the user changes a property value on the panel, the panel’s code calls
+Whenever the user changes a property value on the panel, the panel's code calls
 the appropriate method in the factory class. Each factory class includes
 specific methods that the panel uses to create the appropriate filter instance.
 For example, if the user selects the Blur filter, the application creates a
@@ -344,19 +344,19 @@ called when the user selects a different value on the filter panel:
     }
 
 Notice that in each case, when the filter values are changed, the factory object
-dispatches an `Event.CHANGE` event to notify listeners that the filter’s values
+dispatches an `Event.CHANGE` event to notify listeners that the filter's values
 have changed. The FilterWorkbenchController class, which does the work of
 actually applying filters to the filtered content, listens for that event to
 ascertain when it needs to retrieve a new copy of the filter and re-apply it to
 the filtered content.
 
-The FilterWorkbenchController class doesn’t need to know specific details of
+The FilterWorkbenchController class doesn't need to know specific details of
 each filter factory class—it just needs to know that the filter has changed and
 to be able to access a copy of the filter. To support this, the application
 includes an interface, IFilterFactory, that defines the behavior a filter
-factory class needs to provide so the application’s FilterWorkbenchController
+factory class needs to provide so the application's FilterWorkbenchController
 instance can do its job. The IFilterFactory defines the `getFilter` () method
-that’s used in the FilterWorkbenchController class:
+that's used in the FilterWorkbenchController class:
 
     function getFilter():BitmapFilter;
 
@@ -366,7 +366,7 @@ BitmapFilter class does not define a specific type of filter. Rather,
 BitmapFilter is the base class on which all the filter classes are built. Each
 filter factory class defines a specific implementation of the `getFilter()`
 method in which it returns a reference to the filter object it has built. For
-example, here is an abbreviated version of the ConvolutionFactory class’s source
+example, here is an abbreviated version of the ConvolutionFactory class's source
 code:
 
     public class ConvolutionFactory extends EventDispatcher implements IFilterFactory
@@ -382,9 +382,9 @@ code:
         ...
     }
 
-In the ConvolutionFactory class’s implementation of the `getFilter()` method, it
+In the ConvolutionFactory class's implementation of the `getFilter()` method, it
 returns a ConvolutionFilter instance, although any object that calls
-`getFilter()` doesn’t necessarily know that—according to the definition of the
+`getFilter()` doesn't necessarily know that—according to the definition of the
 `getFilter()` method that ConvolutionFactory follows, it must return any
 BitmapFilter instance, which could be an instance of any of the ActionScript
 filter classes.
@@ -400,8 +400,8 @@ filter classes.
 <div>
 
 As explained previously, the Filter Workbench application uses an instance of
-the FilterWorkbenchController class (hereafter referred to as the “controller
-instance”), which performs the actual task of applying filters to the selected
+the FilterWorkbenchController class (hereafter referred to as the "controller
+instance"), which performs the actual task of applying filters to the selected
 visual object. Before the controller instance can apply a filter, it first needs
 to know what image or visual content the filter should be applied to. When the
 user selects an image, the application calls the `setFilterTarget()` method in
@@ -429,7 +429,7 @@ storing it in an instance variable named `_currentTarget` once it loads:
         ...
     }
 
-When the user selects a filter, the application calls the controller instance’s
+When the user selects a filter, the application calls the controller instance's
 `setFilter()` method, giving the controller a reference to the relevant filter
 factory object, which it stores in an instance variable named `_filterFactory`.
 
@@ -443,15 +443,15 @@ factory object, which it stores in an instance variable named `_filterFactory`.
         _filterFactory.addEventListener(Event.CHANGE, filterChange);
     }
 
-Notice that, as described previously, the controller instance doesn’t know the
+Notice that, as described previously, the controller instance doesn't know the
 specific data type of the filter factory instance that it is given; it only
 knows that the object implements the IFilterFactory instance, meaning it has a
 `getFilter()` method and it dispatches a `change` (`Event.CHANGE`) event when
 the filter changes.
 
-When the user changes a filter’s properties in the filter’s panel, the
+When the user changes a filter's properties in the filter's panel, the
 controller instance finds out that the filter has changed through the filter
-factory’s `change` event, which calls the controller instance’s `filterChange()`
+factory's `change` event, which calls the controller instance's `filterChange()`
 method. That method, in turn, calls the `applyTemporaryFilter()` method:
 
     private function filterChange(event:Event):void
@@ -477,7 +477,7 @@ method. That method, in turn, calls the `applyTemporaryFilter()` method:
 
 The work of applying the filter to the display object occurs within the
 `applyTemporaryFilter()` method. First, the controller retrieves a reference to
-the filter object by calling the filter factory’s `getFilter()` method.
+the filter object by calling the filter factory's `getFilter()` method.
 
     var currentFilter:BitmapFilter = _filterFactory.getFilter();
 
@@ -487,23 +487,23 @@ The next step is to add the newly updated filter to that array:
 
     _currentFilters.push(currentFilter);
 
-Next, the code assigns the array of filters to the display object’s `filters`
+Next, the code assigns the array of filters to the display object's `filters`
 property, which actually applies the filters to the image:
 
     _currentTarget.filters = _currentFilters;
 
-Finally, since this most recently added filter is still the “working” filter, it
-shouldn’t be permanently applied to the display object, so it is removed from
+Finally, since this most recently added filter is still the "working" filter, it
+shouldn't be permanently applied to the display object, so it is removed from
 the `_currentFilters` array:
 
     _currentFilters.pop();
 
-Removing this filter from the array doesn’t affect the filtered display object,
+Removing this filter from the array doesn't affect the filtered display object,
 because a display object makes a copy of the filters array when it is assigned
 to the `filters` property, and it uses that internal array rather than the
 original one. For this reason, any changes that are made to the array of filters
-don’t affect the display object until the array is assigned to the display
-object’s `filters` property again.
+don't affect the display object until the array is assigned to the display
+object's `filters` property again.
 
 </div>
 

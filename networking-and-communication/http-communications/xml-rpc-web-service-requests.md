@@ -77,7 +77,7 @@ the REST example, but this time as an XML-RPC service:
     	trace( "An error occurred: " + error );
     }
 
-WebKit in AIR doesn’t support E4X syntax, so the method used to create the XML
+WebKit in AIR doesn't support E4X syntax, so the method used to create the XML
 document in the previous example does not work in JavaScript code. Instead, you
 must use the DOM methods to create the XML document or create the document as a
 string and use the JavaScript DOMParser class to convert the string to XML.

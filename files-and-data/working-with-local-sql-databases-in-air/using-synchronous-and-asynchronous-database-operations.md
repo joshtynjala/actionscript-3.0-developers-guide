@@ -15,14 +15,14 @@ execution is that the runtime performs the database operations in the background
 while the main application code continues executing. This is especially valuable
 when the operation takes a notable amount of time to run.
 
-On the other hand, in synchronous execution mode operations don’t run in the
+On the other hand, in synchronous execution mode operations don't run in the
 background. You tell the database engine to perform an operation. The code
 pauses at that point while the database engine does its work. When the operation
 completes, execution continues with the next line of your code.
 
-A single database connection can’t execute some operations or statements
+A single database connection can't execute some operations or statements
 synchronously and others asynchronously. You specify whether a
-[SQLConnection](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLConnection.html)
+[SQLConnection](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLConnection.html)
 operates in synchronous or asynchronous when you open the connection to the
 database. If you call `SQLConnection.open()` the connection operates in
 synchronous execution mode, and if you call `SQLConnection.openAsync()` the

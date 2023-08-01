@@ -3,7 +3,7 @@
 <div>
 
 The
-[LocalConnection](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/LocalConnection.html)
+[LocalConnection](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/LocalConnection.html)
 class enables communications between Adobe® AIR® applications, as well as
 between SWF content running in the browser. You can also use the LocalConnection
 class to communicate between an AIR application and SWF content running in the
@@ -26,7 +26,7 @@ example, a SWF file running in a browser and a SWF file running in a projector
 can share information, with the projector maintaining local information and the
 browser-based SWF file connecting remotely. (A projector is a SWF file saved in
 a format that can run as a stand-alone application—that is, the projector
-doesn’t require Flash Player to be installed because it is embedded inside the
+doesn't require Flash Player to be installed because it is embedded inside the
 executable.)
 
 LocalConnection objects can be used to communicate between SWFs using different
@@ -48,9 +48,9 @@ if you need to allow communication between domains, you have several ways to
 implement security measures. For more information, see the discussion of the
 `connectionName` parameter of the `send()` method and the `allowDomain()` and
 `domain` entries in the
-[LocalConnection](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/LocalConnection.html)
+[LocalConnection](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/LocalConnection.html)
 class listing in the
-[ActionScript 3.0 Reference for the Adobe Flash Platform](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/LocalConnection.html).
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
 <div>
 
@@ -390,7 +390,7 @@ character, followed by the publisher ID (if defined). For example, the proper
 superdomain to use in the `connectionName` parameter for an application with the
 application ID, `com.example.air.MyApp`, and no publisher ID is:
 `"app#com.example.air.MyApp"`. Thus, if the base connection name is
-“appConnection,” then the entire string to use in the `connectionName` parameter
+"appConnection," then the entire string to use in the `connectionName` parameter
 is: `"app#com.example.air.MyApp:appConnection"`. If the application has the
 publisher ID, then the that ID must also be included in the superdomain string:
 `"app#com.example.air.MyApp.B146A943FBD637B68C334022D304CEA226D129B4.1"`.
@@ -425,10 +425,10 @@ More Help topics
 </div>
 
 ![](images/airLinkIndicator.png)
-[Setting AIR application properties](http://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html "http://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html")
+[Setting AIR application properties](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html "https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html")
 
 ![](images/airLinkIndicator.png)
-[Getting the application and publisher identifiers](http://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ccc.html "http://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ccc.html")
+[Getting the application and publisher identifiers](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ccc.html "https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ccc.html")
 
 <div>
 

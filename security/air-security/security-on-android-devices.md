@@ -136,7 +136,7 @@ AIR applications on Android can use the encryption options available in the
 built-in SQL database to save encrypted data. For optimum security, base the
 encryption key on a user-entered password that is entered whenever the
 application is run. A locally stored encryption key or password is difficult or
-impossible to “hide” from an attacker who has access to the application files.
+impossible to "hide" from an attacker who has access to the application files.
 If the attacker can retrieve the key, then encrypting the data does not afford
 any additional protection beyond the user ID-based filesystem security provided
 by the Android system.
@@ -172,7 +172,7 @@ More Help topics
 </div>
 
 ![](images/airLinkIndicator.png)
-[Android permissions](http://help.adobe.com/en_US/air/build/WS901d38e593cd1bac1e63e3d129d39606f2-8000.html "http://help.adobe.com/en_US/air/build/WS901d38e593cd1bac1e63e3d129d39606f2-8000.html")
+[Android permissions](https://help.adobe.com/en_US/air/build/WS901d38e593cd1bac1e63e3d129d39606f2-8000.html "https://help.adobe.com/en_US/air/build/WS901d38e593cd1bac1e63e3d129d39606f2-8000.html")
 
 [Android: Security and Permissions](http://developer.android.com/guide/topics/security/security.html "http://developer.android.com/guide/topics/security/security.html")
 

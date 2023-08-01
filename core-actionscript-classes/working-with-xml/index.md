@@ -68,6 +68,6 @@ XML to find the data you need. </span></td>
 
 </div>
 
-- [XML class](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html)
-- [XMLList class](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html)
+- [XML class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html)
+- [XMLList class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html)
 - [ECMA-457 specification](https://www.ecma-international.org/publications-and-standards/standards/ecma-357/)

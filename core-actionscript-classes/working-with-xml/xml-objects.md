@@ -58,9 +58,10 @@ The XML class has five static properties:
   text that is returned by the `toString()` and `toXMLString()` methods of the
   XML class.
 
-For details on these properties, see the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html"
-target="_self">ActionScript 3.0 Reference for the Adobe Flash Platform</a>.
+For details on these properties, see the
+[XML](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html)
+class listing in the
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
 </div>
 
@@ -173,9 +174,10 @@ There are a few additional methods:
 
 - `length()`
 
-For details on these methods, see the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html"
-target="_self">ActionScript 3.0 Reference for the Adobe Flash Platform</a>.
+For details on these methods, see the
+[XML](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html)
+class listing in the
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
 </div>
 

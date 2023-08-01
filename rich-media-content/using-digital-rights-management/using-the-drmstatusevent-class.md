@@ -14,7 +14,7 @@ does not have access to the content when the license has expired.
 The DRMStatusEvent object contains information related to the license. Such
 information includes whether the license can be made available offline or when
 the voucher expires and the content can no longer be viewed. The application can
-use this data to convey the user’s policy status and its permissions.
+use this data to convey the user's policy status and its permissions.
 
 </div>
 
@@ -26,9 +26,10 @@ use this data to convey the user’s policy status and its permissions.
 
 The DRMStatusEvent class includes the following properties. Some properties
 became available in versions of AIR later than 1.0. For complete version
-information, see the _ActionScript 3.0 Reference_ .
+information, see the
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
-For properties that aren’t supported in Flash Player 10.1, the DRMVoucher class
+For properties that aren't supported in Flash Player 10.1, the DRMVoucher class
 provides similar properties for Flash Player.
 
 <div>

@@ -17,7 +17,7 @@ unrelated domains, such as example1.co.uk and example2.co.uk, have access to the
 same shared objects.
 
 In Flash Player 7 and later, player settings are chosen by default according to
-a SWF file’s exact domain. For example, a SWF file from www.example.com would
+a SWF file's exact domain. For example, a SWF file from www.example.com would
 use the player settings for www.example.com. A SWF file from store.example.com
 would use the separate player settings for store.example.com.
 

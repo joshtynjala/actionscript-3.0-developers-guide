@@ -24,5 +24,5 @@ perform actions after a certain delay or at repeated intervals.
 
 </div>
 
-- [Date class](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Date.html)
-- [flash.utils.Timer class](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/utils/Timer.html)
+- [Date class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Date.html)
+- [flash.utils.Timer class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/utils/Timer.html)

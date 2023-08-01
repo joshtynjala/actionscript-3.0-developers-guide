@@ -49,7 +49,7 @@ the following methods:
   ask the user to choose their preferred locale.
 
 - `(AIR only) Capabilities.languages` — The `Capabilities.languages` property
-  lists an array of languages available on the user’s preferred languages, as
+  lists an array of languages available on the user's preferred languages, as
   set through the operating system. The strings contain language tags (and
   script and region information, where applicable) defined by RFC4646 (
   <http://www.ietf.org/rfc/rfc4646.txt>). The strings use hyphens as a delimiter
@@ -99,8 +99,10 @@ components. The Locale class allows you to control how a SWF file displays
 multilanguage text. The Flash Strings panel allows you to use string IDs instead
 of string literals in dynamic text fields. This facility allows you to create a
 SWF file that displays text loaded from a language-specific XML file. For
-information on using the Locale class, see the
-[ActionScript 3.0 Reference for the Adobe Flash Platform](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/fl/lang/Locale.html).
+information, see the
+[Locale](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/fl/lang/Locale.html)
+class listing in the
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
 </div>
 
@@ -162,9 +164,9 @@ The Flex framework includes controls for formatting dates, times, and
 currencies. These controls include the DateFormatter and CurrencyFormatter
 controls.
 
-- [mx:DateFormatter](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/mx/formatters/DateFormatter.html)
+- [mx:DateFormatter](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/mx/formatters/DateFormatter.html)
 
-- [mx:CurrencyFormatter](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/mx/formatters/CurrencyFormatter.html)
+- [mx:CurrencyFormatter](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/mx/formatters/CurrencyFormatter.html)
 
 </div>
 
@@ -185,15 +187,15 @@ More Help topics
 </div>
 
 ![](images/flexLinkIndicator.png)
-[Localization](http://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fcf.html "http://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fcf.html")
+[Localization](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fcf.html "https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fcf.html")
 
 <http://code.google.com/p/as3localelib/>
 
 ![](images/airLinkIndicator.png)
-[Localizing AIR applications](http://help.adobe.com/en_US/air/build/WSB2927578-20D8-4065-99F3-00ACE6511EEE.html "http://help.adobe.com/en_US/air/build/WSB2927578-20D8-4065-99F3-00ACE6511EEE.html")
+[Localizing AIR applications](https://help.adobe.com/en_US/air/build/WSB2927578-20D8-4065-99F3-00ACE6511EEE.html "https://help.adobe.com/en_US/air/build/WSB2927578-20D8-4065-99F3-00ACE6511EEE.html")
 
 ![](images/airLinkIndicator.png)
-[Localizing HTML content with the AIR HTML localization framework](http://help.adobe.com/en_US/air/build/WS7097DF4C-EFCF-4d55-ADE1-682F0FDA26AC.html "http://help.adobe.com/en_US/air/build/WS7097DF4C-EFCF-4d55-ADE1-682F0FDA26AC.html")
+[Localizing HTML content with the AIR HTML localization framework](https://help.adobe.com/en_US/air/build/WS7097DF4C-EFCF-4d55-ADE1-682F0FDA26AC.html "https://help.adobe.com/en_US/air/build/WS7097DF4C-EFCF-4d55-ADE1-682F0FDA26AC.html")
 
 <div>
 

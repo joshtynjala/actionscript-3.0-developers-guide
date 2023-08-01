@@ -3,14 +3,14 @@
 <div>
 
 Many Pixel Bender shaders are defined to use one or more input images that are
-used in the shader processing. For example, it’s common for a shader to accept a
+used in the shader processing. For example, it's common for a shader to accept a
 source image and output that image with a particular effect applied to it.
 Depending on how the shader is used the input value may be specified
 automatically or you may need to explicitly provide a value. Similarly, many
 shaders specify parameters that are used to customize the output of the shader.
 You must also explicitly set a value for each parameter before using the shader.
 
-You use the Shader object’s `data` property to set shader inputs and parameters
+You use the Shader object's `data` property to set shader inputs and parameters
 and to determine whether a particular shader expects inputs or parameters. The
 `data` property is a ShaderData instance.
 
@@ -23,10 +23,10 @@ and to determine whether a particular shader expects inputs or parameters. The
 <div>
 
 The first step in specifying shader input and parameter values is to find out
-whether the particular shader you’re using expects any input images or
+whether the particular shader you're using expects any input images or
 parameters. Each Shader instance has a `data` property containing a ShaderData
 object. If the shader defines any inputs or parameters, they are accessed as
-properties of that ShaderData object. The properties’ names match the names
+properties of that ShaderData object. The properties' names match the names
 specified for the inputs and parameters in the shader source code. For example,
 if a shader defines an input named `src`, the ShaderData object has a property
 named `src` representing that input. Each property that represents an input is a
@@ -37,7 +37,7 @@ Ideally, the author of the shader provides documentation for the shader,
 indicating what input image values and parameters the shader expects, what they
 represent, the appropriate values, and so forth.
 
-However, if the shader isn’t documented (and you don’t have its source code) you
+However, if the shader isn't documented (and you don't have its source code) you
 can inspect the shader data to identify the inputs and parameters. The
 properties representing inputs and parameters are dynamically added to the
 ShaderData object. Consequently, you can use a `for..in` loop to examine the
@@ -50,7 +50,7 @@ and parameters, check the data type of the dynamic properties. If a property is
 a ShaderInput instance it represents an input. If it is a ShaderParameter
 instance it represents a parameter. Otherwise, it is a metadata value. The
 following example shows how to use a `for..in` loop to examine the dynamic
-properties of a shader’s `data` property. Each input (ShaderInput object) is
+properties of a shader's `data` property. Each input (ShaderInput object) is
 added to a Vector instance named `inputs`. Each parameter (ShaderParameter
 object) is added to a Vector instance named `parameters`. Finally, any metadata
 properties are added to a Vector instance named `metadata`. Note that this
@@ -99,7 +99,7 @@ case you do not explicitly set an input value.
 However, in some cases, especially if a shader defines multiple inputs, you do
 explicitly set a value for an input. Each input that is defined in a shader is
 represented in ActionScript by a ShaderInput object. The ShaderInput object is a
-property of the ShaderData instance in the Shader object’s `data` property, as
+property of the ShaderData instance in the Shader object's `data` property, as
 described in
 [Identifying shader inputs and parameters](./specifying-shader-input-and-parameter-values.md#identifying-shader-inputs-and-parameters).
 For example, suppose a shader defines an input named `src`, and that shader is
@@ -114,9 +114,10 @@ for the input. You set the `input` property to a BitmapData instance to specify
 image data. You can also set the `input` property to a BitmapData or
 Vector.\<Number\> instance to specify binary or number data. For details and
 restrictions on using a BitmapData or Vector.\<Number\> instance as an input,
-see the `ShaderInput.input` listing in the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/ShaderInput.html#input"
-target="_self">ActionScript 3.0 Reference for the Adobe Flash Platform</a>.
+see the
+[`ShaderInput.input`](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/ShaderInput.html#input)
+listing in the
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
 In addition to the `input` property, a ShaderInput object has properties that
 can be used to determine what type of image the input expects. These properties
@@ -144,7 +145,7 @@ the brightness. A single parameter defined in a shader can expect a single value
 or multiple values, according to the parameter definition in the shader. Each
 parameter that is defined in a shader is represented in ActionScript by a
 ShaderParameter object. The ShaderParameter object is a property of the
-ShaderData instance in the Shader object’s data property, as described in
+ShaderData instance in the Shader object's data property, as described in
 [Identifying shader inputs and parameters](./specifying-shader-input-and-parameter-values.md#identifying-shader-inputs-and-parameters).
 For example, suppose a shader defines a parameter named `brightness`, and that
 shader is represented by a Shader object named `myShader`. In that case you
@@ -155,8 +156,8 @@ following identifier:
 
 To set a value (or values) for the parameter, create an ActionScript array
 containing the value or values and assign that array to the ShaderParameter
-object’s `value` property. The `value` property is defined as an Array instance
-because it’s possible that a single shader parameter requires multiple values.
+object's `value` property. The `value` property is defined as an Array instance
+because it's possible that a single shader parameter requires multiple values.
 Even if the shader parameter only expects a single value, you must wrap the
 value in an Array object to assign it to the `ShaderParameter.value` property.
 The following listing demonstrates setting a single value as the `value`
@@ -166,13 +167,13 @@ property:
 
 If the Pixel Bender source code for the shader defines a default value for the
 parameter, an array containing the default value or values is created and
-assigned to the ShaderParameter object’s `value` property when the Shader object
+assigned to the ShaderParameter object's `value` property when the Shader object
 is created. Once an array has been assigned to the `value` property (including
-if it’s the default array) the parameter value can be changed by changing the
+if it's the default array) the parameter value can be changed by changing the
 value of the array element. You do not need to create a new array and assign it
 to the `value` property.
 
-The following example demonstrates setting a shader’s parameter value in
+The following example demonstrates setting a shader's parameter value in
 ActionScript. In this example the shader defines a parameter named `color`. The
 `color` parameter is declared as a `float4` variable in the Pixel Bender source
 code, which means it is an array of four floating point numbers. In the example,
@@ -183,7 +184,7 @@ animated color change.
 <div>
 
 Note: The code for this example was written by Ryan Taylor. Thank you Ryan for
-sharing this example. You can see Ryan’s portfolio and read his writing at
+sharing this example. You can see Ryan's portfolio and read his writing at
 <a href="http://www.boostworthy.com/"
 target="_self">www.boostworthy.com/</a>.
 
@@ -279,7 +280,7 @@ the document class for the FLA file in Flash Professional:
     }
 
 The following is the source code for the ColorFilter shader kernel, used to
-create the “ColorFilter.pbj” Pixel Bender bytecode file:
+create the "ColorFilter.pbj" Pixel Bender bytecode file:
 
     <languageVersion : 1.0;>
     kernel ColorFilter
@@ -305,23 +306,23 @@ create the “ColorFilter.pbj” Pixel Bender bytecode file:
     	}
     }
 
-If you’re using a shader whose parameters aren’t documented, you can figure out
+If you're using a shader whose parameters aren't documented, you can figure out
 how many elements of what type must be included in the array by checking the
-ShaderParameter object’s `type` property. The `type` property indicates the data
+ShaderParameter object's `type` property. The `type` property indicates the data
 type of the parameter as defined in the shader itself. For a list of the number
 and type of elements expected by each parameter type, see the
 `ShaderParameter.value` property listing in the ActionScript 3.0 Reference.
 
 Each ShaderParameter object also has an `index` property that indicates where
-the parameter fits in the order of the shader’s parameters. In addition to these
+the parameter fits in the order of the shader's parameters. In addition to these
 properties, a ShaderParameter object can have additional properties containing
-metadata values provided by the shader’s author. For example, the author can
+metadata values provided by the shader's author. For example, the author can
 specify metadata values such as minimum, maximum, and default values for a
 parameter. Any metadata values that the author specifies are added to the
 ShaderParameter object as dynamic properties. To examine those properties, use a
-`for..in` loop to loop over the ShaderParameter object’s dynamic properties to
+`for..in` loop to loop over the ShaderParameter object's dynamic properties to
 identify its metadata. The following example shows how to use a `for..in` loop
-to identify a ShaderParameter object’s metadata. Each metadata value is added to
+to identify a ShaderParameter object's metadata. Each metadata value is added to
 a Vector instance named `metadata`. Note that this example assumes a Shader
 instance named `myShader` is already created, and that it is known to have a
 parameter named `brightness`:

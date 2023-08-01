@@ -90,7 +90,7 @@ The LoaderInfo object can be accessed as a property of both the Loader object
 and the loaded display object. As soon as loading begins, the LoaderInfo object
 can be accessed through the `contentLoaderInfo` property of the Loader object.
 Once the display object has finished loading, the LoaderInfo object can also be
-accessed as a property of the loaded display object through the display object’s
+accessed as a property of the loaded display object through the display object's
 `loaderInfo` property. The `loaderInfo` property of the loaded display object
 refers to the same LoaderInfo object as the `contentLoaderInfo` property of the
 Loader object. In other words, a LoaderInfo object is shared between a loaded
@@ -167,7 +167,7 @@ context of how the loaded content can be used:
   you can access via their associated class names. For more information, see
   [Working with application domains](../../core-actionscript-classes/working-with-application-domains/index.md).
 
-Here’s an example of checking for a policy file when loading a bitmap from
+Here's an example of checking for a policy file when loading a bitmap from
 another domain:
 
     var context:LoaderContext = new LoaderContext();
@@ -176,7 +176,7 @@ another domain:
     var ldr:Loader = new Loader();
     ldr.load(urlReq, context);
 
-Here’s an example of checking for a policy file when loading a SWF from another
+Here's an example of checking for a policy file when loading a SWF from another
 domain, in order to place the file in the same security sandbox as the Loader
 object. Additionally, the code adds the classes in the loaded SWF file to the
 same application domain as that of the Loader object:
@@ -188,11 +188,10 @@ same application domain as that of the Loader object:
     var ldr:Loader = new Loader();
     ldr.load(urlReq, context);
 
-For more information, see the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/system/LoaderContext.html"
-target="_self">LoaderContext</a> class in the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/system/LoaderContext.html"
-target="_self">ActionScript 3.0 Reference for the Adobe Flash Platform</a>.
+For more information, see the
+[LoaderContext](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/system/LoaderContext.html)
+class listing in the
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
 </div>
 
@@ -214,7 +213,7 @@ of loading external SWF files into your application:
   ActionScript code in all SWF files in the application package is compiled to
   native code for iOS devices.
 
-- You can’t load, unload, and then re-load a SWF file. If you attempt to do
+- You can't load, unload, and then re-load a SWF file. If you attempt to do
   this, an error occurs.
 
 - The behavior of loading into memory and then unloading it is the same as with
@@ -232,7 +231,7 @@ of loading external SWF files into your application:
   visual assets and no ActionScript code.
 
   The following example shows the code to use to load a SWF from the application
-  package into the main SWF’s application domain:
+  package into the main SWF's application domain:
 
       var loader:Loader = new Loader();
       var url:URLRequest = new URLRequest("swfs/SecondarySwf.swf");
@@ -247,7 +246,7 @@ For AIR versions prior to AIR 3.6, all code is stripped from SWFs other than the
 main application SWF during the compilation process. SWF files containing only
 visual assets can be included in the application package and loaded at runtime,
 but no code. If you attempt to load a SWF that contains ActionScript code, an
-error occurs. The error causes an “Uncompiled ActionScript” error dialog to
+error occurs. The error causes an "Uncompiled ActionScript" error dialog to
 appear in the application.
 
 #### See also

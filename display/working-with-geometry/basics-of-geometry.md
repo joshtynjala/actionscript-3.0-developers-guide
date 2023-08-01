@@ -3,7 +3,7 @@
 <div>
 
 The flash.geom package contains classes that define geometric objects such as
-points, rectangles, and transformation matrixes. These classes don’t necessarily
+points, rectangles, and transformation matrixes. These classes don't necessarily
 provide functionality by themselves; however, they are used to define the
 properties of objects that are used in other classes.
 
@@ -14,7 +14,7 @@ _point_) on the screen can be represented as a pair of x and y values—the
 _coordinates_ of that location.
 
 Every display object, including the Stage, has its own _coordinate space_. The
-coordinate space is an object’s own graph for plotting the locations of child
+coordinate space is an object's own graph for plotting the locations of child
 display objects, drawings, and so on. The _origin_ is at coordinate location 0,
 0 (where the x and y-axes meet), and is placed at the upper-left corner of the
 display object. While this origin location is always true for the Stage, it is
@@ -33,7 +33,7 @@ space. You can create a Rectangle instance to represent a rectangular region in
 a coordinate space. For advanced users, you can use a Matrix instance to apply
 multiple or complex transformations to a display object. Many simple
 transformations, such as rotation, position, and scale changes, can be applied
-directly to a display object using that object’s properties. For more
+directly to a display object using that object's properties. For more
 information on applying transformations using display object properties, see
 [Manipulating display objects](../display-programming/manipulating-display-objects.md).
 
@@ -57,7 +57,7 @@ has the coordinate 0, 0.
 
 Point  
 A single location in a coordinate space. In the 2-d coordinate system used in
-ActionScript, the location along the x-axis and the y-axis (the point’s
+ActionScript, the location along the x-axis and the y-axis (the point's
 coordinates) define the point.
 
 Registration point  
@@ -68,7 +68,7 @@ The size of an object relative to its original size. When used as a verb, to
 scale an object means to change its size by stretching or shrinking the object.
 
 Translate  
-To change a point’s coordinates from one coordinate space to another.
+To change a point's coordinates from one coordinate space to another.
 
 Transformation  
 An adjustment to a visual characteristic of a graphic, such as rotating the

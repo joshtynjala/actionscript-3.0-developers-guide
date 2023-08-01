@@ -123,9 +123,8 @@ You can also use a regular expression as the delimiter character:
     var a:Array = str.split(/\s+/); // a == ["Give","me","5."]
 
 For more information, see
-[Using regular expressions](../using-regular-expressions/index.md) and the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html"
-target="_self">ActionScript 3.0 Reference for the Adobe Flash Platform</a>.
+[Using regular expressions](../using-regular-expressions/index.md) and the
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
 </div>
 

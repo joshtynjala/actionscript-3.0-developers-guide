@@ -74,7 +74,7 @@ To enforce application-independent security and privacy policies for a computer,
 the mms.cfg file should be modified only by system administrators. The mms.cfg
 file is not for use by application installers. While an installer running with
 administrative privileges could modify the contents of the mms.cfg file, Adobe
-considers such usage a violation of the user’s trust and urges creators of
+considers such usage a violation of the user's trust and urges creators of
 installers never to modify the mms.cfg file.
 
 The mms.cfg file is stored in the following location:
@@ -318,7 +318,7 @@ types of policy files—URL policy files and socket policy files.
 Flash Player requires policy files to be transmitted using the same protocol
 that the attempted connection wants to use. For example, when you place a policy
 file on your HTTP server, SWF files from other domains are allowed to load data
-from it as an HTTP server. However, if you don’t provide a socket policy file at
+from it as an HTTP server. However, if you don't provide a socket policy file at
 the same server, you are forbidding SWF files from other domains to connect to
 the server at the socket level. In other words, the means by which a policy file
 is retrieved must match the means of connecting.
@@ -327,8 +327,8 @@ Policy file usage and syntax are discussed briefly in the rest of this section,
 as they apply to SWF files published for Flash Player 10. (Policy file
 implementation is slightly different in earlier versions of Flash Player, as
 successive releases have strengthened Flash Player security.) For more detailed
-information on policy files, see the Flash Player Developer Center topic “Policy
-File Changes in Flash Player 9” at
+information on policy files, see the Flash Player Developer Center topic "Policy
+File Changes in Flash Player 9" at
 [www.adobe.com/go/devnet_security_en](http://www.adobe.com/go/devnet_security_en).
 
 Code executing in the AIR application sandbox does not require a policy file to
@@ -354,27 +354,27 @@ not considered a master policy file.)
 In addition to specifying access permissions, the master policy file can also
 contain a _meta-policy_ statement. A meta-policy specifies which locations can
 contain policy files. The default meta-policy for URL policy files is
-“master-only,” which means that /crossdomain.xml is the only policy file allowed
-on the server. The default meta-policy for socket policy files is “all,” which
+"master-only," which means that /crossdomain.xml is the only policy file allowed
+on the server. The default meta-policy for socket policy files is "all," which
 means that any socket on the host can serve a socket policy file.
 
 <div>
 
 Note: In Flash Player 9 and earlier, the default meta-policy for URL policy
-files was “all,” which means that any directory can contain a policy file. If
+files was "all," which means that any directory can contain a policy file. If
 you have deployed applications that load policy files from locations other than
 the default /crossdomain.xml file, and those applications might now be running
 in Flash Player 10, make sure you (or the server administrator) modify the
 master policy file to allow additional policy files. For information on how to
 specify different a different meta-policy, see the Flash Player Developer Center
-topic “Policy File Changes in Flash Player 9” at
+topic "Policy File Changes in Flash Player 9" at
 [www.adobe.com/go/devnet_security_en](http://www.adobe.com/go/devnet_security_en).
 
 </div>
 
 A SWF file can check for a different policy filename or a different directory
 location by calling the `Security.loadPolicyFile()` method. However, if the
-master policy file doesn’t specify that the target location can serve policy
+master policy file doesn't specify that the target location can serve policy
 files, the call to `loadPolicyFile()` has no effect, even if there is a policy
 file at that location. Call `loadPolicyFile()` before attempting any network
 operations that require the policy file. Flash Player automatically queues
@@ -383,19 +383,19 @@ example, it is acceptable to call `Security.loadPolicyFile()` immediately before
 initiating a networking operation.
 
 When checking for a master policy file, Flash Player waits three seconds for a
-server response. If a response isn’t received, Flash Player assumes that no
+server response. If a response isn't received, Flash Player assumes that no
 master policy file exists. However, there is no default timeout value for calls
 to `loadPolicyFile()` ; Flash Player assumes that the file being called exists,
 and waits as long as necessary to load it. Therefore, if you want to make sure
 that a master policy file is loaded, use `loadPolicyFile()` to call it
 explicitly.
 
-Even though the method is named `Security.loadPolicyFile()`, a policy file isn’t
+Even though the method is named `Security.loadPolicyFile()`, a policy file isn't
 loaded until a network call that requires a policy file is issued. Calls to
 `loadPolicyFile()` simply tell Flash Player where to look for policy files when
 they are needed.
 
-You can’t receive notification of when a policy file request is initiated or
+You can't receive notification of when a policy file request is initiated or
 completed, and there is no reason to do so. Flash Player performs policy checks
 asynchronously, and automatically waits to initiate connections until after the
 policy file checks have succeeded.
@@ -466,7 +466,7 @@ that originate from \*.example.com, www.friendOfExample.com and 192.0.34.166:
 
 If you specify an IP address, access is granted only to SWF files loaded from
 that IP address using IP syntax (for example,
-http://65.57.83.12/flashmovie.swf). Access isn’t granted to SWF files using
+http://65.57.83.12/flashmovie.swf). Access isn't granted to SWF files using
 domain-name syntax. Flash Player does not perform DNS resolution.
 
 You can permit access to documents originating from any domain, as shown in the

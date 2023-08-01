@@ -11,7 +11,7 @@ entire Shape instance.
 
 You can cache specified display objects to improve the performance of your SWF
 file. The display object is a _surface_, essentially a bitmap version of the
-instance’s vector data, which is data that you do not intend to change much over
+instance's vector data, which is data that you do not intend to change much over
 the course of your SWF file. Therefore, instances with caching turned on are not
 continually redrawn as the SWF file plays, letting the SWF file render quickly.
 
@@ -23,7 +23,7 @@ same for the entire SWF file.
 
 </div>
 
-Setting a display object’s `cacheAsBitmap` property to `true` makes the display
+Setting a display object's `cacheAsBitmap` property to `true` makes the display
 object cache a bitmap representation of itself. Flash Player or AIR creates a
 surface object for the instance, which is a cached bitmap instead of vector
 data. If you change the bounds of the display object, the surface is recreated
@@ -31,7 +31,7 @@ instead of resized. Surfaces can nest within other surfaces. The child surface
 copies its bitmap onto its parent surface. For more information, see
 [Enabling bitmap caching](./caching-display-objects.md#enabling-bitmap-caching).
 
-The DisplayObject class’s `opaqueBackground` property and `scrollRect` property
+The DisplayObject class's `opaqueBackground` property and `scrollRect` property
 are related to bitmap caching using the `cacheAsBitmap` property. Although these
 three properties are independent of each other, the `opaqueBackground` and
 `scrollRect` properties work best when an object is cached as a bitmap—you see
@@ -97,7 +97,7 @@ when you enable bitmap caching.
   Each window can be open or closed (for example, web browser windows). If you
   mark each window as a surface (by setting the `cacheAsBitmap` property to
   `true`), each window is isolated and cached. Users can drag the windows so
-  that they overlap each other, and each window doesn’t need to regenerate the
+  that they overlap each other, and each window doesn't need to regenerate the
   vector content.
 
 - Alpha channel masking: When you are using alpha channel masking, you must set
@@ -128,7 +128,7 @@ following guidelines:
 
   A cached bitmap can use significantly more memory than a regular display
   object. For example, if a Sprite instance on the Stage is 250 pixels by 250
-  pixels in size, when cached it might use 250 KB instead of 1 KB when it’s a
+  pixels in size, when cached it might use 250 KB instead of 1 KB when it's a
   regular (un-cached) Sprite instance.
 
 - Avoid zooming into cached surfaces. If you overuse bitmap caching, a large

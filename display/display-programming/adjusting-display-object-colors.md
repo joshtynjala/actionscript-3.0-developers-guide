@@ -15,7 +15,7 @@ this:
 
     var colorInfo:ColorTransform = myDisplayObject.transform.colorTransform;
 
-Once you’ve created a ColorTransform instance, you can read its property values
+Once you've created a ColorTransform instance, you can read its property values
 to find out what color transformations have already been applied, or you can set
 those values to make color changes to the display object. To update the display
 object after any changes, you must reassign the ColorTransform instance back to
@@ -61,11 +61,11 @@ named `square` to blue, when the user clicks a button named `blueBtn`:
 
     blueBtn.addEventListener(MouseEvent.CLICK, makeBlue);
 
-Note that when you change a display object’s color using the `color` property,
+Note that when you change a display object's color using the `color` property,
 it completely changes the color of the entire object, regardless of whether the
 object previously had multiple colors. For example, if there is a display object
 containing a green circle with black text on top, setting the `color` property
-of that object’s associated ColorTransform instance to a shade of red will make
+of that object's associated ColorTransform instance to a shade of red will make
 the entire object, circle and text, turn red (so the text will no longer be
 distinguishable from the rest of the object).
 
@@ -80,7 +80,7 @@ distinguishable from the rest of the object).
 <div>
 
 Suppose you have a display object with multiple colors (for example, a digital
-photo) and you don’t want to completely recolor the object; you just want to
+photo) and you don't want to completely recolor the object; you just want to
 adjust the color of a display object based on the existing colors. In this
 scenario, the ColorTransform class includes a series of multiplier and offset
 properties that you can use to make this type of adjustment. The multiplier

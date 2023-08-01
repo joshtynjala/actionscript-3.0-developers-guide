@@ -23,11 +23,11 @@ The copy-and-paste API contains the following classes.
 <td><div>
 <ul class="incremental">
 <li><p><a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/Clipboard.html">Clipboard</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/Clipboard.html">Clipboard</a></p></li>
 <li><p><a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/ClipboardFormats.html">ClipboardFormats</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/ClipboardFormats.html">ClipboardFormats</a></p></li>
 <li><p><a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/ClipboardTransferMode.html">ClipboardTransferMode</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/ClipboardTransferMode.html">ClipboardTransferMode</a></p></li>
 </ul>
 </div></td>
 </tr>

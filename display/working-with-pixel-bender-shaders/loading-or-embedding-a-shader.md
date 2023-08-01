@@ -10,7 +10,7 @@ Shader class that represents the Pixel Bender shader to ActionScript. The Shader
 object allows you to find out information about the shader, such as whether it
 expects parameters or input image values. You pass the Shader object to other
 objects to actually use the shader. For example, to use the shader as a filter
-you assign the Shader object to a ShaderFilter object’s `shader` property.
+you assign the Shader object to a ShaderFilter object's `shader` property.
 Alternatively, to use the shader as a drawing fill, you pass the Shader object
 as an argument to the `Graphics.beginShaderFill()` method.
 
@@ -45,7 +45,7 @@ Your ActionScript code can access a shader created by Adobe Pixel Bender Toolkit
 - Embedded in the SWF file: the shader file can be embedded in the SWF file at
   compile time using the `[Embed]` metadata tag. The `[Embed]` metadata tag is
   only available if you use the Flex SDK to compile the SWF file. The `[Embed]`
-  tag’s `source` parameter points to the shader file, and its `mimeType`
+  tag's `source` parameter points to the shader file, and its `mimeType`
   parameter is `"application/octet-stream"`, as in this example:
 
       [Embed(source="myShader.pbj", mimeType="application/octet-stream")]
@@ -74,7 +74,7 @@ instance in two ways. You can pass the shader bytecode as an argument to the
 Once a Pixel Bender shader has been created and linked to a Shader object, you
 can use the shader to create effects in several ways. You can use it as a
 filter, a blend mode, a bitmap fill, or for stand-alone processing of bitmap or
-other data. You can also use the Shader object’s `data` property to access the
-shader’s metadata, specify input images, and set parameter values.
+other data. You can also use the Shader object's `data` property to access the
+shader's metadata, specify input images, and set parameter values.
 
 </div>

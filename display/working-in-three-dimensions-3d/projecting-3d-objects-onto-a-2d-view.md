@@ -3,7 +3,7 @@
 <div>
 
 The <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/PerspectiveProjection.html"
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/PerspectiveProjection.html"
 target="_self">PerspectiveProjection</a> class in the `flash.geom` package
 provides a simple way of applying rudimentary perspective when moving display
 objects through 3D space.

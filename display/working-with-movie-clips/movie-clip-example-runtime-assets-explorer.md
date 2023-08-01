@@ -9,7 +9,7 @@ available to any SWF file within the same security sandbox as the SWF that loads
 it. In this way, a single Flash document can generate a SWF file that is
 designated for the sole purpose of holding graphical assets. This technique is
 particularly useful for larger projects where designers working on visual assets
-can work in parallel with developers who create a “wrapper” SWF file that then
+can work in parallel with developers who create a "wrapper" SWF file that then
 loads the graphical assets SWF file at run time. You can use this method to
 maintain a series of versioned files where graphical assets are not dependent
 upon the progress of programming development.
@@ -29,7 +29,7 @@ located in the same security sandbox. For more information, see
 [Security sandboxes](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e3f.html).
 
 To get the application files for this sample, download the <a
-href="http://help.adobe.com/support/documentation/en/flash/10/Flash_ActionScript3.0_samples_CS4.zip"
+href="https://help.adobe.com/support/documentation/en/flash/10/Flash_ActionScript3.0_samples_CS4.zip"
 target="_self">Flash Professional Samples</a>
 <a href="http://www.adobe.com/go/learn_programmingAS3samples_flash"
 target="_self"></a>. The RuntimeAssetsExplorer application files can be found in
@@ -104,7 +104,7 @@ the library symbol in the shape of a rotating star.</p></td>
 
 In order for the explorer to properly interact with a SWF library, the structure
 of the run-time asset libraries must be formalized. We will accomplish this by
-creating an interface, which is similar to a class in that it’s a blueprint of
+creating an interface, which is similar to a class in that it's a blueprint of
 methods that demarcate an expected structure, but unlike a class it includes no
 method bodies. The interface provides a way for both the run-time library and
 the explorer to communicate to one another. Each SWF of run-time assets that is
@@ -135,7 +135,7 @@ single method: `getAssets()`.
 
 <div>
 
-By defining the RuntimeLibrary interface, it’s possible to create multiple asset
+By defining the RuntimeLibrary interface, it's possible to create multiple asset
 library SWF files that can be loaded into another SWF file. Making an individual
 SWF library of assets involves four tasks:
 
@@ -151,7 +151,7 @@ SWF library of assets involves four tasks:
 
 #### Creating a class to implement the RuntimeLibrary interface
 
-Next, we’ll create the GeometricAssets class that will implement the
+Next, we'll create the GeometricAssets class that will implement the
 RuntimeLibrary interface. This will be the document class of the FLA. The code
 for this class is very similar to the RuntimeLibrary interface—the difference
 between them is that in the class definition the `getAssets()` method has a
@@ -184,7 +184,7 @@ based upon another class (for example, AnimationAssets) that provides its own
 
 #### Creating classes for each MovieClip asset
 
-For this example, we’ll merely extend the MovieClip class without adding any
+For this example, we'll merely extend the MovieClip class without adding any
 functionality to the custom assets. The following code for AnimatingStar is
 analogous to that of AnimatingBox:
 
@@ -205,9 +205,9 @@ analogous to that of AnimatingBox:
 
 #### Publishing the library
 
-We’ll now connect the MovieClip-based assets to the new class by creating a new
+We'll now connect the MovieClip-based assets to the new class by creating a new
 FLA and entering GeometricAssets into the Document Class field of the Property
-inspector. For the purposes of this example, we’ll create two very basic shapes
+inspector. For the purposes of this example, we'll create two very basic shapes
 that use a timeline tween to make one clockwise rotation over 360 frames. Both
 the `animatingBox` and `animatingStar` symbols are set to Export for
 ActionScript and have the Class field set to the respective classpaths specified
@@ -215,7 +215,7 @@ in the `getAssets()` implementation. The default base class of
 `flash.display.MovieClip` remains, as we want to subclass the standard MovieClip
 methods.
 
-After setting up your symbol’s export settings, publish the FLA. You now have
+After setting up your symbol's export settings, publish the FLA. You now have
 your first run-time library. This SWF file could be loaded into another AVM2 SWF
 file and the AnimatingBox and AnimatingStar symbols would be available to the
 new SWF file.
@@ -267,7 +267,7 @@ user interface triggers the `addAsset()` method:
 which gets the classpath of whichever asset is currently selected in the
 ComboBox (`assetNameCbo.selectedItem.data`), and uses the
 `getDefinitionByName()` function (from the flash.utils package) to obtain an
-actual reference to the asset’s class in order to create a new instance of that
+actual reference to the asset's class in order to create a new instance of that
 asset.
 
 </div>

@@ -13,7 +13,7 @@ Instead of loading or streaming an existing sound, you can generate audio data
 dynamically. You can generate audio data when you assign an event listener for
 the `sampleData` event of a Sound object. (The `sampleData` event is defined in
 the SampleDataEvent class in the flash.events package.) In this environment, the
-Sound object doesn’t load sound data from a file. Instead, it acts as a socket
+Sound object doesn't load sound data from a file. Instead, it acts as a socket
 for sound data that is being streamed to it through the use of the function you
 assign to this event.
 

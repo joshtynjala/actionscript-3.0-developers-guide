@@ -17,7 +17,7 @@ page through Flash Player or AIR, you use these four statements in sequence:
   You can use successive calls to `addPage()` to print multiple sprites over
   several pages.
 
-- `PrintJob.send()`: Sends the pages to the operating system’s printer.
+- `PrintJob.send()`: Sends the pages to the operating system's printer.
 
 So, for example, a simple print job script is (including `package`, `import` and
 `class` statements for compiling):
@@ -50,7 +50,7 @@ properly to a user canceling a print job, see
 
 </div>
 
-To clear a PrintJob object’s properties for any reason, set the PrintJob
+To clear a PrintJob object's properties for any reason, set the PrintJob
 variable to `null` (as in `myPrintJob = null`).
 
 </div>

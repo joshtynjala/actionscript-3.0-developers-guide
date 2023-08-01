@@ -76,18 +76,17 @@ ASCII.)
 
 The primary difference between the key code and character values is that a key
 code value represents a particular key on the keyboard (the 1 on a keypad is
-different than the 1 in the top row, but the key that generates “1” and the key
-that generates “!” are the same key) and the character value represents a
+different than the 1 in the top row, but the key that generates "1" and the key
+that generates "!" are the same key) and the character value represents a
 particular character (the R and r characters are different).
 
 <div>
 
 Note: For the mappings between keys and their character code values in ASCII,
-see the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Keyboard.html"
-target="_self">flash.ui.Keyboard</a> class in the <a
-href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Keyboard.html"
-target="_self">ActionScript 3.0 Reference for the Adobe Flash Platform</a>.
+see the
+[flash.ui.Keyboard](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Keyboard.html)
+class listing in the
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
 </div>
 

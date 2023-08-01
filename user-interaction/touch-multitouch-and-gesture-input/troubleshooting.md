@@ -20,14 +20,14 @@ something entirely different. So, the device tells the operating system the user
 input, then the operating system passes that information to the runtime. If the
 runtime is inside a browser, the browser software sometimes interprets the
 gesture or touch event and does not pass the input to the runtime. This behavior
-is similar to the behavior of “hotkeys”: you try to use a specific key
+is similar to the behavior of "hotkeys": you try to use a specific key
 combination to get Flash Player to do something inside the browser and the
 browser keeps opening a menu instead.
 
-Individual API and classes mention if they’re not compatible with specific
+Individual API and classes mention if they're not compatible with specific
 operating systems. You can explore individual API entries here, starting with
 the Multitouch class:
-<http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Multitouch.html>.
+<https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Multitouch.html>.
 
 <div>
 
@@ -38,7 +38,7 @@ Move a finger left-to-right or right-to-left. Some devices require two fingers
 to pan.
 
 Rotate  
-Touch two fingers down, then move them around in a circle (as if they’re both
+Touch two fingers down, then move them around in a circle (as if they're both
 simultaneously tracing an imaginary circle on a surface). The pivot point is set
 at the midpoint between the two finger touch points.
 
@@ -135,7 +135,7 @@ the following:
     you can perform the gesture on any part of the test application.
 
     Some operating system and device combinations support both gestures, some
-    support only one, some none. Test your application’s deployment environment
+    support only one, some none. Test your application's deployment environment
     to be sure.
 
 </div>
@@ -177,7 +177,7 @@ The following are known issues related to touch input:
     </div>
 
 3.  Windows 7 (and possibly other operating systems), the rotate and zoom
-    gestures don’t always generate an “update” phase if the user performs the
+    gestures don't always generate an "update" phase if the user performs the
     gesture very quickly.
 
 4.  Windows 7 Starter Edition does not support multitouch. See the AIR Labs

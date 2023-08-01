@@ -22,7 +22,7 @@ to read values out of the static text.
 Typically, you use the flash.text.StaticText class in the Actions panel of Flash
 Professional to interact with a static text instance placed on the Stage. You
 may also work in ActionScript files that interact with a SWF file containing
-static text. In either case, you can’t instantiate a static text instance
+static text. In either case, you can't instantiate a static text instance
 programmatically. Static text is created in Flash Professional.
 
 To create a reference to an existing static text field, iterate over the items

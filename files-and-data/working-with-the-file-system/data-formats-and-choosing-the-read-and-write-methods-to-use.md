@@ -50,7 +50,7 @@ it to a string, as in the following code:
 The second parameter of the `readMultiByte()` method specifies the text format
 that ActionScript uses to interpret the data ("iso-8859-1" in the example).
 Adobe AIR supports common character set encodings (see
-[Supported character sets](http://help.adobe.com/en_US/Flash/CS5/AS3LR/charset-codes.html)).
+[Supported character sets](https://help.adobe.com/en_US/Flash/CS5/AS3LR/charset-codes.html)).
 
 The FileStream class also includes the `readUTFBytes()` method, which reads data
 from the read buffer into a string using the UTF-8 character set. Since

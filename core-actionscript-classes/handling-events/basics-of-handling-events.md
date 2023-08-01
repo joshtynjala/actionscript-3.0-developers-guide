@@ -26,17 +26,17 @@ Player dispatches an event object directly to the event target, which in this
 case is the object that represents the camera. If the event target is on the
 display list, however, the event object is passed down through the display list
 hierarchy until it reaches the event target. In some cases, the event object
-then “bubbles” back up the display list hierarchy along the same route. This
+then "bubbles" back up the display list hierarchy along the same route. This
 traversal of the display list hierarchy is called the _event flow_.
 
-You can “listen” for event objects in your code using event listeners. _Event
+You can "listen" for event objects in your code using event listeners. _Event
 listeners_ are the functions or methods that you write to respond to specific
 events. To ensure that your program responds to events, you must add event
 listeners either to the event target or to any display list object that is part
-of an event object’s event flow.
+of an event object's event flow.
 
 Any time you write event listener code, it follows this basic structure
-(elements in bold are placeholders you’d fill in for your specific case):
+(elements in bold are placeholders you'd fill in for your specific case):
 
     function eventResponse(eventObject:EventType):void
     {
@@ -48,8 +48,8 @@ Any time you write event listener code, it follows this basic structure
 This code does two things. First, it defines a function, which is the way to
 specify the actions that will be performed in response to the event. Next, it
 calls the `addEventListener()` method of the source object, in essence
-“subscribing” the function to the specified event so that when the event
-happens, the function’s actions are carried out. When the event actually
+"subscribing" the function to the specified event so that when the event
+happens, the function's actions are carried out. When the event actually
 happens, the event target checks its list of all the functions and methods that
 are registered as event listeners. It then calls each one in turn, passing the
 event object as a parameter.
@@ -62,7 +62,7 @@ dispatched by the event you want to listen for (**EventType** in the code), and
 you must specify the appropriate constant for the specific event (**EVENT_NAME**
 in the listing). Third, you must call the `addEventListener()` method on the
 object that will dispatch the event (**eventTarget** in this code). Optionally,
-you can change the name of the variable used as the function’s parameter
+you can change the name of the variable used as the function's parameter
 (**eventObject** in this code).
 
 <div>
@@ -90,7 +90,7 @@ Some events include a behavior that normally happens along with the event, known
 as the default behavior. For example, when a user types text in a text field, a
 text input event is raised. The default behavior for that event is to actually
 display the character that was typed into the text field—but you can override
-that default behavior (if for some reason you don’t want the typed character to
+that default behavior (if for some reason you don't want the typed character to
 be displayed).
 
 Dispatch  
@@ -109,7 +109,7 @@ and then proceeds back to the Stage again. This process is known as the event
 flow.
 
 Event object  
-An object that contains information about a particular event’s occurrence, which
+An object that contains information about a particular event's occurrence, which
 is sent to all listeners when an event is dispatched.
 
 Event target  

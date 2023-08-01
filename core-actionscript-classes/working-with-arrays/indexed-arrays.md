@@ -35,11 +35,11 @@ name and index on the right side of an assignment statement:
 You can also use a variable in the square brackets rather than providing an
 explicit value. (The variable must contain a non-negative integer value such as
 a uint, a positive int, or a positive integer Number instance). This technique
-is commonly used to “loop over” the elements in an indexed array and perform an
+is commonly used to "loop over" the elements in an indexed array and perform an
 operation on some or all the elements. The following code listing demonstrates
 this technique. The code uses a loop to access each value in an Array object
 named `oddNumbers`. It uses the `trace()` statement to print each value in the
-form “oddNumber\[ _index_ \] = _value_ ”:
+form "oddNumber\[ _index_ \] = _value_ ":
 
     var oddNumbers:Array = [1, 3, 5, 7, 9, 11];
     var len:uint = oddNumbers.length;
@@ -63,7 +63,7 @@ value in index 0, a Number instance in index 1, and an XML object in index 2.
 
 #### The Vector class
 
-Another type of indexed array that’s available in ActionScript 3.0 is the Vector
+Another type of indexed array that's available in ActionScript 3.0 is the Vector
 class. A Vector instance is a _typed array_, which means that all the elements
 in a Vector instance always have the same data type.
 
@@ -76,10 +76,10 @@ Note: The Vector class is available starting with Flash Player 10 and Adobe AIR
 
 When you declare a Vector variable or instantiate a Vector object, you
 explicitly specify the data type of the objects that the Vector can contain. The
-specified data type is known as the Vector’s _base type_. At run time and at
+specified data type is known as the Vector's _base type_. At run time and at
 compile time (in strict mode), any code that sets the value of a Vector element
 or retrieves a value from a Vector is checked. If the data type of the object
-being added or retrieved doesn’t match the Vector’s base type, an error occurs.
+being added or retrieved doesn't match the Vector's base type, an error occurs.
 
 In addition to the data type restriction, the Vector class has other
 restrictions that distinguish it from the Array class:
@@ -89,9 +89,9 @@ restrictions that distinguish it from the Array class:
   a value (or `null` ) in each index.
 
 - A Vector can optionally be fixed-length. This means that the number of
-  elements the Vector contains can’t change.
+  elements the Vector contains can't change.
 
-- Access to a Vector’s elements is bounds-checked. You can never read a value
+- Access to a Vector's elements is bounds-checked. You can never read a value
   from an index greater than the final element (`length` - 1). You can never set
   a value with an index more than one beyond the current final index. (In other
   words, you can only set a value at an existing index or at index `[length]`.)
@@ -108,7 +108,7 @@ Array instance whose elements are all instances of a single class:
   Vector. At run time, data types are also checked when adding data to or
   reading data from a Vector object. Note, however, that when you use the
   `push()` method or `unshift()` method to add values to a Vector, the
-  arguments’ data types are not checked at compile time. When using those
+  arguments' data types are not checked at compile time. When using those
   methods the values are still checked at run time.
 
 - Reliability: runtime range checking (or fixed-length checking) increases
@@ -154,7 +154,7 @@ arguments:
     trace(names.length); // output: 0
 
 Second, if you use a number as the only parameter to the `Array()` constructor,
-an array of that length is created, with each element’s value set to
+an array of that length is created, with each element's value set to
 `undefined`. The argument must be an unsigned integer between the values 0 and
 4,294,967,295. For example, the following code calls the `Array()` constructor
 with a single numeric argument:
@@ -202,7 +202,7 @@ also specify the base type when you create a Vector instance by calling the
 `Vector.<T>()` constructor. Put another way, any time you use the term `Vector`
 in ActionScript, it is accompanied by a base type.
 
-You specify the Vector’s base type using type parameter syntax. The type
+You specify the Vector's base type using type parameter syntax. The type
 parameter immediately follows the word `Vector` in the code. It consists of a
 dot ( `.` ), then the base class name surrounded by angle brackets ( `<>` ), as
 shown in this example:
@@ -231,11 +231,11 @@ constructor with no arguments:
 If you know ahead of time how many elements a Vector initially needs, you can
 pre-define the number of elements in the Vector. To create a Vector with a
 certain number of elements, pass the number of elements as the first parameter
-(the `length` parameter). Because Vector elements can’t be empty, the elements
+(the `length` parameter). Because Vector elements can't be empty, the elements
 are filled with instances of the base type. If the base type is a reference type
 that allows `null` values, the elements all contain `null`. Otherwise, the
 elements all contain the default value for the class. For example, a uint
-variable can’t be `null`. Consequently, in the following code listing the Vector
+variable can't be `null`. Consequently, in the following code listing the Vector
 named `ages` is created with seven elements, each containing the value 0:
 
     var ages:Vector.<uint> = new Vector.<uint>(7);
@@ -244,7 +244,7 @@ named `ages` is created with seven elements, each containing the value 0:
 Finally, using the `Vector.<T>()` constructor you can also create a fixed-length
 Vector by passing `true` for the second parameter (the `fixed` parameter). In
 that case the Vector is created with the specified number of elements and the
-number of elements can’t be changed. Note, however, that you can still change
+number of elements can't be changed. Note, however, that you can still change
 the values of the elements of a fixed-length Vector.
 
 </div>
@@ -255,7 +255,7 @@ the values of the elements of a fixed-length Vector.
 
 In Flash Professional CS5 and later, Flash Builder 4 and later, and Flex 4 and
 later, you can pass a list of values to the `Vector.<T>()` constructor to
-specify the Vector’s initial values:
+specify the Vector's initial values:
 
     // var v:Vector.<T> = new <T>[E0, ..., En-1 ,];
     // For example:
@@ -303,7 +303,7 @@ shows the syntax for calling the `Vector.<T>()` global function:
 The `Vector.<T>()` global function performs data type conversion on two levels.
 First, when an Array instance is passed to the function, a Vector instance is
 returned. Second, whether the source array is an Array or Vector instance the
-function attempts to convert the source array’s elements to values of the base
+function attempts to convert the source array's elements to values of the base
 type. The conversion uses standard ActionScript data type conversion rules. For
 example, the following code listing converts the String values in the source
 Array to integers in the result Vector. The decimal portion of the first value (
@@ -313,13 +313,13 @@ converted to 0 in the result:
     var numbers:Vector.<int> = Vector.<int>(["1.5", "17", "Waffles"]);
     trace(numbers); // output: 1,17,0
 
-If any of the source elements can’t be converted, an error occurs.
+If any of the source elements can't be converted, an error occurs.
 
 When code calls the `Vector.<T>()` global function, if an element in the source
 array is an instance of a subclass of the specified base type, the element is
 added to the result Vector (no error occurs). Using the `Vector.<T>()` global
 function is the only way to convert a Vector with base type `T` to a Vector with
-a base type that’s a superclass of `T`.
+a base type that's a superclass of `T`.
 
 </div>
 
@@ -342,13 +342,13 @@ statement:
 
     songTitles[5] = "Happy Birthday";
 
-If the Array or Vector doesn’t already have an element at that index, the index
+If the Array or Vector doesn't already have an element at that index, the index
 is created and the value is stored there. If a value exists at that index, the
 new value replaces the existing one.
 
 An Array object allows you to create an element at any index. However, with a
 Vector object you can only assign a value to an existing index or to the next
-available index. The next available index corresponds to the Vector object’s
+available index. The next available index corresponds to the Vector object's
 `length` property. The safest way to add a new element to a Vector object is to
 use code like this listing:
 
@@ -382,15 +382,15 @@ should be deleted. Finally, the third and fourth arguments sent to `splice()`,
 The `push()` and `unshift()` methods both return an unsigned integer that
 represents the length of the modified array. The `splice()` method returns an
 empty array when used to insert elements, which may seem strange, but makes more
-sense in light of the `splice()` method’s versatility. You can use the
+sense in light of the `splice()` method's versatility. You can use the
 `splice()` method not only to insert elements into an array, but also to remove
 elements from an array. When used to remove elements, the `splice()` method
 returns an array containing the elements removed.
 
 <div>
 
-Note: If a Vector object’s `fixed` property is `true`, the total number of
-elements in the Vector can’t change. If you try to add a new element to a
+Note: If a Vector object's `fixed` property is `true`, the total number of
+elements in the Vector can't change. If you try to add a new element to a
 fixed-length Vector using the techniques described here, an error occurs.
 
 </div>
@@ -412,7 +412,7 @@ side of an assignment statement:
 
     var myFavoriteSong:String = songTitles[3];
 
-It’s possible to attempt to retrieve a value from an Array or Vector using an
+It's possible to attempt to retrieve a value from an Array or Vector using an
 index where no element exists. In that case, an Array object returns the value
 undefined and a Vector throws a RangeError exception.
 
@@ -470,7 +470,7 @@ Array, but the length of the Array remains 5:
     trace(oceans[2]); // output: undefined
     trace(oceans.length); // output: 5
 
-You can truncate an Array or Vector using an array’s `length` property. If you
+You can truncate an Array or Vector using an array's `length` property. If you
 set the `length` property of an indexed array to a length that is less than the
 current length of the array, the array is truncated, removing any elements
 stored at index numbers higher than the new value of `length` minus 1. For
@@ -484,8 +484,8 @@ entries at the end of the array, as shown in the following code:
 
 <div>
 
-Note: If a Vector object’s `fixed` property is `true`, the total number of
-elements in the Vector can’t change. If you try to remove an element from or
+Note: If a Vector object's `fixed` property is `true`, the total number of
+elements in the Vector can't change. If you try to remove an element from or
 truncate a fixed-length Vector using the techniques described here, an error
 occurs.
 
@@ -511,7 +511,7 @@ summarizes these methods and their behavior for Array and Vector objects:
 | Method      | Array behavior                                                                                                                                                   | Vector behavior                                                               |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
 | `reverse()` | Changes the order of the elements so that the last element becomes the first element, the penultimate element becomes the second, and so on                      | Identical to Array behavior                                                   |
-| `sort()`    | Allows you to sort the Array’s elements in a variety of predefined ways, such as alphabetical or numeric order. You can also specify a custom sorting algorithm. | Sorts the elements according to the custom sorting algorithm that you specify |
+| `sort()`    | Allows you to sort the Array's elements in a variety of predefined ways, such as alphabetical or numeric order. You can also specify a custom sorting algorithm. | Sorts the elements according to the custom sorting algorithm that you specify |
 | `sortOn()`  | Allows you to sort objects that have one or more common properties, specifying the property or properties to use as the sort keys                                | Not available in the Vector class                                             |
 
 </div>
@@ -554,7 +554,7 @@ characteristics:
 
 You may find that you need to sort your Array without regard to case, or in
 descending order, or perhaps your array contains numbers that you want to sort
-numerically instead of alphabetically. The Array class’s `sort()` method has an
+numerically instead of alphabetically. The Array class's `sort()` method has an
 `options` parameter that allows you to alter each characteristic of the default
 sort order. The options are defined by a set of static constants in the Array
 class, as shown in the following list:
@@ -592,14 +592,14 @@ is created that is sorted using several different options.
 
 #### Custom sorting with the sort() method (Array and Vector classes)
 
-In addition to the basic sorting that’s available for an Array object, you can
+In addition to the basic sorting that's available for an Array object, you can
 also define a custom sorting rule. This technique is the only form of the
 `sort()` method that is available for the Vector class. To define a custom sort,
 you write a custom sort function and pass it as an argument to the `sort()`
 method.
 
 For example, if you have a list of names in which each list element contains a
-person’s full name, but you want to sort the list by last name, you must use a
+person's full name, but you want to sort the list by last name, you must use a
 custom sort function to parse each element and use the last name in the sort
 function. The following code shows how this can be done with a custom function
 that is used as a parameter to the `Array.sort()` method:
@@ -632,7 +632,7 @@ the last name from each element to use for the comparison operation. The
 function identifier `orderLastName` is used as the sole parameter when calling
 the `sort()` method on the `names` array. The sort function accepts two
 parameters, `a` and `b`, because it works on two array elements at a time. The
-sort function’s return value indicates how the elements should be sorted:
+sort function's return value indicates how the elements should be sorted:
 
 - A return value of -1 indicates that the first parameter, `a`, precedes the
   second parameter, `b`.
@@ -661,7 +661,7 @@ available for Array objects.
 </div>
 
 The following example revises the `poets` Array so that each element is an
-object instead of a string. Each object holds both the poet’s last name and year
+object instead of a string. Each object holds both the poet's last name and year
 of birth.
 
     var poets:Array = new Array();
@@ -749,7 +749,7 @@ array. The `concat()` and `slice()` methods both return new arrays, while the
 takes a new array or list of elements as arguments and combines it with the
 existing array to create a new array. The `slice()` method has two parameters,
 aptly named `startIndex` and an `endIndex`, and returns a new array containing a
-copy of the elements “sliced” from the existing array. The slice begins with the
+copy of the elements "sliced" from the existing array. The slice begins with the
 element at `startIndex` and ends with the element just before `endIndex`. That
 bears repeating: the element at `endIndex` is not included in the return value.
 

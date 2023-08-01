@@ -17,8 +17,8 @@ properties, including the CSMSettings, Font, and TextRenderer classes.
 <div>
 
 When you specify a specific font for a TextField in your application, Flash
-Player or AIR look for a device font (a font that resides on the user’s
-computer) with the same name. If it doesn’t find that font on the system, or if
+Player or AIR look for a device font (a font that resides on the user's
+computer) with the same name. If it doesn't find that font on the system, or if
 the user has a slightly different version of a font with that name, the text
 display could look very different from what you intend. By default, the text
 appears in a Times Roman font.
@@ -72,8 +72,8 @@ You can embed fonts in an application in many ways, including:
 
 - Creating and using a run-time shared library containing embedded font symbols
 
-For more details about how to embed fonts in applications, see “Embedded fonts
-for dynamic or input text fields” in _Using Flash_ .
+For more details about how to embed fonts in applications, see "Embedded fonts
+for dynamic or input text fields" in _Using Flash_ .
 
 </div>
 
@@ -93,7 +93,7 @@ You can only embed TrueType fonts directly in a Flex application. Fonts in other
 formats, such as Type 1 Postscript fonts, can first be embedded in a SWF file
 using Flash Professional and then that SWF file can be used in your Flex
 application. For more details about using embedded fonts from SWF files in Flex,
-see “Embedding fonts from SWF files” in _Using Flex 4_ .
+see "Embedding fonts from SWF files" in _Using Flex 4_ .
 
 </div>
 
@@ -172,13 +172,13 @@ More Help topics
 </div>
 
 ![](images/flashLinkIndicator.png)
-[Embed fonts for consistent text appearance](http://help.adobe.com/en_US/flash/cs/using/WSb03e830bd6f770ee21a3597d124daee0526-8000.html "http://help.adobe.com/en_US/flash/cs/using/WSb03e830bd6f770ee21a3597d124daee0526-8000.html")
+[Embed fonts for consistent text appearance](https://help.adobe.com/en_US/flash/cs/using/WSb03e830bd6f770ee21a3597d124daee0526-8000.html "https://help.adobe.com/en_US/flash/cs/using/WSb03e830bd6f770ee21a3597d124daee0526-8000.html")
 
 ![](images/flexLinkIndicator.png)
-[Embedding assets](http://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fce.html "http://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fce.html")
+[Embedding assets](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fce.html "https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fce.html")
 
 ![](images/flexLinkIndicator.png)
-[Fonts](http://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7f9e.html "http://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7f9e.html")
+[Fonts](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7f9e.html "https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7f9e.html")
 
 [Peter deHaan: Embedding fonts](http://www.adobe.com/devnet/flash/quickstart/embedding_fonts.html "http://www.adobe.com/devnet/flash/quickstart/embedding_fonts.html")
 

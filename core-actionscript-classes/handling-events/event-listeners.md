@@ -359,7 +359,7 @@ method returns `true` if an event listener is found for a specific event type on
 a particular display list object. The `willTrigger()` method also returns `true`
 if a listener is found for a particular display list object, but `willTrigger()`
 checks for listeners not only on that display object, but also on all of that
-display list object’s ancestors for all phases of the event flow.
+display list object's ancestors for all phases of the event flow.
 
 </div>
 

@@ -3,7 +3,7 @@
 <div>
 
 The
-[StageWebView](http://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/media/StageWebView.html)
+[StageWebView](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/media/StageWebView.html)
 class displays HTML content using the system browser control on mobile devices
 and using the standard Adobe® AIR® HTMLLoader control on desktop computers.
 Check the `StageWebView.isSupported` property to determine whether the class is
@@ -212,16 +212,16 @@ The URI scheme determines the rules for loading embedded content or data.
 
 <div>
 
-Note: If the stage’s `displayState` property is set to `FULL_SCREEN`, in
+Note: If the stage's `displayState` property is set to `FULL_SCREEN`, in
 Desktop, you cannot type in a text field displayed in the StageWebView. However,
 in iOS and Android, you can type in a text field on StageWebView even if the
-stage’s `displayState` is `FULL_SCREEN`.
+stage's `displayState` is `FULL_SCREEN`.
 
 </div>
 
 </div>
 
-The following example uses a StageWebView object to display Adobe’s website:
+The following example uses a StageWebView object to display Adobe's website:
 
     package
     {
@@ -248,7 +248,7 @@ for the app to successfully load remote resources.
 In Android 3.0+, an application must enable hardware acceleration in the Android
 manifestAdditions element of the AIR application descriptor to display plug-in
 content in a StageWebView object. See
-[Enabling Flash Player and other plug-ins in a StageWebView object](http://help.adobe.com/en_US/air/build/WS365a66ad37c9f5102ec8a8ba12f2d91095a-8000.html).
+[Enabling Flash Player and other plug-ins in a StageWebView object](https://help.adobe.com/en_US/air/build/WS365a66ad37c9f5102ec8a8ba12f2d91095a-8000.html).
 
 </div>
 
@@ -415,7 +415,7 @@ When the StageWebView object gains focus, it dispatches a `focusIn` event. You
 use this event to manage the focus elements in your application, if necessary.
 
 When the StageWebView relinquishes the focus, it dispatches a `focusOut` event.
-A StageWebView instance can relinquish focus when a user “tabs” past the first
+A StageWebView instance can relinquish focus when a user "tabs" past the first
 or last control on the web page using a device trackball or directional arrows.
 The `direction` property of the event object lets you know whether the focus
 flow is rising up past the top of the page or down through the bottom of the

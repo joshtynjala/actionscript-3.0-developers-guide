@@ -34,7 +34,7 @@ character, and a two-digit month.
 
 The pattern string can be set explicitly using the setDateTimePattern() method.
 However it is best to let the pattern be set automatically according to the
-user’s locale and operating system preferences. This practice helps assure that
+user's locale and operating system preferences. This practice helps assure that
 the result is culturally appropriate.
 
 The DateTimeFormatter can represent dates and times in three standard styles

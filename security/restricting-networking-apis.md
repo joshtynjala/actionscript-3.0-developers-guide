@@ -3,8 +3,8 @@
 <div>
 
 Networking APIs can be restricted in two ways. To prevent malicious activity,
-access to commonly reserved ports is blocked; you can’t override these blocks in
-your code. To control a SWF file’s access to network functionality with regard
+access to commonly reserved ports is blocked; you can't override these blocks in
+your code. To control a SWF file's access to network functionality with regard
 to other ports, you can use the `allowNetworking` setting.
 
 </div>
@@ -67,7 +67,7 @@ HTTP and FTP: 1 (tcpmux), 7 (echo), 9 (discard), 11 (systat), 13 (daytim
 
 <div>
 
-You can control a SWF file’s access to network functionality by setting the
+You can control a SWF file's access to network functionality by setting the
 `allowNetworking` parameter in the `<object>` and `<embed>` tags in the HTML
 page that contains the SWF content.
 
@@ -86,7 +86,7 @@ Possible values of `allowNetworking` are:
 The `allowNetworking` parameter is designed to be used primarily when the SWF
 file and the enclosing HTML page are from different domains. Using the value of
 `"internal"` or `"none"` is not recommended when the SWF file being loaded is
-from the same domain as its enclosing HTML pages, because you can’t ensure that
+from the same domain as its enclosing HTML pages, because you can't ensure that
 a SWF file is always loaded with the HTML page you intend. Untrusted parties
 could load a SWF file from your domain with no enclosing HTML, in which case the
 `allowNetworking` restriction will not work as you intended.
