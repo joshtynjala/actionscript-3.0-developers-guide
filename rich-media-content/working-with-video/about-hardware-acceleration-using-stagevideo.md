@@ -44,8 +44,7 @@ including playback controls. When hardware acceleration is not available, videos
 can be played only on this plane, using the Video class object. Stage video
 always displays behind Flash display list graphics.
 
-<a href="#" onclick="return showHideImage(&#39;Planes&#39;, this);">View full
-size graphic</a> ![](images/Planes.png)
+![](../../img/Planes_popup.png)
 
 Video display planes
 

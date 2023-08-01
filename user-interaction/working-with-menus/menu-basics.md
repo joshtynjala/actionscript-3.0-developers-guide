@@ -254,9 +254,7 @@ and an _Edit_ submenu. The File submenu in this structure contains two command
 items and an item that references an _Open Recent Menu_ submenu, which, itself,
 contains three items. The Edit submenu contains three commands and a separator.
 
-<a href="#"
-onclick="return showHideImage(&#39;MenuStructure&#39;, this);">View full size
-graphic</a> ![](images/MenuStructure.png)
+![](../../img/MenuStructure_popup.png)
 
 Defining a submenu requires both a NativeMenu and a NativeMenuItem object. The
 NativeMenuItem object defines the label displayed in the parent menu and allows

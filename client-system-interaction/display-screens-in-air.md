@@ -28,9 +28,7 @@ as rectangles within the virtual desktop. The upper-left corner of screen
 designated as the primary display is the origin of the virtual desktop
 coordinate system. All values used to describe a screen are provided in pixels.
 
-<a href="#"
-onclick="return showHideImage(&#39;screen_bounds&#39;, this);">View full size
-graphic</a> ![](images/screen_bounds.png)
+![](../img/screen_bounds_popup.png)
 
 In this screen arrangement, two screens exist on the virtual desktop. The
 coordinates of the upper-left corner of the main screen (#1) are always (0,0).

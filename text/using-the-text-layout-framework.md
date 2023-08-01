@@ -662,9 +662,7 @@ A flow composer is an instance of the StandardFlowComposer class in the
 A flow composer manages the conversion of TextFlow into TextLine instances, and
 also the placement of those TextLine instances into one or more containers.
 
-<a href="#"
-onclick="return showHideImage(&#39;te_singlecontroller&#39;, this);">View full
-size graphic</a> ![](images/te_singlecontroller.png)
+![](../img/te_singlecontroller_popup.png)
 
 An IFlowComposer has zero or more ContainerControllers
 

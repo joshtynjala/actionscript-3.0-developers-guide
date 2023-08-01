@@ -20,9 +20,7 @@ it can simply ignore the input altogether.
 
 The following diagram shows the flow of input from user to runtime:
 
-<a href="#"
-onclick="return showHideImage(&#39;ig_touch_flow&#39;, this);">View full size
-graphic</a> ![](images/ig_touch_flow.png)
+![](../../img/ig_touch_flow_popup.png)
 
 Flow of input from user to the Flash Platform runtime
 

@@ -24,9 +24,7 @@ environment and the AIR run-time environment. Although only a single native
 window is shown, an AIR application can contain multiple windows. (And a single
 window can contain multiple HTMLLoader objects.)
 
-<a href="#"
-onclick="return showHideImage(&#39;HTMLStructure&#39;, this);">View full size
-graphic</a> ![](images/HTMLStructure.png)
+![](../../img/HTMLStructure_popup.png)
 
 The JavaScript environment has its own Document and Window objects. JavaScript
 code can interact with the AIR run-time environment through the runtime,

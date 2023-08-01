@@ -26,9 +26,7 @@ the other side is called the _party being accessed_ (usually the SWF being
 accessed). When siteA.swf scripts siteB.swf, siteA.swf is the accessing party,
 and siteB.swf is the party being accessed, as the following illustration shows:
 
-<a href="#"
-onclick="return showHideImage(&#39;sc_crossScript_load&#39;, this);">View full
-size graphic</a> ![](images/sc_crossScript_load.png)
+![](../img/sc_crossScript_load_popup.png)
 
 Cross-domain permissions that are established with the `Security.allowDomain()`
 method are asymmetrical. In the previous example, siteA.swf can script

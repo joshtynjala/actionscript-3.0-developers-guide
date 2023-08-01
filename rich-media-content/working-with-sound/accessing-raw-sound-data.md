@@ -24,9 +24,7 @@ method when the `FFTMode` parameter is set to `true` and when it is set to
 `false`. The sound whose data was used for this diagram contains a loud bass
 sound in the left channel and a drum hit sound in the right channel.
 
-<a href="#"
-onclick="return showHideImage(&#39;so_computeSpectrum&#39;, this);">View full
-size graphic</a> ![](images/so_computeSpectrum.png)
+![](../../img/so_computeSpectrum_popup.png)
 
 Values returned by the SoundMixer.computeSpectrum() method
 
