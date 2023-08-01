@@ -1,7 +1,5 @@
 # Mouse input example: WordSearch
 
-<div>
-
 This example demonstrates user interaction by handling mouse events. Users build
 as many words as possible from a random grid of letters, spelling by moving
 horizontally or vertically in the grid, but never using the same letter
@@ -18,49 +16,36 @@ To get the application files for this sample, see
 The WordSearch application files can be found in the folder Samples/WordSearch.
 The application consists of the following files:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>File</p></th>
-<th><p>Description</p></th>
-</tr>
+	<tr>
+		<th><p>File</p></th>
+		<th><p>Description</p></th>
+	</tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><p>WordSearch.as</p></td>
-<td><p>The class that provides the main functionality of the
-application.</p></td>
-</tr>
-<tr class="even">
-<td><p>WordSearch.fla</p>
-<p>or</p>
-<p>WordSearch.mxml</p></td>
-<td><p>The main application file for Flex (MXML) or Flash
+	<tr>
+		<td><p>WordSearch.as</p></td>
+		<td><p>The class that provides the main functionality of the application.</p></td>
+	</tr>
+	<tr>
+		<td>
+			<p>WordSearch.fla</p>
+			<p>or</p>
+			<p>WordSearch.mxml</p>
+		</td>
+		<td><p>The main application file for Flex (MXML) or Flash
 (FLA).</p></td>
-</tr>
-<tr class="odd">
-<td><p>dictionary.txt</p></td>
-<td><p>A file used to determine if spelled words are scorable and
+	</tr>
+	<tr>
+		<td><p>dictionary.txt</p></td>
+		<td><p>A file used to determine if spelled words are scorable and
 spelled correctly.</p></td>
-</tr>
+	</tr>
 </tbody>
 </table>
 
-</div>
-
-</div>
-
-<div>
-
 ## Loading a dictionary
-
-<div>
 
 To create a game that involves finding words, a dictionary is needed. The
 example includes a text file called dictionary.txt that contains a list of words
@@ -73,15 +58,7 @@ by using the `split()` method, breaking at each instance of a carriage return
 
     words = dictionaryText.split(String.fromCharCode(13, 10));
 
-</div>
-
-</div>
-
-<div>
-
 ## Creating the user interface
-
-<div>
 
 After the words have been stored, you can set up the user interface. Create two
 Button instances: one for submitting a word, and another for clearing a word
@@ -93,15 +70,7 @@ on the two buttons:
     submitWordButton.addEventListener(MouseEvent.CLICK,submitWord);
     clearWordButton.addEventListener(MouseEvent.CLICK,clearWord);
 
-</div>
-
-</div>
-
-<div>
-
 ## Generating a game board
-
-<div>
 
 The game board is a grid of random letters. In the `generateBoard()` function, a
 two-dimensional grid is created by nesting one loop inside another. The first
@@ -138,15 +107,7 @@ each button is assigned a name derived from its row and column position, which
 provides an easy way to reference the row and column of each button later in the
 code.
 
-</div>
-
-</div>
-
-<div>
-
 ## Building words from user input
-
-<div>
 
 Words can be spelled by selecting letters that are vertically or horizontally
 adjacent, but never using the same letter twice. Each click generates a mouse
@@ -176,15 +137,7 @@ unchanged row or column and the final line would look like this:
 
     return (Math.abs(prevButtonRow - currButtonRow) <= 1) && Math.abs(prevButtonCol - currButtonCol) <= 1));
 
-</div>
-
-</div>
-
-<div>
-
 ## Checking word submissions
-
-<div>
 
 To complete the code for the game, mechanisms for checking word submissions and
 tallying the score are needed. The `searchForWord()` method contains both:
@@ -216,30 +169,10 @@ word matches a word in the dictionary, its position in the dictionary is
 returned. The `submitWord()` method then checks the response and updates the
 score if the position is valid.
 
-</div>
-
-</div>
-
-<div>
-
 ## Customization
-
-<div>
 
 At the beginning of the class are several constants. You can modify this game by
 modifying these variables. For example, you can change the amount of time
 available to play by increasing the `TOTAL_TIME` variable. You can also increase
 the `PERCENT_VOWELS` variable slightly to increase the likelihood of finding
 words.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

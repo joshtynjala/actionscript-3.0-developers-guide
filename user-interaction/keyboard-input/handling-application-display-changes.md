@@ -1,7 +1,5 @@
 # Handling application display changes
 
-<div>
-
 In AIR, you can turn off the default panning and resizing behavior associated
 with raising a soft keyboard by setting the `softKeyboardBehavior` element in
 the application descriptor to `none`:
@@ -77,23 +75,9 @@ you can return the application display to normal.
     	}
     }
 
-<div>
-
 Note: On Android, there are circumstances, including fullscreen mode, in which
 the exact dimensions of the keyboard are not available from the operating
 system. In these cases, the size is estimated. Also, in landscape orientations,
 the native fullscreen IME keyboard is used for all text entry. This IME keyboard
 has a built-in text entry field and obscures the entire stage. There is no way
 to display a landscape keyboard that does not fill the screen.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

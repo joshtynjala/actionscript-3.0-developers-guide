@@ -1,7 +1,5 @@
 # Basics of geometry
 
-<div>
-
 The flash.geom package contains classes that define geometric objects such as
 points, rectangles, and transformation matrixes. These classes don't necessarily
 provide functionality by themselves; however, they are used to define the
@@ -36,8 +34,6 @@ transformations, such as rotation, position, and scale changes, can be applied
 directly to a display object using that object's properties. For more
 information on applying transformations using display object properties, see
 [Manipulating display objects](../display-programming/manipulating-display-objects.md).
-
-<div>
 
 #### Important concepts and terms
 
@@ -80,7 +76,3 @@ The horizontal axis in the 2-d coordinate system used in ActionScript.
 
 Y-axis  
 The vertical axis in the 2-d coordinate system used in ActionScript.
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # Basics of arrays
 
-<div>
-
 Often in programming you'll need to work with a set of items rather than a
 single object. For example, in a music player application, you might want to
 have a list of songs waiting to be played. You wouldn't want to have to create a
@@ -51,8 +49,6 @@ instead of a numeric index to identify individual elements. Finally,
 ActionScript 3.0 also includes the Dictionary class, which represents a
 _dictionary_. A dictionary is an array that allows you to use any type of object
 as a key to distinguish between elements.
-
-<div>
 
 #### Important concepts and terms
 
@@ -109,7 +105,3 @@ specified in the type parameter is represented generically as `T`.
 
 Vector  
 A type of array whose elements are all instances of the same data type.
-
-</div>
-
-</div>

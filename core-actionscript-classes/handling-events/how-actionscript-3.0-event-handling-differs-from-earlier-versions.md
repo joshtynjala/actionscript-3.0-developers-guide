@@ -1,7 +1,5 @@
 # How ActionScript 3.0 event handling differs from earlier versions
 
-<div>
-
 The most noticeable difference between event handling in ActionScript 3.0 and
 event handling in previous versions of ActionScript is that in ActionScript 3.0
 there is only one system for event handling, whereas in previous versions of
@@ -10,13 +8,7 @@ begins with an overview of how event handling worked in previous versions of
 ActionScript, and then discusses how event handling has changed for ActionScript
 3.0.
 
-</div>
-
-<div>
-
 ## Event handling in previous versions of ActionScript
-
-<div>
 
 Versions of ActionScript before ActionScript 3.0 provided a number of different
 ways to handle events:
@@ -63,15 +55,7 @@ the scope of the event handler function varied widely depending on the mechanism
 used. In other words, the meaning of the `this` keyword was not consistent among
 the event-handling systems.
 
-</div>
-
-</div>
-
-<div>
-
 ## Event handling in ActionScript 3.0
-
-<div>
 
 ActionScript 3.0 introduces a single event-handling model that replaces the many
 different event-handling mechanisms that existed in previous versions of the
@@ -86,8 +70,6 @@ list object_ and _node_ are used interchangeably throughout this discussion.
 The Flash Player and AIR implementation of the DOM event model includes a
 concept named default behaviors. A _default behavior_ is an action that Flash
 Player or AIR executes as the normal consequence of certain events.
-
-<div>
 
 #### Default behaviors
 
@@ -128,10 +110,6 @@ with it. In other words, Flash Player and AIR will not display a character in a
 TextField object as a result of a `textInput` event that you dispatched
 programmatically.
 
-</div>
-
-<div>
-
 #### What's new for event listeners in ActionScript 3.0
 
 For developers with experience using the ActionScript 2.0 `addListener()`
@@ -151,9 +129,3 @@ list describes a few major differences between the two event models:
 - In ActionScript 2.0, event listeners can be either functions, methods, or
   objects, whereas in ActionScript 3.0, only functions or methods can be event
   listeners.
-
-</div>
-
-</div>
-
-</div>

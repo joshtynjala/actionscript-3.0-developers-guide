@@ -1,9 +1,5 @@
 # Touch support discovery
 
-<div>
-
-<div>
-
 Use the
 [Multitouch class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Multitouch.html)
 properties to set the scope of touch input your application handles. Then, test
@@ -16,27 +12,13 @@ in an environment that supports the touch input your application requires. Test
 the runtime environment for support of the types of touch input (such as whether
 it can interpret gestures), and respond accordingly.
 
-<div>
-
 Note: The Multitouch class properties are static properties, and do not belong
 to instances of any class. Use them with the syntax Multitouch.property, for
 example:
 
-</div>
-
     var touchSupport:Boolean = Multitouch.supportsTouchEvents;
 
-</div>
-
-</div>
-
-<div>
-
 ## Set the input type
-
-<div>
-
-<div>
 
 The Flash runtime must know the type of touch input to interpret, because a
 touch event can have many elements or phases. If a finger simply touches a
@@ -65,21 +47,11 @@ the movement to a single gesture input event. Set:
 TransformGestureEvent, PressAndTapGestureEvent, or GestureEvent classes to
 handle input.
 
-</div>
-
 See [Touch event handling](WS1ca064e08d7aa93023c59dfc1257b16a3d6-7ffe.html) for
 an example that uses the `Multitouch.inputMode` property to set the input type
 before handling a touch event.
 
-</div>
-
-</div>
-
-<div>
-
 ## Test for touch input support
-
-<div>
 
 Other properties of the Multitouch class provide values for fine-tuning your
 application to the current environment's touch support. The Flash runtime
@@ -94,15 +66,3 @@ You can also use the API for keyboard, touch, and mouse support, see
 
 For more information about compatibility testing, see
 [Troubleshooting](WS1ca064e08d7aa930-581fb7b1257b16ff45-8000.html).
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

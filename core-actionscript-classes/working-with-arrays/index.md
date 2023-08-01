@@ -1,7 +1,5 @@
 # Working with arrays
 
-<div>
-
 Arrays allow you to store multiple values in a single data structure. You can
 use simple indexed arrays that store values using fixed ordinal integer indexes
 or complex associative arrays that store values using arbitrary keys. Arrays can

@@ -1,69 +1,51 @@
 # Handling menu events
 
-<div>
-
 A menu dispatches events when the user selects the menu or when the user selects
 a menu item.
 
-</div>
-
-<div>
-
 ## Events summary for menu classes
-
-<div>
 
 Add event listeners to menus or individual items to handle menu events.
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>Object</p></th>
-<th><p>Events dispatched</p></th>
-</tr>
+    <tr>
+        <th><p>Object</p></th>
+        <th><p>Events dispatched</p></th>
+    </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><p>NativeMenu (AIR)</p></td>
-<td><p>Event.PREPARING (Adobe AIR 2.6 and later)</p>
-<p>Event.DISPLAYING</p>
-<p>Event.SELECT (propagated from child items and submenus)</p></td>
-</tr>
-<tr class="even">
-<td><p>NativeMenuItem (AIR)</p></td>
-<td><p>Event.PREPARING (Adobe AIR 2.6 and later)</p>
-<p>Event.SELECT</p>
-<p>Event.DISPLAYING (propagated from parent menu)</p></td>
-</tr>
-<tr class="odd">
-<td><p>ContextMenu</p></td>
-<td><p>ContextMenuEvent.MENU_SELECT</p></td>
-</tr>
-<tr class="even">
-<td><p>ContextMenuItem</p></td>
-<td><p>ContextMenuEvent.MENU_ITEM_SELECT</p>
-<p>Event.SELECT (AIR)</p></td>
-</tr>
+    <tr>
+        <td><p>NativeMenu (AIR)</p></td>
+        <td>
+            <p>Event.PREPARING (Adobe AIR 2.6 and later)</p>
+            <p>Event.DISPLAYING</p>
+            <p>Event.SELECT (propagated from child items and submenus)</p>
+        </td>
+    </tr>
+    <tr>
+        <td><p>NativeMenuItem (AIR)</p></td>
+        <td>
+            <p>Event.PREPARING (Adobe AIR 2.6 and later)</p>
+            <p>Event.SELECT</p>
+            <p>Event.DISPLAYING (propagated from parent menu)</p>
+        </td>
+    </tr>
+    <tr>
+        <td><p>ContextMenu</p></td>
+        <td><p>ContextMenuEvent.MENU_SELECT</p></td>
+    </tr>
+    <tr>
+        <td><p>ContextMenuItem</p></td>
+        <td>
+            <p>ContextMenuEvent.MENU_ITEM_SELECT</p>
+            <p>Event.SELECT (AIR)</p>
+        </td>
+    </tr>
 </tbody>
 </table>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Select menu events
-
-<div>
 
 To handle a click on a menu item, add an event listener for the `select` event
 to the NativeMenuItem object:
@@ -87,10 +69,10 @@ selected. The following example traces the label of the selected command:
     colorMenu.addItem(green);
     colorMenu.addItem(blue);
 
-    if(NativeApplication.supportsMenu){
+    if(NativeApplication.supportsMenu) {
     	NativeApplication.nativeApplication.menu.addItem(colorMenuItem);
     	NativeApplication.nativeApplication.menu.addEventListener(Event.SELECT, colorChoice);
-    } else if (NativeWindow.supportsMenu){
+    } else if (NativeWindow.supportsMenu) {
     	var windowMenu:NativeMenu = new NativeMenu();
     	this.stage.nativeWindow.menu = windowMenu;
     	windowMenu.addItem(colorMenuItem);
@@ -107,15 +89,7 @@ If you are using the ContextMenuItem class, you can listen for either the
 you additional information about the object owning the context menu, but does
 not bubble up to the containing menus.
 
-</div>
-
-</div>
-
-<div>
-
 ## Displaying menu events
-
-<div>
 
 To handle the opening of a menu, you can add a listener for the `displaying`
 event, which is dispatched before a menu is displayed. You can use the
@@ -126,15 +100,3 @@ listen for the `menuSelect` event from a ContextMenu object.
 In AIR 2.6 and later, you can use the `preparing` event to update a menu in
 response to either displaying a menu or selecting an item with a keyboard
 shortcut.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

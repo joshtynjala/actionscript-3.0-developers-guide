@@ -1,7 +1,5 @@
 # Using encryption with SQL databases
 
-<div>
-
 All Adobe AIR applications share the same local database engine. Consequently,
 any AIR application can connect to, read from, and write to an unencrypted
 database file. Starting with Adobe AIR 1.5, AIR includes the capability of
@@ -20,13 +18,7 @@ with an encrypted database are the same as for working with an unencrypted one.
 In particular, executing SQL statements is the same regardless of whether a
 database is encrypted or not.
 
-</div>
-
-<div>
-
 ## Uses for an encrypted database
-
-<div>
 
 Encryption is useful any time you want to restrict access to the information
 stored in a database. The database encryption functionality of Adobe AIR can be
@@ -68,15 +60,7 @@ querying are desirable. For more information about using the encrypted local
 store, see
 [Encrypted local storage](WS5b3ccc516d4fbf351e63e3d118666ade46-7e31.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Creating an encrypted database
-
-<div>
 
 To use an encrypted database, the database file must be encrypted when it is
 created. Once a database is created as unencrypted, it can't be encrypted later.
@@ -123,15 +107,7 @@ For an example demonstrating a recommended way to generate an encryption key,
 see
 [Example: Generating and using an encryption key](WS61068DCE-9499-4d40-82B8-B71CC35D832C.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Connecting to an encrypted database
-
-<div>
 
 Like creating an encrypted database, the procedure for opening a connection to
 an encrypted database is like connecting to an unencrypted database. That
@@ -234,15 +210,7 @@ For an example demonstrating a recommended way to generate an encryption key,
 see
 [Example: Generating and using an encryption key](WS61068DCE-9499-4d40-82B8-B71CC35D832C.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Changing the encryption key of a database
-
-<div>
 
 When a database is encrypted, you can change the encryption key for the database
 at a later time. To change a database's encryption key, first open a connection
@@ -289,15 +257,7 @@ The `reencrypt()` method can't be used to remove encryption from a database.
 Passing a `null` value or encryption key that's not a 16-byte ByteArray to the
 `reencrypt()` method results in an error.
 
-</div>
-
-</div>
-
-<div>
-
 ## Considerations for using encryption with a database
-
-<div>
 
 The section
 [Uses for an encrypted database](WS8FAE5151-90D9-45e0-8ABD-09C17C4E6D36.html)
@@ -373,15 +333,7 @@ in mind when designing an application to use an encrypted database:
   application, for example by using a debugger, the data in a database that is
   currently open and unencrypted would be available.
 
-</div>
-
-</div>
-
-<div>
-
 ## Example: Generating and using an encryption key
-
-<div>
 
 This example application demonstrates one technique for generating an encryption
 key. This application is designed to provide the highest level of privacy and
@@ -395,13 +347,7 @@ encryption key (the EncryptionKeyGenerator class), and a basic user interface
 that demonstrates how to use that class. For the complete source code, see
 [Complete example code for generating and using an encryption key](WSAD329515-CBF1-4658-8DD7-CAC9C354CE94.html).
 
-</div>
-
-<div>
-
 ### Using the EncryptionKeyGenerator class to obtain a secure encryption key
-
-<div>
 
 It isn't necessary to understand the details of how the EncryptionKeyGenerator
 class works to use it in your application. If you are interested in the details
@@ -461,8 +407,6 @@ Follow these steps to use the EncryptionKeyGenerator class in your application:
     The `getEncryptionKey()` method has one required parameter, which is the
     password obtained in step 5.
 
-    <div>
-
     Note: To maintain the highest level of security and privacy for data, an
     application must require the user to enter a password each time the
     application connects to the database. Do not store the user's password or
@@ -470,8 +414,6 @@ Follow these steps to use the EncryptionKeyGenerator class in your application:
     Instead, as demonstrated in this example, an application should use the same
     technique to derive the encryption key from the password both when creating
     the encrypted database and when connecting to it later.
-
-    </div>
 
     The `getEncryptionKey()` method also accepts a second (optional) parameter,
     the `overrideSaltELSKey` parameter. The EncryptionKeyGenerator creates a
@@ -530,15 +472,7 @@ Follow these steps to use the EncryptionKeyGenerator class in your application:
     For the complete code for the example event listeners, see
     [Complete example code for generating and using an encryption key](WSAD329515-CBF1-4658-8DD7-CAC9C354CE94.html).
 
-</div>
-
-</div>
-
-<div>
-
 ### Complete example code for generating and using an encryption key
-
-<div>
 
 The following is the complete code for the example application "Generating and
 using an encryption key." The code consists of two parts.
@@ -548,8 +482,6 @@ from a password. The EncryptionKeyGenerator class is included in the open-source
 ActionScript 3.0 core library (as3corelib) project. You can download
 [the as3corelib package including source code and documentation](http://www.adobe.com/go/learn_air_opensource_encryptionkey).
 You can also download the SWC or source code files from the project page.
-
-<div>
 
 #### Flex example
 
@@ -652,17 +584,11 @@ creates or opens a connection to an encrypted database:
     	<mx:Text id="statusMsg" color="#990000" width="75%"/>
     </mx:WindowedApplication>
 
-</div>
-
-<div>
-
 #### Flash Professional example
 
 The application FLA file contains the source code for a simple application that
 creates or opens a connection to an encrypted database. The FLA file has four
 components placed on the stage:
-
-<div>
 
 | Instance name   | Component type | Description                                        |
 | --------------- | -------------- | -------------------------------------------------- |
@@ -670,8 +596,6 @@ components placed on the stage:
 | `passwordInput` | TextInput      | Input field where the user enters the password     |
 | `openButton`    | Button         | Button the user clicks after entering the password |
 | `statusMsg`     | Label          | Displays status (success or failure) messages      |
-
-</div>
 
 The code for the application is defined on a keyframe on frame 1 of the main
 timeline. The following is the code for the application:
@@ -771,17 +695,7 @@ timeline. The following is the code for the application:
     	}
     }
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ### Understanding the EncryptionKeyGenerator class
-
-<div>
 
 It isn't necessary to understand the inner workings of the
 EncryptionKeyGenerator class to use it to create a secure encryption key for
@@ -803,13 +717,7 @@ rightful user can access the data. The process is the same to generate an
 encryption key from a user-entered password before the database is created as
 well as to re-create the encryption key to open the database.
 
-</div>
-
-<div>
-
 #### Obtain and validate a strong password
-
-<div>
 
 When code calls the `getEncryptionKey()` method, it passes in a password as a
 parameter. The password is used as the basis for the encryption key. By using a
@@ -857,15 +765,7 @@ throws an exception. The `validateStrongPassword()` method is a public method so
 that application code can check a password without calling the
 `getEncryptionKey()` method to avoid causing an error.
 
-</div>
-
-</div>
-
-<div>
-
 #### Expand the password to 256 bits
-
-<div>
 
 Later in the process, the password is required to be 256 bits long. Rather than
 require each user to enter a password that's exactly 256 bits (32 characters)
@@ -907,15 +807,7 @@ If the password is less than 256 bits, the code concatenates the password with
 itself to make it 256 bits. If the length doesn't work out exactly, the last
 repetition is shortened to get exactly 256 bits.
 
-</div>
-
-</div>
-
-<div>
-
 #### Generate or retrieve a 256-bit salt value
-
-<div>
 
 The next step is to get a 256-bit salt value that in a later step is combined
 with the password. A _salt_ is a random value that is added to or combined with
@@ -977,15 +869,7 @@ in a variable named `saltKey`. That variable is used in the calls to
 `EncryptedLocalStore.setItem()` and `EncryptedLocalStore.getItem()`, as shown
 previously.
 
-</div>
-
-</div>
-
-<div>
-
 #### Combine the 256-bit password and salt using the XOR operator
-
-<div>
 
 The code now has a 256-bit password and a 256-bit salt value. It next uses a
 bitwise XOR operation to combine the salt and the concatenated password into a
@@ -1069,15 +953,7 @@ Once the loop completes, the ByteArray containing the XOR result is returned.
     	return result;
     }
 
-</div>
-
-</div>
-
-<div>
-
 #### Hash the key
-
-<div>
 
 Once the concatenated password and the salt have been combined, the next step is
 to further secure this value by hashing it using the SHA-256 hashing algorithm.
@@ -1093,15 +969,7 @@ EncryptionKeyGenerator class uses the SHA256 class to hash the key:
 
     var hashedKey:String = SHA256.hashBytes(unhashedKey);
 
-</div>
-
-</div>
-
-<div>
-
 #### Extract the encryption key from the hash
-
-<div>
 
 The encryption key must be a ByteArray that is exactly 16 bytes (128 bits) long.
 The result of the SHA-256 hashing algorithm is always 256 bits long.
@@ -1158,19 +1026,3 @@ ByteArray contains 16 bytes and is ready to use as a database encryption key.
 
     	return result;
     }
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

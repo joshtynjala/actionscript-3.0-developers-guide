@@ -1,7 +1,5 @@
 # Accessing raw sound data
 
-<div>
-
 The `SoundMixer.computeSpectrum()` method lets an application read the raw sound
 data for the waveform that is currently being played. If more than one
 SoundChannel object is currently playing the `SoundMixer.computeSpectrum()`
@@ -21,36 +19,20 @@ highest. A Fast Fourier Transform (FFT) is used to convert the waveform data
 into frequency spectrum data. The resulting frequency spectrum values range from
 0 to roughly 1.414 (the square root of 2).
 
-<div>
-
 The following diagram compares the data returned from the `computeSpectrum()`
 method when the `FFTMode` parameter is set to `true` and when it is set to
 `false`. The sound whose data was used for this diagram contains a loud bass
 sound in the left channel and a drum hit sound in the right channel.
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 <a href="#"
 onclick="return showHideImage(&#39;so_computeSpectrum&#39;, this);">View full
 size graphic</a> ![](images/so_computeSpectrum.png)
 
-<div>
-
 Values returned by the SoundMixer.computeSpectrum() method
 
-</div>
+**A.** fftMode=true
 
-A.  
-fftMode=true
-
-B.  
-fftMode=false
-
-</div>
-
-</div>
+**B.** fftMode=false
 
 The `computeSpectrum()` method can also return data that has been resampled at a
 lower bit rate. Generally, this results in smoother waveform data or frequency
@@ -82,13 +64,7 @@ However, in an AIR application, content in the application security sandbox
 (content installed with the AIR application) are not restricted by these
 security limitations.
 
-</div>
-
-<div>
-
 ## Building a simple sound visualizer
-
-<div>
 
 The following example uses the `SoundMixer.computeSpectrum()` method to show a
 chart of the sound waveform that animates with each frame:
@@ -168,22 +144,4 @@ second `for` loop cycles through the next set of 256 values, plotting them in
 reverse order this time, from right to left. The resulting waveform plots can
 produce an interesting mirror-image effect, as shown in the following image.
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](images/so_soundVisualizer.png)
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

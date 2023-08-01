@@ -1,7 +1,5 @@
 # The Graphics class
 
-<div>
-
 Each Shape, Sprite, and MovieClip object has a `graphics` property, which is an
 instance of the Graphics class. The Graphics class includes properties and
 methods for drawing lines, fills, and shapes. If you want a display object to
@@ -13,5 +11,3 @@ graphical content and also want that object to contain other display objects,
 you can use a Sprite instance. For more information on determining which display
 object to use for various tasks, see
 [Choosing a DisplayObject subclass](../display-programming/choosing-a-display-object-subclass.md).
-
-</div>

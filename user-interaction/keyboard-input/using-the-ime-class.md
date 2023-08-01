@@ -1,7 +1,5 @@
 # Using the IME class
 
-<div>
-
 The IME class lets you manipulate the operating system's IME within Flash Player
 or Adobe AIR.
 
@@ -33,23 +31,13 @@ resources, see the following web sites:
 - <a href="http://www.java.sun.com/"
   target="_self">http://www.java.sun.com/</a>
 
-<div>
-
 Note: If an IME is not active on the user's computer, calls to IME methods or
 properties, other than `Capabilities.hasIME`, will fail. Once you manually
 activate an IME, subsequent ActionScript calls to IME methods and properties
 will work as expected. For example, if you are using a Japanese IME, you must
 activate it before you can call any IME method or property.
 
-</div>
-
-</div>
-
-<div>
-
 ## Checking if an IME is installed and enabled
-
-<div>
 
 Before you call any of the IME methods or properties, you should always check to
 see if the user's computer currently has an IME installed and enabled. The
@@ -77,15 +65,7 @@ The previous code first checks to see if the user has an IME installed using the
 checks whether the user's IME is currently enabled, using the `IME.enabled`
 property.
 
-</div>
-
-</div>
-
-<div>
-
 ## Determining which IME conversion mode is currently enabled
-
-<div>
 
 When building multilingual applications, you may need to determine which
 conversion mode the user currently has active. The following code demonstrates
@@ -132,15 +112,7 @@ Next it checks which conversion mode the current IME is using by comparing the
 `IME.conversionMode` property against each of the constants in the
 IMEConversionMode class.
 
-</div>
-
-</div>
-
-<div>
-
 ## Setting the IME conversion mode
-
-<div>
 
 When you change the conversion mode of the user's IME, you need to make sure
 that the code is wrapped in a `try..catch` block, because setting a conversion
@@ -172,15 +144,7 @@ Korean IME installed, an error is thrown by Flash Player or AIR and is caught by
 the `try..catch` block. The `try..catch` block displays the error message in the
 previously created text field.
 
-</div>
-
-</div>
-
-<div>
-
 ## Disabling the IME for certain text fields
-
-<div>
 
 In some cases, you may want to disable the user's IME while they type
 characters. For example, if you had a text field that only accepts numeric
@@ -232,15 +196,7 @@ to the `phoneTxt` text field, a `FocusEvent.FOCUS_IN` event is dispatched and
 the IME is disabled. When the `phoneTxt` text field loses focus, the
 `FocusEvent.FOCUS_OUT` event is dispatched to re-enable the IME.
 
-</div>
-
-</div>
-
-<div>
-
 ## Listening for IME composition events
-
-<div>
 
 IME composition events are dispatched when a composition string is being set.
 For example, if the user has their IME enabled and active and types a string in
@@ -295,15 +251,3 @@ first text field, `inputTxt`, is an input text field that allows the user to
 enter Japanese text. The second text field, `outputTxt`, is a dynamic text field
 that displays error messages to the user, or echoes the Japanese string that the
 user types into the `inputTxt` text field.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

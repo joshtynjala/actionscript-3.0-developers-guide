@@ -1,7 +1,5 @@
 # Using the StageVideo APIs
 
-<div>
-
 Stage video is a mechanism within the runtime that enhances video playback and
 device performance. The runtime creates and maintains this mechanism; as a
 developer, your role is to configure your application to take advantage of it.
@@ -16,19 +14,9 @@ objects, rather than a Video object, to display streaming video.
 On Flash Player, when you receive notification that stage video is no longer
 available, switch your video stream back to a Video object.
 
-<div>
-
 Note: You cannot create StageVideo objects.
 
-</div>
-
-</div>
-
-<div>
-
 ## Stage.stageVideos property
-
-<div>
 
 The `Stage.stageVideos` property is a Vector object that gives you access to
 StageVideo instances. This vector can contain up to four StageVideo objects,
@@ -39,15 +27,7 @@ When stage video is not available, this vector contains no objects. To avoid run
 time errors, be sure that you access members of this vector only when the most
 recent `StageVideoAvailability` event indicates that stage video is available.
 
-</div>
-
-</div>
-
-<div>
-
 ## StageVideo events
-
-<div>
 
 The StageVideo API framework provides the following events:
 
@@ -65,12 +45,8 @@ software, or unavailable (nothing is displayed). The event target contains
 `videoWidth` and `videoHeight` properties that are safe to use for resizing the
 video viewport.
 
-<div>
-
 Important: Coordinates obtained from the StageVideo target object use Stage
 coordinates, since they are not part of the standard display list.
-
-</div>
 
 VideoEvent.RENDER_STATE  
 Sent when a Video object is being used. Indicates whether software or hardware
@@ -79,15 +55,7 @@ decoding, switch to a StageVideo object if possible. The Video event target
 contains `videoWidth` and `videoHeight` properties that are safe to use for
 resizing the video viewport.
 
-</div>
-
-</div>
-
-<div>
-
 ## Workflow for implementing the StageVideo feature
-
-<div>
 
 Follow these top-level steps to implement the StageVideo feature:
 
@@ -117,15 +85,7 @@ Follow these top-level steps to implement the StageVideo feature:
     video have been initialized or changed. See
     [Using the StageVideoEvent.RENDER_STATE and VideoEvent.RENDER_STATE events](WSe9ecd9e6b89aefd2-2046179612dc3d8edf2-7fff.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Initializing StageVideo event listeners
-
-<div>
 
 Set up your StageVideoAvailabilityEvent and VideoEvent listeners during
 application initialization. For example, you can initialize these listeners in
@@ -168,15 +128,7 @@ that your application is visible on the stage:
         //...
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## Using the StageVideoAvailabilityEvent.STAGE_VIDEO_AVAILABILITY event
-
-<div>
 
 In the `StageVideoAvailabilityEvent.STAGE_VIDEO_AVAILABILITY` handler, decide
 whether to use a Video or StageVideo object based on the availability of
@@ -246,8 +198,6 @@ The following code shows how to handle the
     	}
     }
 
-<div>
-
 Important: The first time an application accesses the vector element at
 Stage.stageVideos\[0\], the default rect is set to 0,0,0,0, and pan and zoom
 properties use default values. Always reset these values to your preferred
@@ -255,21 +205,11 @@ settings. You can use the `videoWidth` and `videoHeight` properties of the
 `StageVideoEvent.RENDER_STATE` or `VideoEvent.RENDER_STATE` event target for
 calculating the video viewport dimensions.
 
-</div>
-
 Download the full source code for this sample application at
 <a href="http://www.adobe.com/go/learn_as3_usingstagevideo_en"
 target="_self">Getting Started with Stage Video</a>.
 
-</div>
-
-</div>
-
-<div>
-
 ## Using the StageVideoEvent.RENDER_STATE and VideoEvent.RENDER_STATE events
-
-<div>
 
 StageVideo and Video objects send events that inform applications when the
 display environment changes. These events are `StageVideoEvent.RENDER_STATE` and
@@ -300,24 +240,12 @@ conditions.
 The following table describes the implications of all render status values for
 StageVideoEvent and VideoEvent objects in Flash Player:
 
-<div>
-
 |                 | VideoStatus.ACCELERATED                                                                                                                     | VideoStatus.SOFTWARE                                                                                             | VideoStatus.UNAVAILABLE                                                                                    |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
 | StageVideoEvent | Decoding and presentation both occur in hardware. (Best performance.)                                                                       | Presentation in hardware, decoding in software. (Acceptable performance.)                                        | No GPU resources are available to handle video, and nothing is displayed. **Fall back to a Video object.** |
 | VideoEvent      | Presentation in software, decoding in hardware. (Acceptable performance on a modern desktop system only. Degraded full-screen performance.) | Presentation in software, decoding in software. (Worst case performance-wise. Degraded full-screen performance.) | (N/A)                                                                                                      |
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Color spaces
-
-<div>
 
 Stage video uses underlying hardware capabilities to support color spaces. SWF
 content can provide metadata indicating its preferred color space. However, the
@@ -356,15 +284,3 @@ does not provide a means of querying the color space.
 If your application deems the current color space unacceptable, you can choose
 to switch from a StageVideo object to a Video object. The Video class supports
 all color spaces through software compositing.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

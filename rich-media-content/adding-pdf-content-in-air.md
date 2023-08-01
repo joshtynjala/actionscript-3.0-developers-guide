@@ -1,7 +1,5 @@
 # Adding PDF content in AIR
 
-<div>
-
 Applications running in Adobe® AIR® can render not only SWF and HTML content,
 but also PDF content. AIR applications render PDF content using the HTMLLoader
 class, the WebKit engine, and the Adobe® Reader® browser plug-in. In an AIR
@@ -12,27 +10,15 @@ modifications to the Reader toolbar interface (such as controls for position,
 anchoring, and visibility) persist in subsequent viewing of PDF files in both
 AIR applications and the browser.
 
-<div>
-
 Important: To render PDF content in AIR, the user must have Adobe Reader or
 Adobe® Acrobat® version 8.1 or higher installed.
 
-</div>
-
-</div>
-
-<div>
-
 ## Detecting PDF Capability
-
-<div>
 
 If the user does not have Adobe Reader or Adobe Acrobat 8.1 or higher, PDF
 content is not displayed in an AIR application. To detect if a user can render
 PDF content, first check the `HTMLLoader.pdfCapability` property. This property
 is set to one of the following constants of the HTMLPDFCapability class:
-
-<div>
 
 | Constant                                           | Description                                                                                                                                                                                                      |
 | -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -40,8 +26,6 @@ is set to one of the following constants of the HTMLPDFCapability class:
 | HTMLPDFCapability.ERROR_INSTALLED_READER_NOT_FOUND | No version of Adobe Reader is detected. An HTMLLoader object cannot display PDF content.                                                                                                                         |
 | HTMLPDFCapability.ERROR_INSTALLED_READER_TOO_OLD   | Adobe Reader has been detected, but the version is too old. An HTMLLoader object cannot display PDF content.                                                                                                     |
 | HTMLPDFCapability.ERROR_PREFERRED_READER_TOO_OLD   | A sufficient version (8.1 or later) of Adobe Reader is detected, but the version of Adobe Reader that is set up to handle PDF content is older than Reader 8.1. An HTMLLoader object cannot display PDF content. |
-
-</div>
 
 On Windows, if Adobe Acrobat or Adobe Reader version 7.x or above is running on
 the user's system, that version is used even if a later version that supports
@@ -69,15 +53,7 @@ corresponds to the HTMLPDFCapability error object:
     	trace("PDF cannot be displayed. Error code:", HTMLLoader.pdfCapability);
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## Loading PDF content
-
-<div>
 
 You can add a PDF to an AIR application by creating an HTMLLoader instance,
 setting its dimensions, and loading the path of a PDF.
@@ -101,15 +77,7 @@ app:/js_api_reference.pdf
 For more information on AIR URL schemes, see
 [URI schemes](WS5b3ccc516d4fbf351e63e3d118666ade46-7ee3.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Scripting PDF content
-
-<div>
 
 You can use JavaScript to control PDF content just as you can in a web page in
 the browser.
@@ -127,13 +95,7 @@ Adobe Acrobat Developer Connection at
 <a href="http://www.adobe.com/devnet/acrobat/javascript.html"
 target="_self">http://www.adobe.com/devnet/acrobat/javascript.html</a>.
 
-</div>
-
-<div>
-
 ### HTML-PDF communication basics
-
-<div>
 
 JavaScript in an HTML page can send a message to JavaScript in PDF content by
 calling the `postMessage()` method of the DOM object representing the PDF
@@ -209,15 +171,7 @@ JavaScript to a PDF file, see
 <a href="http://www.adobe.com/go/learn_air_qs_pdf_script_flex_en"
 target="_self">Cross-scripting PDF content in Adobe AIR</a>.
 
-</div>
-
-</div>
-
-<div>
-
 ### Scripting PDF content from ActionScript
-
-<div>
 
 ActionScript code (in SWF content) cannot directly communicate with JavaScript
 in PDF content. However, ActionScript can communicate with the JavaScript in the
@@ -226,17 +180,7 @@ JavaScript code can communicate with the JavaScript in the loaded PDF file. For
 more information, see
 [Programming HTML and JavaScript in AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7fa7.html).
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Known limitations for PDF content in AIR
-
-<div>
 
 PDF content in Adobe AIR has the following limitations:
 
@@ -266,15 +210,3 @@ PDF content in Adobe AIR has the following limitations:
   window).
 
 - PDF commenting workflows do not function in AIR.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

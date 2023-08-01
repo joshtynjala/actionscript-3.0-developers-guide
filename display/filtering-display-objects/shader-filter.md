@@ -1,19 +1,13 @@
 # Shader filter
 
-<div>
-
 The ShaderFilter class lets you use a custom filter effect defined as a Pixel
 Bender shader. Because the filter effect is written as a Pixel Bender shader,
 the effect can be completely customized. The filtered content is passed in to
 the shader as an image input, and the result of the shader operation becomes the
 filter result.
 
-<div>
-
 Note: The Shader filter is available in ActionScript starting with Flash Player
 10 and Adobe AIR 1.5.
-
-</div>
 
 To apply a shader filter to an object, you first create a Shader instance
 representing the Pixel Bender shader that you are using. For details on the
@@ -43,5 +37,3 @@ constructor and pass the Shader object as an argument, as shown in this listing:
 
 For a complete example of using a shader filter, see
 [Using a shader as a filter](../working-with-pixel-bender-shaders/using-a-shader-as-a-filter.md).
-
-</div>

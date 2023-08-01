@@ -1,7 +1,5 @@
 # Case conversion
 
-<div>
-
 Languages also differ in their rules for converting letters between uppercase
 forms (majiscules) and lowercase forms (miniscules).
 
@@ -14,13 +12,7 @@ transforms into an uppercase "İ" with a dot.
 The StringTools class provides methods that use language-specific rules to
 perform such transformations.
 
-</div>
-
-<div>
-
 ## Using the StringTools class
-
-<div>
 
 The StringTools class provides two methods to perform case transformations:
 toLowerCase() and toUpperCase(). You create a StringTools object by calling the
@@ -43,15 +35,3 @@ transform a German phrase that includes the letter "ß" (sharp S).
 The toUpperCase() method transforms the lowercase letter "ß" into the uppercase
 letters "SS". This transformation works only in one direction. When the letters
 "SS" are transformed back to lowercase, the result is "ss" not "ß".
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

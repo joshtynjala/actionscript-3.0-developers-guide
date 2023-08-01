@@ -1,7 +1,5 @@
 # REST-style web service requests
 
-<div>
-
 REST-style web services use HTTP method verbs to designate the basic action and
 URL variables to specify the action details. For example, a request to get data
 for an item could use the GET verb and URL variables to specify a method name
@@ -128,13 +126,3 @@ XMLHttpRequest object:
     	<div id="result"></div>
     </body>
     </html>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

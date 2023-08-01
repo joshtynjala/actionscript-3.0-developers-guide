@@ -1,7 +1,5 @@
 # SQL error detail messages, ids, and arguments
 
-<div>
-
 The SQLError class represents various errors that can occur while working with
 an Adobe AIR local SQL database. For any given exception, the SQLError instance
 has a `details` property containing an English error message. In addition, each
@@ -19,8 +17,6 @@ English error message text. Placeholder text in the messages indicates where
 `detailArguments` values are substituted in by the runtime. This list can be
 used as a source for localizing the error messages that can occur in SQL
 database operations.
-
-<div>
 
 |                   |                                                                                                                                           |
 | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
@@ -161,15 +157,3 @@ database operations.
 | 2508              | No such savepoint: '%s'                                                                                                                   |
 | 2510              | Cannot rollback - no transaction is active.                                                                                               |
 | 2511              | Cannot commit - no transaction is active.                                                                                                 |
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

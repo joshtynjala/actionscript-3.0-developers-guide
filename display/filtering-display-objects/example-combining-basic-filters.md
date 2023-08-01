@@ -1,7 +1,5 @@
 # Example: Combining basic filters
 
-<div>
-
 The following code example uses several basic filters, combined with a Timer for
 creating repeating actions, to create an animated traffic light simulation.
 
@@ -109,5 +107,3 @@ creating repeating actions, to create an animated traffic light simulation.
     var timer:Timer = new Timer(3000, 9);
     timer.addEventListener(TimerEvent.TIMER, trafficControl);
     timer.start();
-
-</div>

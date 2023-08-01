@@ -1,12 +1,8 @@
 # Formatting dates and times
 
-<div>
-
 The display format of date and time values also varies widely from region to
 region. For example, here is how the second day of January, 1962 at 1:01 PM is
 displayed in a short format for certain locales:
-
-<div>
 
 | Locale                  | Date and Time Format |
 | ----------------------- | -------------------- |
@@ -14,15 +10,7 @@ displayed in a short format for certain locales:
 | fr-FR (France, French)  | 2/1/62 13:01         |
 | ja-JP (Japan, Japanese) | 1962/2/1 13:01       |
 
-</div>
-
-</div>
-
-<div>
-
 ## Using the DateTimeFormatter class
-
-<div>
 
 The DateTimeFormatter class formats Date values into date and time strings
 according to the conventions of a specific locale.
@@ -58,15 +46,7 @@ method, as shown in the following example:
     var shortDate:String = dtf.format(date);
     trace(shortDate); // 3/27/09 1:01 PM
 
-</div>
-
-</div>
-
-<div>
-
 ## Localizing month names and day names
-
-<div>
 
 Many applications use lists of month names and the names of the days of the week
 in calendar displays or pull-down lists.
@@ -105,15 +85,3 @@ nameStyle and context parameters that the getMonthNames() method does.
 
 In addition, the getFirstWeekday() method returns the index value of the day
 that traditionally marks the beginning of the week in the selected locale.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

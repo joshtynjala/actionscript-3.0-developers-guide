@@ -1,28 +1,16 @@
 # Drag and drop in HTML
 
-<div>
-
 To drag data into and out of an HTML-based application (or into and out of the
 HTML displayed in an HTMLLoader), you can use HTML drag and drop events. The
 HTML drag-and-drop API allows you to drag to and from DOM elements in the HTML
 content.
-
-<div>
 
 Note: You can also use the AIR NativeDragEvent and NativeDragManager APIs by
 listening for events on the HTMLLoader object containing the HTML content.
 However, the HTML API is better integrated with the HTML DOM and gives you
 control of the default behavior.
 
-</div>
-
-</div>
-
-<div>
-
 ## Default drag-and-drop behavior
-
-<div>
 
 The HTML environment provides default behavior for drag-and-drop gestures
 involving text, images, and URLs. Using the default behavior, you can always
@@ -49,20 +37,10 @@ treated separately. The user could still drag a selected portion of the text.
 For more information, see
 [CSS in AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7eb0.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Drag-and-drop events in HTML
-
-<div>
 
 The events dispatched by the initiator element from which a drag originates,
 are:
-
-<div>
 
 | Event     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -70,58 +48,43 @@ are:
 | drag      | Dispatched continuously during the drag gesture.                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | dragend   | Dispatched when the user releases the mouse button to end the drag gesture.                                                                                                                                                                                                                                                                                                                                                                                                     |
 
-</div>
-
 The events dispatched by a drag target are:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>Event</p></th>
-<th><p>Description</p></th>
-</tr>
+    <tr>
+        <th><p>Event</p></th>
+        <th><p>Description</p></th>
+    </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><p>dragover</p></td>
-<td><p>Dispatched continuously while the drag gesture remains within the
-element boundaries. The handler for this event should set the
-dataTransfer.dropEffect property to indicate whether the drop will
-result in a copy, move, or link action if the user releases the
-mouse.</p></td>
-</tr>
-<tr class="even">
-<td><p>dragenter</p></td>
-<td><p>Dispatched when the drag gesture enters the boundaries of the
-element.</p>
-<p>If you change any properties of a dataTransfer object in a dragenter
-event handler, those changes are quickly overridden by the next dragover
-event. On the other hand, there is a short delay between a dragenter and
-the first dragover event that can cause the cursor to flash if different
-properties are set. In many cases, you can use the same event handler
-for both events.</p></td>
-</tr>
-<tr class="odd">
-<td><p>dragleave</p></td>
-<td><p>Dispatched when the drag gesture leaves the element
-boundaries.</p></td>
-</tr>
-<tr class="even">
-<td><p>drop</p></td>
-<td><p>Dispatched when the user drops the data onto the element. The
-data being dragged can only be accessed within the handler for this
-event.</p></td>
-</tr>
+    <tr>
+        <td><p>dragover</p></td>
+        <td>
+            <p>Dispatched continuously while the drag gesture remains within the element boundaries. The handler for this event should set the dataTransfer.dropEffect property to indicate whether the drop will result in a copy, move, or link action if the user releases the mouse.</p>
+        </td>
+    </tr>
+    <tr>
+        <td><p>dragenter</p></td>
+        <td>
+            <p>Dispatched when the drag gesture enters the boundaries of the element.</p>
+            <p>If you change any properties of a dataTransfer object in a dragenter event handler, those changes are quickly overridden by the next dragover event. On the other hand, there is a short delay between a dragenter and the first dragover event that can cause the cursor to flash if different properties are set. In many cases, you can use the same event handler for both events.</p>
+        </td>
+    </tr>
+    <tr>
+        <td><p>dragleave</p></td>
+        <td>
+            <p>Dispatched when the drag gesture leaves the element boundaries.</p>
+        </td>
+    </tr>
+    <tr>
+        <td><p>drop</p></td>
+        <td>
+            <p>Dispatched when the user drops the data onto the element. The data being dragged can only be accessed within the handler for this event.</p>
+        </td>
+    </tr>
 </tbody>
 </table>
-
-</div>
 
 The event object dispatched in response to these events is similar to a mouse
 event. You can use mouse event properties such as ( `clientX`, `clientY`) and (
@@ -131,99 +94,65 @@ The most important property of a drag event object is `dataTransfer`, which
 contains the data being dragged. The `dataTransfer` object itself has the
 following properties and methods:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>Property or Method</p></th>
-<th><p>Description</p></th>
-</tr>
+    <tr>
+        <th><p>Property or Method</p></th>
+        <th><p>Description</p></th>
+    </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><p>effectAllowed</p></td>
-<td><p>The effect allowed by the source of the drag. Typically, the
-handler for the dragstart event sets this value. See <a
-href="WS6D4680BD-2E34-44ad-9BFD-29DDE0DDB3EB.html">Drag effects in
-HTML</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>dropEffect</p></td>
-<td><p>The effect chosen by the target or the user. If you set the
-<samp>dropEffect</samp> in a <samp>dragover</samp> or
-<samp>dragenter</samp> event handler, then AIR updates the mouse cursor
-to indicate the effect that occurs if the user releases the mouse. If
-the <samp>dropEffect</samp> set does not match one of the allowed
-effects, no drop is allowed and the <em>unavailable</em> cursor is
-displayed. If you have not set a <samp>dropEffect</samp> in response to
-the latest <samp>dragover</samp> or <samp>dragenter</samp> event, then
-the user can choose from the allowed effects with the standard operating
-system modifier keys.</p>
-<p>The final effect is reported by the <samp>dropEffect</samp> property
-of the object dispatched for <samp>dragend</samp>. If the user abandons
-the drop by releasing the mouse outside an eligible target, then
-<samp>dropEffect</samp> is set to <samp>none</samp>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>types</p></td>
-<td><p>An array containing the MIME type strings for each data format
-present in the <samp>dataTransfer</samp> object.</p></td>
-</tr>
-<tr class="even">
-<td><p>getData(mimeType)</p></td>
-<td><p>Gets the data in the format specified by the
-<samp>mimeType</samp> parameter.</p>
-<p>The <samp>getData()</samp> method can only be called in response to
-the <samp>drop</samp> event.</p></td>
-</tr>
-<tr class="odd">
-<td><p>setData(mimeType)</p></td>
-<td><p>Adds data to the <samp>dataTransfer</samp> in the format
-specified by the mimeType parameter. You can add data in multiple
-formats by calling <samp>setData()</samp> for each MIME type. Any data
-placed in the <samp>dataTransfer</samp> object by the default drag
-behavior is cleared.</p>
-<p>The <samp>setData()</samp> method can only be called in response to
-the <samp>dragstart</samp> event.</p></td>
-</tr>
-<tr class="even">
-<td><p>clearData(mimeType)</p></td>
-<td><p>Clears any data in the format specified by the
-<samp>mimeType</samp> parameter.</p></td>
-</tr>
-<tr class="odd">
-<td><p>setDragImage(image, offsetX, offsetY)</p></td>
-<td><p>Sets a custom drag image. The <samp>setDragImage()</samp> method
-can only be called in response to the dragstart event and only when an
-entire HTML element is dragged by setting its
-<samp>-webkit-user-drag</samp> CSS style to <samp>element</samp>. The
-<samp>image</samp> parameter can be a JavaScript Element or Image
-object.</p></td>
-</tr>
+    <tr>
+        <td><p>effectAllowed</p></td>
+        <td>
+            <p>The effect allowed by the source of the drag. Typically, the handler for the dragstart event sets this value. See <a href="WS6D4680BD-2E34-44ad-9BFD-29DDE0DDB3EB.html">Drag effects in HTML</a>.</p>
+        </td>
+    </tr>
+    <tr>
+        <td><p>dropEffect</p></td>
+        <td>
+            <p>The effect chosen by the target or the user. If you set the <samp>dropEffect</samp> in a <samp>dragover</samp> or <samp>dragenter</samp> event handler, then AIR updates the mouse cursor to indicate the effect that occurs if the user releases the mouse. If the <samp>dropEffect</samp> set does not match one of the allowed effects, no drop is allowed and the <em>unavailable</em> cursor is displayed. If you have not set a <samp>dropEffect</samp> in response to the latest <samp>dragover</samp> or <samp>dragenter</samp> event, then the user can choose from the allowed effects with the standard operating system modifier keys.</p>
+            <p>The final effect is reported by the <samp>dropEffect</samp> property of the object dispatched for <samp>dragend</samp>. If the user abandons the drop by releasing the mouse outside an eligible target, then <samp>dropEffect</samp> is set to <samp>none</samp>.</p>
+        </td>
+    </tr>
+    <tr>
+        <td><p>types</p></td>
+        <td>
+            <p>An array containing the MIME type strings for each data format
+    present in the <samp>dataTransfer</samp> object.</p>
+        </td>
+    </tr>
+    <tr>
+        <td><p>getData(mimeType)</p></td>
+        <td>
+            <p>Gets the data in the format specified by the <samp>mimeType</samp> parameter.</p>
+            <p>The <samp>getData()</samp> method can only be called in response to the <samp>drop</samp> event.</p>
+        </td>
+    </tr>
+    <tr>
+        <td><p>setData(mimeType)</p></td>
+        <td>
+        <p>Adds data to the <samp>dataTransfer</samp> in the format specified by the mimeType parameter. You can add data in multiple formats by calling <samp>setData()</samp> for each MIME type. Any data placed in the <samp>dataTransfer</samp> object by the default drag behavior is cleared.</p>
+        <p>The <samp>setData()</samp> method can only be called in response to the <samp>dragstart</samp> event.</p></td>
+    </tr>
+    <tr>
+        <td><p>clearData(mimeType)</p></td>
+        <td>
+            <p>Clears any data in the format specified by the <samp>mimeType</samp> parameter.</p>
+        </td>
+    </tr>
+    <tr>
+        <td><p>setDragImage(image, offsetX, offsetY)</p></td>
+        <td>
+            <p>Sets a custom drag image. The <samp>setDragImage()</samp> method can only be called in response to the dragstart event and only when an entire HTML element is dragged by setting its <samp>-webkit-user-drag</samp> CSS style to <samp>element</samp>. The <samp>image</samp> parameter can be a JavaScript Element or Image object.</p></td>
+    </tr>
 </tbody>
 </table>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## MIME types for the HTML drag-and-drop
-
-<div>
 
 The MIME types to use with the `dataTransfer` object of an HTML drag-and-drop
 event include:
-
-<div>
 
 | Data format | MIME type                               |
 | ----------- | --------------------------------------- |
@@ -233,14 +162,10 @@ event include:
 | Bitmap      | "image/x-vnd.adobe.air.bitmap"          |
 | File list   | "application/x-vnd.adobe.air.file-list" |
 
-</div>
-
 You can also use other MIME strings, including application-defined strings.
 However, other applications may not be able to recognize or use the transferred
 data. It is your responsibility to add data to the `dataTransfer` object in the
 expected format.
-
-<div>
 
 Important: Only code running in the application sandbox can access dropped
 files. Attempting to read or set any property of a File object within a
@@ -248,23 +173,11 @@ non-application sandbox generates a security error. See
 [Handling file drops in non-application HTML sandboxes](WSA15C8AF8-3317-46c5-B9B1-EAD3356A2555.html)
 for more information.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Drag effects in HTML
-
-<div>
 
 The initiator of the drag gesture can limit the allowed drag effects by setting
 the `dataTransfer.effectAllowed` property in the handler for the `dragstart`
 event. The following string values can be used:
-
-<div>
 
 | String value | Description                                                                                                  |
 | ------------ | ------------------------------------------------------------------------------------------------------------ |
@@ -276,8 +189,6 @@ event. The following string values can be used:
 | "copyMove"   | The data can be copied or moved.                                                                             |
 | "linkMove"   | The data can be linked or moved.                                                                             |
 | "all"        | The data can be copied, moved, or linked. _All_ is the default effect when you prevent the default behavior. |
-
-</div>
 
 The target of the drag gesture can set the `dataTransfer.dropEffect` property to
 indicate the action that is taken if the user completes the drop. If the drop
@@ -302,22 +213,6 @@ Set the `dropEffect` value in the handlers for both the `dragover` and
     	event.dataTransfer.dropEffect = "copy";
     }
 
-<div>
-
 Note: Although you should always set the `dropEffect` property in the handler
 for `dragenter`, be aware that the next `dragover` event resets the property to
 its default value. Set `dropEffect` in response to both events.
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

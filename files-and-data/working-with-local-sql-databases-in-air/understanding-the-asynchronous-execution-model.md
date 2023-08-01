@@ -1,7 +1,5 @@
 # Understanding the asynchronous execution model
 
-<div>
-
 One common concern about using asynchronous execution mode is the assumption
 that you can't start executing a
 [SQLStatement](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/SQLStatement.html)
@@ -67,13 +65,3 @@ dispatch its `begin` event. Only then can you call the SQLStatement instance's
 to ensure that the operations are executed properly is to create a method that's
 registered as a listener for the `begin` event. The code to call the
 `SQLStatement.execute()` method is placed within that listener method.
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

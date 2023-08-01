@@ -1,7 +1,5 @@
 # Best security practices for developers
 
-<div>
-
 Although AIR applications are built using web technologies, it is important for
 developers to note that they are not working within the browser security
 sandbox. This means that it is possible to build AIR applications that can do
@@ -9,13 +7,7 @@ harm to the local system, either intentionally or unintentionally. AIR attempts
 to minimize this risk, but there are still ways where vulnerabilities can be
 introduced. This topic covers important potential insecurities.
 
-</div>
-
-<div>
-
 ## Risk from importing files into the application security sandbox
-
-<div>
 
 Files that exist in the application directory are assigned to the application
 sandbox and have the full privileges of the runtime. Applications that write to
@@ -38,15 +30,7 @@ risk. Developers are advised to consider the following:
   that may lead to code execution. This includes use of the `Loader.loadBytes()`
   method and the JavaScript `eval()` function.
 
-</div>
-
-</div>
-
-<div>
-
 ## Risk from using an external source to determine paths
-
-<div>
 
 An AIR application can be compromised when using external data or content. For
 this reason, take special care when using data from the network or file system.
@@ -60,15 +44,7 @@ following:
 - Using data from a network source to construct a URL that the application uses
   to send private information
 
-</div>
-
-</div>
-
-<div>
-
 ## Risk from using, storing, or transmitting insecure credentials
-
-<div>
 
 Storing user credentials on the user's local file system inherently introduces
 the risk that these credentials may be compromised. Developers are advised to
@@ -87,15 +63,7 @@ consider the following:
   their own. Users who leave the default unchanged expose their credentials to
   an attacker who already knows the default password.
 
-</div>
-
-</div>
-
-<div>
-
 ## Risk from a downgrade attack
-
-<div>
 
 During application install, the runtime checks to ensure that a version of the
 application is not currently installed. If an application is already installed,
@@ -111,27 +79,7 @@ version, that old version will recognize that it needs to be updated. Also,
 using a clear versioning scheme for your application makes it more difficult to
 trick users into installing a downgraded version.
 
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
-
-</div>
 
 ![](../../img/airLinkIndicator.png)
 [Setting AIR application properties](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html)
-
-<div>
-
-</div>
-
-</div>

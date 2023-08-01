@@ -1,7 +1,5 @@
 # Security on iOS devices
 
-<div>
-
 On iOS AIR conforms to the native security model. At the same time, AIR
 maintains its own security rules, which are intended to make it easy for
 developers to write secure, Internet-connected applications.
@@ -10,8 +8,6 @@ Since AIR applications on iOS use the iOS package format, installation falls
 under the iOS security model. The AIR application installer is not used.
 Furthermore, a separate AIR runtime is not used on iOS devices. Every AIR
 application contains all the code needed to function.
-
-<div>
 
 #### Application signatures
 
@@ -26,10 +22,6 @@ AIR use code signing in a similar fashion, there are significant differences:
 - On iOS, Apple-issued distribution certificates are typically valid for one
   year.
 
-</div>
-
-<div>
-
 #### Background image privacy
 
 When a user switches an application to the background on iOS, the operating
@@ -42,15 +34,3 @@ such information being captured by the background screenshot. The `deactivate`
 event dispatched by the NativeApplication object signals that an application is
 about to switch to the background. Use this event to clear or hide any sensitive
 information.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

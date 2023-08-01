@@ -1,7 +1,5 @@
 # Cloning arrays
 
-<div>
-
 The Array class has no built-in method for making copies of arrays. You can
 create a _shallow copy_ of an array by calling either the `concat()` or
 `slice()` methods with no arguments. In a shallow copy, if the original array
@@ -31,5 +29,3 @@ arrays, as shown in the following code:
         myBA.position = 0;
         return(myBA.readObject());
     }
-
-</div>

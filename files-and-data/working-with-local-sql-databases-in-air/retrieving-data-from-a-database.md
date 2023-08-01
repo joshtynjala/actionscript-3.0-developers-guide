@@ -1,19 +1,11 @@
 # Retrieving data from a database
 
-<div>
-
 Retrieving data from a database involves two steps. First, you execute a SQL
 `SELECT` statement, describing the set of data you want from the database. Next,
 you access the retrieved data and display or manipulate it as needed by your
 application.
 
-</div>
-
-<div>
-
 ## Executing a SELECT statement
-
-<div>
 
 To retrieve existing data from a database, you use a
 [SQLStatement](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/SQLStatement.html)
@@ -200,15 +192,7 @@ object's result handler function is called. In synchronous execution mode,
 execution pauses until the `execute()` operation completes, then continues on
 the next line of code.
 
-</div>
-
-</div>
-
-<div>
-
 ## Accessing SELECT statement result data
-
-<div>
 
 Once the `SELECT` statement has finished executing, the next step is to access
 the data that was retrieved. You retrieve the result data from executing a
@@ -461,15 +445,7 @@ data.
     	</mx:Script>
     </mx:WindowedApplication>
 
-</div>
-
-</div>
-
-<div>
-
 ## Defining the data type of SELECT result data
-
-<div>
 
 By default, each row returned by a `SELECT` statement is created as an Object
 instance with properties named for the result set's column names and with the
@@ -488,15 +464,7 @@ property for each column returned by the `SELECT` statement. It is considered an
 error if a column in the `SELECT` list does not have a matching property name in
 the `itemClass` class.
 
-</div>
-
-</div>
-
-<div>
-
 ## Retrieving SELECT results in parts
-
-<div>
 
 By default, a `SELECT` statement execution retrieves all the rows of the result
 set at one time. Once the statement completes, you usually process the retrieved
@@ -565,15 +533,3 @@ all the rows are retrieved.
 For more information, see the descriptions for the `SQLStatement.execute()`
 method (the `prefetch` parameter description) and the `SQLStatement.next()`
 method.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

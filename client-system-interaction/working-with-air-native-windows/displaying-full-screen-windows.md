@@ -1,20 +1,14 @@
 # Displaying full-screen windows
 
-<div>
-
 Setting the `displayState` property of the Stage to
 `StageDisplayState.FULL_SCREEN_INTERACTIVE` places the window in full-screen
 mode, and keyboard input _is_ permitted in this mode. (In SWF content running in
 a browser, keyboard input is not permitted). To exit full-screen mode, the user
 presses the Escape key.
 
-<div>
-
 Note: Some Linux window managers will not change the window dimensions to fill
 the screen if a maximum size is set for the window (but do remove the window
 system chrome).
-
-</div>
 
 For example, the following Flex code defines a simple AIR application that sets
 up a simple full-screen terminal:
@@ -81,13 +75,3 @@ terminal:
             terminal.setSelection(terminal.text.length - 1, terminal.text.length);
         }
     }
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

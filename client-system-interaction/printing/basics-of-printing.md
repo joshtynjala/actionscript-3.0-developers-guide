@@ -1,7 +1,5 @@
 # Basics of printing
 
-<div>
-
 In ActionScript 3.0, you use the PrintJob class to create snapshots of display
 content to convert to the ink-and-paper representation in a printout. In some
 ways, setting up content for printing is the same as setting it up for on-screen
@@ -18,8 +16,6 @@ combination of the values specified by you and the characteristics of the user's
 printer. The PrintJob class includes properties that allow you to determine the
 important characteristics of the user's printer.
 
-<div>
-
 #### Important concepts and terms
 
 The following reference list contains important terms related to printing:
@@ -35,15 +31,3 @@ The rotation of the printed content in relation to the paper—either horizontal
 
 Print job  
 The page or set of pages that make up a single printout.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

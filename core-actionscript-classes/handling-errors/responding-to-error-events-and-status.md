@@ -1,7 +1,5 @@
 # Responding to error events and status
 
-<div>
-
 One of the most noticeable improvements to error handling in ActionScript 3.0 is
 the support for error event handling for responding to asynchronous errors while
 an application is running. (For a definition of asynchronous errors, see
@@ -37,13 +35,7 @@ Error events fit into one of two categories:
   by checking if the `level` property contains the value `"error"` in your event
   handler function.
 
-</div>
-
-<div>
-
 ## Working with error events
-
-<div>
 
 The ErrorEvent class and its subclasses contain error types for handling errors
 dispatched by Flash runtimes as they try to read or write data.
@@ -110,15 +102,7 @@ otherwise handle the error automatically in the places indicated by the comment
         }
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## Working with status change events
-
-<div>
 
 Flash runtimes dynamically change the value of the `netStatus.info.level` or
 `status.level` properties for the classes that support the `level` property
@@ -182,7 +166,3 @@ encountered, the code traces the message "Video stream failed".
             }
         }
     }
-
-</div>
-
-</div>

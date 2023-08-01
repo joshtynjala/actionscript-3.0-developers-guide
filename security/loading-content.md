@@ -1,7 +1,5 @@
 # Loading content
 
-<div>
-
 Flash Player and AIR content can load many types of other content, including the
 following:
 
@@ -19,13 +17,7 @@ following:
 
 <!-- -->
 
-</div>
-
-<div>
-
 ## Loading SWF files and images with the Loader class
-
-<div>
 
 You use the Loader class to load SWF files and images (JPG, GIF, or PNG files).
 Any SWF file, other than one in the local-with-filesystem sandbox, can load SWF
@@ -118,15 +110,7 @@ and loadee, the trust relationship between loader and loadee, and other
 information. For more information, see
 [Monitoring loading progress](WS5b3ccc516d4fbf351e63e3d118a9b90204-7de1.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Loading sound and videos
-
-<div>
 
 Any content, except content in the local-with-filesystem sandbox, is allowed to
 load sound and video from network origins, using the `Sound.load()`,
@@ -141,15 +125,7 @@ There are other restrictions on accessing data from loaded media. For details,
 see
 [Accessing loaded media as data](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d1b.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Loading SWF files and images using the \<img\> tag in a text field
-
-<div>
 
 You can load SWF files and bitmaps into a text field by using the `<img>` tag,
 as in the following code:
@@ -188,25 +164,13 @@ the loaded media, security rules apply. If the content is an image, you need to
 implement a URL policy file, and if the content is a SWF file, you need to have
 the code in the SWF file call the `allowDomain()` method.
 
-<div>
-
 #### Adobe AIR
 
 In the application sandbox, \<img\> tags in a text field are ignored to prevent
 phishing attacks. In addition, code running in the application sandbox is not
 permitted to call the Security `allowDomain()` method.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Content delivered using RTMP servers
-
-<div>
 
 Flash Media Server uses the Real-Time Media Protocol (RTMP) to serve data,
 audio, and video. You can load this media by using the `connect()` method of the
@@ -225,15 +189,3 @@ more information, see the
 [Server-Side ActionScript Language Reference](http://www.adobe.com/go/learn_fms_docs_en).
 (The `drawWithQuality` method is available in Flash Player 11.3 and higher; AIR
 3.3 and higher.)
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

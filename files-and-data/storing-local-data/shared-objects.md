@@ -1,19 +1,11 @@
 # Shared objects
 
-<div>
-
 A shared object, sometimes referred to as a "Flash cookie," is a data file that
 can be created on your computer by the sites that you visit. Shared objects are
 most often used to enhance your web-browsing experience—for example, by allowing
 you to personalize the look and feel of a website that you frequently visit.
 
-</div>
-
-<div>
-
 ## About shared objects
-
-<div>
 
 Shared objects function like browser cookies. You use the
 [SharedObject](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/SharedObject.html)
@@ -23,13 +15,7 @@ SharedObject data, and only if they are running on the same domain. The data is
 not sent to the server and is not accessible by other applications running on
 other domains, but can be made accessible by applications from the same domain.
 
-</div>
-
-<div>
-
 ### Shared objects compared with cookies
-
-<div>
 
 Cookies and shared objects are very similar. Because most web programmers are
 familiar with how cookies work, it might be useful to compare cookies and local
@@ -66,32 +52,14 @@ properties:
 
 - They are never transmitted between the client and server.
 
-</div>
-
-</div>
-
-<div>
-
 ### About the SharedObject class
-
-<div>
 
 Using the
 [SharedObject](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/SharedObject.html)
 class, you can create and delete shared objects, as well as detect the current
 size of a SharedObject object that you are using.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Creating a shared object
-
-<div>
 
 To create a
 [SharedObject](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/SharedObject.html)
@@ -117,48 +85,40 @@ stores the SharedObject data. The default location of this file is a
 subdirectory of the user's home directory. The following table shows the default
 locations of this directory:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>Operating System</p></th>
-<th><p>Location</p></th>
-</tr>
+	<tr>
+		<th><p>Operating System</p></th>
+		<th><p>Location</p></th>
+	</tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><p>Windows 95/98/ME/2000/XP</p></td>
-<td><div>
-<pre><code>c:/Documents and Settings/username/Application Data/Macromedia/Flash Player/#SharedObjects</code></pre>
-</div></td>
-</tr>
-<tr class="even">
-<td><p>Windows Vista/Windows 7</p></td>
-<td><div>
-<pre><code>c:/Users/username/AppData/Roaming/Macromedia/Flash Player/#SharedObjects</code></pre>
-</div></td>
-</tr>
-<tr class="odd">
-<td><p>Macintosh OS X</p></td>
-<td><div>
-<pre><code>/Users/username/Library/Preferences/Macromedia/Flash Player/#SharedObjects/web_domain/path_to_application/application_name/object_name.sol</code></pre>
-</div></td>
-</tr>
-<tr class="even">
-<td><p>Linux/Unix</p></td>
-<td><div>
-<pre><code>/home/username/.macromedia/Flash_Player/#SharedObjects/web_domain/path_to_application/application_name/object_name.sol</code></pre>
-</div></td>
-</tr>
+	<tr>
+		<td><p>Windows 95/98/ME/2000/XP</p></td>
+		<td><div>
+		<pre><code>c:/Documents and Settings/username/Application Data/Macromedia/Flash Player/#SharedObjects</code></pre>
+		</div></td>
+	</tr>
+	<tr>
+		<td><p>Windows Vista/Windows 7</p></td>
+		<td><div>
+		<pre><code>c:/Users/username/AppData/Roaming/Macromedia/Flash Player/#SharedObjects</code></pre>
+		</div></td>
+	</tr>
+	<tr>
+		<td><p>Macintosh OS X</p></td>
+		<td><div>
+		<pre><code>/Users/username/Library/Preferences/Macromedia/Flash Player/#SharedObjects/web_domain/path_to_application/application_name/object_name.sol</code></pre>
+		</div></td>
+	</tr>
+	<tr>
+		<td><p>Linux/Unix</p></td>
+		<td><div>
+		<pre><code>/home/username/.macromedia/Flash_Player/#SharedObjects/web_domain/path_to_application/application_name/object_name.sol</code></pre>
+		</div></td>
+	</tr>
 </tbody>
 </table>
-
-</div>
 
 Below the \#SharedObjects directory is a randomly-named directory. Below that is
 a directory that matches the hostname, then the path to the application, and
@@ -170,12 +130,8 @@ following location on Windows XP:
 
     c:/Documents and Settings/fred/Application Data/Macromedia/Flash Player/#SharedObjects/KROKWXRK/#localhost/sos/MyApp.swf/data.sol
 
-<div>
-
 Note: If you do not provide a name in the `SharedObject.getLocal()` method,
 Flash Player names the file undefined.sol.
-
-</div>
 
 By default, Flash can save locally persistent SharedObject objects of up to 100
 KB per domain. This value is user-configurable. When the application tries to
@@ -183,13 +139,7 @@ save data to a shared object that would make it bigger than 100 KB, Flash Player
 displays the Local Storage dialog box, which lets the user allow or deny more
 local storage for the domain that is requesting access.
 
-</div>
-
-<div>
-
 ### Specifying a path
-
-<div>
 
 You can use the optional _pathname_ parameter to specify a location for the
 [SharedObject](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/SharedObject.html)
@@ -210,15 +160,7 @@ than application without persistence, you can use the LocalConnection object.
 If you specify a directory that does not exist, Flash Player does not create a
 SharedObject file.
 
-</div>
-
-</div>
-
-<div>
-
 ### Adding data to a shared object
-
-<div>
 
 You add data to a
 [SharedObject](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/SharedObject.html)
@@ -259,8 +201,6 @@ as shown in the following example:
     var so:SharedObject = SharedObject.getLocal("test");
     trace("Current SharedObject size is " + so.size + " bytes.");
     so.flush();
-
-<div>
 
 #### Storing objects in shared objects
 
@@ -447,10 +387,6 @@ class when the user adds or removes blogs or site URLs.
 
     </mx:Application>
 
-</div>
-
-<div>
-
 #### Storing typed objects in shared objects
 
 You can store typed ActionScript instances in shared objects. You do this by
@@ -462,32 +398,14 @@ unpacks your stored instance from the SharedObject object; the stored instance
 retains the same type you specified when you called the `registerClassAlias()`
 method.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ### (iOS only) Prevent cloud backup of local shared objects
-
-<div>
 
 You can set the `SharedObject.preventBackup` property to control whether local
 shared objects will be backed up on the iOS cloud backup service. This is
 required by Apple for content that can be regenerated or downloaded again, but
 that is required for proper functioning of your application during offline use.
 
-</div>
-
-</div>
-
-<div>
-
 ### Creating multiple shared objects
-
-<div>
 
 You can create multiple shared objects for the same Flex application. To do
 this, you assign each of them a different instance name, as the following
@@ -499,17 +417,7 @@ example shows:
 This creates a preferences.sol file and a history.sol file in the Flex
 application's local directory.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Creating a secure SharedObject
-
-<div>
 
 When you create either a local or remote SharedObject using `getLocal()` or
 `getRemote()`, there is an optional parameter named `secure` that determines
@@ -543,15 +451,7 @@ method will throw an error:
 Regardless of the value of this parameter, the created shared objects count
 toward the total amount of disk space allowed for a domain.
 
-</div>
-
-</div>
-
-<div>
-
 ## Displaying contents of a shared object
-
-<div>
 
 Values are stored in shared objects within the `data` property. You can loop
 over each value within a shared object instance by using a `for..in` loop, as
@@ -566,15 +466,7 @@ the following example shows:
     	trace(i + ":\t" + so.data[i]);
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## Destroying shared objects
-
-<div>
 
 To destroy a
 [SharedObject](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/SharedObject.html)
@@ -587,15 +479,7 @@ The following example deletes the SharedObject file from the client:
     	mySO.clear();
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## SharedObject example
-
-<div>
 
 The following example shows that you can store simple objects, such as a Date
 object, in a
@@ -652,15 +536,3 @@ the stored information by clicking the Delete LSO button.
     	<mx:Button label="Log Out" click="storeDate()"/>
     	<mx:Button label="Delete LSO" click="deleteLSO()"/>
     </mx:Application>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

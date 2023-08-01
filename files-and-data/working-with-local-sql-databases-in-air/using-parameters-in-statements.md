@@ -1,20 +1,12 @@
 # Using parameters in statements
 
-<div>
-
 Using SQL statement parameters allows you to create a reusable SQL statement.
 When you use statement parameters, values within the statement can change (such
 as values being added in an `INSERT` statement) but the basic statement text
 remains unchanged. Consequently, using parameters provides performance benefits
 and makes it easier to code an application.
 
-</div>
-
-<div>
-
 ## Understanding statement parameters
-
-<div>
 
 Frequently an application uses a single SQL statement multiple times in an
 application, with slight variation. For example, consider an inventory-tracking
@@ -43,15 +35,7 @@ array, so you set a particular value using the following syntax:
 The _parameter_identifier_ is a string if you're using a named parameter, or an
 integer index if you're using an unnamed parameter.
 
-</div>
-
-</div>
-
-<div>
-
 ## Using named parameters
-
-<div>
 
 A parameter can be a named parameter. A named parameter has a specific name that
 the database uses to match the parameter value to its placeholder location in
@@ -77,15 +61,7 @@ The following code listing demonstrates the use of named parameters:
 
     addItemStmt.execute();
 
-</div>
-
-</div>
-
-<div>
-
 ## Using unnamed parameters
-
-<div>
 
 As an alternative to using named parameters, you can also use unnamed
 parameters. To use an unnamed parameter you denote a parameter in a SQL
@@ -108,15 +84,7 @@ previous example, using unnamed parameters:
 
     addItemStmt.execute();
 
-</div>
-
-</div>
-
-<div>
-
 ## Benefits of using parameters
-
-<div>
 
 Using parameters in a SQL statement provides several benefits:
 
@@ -180,15 +148,3 @@ recommended alternative to the previous listing:
     // set parameter values
     statement.parameters[":username"] = username;
     statement.parameters[":password"] = password;
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

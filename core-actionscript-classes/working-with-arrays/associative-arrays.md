@@ -1,7 +1,5 @@
 # Associative arrays
 
-<div>
-
 An associative array, sometimes called a _hash_ or _map_, uses _keys_ instead of
 a numeric index to organize stored values. Each key in an associative array is a
 unique string that is used to access a stored value. An associative array is an
@@ -15,13 +13,7 @@ _dictionary_. Dictionaries, which are instances of the Dictionary class in the
 flash.utils package, use keys that can be of any data type. In other words,
 dictionary keys are not limited to values of type String.
 
-</div>
-
-<div>
-
 ## Associative arrays with string keys
-
-<div>
 
 There are two ways to create associative arrays in ActionScript 3.0. The first
 way is to use an Object instance. By using an Object instance you can initialize
@@ -77,15 +69,7 @@ Array class with associative arrays, even if you use the Array constructor or
 the Array data type. The use of the Array constructor is best left for the
 creation of indexed arrays.
 
-</div>
-
-</div>
-
-<div>
-
 ## Associative arrays with object keys (Dictionaries)
-
-<div>
 
 You can use the Dictionary class to create an associative array that uses
 objects for keys rather than strings. Such arrays are sometimes called
@@ -133,8 +117,6 @@ as shown in the following code:
         trace("spr3 is in groupB");
     }
 
-<div>
-
 #### Iterating with object keys
 
 You can iterate through the contents of a Dictionary object with either a
@@ -171,10 +153,6 @@ iterate through a Dictionary object with the `for each..in` loop:
     [object Object]
     [object Object]
     */
-
-</div>
-
-<div>
 
 #### Object keys and memory management
 
@@ -225,9 +203,3 @@ order to make the object eligible for garbage collection:
     var myMap:Dictionary = new Dictionary(true);
     myMap[myObject] = "foo";
     myObject = null; // Make object eligible for garbage collection.
-
-</div>
-
-</div>
-
-</div>

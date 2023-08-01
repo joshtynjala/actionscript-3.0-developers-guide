@@ -1,7 +1,5 @@
 # Manipulating an HTML stylesheet from ActionScript
 
-<div>
-
 Once the HTMLLoader object has dispatched the `complete` event, you can examine
 and manipulate CSS styles in a page.
 
@@ -48,23 +46,7 @@ as shown here:
 This code adjusts the CSS styles so that the resulting HTML document appears
 like the following:
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](images/HTMLControlCSSExample.png)
-
-</div>
 
 Keep in mind that code can add styles to the page after the HTMLLoader object
 dispatches the `complete` event.
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # The event flow
 
-<div>
-
 Flash Player or AIR dispatches event objects whenever an event occurs. If the
 event target is not on the display list, Flash Player or AIR dispatches the
 event object directly to the event target. For example, Flash Player dispatches
@@ -36,13 +34,7 @@ from the parent of the target node back to the Stage.
 The names of the phases make more sense if you conceive of the display list as a
 vertical hierarchy with the Stage at the top, as shown in the following diagram:
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](../../img/eh_displaylistVhierarchy.png)
-
-</div>
 
 If a user clicks on `Child1 Node`, Flash Player or AIR dispatches an event
 object into the event flow. As the following image shows, the object's journey
@@ -50,13 +42,7 @@ starts at `Stage`, moves down to `Parent Node`, then moves to `Child1 Node`, and
 then "bubbles" back up to `Stage`, moving through `Parent Node` again on its
 journey back to `Stage`.
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](../../img/eh_stage_parent_Node.png)
-
-</div>
 
 In this example, the capture phase comprises `Stage` and `Parent Node` during
 the initial downward journey. The target phase comprises the time spent at
@@ -91,5 +77,3 @@ participating in the capture and bubbling phases.
 To find out how a particular event type behaves, you can either check the API
 documentation or examine the event object's properties. Examining the event
 object's properties is described in the following section.
-
-</div>

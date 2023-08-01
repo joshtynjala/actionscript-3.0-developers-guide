@@ -1,19 +1,11 @@
 # Restricting networking APIs
 
-<div>
-
 Networking APIs can be restricted in two ways. To prevent malicious activity,
 access to commonly reserved ports is blocked; you can't override these blocks in
 your code. To control a SWF file's access to network functionality with regard
 to other ports, you can use the `allowNetworking` setting.
 
-</div>
-
-<div>
-
 ## Blocked ports
-
-<div>
 
 Flash Player and Adobe AIR have restrictions on HTTP access to certain ports, as
 do browsers. HTTP requests are not permitted to certain standard ports that are
@@ -57,15 +49,7 @@ HTTP and FTP: 1 (tcpmux), 7 (echo), 9 (discard), 11 (systat), 13 (daytim
 601 (syslog), 636 (ldap+ssl), 993 (ldap+ssl), 995 (pop3+ssl), 2049 (nfs),
 4045 (lockd), 6000 (x11)
 
-</div>
-
-</div>
-
-<div>
-
 ## Using the allowNetworking parameter
-
-<div>
 
 You can control a SWF file's access to network functionality by setting the
 `allowNetworking` parameter in the `<object>` and `<embed>` tags in the HTML
@@ -142,15 +126,3 @@ SecurityError exception is thrown).
 When `allowNetworking` is set to `"none"`, a symbol from an imported shared
 library added in the Flash Professional (not ActionScript) is blocked at run
 time.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # Native menu example: Window and application menu (AIR)
 
-<div>
-
 The following example creates the menu shown in
 [Native menu structure (AIR)](WS5b3ccc516d4fbf351e63e3d118666ade46-7de6.html).
 
@@ -154,13 +152,3 @@ items.
     		}
     	}
     }
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

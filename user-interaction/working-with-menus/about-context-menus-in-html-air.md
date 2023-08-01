@@ -1,7 +1,5 @@
 # About context menus in HTML (AIR)
 
-<div>
-
 In HTML content displayed using the HTMLLoader object, the `contextmenu` event
 can be used to display a context menu. By default, a context menu is displayed
 automatically when the user invokes the context menu event on selected text (by
@@ -45,13 +43,3 @@ context menu by calling the menu `display()` method in response to the HTML
     	<p oncontextmenu="showContextMenu(event)" style="-khtml-user-select:auto;">Custom context menu.</p>
     </body>
     </html>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

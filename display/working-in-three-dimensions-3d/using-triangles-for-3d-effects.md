@@ -1,7 +1,5 @@
 # Using triangles for 3D effects
 
-<div>
-
 In ActionScript, you perform bitmap transformations using the
 `Graphics.drawTriangles()` method, because 3D models are represented by a
 collection of triangles in space. (However, Flash Player and AIR do not support
@@ -57,19 +55,9 @@ points were specified in the `vertices` vector. Using `indices`, the two points
 shared by the two triangles are reused for each triangle. This reduces the
 overall vertices count from 6 (12 numbers) to 4 (8 numbers):
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](../../img/th_square_triangle_indices.png)
 
-<div>
-
 A square drawn with two triangles using the vertices parameter
-
-</div>
-
-</div>
 
 This technique becomes useful with larger triangle meshes where most points are
 shared by multiple triangles.
@@ -77,13 +65,7 @@ shared by multiple triangles.
 All fills can be applied to triangles. The fills are applied to the resulting
 triangle mesh as they would to any other shape.
 
-</div>
-
-<div>
-
 ## Transforming bitmaps
-
-<div>
 
 Bitmap transformations provide the illusion of perspective or "texture" on a
 three-dimensional object. Specifically, you can distort a bitmap toward a
@@ -92,30 +74,12 @@ point. Or, you can use a two-dimensional bitmap to create a surface for a
 three-dimensional object, providing the illusion of texture or "wrapping" on
 that three-dimensional object.
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](../../img/th_ocean_perspective.png)
-
-<div>
 
 A two-dimensional surface using a vanishing point and a three-dimensional object
 wrapped with a bitmap.
 
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## UV mapping
-
-<div>
 
 Once you start working with textures, you'll want to make use of the uvtData
 parameter of `drawTriangles()`. This parameter allows you to set up UV mapping
@@ -126,53 +90,23 @@ horizontal (x) value and a V vertical (y) value. Rather than being based on
 pixel values, they are based on percentages. 0 U and 0 V is the upper-left of an
 image and 1 U and 1 V is the lower-right:
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](../../img/th_UVcoord_00.png)
 
-<div>
-
 The UV 0 and 1 locations on a bitmap image
-
-</div>
-
-</div>
 
 Vectors of a triangle can be given UV coordinates to associate themselves with
 the respective locations on an image:
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](../../img/th_UVcoord_triangle.png)
-
-<div>
 
 The UV coordinates of a triangular area of a bitmap image
 
-</div>
-
-</div>
-
 The UV values stay consistent with the points of the triangle:
-
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
 ![](../../img/th_UV_ABC_distort.png)
 
-<div>
-
 The vertices of the triangle move and the bitmap distorts to keep the UV values
 for an individual point the same
-
-</div>
-
-</div>
 
 As ActionScript 3D transformations are applied to the triangle associated with
 the bitmap, the bitmap image is applied to the triangle based on the UV values.
@@ -191,41 +125,22 @@ determines the T value is:
 
     T = focalLength/(focalLength + z);
 
-<div>
-
 In this equation, focalLength represents a focal length or calculated "screen"
 location which dictates the amount of perspective provided in the view.
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](../../img/th_focallength_screen.png)
-
-<div>
 
 The focal length and z value
 
-</div>
+**A.** viewpoint
 
-A.  
-viewpoint
+**B.** screen
 
-B.  
-screen
+**C.** 3D object
 
-C.  
-3D object
+**D.** focalLength value
 
-D.  
-focalLength value
-
-E.  
-z value
-
-</div>
-
-</div>
+**E.** z value
 
 The value of T is used to scale basic shapes to make them seem further in the
 distance. It is usually the value used to convert 3D points to 2D points. In the
@@ -354,47 +269,22 @@ To test this example, save these two class files in the same directory as an
 image named "ocean.jpg". You can see how the original bitmap is transformed to
 appear as if it is vanishing in the distance and rotating in 3D space.
 
-</div>
-
-</div>
-
-<div>
-
 ## Culling
-
-<div>
-
-<div>
 
 Culling is the process that determines which surfaces of a three-dimensional
 object the renderer should not render because they are hidden from the current
 viewpoint. In 3D space, the surface on the "back" of a three-dimensional object
 is hidden from the viewpoint:
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](../../img/th_backside_hidden.png)
-
-<div>
 
 The back of a 3D object is hidden from the viewpoint.
 
-</div>
+**A.** viewpoint
 
-A.  
-viewpoint
+**B.** 3D object
 
-B.  
-3D object
-
-C.  
-the back of a three dimensional object
-
-</div>
-
-</div>
+**C.** the back of a three dimensional object
 
 Inherently all triangles are always rendered no matter their size, shape, or
 position. Culling insures that Flash Player or AIR renders your 3D object
@@ -405,19 +295,9 @@ not in view would be facing the other direction on the other side of the cube.
 Since those sides are not going to be seen, the renderer shouldn't draw them.
 Without culling, Flash Player or AIR renders both the front and back sides.
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](../../img/th_cube_visible_sides.png)
 
-<div>
-
 A cube has sides not visible from the current viewpoint
-
-</div>
-
-</div>
 
 So, the `Graphics.drawTriangles()` method has a fourth parameter to establish a
 culling value:
@@ -439,20 +319,10 @@ with a negative (counterclockwise) path direction. In the case of a cube, while
 the front facing surfaces have a positive path direction, the back facing
 surfaces have a negative path direction:
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](../../img/th_cube_with_winding.png)
-
-<div>
 
 A cube "unwrapped" to show the path direction. When "wrapped", the back side
 path direction is reversed.
-
-</div>
-
-</div>
 
 To see how culling works, start with the earlier example from
 [UV mapping](./using-triangles-for-3d-effects.md#uv-mapping), set the culling
@@ -461,15 +331,3 @@ parameter of the `drawTriangles()` method to `TriangleCulling.NEGATIVE`:
     container.graphics.drawTriangles(vertices, indices, uvtData, TriangleCulling.NEGATIVE);
 
 Notice the "back" side of the image is not rendered as the object rotates.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

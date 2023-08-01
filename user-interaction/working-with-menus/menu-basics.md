@@ -1,7 +1,5 @@
 # Menu basics
 
-<div>
-
 For a quick explanation and code examples of creating native menus in AIR
 applications, see the following quick start articles on the Adobe Developer
 Connection:
@@ -22,77 +20,67 @@ that Flash Player automatically displays when a user right-clicks or cmd-clicks
 on an object in your application. (An automatic context menu is not displayed
 for AIR applications.)
 
-</div>
-
-<div>
-
 ## Menu classes
-
-<div>
 
 The menu classes include:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>Package</p></th>
-<th><p>Classes</p></th>
-</tr>
+    <tr>
+        <th><p>Package</p></th>
+        <th><p>Classes</p></th>
+    </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><p>flash.display</p></td>
-<td><div>
-<ul class="incremental">
-<li><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeMenu.html">NativeMenu</a></p></li>
-<li><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeMenuItem.html">NativeMenuItem</a></p></li>
-</ul>
-</div></td>
-</tr>
-<tr class="even">
-<td><p>flash.ui</p></td>
-<td><div>
-<ul class="incremental">
-<li><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/ContextMenu.html">ContextMenu</a></p></li>
-<li><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/ContextMenuItem.html">ContextMenuItem</a></p></li>
-</ul>
-</div></td>
-</tr>
-<tr class="odd">
-<td><p>flash.events</p></td>
-<td><div>
-<ul class="incremental">
-<li><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/Event.html">Event</a></p></li>
-<li><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/ContextMenuEvent.html">ContextMenuEvent</a></p></li>
-</ul>
-</div></td>
-</tr>
+    <tr>
+        <td><p>flash.display</p></td>
+        <td>
+            <div>
+                <ul class="incremental">
+                    <li>
+                        <p><a href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeMenu.html">NativeMenu</a></p>
+                    </li>
+                    <li>
+                        <p><a href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeMenuItem.html">NativeMenuItem</a></p>
+                </li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td><p>flash.ui</p></td>
+        <td>
+            <div>
+                <ul class="incremental">
+                    <li>
+                        <p><a href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/ContextMenu.html">ContextMenu</a></p>
+                    </li>
+                    <li>
+                        <p><a href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/ContextMenuItem.html">ContextMenuItem</a></p>
+                    </li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td><p>flash.events</p></td>
+        <td>
+            <div>
+                <ul class="incremental">
+                    <li>
+                        <p><a href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/Event.html">Event</a></p>
+                    </li>
+                    <li>
+                        <p><a href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/ContextMenuEvent.html">ContextMenuEvent</a></p>
+                    </li>
+                </ul>
+            </div>
+        </td>
+    </tr>
 </tbody>
 </table>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Menu varieties
-
-<div>
 
 AIR supports the following types of menus:
 
@@ -151,8 +139,6 @@ can specify menus declaratively in MXML format. If you are using the Flex
 Framework, use the Flex menu classes for window menus instead of the native
 classes.
 
-<div>
-
 #### Default menus (AIR only)
 
 The following default menus are provided by the operating system or a built-in
@@ -167,17 +153,7 @@ AIR class:
 - Context menu for selected text in a TextField object (or an object that
   extends TextField)
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## About context menus
-
-<div>
 
 In SWF content, any object that inherits from InteractiveObject can be given a
 context menu by assigning a menu object to its `contextMenu` property. Several
@@ -197,7 +173,7 @@ The following example creates a Sprite and adds a simple edit context menu:
 
     var sprite:Sprite = new Sprite();
     sprite.contextMenu = createContextMenu()
-    private function createContextMenu():ContextMenu{
+    private function createContextMenu():ContextMenu {
     	var editContextMenu:ContextMenu = new ContextMenu();
     	var cutItem:ContextMenuItem = new ContextMenuItem("Cut")
     	cutItem.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, doCutCommand);
@@ -213,18 +189,18 @@ The following example creates a Sprite and adds a simple edit context menu:
 
     	return editContextMenu
     }
-    private function doCutCommand(event:ContextMenuEvent):void{trace("cut");}
-    private function doCopyCommand(event:ContextMenuEvent):void{trace("copy");}
-    private function doPasteCommand(event:ContextMenuEvent):void{trace("paste");}
-
-<div>
+    private function doCutCommand(event:ContextMenuEvent):void {
+        trace("cut");
+    }
+    private function doCopyCommand(event:ContextMenuEvent):void {
+        trace("copy");
+    }
+    private function doPasteCommand(event:ContextMenuEvent):void {
+        trace("paste");
+    }
 
 Note: In contrast to SWF content displayed in a browser environment, context
 menus in AIR do not have any built-in commands.
-
-</div>
-
-<div>
 
 #### Customizing a Flash Player context menu
 
@@ -261,20 +237,10 @@ context menu command to change it to a random color:
     }
     function getRandomColor():ColorTransform
     {
-    	return new ColorTransform(Math.random(), Math.random(),         Math.random(),1,(Math.random() * 512) - 255,         (Math.random() * 512) -255, (Math.random() * 512) - 255, 0);
+    	return new ColorTransform(Math.random(), Math.random(), Math.random(),1,(Math.random() * 512) - 255, (Math.random() * 512) -255, (Math.random() * 512) - 255, 0);
     }
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Native menu structure (AIR)
-
-<div>
 
 Native menus are hierarchical in nature. NativeMenu objects contain child
 NativeMenuItem objects. NativeMenuItem objects that represent submenus, in turn,
@@ -288,15 +254,9 @@ and an _Edit_ submenu. The File submenu in this structure contains two command
 items and an item that references an _Open Recent Menu_ submenu, which, itself,
 contains three items. The Edit submenu contains three commands and a separator.
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 <a href="#"
 onclick="return showHideImage(&#39;MenuStructure&#39;, this);">View full size
 graphic</a> ![](images/MenuStructure.png)
-
-</div>
 
 Defining a submenu requires both a NativeMenu and a NativeMenuItem object. The
 NativeMenuItem object defines the label displayed in the parent menu and allows
@@ -307,33 +267,17 @@ through the NativeMenuItem `submenu` property.
 To view a code example that creates this menu see
 [Native menu example: Window and application menu (AIR)](WS5b3ccc516d4fbf351e63e3d118666ade46-7de7.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Menu events
-
-<div>
 
 NativeMenu and NativeMenuItem objects both dispatch `preparing`, `displaying`,
 and `select` events:
-
-<div>
 
 **Preparing:** Whenever the object is about to begin a user interaction, the
 menu and its menu items dispatch a `preparing` event to any registered
 listeners. Interaction includes opening the menu or selecting an item with a
 keyboard shortcut.
 
-<div>
-
 Note: The `preparing` event is available only for Adobe AIR 2.6 and later.
-
-</div>
-
-</div>
 
 Displaying:  
 Immediately before a menu is displayed, the menu and its menu items dispatch a
@@ -366,22 +310,10 @@ event on a menu, you can identify the selected item using the event `target`
 property. As the event bubbles up through the menu hierarchy, the
 `currentTarget` property of the event object identifies the current menu object.
 
-<div>
-
 Note: ContextMenu and ContextMenuItem objects dispatch `menuItemSelect` and
 `menuSelect` events as well as `select`, `preparing`, and `displaying` events.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Key equivalents for native menu commands (AIR)
-
-<div>
 
 You can assign a key equivalent (sometimes called an accelerator) to a menu
 command. The menu item dispatches a `select` event to any registered listeners
@@ -409,13 +341,9 @@ The assigned key equivalent string is automatically displayed beside the menu
 item name. The format depends on the user's operating system and system
 preferences.
 
-<div>
-
 Note: If you assign the `Keyboard.COMMAND` value to a key modifier array on the
 Windows operating system, no key equivalent is displayed in the menu. However,
 the control key must be used to activate the menu command.
-
-</div>
 
 The following example assigns `Ctrl+Shift+G` as the key equivalent for a menu
 item:
@@ -430,23 +358,11 @@ modifier array directly:
     item.keyEquivalent = "G";
     item.keyEquivalentModifiers = [Keyboard.CONTROL];
 
-<div>
-
 Note: Key equivalents are only triggered for application and window menus. If
 you add a key equivalent to a context or pop-up menu, the key equivalent is
 displayed in the menu label, but the associated menu command is never invoked.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Mnemonics (AIR)
-
-<div>
 
 Mnemonics are part of the operating system keyboard interface to menus. Linux,
 Mac OS X, and Windows allow users to open menus and select commands with the
@@ -476,15 +392,7 @@ item labeled, "Format," you would set the `mnemonicIndex` property equal to 2.
     var item:NativeMenuItem = new NativeMenuItem("Format");
     item.mnemonicIndex = 2;
 
-</div>
-
-</div>
-
-<div>
-
 ## Menu item state
-
-<div>
 
 Menu items have the two state properties, `checked` and `enabled`:
 
@@ -502,15 +410,7 @@ events.
     var item:NativeMenuItem = new NativeMenuItem("Format");
     item.enabled = false;
 
-</div>
-
-</div>
-
-<div>
-
 ## Attaching an object to a menu item
-
-<div>
 
 The `data` property of the NativeMenuItem class allows you to reference an
 arbitrary object in each item. For example, in an "Open Recent" menu, you could
@@ -520,27 +420,7 @@ assign the File object for each document to each menu item.
     var menuItem:NativeMenuItem = docMenu.addItem(new NativeMenuItem(file.name));
     menuItem.data = file;
 
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
-
-</div>
 
 ![](../../img/flexLinkIndicator.png)
 [About the FlexNativeMenu control](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-7fea.html)
-
-<div>
-
-</div>
-
-</div>

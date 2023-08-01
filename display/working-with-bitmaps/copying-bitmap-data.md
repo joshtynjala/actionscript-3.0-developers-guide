@@ -1,7 +1,5 @@
 # Copying bitmap data
 
-<div>
-
 To copy bitmap data from one image to another, you can use several methods:
 `clone()`, `copyPixels()`, `copyChannel()`, `draw()`, and `drawWithQuality()` (
 `drawWithQuality` method available in Flash Player 11.3 and higher; AIR 3.3 and
@@ -58,5 +56,3 @@ copied across to the new object. If you want to copy the transformations to the
 new bitmap, then you need to copy the value of the `transform` property from the
 original object to the `transform` property of the Bitmap object that uses the
 new BitmapData object.
-
-</div>

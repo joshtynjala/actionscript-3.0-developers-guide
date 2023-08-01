@@ -1,7 +1,5 @@
 # Setting an opaque background color
 
-<div>
-
 You can set an opaque background for a display object. For example, when your
 SWF has a background that contains complex vector art, you can set the
 `opaqueBackground` property to a specified color (typically the same color as
@@ -28,19 +26,10 @@ triangle, on a Stage with a white background, this would show up as a green
 triangle with red in the empty space in the Shape instance's bounding box (the
 rectangle that completely encloses the Shape).
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
-![<Effect of setting opaqueBackground
-color>](../../img/dp_opaqueBackground_example.png)
-
-</div>
+![<Effect of setting opaqueBackground color>](../../img/dp_opaqueBackground_example.png)
 
 Of course, this code would make more sense if it were used with a Stage with a
 solid red background. On another colored background, that color would be
 specified instead. For example, in a SWF with a white background, the
 `opaqueBackground` property would most likely be set to `0xFFFFFF`, or pure
 white.
-
-</div>

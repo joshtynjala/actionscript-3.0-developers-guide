@@ -1,7 +1,5 @@
 # Understanding workers and concurrency
 
-<div>
-
 When an application doesn't use workers, the application's code executes in a
 single linear block of executing steps known as an execution <span class="dfn">
 thread </span>. The thread executes the code that a developer writes. It also
@@ -67,13 +65,3 @@ runtime virtual machine, even the overhead of a trivial worker can be large.
 When using workers, test your code across all your target platforms to ensure
 that the demands on the system are not too large. Adobe recommends that you do
 not use more than one or two background workers in a typical scenario.
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

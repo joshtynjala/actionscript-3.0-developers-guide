@@ -1,7 +1,5 @@
 # Caching display objects
 
-<div>
-
 As your designs in Flash grow in size, whether you are creating an application
 or complex scripted animations, you need to consider performance and
 optimization. When you have content that remains static (such as a rectangle
@@ -15,13 +13,9 @@ instance's vector data, which is data that you do not intend to change much over
 the course of your SWF file. Therefore, instances with caching turned on are not
 continually redrawn as the SWF file plays, letting the SWF file render quickly.
 
-<div>
-
 Note: You can update the vector data, at which time the surface is recreated.
 Therefore, the vector data cached in the surface does not need to remain the
 same for the entire SWF file.
-
-</div>
 
 Setting a display object's `cacheAsBitmap` property to `true` makes the display
 object cache a bitmap representation of itself. Flash Player or AIR creates a
@@ -46,13 +40,7 @@ For information on alpha channel masking, which requires you to set the
 `cacheAsBitmap` property to `true`, see
 [Masking display objects](./masking-display-objects.md).
 
-</div>
-
-<div>
-
 ## When to enable caching
-
-<div>
 
 Enabling caching for a display object creates a surface, which has several
 advantages, such as helping complex vector animations to render fast. There are
@@ -68,8 +56,6 @@ the `opaqueBackground` property. If you are changing small regions, the
 difference between using a surface and using vector data could be negligible.
 You might want to test both scenarios with your work before you deploy the
 application.
-
-<div>
 
 #### When to use bitmap caching
 
@@ -111,10 +97,6 @@ In addition, whenever you apply a filter to a display object, `cacheAsBitmap` is
 automatically set to `true`, even if you explicitly set it to `false`. If you
 clear all the filters from the display object, the `cacheAsBitmap` property
 returns to the value it was last set to.
-
-</div>
-
-<div>
 
 #### When to avoid using bitmap caching
 
@@ -158,17 +140,7 @@ following guidelines:
   of the display object and can only be determined by testing the specific
   content.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Enabling bitmap caching
-
-<div>
 
 To enable bitmap caching for a display object, you set its `cacheAsBitmap`
 property to `true`:
@@ -187,13 +159,7 @@ A surface (cached bitmap) is not created, even if `cacheAsBitmap` is set to
 
 - The bitmap fails to allocate (because of an out-of-memory error).
 
-</div>
-
-<div>
-
 ### Cached bitmap transform matrices
-
-<div>
 
 In AIR applications for mobile devices, you should set the `cacheAsBitmapMatrix`
 property whenever you set the `cacheAsBitmap` property. Setting this property
@@ -217,9 +183,3 @@ transformation to the display object without recaching the object:
 - Change alpha (between 0 and 100% transparency)
 
 These transformations are applied directly to the cached bitmap.
-
-</div>
-
-</div>
-
-</div>

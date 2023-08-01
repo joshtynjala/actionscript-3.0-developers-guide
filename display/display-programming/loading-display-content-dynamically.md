@@ -1,7 +1,5 @@
 # Loading display content dynamically
 
-<div>
-
 You can load any of the following external display assets into an ActionScript
 3.0 application:
 
@@ -18,13 +16,7 @@ You can load any of the following external display assets into an ActionScript
 
 You load these assets by using the Loader class.
 
-</div>
-
-<div>
-
 ## Loading display objects
-
-<div>
 
 Loader objects are used to load SWF files and graphics files into an
 application. The Loader class is a subclass of the DisplayObjectContainer class.
@@ -58,15 +50,7 @@ object in this example:
         container.addChild(pictLdr.content);
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## Monitoring loading progress
-
-<div>
 
 Once the file has started loading, a LoaderInfo object is created. A LoaderInfo
 object provides information such as load progress, the URLs of the loader and
@@ -78,13 +62,7 @@ The following diagram shows the different uses of the LoaderInfo object—for th
 instance of the main class of the SWF file, for a Loader object, and for an
 object loaded by the Loader object:
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](../../img/dp_loaderInfo_object.png)
-
-</div>
 
 The LoaderInfo object can be accessed as a property of both the Loader object
 and the loaded display object. As soon as loading begins, the LoaderInfo object
@@ -118,15 +96,7 @@ listener to the LoaderInfo object, as in the following code:
 For more information, see
 [Handling events](../../core-actionscript-classes/handling-events/index.md).
 
-</div>
-
-</div>
-
-<div>
-
 ## Specifying loading context
-
-<div>
 
 When you load an external file into Flash Player or AIR through the `load()` or
 `loadBytes()` method of the Loader class, you can optionally specify a `context`
@@ -193,15 +163,7 @@ For more information, see the
 class listing in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Loading SWF files in AIR for iOS
-
-<div>
 
 On iOS devices, there are restrictions on loading and compiling code at runtime.
 Because of these restrictions, there are some necessary differences in the task
@@ -255,15 +217,7 @@ appear in the application.
 href="http://blogs.adobe.com/airodynamics/2012/11/09/packaging-and-loading-multiple-swfs-in-air-apps-on-ios/"
 target="_self">Packaging and loading multiple SWFs in AIR apps on iOS</a>
 
-</div>
-
-</div>
-
-<div>
-
 ## Using the ProLoader and ProLoaderInfo classes
-
-<div>
 
 To help with remote shared library (RSL) preloading, Flash Professional CS5.5
 introduces the fl.display.ProLoader and fl.display.ProLoaderInfo classes. These
@@ -288,15 +242,9 @@ ProLoader features only with Flash Player 10.2 or higher. Always use ProLoader
 when you use TLF in Flash Professional CS5.5 or later. ProLoader is not needed
 in environments other than Flash Professional.
 
-<div>
-
 Important: For SWF files published in Flash Professional CS5.5 and later, you
 can always use the fl.display.ProLoader and fl.display.ProLoaderInfo classes
 instead of flash.display.Loader and flash.display.LoaderInfo.
-
-</div>
-
-<div>
 
 #### Issues addressed by the ProLoader class
 
@@ -314,10 +262,6 @@ files. Addressed issues include the following:
   requires implementation of extra events, such as `added`, `removed`,
   `addedToStage`, and `removedFromStage`. If your application targets Flash
   Player 10.2 or later, ProLoader removes the need for this extra work.
-
-</div>
-
-<div>
 
 #### Updating code to use ProLoader instead of Loader
 
@@ -348,9 +292,3 @@ This code can be updated to use ProLoader as follows:
     function loadComplete(e:Event) {
         trace('load complete!');
     }
-
-</div>
-
-</div>
-
-</div>

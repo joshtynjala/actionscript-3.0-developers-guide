@@ -1,7 +1,5 @@
 # Full-screen mode security
 
-<div>
-
 Flash Player 9.0.27.0 and later support full-screen mode, in which content
 running in Flash Player can fill the entire screen. To enter full-screen mode,
 the `displayState` property of the Stage is set to the
@@ -66,13 +64,3 @@ setting `FullScreenDisable = 1` in the mms.cfg file. For details, see
 
 In a browser, a SWF file must be contained in an HTML page to allow full-screen
 mode.
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # Blur filter
 
-<div>
-
 The BlurFilter class smears, or blurs, a display object and its contents. Blur
 effects are useful for giving the impression that an object is out of focus or
 for simulating fast movement, as in a motion blur. By setting the `quality`
@@ -32,5 +30,3 @@ the Graphics class and applies a blur filter to it:
     blur.blurY = 10;
     blur.quality = BitmapFilterQuality.MEDIUM;
     redDotCutout.filters = [blur];
-
-</div>

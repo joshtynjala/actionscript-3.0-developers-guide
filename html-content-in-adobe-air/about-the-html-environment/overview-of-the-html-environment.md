@@ -1,7 +1,5 @@
 # Overview of the HTML environment
 
-<div>
-
 Adobe AIR provides a complete browser-like JavaScript environment with an HTML
 renderer, document object model, and JavaScript interpreter. The JavaScript
 environment is represented by the AIR HTMLLoader class. In HTML windows, an
@@ -19,28 +17,16 @@ component. The mx:HTML component extends the UIComponent class, so it can be
 used directly with other Flex containers. The JavaScript environment within the
 mx:HTML component is otherwise identical.
 
-</div>
-
-<div>
-
 ## About the JavaScript environment and its relationship to the AIR host
-
-<div>
 
 The following diagram illustrates the relationship between the JavaScript
 environment and the AIR run-time environment. Although only a single native
 window is shown, an AIR application can contain multiple windows. (And a single
 window can contain multiple HTMLLoader objects.)
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 <a href="#"
 onclick="return showHideImage(&#39;HTMLStructure&#39;, this);">View full size
 graphic</a> ![](images/HTMLStructure.png)
-
-<div>
 
 The JavaScript environment has its own Document and Window objects. JavaScript
 code can interact with the AIR run-time environment through the runtime,
@@ -50,10 +36,6 @@ which is a reference to the JavaScript Window object. In addition, both
 ActionScript and JavaScript objects can listen for events dispatched by both AIR
 and JavaScript objects._
 
-</div>
-
-</div>
-
 The `runtime` property provides access to AIR API classes, allowing you to
 create new AIR objects as well as access class (also called static) members. To
 access an AIR API, you add the name of the class, with package, to the `runtime`
@@ -61,15 +43,11 @@ property. For example, to create a File object, you would use the statement:
 
     var file = new window.runtime.filesystem.File();
 
-<div>
-
 Note: The AIR SDK provides a JavaScript file, `AIRAliases.js`, that defines more
 convenient aliases for the most commonly used AIR classes. When you import this
 file, you can use the shorter form air.Class instead of
 window.runtime.package.Class. For example, you could create the File object with
 `new air.File()`.
-
-</div>
 
 The NativeWindow object provides properties for controlling the desktop window.
 From within an HTML page, you can access the containing NativeWindow object with
@@ -79,8 +57,6 @@ The HTMLLoader object provides properties, methods, and events for controlling
 how content is loaded and rendered. From within an HTML page, you can access the
 parent HTMLLoader object with the `window.htmlLoader` property.
 
-<div>
-
 Important: Only pages installed as part of an application have the `htmlLoader`,
 `nativeWindow`, or `runtime` properties and only when loaded as the top-level
 document. These properties are not added when a document is loaded into a frame
@@ -89,17 +65,7 @@ as long as it is in the same security sandbox. For example, a document loaded in
 a frame could access the `runtime` property of its parent with `parent.runtime`
 _.)_
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## About security
-
-<div>
 
 AIR executes all code within a security sandbox based on the domain of origin.
 Application content, which is limited to content loaded from the application
@@ -128,15 +94,7 @@ For more information, see
 [HTML security in Adobe AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7f11.html) and
 [HTML frame and iframe elements](WS5b3ccc516d4fbf351e63e3d118666ade46-7edb.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## About plug-ins and embedded objects
-
-<div>
 
 AIR supports the Adobe® Acrobat® plug-in. Users must have Acrobat or Adobe®
 Reader® 8.1 (or better) to display PDF content. The HTMLLoader object provides a
@@ -146,19 +104,7 @@ in to AIR and does not use an external plug-in.
 
 No other WebKit plug-ins are supported in AIR.
 
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
 
 [HTML security in Adobe AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7f11.html)
 
@@ -171,11 +117,3 @@ More Help topics
 [The XMLHttpRequest object](WS5b3ccc516d4fbf351e63e3d118666ade46-7eb5.html)
 
 [Adding PDF content in AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7eb4.html)
-
-</div>
-
-<div>
-
-</div>
-
-</div>

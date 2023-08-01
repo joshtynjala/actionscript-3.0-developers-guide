@@ -1,27 +1,15 @@
 # Display screens in AIR
 
-<div>
-
 Use the Adobe® AIR® Screen class to access information about the display screens
 attached to a computer or device.
 
-</div>
-
-<div>
-
 ## Basics of display screens in AIR
-
-<div>
-
-<div>
 
 - [Measuring the virtual desktop](http://www.adobe.com/go/learn_air_qs_virtualdesktop_en)
   (Flex)
 
 - [Measuring the virtual desktop](http://www.adobe.com/go/learn_air_qs_virtualdesktop_flash_en)
   (Flash)
-
-</div>
 
 The screen API contains a single class, Screen, which provides static members
 for getting system screen information, and instance members for describing a
@@ -40,15 +28,9 @@ as rectangles within the virtual desktop. The upper-left corner of screen
 designated as the primary display is the origin of the virtual desktop
 coordinate system. All values used to describe a screen are provided in pixels.
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 <a href="#"
 onclick="return showHideImage(&#39;screen_bounds&#39;, this);">View full size
 graphic</a> ![](images/screen_bounds.png)
-
-<div>
 
 In this screen arrangement, two screens exist on the virtual desktop. The
 coordinates of the upper-left corner of the main screen (#1) are always (0,0).
@@ -56,38 +38,22 @@ If the screen arrangement is changed to designate screen \#2 as the main screen,
 then the coordinates of screen \#1 become negative. Menubars, taskbars, and
 docks are excluded when reporting the usable bounds for a screen.
 
-</div>
-
-</div>
-
 For detailed information about the screen API class, methods, properties, and
 events, see the
 [Screen](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Screen.html)
 class listing in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Enumerating the screens
-
-<div>
 
 You can enumerate the screens of the virtual desktop with the following screen
 methods and properties:
-
-<div>
 
 | Method or Property              | Description                                                                                                                                                                                                                                                                                                                    |
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Screen.screens                  | Provides an array of Screen objects describing the available screens. The order of the array is not significant.                                                                                                                                                                                                               |
 | Screen.mainScreen               | Provides a Screen object for the main screen. On Mac OS X, the main screen is the screen displaying the menu bar. On Windows, the main screen is the system-designated primary screen.                                                                                                                                         |
 | Screen.getScreensForRectangle() | Provides an array of Screen objects describing the screens intersected by the given rectangle. The rectangle passed to this method is in pixel coordinates on the virtual desktop. If no screens intersect the rectangle, then the array is empty. You can use this method to find out on which screens a window is displayed. |
-
-</div>
 
 Do not save the values returned by the Screen class methods and properties. The
 user or operating system can change the available screens and their arrangement
@@ -217,27 +183,7 @@ screen. To identify the current screen of the window, the example calls
     	}
     }
 
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
-
-</div>
 
 ![](../img/flashplatformLinkIndicator.png)
 [flash.display.Screen](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Screen.html)
-
-<div>
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # Playing video in full-screen mode
 
-<div>
-
 Flash Player and AIR allow you to create a full-screen application for your
 video playback, and support scaling video to full screen.
 
@@ -11,8 +9,6 @@ input stops or the user exits full-screen mode.
 
 For full details on using full-screen mode, see
 [Working with full-screen mode](WS2E9C7F3B-6A7C-4c5d-8ADD-5B23446FBEEB.html).
-
-<div>
 
 #### Enabling full-screen mode for Flash Player in a browser
 
@@ -44,10 +40,6 @@ box, on the HTML tab, select the Flash Only - Allow Full Screen template.
 
 In Flex, ensure that the HTML template includes `<object>` and `<embed>` tags
 that support full screen.
-
-</div>
-
-<div>
 
 #### Initiating full-screen mode
 
@@ -155,10 +147,6 @@ response to some type of occurrence or event. In this example, the
 function. For more information, see
 [Writing callback methods for metadata and cue points](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d3f.html)
 
-</div>
-
-<div>
-
 #### Leaving full-screen mode
 
 A user can leave full-screen mode by entering one of the keyboard shortcuts,
@@ -175,10 +163,6 @@ event occurs.
     		stage.displayState = StageDisplayState.NORMAL;
     }
 
-</div>
-
-<div>
-
 #### Full-screen hardware acceleration
 
 When you rescale a rectangular area of the stage to full-screen mode, Flash
@@ -192,15 +176,3 @@ For more information on hardware acceleration in full-screen mode, see
 [Working with full-screen mode](WS2E9C7F3B-6A7C-4c5d-8ADD-5B23446FBEEB.html).
 For more information on StageVideo, see
 [Using the StageVideo class for hardware accelerated presentation](WSe9ecd9e6b89aefd2-68d5ef8f12cc8511f6c-8000.html).
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

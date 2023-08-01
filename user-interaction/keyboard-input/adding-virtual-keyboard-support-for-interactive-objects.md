@@ -1,7 +1,5 @@
 # Adding virtual keyboard support for interactive objects
 
-<div>
-
 Normally, the virtual keyboard only opens when a TextField object is tapped. You
 can configure an instance of the InteractiveObject class to open the virtual
 keyboard when it receives focus.
@@ -181,21 +179,7 @@ algorithm.
     	}
     }
 
-<div>
-
 Note: The stage only dispatches resize events in response to an orientation
 change when the `scaleMode` property is set to `noScale`. In other modes, the
 dimensions of the stage do not change; instead, the content is scaled to
 compensate.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

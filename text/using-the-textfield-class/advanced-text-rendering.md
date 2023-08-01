@@ -1,20 +1,12 @@
 # Advanced text rendering
 
-<div>
-
 ActionScript 3.0 provides a variety of classes in the flash.text package to
 control the properties of displayed text, including embedded fonts,
 anti-aliasing settings, alpha channel control, and other specific settings. The
 ActionScript 3.0 Reference provides detailed descriptions of these classes and
 properties, including the CSMSettings, Font, and TextRenderer classes.
 
-</div>
-
-<div>
-
 ## Using embedded fonts
-
-<div>
 
 When you specify a specific font for a TextField in your application, Flash
 Player or AIR look for a device font (a font that resides on the user's
@@ -56,8 +48,6 @@ embedded font:
   property must contain a single name and not a list of names if you want to
   specify an embedded font.
 
-<div>
-
 #### Embedding a font in Flash
 
 Flash Professional lets you embed almost any font you have installed on your
@@ -75,10 +65,6 @@ You can embed fonts in an application in many ways, including:
 For more details about how to embed fonts in applications, see "Embedded fonts
 for dynamic or input text fields" in _Using Flash_ .
 
-</div>
-
-<div>
-
 #### Embedding a font in Flex
 
 You can embed fonts in a Flex application in many ways, including:
@@ -95,17 +81,7 @@ using Flash Professional and then that SWF file can be used in your Flex
 application. For more details about using embedded fonts from SWF files in Flex,
 see "Embedding fonts from SWF files" in _Using Flex 4_ .
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Controlling sharpness, thickness, and anti-aliasing
-
-<div>
 
 By default, Flash Player or AIR determines the settings for text display
 controls like sharpness, thickness, and anti-aliasing as text resizes, changes
@@ -118,14 +94,10 @@ control over the rendering quality of embedded text. For more information about
 embedded fonts, see
 [Using embedded fonts](WS8d7bb3e8da6fb92f-20050207122bd5f80cb-7fef.html).
 
-<div>
-
 Note: The `flash.text.TextField`.antiAliasType property must have the value
 `AntiAliasType.ADVANCED` in order for you to set the sharpness, thickness, or
 the gridFitType property, or to use the
 `TextRenderer.setAdvancedAntiAliasingTable()` method.
-
-</div>
 
 The following example applies custom continuous stroke modulation (CSM)
 properties and formatting to displayed text using an embedded font called
@@ -155,21 +127,7 @@ applies the custom settings:
     	TextRenderer.setAdvancedAntiAliasingTable("myFont", FontStyle.ITALIC, TextColorType.DARK_COLOR, myAliasTable);
     }
 
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
-
-</div>
 
 ![](../../img/flashLinkIndicator.png)
 [Embed fonts for consistent text appearance](https://help.adobe.com/en_US/flash/cs/using/WSb03e830bd6f770ee21a3597d124daee0526-8000.html)
@@ -183,9 +141,3 @@ More Help topics
 [Peter deHaan: Embedding fonts](http://www.adobe.com/devnet/flash/quickstart/embedding_fonts.html)
 
 [Divillysausages.com: AS3 Font embedding masterclass](http://divillysausages.com/blog/as3_font_embedding_masterclass)
-
-<div>
-
-</div>
-
-</div>

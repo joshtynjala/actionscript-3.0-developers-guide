@@ -1,7 +1,5 @@
 # Overview of the flash.globalization package
 
-<div>
-
 The flash.globalization package harnesses the cultural support capabilities of
 the underlying operating system. It makes it easier to write applications that
 follow the cultural conventions of individual users.
@@ -22,13 +20,7 @@ The main classes in the package include:
 - The StringTools class which handles locale-sensitive case conversion of
   strings
 
-</div>
-
-<div>
-
 ## The flash.globalization package and resource localization
-
-<div>
 
 The flash.globalization package doesn't handle resource localization. However
 you can use the flash.globalization locale ID as the key value for retrieving
@@ -41,15 +33,7 @@ Adobe AIR 1.1 also contains some features to help localize AIR applications, as
 discussed in
 [Localizing AIR applications](WS9b644acd4ebe5999-3f67b89b12214f53776-7ffe.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## A general approach to internationalizing an application
-
-<div>
 
 The following steps describe a high-level common approach for internationalizing
 an application using the flash.globalization package:
@@ -75,15 +59,7 @@ are specific to the locale. This step can include tasks such as:
 
 - Ensuring that input method editors are correctly handled
 
-</div>
-
-</div>
-
-<div>
-
 ## Checking for errors and fallbacks
-
-<div>
 
 The flash.globalization service classes all follow a similar pattern for
 identifying errors. They also share a pattern for falling back from an
@@ -113,15 +89,3 @@ This example simply traces a message if a fallback locale ID is used, or if
 there is an error. Your application can perform additional error handling logic,
 if needed. For example, you could display a message to the user or force the
 application to use a specific, supported locale.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # Finding substrings and patterns in strings
 
-<div>
-
 Substrings are sequential characters within a string. For example, the string
 `"abc"` has the following substrings: `""`, `"a"`, `"ab"`, `"abc"`, `"b"`,
 `"bc"`, `"c"`. You can use ActionScript methods to locate substrings of a
@@ -21,13 +19,7 @@ following sections.
 Regular expressions can define intricate patterns. For more information, see
 [Using regular expressions](../using-regular-expressions/index.md).
 
-</div>
-
-<div>
-
 ## Finding a substring by character position
-
-<div>
 
 The `substr()` and `substring()` methods are similar. Both return a substring of
 a string. Both take two parameters. In both methods, the first parameter is the
@@ -57,15 +49,7 @@ following example:
 You can combine non-negative and negative integers as the parameters of the
 `slice()` method.
 
-</div>
-
-</div>
-
-<div>
-
 ## Finding the character position of a matching substring
-
-<div>
 
 You can use the `indexOf()` and `lastIndexOf()` methods to locate matching
 substrings within a string, as the following example shows:
@@ -94,15 +78,7 @@ left):
     var str:String = "The moon, the stars, the sea, the land"
     trace(str.lastIndexOf("the", 29)); // output: 21
 
-</div>
-
-</div>
-
-<div>
-
 ## Creating an array of substrings segmented by a delimiter
-
-<div>
 
 You can use the `split()` method to create an array of substrings, which is
 divided based on a delimiter. For example, you can segment a comma-delimited or
@@ -126,15 +102,7 @@ For more information, see
 [Using regular expressions](../using-regular-expressions/index.md) and the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Finding patterns in strings and replacing substrings
-
-<div>
 
 The String class includes the following methods for working with patterns in
 strings:
@@ -150,41 +118,6 @@ These methods are described in the following sections.
 You can use strings or regular expressions to define patterns used in these
 methods. For more information on regular expressions, see
 [Using regular expressions](../using-regular-expressions/index.md).
-
-<div xmlns:adobe="http://www.adobe.com/saxon">
-
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td colspan="2"><h2
-id="adobe-recommends">Adobe recommends</h2></td>
-<td colspan="2"></td>
-</tr>
-<tr class="even">
-<td colspan="4" height="10"></td>
-</tr>
-<tr class="odd">
-<td><span> <img src="../../img/dougrdotnet.png" /> </span></td>
-<td><h3 id="trim-leading-and-trailing-00s-from-a-string"><a
-href="http://goo.gl/GHGjc" target="_self">Trim Leading and Trailing 00s
-From a String</a></h3>
-<span> <a href="http://goo.gl/ql1TG" target="_self">Doug Reynolds</a>
-</span></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-
-</div>
-
-<div>
 
 #### Finding matching substrings
 
@@ -235,10 +168,6 @@ The `results` array is set to the following:
 For more information on regular expressions, see
 [Using regular expressions](../using-regular-expressions/index.md).
 
-</div>
-
-<div>
-
 #### Replacing matched substrings
 
 You can use the `replace()` method to search for a specified pattern in a string
@@ -259,8 +188,6 @@ You can include the following `$` replacement codes in the replacement string.
 The replacement text shown in the following table is inserted in place of the
 `$` replacement code:
 
-<div>
-
 | $ Code   | Replacement Text                                                                                                                                                                                                                      |
 | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `$$`     | $                                                                                                                                                                                                                                     |
@@ -269,8 +196,6 @@ The replacement text shown in the following table is inserted in place of the
 | `$'`     | The portion of the string that follows the matched substring. This code uses the straight single quotation mark (`'`).                                                                                                                |
 | `$` _n_  | The _n_ th captured parenthetical group match, where n is a single digit, 1-9, and $n is not followed by a decimal digit.                                                                                                             |
 | `$` _nn_ | The _nn_ th captured parenthetical group match, where _nn_ is a two-digit decimal number, 01–99. If the _nn_ th capture is undefined, the replacement text is an empty string.                                                        |
-
-</div>
 
 For example, the following shows the use of the `$2` and `$1` replacement codes,
 which represent the first and second capturing group matched:
@@ -310,8 +235,7 @@ following arguments are passed to the function:
 
 - The complete string.
 
-</div>
+## Adobe recommends
 
-</div>
-
-</div>
+> <h3 id="trim-leading-and-trailing-00s-from-a-string"><a href="http://goo.gl/GHGjc" target="_self"><img src="../../img/dougrdotnet.png" /> Trim Leading and Trailing 00s From a String</a></h3>
+> <a href="http://goo.gl/ql1TG" target="_self">Doug Reynolds</a>

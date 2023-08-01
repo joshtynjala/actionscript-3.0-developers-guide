@@ -1,7 +1,5 @@
 # Using the Math class with drawing methods
 
-<div>
-
 A Graphics object draws circles and squares, but can also draw more complex
 forms, particularly when the drawing methods are used in combination with the
 properties and methods of the Math class. The Math class contains constants of
@@ -41,5 +39,3 @@ difference between the `Math.sin()` and `Math.cos()` methods for a given value.
         graphics.beginFill(cosWaveColor);
         graphics.drawRect(i, cosWavePosition + cosPosY, 2, 2);
     }
-
-</div>

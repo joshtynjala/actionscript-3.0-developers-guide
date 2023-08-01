@@ -1,7 +1,5 @@
 # ByteArray example: Reading a .zip file
 
-<div>
-
 This example demonstrates how to read a simple .zip file containing several
 files of different types. It does so by extracting relevant data from the
 metadata for each file, uncompressing each file into a ByteArray and writing the
@@ -25,8 +23,6 @@ information following the last file data.
 
 The format of the file header for each file is as follows:
 
-<div>
-
 |                          |                                     |
 | ------------------------ | ----------------------------------- |
 | file header signature    | 4 bytes                             |
@@ -42,8 +38,6 @@ The format of the file header for each file is as follows:
 | extra field length       | 2 bytes                             |
 | file name                | variable                            |
 | extra field              | variable                            |
-
-</div>
 
 Following the file header is the actual file data, which can be either
 compressed or uncompressed, depending on the compression method flag. The flag
@@ -283,13 +277,3 @@ closes the file.
     	// close it
     	outStream.close();
     }
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

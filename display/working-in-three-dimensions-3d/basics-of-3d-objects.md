@@ -1,7 +1,5 @@
 # Basics of 3D display objects
 
-<div>
-
 The main difference between a two-dimensional (2D) object and a
 three-dimensional (3D) object projected on a two-dimensional screen is the
 addition of a third dimension to the object. The third dimension allows the
@@ -15,8 +13,6 @@ In addition, 3D rotation differs from 2D rotation. In 2D the axis of rotation is
 always perpendicular to the x/y plane - in other words, on the z-axis. In 3D the
 axis of rotation can be around any of the x, y, or z axes. Setting the rotation
 and scaling properties of a display object enable it to move in 3D space.
-
-<div>
 
 #### Important concepts and terms
 
@@ -69,15 +65,3 @@ toward, or away from, the current point of view.
 Culling  
 Rendering, or not, surfaces with specific winding. Using culling you can hide
 surfaces that are not visible to the current point of view.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

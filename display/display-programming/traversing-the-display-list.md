@@ -1,19 +1,11 @@
 # Traversing the display list
 
-<div>
-
 As you've seen, the display list is a tree structure. At the top of the tree is
 the Stage, which can contain multiple display objects. Those display objects
 that are themselves display object containers can contain other display objects,
 or display object containers.
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](../../img/dp_Display_List_Organization.png)
-
-</div>
 
 The DisplayObjectContainer class includes properties and methods for traversing
 the display list, by means of the child lists of display object containers. For
@@ -73,8 +65,6 @@ from a display object container:
         }
     }
 
-<div>
-
 #### Adobe Flex
 
 If you use Flex, you should know that Flex defines many component display object
@@ -86,7 +76,3 @@ the `addChild()` method, the class overrides the method in such a way that you
 cannot add all types of display objects to a Container instance in Flex. The
 overridden method, in this case, requires that the child object that you are
 adding be a type of mx.core.UIComponent object.
-
-</div>
-
-</div>

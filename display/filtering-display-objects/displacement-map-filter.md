@@ -1,7 +1,5 @@
 # Displacement map filter
 
-<div>
-
 The DisplacementMapFilter class uses pixel values from a BitmapData object
 (known as the displacement map image) to perform a displacement effect on a new
 object. The displacement map image is typically different than the actual
@@ -257,15 +255,7 @@ you understand what the displacement map image looks like, the code adds the
 original circles as well as the combined circle that serves as the map image to
 the bottom of the screen.
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
-![Image showing a photo of a flower with a circle-shaped portion under
-the mouse cursor
-magnified.](../../img/fo_displacement_map_filter_sample.png)
-
-</div>
+![Image showing a photo of a flower with a circle-shaped portion under the mouse cursor magnified.](../../img/fo_displacement_map_filter_sample.png)
 
 The code then loads an image and, as the mouse moves, applies the displacement
 filter to the portion of the image that's under the mouse. The gradient circles
@@ -278,5 +268,3 @@ in the center of the circle there is no displacement. Although the color there
 isn't gray, that color's blue channel and red channel are identical to the blue
 channel and red channel of medium gray, and since blue and red are the colors
 that cause displacement, no displacement happens there.
-
-</div>

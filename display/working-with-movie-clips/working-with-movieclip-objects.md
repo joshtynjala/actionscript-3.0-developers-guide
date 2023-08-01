@@ -1,7 +1,5 @@
 # Working with MovieClip objects
 
-<div>
-
 When you publish a SWF file, Flash converts all movie clip symbol instances on
 the Stage to MovieClip objects. You can make a movie clip symbol available to
 ActionScript by giving it an instance name in the Instance Name field of the
@@ -16,16 +14,12 @@ animation play by calling this code:
 
     parentClip.childClip.play();
 
-<div>
-
 Note: : Children instances placed on the Stage in the Flash authoring tool
 cannot be accessed by code from within the constructor of a parent instance
 since they have not been created at that point in code execution. Before
 accessing the child, the parent must instead either create the child instance by
 code or delay access to a callback function that listens for the child to
 dispatch its `Event.ADDED_TO_STAGE` event.
-
-</div>
 
 While some legacy methods and properties of the ActionScript 2.0 MovieClip class
 remain the same, others have changed. All properties prefixed with an underscore
@@ -36,5 +30,3 @@ the MovieClip class, consult the
 [MovieClip](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/MovieClip.html)
 class listing in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
-
-</div>

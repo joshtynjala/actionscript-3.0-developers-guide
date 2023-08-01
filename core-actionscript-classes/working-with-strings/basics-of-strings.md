@@ -1,7 +1,5 @@
 # Basics of strings
 
-<div>
-
 In programming parlance, a string is a text value—a sequence of letters,
 numbers, or other characters strung together into a single value. For instance,
 this line of code creates a variable with the data type String and assigns a
@@ -21,8 +19,6 @@ Any time you manipulate a piece of text in ActionScript, you are working with a
 string value. The ActionScript String class is the data type you can use to work
 with text values. String instances are frequently used for properties, method
 parameters, and so forth in many other ActionScript classes.
-
-<div>
 
 #### Important concepts and terms
 
@@ -62,7 +58,3 @@ Unicode
 A standard system for representing text characters and symbols in computer
 programs. The Unicode system allows for the use of any character in any writing
 system.
-
-</div>
-
-</div>

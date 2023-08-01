@@ -1,7 +1,5 @@
 # Obtaining string representations of other objects
 
-<div>
-
 You can obtain a String representation for any kind of object. All objects have
 a `toString()` method for this purpose:
 
@@ -15,5 +13,3 @@ method. For details on concatenation, see the next section.
 
 The `String()` global function returns the same value for a given object as the
 value returned by the object calling the `toString()` method.
-
-</div>

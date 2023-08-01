@@ -1,7 +1,5 @@
 # Communicating with native processes in AIR
 
-<div>
-
 As of Adobe AIR 2, AIR applications can run and communicate with other native
 processes via the command line. For example, an AIR application can run a
 process and communicate with it via the standard input and output streams.
@@ -20,22 +18,12 @@ These applications are known as extended desktop profile applications. You can
 create a native installer file by specifying the `-target native` option when
 calling the `-package` command using ADT.
 
-</div>
-
-<div>
-
 ## Overview of native process communications
-
-<div>
 
 An AIR application in the extended desktop profile can execute a file, as if it
 were invoked by the command line. It can communicate with the standard streams
 of the native process. Standard streams include the standard input stream
 (stdin), the output stream (stdout), the standard error stream (stderr).
-
-<div>
-
-<div>
 
 Note: Applications in the extended desktop profile can also launch files and
 applications using the `File.openWithDefaultApplication()` method. However,
@@ -43,16 +31,10 @@ using this method does not provide the AIR application with access to the
 standard streams. For more information, see
 [Opening files with the default system application](WS2A7C0A31-A6A9-42d2-8772-79166A98A085.html)
 
-</div>
-
-</div>
-
 The following code sample shows how to launch a test.exe application in the
 application directory. The application passes the argument `"hello"` as a
 command-line argument, and it adds an event listener to the process's standard
 output stream:
-
-<div>
 
     var nativeProcessStartupInfo:NativeProcessStartupInfo = new NativeProcessStartupInfo();
     var file:File = File.applicationDirectory.resolvePath("test.exe");
@@ -70,17 +52,7 @@ output stream:
     	trace("Got: ", data);
     }
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Launching and closing a native process
-
-<div>
 
 To launch a native process, set up a NativeProcessInfo object to do the
 following:
@@ -98,8 +70,6 @@ For example, the following code shows how to launch a test.exe application in
 the application directory. The application passes the argument `"hello"` and
 sets the user's documents directory as the working directory:
 
-<div>
-
     var nativeProcessStartupInfo:NativeProcessStartupInfo = new NativeProcessStartupInfo();
     var file:File = File.applicationDirectory.resolvePath("test.exe");
     nativeProcessStartupInfo.executable = file;
@@ -110,23 +80,13 @@ sets the user's documents directory as the working directory:
     process = new NativeProcess();
     process.start(nativeProcessStartupInfo);
 
-</div>
-
 To terminate the process, call the `exit()` method of the NativeProcess object.
 
 If you want a file to be executable in your installed application, make sure
 that it's executable on the file system when you package your application. (On
 Mac and Linux, you can use chmod to set the executable flag, if needed.)
 
-</div>
-
-</div>
-
-<div>
-
 ## Communicating with a native process
-
-<div>
 
 Once an AIR application has started a native process, it can communicate with
 the standard input, standard output, and standard error streams of the process.
@@ -139,8 +99,6 @@ NativeProcess object:
 - `standardOutput` —Contains access to the standard output stream data.
 
 - `standardError` —Contains access to the standard error stream data.
-
-<div>
 
 #### Writing to the standard input stream
 
@@ -166,10 +124,6 @@ dispatches a `standardInputClose` event.
     {
     	process.closeInput();
     }
-
-</div>
-
-<div>
 
 #### Reading from the standard output stream
 
@@ -206,10 +160,6 @@ will not stall. In this case, you will not have access to the data.
     	bytes.writeBytes(process.standardOutput.readBytes(process.standardOutput.bytesAvailable);
     }
 
-</div>
-
-<div>
-
 #### Reading from the standard error stream
 
 You can read data from the standard error stream using the read methods of this
@@ -245,17 +195,7 @@ will not stall. In this case, you will not have access to the data.
     	bytes.writeBytes(process.standardError.readBytes(process.standardError.bytesAvailable);
     }
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Security considerations for native process communication
-
-<div>
 
 The native process API can run any executable on the user's system. Take extreme
 care when constructing and executing commands. If any part of a command to be
@@ -279,21 +219,7 @@ application may call `myBat.bat myArguments c:/evil.exe`. The command
 application would launch the evil.exe application in addition to running your
 batch file.
 
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
-
-</div>
 
 ![](../img/airLinkIndicator.png)
 [Packaging an AIR application in a native installer](https://help.adobe.com/en_US/air/build/WS789ea67d3e73a8b22388411123785d839c-8000.html)
@@ -306,9 +232,3 @@ More Help topics
 
 ![](../img/flashplatformLinkIndicator.png)
 [flash.desktop.NativeProcess](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeProcess.html)
-
-<div>
-
-</div>
-
-</div>

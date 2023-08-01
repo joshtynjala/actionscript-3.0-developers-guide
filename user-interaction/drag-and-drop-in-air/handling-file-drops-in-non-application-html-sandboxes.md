@@ -1,7 +1,5 @@
 # Handling file drops in non-application HTML sandboxes
 
-<div>
-
 Non-application content cannot access the File objects that result when files
 are dragged into an AIR application. Nor is it possible to pass one of these
 File objects to application content through a sandbox bridge. (The object
@@ -66,13 +64,3 @@ Otherwise, the drop event can never occur.
     	</div>
     </body>
     </html>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

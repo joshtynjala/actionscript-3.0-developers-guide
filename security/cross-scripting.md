@@ -1,7 +1,5 @@
 # Cross-scripting
 
-<div>
-
 If two SWF files written with ActionScript 3.0, or two HTML files running in AIR
 are served from the same domain—for example, the URL for one SWF file is
 http://www.example.com/swfA.swf and the URL for the other is
@@ -28,15 +26,9 @@ the other side is called the _party being accessed_ (usually the SWF being
 accessed). When siteA.swf scripts siteB.swf, siteA.swf is the accessing party,
 and siteB.swf is the party being accessed, as the following illustration shows:
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 <a href="#"
 onclick="return showHideImage(&#39;sc_crossScript_load&#39;, this);">View full
 size graphic</a> ![](images/sc_crossScript_load.png)
-
-</div>
 
 Cross-domain permissions that are established with the `Security.allowDomain()`
 method are asymmetrical. In the previous example, siteA.swf can script
@@ -58,13 +50,7 @@ Also, Flash Player provides security controls for SWF-to-HTML scripting. For
 more information, see
 [Controlling outbound URL access](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c9b.html).
 
-</div>
-
-<div>
-
 ## Stage security
-
-<div>
 
 Some properties and methods of the Stage object are available to any sprite or
 movie clip on the display list.
@@ -72,8 +58,6 @@ movie clip on the display list.
 However, the Stage object is said to have an owner: the first SWF file loaded.
 By default, the following properties and methods of the Stage object are
 available only to SWF files in the same security sandbox as the Stage owner:
-
-<div>
 
 |                          |                      |
 | ------------------------ | -------------------- |
@@ -94,8 +78,6 @@ available only to SWF files in the same security sandbox as the Stage owner:
 | `textSnapshot`           |                      |
 | `width`                  |                      |
 
-</div>
-
 In order for a SWF file in a sandbox other than that of the Stage owner to
 access these properties and methods, the Stage owner SWF file must call the
 `Security.allowDomain()` method to permit the domain of the external sandbox.
@@ -114,15 +96,7 @@ to call these methods code must be in the same domain as the owner of the
 affected child object(s), or the child object(s) can call the
 `Security.allowDomain()` method.
 
-</div>
-
-</div>
-
-<div>
-
 ## Traversing the display list
-
-<div>
 
 The ability of one SWF file to access display objects loaded from other
 sandboxes is restricted. In order for a SWF file to access a display object
@@ -142,15 +116,7 @@ object) includes the following three properties, which define the relationship
 between the loaded object and the Loader object: `childAllowsParent`,
 `parentAllowsChild`, and `sameDomain`.
 
-</div>
-
-</div>
-
-<div>
-
 ## Event security
-
-<div>
 
 Events related to the display list have security access limitations, based on
 the sandbox of the display object that is dispatching the event. An event in the
@@ -178,15 +144,3 @@ between the loaded object and the Loader object: `childAllowsParent` and
 
 For events that are dispatched from objects other than display objects, there
 are no security checks or security-related implications.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

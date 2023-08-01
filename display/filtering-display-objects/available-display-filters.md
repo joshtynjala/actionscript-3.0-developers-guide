@@ -1,7 +1,5 @@
 # Available display filters
 
-<div>
-
 ActionScript 3.0 includes ten filter classes that you can apply to display
 objects and BitmapData objects:
 
@@ -55,8 +53,6 @@ listings for the
 [flash.filters package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filters/package-detail.html)
 in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
-
-</div>
 
 - [Bevel filter](./bevel-filter.md)
 

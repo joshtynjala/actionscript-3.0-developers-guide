@@ -1,7 +1,5 @@
 # Accelerometer input
 
-<div>
-
 The Accelerometer class dispatches events based on activity detected by the
 device's motion sensor. This data represents the device's location or movement
 along a three-dimensional axis. When the device moves, the sensor detects this
@@ -17,61 +15,7 @@ position — no matter which way the phone is rotated. If auto-orientation is of
 for example, when SWF content in a browser is in full-screen mode, then the
 accelerometer axes are not re-oriented as the device is rotated.
 
-<div xmlns:adobe="http://www.adobe.com/saxon">
-
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td colspan="2"><h2 id="adobe-recommends">Adobe recommends</h2></td>
-<td colspan="2"></td>
-</tr>
-<tr class="even">
-<td colspan="4" height="10"></td>
-</tr>
-<tr class="odd">
-<td width="5%"><span> <img src="images/antonio_holguin.png" />
-</span></td>
-<td width="45%"><h3
-id="flash-pro-cs5.5-mobile-androidios-part-2-project-2-accelerometer-and-debugging"><a
-href="http://goo.gl/0GkPa">Flash Pro CS5.5 Mobile (Android/iOS) – Part
-2: Project 2 Accelerometer and Debugging</a></h3>
-<span> <a href="http://goo.gl/oTba7">Antonio Holguin</a> </span></td>
-<td width="5%"><span> <img src="images/michael_chaize.png" />
-</span></td>
-<td width="45%"><h3 id="air-and-the-accelerometer"><a
-href="http://goo.gl/eHe2T">AIR and the Accelerometer</a></h3>
-<span> <a href="http://www.riagora.com/">Michaël Chaize</a> </span></td>
-</tr>
-<tr class="even">
-<td colspan="4" height="10"></td>
-</tr>
-<tr class="odd">
-<td width="5%"><span> <img src="images/jon_campos.png" /> </span></td>
-<td width="45%"><h3 id="air-for-android-accelerometer"><a
-href="http://goo.gl/X224z">Air for Android: Accelerometer</a></h3>
-<span> <a href="http://www.unitedmindset.com/jonbcampos/">Jonathan
-Campos</a> </span></td>
-<td width="5%"></td>
-<td width="45%"></td>
-</tr>
-</tbody>
-</table>
-
-</div>
-
-</div>
-
-<div>
-
 ## Checking accelerometer support
-
-<div>
 
 Use the `Accelerometer.isSupported` property to test the runtime environment for
 the ability to use this feature:
@@ -89,15 +33,7 @@ use the `Accelerometer.isSupported` property to test for the availability of the
 Accelerometer feature on the user's device. If `Accelerometer.isSupported` is
 `true` at runtime, then Accelerometer support currently exists.
 
-</div>
-
-</div>
-
-<div>
-
 ## Detecting accelerometer changes
-
-<div>
 
 To use the accelerometer sensor, instantiate an Accelerometer object and
 register for `update` events it dispatches. The `update` event is an
@@ -150,13 +86,9 @@ You can adjust the desired time interval for accelerometer events by calling the
 takes one parameter, `interval`, which is the requested update interval in
 milliseconds:
 
-<div>
-
     var accl:Accelerometer;
     accl = new Accelerometer();
     accl.setRequestedUpdateInterval(1000);
-
-</div>
 
 The actual time between accelerometer updates may be greater or lesser than this
 value. Any change in the update interval affects all registered listeners. If
@@ -200,21 +132,7 @@ result:
 However, this moving average is only desirable if the accelerometer update
 interval is small.
 
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
-
-</div>
 
 ![](../img/flashplatformLinkIndicator.png)
 [flash.sensors.Accelerometer](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/sensors/Accelerometer.html)
@@ -222,8 +140,13 @@ More Help topics
 ![](../img/flashplatformLinkIndicator.png)
 [flash.events.AccelerometerEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/AccelerometerEvent.html)
 
-<div>
+## Adobe recommends
 
-</div>
+> <h3 id="flash-pro-cs5.5-mobile-androidios-part-2-project-2-accelerometer-and-debugging"><a href="http://goo.gl/0GkPa"><img src="../img/antonio_holguin.png" /> Flash Pro CS5.5 Mobile (Android/iOS) – Part 2: Project 2 Accelerometer and Debugging</a></h3>
+> <a href="http://goo.gl/oTba7">Antonio Holguin</a>
 
-</div>
+>  <h3 id="air-and-the-accelerometer"><a href="http://goo.gl/eHe2T"><img src="../img/michael_chaize.png" /> AIR and the Accelerometer</a></h3>
+> <a href="http://www.riagora.com/">Michaël Chaize</a>
+
+> <h3 id="air-for-android-accelerometer"><a href="http://goo.gl/X224z"><img src="../img/jon_campos.png" /> Air for Android: Accelerometer</a></h3>
+> <a href="http://www.unitedmindset.com/jonbcampos/">Jonathan Campos</a>

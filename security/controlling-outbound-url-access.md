@@ -1,7 +1,5 @@
 # Controlling outbound URL access
 
-<div>
-
 Outbound scripting and URL access (through the use of HTTP URLs, mailto: and so
 on) are achieved through use of the following APIs:
 
@@ -31,8 +29,6 @@ Set this parameter inside the PARAM or EMBED tag. If no value is set for
 `AllowScriptAccess`, the SWF file and the HTML page can communicate only if both
 are from the same domain.
 
-<div>
-
 The `AllowScriptAccess` parameter can have one of three possible values:
 `"always"`, `"sameDomain"`, or `"never"`.
 
@@ -54,8 +50,6 @@ The `AllowScriptAccess` parameter can have one of three possible values:
   serve untrusted SWF files, Adobe recommends that you create a distinct
   subdomain and place all untrusted content there.
 
-</div>
-
 Here is an example of setting the `AllowScriptAccess` tag in an HTML page to
 allow outbound URL access to a different domain:
 
@@ -65,13 +59,7 @@ allow outbound URL access to a different domain:
     	<embed name='MyMovie.swf' pluginspage='http://www.adobe.com/go/getflashplayer' src='MyMovie.swf' height='100%' width='100%' AllowScriptAccess='never'/>
     </object>
 
-</div>
-
-<div>
-
 ## Using the navigateToURL() function
-
-<div>
 
 In addition to the security setting specified by the `allowScriptAccess`
 parameter discussed above, the `navigateToURL()` function has an optional second
@@ -106,15 +94,7 @@ fails if all of the following conditions apply:
 - the SWF file is embedded with a value for `allowScriptAccess` that is not
   `"always"`.
 
-</div>
-
-</div>
-
-<div>
-
 ## For more information
-
-<div>
 
 For more information on outbound URL access, see the following entries in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html):
@@ -130,15 +110,3 @@ For more information on outbound URL access, see the following entries in the
 - The
   ` `[`flash.net.navigateToURL()`](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/package.html#navigateToURL%28%29)
   function
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

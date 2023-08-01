@@ -1,24 +1,12 @@
 # Using cue points and metadata
 
-<div>
-
 Use the NetStream callback methods to capture and process cue point and metadata
 events as the video plays.
 
-</div>
-
-<div>
-
 ## Using cue points
-
-<div>
-
-<div>
 
 The following table describes the callback methods that you can use to capture
 F4V and FLV cue points in Flash Player and AIR.
-
-<div>
 
 | Runtime                | F4V        | FLV        |
 | ---------------------- | ---------- | ---------- |
@@ -27,10 +15,6 @@ F4V and FLV cue points in Flash Player and AIR.
 | Flash Player 10        |            | OnCuePoint |
 |                        | OnMetaData | OnMetaData |
 |                        | OnXMPData  | OnXMPData  |
-
-</div>
-
-</div>
 
 The following example uses a simple `for..in` loop to iterate over each of the
 properties in the `infoObject` parameter that the `onCuePoint()` function
@@ -68,26 +52,12 @@ This code uses one of several techniques to set the object on which the callback
 method runs. You can use other techniques; for more information, see
 [Writing callback methods for metadata and cue points](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d3f.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Using video metadata
-
-<div>
 
 You can use the `OnMetaData()` and `OnXMPData()` functions to access the
 metadata information in your video file, including cue points.
 
-</div>
-
-<div>
-
 ### Using OnMetaData()
-
-<div>
 
 Metadata includes information about your video file, such as duration, width,
 height, and frame rate. The metadata information that is added to your video
@@ -127,13 +97,9 @@ The previous code generates output like the following:
     videocodecid: 4
     audiocodecid: 2
 
-<div>
-
 ![](images/tip_help.png) If your video does not have audio, the audio-related
 metadata information (such as `audiodatarate`) returns `undefined` _because no
 audio information is added to the metadata during encoding._
-
-</div>
 
 In the previous code, the cue point information was not displaying. To display
 the cue point metadata, you can use the following function which recursively
@@ -263,153 +229,139 @@ The `onMetaData()` function produced the following output for this video:
     avcprofile=88
     trackinfo=[object Object]
 
-<div>
-
 #### Using the information object
 
 The following table shows the possible values for video metadata that are passed
 to the `onMetaData()` callback function in the Object that they receive:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>Parameter</p></th>
-<th><p>Description</p></th>
-</tr>
+	<tr>
+		<th><p>Parameter</p></th>
+		<th><p>Description</p></th>
+	</tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td headers="d17e33645 "><p>aacaot</p></td>
-<td headers="d17e33648 "><p>AAC audio
-object type; 0, 1, or 2 are supported.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e33645 "><p>avclevel</p></td>
-<td headers="d17e33648 "><p>AVC IDC level
-number such as 10, 11, 20, 21, and so on.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e33645 "><p>avcprofile</p></td>
-<td headers="d17e33648 "><p>AVC profile
-number such as 55, 77, 100, and so on.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e33645 "><p>audiocodecid</p></td>
-<td headers="d17e33648 "><p>A string that
-indicates the audio codec (code/decode technique) that was used - for
-example ".Mp3" or "mp4a"</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e33645 "><p>audiodatarate</p></td>
-<td headers="d17e33648 "><p>A number that
-indicates the rate at which audio was encoded, in kilobytes per
-second.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e33645 "><p>audiodelay</p></td>
-<td headers="d17e33648 "><p>A number that
-indicates what time in the FLV file "time 0" of the original FLV file
-exists. The video content needs to be delayed by a small amount to
-properly synchronize the audio.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e33645 "><p>canSeekToEnd</p></td>
-<td headers="d17e33648 "><p>A Boolean
-value that is <samp>true</samp> if the FLV file is encoded with a
-keyframe on the last frame, which allows seeking to the end of a
-progressive -download video file. It is <samp>false</samp> if the FLV
-file is not encoded with a keyframe on the last frame.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e33645 "><p>cuePoints</p></td>
-<td headers="d17e33648 "><p>An array of
-objects, one for each cue point embedded in the FLV file. Value is
-undefined if the FLV file does not contain any cue points. Each object
-has the following properties:</p>
-<div>
-<ul class="incremental">
-<li><p><samp>type</samp>: a string that specifies the type of cue point
-as either "navigation" or "event".</p></li>
-<li><p><samp>name</samp>: a string that is the name of the cue
-point.</p></li>
-<li><p><samp>time</samp>: a number that is the time of the cue point in
-seconds with a precision of three decimal places
-(milliseconds).</p></li>
-<li><p><samp>parameters</samp>: an optional object that has name-value
-pairs that are designated by the user when creating the cue
-points.</p></li>
-</ul>
-</div></td>
-</tr>
-<tr class="odd">
-<td headers="d17e33645 "><p>duration</p></td>
-<td headers="d17e33648 "><p>A number that
-specifies the duration of the video file, in seconds.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e33645 "><p>framerate</p></td>
-<td headers="d17e33648 "><p>A number that
-is the frame rate of the FLV file.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e33645 "><p>height</p></td>
-<td headers="d17e33648 "><p>A number that
-is the height of the FLV file, in pixels.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e33645 "><p>seekpoints</p></td>
-<td headers="d17e33648 "><p>An array that
-lists the available keyframes as timestamps in milliseconds.
-Optional.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e33645 "><p>tags</p></td>
-<td headers="d17e33648 "><p>An array of
-key-value pairs that represent the information in the "ilst" atom, which
-is the equivalent of ID3 tags for MP4 files. iTunes uses these tags. Can
-be used to display artwork, if available.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e33645 "><p>trackinfo</p></td>
-<td headers="d17e33648 "><p>Object that
-provides information on all the tracks in the MP4 file, including their
-sample description ID.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e33645 "><p>videocodecid</p></td>
-<td headers="d17e33648 "><p>A string that
-is the codec version that was used to encode the video. - for example,
-"avc1" or "VP6F"</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e33645 "><p>videodatarate</p></td>
-<td headers="d17e33648 "><p>A number that
-is the video data rate of the FLV file.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e33645 "><p>videoframerate</p></td>
-<td headers="d17e33648 "><p>Framerate of
-the MP4 video.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e33645 "><p>width</p></td>
-<td headers="d17e33648 "><p>A number that
-is the width of the FLV file, in pixels.</p></td>
-</tr>
+	<tr>
+		<td ><p>aacaot</p></td>
+		<td ><p>AAC audio
+		object type; 0, 1, or 2 are supported.</p></td>
+	</tr>
+	<tr>
+		<td ><p>avclevel</p></td>
+		<td ><p>AVC IDC level
+		number such as 10, 11, 20, 21, and so on.</p></td>
+	</tr>
+	<tr>
+		<td ><p>avcprofile</p></td>
+		<td ><p>AVC profile
+		number such as 55, 77, 100, and so on.</p></td>
+	</tr>
+	<tr>
+		<td ><p>audiocodecid</p></td>
+		<td ><p>A string that
+		indicates the audio codec (code/decode technique) that was used - for
+		example ".mp3" or "mp4a"</p></td>
+	</tr>
+	<tr>
+		<td ><p>audiodatarate</p></td>
+		<td ><p>A number that
+		indicates the rate at which audio was encoded, in kilobytes per
+		second.</p></td>
+	</tr>
+	<tr>
+		<td ><p>audiodelay</p></td>
+		<td ><p>A number that
+		indicates what time in the FLV file "time 0" of the original FLV file
+		exists. The video content needs to be delayed by a small amount to
+		properly synchronize the audio.</p></td>
+	</tr>
+	<tr>
+		<td ><p>canSeekToEnd</p></td>
+		<td ><p>A Boolean
+		value that is <samp>true</samp> if the FLV file is encoded with a
+		keyframe on the last frame, which allows seeking to the end of a
+		progressive -download video file. It is <samp>false</samp> if the FLV
+		file is not encoded with a keyframe on the last frame.</p></td>
+	</tr>
+	<tr>
+		<td ><p>cuePoints</p></td>
+		<td ><p>An array of
+		objects, one for each cue point embedded in the FLV file. Value is
+		undefined if the FLV file does not contain any cue points. Each object
+		has the following properties:</p><ul class="incremental">
+		<li><p><samp>type</samp>: a string that specifies the type of cue point
+		as either "navigation" or "event".</p></li>
+		<li><p><samp>name</samp>: a string that is the name of the cue
+		point.</p></li>
+		<li><p><samp>time</samp>: a number that is the time of the cue point in
+		seconds with a precision of three decimal places
+		(milliseconds).</p></li>
+		<li><p><samp>parameters</samp>: an optional object that has name-value
+		pairs that are designated by the user when creating the cue
+		points.</p></li>
+	</ul>
+	</div></td>
+	</tr>
+	<tr>
+		<td ><p>duration</p></td>
+		<td ><p>A number that
+		specifies the duration of the video file, in seconds.</p></td>
+	</tr>
+	<tr>
+		<td ><p>framerate</p></td>
+		<td ><p>A number that
+		is the frame rate of the FLV file.</p></td>
+	</tr>
+	<tr>
+		<td ><p>height</p></td>
+		<td ><p>A number that
+		is the height of the FLV file, in pixels.</p></td>
+	</tr>
+	<tr>
+		<td ><p>seekpoints</p></td>
+		<td ><p>An array that
+		lists the available keyframes as timestamps in milliseconds.
+		Optional.</p></td>
+	</tr>
+	<tr>
+		<td ><p>tags</p></td>
+		<td ><p>An array of
+		key-value pairs that represent the information in the "ilst" atom, which
+		is the equivalent of ID3 tags for MP4 files. iTunes uses these tags. Can
+		be used to display artwork, if available.</p></td>
+	</tr>
+	<tr>
+		<td ><p>trackinfo</p></td>
+		<td ><p>Object that
+		provides information on all the tracks in the MP4 file, including their
+		sample description ID.</p></td>
+	</tr>
+	<tr>
+		<td ><p>videocodecid</p></td>
+		<td ><p>A string that
+		is the codec version that was used to encode the video. - for example,
+		"avc1" or "VP6F"</p></td>
+	</tr>
+	<tr>
+		<td ><p>videodatarate</p></td>
+		<td ><p>A number that
+		is the video data rate of the FLV file.</p></td>
+	</tr>
+	<tr>
+		<td ><p>videoframerate</p></td>
+		<td ><p>Framerate of
+		the MP4 video.</p></td>
+	</tr>
+	<tr>
+		<td ><p>width</p></td>
+		<td ><p>A number that
+		is the width of the FLV file, in pixels.</p></td>
+	</tr>
 </tbody>
 </table>
 
-</div>
-
 The following table shows the possible values for the `videocodecid` parameter:
-
-<div>
 
 | videocodecid | Codec name                                                  |
 | ------------ | ----------------------------------------------------------- |
@@ -418,11 +370,7 @@ The following table shows the possible values for the `videocodecid` parameter:
 | 4            | VP6 (SWF version 8 and later only)                          |
 | 5            | VP6 video with alpha channel (SWF version 8 and later only) |
 
-</div>
-
 The following table shows the possible values for the `audiocodecid` parameter:
-
-<div>
 
 | audiocodecid | Codec Name               |
 | ------------ | ------------------------ |
@@ -435,19 +383,7 @@ The following table shows the possible values for the `audiocodecid` parameter:
 | 10           | AAC                      |
 | 11           | Speex                    |
 
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ### Using onXMPData()
-
-<div>
 
 The `onXMPData()` callback function receives information specific to Adobe
 Extensible Metadata Platform (XMP) that is embedded in the Adobe F4V or FLV
@@ -554,41 +490,21 @@ event cue points in the XMP meta data:
     </xmpDM:markers>
     onMetaData fired
 
-<div>
-
 Note: In XMP data, time is stored as DVA Ticks rather than seconds. To compute
 the cue point time, divide the start time by the framerate. For example, the
 start time of 7695905817600 divided by a framerate of 254016000000 equals 30:30.
-
-</div>
 
 To see the complete raw XMP metadata, which includes the framerate, remove the
 comment identifiers (//'s) preceding the second and third `trace()` statements
 at the beginning of the `onXMPData()` function.
 
-<div>
-
 For more information on XMP, see:
 
-- <a href="http://partners.adobe.com/public/developer/xmp/topic.html"
-  target="_self">partners.adobe.com/public/developer/xmp/topic.html</a>
+- [partners.adobe.com/public/developer/xmp/topic.html](http://partners.adobe.com/public/developer/xmp/topic.html)
 
-- <a href="http://www.adobe.com/devnet/xmp/"
-  target="_self">www.adobe.com/devnet/xmp/</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
+- [www.adobe.com/devnet/xmp/](http://www.adobe.com/devnet/xmp/)
 
 ## Using image metadata
-
-<div>
 
 The `onImageData` event sends image data as a byte array through an AMF0 data
 channel. The data can be in JPEG, PNG, or GIF formats. Define an `onImageData()`
@@ -606,15 +522,7 @@ accesses and displays image data using an `onImageData()` callback method:
     	addChild(loader);
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## Using text metadata
-
-<div>
 
 The `onTextData` event sends text data through an AMF0 data channel. The text
 data is in UTF-8 format and contains additional information about formatting,
@@ -632,15 +540,3 @@ method displays the track ID number and corresponding track text.
     	// that should be erased
     	trace(textData.text);
     }
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

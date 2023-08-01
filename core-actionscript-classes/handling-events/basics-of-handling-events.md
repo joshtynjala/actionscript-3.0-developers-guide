@@ -1,7 +1,5 @@
 # Basics of handling events
 
-<div>
-
 You can think of events as occurrences of any kind in your SWF file that are of
 interest to you as a programmer. For example, most SWF files support user
 interaction of some sort—whether it's something as simple as responding to a
@@ -65,8 +63,6 @@ object that will dispatch the event (**eventTarget** in this code). Optionally,
 you can change the name of the variable used as the function's parameter
 (**eventObject** in this code).
 
-<div>
-
 #### Important concepts and terms
 
 The following reference list contains important terms that you will encounter
@@ -126,7 +122,3 @@ Target phase
 The point of the event flow at which an event has reached the most specific
 possible target. The target phase occurs between the capture and the bubbling
 phases.
-
-</div>
-
-</div>

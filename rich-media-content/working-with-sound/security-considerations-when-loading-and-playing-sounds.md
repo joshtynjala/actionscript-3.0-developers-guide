@@ -1,7 +1,5 @@
 # Security considerations when loading and playing sounds
 
-<div>
-
 Your application's ability to access sound data can be limited according to the
 Flash Player or AIR security model. Each sound is subject to the restrictions of
 two different security sandboxes, the sandbox for the content itself (the
@@ -59,13 +57,3 @@ The `SoundMixer.stopAll()` method also stops the playhead from continuing for
 all sounds that were loaded from external files. However, sounds that are
 embedded in FLA files and attached to frames in the timeline using the Flash
 Authoring tool might start playing again if the animation moves to a new frame.
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

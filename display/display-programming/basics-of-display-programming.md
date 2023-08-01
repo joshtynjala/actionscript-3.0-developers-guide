@@ -1,18 +1,10 @@
 # Basics of display programming
 
-<div>
-
 Each application built with ActionScript 3.0 has a hierarchy of displayed
 objects known as the _display list_, illustrated below. The display list
 contains all the visible elements in the application.
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![<Display list hierarchy>](../../img/dp_Display_List_Organization.png)
-
-</div>
 
 As the illustration shows, display elements fall into one or more of the
 following groups:
@@ -60,37 +52,27 @@ following groups:
   shows a type of DisplayObjectContainer object known as a Sprite that contains
   various display objects:
 
-  <div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-  xmlns:fo="http://www.w3.org/1999/XSL/Format"
-  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  ![<Sprite containing display objects>](../../img/dp_bananaFrame.png)
 
-  ![<Sprite containing display objects>](../../img/dp_bananaFrame.png) A.  
-  A SimpleButton object. This type of display object has different "up," "down,"
-  and "over" states.
+  **A.** A SimpleButton object. This type of display object has different "up,"
+  "down," and "over" states.
 
-  B.  
-  A Bitmap object. In this case, the Bitmap object was loaded from an external
-  JPEG through a Loader object.
+  **B.** A Bitmap object. In this case, the Bitmap object was loaded from an
+  external JPEG through a Loader object.
 
-  C.  
-  A Shape object. The "picture frame" contains a rounded rectangle that is drawn
-  in ActionScript. This Shape object has a Drop Shadow filter applied to it.
+  **C.** A Shape object. The "picture frame" contains a rounded rectangle that
+  is drawn in ActionScript. This Shape object has a Drop Shadow filter applied
+  to it.
 
-  D.  
-  A TextField object.
-
-  </div>
-
-  In the context of discussing display objects, DisplayObjectContainer objects
-  are also known as _display object containers_ or simply _containers_. As noted
-  earlier, the Stage is a display object container.
+  **D.** A TextField object. In the context of discussing display objects,
+  DisplayObjectContainer objects are also known as _display object containers_
+  or simply _containers_. As noted earlier, the Stage is a display object
+  container.
 
   Although all visible display objects inherit from the DisplayObject class, the
   type of each is of a specific subclass of DisplayObject class. For example,
   there is a constructor function for the Shape class or the Video class, but
   there is no constructor function for the DisplayObject class.
-
-<div>
 
 #### Important concepts and terms
 
@@ -157,7 +139,3 @@ Vector graphic
 A graphic that is defined in the computer as lines and shapes drawn with
 particular characteristics (such as thickness, length, size, angle, and
 position).
-
-</div>
-
-</div>

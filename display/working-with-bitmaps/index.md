@@ -1,7 +1,5 @@
 # Working with bitmaps
 
-<div>
-
 In addition to its vector drawing capabilities, ActionScript 3.0 includes the
 ability to create bitmap images or manipulate the pixel data of external bitmap
 images that are loaded into a SWF. With the ability to access and change

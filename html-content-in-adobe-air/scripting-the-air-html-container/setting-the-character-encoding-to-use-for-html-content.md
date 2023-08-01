@@ -1,7 +1,5 @@
 # Setting the character encoding to use for HTML content
 
-<div>
-
 An HTML page can specify the character encoding it uses by including `meta` tag,
 such as the following:
 
@@ -26,13 +24,3 @@ the `textEncodingFallback` property.
 
 Set the `textEncodingOverride` property or the `textEncodingFallback` property
 before loading the HTML content.
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

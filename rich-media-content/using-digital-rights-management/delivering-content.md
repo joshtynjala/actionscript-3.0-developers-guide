@@ -1,13 +1,9 @@
 # Delivering content
 
-<div>
-
 Adobe Access is agnostic to the delivery mechanism of the content as the Flash
 Player abstracts out the networking layer and simply provides the protected
 content to the Adobe Access subsystem. Hence, content can be delivered through
 HTTP, HTTP Dynamic Streaming, RTMP, or RTMPE.
-
-<div>
 
 However, you may get some issues due to the necessity of the protected content's
 metadata (usually in the form of a '.metadata' file) before Adobe Access can
@@ -35,15 +31,3 @@ appropriate metadata, depending on the content being played back.
     		videoLog.text += e.toString() + "\n";
     	}
     }
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

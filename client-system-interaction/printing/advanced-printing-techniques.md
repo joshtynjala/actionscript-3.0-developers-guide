@@ -1,7 +1,5 @@
 # Advanced printing techniques
 
-<div>
-
 Starting with Adobe AIR 2, the PrintJob class has additional properties and
 methods, and three additional classes are supported: PrintUIOptions, PaperSize,
 and PrintMethod. These changes allow additional printer workflows and give
@@ -24,13 +22,7 @@ authors greater control over the printing process. Changes include:
   multiple printing sessions. Applications can provide consistent settings each
   time the page setup and print dialogs are displayed.
 
-</div>
-
-<div>
-
 ## Print workflow changes
-
-<div>
 
 The new print workflow consists of the following steps:
 
@@ -56,15 +48,7 @@ The new print workflow consists of the following steps:
   terminated, the current print settings are retained when you reuse the
   PrintJob instance.
 
-</div>
-
-</div>
-
-<div>
-
 ## Page setup dialog
-
-<div>
 
 The `showPageSetupDialog()` method displays the operating system's Page Setup
 dialog, if the current environment supports it. Always check the
@@ -96,15 +80,7 @@ the first three pages:
     	myPrintJob.showPageSetupDialog(uiOpt);
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## Changing print settings
-
-<div>
 
 The settings for a PrintJob instance can be changed at any time after it is
 constructed. This includes changing settings between `addPage()` calls and after
@@ -171,15 +147,3 @@ information on the current printer setup:
 
 See
 [Printing example: Page setup and print options](WS059b243ca571213c-5fb15e5d124d9f70211-8000.html).
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # Sockets
 
-<div>
-
 A socket is a type of network connection established between two computer
 processes. Typically, the processes are running on two different computers
 attached to the same Internet Protocol (IP) network. However, the connected
@@ -28,13 +26,7 @@ can connect to socket servers requiring SSL or TLS security with the
 SecureSocket class. AIR applications can also send and receive Universal
 Datagram Protocol (UDP) messages with the DatagramSocket class.
 
-</div>
-
-<div>
-
 ## TCP sockets
-
-<div>
 
 The Transmission Control Protocol (TCP) provides a way to exchange messages over
 a persistent network connection. TCP guarantees that any messages sent arrive in
@@ -55,13 +47,7 @@ The following ActionScript APIs provide TCP connections:
 
 - XMLSocket — allows a client application to connect to an XMLSocket server.
 
-</div>
-
-<div>
-
 ### Binary client sockets
-
-<div>
 
 A binary socket connection is similar to an XML socket except that the client
 and server are not limited to exchanging XML messages. Instead, the connection
@@ -69,13 +55,7 @@ can transfer data as binary information. Thus, you can connect to a wider range
 of services, including mail servers (POP3, SMTP, and IMAP), and news servers
 (NNTP).
 
-</div>
-
-<div>
-
 #### Socket class
-
-<div>
 
 The Socket class enables you to make socket connections and to read and write
 raw binary data. The Socket class is useful for interoperating with servers that
@@ -98,13 +78,9 @@ chosen to match Java and the official network byte order. To change whether
 big-endian or little-endian byte order is used, you can set the `endian`
 property to `Endian.BIG_ENDIAN` or `Endian.LITTLE_ENDIAN`.
 
-<div>
-
 ![](images/tip_help.png) The Socket class inherits all the methods defined by
 the IDataInput and IDataOutput interfaces (located in the flash.utils package).
 Those methods must be used to write to and read from the Socket.
-
-</div>
 
 For more information, see:
 
@@ -116,15 +92,7 @@ For more information, see:
 
 - [socketData event](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/ProgressEvent.html#SOCKET_DATA)
 
-</div>
-
-</div>
-
-<div>
-
 #### Secure client sockets (AIR)
-
-<div>
 
 You can use the SecureSocket class to connect to socket servers that use Secure
 Sockets Layer version 4 (SSLv4) or Transport Layer Security version 1 (TLSv1). A
@@ -193,15 +161,7 @@ For more information, see:
 
 - [socketData event](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/ProgressEvent.html#SOCKET_DATA)
 
-</div>
-
-</div>
-
-<div>
-
 #### TCP socket example: Building a Telnet client
-
-<div>
 
 The Telnet example demonstrates techniques for connecting with a remote server
 and transmitting data using the Socket class. The example demonstrates the
@@ -218,50 +178,36 @@ To get the application files for this sample, see
 The Telnet application files can be found in the Samples/Telnet folder. The
 application consists of the following files:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>File</p></th>
-<th><p>Description</p></th>
-</tr>
+	<tr>
+		<th><p>File</p></th>
+		<th><p>Description</p></th>
+	</tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><p>TelnetSocket.fla</p>
-<p>or</p>
-<p>TelnetSocket.mxml</p></td>
-<td><p>The main application file consisting of the user interface for
-Flex (MXML) or Flash (FLA).</p></td>
-</tr>
-<tr class="even">
-<td><p>TelnetSocket.as</p></td>
-<td><p>Document class providing the user interface logic (Flash
-only).</p></td>
-</tr>
-<tr class="odd">
-<td><p>com/example/programmingas3/Telnet/Telnet.as</p></td>
-<td><p>Provides the Telnet client functionality for the application,
-such as connecting to a remote server, and sending, receiving, and
-displaying data.</p></td>
-</tr>
+	<tr>
+		<td><p>TelnetSocket.fla</p>
+		<p>or</p>
+		<p>TelnetSocket.mxml</p></td>
+		<td><p>The main application file consisting of the user interface for
+		Flex (MXML) or Flash (FLA).</p></td>
+	</tr>
+	<tr>
+		<td><p>TelnetSocket.as</p></td>
+		<td><p>Document class providing the user interface logic (Flash
+		only).</p></td>
+	</tr>
+	<tr>
+		<td><p>com/example/programmingas3/Telnet/Telnet.as</p></td>
+		<td><p>Provides the Telnet client functionality for the application,
+		such as connecting to a remote server, and sending, receiving, and
+		displaying data.</p></td>
+	</tr>
 </tbody>
 </table>
 
-</div>
-
-</div>
-
-<div>
-
 ##### Telnet socket application overview
-
-<div>
 
 The main TelnetSocket.mxml file is responsible for creating the user interface
 (UI) for the entire application.
@@ -301,15 +247,7 @@ to the remote server. The final method in the main application file,
 `sendCommand()`, is used to send the user's commands to the remote server as a
 ByteArray object.
 
-</div>
-
-</div>
-
-<div>
-
 ##### Telnet class overview
-
-<div>
 
 The Telnet class is responsible for connecting to the remote Telnet server and
 sending/receiving data.
@@ -371,15 +309,7 @@ users.
     	}
     }
 
-</div>
-
-</div>
-
-<div>
-
 ##### Writing data to a socket
-
-<div>
 
 To write data to a socket connection, you call any of the write methods in the
 Socket class. These write methods include `writeBoolean()`, `writeByte()`,
@@ -398,15 +328,7 @@ is as follows:
 This method gets called by the `sendCommand()` method of the main application
 file.
 
-</div>
-
-</div>
-
-<div>
-
 ##### Displaying messages from the socket server
-
-<div>
 
 Whenever a message is received from the socket server, or an event occurs, the
 custom `msg()` method is called. This method appends a string to the TextArea on
@@ -423,15 +345,7 @@ If you didn't automatically scroll the contents of the TextArea component, users
 would need to manually drag the scroll bars on the text area to see the latest
 response from the server.
 
-</div>
-
-</div>
-
-<div>
-
 ##### Scrolling a TextArea component
-
-<div>
 
 The `setScroll()` method contains a single line of ActionScript that scrolls the
 TextArea component's contents vertically so the user can see the last line of
@@ -446,19 +360,7 @@ This method sets the `verticalScrollPosition` property, which is the line number
 of the top row of characters that is currently displayed, and sets it to the
 value of the `maxVerticalScrollPosition` property.
 
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ### XML sockets
-
-<div>
 
 An XML socket lets you create a connection to a remote server that remains open
 until explicitly closed. You can exchange string data, such as XML, between the
@@ -500,13 +402,9 @@ XMLSocket object to connect to the server:
   domains. For details on cross-domain policy files, see
   [AIR security](WS5b3ccc516d4fbf351e63e3d118666ade46-7fa3.html).
 
-<div>
-
 Note: Setting up a server to communicate with the XMLSocket object can be
 challenging. If your application does not require real-time interactivity, use
 the URLLoader class instead of the XMLSocket class.
-
-</div>
 
 You can use the `XMLSocket.connect()` and `XMLSocket.send()` methods of the
 XMLSocket class to transfer XML to and from a server over a socket connection.
@@ -526,13 +424,7 @@ following occurs:
 
 - The connection is broken (for example, the modem disconnects).
 
-</div>
-
-<div>
-
 #### Connecting to a server with the XMLSocket class
-
-<div>
 
 To create a socket connection, you must create a server-side application to wait
 for the socket connection request and send a response to the Flash Player or AIR
@@ -548,13 +440,7 @@ protocol used by the XMLSocket class:
 - An unlimited number of XML messages can be sent and received over a single
   XMLSocket connection.
 
-</div>
-
-<div>
-
 ##### Creating and connecting to a Java XML socket server
-
-<div>
 
 The following code demonstrates a simple XMLSocket server written in Java that
 accepts incoming connections and displays the received messages in the command
@@ -642,13 +528,9 @@ You can start the XMLSocket server by opening a command prompt and typing
 local computer or network; it doesn't need to be placed in the root directory of
 your web server.
 
-<div>
-
 ![](images/tip_help.png) If you're unable to start the server because the files
 are not located within the Java classpath, try starting the server with
 `java -classpath . SimpleServer` _._
-
-</div>
 
 To connect to the XMLSocket from your application, you need to create a new
 instance of the XMLSocket class, and call the `XMLSocket.connect()` method while
@@ -677,29 +559,13 @@ The `XMLSocket.send()` method does not return a value that indicates whether the
 data was successfully transmitted. If an error occurred while trying to send
 data, an IOError error is thrown.
 
-<div>
-
 ![](images/tip_help.png) Each message you send to the XML socket server must be
 terminated by a newline ( `\n` _) character._
-
-</div>
 
 For more information, see
 [XMLSocket](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/XMLSocket.html).
 
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ### Server sockets
-
-<div>
 
 Use the ServerSocket class to allow other processes to connect to your
 application using a Transport Control Protocol (TCP) socket. The connecting
@@ -827,17 +693,7 @@ For more information, see:
 
 - [Socket](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/Socket.html)
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## UDP sockets (AIR)
-
-<div>
 
 The Universal Datagram Protocol (UDP) provides a way to exchange messages over a
 stateless network connection. UDP provides no guarantees that messages are
@@ -951,15 +807,7 @@ For more information, see:
 
 - [ByteArray](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/utils/ByteArray.html)
 
-</div>
-
-</div>
-
-<div>
-
 ## IPv6 addresses
-
-<div>
 
 Flash Player 9.0.115.0 and later support IPv6 (Internet Protocol version 6).
 IPv6 is a version of Internet Protocol that supports 128-bit addresses (an
@@ -1000,29 +848,9 @@ The IPv6 values that Flash Player returns have the following exceptions:
 - IPv4 compatible addresses are output as \[::a.b.c.d\], where a.b.c.d is a
   typical IPv4 dotted-decimal value.
 
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
 
 [Connecting to sockets](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c63.html)
 
-</div>
-
 ![](../img/flashplatformLinkIndicator.png)
 [flash.net package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/package-detail.html)
-
-<div>
-
-</div>
-
-</div>

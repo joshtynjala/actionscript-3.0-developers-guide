@@ -1,7 +1,5 @@
 # Creating and applying filters
 
-<div>
-
 Filters allow you to apply a range of effects to bitmap and display objects,
 ranging from drop shadows to bevels and blurs. Each filter is defined as a
 class, so applying filters involves creating instances of filter objects, which
@@ -10,13 +8,7 @@ instance of a filter object, it can easily be applied to a display object by
 using the object's `filters` property, or in the case of a BitmapData object, by
 using the `applyFilter()` method.
 
-</div>
-
-<div>
-
 ## Creating a filter
-
-<div>
 
 To create a filter object, simply call the constructor method of your selected
 filter class. For example, to create a DropShadowFilter object, use the
@@ -29,21 +21,11 @@ Although not shown here, the `DropShadowFilter()` constructor (like all the
 filter classes' constructors) accepts several optional parameters that can be
 used to customize the appearance of the filter effect.
 
-</div>
-
-</div>
-
-<div>
-
 ## Applying a filter
-
-<div>
 
 Once you've constructed a filter object, you can apply it to a display object or
 a BitmapData object; how you apply the filter depends on the object to which
 you're applying it.
-
-<div>
 
 #### Applying a filter to a display object
 
@@ -121,10 +103,6 @@ braces), creates a BlurFilter instance as an element in the Array, and assigns
 that Array to the `filters` property of the display object named
 `myDisplayObject`.
 
-</div>
-
-<div>
-
 #### Removing filters from a display object
 
 Removing all filters from a display object is as simple as assigning a null
@@ -136,10 +114,6 @@ If you've applied multiple filters to an object and want to remove only one of
 the filters, you must go through several steps to change the `filters` property
 array. For more information, see
 [Potential issues for working with filters](./creating-and-applying-filters.md#potential-issues-for-working-with-filters).
-
-</div>
-
-<div>
 
 #### Applying a filter to a BitmapData object
 
@@ -155,17 +129,7 @@ producing a new, filtered image. This method does not modify the original source
 image; instead, the result of the filter being applied to the source image is
 stored in the BitmapData instance on which the `applyFilter()` method is called.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## How filters work
-
-<div>
 
 Display object filtering works by caching a copy of the original object as a
 transparent bitmap.
@@ -180,20 +144,10 @@ unfiltered source display object and another for the final image after
 filtering. The final image is used when rendering. As long as the display object
 does not change, the final image does not need updating.
 
-</div>
-
-</div>
-
-<div>
-
 ## Potential issues for working with filters
-
-<div>
 
 There are several potential sources of confusion or trouble to keep in mind when
 you're working with filters.
-
-<div>
 
 #### Filters and bitmap caching
 
@@ -203,10 +157,6 @@ property is set to `false`, the object's `cacheAsBitmap` property is
 automatically set to `true`. If you later remove all the filters from the
 display object, the `cacheAsBitmap` property is reset to the last value it was
 set to.
-
-</div>
-
-<div>
 
 #### Changing filters at run time
 
@@ -222,10 +172,6 @@ property of the display object. In more complex cases, you might need to keep a
 separate master array of filters. You make any changes to that master filter
 array, and reassign the master array to the display object's `filters` property
 after each change.
-
-</div>
-
-<div>
 
 #### Adding an additional filter
 
@@ -253,10 +199,6 @@ when the display object is clicked, the `addFilters()` function is called. In:
     }
 
     myDisplayObject.addEventListener(MouseEvent.CLICK, addFilters);
-
-</div>
-
-<div>
 
 #### Removing one filter from a set of filters
 
@@ -306,10 +248,6 @@ from a display object:
 
     // Apply the new set of filters to the display object.
     filteredObject.filters = tempFilters;
-
-</div>
-
-<div>
 
 #### Determining a filter's index
 
@@ -423,10 +361,6 @@ rather than references to the original filter objects. Consequently, if in the
 preceding example you try to determine the index of `filterToRemove` by
 comparing it to the filters in a temporary filters array, no match is found.
 
-</div>
-
-<div>
-
 #### Filters and object transformations
 
 No filtered region—a drop shadow, for example—outside of a display object's
@@ -447,10 +381,6 @@ You can animate an instance with a filter to create realistic effects, or nest
 instances and use the BitmapData class to animate filters to achieve this
 effect.
 
-</div>
-
-<div>
-
 #### Filters and Bitmap objects
 
 When you apply any filter to a BitmapData object, the `cacheAsBitmap` property
@@ -464,9 +394,3 @@ stretched or distorted.
 
 If you clear all filters for a display object, the `cacheAsBitmap` property is
 reset to what it was before the filter was applied.
-
-</div>
-
-</div>
-
-</div>

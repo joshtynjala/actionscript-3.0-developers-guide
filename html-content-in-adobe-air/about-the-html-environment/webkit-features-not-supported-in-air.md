@@ -1,7 +1,5 @@
 # WebKit features not supported in AIR
 
-<div>
-
 AIR does not support the following features available in WebKit or Safari 4:
 
 - Cross-domain messaging via window.postMessage (AIR provides its own
@@ -43,8 +41,6 @@ AIR does not support the following features available in WebKit or Safari 4:
 The following lists contain specific JavaScript APIs, HTML elements, and CSS
 properties and values that AIR does not support:
 
-<div>
-
 #### Unsupported JavaScript Window object members:
 
 - applicationCache()
@@ -57,19 +53,11 @@ properties and values that AIR does not support:
 
 - document.print()
 
-</div>
-
-<div>
-
 #### Unsupported HTML tags:
 
 - audio
 
 - video
-
-</div>
-
-<div>
 
 #### Unsupported HTML attributes:
 
@@ -113,10 +101,6 @@ properties and values that AIR does not support:
 
 - sandbox
 
-</div>
-
-<div>
-
 #### Unsupported JavaScript events:
 
 - beforeload
@@ -142,10 +126,6 @@ properties and values that AIR does not support:
 - webkitbeginfullscreen
 
 - webkitendfullscreen
-
-</div>
-
-<div>
 
 #### Unsupported CSS properties:
 
@@ -178,10 +158,6 @@ properties and values that AIR does not support:
 - -webkit-color-correction
 
 - -webkit-font-smoothing
-
-</div>
-
-<div>
 
 #### Unsupported CSS values:
 
@@ -274,15 +250,3 @@ properties and values that AIR does not support:
   - upper-norwegian
 
 - -wap-marquee (display property)
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

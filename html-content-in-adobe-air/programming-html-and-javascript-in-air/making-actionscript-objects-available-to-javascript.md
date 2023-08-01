@@ -1,7 +1,5 @@
 # Making ActionScript objects available to JavaScript
 
-<div>
-
 JavaScript in the HTML page loaded by an HTMLLoader object can call the classes,
 objects, and functions defined in the ActionScript execution context using the
 `window.runtime`, `window.htmlLoader`, and `window.nativeWindow` properties of
@@ -9,13 +7,7 @@ the HTML page. You can also make ActionScript objects and functions available to
 JavaScript code by creating references to them within the JavaScript execution
 context.
 
-</div>
-
-<div>
-
 ## A basic example of accessing JavaScript objects from ActionScript
-
-<div>
 
 The following example illustrates how to add properties referencing ActionScript
 objects to the global window object of an HTML page:
@@ -60,15 +52,7 @@ construction sequence that any scripts defined in the page can access them. If
 you wait for the `complete` event, only scripts in the page that run after the
 page `load` event can access the added objects.
 
-</div>
-
-</div>
-
-<div>
-
 ## Making class definitions available to JavaScript
-
-<div>
 
 To make the ActionScript classes of your application available in JavaScript,
 you can assign the loaded HTML content to the application domain containing the
@@ -93,15 +77,7 @@ assign, the page uses a default application domain instead. For example, if you
 load a remote page from the Internet, you could not assign
 ApplicationDomain.currentDomain as the application domain of the page.
 
-</div>
-
-</div>
-
-<div>
-
 ## Removing event listeners
-
-<div>
 
 When you add JavaScript event listeners to objects outside the current page,
 including runtime objects, objects in loaded SWF content, and even JavaScript
@@ -112,15 +88,3 @@ following error message: "The application attempted to reference a JavaScript
 object in an HTML page that is no longer loaded." Removing unneeded event
 listeners also lets AIR reclaim the associated memory. For more information, see
 [Removing event listeners in HTML pages that navigate](WS5b3ccc516d4fbf351e63e3d118666ade46-7ec3.html).
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

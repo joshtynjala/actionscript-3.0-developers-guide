@@ -1,7 +1,5 @@
 # Full-screen interactive mode security
 
-<div>
-
 Flash Player 11.3 and later support full-screen interactive mode, in which
 content running in Flash Player can fill the entire screen _and accept text
 input_ . To enter full-screen interactive mode, the `displayState` property of
@@ -53,13 +51,3 @@ details, see
 
 In a browser, a SWF file must be contained in an HTML page to allow full-screen
 interactive mode.
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

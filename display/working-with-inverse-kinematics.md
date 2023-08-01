@@ -79,22 +79,13 @@ of an IKArmature named `Axle`. The IKMover class moves the armature in
 synchronization with the rotation of wheel. The IKBone, `ikBone2`, in the
 armature is attached to the wheel at its tail joint.
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](../../img/ik_wheel_callouts.png)
 
-A.  
-Wheel
+**A.** Wheel
 
-B.  
-Axle
+**B.** Axle
 
-C.  
-ikBone2
-
-</div>
+**C.** ikBone2
 
 At runtime, the wheel spins in association with the `__motion_Wheel` motion
 tween discussed in
@@ -103,13 +94,7 @@ An IKMover object initiates and controls the movement of the axle. The following
 figure shows two snapshots of the axle armature attached to the spinning wheel
 at different frames in the rotation.
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![Moving IK armature in two different positions](../../img/ik_wheel.png)
-
-</div>
 
 At runtime, the following ActionScript:
 

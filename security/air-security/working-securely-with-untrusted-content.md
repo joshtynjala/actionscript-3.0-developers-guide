@@ -1,19 +1,11 @@
 # Working securely with untrusted content
 
-<div>
-
 Content not assigned to the application sandbox can provide additional scripting
 functionality to your application, but only if it meets the security criteria of
 the runtime. This topic explains the AIR security contract with non-application
 content.
 
-</div>
-
-<div>
-
 ## Security.allowDomain()
-
-<div>
 
 AIR applications restrict scripting access for non-application content more
 stringently than the Flash Player browser plug-in restricts scripting access for
@@ -25,15 +17,7 @@ applications, since it would grant unreasonable access unto the non-application
 file into the user's file system. Remote files cannot directly access the
 application sandbox, regardless of calls to the `Security.allowDomain()` method.
 
-</div>
-
-</div>
-
-<div>
-
 ## Scripting between application and non-application content
-
-<div>
 
 AIR applications that script between application and non-application content
 have more complex security arrangements. Files that are not in the application
@@ -62,15 +46,7 @@ and loadee content without exposing object references.
 For more information on how to securely use sandbox bridges, see
 [Scripting between content in different domains](WS5b3ccc516d4fbf351e63e3d118666ade46-7e5c.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Protection against dynamically generating unsafe SWF content
-
-<div>
 
 The `Loader.loadBytes()` method provides a way for an application to generate
 SWF content from a byte array. However, injection attacks on data loaded from
@@ -98,22 +74,6 @@ If you call `loadBytes()` to load SWF content and the
 `allowLoadBytesCodeExecution` property of the LoaderContext object is set to
 `false` (the default), the Loader object throws a SecurityError exception.
 
-<div>
-
 Note: In a future release of Adobe AIR, this API may change. When that occurs,
 you may need to recompile content that uses the `allowLoadBytesCodeExecution`
 property of the LoaderContext class.
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

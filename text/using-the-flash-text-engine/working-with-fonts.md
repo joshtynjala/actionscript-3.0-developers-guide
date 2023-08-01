@@ -1,26 +1,14 @@
 # Working with fonts
 
-<div>
-
 The `FontDescription` object is used in conjunction with `ElementFormat` to
 identify a font face and define some of its characteristics. These
 characteristics include the font name, weight, posture, rendering, and how to
 find the font (device versus embedded).
 
-<div>
-
 Note: FTE does not support Type 1 fonts or bitmap fonts such as Type 3, ATC,
 sfnt-wrapped CID, or Naked CID.
 
-</div>
-
-</div>
-
-<div>
-
 ## Defining font characteristics (FontDescription object)
-
-<div>
 
 The `fontName` property of the `FontDescription` object can be a single name or
 a comma-separated list of names. For example, in a list such as "Arial,
@@ -37,24 +25,12 @@ The `fontPosture` property can either be set to the default (
 property can be set to the default ( `FontWeight.NORMAL`) or to bold (
 `FontWeight.BOLD`).
 
-<div>
-
     var fd1:FontDescription = new FontDescription();
     fd1.fontName = "Arial, Helvetica, _sans";
     fd1.fontPosture = FontPosture.NORMAL;
     fd1.fontWeight = FontWeight.BOLD;
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Embedded versus device fonts
-
-<div>
 
 The `fontLookup` property of the `FontDescription` object specifies whether the
 text engine looks for a device font or embedded font to render text. If a device
@@ -67,23 +43,11 @@ the specified font is not found, a fallback device font is used.
 Device fonts result in a smaller SWF file size. Embedded fonts give you greater
 fidelity across platforms.
 
-<div>
-
     var fd1:FontDescription = new FontDescription();
     fd1.fontLookup = FontLookup.EMBEDDED_CFF;
     fd1.fontName = "Garamond, _serif";
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Rendering mode and hinting
-
-<div>
 
 CFF (Compact Font Format) rendering is available starting with Flash Player 10
 and Adobe AIR 1.5. This type of font rendering makes text more legible, and
@@ -99,23 +63,11 @@ font's horizontal stems are fit to the subpixel grid. The default value,
 `CFFHinting.NONE` removes hinting, which is appropriate for animation or for
 large font sizes.
 
-<div>
-
     var fd1:FontDescription = new FontDescription();
     fd1.renderingMode = RenderingMode.CFF;
     fd1.cffHinting = CFFHinting.HORIZONTAL_STEM;
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Locking and cloning FontDescription
-
-<div>
 
 When a `FontDescription` object is assigned to an `ElementFormat`, its `locked`
 property is automatically set to `true`. Attempting to modify a locked
@@ -128,8 +80,6 @@ the object. The properties of this unlocked object can be changed, and it can
 then be assigned to the `ElementFormat`. Any new lines created from this
 `TextElement` have the new formatting. Previous lines created from this same
 object are unchanged.
-
-<div>
 
     package
     {
@@ -165,17 +115,3 @@ object are unchanged.
     		}
     	}
     }
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

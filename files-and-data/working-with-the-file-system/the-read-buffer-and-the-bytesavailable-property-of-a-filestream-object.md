@@ -1,7 +1,5 @@
 # The read buffer and the bytesAvailable property of a FileStream object
 
-<div>
-
 When a FileStream object with read capabilities (one in which the `fileMode`
 parameter of the `open()` or `openAsync()` method was set to `READ` or `UPDATE`)
 is opened, the runtime stores the data in an internal buffer. The FileStream
@@ -89,13 +87,3 @@ starts reading data into the read buffer, starting from the position specified
 by the `position` property. The `position` property may be the position of the
 last byte written, or it may be a different position, if the user specifies a
 different value for the `position` object after the write operation.
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

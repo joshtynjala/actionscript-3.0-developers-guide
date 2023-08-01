@@ -1,7 +1,5 @@
 # Making textures with noise functions
 
-<div>
-
 To modify the appearance of a bitmap, you can apply a noise effect to it, using
 either the `noise()` method or the `perlinNoise()` methods. A noise effect can
 be likened to the static that appears on an untuned television screen.
@@ -136,5 +134,3 @@ The following example creates a 150 x 150 pixel BitmapData object that calls the
             }
         }
     }
-
-</div>

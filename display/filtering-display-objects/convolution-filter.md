@@ -1,7 +1,5 @@
 # Convolution filter
 
-<div>
-
 The ConvolutionFilter class can be used to apply a wide range of imaging
 transformations to BitmapData objects or display objects, such as blurring, edge
 detection, sharpening, embossing, and beveling.
@@ -124,5 +122,3 @@ values for different effects using a three by three matrix:
   negative matrix values added to the positive matrix values result in 1 (or 0
   in the case of edge detection, but the `divisor` property's value cannot be
   0).
-
-</div>

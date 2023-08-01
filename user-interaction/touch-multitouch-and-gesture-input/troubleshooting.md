@@ -1,7 +1,5 @@
 # Troubleshooting
 
-<div>
-
 Hardware and software support for touch input is changing, rapidly. This
 reference does not maintain a list of every device an operating system and
 software combination that supports multitouch. However, it provides guidance on
@@ -29,8 +27,6 @@ operating systems. You can explore individual API entries here, starting with
 the Multitouch class:
 <https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Multitouch.html>.
 
-<div>
-
 Here are some common gesture and touch descriptions:
 
 Pan  
@@ -53,14 +49,10 @@ toward each other to zoom out.
 Press-and-tap  
 Move or press one finger, then tap the surface with another.
 
-</div>
-
 Each device has its own documentation about the gestures the device supports and
 how to perform each gesture on that device. In general, the user must remove all
 fingers from contact with the device between gestures, depending upon the
 operating system.
-
-<div>
 
 If you find your application is not responding to touch events or gestures, test
 the following:
@@ -138,17 +130,7 @@ the following:
     support only one, some none. Test your application's deployment environment
     to be sure.
 
-</div>
-
-</div>
-
-<div>
-
 ## Known Issues
-
-<div>
-
-<div>
 
 The following are known issues related to touch input:
 
@@ -162,9 +144,7 @@ The following are known issues related to touch input:
         	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
         </head>
 
-2.  <div>
-
-    Windows 7 (and possibly other operating systems), the user must lift the
+2.  Windows 7 (and possibly other operating systems), the user must lift the
     pointing device (or fingers) off the screen between gestures. For example:,
     to rotate and zoom an image:
 
@@ -173,8 +153,6 @@ The following are known issues related to touch input:
     - Lift your fingers off the screen.
 
     - Put your fingers back onto the screen and perform the zoom gesture.
-
-    </div>
 
 3.  Windows 7 (and possibly other operating systems), the rotate and zoom
     gestures don't always generate an "update" phase if the user performs the
@@ -185,17 +163,3 @@ The following are known issues related to touch input:
 
 5.  For Mac OS 10.5.3 and later, the `Multitouch.supportsGestureEvents` value is
     always `true`, even if the hardware does not support gesture events.
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

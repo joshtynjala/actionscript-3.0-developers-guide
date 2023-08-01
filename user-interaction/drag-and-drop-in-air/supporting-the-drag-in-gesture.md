@@ -1,18 +1,10 @@
 # Supporting the drag-in gesture
 
-<div>
-
 To support the drag-in gesture, your application (or, more typically, a visual
 component of your application) must respond to `nativeDragEnter` or
 `nativeDragOver` events.
 
-</div>
-
-<div>
-
 ## Steps in a typical drop operation
-
-<div>
 
 The following sequence of events is typical for a drop operation:
 
@@ -38,15 +30,7 @@ The following sequence of events is typical for a drop operation:
     initiating interactive object dispatches a `nativeDragComplete` event. If
     the gesture originated outside AIR, no feedback is sent.
 
-</div>
-
-</div>
-
-<div>
-
 ## Acknowledging a drag-in gesture
-
-<div>
 
 When a user drags a clipboard item into the bounds of a visual component, the
 component dispatches `nativeDragEnter` and `nativeDragOver` events. To determine
@@ -89,15 +73,7 @@ clipboard being dragged contains text-format data.
     	}
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## Completing the drop
-
-<div>
 
 When the user drops a dragged item on an interactive object that has accepted
 the gesture, the interactive object dispatches a `nativeDragDrop` event. The
@@ -125,21 +101,11 @@ event:
 Once the event handler exits, the Clipboard object is no longer valid. Any
 attempt to access the object or its data generates an error.
 
-</div>
-
-</div>
-
-<div>
-
 ## Updating the visual appearance of a component
-
-<div>
 
 A component can update its visual appearance based on the NativeDragEvent
 events. The following table describes the types of changes that a typical
 component would make in response to the different events:
-
-<div>
 
 | Event              | Description                                                                                                                                                                                                                          |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -150,17 +116,7 @@ component would make in response to the different events:
 | nativeDragExit     | A potential receiving interactive object can use this event to restore its state when a drag gesture moves outside its bounds.                                                                                                       |
 | nativeDragComplete | The initiating interactive object can use this event to update its associated data model, such as by removing an item from a list, and to restore its visual state.                                                                  |
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Tracking mouse position during a drag-in gesture
-
-<div>
 
 While a drag gesture remains over a component, that component dispatches
 `nativeDragOver` events. These events are dispatched every few milliseconds and
@@ -172,15 +128,3 @@ displayed a bitmap containing a street map and you wanted to highlight zones on
 the map when the user dragged information into them, you could use the mouse
 coordinates reported in the `nativeDragOver` event to track the mouse position
 within the map.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

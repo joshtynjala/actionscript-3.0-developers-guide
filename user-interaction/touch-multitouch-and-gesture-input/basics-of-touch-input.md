@@ -1,7 +1,5 @@
 # Basics of touch input
 
-<div>
-
 When the Flash Platform is running in an environment that supports touch input,
 InteractiveObject instances can listen for touch events and call handlers.
 Generally, you handle touch, multitouch, and gesture events as you would other
@@ -22,28 +20,16 @@ it can simply ignore the input altogether.
 
 The following diagram shows the flow of input from user to runtime:
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 <a href="#"
 onclick="return showHideImage(&#39;ig_touch_flow&#39;, this);">View full size
 graphic</a> ![](images/ig_touch_flow.png)
 
-<div>
-
 Flow of input from user to the Flash Platform runtime
-
-</div>
-
-</div>
 
 Fortunately, the ActionScript API for developing touch applications includes
 classes, methods, and properties to determine the support for touch or
 multitouch input in the runtime environment. The API you use to determine
 support for touch input are the "discovery API" for touch event handling.
-
-<div>
 
 #### Important concepts and terms
 
@@ -91,15 +77,7 @@ against a touch-enabled device and then taps with another finger or pointing
 device. This gesture is often used to simulate a mouse right-click in multitouch
 applications.
 
-</div>
-
-</div>
-
-<div>
-
 ## The touch input API structure
-
-<div>
 
 The ActionScript touch input API is designed to address the fact that touch
 input handling depends on the hardware and software environment of the Flash
@@ -108,13 +86,7 @@ application development: discovery, events, and phases. Coordinate these API to
 produce a predictable and responsive experience for the user; even if the target
 device is unknown as you develop an application.
 
-</div>
-
-<div>
-
 ### Discovery
-
-<div>
 
 The discovery API provides the ability to test the hardware and software
 environment at runtime. The values populated by the runtime determine the touch
@@ -124,17 +96,7 @@ to mouse events (instead of touch events in case some touch input is not
 supported by the environment). For more information, see
 [Touch support discovery](WS7aa9c23539e7935d-52b3e55a1259fd2d9db-8000.html).
 
-</div>
-
-</div>
-
-<div>
-
 ### Events
-
-<div>
-
-<div>
 
 ActionScript manages touch input events with event listeners and event handlers
 as it does other events. However, touch input event handling also must take into
@@ -152,8 +114,6 @@ account:
 - An application can respond to multiple, simultaneous touch events, and handle
   each one separately.
 
-</div>
-
 Typically, use the discovery API to conditionally handle the events your
 application handles, and how they are handled. Once the application knows the
 runtime environment, it can call the appropriate handler or establish the
@@ -164,15 +124,7 @@ information, see
 [Touch event handling](WS1ca064e08d7aa93023c59dfc1257b16a3d6-7ffe.html) and
 [Gesture event handling](WS1ca064e08d7aa93023c59dfc1257b16a3d6-7ffd.html).
 
-</div>
-
-</div>
-
-<div>
-
 ### Phases
-
-<div>
 
 For touch and multitouch applications, touch event objects contain properties to
 track the phases of user interaction. Write ActionScript to handle phases like
@@ -188,17 +140,3 @@ individually, and handle each accordingly.
 For a gesture, interpret specific information about the transformation of the
 gesture as it occurs. Track the coordinates of the point of contact (or several)
 as they move across the screen.
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

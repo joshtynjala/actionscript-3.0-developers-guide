@@ -1,18 +1,10 @@
 # Core display classes
 
-<div>
-
 The ActionScript 3.0 flash.display package includes classes for visual objects
 that can appear in Flash Player or AIR. The following illustration shows the
 subclass relationships of these core display object classes.
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](../../img/dp_DisplayObject_subclasses_popup.png)
-
-</div>
 
 The illustration shows the class inheritance of display object classes. Note
 that some of these classes, specifically StaticText, TextField, and Video, are
@@ -135,5 +127,3 @@ issues involving TLF with RSL preloading. For more information, see
 - fl.display.ProLoader—Analogous to flash.display.Loader
 
 - fl.display.ProLoaderInfo—Analogous to flash.display.LoaderInfo
-
-</div>

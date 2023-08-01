@@ -1,7 +1,5 @@
 # Glow filter
 
-<div>
-
 The GlowFilter class applies a lighting effect to display objects, making it
 appear that a light is being shined up from underneath the object to create a
 soft glow.
@@ -36,5 +34,3 @@ filter to it:
     glow.quality = BitmapFilterQuality.MEDIUM;
 
     crossGraphic.filters = [glow];
-
-</div>

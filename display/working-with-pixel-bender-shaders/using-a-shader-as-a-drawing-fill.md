@@ -1,7 +1,5 @@
 # Using a shader as a drawing fill
 
-<div>
-
 When you use a shader to create a drawing fill, you use the drawing api methods
 to create a vector shape. The shader's output is used to fill in the shape, in
 the same way that any bitmap image can be used as a bitmap fill with the drawing
@@ -24,22 +22,12 @@ example, the shader creates a three-point gradient. This gradient has three
 colors, each at the point of a triangle, with a gradient blend between them. In
 addition, the colors rotate to create an animated spinning color effect.
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](../../img/sb_drawing_fill_three_point_gradient.png)
-
-</div>
-
-<div>
 
 Note: The code for this example was written by Petri Leskinen. Thank you Petri
 for sharing this example. You can see more of Petri's examples and tutorials at
 <a href="http://pixelero.wordpress.com/"
 target="_self">http://pixelero.wordpress.com/</a>.
-
-</div>
 
 The ActionScript code is in three methods:
 
@@ -214,14 +202,8 @@ to create the "ThreePointGradient.pbj" Pixel Bender bytecode file:
         }
     }
 
-<div>
-
 Note: If you use a shader fill when rendering under the graphics processing unit
 (GPU), the filled area will be colored cyan.
 
-</div>
-
 For more information about drawing shapes using the drawing api, see
 [Using the drawing API](../using-the-drawing-api/index.md).
-
-</div>

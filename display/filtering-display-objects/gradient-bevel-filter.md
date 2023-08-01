@@ -1,7 +1,5 @@
 # Gradient bevel filter
 
-<div>
-
 The GradientBevelFilter class lets you apply an enhanced bevel effect to display
 objects or BitmapData objects. Using a gradient color on the bevel greatly
 improves the spatial depth of the bevel, giving edges a more realistic, 3D
@@ -40,5 +38,3 @@ the Shape class and applies a gradient bevel filter to it.
 
     // Add the graphic to the display list.
     addChild(box);
-
-</div>

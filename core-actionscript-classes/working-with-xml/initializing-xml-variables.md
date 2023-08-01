@@ -1,7 +1,5 @@
 # Initializing XML variables
 
-<div>
-
 You can assign an XML literal to an XML object, as follows:
 
     var myXML:XML =
@@ -69,5 +67,3 @@ information, see the
 [XMLSocket](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/XMLSocket.html)
 class listing in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
-
-</div>

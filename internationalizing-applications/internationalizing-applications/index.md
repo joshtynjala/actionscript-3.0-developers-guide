@@ -1,7 +1,5 @@
 # Internationalizing applications
 
-<div>
-
 The flash.globalization package makes it easier to create international software
 that adapts to the conventions of different languages and regions.
 
@@ -15,21 +13,9 @@ that adapts to the conventions of different languages and regions.
 - [Case conversion](WS9b644acd4ebe59998b99a90125fc4fecfb-7ff7.html)
 - [Example: Internationalizing a stock ticker application](WS9b644acd4ebe59998b99a90125fc4fecfb-7ff6.html)
 
-</div>
-
-<div>
-
-<div>
-
 More Help topics
 
-</div>
-
-<div>
-
 [Localizing applications](WS9b644acd4ebe59993a5b57f812214f2074b-8000.html)
-
-</div>
 
 ![](../../img/flashplatformLinkIndicator.png)
 [flash.globalization package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/globalization/package-detail.html)
@@ -41,9 +27,3 @@ More Help topics
 [Localizing AIR applications](https://help.adobe.com/en_US/air/build/WSB2927578-20D8-4065-99F3-00ACE6511EEE.html)
 
 [Charles Bihis: Want to Localize your Flex/AIR Apps?](http://blogs.adobe.com/charles/2011/02/want-to-localize-your-flexair-apps-its-easy-ill-show-you-how-again.html)
-
-<div>
-
-</div>
-
-</div>

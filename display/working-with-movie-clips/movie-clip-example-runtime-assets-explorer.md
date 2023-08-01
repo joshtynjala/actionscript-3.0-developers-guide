@@ -1,7 +1,5 @@
 # Movie clip example: RuntimeAssetsExplorer
 
-<div>
-
 The Export for ActionScript functionality can be especially advantageous for
 libraries that may be useful across more than one project. If Flash Player or
 AIR executes a SWF file, symbols that have been exported to ActionScript are
@@ -33,71 +31,59 @@ To get the application files for this sample, download the
 The RuntimeAssetsExplorer application files can be found in the folder
 Samples/RuntimeAssetsExplorer. The application consists of the following files:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>File</p></th>
-<th><p>Description</p></th>
-</tr>
+    <tr>
+        <th><p>File</p></th>
+        <th><p>Description</p></th>
+    </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td headers="d17e24229 "><p>RuntimeAssetsExample.mxml</p>
-<p>or</p>
-<p>RuntimeAssetsExample.fla</p></td>
-<td headers="d17e24232 "><p>The user
-interface for the application for Flex (MXML) or Flash (FLA).</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e24229 "><p>RuntimeAssetsExample.as</p></td>
-<td headers="d17e24232 "><p>Document
-class for the Flash (FLA) application.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e24229 "><p>GeometricAssets.as</p></td>
-<td headers="d17e24232 "><p>An example
-class that implements the RuntimeAsset interface.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e24229 "><p>GeometricAssets.fla</p></td>
-<td headers="d17e24232 "><p>A FLA file
-linked to the GeometricAssets class (the document class of the FLA)
-containing symbols that are exported for ActionScript.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e24229 "><p>com/example/programmingas3/runtimeassetexplorer/RuntimeLibrary.as</p></td>
-<td headers="d17e24232 "><p>An interface
-that defines the required methods expected of all run-time asset SWF
-files that will be loaded into the explorer container.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e24229 "><p>com/example/programmingas3/runtimeassetexplorer/AnimatingBox.as</p></td>
-<td headers="d17e24232 "><p>The class of
-the library symbol in the shape of a rotating box.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e24229 "><p>com/example/programmingas3/runtimeassetexplorer/AnimatingStar.as</p></td>
-<td headers="d17e24232 "><p>The class of
-the library symbol in the shape of a rotating star.</p></td>
-</tr>
+    <tr>
+        <td >
+            <p>RuntimeAssetsExample.mxml</p>
+            <p>or</p>
+            <p>RuntimeAssetsExample.fla</p>
+        </td>
+        <td ><p>The user
+        interface for the application for Flex (MXML) or Flash (FLA).</p></td>
+    </tr>
+    <tr>
+        <td ><p>RuntimeAssetsExample.as</p></td>
+        <td ><p>Document
+        class for the Flash (FLA) application.</p></td>
+    </tr>
+    <tr>
+        <td ><p>GeometricAssets.as</p></td>
+        <td ><p>An example
+        class that implements the RuntimeAsset interface.</p></td>
+    </tr>
+    <tr>
+        <td ><p>GeometricAssets.fla</p></td>
+        <td ><p>A FLA file
+        linked to the GeometricAssets class (the document class of the FLA)
+        containing symbols that are exported for ActionScript.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/runtimeassetexplorer/RuntimeLibrary.as</p></td>
+        <td ><p>An interface
+        that defines the required methods expected of all run-time asset SWF
+        files that will be loaded into the explorer container.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/runtimeassetexplorer/AnimatingBox.as</p></td>
+        <td ><p>The class of
+        the library symbol in the shape of a rotating box.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/runtimeassetexplorer/AnimatingStar.as</p></td>
+        <td ><p>The class of
+        the library symbol in the shape of a rotating star.</p></td>
+    </tr>
 </tbody>
 </table>
 
-</div>
-
-</div>
-
-<div>
-
 ## Establishing a run-time library interface
-
-<div>
 
 In order for the explorer to properly interact with a SWF library, the structure
 of the run-time asset libraries must be formalized. We will accomplish this by
@@ -122,15 +108,7 @@ single method: `getAssets()`.
         }
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## Creating the asset library SWF file
-
-<div>
 
 By defining the RuntimeLibrary interface, it's possible to create multiple asset
 library SWF files that can be loaded into another SWF file. Making an individual
@@ -143,8 +121,6 @@ SWF library of assets involves four tasks:
 - Creating the actual graphic assets
 
 - Associating graphic elements with classes and publishing the library SWF
-
-<div>
 
 #### Creating a class to implement the RuntimeLibrary interface
 
@@ -175,10 +151,6 @@ If we were to create a second run-time library, we could create another FLA
 based upon another class (for example, AnimationAssets) that provides its own
 `getAssets()` implementation.
 
-</div>
-
-<div>
-
 #### Creating classes for each MovieClip asset
 
 For this example, we'll merely extend the MovieClip class without adding any
@@ -195,10 +167,6 @@ analogous to that of AnimatingBox:
             }
         }
     }
-
-</div>
-
-<div>
 
 #### Publishing the library
 
@@ -217,17 +185,7 @@ your first run-time library. This SWF file could be loaded into another AVM2 SWF
 file and the AnimatingBox and AnimatingStar symbols would be available to the
 new SWF file.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Loading the library into another SWF file
-
-<div>
 
 The last functional piece to deal with is the user interface for the asset
 explorer. In this example, the path to the run-time library is hard-coded as a
@@ -266,7 +224,3 @@ ComboBox (`assetNameCbo.selectedItem.data`), and uses the
 `getDefinitionByName()` function (from the flash.utils package) to obtain an
 actual reference to the asset's class in order to create a new instance of that
 asset.
-
-</div>
-
-</div>

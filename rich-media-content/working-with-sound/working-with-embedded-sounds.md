@@ -1,7 +1,5 @@
 # Working with embedded sounds
 
-<div>
-
 Using embedded sounds, instead of loading sound from an external file, is most
 useful for small sounds that are used as indicators within your application's
 user interface, such as sounds that play when buttons are clicked.
@@ -14,13 +12,7 @@ undesirable size.
 The exact method of embedding a sound file into your application's SWF file
 varies according to your development environment.
 
-</div>
-
-<div>
-
 ## Using an embedded sound file in Flash
-
-<div>
 
 The Flash authoring tool lets you import sounds in a number of sound formats and
 store them as symbols in the Library. You can then assign them to frames in the
@@ -29,8 +21,6 @@ them directly in ActionScript code. This section describes how to use embedded
 sounds in ActionScript code with the Flash authoring tool. For information about
 the other ways to use embedded sounds in Flash, see "Importing Sounds" in _Using
 Flash_ .
-
-<div>
 
 #### To embed a sound file using the Flash authoring tool:
 
@@ -64,17 +54,7 @@ Flash_ .
     Sound class's methods and properties, including the `play()` method as shown
     above.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Using an embedded sound file in Flex
-
-<div>
 
 There are many ways to embed sound assets in a Flex application, including:
 
@@ -126,30 +106,10 @@ cast as an instance of the mx.core.SoundAsset class instead of as an instance of
 the Sound class. For a similar example that uses the SoundAsset class see
 "Embedded asset classes" in Learning ActionScript 3.0.
 
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
-
-</div>
 
 ![](../../img/flexLinkIndicator.png)
 [Embedding assets](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fce.html)
 
 ![](../../img/as3LinkIndicator.png)
 [Embedded asset classes](https://help.adobe.com/en_US/as3/learn/WS5b3ccc516d4fbf351e63e3d118a9b90204-7f2e.html)
-
-<div>
-
-</div>
-
-</div>

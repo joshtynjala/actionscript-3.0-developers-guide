@@ -1,27 +1,15 @@
 # Selecting and manipulating text
 
-<div>
-
 You can select dynamic or input text. Since the text selection properties and
 methods of the TextField class use index positions to set the range of text to
 manipulate, you can programmatically select dynamic or input text even if you
 don't know the content.
 
-<div>
-
 Note: In Flash Professional, if you choose the selectable option on a static
 text field, the text field that is exported and placed on the display list is a
 regular, dynamic text field.
 
-</div>
-
-</div>
-
-<div>
-
 ## Selecting text
-
-<div>
 
 The `flash.text.TextField.selectable` property is `true` by default, and you can
 programmatically select text using the `setSelection()` method.
@@ -44,15 +32,7 @@ Similarly, if you want text within a text field to be selected as the text is
 initially displayed, create an event handler function that is called as the text
 field is added to the display list.
 
-</div>
-
-</div>
-
-<div>
-
 ## Capturing user-selected text
-
-<div>
 
 The TextField `selectionBeginIndex` and `selectionEndIndex` properties, which
 are "read-only" so they can't be set to programmatically select text, can be
@@ -77,15 +57,3 @@ You can apply a collection of TextFormat object properties to the selection to
 change the text appearance. For more information about applying a collection of
 TextFormat properties to selected text, see
 [Formatting ranges of text within a text field](WS8d7bb3e8da6fb92f-20050207122bd5f80cb-7ff1.html).
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

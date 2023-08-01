@@ -1,7 +1,5 @@
 # Loading embedded content from SWF files imported into a security domain
 
-<div>
-
 When you load a SWF file, you can set the `context` parameter of the `load()`
 method of the Loader object that is used to load the file. This parameter takes
 a LoaderContext object. When you set the `securityDomain` property of this
@@ -24,13 +22,3 @@ the loading SWF file. The loading SWF file can retrieve classes from the loaded
 SWF file by calling `Loader.contentLoaderInfo.applicationDomain.getDefinition()`
 or `Loader.contentLoaderInfo.applicationDomain.getQualifiedDefinitionNames()`
 (Flash Player 11.3 and higher; AIR 3.3 and higher).
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

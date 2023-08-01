@@ -1,17 +1,9 @@
 # Incorporating motion tween scripts
 
-<div>
-
 The header in the ActionScript code that you copy from Flash lists all the
 modules required to support the motion tween.
 
-</div>
-
-<div>
-
 ## Motion tween classes
-
-<div>
 
 The essential motion tween classes are the AnimatorFactory, MotionBase, and
 Motion classes from the `fl.motion` package. You could need additional classes,
@@ -22,8 +14,6 @@ appropriate `flash.geom` classes. If it applies filters, import the
 Motion class. The Motion class stores a keyframe animation sequence that can be
 applied to a visual object. The animation data includes position, scale,
 rotation, skew, color, filters, and easing.
-
-<div>
 
 The following ActionScript was copied from a motion tween that was created in
 Flash to animate a display object whose instance name is `Symbol1_2`. It
@@ -36,17 +26,7 @@ Then the script creates the Motion object:
 
     __motion_Symbol1_2 = new Motion();
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Motion object names
-
-<div>
 
 In the previous case, Flash automatically generated the name
 `__motion_Symbol1_2` for the Motion object. It attached the prefix `__motion_`
@@ -55,14 +35,10 @@ the instance name of the target object of the motion tween in Flash. The
 `duration` property of the Motion object indicates the total number of frames in
 the motion tween:
 
-<div>
-
     __motion_Symbol1_2.duration = 200;
 
 By default, Flash automatically names the display object instance whose motion
 tween is copied, if it does not already have an instance name.
-
-</div>
 
 When you reuse ActionScript created by Flash in your own animation, you can keep
 the name that Flash automatically generates for the tween or you can substitute
@@ -73,15 +49,3 @@ Alternately, in Flash you can assign a name of your choosing to the target
 object of the motion tween. Then create the motion tween and copy the script.
 Whichever naming approach you use, make sure that each Motion object in your
 ActionScript code has a unique name.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

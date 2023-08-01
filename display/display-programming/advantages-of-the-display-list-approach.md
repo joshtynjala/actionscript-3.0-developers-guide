@@ -1,7 +1,5 @@
 # Advantages of the display list approach
 
-<div>
-
 In ActionScript 3.0, there are separate classes for different types of display
 objects. In ActionScript 1.0 and 2.0, many of the same types of objects are all
 included in one class: the MovieClip class.
@@ -19,13 +17,7 @@ lists have the following benefits:
 
 - Easier subclassing of display objects
 
-</div>
-
-<div>
-
 ## More efficient rendering and smaller file sizes
-
-<div>
 
 In ActionScript 1.0 and 2.0, you could draw shapes only in a MovieClip object.
 In ActionScript 3.0, there are simpler display object classes in which you can
@@ -41,15 +33,7 @@ overhead than the more complex MovieClip object. Flash Player and AIR do not
 need to manage unused MovieClip properties, which improves speed and reduces the
 memory footprint the object uses.
 
-</div>
-
-</div>
-
-<div>
-
 ## Improved depth management
-
-<div>
 
 In ActionScript 1.0 and 2.0, depth was managed through a linear depth management
 scheme and methods such as `getNextHighestDepth()`.
@@ -84,15 +68,7 @@ through all children of a display object container is also very fast.
 In ActionScript 3.0, you can also access children in a display object container
 by using the `getChildByName()` method of the DisplayObjectContainer class.
 
-</div>
-
-</div>
-
-<div>
-
 ## Full traversal of the display list
-
-<div>
 
 In ActionScript 1.0 and 2.0, you could not access some objects, such as vector
 shapes, that were drawn in the Flash authoring tool. In ActionScript 3.0, you
@@ -100,15 +76,7 @@ can access all objects on the display list—both those created using ActionScri
 and all display objects created in the Flash authoring tool. For details, see
 [Traversing the display list](./traversing-the-display-list.md).
 
-</div>
-
-</div>
-
-<div>
-
 ## Off-list display objects
-
-<div>
 
 In ActionScript 3.0, you can create display objects that are not on the visible
 display list. These are known as _off-list_ display objects. A display object is
@@ -124,15 +92,7 @@ objects. You can then add an off-list display object to the display list when it
 is needed. Also, you can move a child of a display object container on and off
 the display list and to any desired position in the display list at will.
 
-</div>
-
-</div>
-
-<div>
-
 ## Easier subclassing of display objects
-
-<div>
 
 In ActionScript 1.0 and 2.0, you would often have to add new MovieClip objects
 to a SWF file to create basic shapes or to display bitmaps. In ActionScript 3.0,
@@ -171,7 +131,3 @@ The following code shows an example of a CustomCircle class:
             this.graphics.drawCircle(xPos, yPos, radius);
         }
     }
-
-</div>
-
-</div>

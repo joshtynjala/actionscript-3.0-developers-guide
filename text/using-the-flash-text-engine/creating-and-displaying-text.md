@@ -1,12 +1,8 @@
 # Creating and displaying text
 
-<div>
-
 The classes that make up the Flash Text Engine enable you to create, format, and
 control text. The following classes are the basic building blocks for creating
 and displaying text with the Flash Text Engine:
-
-<div>
 
 - TextElement/GraphicElement/GroupElement - contain the content of a TextBlock
   instance
@@ -17,8 +13,6 @@ and displaying text with the Flash Text Engine:
 - TextBlock - the factory for building a paragraph of text
 
 - TextLine - a line of text created from the TextBlock
-
-</div>
 
 To display text, create a TextElement object from a String, using an
 ElementFormat object to specify the formatting characteristics. Assign the
@@ -63,15 +57,7 @@ new line and the width of the line in pixels. The line from which to begin the
 new line is usually the previous line but, in the case of the first line, it is
 `null`.
 
-</div>
-
-<div>
-
 ## Adding GraphicElement and GroupElement objects
-
-<div>
-
-<div>
 
 You can assign a GraphicElement object to a TextBlock object to display an image
 or a graphic element. Simply create an instance of the GraphicElement class from
@@ -122,10 +108,6 @@ GraphicElement object and one with a TextElement object.
     		}
     	}
     }
-
-</div>
-
-<div>
 
 You can create a GroupElement object to create a group of TextElement,
 GraphicElement, and other GroupElement objects. A GroupElement can be assigned
@@ -183,23 +165,11 @@ elements and a text element and assigns them as a unit to a text block.
     	}
     }
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Replacing text
-
-<div>
 
 You can replace text in a TextBlock instance by calling
 `TextElement.replaceText()` to replace text in the TextElement that you assigned
 to the `TextBlock.content` property.
-
-<div>
 
 The following example uses `replaceText()` to first, insert text at the
 beginning of the line, then, to append text to the end of the line, and,
@@ -240,23 +210,9 @@ finally, to replace text in the middle of the line.
     	}
     }
 
-</div>
-
 The `replaceText()` method replaces the text specified by the `beginIndex` and
 `endIndex` parameters with the text specified by the `newText` parameter. If the
 values of the `beginIndex` and `endIndex` parameters are the same,
 `replaceText()` inserts the specified text at that location. Otherwise it
 replaces the characters specified by `beginIndex` and `endIndex` with the new
 text.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

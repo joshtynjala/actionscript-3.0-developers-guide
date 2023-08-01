@@ -1,7 +1,5 @@
 # Event handling example: Alarm Clock
 
-<div>
-
 The Alarm Clock example consists of a clock that allows the user to specify a
 time at which an alarm will go off, as well as a message to be displayed at that
 time. The Alarm Clock example builds on the SimpleClock application from
@@ -20,64 +18,52 @@ To get the application files for this sample, see
 The Alarm Clock application files can be found in the Samples/AlarmClock folder.
 The application includes these files:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>File</p></th>
-<th><p>Description</p></th>
-</tr>
+    <tr>
+        <th><p>File</p></th>
+        <th><p>Description</p></th>
+    </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td headers="d17e12087 "><p>AlarmClockApp.mxml</p>
-<p>or</p>
-<p>AlarmClockApp.fla</p></td>
-<td headers="d17e12090 "><p>The main
-application file in Flash (FLA) or Flex (MXML).</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e12087 "><p>com/example/programmingas3/clock/AlarmClock.as</p></td>
-<td headers="d17e12090 "><p>A class which
-extends the SimpleClock class, adding alarm clock
-functionality.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e12087 "><p>com/example/programmingas3/clock/AlarmEvent.as</p></td>
-<td headers="d17e12090 "><p>A custom
-event class (a subclass of flash.events.Event) which serves as the event
-object for the AlarmClock class's
-<samp>alarm</samp> event.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e12087 "><p>com/example/programmingas3/clock/AnalogClockFace.as</p></td>
-<td headers="d17e12090 "><p>Draws a round
-clock face and hour, minute, and seconds hands based on the time
-(described in the SimpleClock example).</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e12087 "><p>com/example/programmingas3/clock/SimpleClock.as</p></td>
-<td headers="d17e12090 "><p>A clock
-interface component with simple timekeeping functionality (described in
-the SimpleClock example).</p></td>
-</tr>
+    <tr>
+        <td >
+            <p>AlarmClockApp.mxml</p>
+            <p>or</p>
+            <p>AlarmClockApp.fla</p>
+        </td>
+        <td ><p>The main
+        application file in Flash (FLA) or Flex (MXML).</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/clock/AlarmClock.as</p></td>
+        <td ><p>A class which
+        extends the SimpleClock class, adding alarm clock
+        functionality.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/clock/AlarmEvent.as</p></td>
+        <td ><p>A custom
+        event class (a subclass of flash.events.Event) which serves as the event
+        object for the AlarmClock class's
+        <samp>alarm</samp> event.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/clock/AnalogClockFace.as</p></td>
+        <td ><p>Draws a round
+        clock face and hour, minute, and seconds hands based on the time
+        (described in the SimpleClock example).</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/clock/SimpleClock.as</p></td>
+        <td ><p>A clock
+        interface component with simple timekeeping functionality (described in
+        the SimpleClock example).</p></td>
+    </tr>
 </tbody>
 </table>
 
-</div>
-
-</div>
-
-<div>
-
 ## Alarm Clock overview
-
-<div>
 
 The primary functionality of the clock in this example, including tracking the
 time and displaying the clock face, reuses the SimpleClock application code,
@@ -96,15 +82,7 @@ other objects (an AlarmClock instance, in this case) when a certain amount of
 time has passed. As with most ActionScript applications, events form an
 important part of the functionality of the Alarm Clock sample application.
 
-</div>
-
-</div>
-
-<div>
-
 ## Triggering the alarm
-
-<div>
 
 As mentioned previously, the only functionality that the AlarmClock class
 actually provides relates to setting and triggering the alarm. The built-in
@@ -215,15 +193,7 @@ define one parameter whose data type is TimerEvent (flash.events.TimerEvent), a
 subclass of the Event class. When the Timer instance calls its event listeners,
 it passes a TimerEvent instance as the event object.
 
-</div>
-
-</div>
-
-<div>
-
 ## Notifying others of the alarm
-
-<div>
 
 Like the Timer class, the AlarmClock class provides an event that allows other
 code to receive notifications when the alarm goes off. For a class to use the
@@ -253,15 +223,7 @@ passed to `dispatchEvent()` is the event object that will be passed along to the
 listener methods. In this case, it is an instance of the AlarmEvent class, an
 Event subclass created specifically for this example.
 
-</div>
-
-</div>
-
-<div>
-
 ## Providing a custom alarm event
-
-<div>
 
 All event listeners receive an event object parameter with information about the
 particular event being triggered. In many cases, the event object is an instance
@@ -342,7 +304,3 @@ Event subclass, with all the custom properties set to match the current
 instance. In the overridden `toString()` method, the utility method
 `formatToString()` (inherited from Event) is used to provide a string with the
 name of the custom type, as well as the names and values of all its properties.
-
-</div>
-
-</div>

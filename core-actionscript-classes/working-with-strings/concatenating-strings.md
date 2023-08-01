@@ -1,7 +1,5 @@
 # Concatenating strings
 
-<div>
-
 Concatenation of strings means taking two strings and joining them sequentially
 into one. For example, you can use the+` operator to concatenate two strings:
 
@@ -38,5 +36,3 @@ operator, as the following example shows:
 
     trace("Total: $" + 4.55 + 1.45); // output: Total: $4.551.45
     trace("Total: $" + (4.55 + 1.45)); // output: Total: $6
-
-</div>

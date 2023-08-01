@@ -1,7 +1,5 @@
 # Changing position
 
-<div>
-
 The most basic manipulation to any display object is positioning it on the
 screen. To set a display object's position, change the object's `x` and `y`
 properties.
@@ -23,13 +21,7 @@ By default, when a display object is created using ActionScript, the `x` and `y`
 properties are both set to 0, placing the object at the top-left corner of its
 parent content.
 
-</div>
-
-<div>
-
 ## Changing position relative to the Stage
-
-<div>
 
 It's important to remember that the `x` and `y` properties always refer to the
 position of the display object relative to the 0,0 coordinate of its parent
@@ -78,28 +70,16 @@ display object to convert coordinates from global (Stage) coordinates to local
 You can likewise use the DisplayObject class's `localToGlobal()` method to
 convert local coordinates to Stage coordinates.
 
-</div>
-
-</div>
-
-<div>
-
 ## Moving display objects with the mouse
-
-<div>
 
 You can let a user move display objects with mouse using two different
 techniques in ActionScript. In both cases, two mouse events are used: when the
 mouse button is pressed down, the object is told to follow the mouse cursor, and
 when it's released, the object is told to stop following the mouse cursor.
 
-<div>
-
 Note: Flash Player 11.3 and higher, AIR 3.3 and higher: You can also use the
 MouseEvent.RELEASE_OUTSIDE event to cover the case of a user releasing the mouse
 button outside the bounds of the containing Sprite.
-
-</div>
 
 The first technique, using the `startDrag()` method, is simpler, but more
 limited. When the mouse button is pressed, the `startDrag()` method of the
@@ -286,7 +266,3 @@ display object when it is clicked (when you start dragging it) and remove the
 drop shadow when the object is released. For details on using the drop shadow
 filter and other display object filters in ActionScript, see
 [Filtering display objects](../filtering-display-objects/index.md).
-
-</div>
-
-</div>

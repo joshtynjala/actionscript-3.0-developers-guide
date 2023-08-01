@@ -1,7 +1,5 @@
 # Dropping remote files
 
-<div>
-
 Use the URLFilePromise class to create file promise objects representing files
 or data available at a URL. Add one or more file promise objects to the
 clipboard using the `FILE_PROMISE_LIST` clipboard format. In the following
@@ -54,13 +52,3 @@ maintained.
     	//Start the drag operation
     	NativeDragManager.doDrag( dragSource, clipboard );
     }
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

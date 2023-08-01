@@ -1,7 +1,5 @@
 # Strings example: ASCII art
 
-<div>
-
 This ASCII Art example shows a number of features of working with the String
 class in ActionScript 3.0, including the following:
 
@@ -23,94 +21,72 @@ grid of monospaced font characters, such as Courier New characters, plots the
 image. The following image shows an example of ASCII art produced by the
 application:
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![ASCII art - an image rendered with text characters](../../img/st_ascii_art.png)
 
-<div>
-
 The ASCII art version of the graphic is shown on the right.
-
-</div>
-
-</div>
 
 To get the application files for this sample, see
 [_FlashPlatformAS3DevGuideExamples.zip_](https://github.com/joshtynjala/flash-platform-as3-dev-guide-examples/releases/tag/original).
 The ASCIIArt application files can be found in the folder Samples/AsciiArt. The
 application consists of the following files:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>File</p></th>
-<th><p>Description</p></th>
-</tr>
+    <tr>
+        <th><p>File</p></th>
+        <th><p>Description</p></th>
+    </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td headers="d17e1863 "><p>AsciiArtApp.mxml</p>
-<p>or</p>
-<p>AsciiArtApp.fla</p></td>
-<td headers="d17e1866 "><p>The main
-application file in Flash (FLA) or Flex (MXML)</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e1863 "><p>com/example/programmingas3/asciiArt/AsciiArtBuilder.as</p></td>
-<td headers="d17e1866 "><p>The class that
-provides the main functionality of the application, including extracting
-image metadata from a text file, loading the images, and managing the
-image-to-text conversion process.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e1863 "><p>com/example/programmingas3/asciiArt/BitmapToAsciiConverter.as</p></td>
-<td headers="d17e1866 "><p>A class that
-provides the
-<samp>parseBitmapData()</samp>
-method for converting image data into a String version.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e1863 "><p>com/example/programmingas3/asciiArt/Image.as</p></td>
-<td headers="d17e1866 "><p>A class which
-represents a loaded bitmap image.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e1863 "><p>com/example/programmingas3/asciiArt/ImageInfo.as</p></td>
-<td headers="d17e1866 "><p>A class
-representing metadata for an ASCII art image (such as title, image file
-URL, and so on).</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e1863 "><p>image/</p></td>
-<td headers="d17e1866 "><p>A folder
-containing images used by the application.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e1863 "><p>txt/ImageData.txt</p></td>
-<td headers="d17e1866 "><p>A
-tab-delimited text file, containing information on the images to be
-loaded by the application.</p></td>
-</tr>
+    <tr>
+        <td >
+            <p>AsciiArtApp.mxml</p>
+            <p>or</p>
+            <p>AsciiArtApp.fla</p>
+        </td>
+        <td ><p>The main
+        application file in Flash (FLA) or Flex (MXML)</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/asciiArt/AsciiArtBuilder.as</p></td>
+        <td ><p>The class that
+        provides the main functionality of the application, including extracting
+        image metadata from a text file, loading the images, and managing the
+        image-to-text conversion process.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/asciiArt/BitmapToAsciiConverter.as</p></td>
+        <td ><p>A class that
+        provides the
+        <samp>parseBitmapData()</samp>
+        method for converting image data into a String version.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/asciiArt/Image.as</p></td>
+        <td ><p>A class which
+        represents a loaded bitmap image.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/asciiArt/ImageInfo.as</p></td>
+        <td ><p>A class
+        representing metadata for an ASCII art image (such as title, image file
+        URL, and so on).</p></td>
+    </tr>
+    <tr>
+        <td ><p>image/</p></td>
+        <td ><p>A folder
+        containing images used by the application.</p></td>
+    </tr>
+    <tr>
+        <td ><p>txt/ImageData.txt</p></td>
+        <td ><p>A
+        tab-delimited text file, containing information on the images to be
+        loaded by the application.</p></td>
+    </tr>
 </tbody>
 </table>
 
-</div>
-
-</div>
-
-<div>
-
 ## Extracting tab-delimited values
-
-<div>
 
 This example uses the common practice of storing application data separate from
 the application itself; that way, if the data changes (for example, if another
@@ -176,15 +152,7 @@ line into a set of values (the Array object named `imageProperties` ). The
 parameter used with the `split()` method in this case is the tab ( `"\t"` )
 character, because the values in each line are delineated by tab characters.
 
-</div>
-
-</div>
-
-<div>
-
 ## Using String methods to normalize image titles
-
-<div>
 
 One of the design decisions for this application is that all the image titles
 are displayed using a standard format, with the first letter of each word
@@ -274,15 +242,7 @@ several steps, as follows:
     with the remaining letters using string concatenation:
     `firstLetter + otherLetters`.
 
-</div>
-
-</div>
-
-<div>
-
 ## Generating the ASCII art text
-
-<div>
 
 The BitmapToAsciiConverter class provides the functionality of converting a
 bitmap image to its ASCII text representation. This process is performed by the
@@ -331,7 +291,3 @@ appended to the `result` String instance using the concatenation assignment
 operator ( `+=` ). In addition, at the end of each row of pixels, a newline
 character is concatenated to the end of the `result` String, forcing the line to
 wrap to create a new row of character "pixels."
-
-</div>
-
-</div>

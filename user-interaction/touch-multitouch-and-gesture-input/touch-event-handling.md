@@ -1,25 +1,13 @@
 # Touch event handling
 
-<div>
-
-<div>
-
 Basic touch events are handled the same way you handle other events, like mouse
 events, in ActionScript. You can listen for a series of touch events defined by
 the event type constants in the
 [TouchEvent class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Multitouch.html).
 
-<div>
-
 Note: For multiple touch point input (such as touching a device with more than
 one finger), the first point of contact dispatches a mouse event and a touch
 event.
-
-</div>
-
-</div>
-
-<div>
 
 To handle a basic touch event:
 
@@ -33,8 +21,6 @@ To handle a basic touch event:
 3.  Specify the type of touch event to handle.
 
 4.  Call an event handler function to do something in response to the event.
-
-</div>
 
 For example, the following code displays a message when the square drawn on
 mySprite is tapped on a touch-enabled screen:
@@ -56,13 +42,7 @@ mySprite is tapped on a touch-enabled screen:
     	addChild(myTextField);
     }
 
-</div>
-
-<div>
-
 ## Touch Event properties
-
-<div>
 
 When an event occurs, an event object is created. The TouchEvent object contains
 information about the location and conditions of the touch event. You can use
@@ -89,13 +69,9 @@ point in the Stage space that the touch occurred) in the text field:
     	addChild(myTextField);
     }
 
-<div>
-
 See the
 [TouchEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/TouchEvent.html)
 class for the properties available through the event object.
-
-<div>
 
 Note: Not all TouchEvent properties are supported in all runtime environments.
 For example, not all touch-enabled devices are capable or detecting the amount
@@ -105,19 +81,7 @@ for specific property support to ensure your application works, and see
 [Troubleshooting](WS1ca064e08d7aa930-581fb7b1257b16ff45-8000.html) for more
 information.
 
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Touch event phases
-
-<div>
 
 Track touch events through various stages over and outside an InteractiveObject
 just as you do for mouse events. And, track touch events through the beginning,
@@ -150,26 +114,12 @@ give the user visual feedback as they touch and move a display object:
     	myTextField.text = "touch end" + event.touchPointID;
     }
 
-<div>
-
-<div>
-
 Note: The initial touch listener is attached to mySprite, but the listeners for
 moving and ending the touch event are not. If the users's finger or pointing
 devices moves ahead of the display object, the Stage continues to listen for the
 touch event.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ### Touch Point ID
-
-<div>
 
 The `TouchEvent.touchPointID` property is an essential part of writing
 applications that respond to touch input. The Flash runtime assigns each point
@@ -186,8 +136,6 @@ dragging objects.
 Use the `touchPointID` property to manage an entire touch sequence. A touch
 sequence has one `touchBegin` event, zero or more `touchMove` events, and one
 `touchEnd` event that all have the same `touchPointID` value.
-
-<div>
 
 The following example establishes a variable `touchMoveID` to test for the
 correct `touchPointID` value before responding to a touch move event. Otherwise,
@@ -238,19 +186,3 @@ object boundaries.
     	stage.removeEventListener(TouchEvent.TOUCH_END, onTouchEnd);
     	myTextField.text = "touch end" + event.touchPointID;
     }
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

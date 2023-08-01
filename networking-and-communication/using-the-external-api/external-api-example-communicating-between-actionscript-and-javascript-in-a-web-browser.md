@@ -1,7 +1,5 @@
 # External API example: Communicating between ActionScript and JavaScript in a web browser
 
-<div>
-
 This sample application demonstrates appropriate techniques for communicating
 between ActionScript and JavaScript in a web browser, in the context of an
 Instant Messaging application that allows a person to chat with him or herself
@@ -25,65 +23,51 @@ To get the application files for this sample, see
 The Introvert IM application files can be found in the Samples/IntrovertIM_HTML
 folder. The application consists of the following files:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>File</p></th>
-<th><p>Description</p></th>
-</tr>
+	<tr>
+		<th><p>File</p></th>
+		<th><p>Description</p></th>
+	</tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><p>IntrovertIMApp.fla</p>
-<p>or</p>
-<p>IntrovertIMApp.mxml</p></td>
-<td><p>The main application file for Flash (FLA) or Flex
-(MXML).</p></td>
-</tr>
-<tr class="even">
-<td><p>com/example/programmingas3/introvertIM/IMManager.as</p></td>
-<td><p>The class that establishes and manages communication between
-ActionScript and the container.</p></td>
-</tr>
-<tr class="odd">
-<td><p>com/example/programmingas3/introvertIM/IMMessageEvent.as</p></td>
-<td><p>Custom event type, dispatched by the IMManager class when a
-message is received from the container.</p></td>
-</tr>
-<tr class="even">
-<td><p>com/example/programmingas3/introvertIM/IMStatus.as</p></td>
-<td><p>Enumeration whose values represent the different "availability"
-status values that can be selected in the application.</p></td>
-</tr>
-<tr class="odd">
-<td><p>html-flash/IntrovertIMApp.html</p>
-<p>or</p>
-<p>html-template/index.template.html</p></td>
-<td><p>The HTML page for the application for Flash
-(html-flash/IntrovertIMApp.html) or the template that is used to create
-the container HTML page for the application for Adobe Flex
-(html-template/index.template.html). This file contains all the
-JavaScript functions that make up the container part of the
-application.</p></td>
-</tr>
+	<tr>
+		<td><p>IntrovertIMApp.fla</p>
+		<p>or</p>
+		<p>IntrovertIMApp.mxml</p></td>
+		<td><p>The main application file for Flash (FLA) or Flex
+		(MXML).</p></td>
+	</tr>
+	<tr>
+		<td><p>com/example/programmingas3/introvertIM/IMManager.as</p></td>
+		<td><p>The class that establishes and manages communication between
+		ActionScript and the container.</p></td>
+	</tr>
+	<tr>
+		<td><p>com/example/programmingas3/introvertIM/IMMessageEvent.as</p></td>
+		<td><p>Custom event type, dispatched by the IMManager class when a
+		message is received from the container.</p></td>
+	</tr>
+	<tr>
+		<td><p>com/example/programmingas3/introvertIM/IMStatus.as</p></td>
+		<td><p>Enumeration whose values represent the different "availability"
+		status values that can be selected in the application.</p></td>
+	</tr>
+	<tr>
+		<td><p>html-flash/IntrovertIMApp.html</p>
+		<p>or</p>
+		<p>html-template/index.template.html</p></td>
+		<td><p>The HTML page for the application for Flash
+		(html-flash/IntrovertIMApp.html) or the template that is used to create
+		the container HTML page for the application for Adobe Flex
+		(html-template/index.template.html). This file contains all the
+		JavaScript functions that make up the container part of the
+		application.</p></td>
+	</tr>
 </tbody>
 </table>
 
-</div>
-
-</div>
-
-<div>
-
 ## Preparing for ActionScript-browser communication
-
-<div>
 
 One of the most common uses for the external API is to allow ActionScript
 applications to communicate with a web browser. Using the external API,
@@ -215,15 +199,7 @@ that method returns `true.` The code then stops the Timer and calls the
 `setupCallbacks()` method to finish the process of setting up communication with
 the browser.
 
-</div>
-
-</div>
-
-<div>
-
 ## Exposing ActionScript methods to JavaScript
-
-<div>
 
 As the previous example showed, once the code determines that the browser is
 ready, the `setupCallbacks()` method is called. This method prepares
@@ -249,15 +225,7 @@ the same name was reused for simplicity.) Finally, the
 `setSWFIsReady()`, which notifies the container that the ActionScript functions
 have been registered.
 
-</div>
-
-</div>
-
-<div>
-
 ## Communication from ActionScript to the browser
-
-<div>
 
 The Introvert IM application demonstrates a range of examples of calling
 JavaScript functions in the container page. In the simplest case (an example
@@ -286,15 +254,7 @@ itself is passed as an additional parameter to `ExternalInterface.call()`, and
 consequently it is passed as a parameter to the JavaScript function
 `newMessage()`.
 
-</div>
-
-</div>
-
-<div>
-
 ## Calling ActionScript code from JavaScript
-
-<div>
 
 Communication is supposed to be a two-way street, and the Introvert IM
 application is no exception. Not only does the Flash Player IM client call
@@ -341,8 +301,6 @@ the IMManager class. Three things happen in this line of code:
   assigned to the `currentStatus` variable, which is then assigned as the
   content (the `value` property) of the `status` text field.
 
-<div>
-
 Note: If you're following along in the code, you've probably noticed that in the
 source code for the `updateStatus()` function, the line of code that calls the
 `getSWF()` function, is actually written as follows: var currentStatus =
@@ -352,8 +310,6 @@ actual HTML page for the application, this placeholder text is replaced by the
 same text that is used as the `object` tag's `id` attribute and the `embed`
 tag's `name` attribute ( `IntrovertIMApp` in the example). That is the value
 that is expected by the `getSWF()` function.
-
-</div>
 
 The `sendMessage()` JavaScript function demonstrates passing a parameter to an
 ActionScript function. ( `sendMessage()` is thefunction that is called when the
@@ -376,15 +332,7 @@ The `newMessage()` ActionScript method expects one parameter, so the JavaScript
 `message` variable gets passed to ActionScript by using it as a parameter in the
 `newMessage()` method call in the JavaScript code.
 
-</div>
-
-</div>
-
-<div>
-
 ## Detecting the browser type
-
-<div>
 
 Because of differences in how browsers access content, it's important to always
 use JavaScript to detect which browser the user is running and to access the
@@ -409,15 +357,3 @@ object, as shown in the `getSWF()` JavaScript function in this example:
 
 If your script does not detect the user's browser type, the user might see
 unexpected behavior when playing SWF files in an HTML container.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

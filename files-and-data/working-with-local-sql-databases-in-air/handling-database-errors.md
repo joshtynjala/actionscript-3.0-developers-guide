@@ -1,20 +1,12 @@
 # Handling database errors
 
-<div>
-
 In general, database error handling is like other runtime error handling. You
 should write code that is prepared for errors that may occur, and respond to the
 errors rather than leave it up to the runtime to do so. In a general sense, the
 possible database errors can be divided into three categories: connection
 errors, SQL syntax errors, and constraint errors.
 
-</div>
-
-<div>
-
 ## Connection errors
-
-<div>
 
 Most database errors are connection errors, and they can occur during any
 operation. Although there are strategies for preventing connection errors, there
@@ -55,15 +47,7 @@ copy the database file to a different location. The application can copy the
 database file to a different location where the user does have permission to
 create and write to files, and use that location instead.
 
-</div>
-
-</div>
-
-<div>
-
 ## Syntax errors
-
-<div>
 
 A syntax error occurs when a SQL statement is incorrectly formed, and the
 application attempts to execute the statement. Because local database SQL
@@ -92,15 +76,7 @@ potential run-time sources of SQL syntax errors (such as user input used in a
 statement). To recover from a syntax error, provide guidance to the user.
 Indicate what to correct to make the statement execute properly.
 
-</div>
-
-</div>
-
-<div>
-
 ## Constraint errors
-
-<div>
 
 Constraint errors occur when an `INSERT` or `UPDATE` statement attempts to add
 data to a column. The error happens if the new data violates one of the defined
@@ -224,15 +200,3 @@ happens, the application alerts the user, indicating that the specified product
 name is already in use and asking the user to choose a different name. Another
 possible response is to allow the user to view information about the other
 product with the same name.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

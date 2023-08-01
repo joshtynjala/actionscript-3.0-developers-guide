@@ -1,7 +1,5 @@
 # Basics of the client system environment
 
-<div>
-
 As you build more advanced applications, you may find a need to know details
 about—and access functions of—your users' operating systems. The flash.system
 package contains a collection of classes that allow you to access system-level
@@ -23,8 +21,6 @@ functionality such as the following:
 The flash.system package also includes the IMEConversionMode and SecurityPanel
 classes. These classes contain static constants that you use with the IME and
 Security classes, respectively.
-
-<div>
 
 #### Important concepts and terms
 
@@ -51,15 +47,3 @@ Client system
 In programming terms, a client is the part of an application (or whole
 application) that runs on an individual's computer and is used by a single user.
 The client system is the underlying operating system on the user's computer.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

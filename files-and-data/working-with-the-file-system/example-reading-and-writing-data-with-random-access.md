@@ -1,7 +1,5 @@
 # Example: Reading and writing data with random access
 
-<div>
-
 MP3 files can include ID3 tags, which are sections at the beginning or end of
 the file that contain meta data identifying the recording. The ID3 tag format
 itself has different revisions. This example describes how to read and write
@@ -74,13 +72,3 @@ methods of the String class), and then write a modified string, called
 To conform with the ID3 version 1 standard, the length of the `newTitle` string
 should be 30 characters, padded at the end with the character code 0 (
 `String.fromCharCode(0)`).
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # Adding display objects to the display list
 
-<div>
-
 When you instantiate a display object, it will not appear on-screen (on the
 Stage) until you add the display object instance to a display object container
 that is on the display list. For example, in the following code, the `myText`
@@ -28,5 +26,3 @@ For example, the following code adjusts the width of an object named `button1`
 that was added in the authoring tool (not through ActionScript):
 
     button1.width = 200;
-
-</div>

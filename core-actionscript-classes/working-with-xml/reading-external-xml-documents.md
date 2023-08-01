@@ -1,7 +1,5 @@
 # Reading external XML documents
 
-<div>
-
 You can use the URLLoader class to load XML data from a URL. To use the
 following code in your applications, replace the `XML_URL` value in the example
 with a valid URL:
@@ -26,5 +24,3 @@ connection with a server. For more information, see the
 [XMLSocket](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/XMLSocket.html)
 class listing in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
-
-</div>

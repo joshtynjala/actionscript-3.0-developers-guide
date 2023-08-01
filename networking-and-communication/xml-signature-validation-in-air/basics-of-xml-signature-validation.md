@@ -1,7 +1,5 @@
 # Basics of XML signature validation
 
-<div>
-
 For a quick explanation and code examples of validating XML signatures, see the
 following quick start articles on the Adobe Developer Connection:
 
@@ -19,81 +17,55 @@ Signature Syntax and Processing. (Because only a subset of the recommendation is
 supported, not all legal signatures can be validated.) AIR does not provide an
 API for creating XML signatures.
 
-</div>
-
-<div>
-
 ## XML signature validation classes
-
-<div>
 
 The XML signature validation API includes the following classes:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>Package</p></th>
-<th><p>Classes</p></th>
-</tr>
+    <tr>
+        <th><p>Package</p></th>
+        <th><p>Classes</p></th>
+    </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><p>flash.security</p></td>
-<td><div>
-<ul class="incremental">
-<li><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/security/XMLSignatureValidator.html">XMLSignatureValidator</a></p></li>
-<li><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/security/IURIDereferencer.html">IURIDereferencer</a>
-(interface)</p></li>
-</ul>
-</div>
-<p>XMLSignatureValidator string constants are defined in the following
-classes:</p>
-<div>
-<ul class="incremental">
-<li><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/security/ReferencesValidationSetting.html">ReferencesValidationSetting</a></p></li>
-<li><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/security/RevocationCheckSettings.html">RevocationCheckSettings</a></p></li>
-<li><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/security/SignatureStatus.html">SignatureStatus</a></p></li>
-<li><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/security/SignerTrustSettings.html">SignerTrustSettings</a></p></li>
-</ul>
-</div></td>
-</tr>
-<tr class="even">
-<td><p>flash.events</p></td>
-<td><div>
-<ul class="incremental">
-<li><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/Event.html">Event</a></p></li>
-<li><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/ErrorEvent.html">ErrorEvent</a></p></li>
-</ul>
-</div></td>
-</tr>
+    <tr>
+        <td><p>flash.security</p></td>
+        <td><div>
+        <ul class="incremental">
+        <li><p><a
+        href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/security/XMLSignatureValidator.html">XMLSignatureValidator</a></p></li>
+        <li><p><a
+        href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/security/IURIDereferencer.html">IURIDereferencer</a>
+        (interface)</p></li>
+        </ul><p>XMLSignatureValidator string constants are defined in the following
+        classes:</p><ul class="incremental">
+        <li><p><a
+        href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/security/ReferencesValidationSetting.html">ReferencesValidationSetting</a></p></li>
+        <li><p><a
+        href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/security/RevocationCheckSettings.html">RevocationCheckSettings</a></p></li>
+        <li><p><a
+        href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/security/SignatureStatus.html">SignatureStatus</a></p></li>
+        <li><p><a
+        href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/security/SignerTrustSettings.html">SignerTrustSettings</a></p></li>
+        </ul>
+        </div></td>
+    </tr>
+    <tr>
+        <td><p>flash.events</p></td>
+        <td><div>
+        <ul class="incremental">
+        <li><p><a
+        href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/Event.html">Event</a></p></li>
+        <li><p><a
+        href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/ErrorEvent.html">ErrorEvent</a></p></li>
+        </ul>
+        </div></td>
+    </tr>
 </tbody>
 </table>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Using the XML signature validation classes
-
-<div>
 
 To use the XMLSignatureValidator class to validate an XML signature, you must:
 
@@ -159,13 +131,7 @@ IURIDereferencer class named _XMLDereferencer_ exists.
     	trace("Verification error.\n" + event.text);
     }
 
-</div>
-
-<div>
-
 ### The XML signature validation process
-
-<div>
 
 When you call the XMLSignatureValidator `verify()` method, AIR performs the
 following steps:
@@ -213,37 +179,19 @@ following steps:
   unaltered. The data in the files is not signed, so the signature will still
   validate when files referenced in the manifest are changed or deleted.
 
-  <div>
-
   Note: To verify files in such a manifest, you can compute the digest of the
   file data (using the same hashing algorithm used in the manifest) and compare
   the result to the digest stored in the signed manifest. In some cases, you
   should also check for the presence of additional files.
 
-  </div>
-
-</div>
-
-</div>
-
-<div>
-
 ### Interpreting validation results
-
-<div>
 
 The validation results are reported by the status properties of the
 XMLSignatureValidator object. These properties can be read after the validator
 object dispatches the _complete_ event. The four status properties include:
 `validityStatus`, `digestStatus`, `identityStatus`, and `referencesStatus`.
 
-</div>
-
-<div>
-
 #### The validityStatus property
-
-<div>
 
 The `validityStatus` property reports the overall validity of the signature. The
 `validityStatus` depends on the state of the other three status properties and
@@ -257,15 +205,7 @@ can have one of the following values:
 - `unknown` — If one or more of the individual status properties is `unknown`
   and no individual status is `invalid`.
 
-</div>
-
-</div>
-
-<div>
-
 #### The digestStatus property
-
-<div>
 
 The `digestStatus` property reports the results of the cryptographic
 verification of the message digest. The `digestStatus` property can have one of
@@ -277,20 +217,10 @@ the following values:
 
 - `unknown` — If the `verify()` method has not completed without error.
 
-</div>
-
-</div>
-
-<div>
-
 #### The identityStatus property
-
-<div>
 
 The `identityStatus` property reports the status of the signing certificate. The
 value of this property depends on several factors including:
-
-<div>
 
 - the cryptographic integrity of the certificate
 
@@ -304,8 +234,6 @@ value of this property depends on several factors including:
   `revocationCheckSettings` properties)
 
 The `identityStatus` property can have the following values:
-
-</div>
 
 - `valid` — To be considered valid, the signing certificate must meet the
   following conditions:
@@ -337,15 +265,7 @@ The `identityStatus` property can have the following values:
   `verify()` method has not completed without error or if the identity has not
   been checked because the signature digest is invalid.
 
-</div>
-
-</div>
-
-<div>
-
 #### The referencesStatus property
-
-<div>
 
 The `referencesStatus` property reports the cryptographic integrity of the
 references in the SignedData element of the signature.
@@ -362,19 +282,3 @@ references in the SignedData element of the signature.
   certificate is invalid. If the `identityStatus` is `unknown`, then the
   references are only checked when the `referencesValidationSetting` is
   `validOrUnknown`.
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

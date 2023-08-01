@@ -1,7 +1,5 @@
 # Gradient glow filter
 
-<div>
-
 The GradientGlowFilter class lets you apply an enhanced glow effect to display
 objects or BitmapData objects. The effect gives you greater color control of the
 glow, and in turn produces a more realistic glow effect. Additionally, the
@@ -63,5 +61,3 @@ addition, any time you click on the Stage, the strength of the blur increases.
     }
     stage.addEventListener(MouseEvent.CLICK, onClick);
     stage.addEventListener(MouseEvent.MOUSE_MOVE, onMouseMove);
-
-</div>

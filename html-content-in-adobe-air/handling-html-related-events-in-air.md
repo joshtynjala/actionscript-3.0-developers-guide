@@ -1,7 +1,5 @@
 # Handling HTML-related events in AIR
 
-<div>
-
 An event-handling system allows programmers to respond to user input and system
 events in a convenient way. The Adobe® AIR® event model is not only convenient,
 but also standards-compliant. Based on the Document Object Model (DOM) Level 3
@@ -9,96 +7,74 @@ Events Specification, an industry-standard event-handling architecture, the
 event model provides a powerful, yet intuitive, event-handling tool for
 programmers.
 
-</div>
-
-<div>
-
 ## HTMLLoader events
-
-<div>
 
 An HTMLLoader object dispatches the following Adobe® ActionScript® 3.0 events:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>Event</p></th>
-<th><p>Description</p></th>
-</tr>
+    <tr>
+        <th><p>Event</p></th>
+        <th><p>Description</p></th>
+    </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><p><samp>htmlDOMInitialize</samp></p></td>
-<td><p>Dispatched when the HTML document is created, but before any
-scripts are parsed or DOM nodes are added to the page.</p></td>
-</tr>
-<tr class="even">
-<td><p><samp>complete</samp></p></td>
-<td><p>Dispatched when the HTML DOM has been created in response to a
-load operation, immediately after the <samp>onload</samp> event in the
-HTML page.</p></td>
-</tr>
-<tr class="odd">
-<td><p><samp>htmlBoundsChanged</samp></p></td>
-<td><p>Dispatched when one or both of the <samp>contentWidth</samp> and
-<samp>contentHeight</samp> properties have changed.</p></td>
-</tr>
-<tr class="even">
-<td><p><samp>locationChange</samp></p></td>
-<td><p>Dispatched when the location property of the HTMLLoader has
-changed.</p></td>
-</tr>
-<tr class="odd">
-<td><p><samp>locationChanging</samp></p></td>
-<td><p>Dispatched before the location of the HTMLLoader changes because
-of user navigation, a JavaScript call, or a redirect. The
-<samp>locationChanging</samp> event is not dispatched when you call the
-<samp>load()</samp>, <samp>loadString()</samp>, <samp>reload()</samp>,
-<samp>historyGo()</samp>, <samp>historyForward()</samp>, or
-<samp>historyBack()</samp> methods.</p>
-<p>Calling the <samp>preventDefault()</samp> method of the dispatched
-event object cancels navigation.</p>
-<p>If a link is opened in the system browser, a locationChanging event
-is not dispatched since the HTMLLoader does not change
-location.</p></td>
-</tr>
-<tr class="even">
-<td><p><samp>scroll</samp></p></td>
-<td><p>Dispatched anytime the HTML engine changes the scroll position.
-Scroll events can be because of navigation to anchor links (
-<samp>#</samp> links) in the page or because of calls to the
-<samp>window.scrollTo()</samp> method. Entering text in a text input or
-text area can also cause a scroll event.</p></td>
-</tr>
-<tr class="odd">
-<td><p><samp>uncaughtScriptException</samp></p></td>
-<td><p>Dispatched when a JavaScript exception occurs in the HTMLLoader
-and the exception is not caught in JavaScript code.</p></td>
-</tr>
+    <tr>
+        <td><p><samp>htmlDOMInitialize</samp></p></td>
+        <td><p>Dispatched when the HTML document is created, but before any
+        scripts are parsed or DOM nodes are added to the page.</p></td>
+    </tr>
+    <tr>
+        <td><p><samp>complete</samp></p></td>
+        <td><p>Dispatched when the HTML DOM has been created in response to a
+        load operation, immediately after the <samp>onload</samp> event in the
+        HTML page.</p></td>
+    </tr>
+    <tr>
+        <td><p><samp>htmlBoundsChanged</samp></p></td>
+        <td><p>Dispatched when one or both of the <samp>contentWidth</samp> and
+        <samp>contentHeight</samp> properties have changed.</p></td>
+    </tr>
+    <tr>
+        <td><p><samp>locationChange</samp></p></td>
+        <td><p>Dispatched when the location property of the HTMLLoader has
+        changed.</p></td>
+    </tr>
+    <tr>
+        <td><p><samp>locationChanging</samp></p></td>
+        <td><p>Dispatched before the location of the HTMLLoader changes because
+        of user navigation, a JavaScript call, or a redirect. The
+        <samp>locationChanging</samp> event is not dispatched when you call the
+        <samp>load()</samp>, <samp>loadString()</samp>, <samp>reload()</samp>,
+        <samp>historyGo()</samp>, <samp>historyForward()</samp>, or
+        <samp>historyBack()</samp> methods.</p>
+        <p>Calling the <samp>preventDefault()</samp> method of the dispatched
+        event object cancels navigation.</p>
+        <p>If a link is opened in the system browser, a locationChanging event
+        is not dispatched since the HTMLLoader does not change
+        location.</p></td>
+    </tr>
+    <tr>
+        <td><p><samp>scroll</samp></p></td>
+        <td><p>Dispatched anytime the HTML engine changes the scroll position.
+        Scroll events can be because of navigation to anchor links (
+        <samp>#</samp> links) in the page or because of calls to the
+        <samp>window.scrollTo()</samp> method. Entering text in a text input or
+        text area can also cause a scroll event.</p></td>
+    </tr>
+    <tr>
+        <td><p><samp>uncaughtScriptException</samp></p></td>
+        <td><p>Dispatched when a JavaScript exception occurs in the HTMLLoader
+        and the exception is not caught in JavaScript code.</p></td>
+    </tr>
 </tbody>
 </table>
-
-</div>
 
 You can also register an ActionScript function for a JavaScript event (such as
 `onClick`). For details, see
 [Handling DOM events with ActionScript](WS5b3ccc516d4fbf351e63e3d118666ade46-7e84.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Handling DOM events with ActionScript
-
-<div>
 
 You can register ActionScript functions to respond to JavaScript events. For
 example, consider the following HTML content:
@@ -144,15 +120,7 @@ event listeners. HTML pages often load multiple files and the HTML DOM is not
 fully built until all the files are loaded and parsed. The HTMLLoader dispatches
 the `complete` event when all elements have been created.
 
-</div>
-
-</div>
-
-<div>
-
 ## Responding to uncaught JavaScript exceptions
-
-<div>
 
 Consider the following HTML:
 
@@ -241,15 +209,7 @@ each object in the `stackTrace` array:
     line: 10
     function: onclick
 
-</div>
-
-</div>
-
-<div>
-
 ## Handling runtime events with JavaScript
-
-<div>
 
 The runtime classes support adding event handlers with the `addEventListener()`
 method. To add a handler function for an event, call the `addEventListener()`
@@ -260,13 +220,7 @@ statement:
 
     window.nativeWindow.addEventListener(air.NativeWindow.CLOSING, handleWindowClosing);
 
-</div>
-
-<div>
-
 ### Creating an event handler function
-
-<div>
 
 The following code creates a simple HTML file that displays information about
 the position of the main window. A handler function named `moveHandler()`,
@@ -312,13 +266,7 @@ method. The event parameter allows your handler function to examine the event
 object. In this example, you use the event object's `type` property to report
 that the event is a `move` event.
 
-</div>
-
-<div>
-
 #### Removing event listeners
-
-<div>
 
 You can use the `removeEventListener()` method to remove an event listener that
 you no longer need. It is a good idea to remove any listeners that will no
@@ -326,15 +274,7 @@ longer be used. Required parameters include the `eventName` and `listener`
 parameters, which are the same as the required parameters for the
 `addEventListener()` method.
 
-</div>
-
-</div>
-
-<div>
-
 #### Removing event listeners in HTML pages that navigate
-
-<div>
 
 When HTML content navigates, or when HTML content is discarded because a window
 that contains it is closed, the event listeners that reference objects on the
@@ -390,31 +330,7 @@ removes its own event listener using the `removeEventListener()` function:
 Removing unneeded event listeners also allows the system garbage collector to
 reclaim any memory associated with those listeners.
 
-</div>
-
-</div>
-
-<div>
-
 #### Checking for existing event listeners
-
-<div>
 
 The `hasEventListener()` method lets you check for the existence of an event
 listener on an object.
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

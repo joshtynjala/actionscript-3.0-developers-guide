@@ -1,7 +1,5 @@
 # Controlling movie clip playback
 
-<div>
-
 Flash uses the metaphor of a timeline to convey animation or a change in state.
 Any visual element that employs a timeline must be either a MovieClip object or
 extend from the MovieClip class. While ActionScript can direct any movie clip to
@@ -13,13 +11,7 @@ When a MovieClip is playing, it progresses along its timeline at a speed
 dictated by the frame rate of the SWF file. Alternatively, you can override this
 setting by setting the `Stage.frameRate` property in ActionScript.
 
-</div>
-
-<div>
-
 ## Playing movie clips and stopping playback
-
-<div>
 
 The `play()` and `stop()` methods allow basic control of a movie clip across its
 timeline. For example, suppose you have a movie clip symbol on the Stage which
@@ -43,15 +35,7 @@ timeline would make it so that clicking the button causes the animation to play:
     // Register the function as a listener with the button.
     startButton.addEventListener(MouseEvent.CLICK, playAnimation);
 
-</div>
-
-</div>
-
-<div>
-
 ## Fast-forwarding and rewinding
-
-<div>
 
 The `play()` and `stop()` methods are not the only way of controlling playback
 in a movie clip. You can also move the playhead forward or backward along the
@@ -89,15 +73,7 @@ condition in the example above checks to see if the playhead has progressed
 backwards to the first frame, and sets the playhead ahead to its final frame,
 effectively creating a continuous loop of the movie clip playing backwards.
 
-</div>
-
-</div>
-
-<div>
-
 ## Jumping to a different frame and using frame labels
-
-<div>
 
 Sending a movie clip to a new frame is a simple affair. Calling either
 `gotoAndPlay()` or `gotoAndStop()` will jump the movie clip to the frame number
@@ -149,8 +125,6 @@ The following example creates a FrameLabel instance for the second frame label
 in the Array of frame labels for the MovieClip. It then registers an event
 handler for the `frameLabel` event:
 
-<div>
-
     var myFrameLabel:FrameLabel = robot.currentLabels[1];
     myFrameLabel.addEventListener(Event.FRAME_LABEL, onFrameLabel);
 
@@ -158,17 +132,7 @@ handler for the `frameLabel` event:
         // do something
     }
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Working with scenes
-
-<div>
 
 In the Flash authoring environment, you can use scenes to demarcate a series of
 timelines that a SWF file will progress through. Using the second parameter of
@@ -193,7 +157,3 @@ The Scene class has several properties that give information about a scene. The
 labels in that scene. The `name` property returns the scene's name as a string.
 The `numFrames` property returns an int representing the total number of frames
 in the scene.
-
-</div>
-
-</div>

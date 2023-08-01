@@ -1,7 +1,5 @@
 # Dragging data out of an HTML element
 
-<div>
-
 The default behavior allows most content in an HTML page to be copied by
 dragging. You can control the content allowed to be dragged using CSS properties
 `-webkit-user-select` and `-webkit-user-drag`.
@@ -16,13 +14,7 @@ event object dispatched for the `dragstart` event. You can choose any
 combination of effects. For example, if a source element supports both _copy_
 and _link_ effects, set the property to `"copyLink"`.
 
-</div>
-
-<div>
-
 ## Setting the dragged data
-
-<div>
 
 Add the data for the drag gesture in the handler for the `dragstart` event with
 the `dataTransfer` property. Use the `dataTransfer.setData()` method to put data
@@ -44,21 +36,5 @@ which increases the likelihood that other applications can use the dragged data.
     								new Array(dragFile));
     }
 
-<div>
-
 Note: When you call the `setData()` method of `dataTransfer` object, no data is
 added by the default drag-and-drop behavior.
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

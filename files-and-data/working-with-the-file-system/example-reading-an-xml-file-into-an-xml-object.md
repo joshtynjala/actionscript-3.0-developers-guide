@@ -1,7 +1,5 @@
 # Example: Reading an XML file into an XML object
 
-<div>
-
 The following examples demonstrate how to read and write to a text file that
 contains XML data.
 
@@ -60,13 +58,3 @@ it creates an XML object, `prefsXML`, based on that string.
 
 To see a sample application that shows these capabilities, see
 [Reading and writing from an XML preferences file](http://www.adobe.com/go/learn_air_qs_xmlpref_flex_en).
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

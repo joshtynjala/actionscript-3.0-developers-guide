@@ -1,7 +1,5 @@
 # Encrypted local storage
 
-<div>
-
 The
 [EncryptedLocalStore](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/EncryptedLocalStore.html)
 class (ELS) provides an encrypted local storage mechanism that you can be use as
@@ -11,13 +9,9 @@ easily recreated items such as login credentials and other private information.
 ELS data should not be considered as permanent, as outlined in "Limitations of
 the encrypted local store" and "Best practices," below.
 
-<div>
-
 Note: In addition to the encrypted local store, AIR also provides encryption for
 content stored in SQL databases. For details, see
 [Using encryption with SQL databases](WS8AFC5E35-DC79-4082-9AD4-DE1A2B41DAAF.html).
-
-</div>
 
 You may want to use the encrypted local store to cache information that must be
 secured, such as login credentials for web services. The ELS is appropriate for
@@ -50,8 +44,6 @@ existing data in the encrypted local store unless:
 
 - The existing and update versions are both published prior to AIR 1.5.3 and the
   update is signed with a migration signature.
-
-<div>
 
 #### Limitations of the encrypted local store
 
@@ -105,15 +97,7 @@ The best practices for using the ELS include:
 - Only store relatively small amounts of data. For larger amounts of data, use
   an AIR SQL database with encryption.
 
-</div>
-
-</div>
-
-<div>
-
 ## Adding data to the encrypted local store
-
-<div>
 
 Use the `setItem()` static method of the EncryptedLocalStore class to store data
 in the local store. The data is stored in a hash table, using strings as keys,
@@ -152,25 +136,13 @@ publisher), but they do not need to be the exact same bits as were in
 application that stored the data. Updated applications with the same publisher
 ID as the original can continue to access the data.
 
-<div>
-
 Note: In practice, setting `stronglyBound` to `true` does not add any additional
 data protection. A "malicious" user could still alter an application to gain
 access to items stored in the ELS. Furthermore, data is protected from external,
 non-user threats just as strongly whether `stronglyBound` is set to `true` or
 `false`. For these reasons, setting `stronglyBound` to `true` is discouraged.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Accessing data in the encrypted local store
-
-<div>
 
 You can retrieve a value from the encrypted local store by using the
 `EncryptedLocalStore.getItem()` method, as in the following example:
@@ -178,15 +150,7 @@ You can retrieve a value from the encrypted local store by using the
     var storedValue:ByteArray = EncryptedLocalStore.getItem("firstName");
     trace(storedValue.readUTFBytes(storedValue.length)); // "Bob"
 
-</div>
-
-</div>
-
-<div>
-
 ## Removing data from the encrypted local store
-
-<div>
 
 You can delete a value from the encrypted local store by using the
 `EncryptedLocalStore.removeItem()` method, as in the following example:
@@ -198,30 +162,10 @@ You can clear all data from the encrypted local store by calling the
 
     EncryptedLocalStore.reset();
 
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
-
-</div>
 
 ![](../../img/flashplatformLinkIndicator.png)
 [flash.data.EncryptedLocalStore](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/EncryptedLocalStore.html)
 
 ![](../../img/airLinkIndicator.png)
 [About AIR publisher identifiers](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7cca.html)
-
-<div>
-
-</div>
-
-</div>

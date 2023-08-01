@@ -1,7 +1,5 @@
 # Streaming video files
 
-<div>
-
 To stream files from Flash Media Server, you can use the NetConnection and
 NetStream classes to connect to a remote server instance and play a specified
 stream. To specify a Real-Time Messaging Protocol (RTMP) server, you pass the
@@ -11,13 +9,7 @@ live or recorded stream from the specified Flash Media Server, you pass an
 identifying name for live data published by `NetStream.publish()`, or a recorded
 filename for playback to the `NetStream.play()` method.
 
-</div>
-
-<div>
-
 ## Sending video to a server
-
-<div>
 
 If you want to build more complex applications involving video or camera
 objects, Flash Media Server offers a combination of streaming media capabilities
@@ -28,15 +20,3 @@ video blogging, video messaging, and multimedia chat environments. For more
 information, see the Flash Media Server documentation online at
 <a href="http://www.adobe.com/go/learn_fms_docs_en"
 target="_self">www.adobe.com/go/learn_fms_docs_en</a>.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

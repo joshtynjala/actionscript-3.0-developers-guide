@@ -1,7 +1,5 @@
 # Shared objects
 
-<div>
-
 Flash Player provides the ability to use _shared objects_ , which are
 ActionScript objects that persist outside of a SWF file, either locally on a
 user's file system or remotely on an RTMP server. Shared objects, like other
@@ -77,13 +75,3 @@ from a third-party SWF file, and third-party shared object use is disabled, the
 `SharedObject.getLocal()` and `SharedObject.getRemote()` methods return `null`.
 For more information, see
 [www.adobe.com/products/flashplayer/articles/thirdpartylso](http://www.adobe.com/products/flashplayer/articles/thirdpartylso).
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

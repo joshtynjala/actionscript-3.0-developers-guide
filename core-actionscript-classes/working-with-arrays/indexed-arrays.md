@@ -1,7 +1,5 @@
 # Indexed arrays
 
-<div>
-
 Indexed arrays store a series of one or more values organized such that each
 value can be accessed using an unsigned integer value. The first index is always
 the number 0, and the index increments by 1 for each subsequent element added to
@@ -48,8 +46,6 @@ form "oddNumber\[ _index_ \] = _value_ ":
         trace("oddNumbers[" + i.toString() + "] = " + oddNumbers[i].toString());
     }
 
-<div>
-
 #### The Array class
 
 The first type of indexed array is the Array class. An Array instance can hold a
@@ -57,22 +53,14 @@ value of any data type. The same Array object can hold objects that are of
 different data types. For example, a single Array instance can have a String
 value in index 0, a Number instance in index 1, and an XML object in index 2.
 
-</div>
-
-<div>
-
 #### The Vector class
 
 Another type of indexed array that's available in ActionScript 3.0 is the Vector
 class. A Vector instance is a _typed array_, which means that all the elements
 in a Vector instance always have the same data type.
 
-<div>
-
 Note: The Vector class is available starting with Flash Player 10 and Adobe AIR
 1.5.
-
-</div>
 
 When you declare a Vector variable or instantiate a Vector object, you
 explicitly specify the data type of the objects that the Vector can contain. The
@@ -120,26 +108,12 @@ similar—for the most part identical—to the properties and methods of an Arra
 In most situations where you would use an Array in which all the elements have
 the same data type, a Vector instance is preferable.
 
-</div>
-
-</div>
-
-<div>
-
 ## Creating arrays
-
-<div>
 
 You can use several techniques to create an Array instance or a Vector instance.
 However, the techniques to create each type of array are somewhat different.
 
-</div>
-
-<div>
-
 ### Creating an Array instance
-
-<div>
 
 You create an Array object by calling the `Array()` constructor or by using
 Array literal syntax.
@@ -180,15 +154,7 @@ directly to an array variable, as shown in the following example:
 
     var names:Array = ["John", "Jane", "David"];
 
-</div>
-
-</div>
-
-<div>
-
 ### Creating a Vector instance
-
-<div>
 
 You create a Vector instance by calling the `Vector.<T>()` constructor. You can
 also create a Vector by calling the `Vector.<T>()` global function. That
@@ -215,8 +181,6 @@ In the first line of the example, the variable `v` is declared as a
 can only hold String instances. The second line calls the `Vector()` constructor
 to create an instance of the same Vector type (that is, a Vector whose elements
 are all String objects). It assigns that object to `v`.
-
-<div>
 
 #### Using the Vector.\<T\>() constructor
 
@@ -247,10 +211,6 @@ that case the Vector is created with the specified number of elements and the
 number of elements can't be changed. Note, however, that you can still change
 the values of the elements of a fixed-length Vector.
 
-</div>
-
-<div>
-
 #### Using the Vector literal syntax constructor
 
 In Flash Professional CS5 and later, Flash Builder 4 and later, and Flex 4 and
@@ -274,18 +234,11 @@ The following information applies to this syntax:
 - You can't specify whether the Vector instance has a fixed length. Instead, use
   the `fixed` property.
 
-- <div>
+- Data loss or errors can occur if items passed as values don't match the
+  specified type. For example:
 
-  Data loss or errors can occur if items passed as values don't match the
-  specified type. For example: var v:Vector.<int> = new <int>[4.2]; // compiler
-  error when running in strict mode trace(v[0]); //returns 4 when not running in
-  strict mode
-
-  </div>
-
-</div>
-
-<div>
+      var v:Vector.<int> = new <int>[4.2]; // compiler error when running in strict mode
+      trace(v[0]); //returns 4 when not running in strict mode
 
 #### Using the Vector.\<T\>() global function
 
@@ -321,19 +274,7 @@ added to the result Vector (no error occurs). Using the `Vector.<T>()` global
 function is the only way to convert a Vector with base type `T` to a Vector with
 a base type that's a superclass of `T`.
 
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Inserting array elements
-
-<div>
 
 The most basic way to add an element to an indexed array is to use the array
 access ( `[]` ) operator. To set the value of an indexed array element, use the
@@ -387,23 +328,11 @@ sense in light of the `splice()` method's versatility. You can use the
 elements from an array. When used to remove elements, the `splice()` method
 returns an array containing the elements removed.
 
-<div>
-
 Note: If a Vector object's `fixed` property is `true`, the total number of
 elements in the Vector can't change. If you try to add a new element to a
 fixed-length Vector using the techniques described here, an error occurs.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Retrieving values and removing array elements
-
-<div>
 
 The simplest way to retrieve the value of an element from an indexed array is to
 use the array access ( `[]` ) operator. To retrieve the value of an indexed
@@ -482,41 +411,23 @@ entries at the end of the array, as shown in the following code:
     oceans.length = 2;
     trace(oceans); // output: Arctic,Pacific
 
-<div>
-
 Note: If a Vector object's `fixed` property is `true`, the total number of
 elements in the Vector can't change. If you try to remove an element from or
 truncate a fixed-length Vector using the techniques described here, an error
 occurs.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Sorting an array
-
-<div>
 
 There are three methods— `reverse()`, `sort()`, and `sortOn()` —that allow you
 to change the order of an indexed array, either by sorting or reversing the
 order. All of these methods modify the existing array. The following table
 summarizes these methods and their behavior for Array and Vector objects:
 
-<div>
-
 | Method      | Array behavior                                                                                                                                                   | Vector behavior                                                               |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
 | `reverse()` | Changes the order of the elements so that the last element becomes the first element, the penultimate element becomes the second, and so on                      | Identical to Array behavior                                                   |
 | `sort()`    | Allows you to sort the Array's elements in a variety of predefined ways, such as alphabetical or numeric order. You can also specify a custom sorting algorithm. | Sorts the elements according to the custom sorting algorithm that you specify |
 | `sortOn()`  | Allows you to sort objects that have one or more common properties, specifying the property or properties to use as the sort keys                                | Not available in the Vector class                                             |
-
-</div>
-
-<div>
 
 #### The reverse() method
 
@@ -528,10 +439,6 @@ the `oceans` array:
     var oceans:Array = ["Arctic", "Atlantic", "Indian", "Pacific"];
     oceans.reverse();
     trace(oceans); // output: Pacific,Indian,Atlantic,Arctic
-
-</div>
-
-<div>
 
 #### Basic sorting with the sort() method (Array class only)
 
@@ -586,10 +493,6 @@ is created that is sorted using several different options.
     poets.sort(Array.DESCENDING | Array.CASEINSENSITIVE); // use two options
     trace(poets); // output: Dante,cummings,Blake,Angelou
 
-</div>
-
-<div>
-
 #### Custom sorting with the sort() method (Array and Vector classes)
 
 In addition to the basic sorting that's available for an Array object, you can
@@ -642,10 +545,6 @@ sort function's return value indicates how the elements should be sorted:
 
 - A return value of 0 indicates that the elements have equal sorting precedence.
 
-</div>
-
-<div>
-
 #### The sortOn() method (Array class only)
 
 The `sortOn()` method is designed for Array objects with elements that contain
@@ -653,12 +552,8 @@ objects. These objects are expected to have at least one common property that
 can be used as the sort key. The use of the `sortOn()` method for arrays of any
 other type yields unexpected results.
 
-<div>
-
 Note: The Vector class does not include a `sortOn()` method. This method is only
 available for Array objects.
-
-</div>
 
 The following example revises the `poets` Array so that each element is an
 object instead of a string. Each object holds both the poet's last name and year
@@ -694,10 +589,6 @@ array.
     Angelou 1928
     */
 
-</div>
-
-<div>
-
 #### Sorting without modifying the original array (Array class only)
 
 Generally, the `sort()` and `sortOn()` methods modify an Array. If you wish to
@@ -730,17 +621,7 @@ The following example stores the returned index information in an Array named
     Angelou 1928
     */
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Querying an array
-
-<div>
 
 Four methods of the Array and Vector classes— `concat()`, `join()`, `slice()`,
 and `toString()` —all query the array for information, but do not modify the
@@ -793,7 +674,3 @@ shows:
     var letters:Array = ["a",nested,"e"];
     var joined:String = letters.join("+");
     trace(joined); // output: a+b,c,d+e
-
-</div>
-
-</div>

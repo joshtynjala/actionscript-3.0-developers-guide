@@ -1,19 +1,11 @@
 # Displaying text
 
-<div>
-
 Although authoring tools like Adobe Flash Builder and Flash Professional provide
 several options for displaying text, including text-related components or text
 tools, the simplest way to display text programmatically is through a text
 field.
 
-</div>
-
-<div>
-
 ## Types of text
-
-<div>
 
 The type of text within a text field is characterized by its source:
 
@@ -38,15 +30,7 @@ The type of text within a text field is characterized by its source:
   instance. For more information, see
   [Working with static text](WS8d7bb3e8da6fb92f-20050207122bd5f80cb-7fed.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Modifying the text field contents
-
-<div>
 
 You can define dynamic text by assigning a string to the
 `flash.text.TextField.text` property. You assign a string directly to the
@@ -88,15 +72,7 @@ variable. You have three options for loading text values from remote sources:
   more information, see
   [Storing local data](WS86fc450a3af174de7b9be8751220e1c6551-8000.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Displaying HTML text
-
-<div>
 
 The flash.text.TextField class has an `htmlText` property that you can use to
 identify your text string as one containing HTML tags for formatting the
@@ -117,15 +93,7 @@ sheets or the `textformat` tag to manage the formatting of your content. For
 more information, see
 [Formatting text](WS8d7bb3e8da6fb92f-20050207122bd5f80cb-7ff5.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Using images in text fields
-
-<div>
 
 Another advantage to displaying your content as HTML text is that you can
 include images in the text field. You can reference an image, local or remote,
@@ -161,15 +129,7 @@ displayed text:
 
 The `img` tag supports JPEG, GIF, PNG, and SWF files.
 
-</div>
-
-</div>
-
-<div>
-
 ## Scrolling text in a text field
-
-<div>
 
 In many cases, your text can be longer than the text field displaying the text.
 Or you may have an input field that allows a user to input more text than can be
@@ -222,15 +182,3 @@ the text scrolls vertically.
     		}
     	}
     }
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

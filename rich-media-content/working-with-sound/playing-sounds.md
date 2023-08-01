@@ -1,7 +1,5 @@
 # Playing sounds
 
-<div>
-
 Playing a loaded sound can be as simple as calling the `Sound.play()` method for
 a Sound object, as follows:
 
@@ -47,13 +45,7 @@ point each time, as shown in the following code:
 In this example, the sound is played from a point one second after the start of
 the sound, three times in succession.
 
-</div>
-
-<div>
-
 ## Pausing and resuming a sound
-
-<div>
 
 If your application plays long sounds, like songs or podcasts, you probably want
 to let users pause and resume the playback of those sounds. A sound cannot
@@ -79,15 +71,7 @@ restart the sound from the same point it stopped at before.
 
     channel = snd.play(pausePosition);
 
-</div>
-
-</div>
-
-<div>
-
 ## Monitoring playback
-
-<div>
 
 Your application might want to know when a sound stops playing so it can start
 playing another sound, or clean up some resources used during the previous
@@ -189,15 +173,7 @@ cases, your application can set up its own timing mechanism using the
 flash.util.Timer class; see
 [Working with dates and times](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e52.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Stopping streaming sounds
-
-<div>
 
 There is a quirk in the playback process for sounds that are streaming—that is,
 for sounds that are still loading while they are being played. When your
@@ -206,15 +182,3 @@ that is playing back a streaming sound, the sound playback stops for one frame,
 and then on the next frame, it restarts from the beginning of the sound. This
 occurs because the sound loading process is still underway. To stop both the
 loading and the playback of a streaming sound, call the `Sound.close()` method.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # About hardware acceleration using StageVideo
 
-<div>
-
 Hardware accelerated presentation—which includes video scaling, color
 conversion, and blitting—enhances the performance benefits of hardware
 accelerated decoding. On devices that offer GPU (hardware) acceleration, you can
@@ -28,13 +26,7 @@ whenever Flash Player detects that hardware accelerated presentation is
 available. See
 [Guidelines and limitations](WSe9ecd9e6b89aefd2-70150d4b12ccd2cd415-7ffe.html).
 
-</div>
-
-<div>
-
 ## Parallel planes: Stage video and the Flash display list
-
-<div>
 
 With the stage video model, Flash Player can separate video from the display
 list. Flash Player divides the composite display between two Z-ordered planes:
@@ -52,20 +44,10 @@ including playback controls. When hardware acceleration is not available, videos
 can be played only on this plane, using the Video class object. Stage video
 always displays behind Flash display list graphics.
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 <a href="#" onclick="return showHideImage(&#39;Planes&#39;, this);">View full
 size graphic</a> ![](images/Planes.png)
 
-<div>
-
 Video display planes
-
-</div>
-
-</div>
 
 The StageVideo object appears in a non-rotated, window-aligned rectangular
 region of the screen. You cannot layer objects behind the stage video plane.
@@ -75,15 +57,7 @@ Thus, you can use the two mechanisms together to create a unified visual effect
 that uses two discreet planes. For example, you can use the front plane for
 playback controls that operate on the stage video running in the background.
 
-</div>
-
-</div>
-
-<div>
-
 ## Stage video and H.264 codec
-
-<div>
 
 In Flash Player applications, implementing video hardware acceleration involves
 two steps:
@@ -101,15 +75,7 @@ Instead, the GPU blits decoded and rendered frames directly to the screen,
 behind the display list objects. This technique reduces CPU and memory usage and
 also provides better pixel fidelity.
 
-</div>
-
-</div>
-
-<div>
-
 ## Guidelines and limitations
-
-<div>
 
 When video is running in full screen mode, stage video is always available if
 the device supports hardware acceleration. Flash Player, however, also runs
@@ -168,28 +134,8 @@ features. Stage video enforces the following constraints:
 In most cases, these limitations do not affect video player applications. If you
 can accept these limitations, use stage video whenever possible.
 
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
 
 [Understanding video formats](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d46.html)
 
 [Working with full-screen mode](WS2E9C7F3B-6A7C-4c5d-8ADD-5B23446FBEEB.html)
-
-</div>
-
-<div>
-
-</div>
-
-</div>

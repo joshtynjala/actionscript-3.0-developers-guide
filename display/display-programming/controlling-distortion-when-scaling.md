@@ -1,7 +1,5 @@
 # Controlling distortion when scaling
 
-<div>
-
 Normally when a display object is scaled (for example, stretched horizontally),
 the resulting distortion is spread equally across the object, so that each part
 is stretched the same amount. For graphics and design elements, this is probably
@@ -11,28 +9,16 @@ common example of this is a button that's a rectangle with rounded corners. With
 normal scaling, the corners of the button will stretch, making the corner radius
 change as the button resizes.
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![<Scaling distortion on a button with rounded
 corners>](../../img/dp_9-slice-scale-wrong.png)
-
-</div>
 
 However, in this case it would be preferable to have control over the scaling—to
 be able to designate certain areas which should scale (the straight sides and
 middle) and areas which shouldn't (the corners)—so that scaling happens without
 visible distortion.
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![<Button scaled without
 distortion>](../../img/dp_9-slice-scale-right.png)
-
-</div>
 
 You can use 9-slice scaling (Scale-9) to create display objects where you have
 control over how the objects scale. With 9-slice scaling, the display object is
@@ -45,13 +31,7 @@ bottom-center rectangles will scale horizontally but not vertically, while the
 left-middle and right-middle rectangles will scale vertically but not
 horizontally. The center rectangle will scale both horizontally and vertically.
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![<9-slice scaling grid>](../../img/dp_9-slice-scale-grid.png)
-
-</div>
 
 Keeping this in mind, if you're creating a display object and you want certain
 content to never scale, you just have to make sure that the dividing lines of
@@ -72,48 +52,25 @@ rectangle is 71 pixels wide and 64 pixels tall (so its right edge is at the x
 coordinate 103 on the display object and its bottom edge is at the y coordinate
 92 on the display object).
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
-![<Core rectangle of the Scale-9
-grid>](../../img/dp_9-slice-scale-as-rectangle.png)
-
-</div>
+![<Core rectangle of the Scale-9 grid>](../../img/dp_9-slice-scale-as-rectangle.png)
 
 The actual area contained in the region defined by the Rectangle instance
 represents the center rectangle of the Scale-9 grid. The other rectangles are
 calculated by Flash Player and AIR by extending the sides of the Rectangle
 instance, as shown here:
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
-![<Complete Scale-9 grid derived from core
-rectangle>](../../img/dp_9-slice-scale-as-grid-extended.png)
-
-</div>
+![<Complete Scale-9 grid derived from core rectangle>](../../img/dp_9-slice-scale-as-grid-extended.png)
 
 In this case, as the button scales up or down, the rounded corners will not
 stretch or compress, but the other areas will adjust to accommodate the scaling.
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
-![<Effects of 9-slice scaling as button scales in both
-directions>](../../img/dp_9-slice-scale-scaled-versions.png)
+![<Effects of 9-slice scaling as button scales in both directions>](../../img/dp_9-slice-scale-scaled-versions.png)
 
 **A.**  
-myButton.width = 131;myButton.height = 106;
+myButton.width = 131; myButton.height = 106;
 
 **B.**  
-myButton.width = 73;myButton.height = 69;
+myButton.width = 73; myButton.height = 69;
 
 **C.**  
-myButton.width = 54;myButton.height = 141;
-
-</div>
-
-</div>
+myButton.width = 54; myButton.height = 141;

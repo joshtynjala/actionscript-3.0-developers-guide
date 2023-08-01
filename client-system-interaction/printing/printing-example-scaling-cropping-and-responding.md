@@ -1,7 +1,5 @@
 # Printing example: Scaling, cropping, and responding
 
-<div>
-
 In some cases, you want to adjust the size (or other properties) of a display
 object when printing it to accommodate differences between the way it appears on
 screen and the way it appears printed on paper. When you adjust the properties
@@ -90,13 +88,3 @@ alert the user that the job has been canceled.
     		}
     	}
     }
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

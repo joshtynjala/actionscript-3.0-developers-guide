@@ -1,7 +1,5 @@
 # Filtering display objects example: Filter Workbench
 
-<div>
-
 The Filter Workbench provides a user interface to apply different filters to
 images and other visual content and see the resulting code that can be used to
 generate the same effect in ActionScript. In addition to providing a tool for
@@ -17,218 +15,204 @@ To get the application files for this sample, see
 The Filter Workbench application files can be found in the
 Samples/FilterWorkbench folder. The application consists of the following files:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>File</p></th>
-<th><p>Description</p></th>
-</tr>
+    <tr>
+        <th><p>File</p></th>
+        <th><p>Description</p></th>
+    </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td headers="d17e21949 "><p>com/example/programmingas3/filterWorkbench/FilterWorkbenchController.as</p></td>
-<td headers="d17e21952 "><p>Class that
-provides the main functionality of the application, including switching
-content to which filters are applied, and applying filters to
-content.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e21949 "><p>com/example/programmingas3/filterWorkbench/IFilterFactory.as</p></td>
-<td headers="d17e21952 "><p>Interface
-defining common methods that are implemented by each of the filter
-factory classes. This interface defines the common functionality that
-the FilterWorkbenchController class uses to interact with the individual
-filter factory classes.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e21949 "><p>in folder
-com/example/programmingas3/filterWorkbench/:</p>
-<p>BevelFactory.as</p>
-<p>BlurFactory.as</p>
-<p>ColorMatrixFactory.as</p>
-<p>ConvolutionFactory.as</p>
-<p>DropShadowFactory.as</p>
-<p>GlowFactory.as</p>
-<p>GradientBevelFactory.as</p>
-<p>GradientGlowFactory.as</p></td>
-<td headers="d17e21952 "><p>Set of
-classes, each of which implements the IFilterFactory interface. Each of
-these classes provides the functionality of creating and setting values
-for a single type of filter. The filter property panels in the
-application use these factory classes to create instances of their
-particular filters, which the FilterWorkbenchController class retrieves
-and applies to the image content.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e21949 "><p>com/example/programmingas3/filterWorkbench/IFilterPanel.as</p></td>
-<td headers="d17e21952 "><p>Interface
-defining common methods that are implemented by classes that define the
-user interface panels that are used to manipulate filter values in the
-application.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e21949 "><p>com/example/programmingas3/filterWorkbench/ColorStringFormatter.as</p></td>
-<td headers="d17e21952 "><p>Utility class
-that includes a method to convert a numeric color value to hexadecimal
-String format</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e21949 "><p>com/example/programmingas3/filterWorkbench/GradientColor.as</p></td>
-<td headers="d17e21952 "><p>Class that
-serves as a value object, combining into a single object the three
-values (color, alpha, and ratio) that are associated with each color in
-the GradientBevelFilter and GradientGlowFilter</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e21949 "><p>User
-interface (Flex)</p></td>
-<td headers="d17e21952 "></td>
-</tr>
-<tr class="even">
-<td headers="d17e21949 "><p>FilterWorkbench.mxml</p></td>
-<td headers="d17e21952 "><p>The main file
-defining the application's user interface.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e21949 "><p>flexapp/FilterWorkbench.as</p></td>
-<td headers="d17e21952 "><p>Class that
-provides the functionality for the main application's user interface;
-this class is used as the code-behind class for the application MXML
-file.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e21949 "><p>In folder
-flexapp/filterPanels:</p>
-<p>BevelPanel.mxml</p>
-<p>BlurPanel.mxml</p>
-<p>ColorMatrixPanel.mxml</p>
-<p>ConvolutionPanel.mxml</p>
-<p>DropShadowPanel.mxml</p>
-<p>GlowPanel.mxml</p>
-<p>GradientBevelPanel.mxml</p>
-<p>GradientGlowPanel.mxml</p></td>
-<td headers="d17e21952 "><p>Set of MXML
-components that provide the functionality for each panel that is used to
-set options for a single filter.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e21949 "><p>flexapp/ImageContainer.as</p></td>
-<td headers="d17e21952 "><p>A display
-object that serves as a container for the loaded image on the
-screen</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e21949 "><p>flexapp/controls/BGColorCellRenderer.as</p></td>
-<td headers="d17e21952 "><p>Custom cell
-renderer used to change the background color of a cell in the DataGrid
-component</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e21949 "><p>flexapp/controls/QualityComboBox.as</p></td>
-<td headers="d17e21952 "><p>Custom
-control defining a combo box that can be used for the Quality setting in
-several filter panels.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e21949 "><p>flexapp/controls/TypeComboBox.as</p></td>
-<td headers="d17e21952 "><p>Custom
-control defining a combo box that can be used for the Type setting in
-several filter panels.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e21949 "><p>User
-interface (Flash)</p></td>
-<td headers="d17e21952 "></td>
-</tr>
-<tr class="even">
-<td headers="d17e21949 "><p>FilterWorkbench.fla</p></td>
-<td headers="d17e21952 "><p>The main file
-defining the application's user interface.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e21949 "><p>flashapp/FilterWorkbench.as</p></td>
-<td headers="d17e21952 "><p>Class that
-provides the functionality for the main application's user interface;
-this class is used as the document class for the application FLA
-file.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e21949 "><p>In folder
-flashapp/filterPanels:</p>
-<p>BevelPanel.as</p>
-<p>BlurPanel.as</p>
-<p>ColorMatrixPanel.as</p>
-<p>ConvolutionPanel.as</p>
-<p>DropShadowPanel.as</p>
-<p>GlowPanel.as</p>
-<p>GradientBevelPanel.as</p>
-<p>GradientGlowPanel.as</p></td>
-<td headers="d17e21952 "><p>Set of
-classes that provide the functionality for each panel that is used to
-set options for a single filter.</p>
-<p>For each class, there is also an associated MovieClip symbol in the
-library of the main application FLA file, whose name matches the name of
-the class (for example, the symbol "BlurPanel" is linked to the class
-defined in BlurPanel.as). The components that make up the user interface
-are positioned and named within those symbols.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e21949 "><p>flashapp/ImageContainer.as</p></td>
-<td headers="d17e21952 "><p>A display
-object that serves as a container for the loaded image on the
-screen</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e21949 "><p>flashapp/BGColorCellRenderer.as</p></td>
-<td headers="d17e21952 "><p>Custom cell
-renderer used to change the background color of a cell in the DataGrid
-component</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e21949 "><p>flashapp/ButtonCellRenderer.as</p></td>
-<td headers="d17e21952 "><p>Custom cell
-renderer used to include a button component in a cell in the DataGrid
-component</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e21949 "><p>Filtered
-image content</p></td>
-<td headers="d17e21952 "></td>
-</tr>
-<tr class="odd">
-<td headers="d17e21949 "><p>com/example/programmingas3/filterWorkbench/ImageType.as</p></td>
-<td headers="d17e21952 "><p>This class
-serves as a value object containing the type and URL of a single image
-file to which the application can load and apply filters. The class also
-includes a set of constants representing the actual image files
-available.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e21949 "><p>images/sampleAnimation.swf,</p>
-<p>images/sampleImage1.jpg,</p>
-<p>images/sampleImage2.jpg</p></td>
-<td headers="d17e21952 "><p>Images and
-other visual content to which filters are applied in the
-application.</p></td>
-</tr>
+    <tr>
+        <td ><p>com/example/programmingas3/filterWorkbench/FilterWorkbenchController.as</p></td>
+        <td ><p>Class that
+        provides the main functionality of the application, including switching
+        content to which filters are applied, and applying filters to
+        content.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/filterWorkbench/IFilterFactory.as</p></td>
+        <td ><p>Interface
+        defining common methods that are implemented by each of the filter
+        factory classes. This interface defines the common functionality that
+        the FilterWorkbenchController class uses to interact with the individual
+        filter factory classes.</p></td>
+    </tr>
+    <tr>
+        <td ><p>in folder
+        com/example/programmingas3/filterWorkbench/:</p>
+        <p>BevelFactory.as</p>
+        <p>BlurFactory.as</p>
+        <p>ColorMatrixFactory.as</p>
+        <p>ConvolutionFactory.as</p>
+        <p>DropShadowFactory.as</p>
+        <p>GlowFactory.as</p>
+        <p>GradientBevelFactory.as</p>
+        <p>GradientGlowFactory.as</p></td>
+        <td ><p>Set of
+        classes, each of which implements the IFilterFactory interface. Each of
+        these classes provides the functionality of creating and setting values
+        for a single type of filter. The filter property panels in the
+        application use these factory classes to create instances of their
+        particular filters, which the FilterWorkbenchController class retrieves
+        and applies to the image content.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/filterWorkbench/IFilterPanel.as</p></td>
+        <td ><p>Interface
+        defining common methods that are implemented by classes that define the
+        user interface panels that are used to manipulate filter values in the
+        application.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/filterWorkbench/ColorStringFormatter.as</p></td>
+        <td ><p>Utility class
+        that includes a method to convert a numeric color value to hexadecimal
+        String format</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/filterWorkbench/GradientColor.as</p></td>
+        <td ><p>Class that
+        serves as a value object, combining into a single object the three
+        values (color, alpha, and ratio) that are associated with each color in
+        the GradientBevelFilter and GradientGlowFilter</p></td>
+    </tr>
+    <tr>
+        <td ><p>User
+        interface (Flex)</p></td>
+        <td ></td>
+    </tr>
+    <tr>
+        <td ><p>FilterWorkbench.mxml</p></td>
+        <td ><p>The main file
+        defining the application's user interface.</p></td>
+    </tr>
+    <tr>
+        <td ><p>flexapp/FilterWorkbench.as</p></td>
+        <td ><p>Class that
+        provides the functionality for the main application's user interface;
+        this class is used as the code-behind class for the application MXML
+        file.</p></td>
+    </tr>
+    <tr>
+        <td ><p>In folder
+        flexapp/filterPanels:</p>
+        <p>BevelPanel.mxml</p>
+        <p>BlurPanel.mxml</p>
+        <p>ColorMatrixPanel.mxml</p>
+        <p>ConvolutionPanel.mxml</p>
+        <p>DropShadowPanel.mxml</p>
+        <p>GlowPanel.mxml</p>
+        <p>GradientBevelPanel.mxml</p>
+        <p>GradientGlowPanel.mxml</p></td>
+        <td ><p>Set of MXML
+        components that provide the functionality for each panel that is used to
+        set options for a single filter.</p></td>
+    </tr>
+    <tr>
+        <td ><p>flexapp/ImageContainer.as</p></td>
+        <td ><p>A display
+        object that serves as a container for the loaded image on the
+        screen</p></td>
+    </tr>
+    <tr>
+        <td ><p>flexapp/controls/BGColorCellRenderer.as</p></td>
+        <td ><p>Custom cell
+        renderer used to change the background color of a cell in the DataGrid
+        component</p></td>
+    </tr>
+    <tr>
+        <td ><p>flexapp/controls/QualityComboBox.as</p></td>
+        <td ><p>Custom
+        control defining a combo box that can be used for the Quality setting in
+        several filter panels.</p></td>
+    </tr>
+    <tr>
+        <td ><p>flexapp/controls/TypeComboBox.as</p></td>
+        <td ><p>Custom
+        control defining a combo box that can be used for the Type setting in
+        several filter panels.</p></td>
+    </tr>
+    <tr>
+        <td ><p>User
+        interface (Flash)</p></td>
+        <td ></td>
+    </tr>
+    <tr>
+        <td ><p>FilterWorkbench.fla</p></td>
+        <td ><p>The main file
+        defining the application's user interface.</p></td>
+    </tr>
+    <tr>
+        <td ><p>flashapp/FilterWorkbench.as</p></td>
+        <td ><p>Class that
+        provides the functionality for the main application's user interface;
+        this class is used as the document class for the application FLA
+        file.</p></td>
+    </tr>
+    <tr>
+        <td ><p>In folder
+        flashapp/filterPanels:</p>
+        <p>BevelPanel.as</p>
+        <p>BlurPanel.as</p>
+        <p>ColorMatrixPanel.as</p>
+        <p>ConvolutionPanel.as</p>
+        <p>DropShadowPanel.as</p>
+        <p>GlowPanel.as</p>
+        <p>GradientBevelPanel.as</p>
+        <p>GradientGlowPanel.as</p></td>
+        <td ><p>Set of
+        classes that provide the functionality for each panel that is used to
+        set options for a single filter.</p>
+        <p>For each class, there is also an associated MovieClip symbol in the
+        library of the main application FLA file, whose name matches the name of
+        the class (for example, the symbol "BlurPanel" is linked to the class
+        defined in BlurPanel.as). The components that make up the user interface
+        are positioned and named within those symbols.</p></td>
+    </tr>
+    <tr>
+        <td ><p>flashapp/ImageContainer.as</p></td>
+        <td ><p>A display
+        object that serves as a container for the loaded image on the
+        screen</p></td>
+    </tr>
+    <tr>
+        <td ><p>flashapp/BGColorCellRenderer.as</p></td>
+        <td ><p>Custom cell
+        renderer used to change the background color of a cell in the DataGrid
+        component</p></td>
+    </tr>
+    <tr>
+        <td ><p>flashapp/ButtonCellRenderer.as</p></td>
+        <td ><p>Custom cell
+        renderer used to include a button component in a cell in the DataGrid
+        component</p></td>
+    </tr>
+    <tr>
+        <td ><p>Filtered
+        image content</p></td>
+        <td ></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/filterWorkbench/ImageType.as</p></td>
+        <td ><p>This class
+        serves as a value object containing the type and URL of a single image
+        file to which the application can load and apply filters. The class also
+        includes a set of constants representing the actual image files
+        available.</p></td>
+    </tr>
+    <tr>
+        <td ><p>images/sampleAnimation.swf,</p>
+        <p>images/sampleImage1.jpg,</p>
+        <p>images/sampleImage2.jpg</p></td>
+        <td ><p>Images and
+        other visual content to which filters are applied in the
+        application.</p></td>
+    </tr>
 </tbody>
 </table>
 
-</div>
-
-</div>
-
-<div>
-
 ## Experimenting with ActionScript filters
-
-<div>
 
 The Filter Workbench application is designed to help you experiment with various
 filter effects and generate the relevant ActionScript code for that effect. The
@@ -259,13 +243,7 @@ application displays a panel with controls for setting the specific properties
 of the selected filter. For example, the following image shows the application
 with the Bevel filter selected:
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](../../img/fo_filter_workbench_screenshot_popup.png)
-
-</div>
 
 As the user adjusts the filter properties, the preview updates in real time. The
 user can also apply multiple filters by customizing one filter, clicking the
@@ -287,15 +265,7 @@ There are a few features and limitations in the application's filter panels:
 - The displacement map filter and shader filter, which are only available in
   ActionScript, are not available in the Filter Workbench application.
 
-</div>
-
-</div>
-
-<div>
-
 ## Creating filter instances
-
-<div>
 
 The Filter Workbench application includes a set of classes, one for each of the
 available filters, which are used by the individual panels to create the
@@ -388,15 +358,7 @@ returns a ConvolutionFilter instance, although any object that calls
 BitmapFilter instance, which could be an instance of any of the ActionScript
 filter classes.
 
-</div>
-
-</div>
-
-<div>
-
 ## Applying filters to display objects
-
-<div>
 
 As explained previously, the Filter Workbench application uses an instance of
 the FilterWorkbenchController class (hereafter referred to as the "controller
@@ -503,7 +465,3 @@ to the `filters` property, and it uses that internal array rather than the
 original one. For this reason, any changes that are made to the array of filters
 don't affect the display object until the array is assigned to the display
 object's `filters` property again.
-
-</div>
-
-</div>

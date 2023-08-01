@@ -1,14 +1,6 @@
 # Using the Text Layout Framework
 
-<div>
-
-</div>
-
-<div>
-
 ## Overview of the Text Layout Framework
-
-<div>
 
 The Text Layout Framework (TLF) is an extensible ActionScript library. The TLF
 is built on the text engine in Adobe® Flash® Player 10 and Adobe® AIR® 1.5. The
@@ -16,8 +8,6 @@ TLF provides advanced typographic and text layout features for innovative
 typography on the web. The framework can be used with Adobe® Flex® or Adobe®
 Flash® Professional. Developers can use or extend existing components, or they
 can use the framework to create their own text components.
-
-<div>
 
 The TLF includes the following capabilities:
 
@@ -42,8 +32,6 @@ The TLF includes the following capabilities:
 
 - Inline images and positioning rules
 
-</div>
-
 The TLF is an ActionScript 3.0 library built on the Flash Text Engine (FTE)
 introduced in Flash Player 10. FTE can be accessed through the
 `flash.text.engine` package, which is part of the Flash Player 10 Application
@@ -61,13 +49,7 @@ framework is extensible, it can be customized for specific environments. Both
 Flash Professional and the Flex SDK include components that are based on the TLF
 framework.
 
-</div>
-
-<div>
-
 ### Complex script support
-
-<div>
 
 The TLF provides complex script support. Complex script support includes the
 ability to display and edit right-to-left scripts. The TLF also provides the
@@ -76,8 +58,6 @@ such as Arabic and Hebrew. The framework not only supports vertical text layout
 for Chinese, Japanese, and Korean, but also supports tate-chu-yoko (TCY
 elements). TCY elements are blocks of horizontal text embedded into vertical
 runs of text. The following scripts are supported:
-
-<div>
 
 - Latin (English, Spanish, French, Vietnamese, and so on)
 
@@ -96,17 +76,7 @@ runs of text. The following scripts are supported:
 - Tifinagh, Yi, Cherokee, Canadian Syllabics, Deseret, Shavian, Vai, Tagalog,
   Hanunoo, Buhid, and Tagbanwa
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ### Using the Text Layout Framework in Flash Professional and Flex
-
-<div>
 
 You can use the TLF classes directly to create custom components in Flash. In
 addition, Flash Professional CS5 provides a new class, fl.text.TLFTextField,
@@ -127,17 +97,7 @@ in the
 If you are working in Flex, use the TLF classes. For more information, see
 [Using the Text Layout Framework](WS14c3067b34b57c6d4a97343b122ab36a52f-7ffd.html).
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Using the Text Layout Framework
-
-<div>
 
 If you are working in Flex or are building custom text components, use the TLF
 classes. The TLF is an ActionScript 3.0 library contained entirely within the
@@ -145,15 +105,7 @@ textLayout.swc library. The TLF library contains about 100 ActionScript 3.0
 classes and interfaces organized into ten packages. These packages are
 subpackages of the flashx.textLayout package.
 
-</div>
-
-<div>
-
 ### The Text Layout Framework classes
-
-<div>
-
-<div>
 
 The TLF classes can be grouped into three categories:
 
@@ -163,17 +115,7 @@ The TLF classes can be grouped into three categories:
 
 - User interaction classes
 
-</div>
-
-</div>
-
-<div>
-
 #### Data structures and formatting classes
-
-<div>
-
-<div>
 
 The following packages contain the data structures and formatting classes for
 the TLF:
@@ -184,25 +126,13 @@ the TLF:
 
 - [flashx.textLayout.conversion](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/conversion/package-detail.html)
 
-</div>
-
 The main data structure of the TLF is the text flow hierarchy, which is defined
 in the elements package. Within this structure, you can assign styles and
 attributes to runs of text with the formats package. You can also control how
 text is imported to, and exported from, the data structure with the conversion
 package.
 
-</div>
-
-</div>
-
-<div>
-
 #### Rendering classes
-
-<div>
-
-<div>
 
 The following packages contain the rendering classes for the TLF:
 
@@ -218,19 +148,7 @@ The container package includes classes and interfaces that define display
 containers for dynamic text. The compose package defines techniques for
 positioning and displaying dynamic text in containers.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 #### User interaction classes
-
-<div>
-
-<div>
 
 The following packages contain the user interaction classes for the TLF:
 
@@ -244,24 +162,10 @@ The edit and operations packages define classes that you can use to allow
 editing of text stored in the data structures. The events package contains event
 handling classes.
 
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ### General steps for creating text with the Text Layout Framework
-
-<div>
 
 The following steps describe the general process for creating text with the Text
 Layout Format:
-
-<div>
 
 1.  Import formatted text into the TLF data structures. For more information,
     see
@@ -281,17 +185,7 @@ Layout Format:
     events. For more information, see
     [Event handling with TLF](WS9161fa65b20d655231c2451c122c34c3394-8000.html).
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ### Text Layout Framework example: News layout
-
-<div>
 
 The following example demonstrates using the TLF to lay out a simple newspaper
 page. The page includes a large headline, a subhead, and a multicolumn body
@@ -416,8 +310,6 @@ simplicity, the text is hard-coded into the example as TLF Markup text. The
 Markup, see
 [Structuring text with TLF](WS948100b6829bd5a6-6fb9ab1912ce6d702d5-8000.html).
 
-<div>
-
 After some initialization, the `onAddedToStage()` function imports the headline
 text into a TextFlow object, which is the main data structure of the TLF:
 
@@ -435,8 +327,6 @@ the text flows into. A TextLayoutFormat object contains the formatting options:
 
     hContainerFormat = new TextLayoutFormat();
 
-</div>
-
 The controller is assigned to the flow composer and the function adds the
 container to the display list. The actual composition and display of the
 containers is deferred to the `resizeHandler()` method. The same sequence of
@@ -450,17 +340,7 @@ headline container with the `updateAllControllers()` method. Finally, the
 `resizeHandler()` method uses the size of the headline container to determine
 the placement of the body text container.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Structuring text with TLF
-
-<div>
 
 The TLF uses a hierarchical tree to represent text. Each node in the tree is an
 instance of a class defined in the elements package. For example, the root node
@@ -472,27 +352,11 @@ than one column or text container to display.
 Apart from the root node, the remaining elements are loosely based on XHTML
 elements. The following diagram shows the hierarchy of the framework:
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](images/te_textFlowHierarchy.png)
-
-<div>
 
 TextFlow Hierarchy
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ### Text Layout Framework markup
-
-<div>
 
 Understanding the structure of the TLF is also helpful when dealing with TLF
 Markup. TLF Markup is an XML representation of text that is part of the TLF.
@@ -507,8 +371,6 @@ hierarchy's basic elements, and also provides attributes for all formatting
 properties available in the TextLayoutFormat class.
 
 The following table contains the tags that can be used in TLF Markup.
-
-<div>
 
 | Element          | Description                                                                                                                              | Children                      | Class                                                                                                                                                    |
 | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -528,17 +390,7 @@ The following table contains the tags that can be used in TLF Markup.
 | list             | A list. Lists can be nested, or placed adjacent to each other. Different labeling or numbering schemes can be applied to the list items. | div, li, list, p              | [ListElement](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/elements/ListElement.html)                           |
 | g                | A group element. Used for grouping elements in a paragraph. The lets you nest elements below the paragraph level.                        | a, tcy, span, img, tab, br, g | [SubParagraphGroupElement](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/elements/SubParagraphGroupElement.html) |
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ### Using numbered and bulleted lists
-
-<div>
 
 You can use the
 [ListElement](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/elements/ListElement.html)
@@ -552,8 +404,6 @@ To create lists in your text flows, use the `<list>` tag. You then use `<li>`
 tags within the `<list>` tag for each list item in the list. You can customize
 the appearance of the bullets by using the ListMarkerFormat class.
 
-<div>
-
 The following example creates simple lists:
 
     <flow:list paddingRight="24" paddingLeft="24">
@@ -561,10 +411,6 @@ The following example creates simple lists:
     	<flow:li>Item 2</flow:li>
     	<flow:li>Item 3</flow:li>
     </flow:list>
-
-</div>
-
-<div>
 
 You can nest lists within other lists, as the following example shows:
 
@@ -579,18 +425,12 @@ You can nest lists within other lists, as the following example shows:
     	<flow:li>Item 3</flow:li>
     </flow:list>
 
-</div>
-
-<div>
-
 To customize the type of marker in the list, use the `listStyleType` property of
 the ListElement. This property can be any value defined by the ListStyleType
 class (such as `check`, `circle`, `decimal`, and `box`). The following example
 creates lists with various marker types and a custom counter increment:
 
     <flow:list paddingRight="24" paddingLeft="24" listStyleType="upperAlpha">     <flow:li>upperAlpha item</flow:li>     <flow:li>another</flow:li> </flow:list> <flow:list paddingRight="24" paddingLeft="24" listStyleType="lowerAlpha">     <flow:li>lowerAlpha item</flow:li>     <flow:li>another</flow:li> </flow:list> <flow:list paddingRight="24" paddingLeft="24" listStyleType="upperRoman">     <flow:li>upperRoman item</flow:li>     <flow:li>another</flow:li> </flow:list> <flow:list paddingRight="24" paddingLeft="24" listStyleType="lowerRoman">     <flow:listMarkerFormat>         <!-- Increments the list by 2s rather than 1s. -->         <flow:ListMarkerFormat counterIncrement="ordered 2"/>     </flow:listMarkerFormat>     <flow:li>lowerRoman item</flow:li>     <flow:li>another</flow:li> </flow:list>
-
-</div>
 
 You use the
 [ListMarkerFormat](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/formats/ListMarkerFormat.html)
@@ -602,8 +442,6 @@ You can further customize the appearance of the markers in your lists by using
 the `beforeContent` and `afterContent` properties of the ListMarkerFormat. These
 properties apply to content that appears before and after the content of the
 marker.
-
-<div>
 
 The following example adds the string "XX" before the marker, and the string
 "YY" after the marker:
@@ -619,10 +457,6 @@ The following example adds the string "XX" before the marker, and the string
     	<flow:li>Item 2</flow:li>
     	<flow:li>Item 3</flow:li>
     </flow:list>
-
-</div>
-
-<div>
 
 The `content` property itself can define further customizations of the marker
 format. The following example displays an ordered, uppercase Roman numeral
@@ -640,22 +474,12 @@ marker:
     	<flow:li>Item 3</li>
     </flow:list>
 
-</div>
-
 As the previous example shows, the `content` property can also insert a suffix:
 a string that appears after the marker, but before the `afterContent`. To insert
 this string when providing XML content to the flow, wrap the string in `&quote;`
 HTML entities rather than quotation marks ( `"< string >"`).
 
-</div>
-
-</div>
-
-<div>
-
 ### Using padding in TLF
-
-<div>
 
 Each
 [FlowElement](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/elements/FlowElement.html)
@@ -666,8 +490,6 @@ The total width of an element is the sum of its content's width, plus the
 `paddingLeft` and `paddingRight` properties. The total height of an element is
 the sum of its content's height, plus the `paddingTop` and `paddingBottom`
 properties.
-
-<div>
 
 The padding is the space between the border and the content. The padding
 properties are `paddingBottom`, `paddingTop`, `paddingLeft`, and `paddingRight`.
@@ -684,17 +506,11 @@ elements:
 
 - p
 
-</div>
-
 Padding properties cannot be applied to span elements.
-
-<div>
 
 The following example sets padding properties on the TextFlow:
 
     <flow:TextFlow version="2.0.0" xmlns:flow="http://ns.adobe.com/textLayout/2008" fontSize="14" textIndent="15" paddingTop="4" paddingLeft="4" fontFamily="Times New Roman">
-
-</div>
 
 Valid values for the padding properties are a number (in pixels), "auto", or
 "inherit". The default value is "auto", which means it is calculated
@@ -710,17 +526,7 @@ class.
 
 Padding properties can be negative values.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Formatting text with TLF
-
-<div>
 
 The flashx.textLayout.formats package contains interfaces and classes that allow
 you to assign formats to any FlowElement in the text flow hierarchy tree. There
@@ -733,13 +539,7 @@ text, but do not logically apply to individual characters. For example, formats
 such as justification and tab stops apply to whole paragraphs, but are not
 applicable to individual characters.
 
-</div>
-
-<div>
-
 ### Assigning formats to a FlowElement with properties
-
-<div>
 
 You can set formats on any FlowElement through property assignment. The
 FlowElement class implements the ITextLayoutFormat interface, so any subclass of
@@ -752,15 +552,7 @@ instance of ParagraphElement:
     p.fontSize = 18;
     p.fontFamily = "Arial";
 
-</div>
-
-</div>
-
-<div>
-
 ### Assigning formats to a FlowElement with the TextLayoutFormat class
-
-<div>
 
 You can apply formats to a FlowElement with the TextLayoutFormat class. You use
 this class to create a special formatting object that contains all of the
@@ -774,15 +566,7 @@ For more information, see
 in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
-</div>
-
-</div>
-
-<div>
-
 ### Format inheritance
-
-<div>
 
 Formats are inherited through the text flow hierarchy. If you assign an instance
 of TextLayoutFormat to a FlowElement instance with children, the framework
@@ -790,8 +574,6 @@ initiates a process called a _cascade_ . During a cascade, the framework
 recursively examines each node in the hierarchy that inherits from your
 FlowElement. It then determines whether to assign the inherited values to each
 formatting property. The following rules are applied during the cascade:
-
-<div>
 
 1.  Property values are inherited only from an immediate ancestor (sometimes
     called the parent).
@@ -802,8 +584,6 @@ formatting property. The following rules are applied during the cascade:
 3.  Some attributes do not inherit values when undefined, unless the attribute's
     value is set to "inherit" or the constant
     `flashx.textLayout.formats.FormatValue.INHERIT`.
-
-</div>
 
 For example, if you set the `fontSize` value at the TextFlow level, the setting
 applies to all elements in the TextFlow. In other words, the values cascade down
@@ -820,17 +600,7 @@ For more information, see
 in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Importing and exporting text with TLF
-
-<div>
 
 The TextConverter class in the flashx.textLayout.conversion.\* package lets you
 import text to, and export text from, the TLF. Use this class if you plan to
@@ -855,15 +625,7 @@ For more information, see
 in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Managing text containers with TLF
-
-<div>
 
 Once text is stored in the TLF data structures, Flash Player can display it. The
 text that is stored in the flow hierarchy must be converted into a format that
@@ -874,13 +636,7 @@ selected and edited. In both cases, the text is ultimately converted into
 instances of the TextLine class, which is part of the flash.text.engine.\*
 package in Flash Player 10.
 
-</div>
-
-<div>
-
 ### Creating static text
-
-<div>
 
 The simple approach uses the TextFlowTextLineFactory class, which can be found
 in the
@@ -894,15 +650,7 @@ For more information, see
 in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
-</div>
-
-</div>
-
-<div>
-
 ### Creating dynamic text and containers
-
-<div>
 
 Use a flow composer if you want to have more control over the display of text
 than that provided by TextFlowTextLineFactory. For example, with a flow
@@ -914,21 +662,11 @@ A flow composer is an instance of the StandardFlowComposer class in the
 A flow composer manages the conversion of TextFlow into TextLine instances, and
 also the placement of those TextLine instances into one or more containers.
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 <a href="#"
 onclick="return showHideImage(&#39;te_singlecontroller&#39;, this);">View full
 size graphic</a> ![](images/te_singlecontroller.png)
 
-<div>
-
 An IFlowComposer has zero or more ContainerControllers
-
-</div>
-
-</div>
 
 Every TextFlow instance has a corresponding object that implements the
 IFlowComposer interface. This IFlowComposer object is accessible through the
@@ -964,17 +702,7 @@ and
 in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Enabling text selection, editing, and undo with TLF
-
-<div>
 
 The ability to select or edit text is controlled at the text flow level. Every
 instance of the TextFlow class has an associated interaction manager. You can
@@ -997,17 +725,7 @@ and
 in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html)
 
-</div>
-
-</div>
-
-<div>
-
 ## Event handling with TLF
-
-<div>
-
-<div>
 
 TextFlow objects dispatch events in many circumstances, including:
 
@@ -1019,24 +737,12 @@ TextFlow objects dispatch events in many circumstances, including:
 
 - When a compose operation completes
 
-</div>
-
 For more information, see
 [flashx.textLayout.events](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/events/package-detail.html)
 in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Positioning images within text
-
-<div>
-
-<div>
 
 To position the
 [InlineGraphicElement](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/elements/InlineGraphicElement.html)
@@ -1047,21 +753,15 @@ within the text, you use the following properties:
 - `clearFloats` property of the
   [FlowElement](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/elements/FlowElement.html)
 
-</div>
-
 The `float` property controls the placement of the graphic and the text around
 it. The `clearFloats` property controls the placement of the paragraph elements
 relative to the `float`.
-
-<div>
 
 To control the location of an image within a text element, you use the `float`
 property. The following example adds an image to a paragraph and aligns it to
 the left so the text wraps around the right:
 
     <flow:p paragraphSpaceAfter="15" >Images in a flow are a good thing. For example, here is a float. It should show on the left: <flow:img float="left" height="50" width="19" source="../assets/bulldog.jpg"></flow:img> Don't you agree? Another sentence here. Another sentence here. Another sentence here. Another sentence here. Another sentence here. Another sentence here. Another sentence here. Another sentence here.</flow:p>
-
-</div>
 
 Valid values for the `float` property are "left", "right", "start", "end", and
 "none". The Float class defines these constants. The default value is "none".
@@ -1072,16 +772,12 @@ image. For example, assume that you have an image that is larger than the first
 paragraph. To be sure the second paragraph starts _after_ the image, set the
 `clearFloats` property.
 
-<div>
-
 The following example uses an image that is taller than the text in the first
 paragraph. To get the second paragraph to start after the image in the text
 block, this example sets the `clearFloats` property on the second paragraph to
 "end".
 
     <flow:p paragraphSpaceAfter="15" >Here is another float, it should show up on the right: <flow:img float="right" height="50" elementHeight="200" width="19" source="../assets/bulldog.jpg"></flow:img>We'll add another paragraph that should clear past it.</flow:p><flow:p clearFloats="end" >This should appear after the previous float on the right.</flow:p>
-
-</div>
 
 Valid values for the `clearFloats` property are "left", "right", "end", "start",
 "none", and "both". The
@@ -1091,21 +787,7 @@ class defines these constants. You can also set the `clearFloats` property to
 [FormatValue](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/formats/FormatValue.html)
 class. The default value is "none".
 
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
-
-</div>
 
 ["Flow" TLF markup application](http://sourceforge.net/projects/tlf.adobe/files/current/Flow.swf/download)
 
@@ -1118,9 +800,3 @@ More Help topics
 [TLF FlowElement and LinkElement Events and EventMirrors](http://blogs.adobe.com/tlf/2010/12/tlf-flowelement-linkelement-events-and-eventmirrors.html)
 
 [TLF Floats](http://blogs.adobe.com/tlf/2010/07/floats.html)
-
-<div>
-
-</div>
-
-</div>

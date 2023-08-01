@@ -1,7 +1,5 @@
 # Working with streaming sound files
 
-<div>
-
 When a sound file or video file is playing back while its data is still being
 loaded, it is said to be _streaming_ . External sound files that are loaded from
 a remote server are often streamed so that the user doesn't have to wait for all
@@ -38,13 +36,3 @@ automatically resumes once more sound data has been loaded.
 
 To find out if playback is suspended because Flash Player or AIR is waiting for
 data to load, use the `Sound.isBuffering` property.
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

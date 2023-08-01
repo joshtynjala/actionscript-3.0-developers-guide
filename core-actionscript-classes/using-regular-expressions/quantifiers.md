@@ -1,68 +1,58 @@
 # Quantifiers
 
-<div>
-
 You use quantifiers to specify repetitions of characters or sequences in
 patterns, as follows:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>Quantifier metacharacter</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
+    <tr>
+        <th><p>Quantifier metacharacter</p></th>
+        <th><p>Description</p></th>
+    </tr>
+    </thead>
 <tbody>
-<tr class="odd">
-<td headers="d17e7054 "><p><samp>*</samp>
-(star)</p></td>
-<td headers="d17e7057 "><p>Matches the
-previous item repeated zero or more times.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e7054 "><p><samp>+</samp>
-(plus)</p></td>
-<td headers="d17e7057 "><p>Matches the
-previous item repeated one or more times.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e7054 "><p><samp>?</samp>
-(question mark)</p></td>
-<td headers="d17e7057 "><p>Matches the
-previous item repeated zero times or one time.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e7054 "><p><samp>{</samp>
-<samp>n</samp>
-<samp>}</samp></p>
-<p><samp>{</samp>
-<samp>n</samp>
-<samp>,}</samp></p>
-<p>and</p>
-<p><samp>{</samp>
-<samp>n</samp>
-<samp>,</samp>
-<samp>n</samp>
-<samp>}</samp></p></td>
-<td headers="d17e7057 "><p>Specifies a
-numeric quantifier or quantifier range for the previous item:</p>
-<p><samp>/A{27}/</samp> matches the
-character A repeated 27 times.</p>
-<p><samp>/A{3,}/</samp> matches the
-character A repeated 3 or more times.</p>
-<p><samp>/A{3,5}/</samp> matches
-the character A repeated 3 to 5 times.</p></td>
-</tr>
+    <tr>
+        <td ><p><samp>*</samp>
+        (star)</p></td>
+        <td ><p>Matches the
+        previous item repeated zero or more times.</p></td>
+    </tr>
+    <tr>
+        <td ><p><samp>+</samp>
+        (plus)</p></td>
+        <td ><p>Matches the
+        previous item repeated one or more times.</p></td>
+    </tr>
+    <tr>
+        <td ><p><samp>?</samp>
+        (question mark)</p></td>
+        <td ><p>Matches the
+        previous item repeated zero times or one time.</p></td>
+    </tr>
+    <tr>
+        <td ><p><samp>{</samp>
+        <samp>n</samp>
+        <samp>}</samp></p>
+        <p><samp>{</samp>
+        <samp>n</samp>
+        <samp>,}</samp></p>
+        <p>and</p>
+        <p><samp>{</samp>
+        <samp>n</samp>
+        <samp>,</samp>
+        <samp>n</samp>
+        <samp>}</samp></p></td>
+        <td ><p>Specifies a
+        numeric quantifier or quantifier range for the previous item:</p>
+        <p><samp>/A{27}/</samp> matches the
+        character A repeated 27 times.</p>
+        <p><samp>/A{3,}/</samp> matches the
+        character A repeated 3 or more times.</p>
+        <p><samp>/A{3,5}/</samp> matches
+        the character A repeated 3 to 5 times.</p></td>
+    </tr>
 </tbody>
 </table>
-
-</div>
 
 You can apply a quantifier to a single character, to a character class, or to a
 group:
@@ -128,5 +118,3 @@ Keep in mind the following points about quantifiers:
           //                    Multiline</p>
 
 For more information, see [Flags and properties](./flags-and-properties.md).
-
-</div>

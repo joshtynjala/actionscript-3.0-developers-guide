@@ -1,7 +1,5 @@
 # Basics of working with sound
 
-<div>
-
 Computers can capture and encode digital audio—computer representation of sound
 information—and can store it and retrieve it to play back over speakers. You can
 play back sound using either Adobe® Flash® Player or Adobe® AIR™ and
@@ -55,8 +53,6 @@ you're working with sound in ActionScript; for more information on all the
 sound-related classes, see
 [Understanding the sound architecture](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d26.html).
 
-<div>
-
 #### Important concepts and terms
 
 The following reference list contains important terms that you may encounter:
@@ -96,15 +92,3 @@ The loudness of a sound.
 
 Waveform  
 The shape of a graph of the varying amplitudes of a sound signal over time.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

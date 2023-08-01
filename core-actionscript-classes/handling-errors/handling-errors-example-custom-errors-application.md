@@ -1,7 +1,5 @@
 # Handling errors example: CustomErrors application
 
-<div>
-
 The CustomErrors application demonstrates techniques for working with custom
 errors when building an application. These techniques are:
 
@@ -18,63 +16,51 @@ To get the application files for this sample, see
 The CustomErrors application files can be found in the Samples/CustomError
 folder. The application consists of the following files:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>File</p></th>
-<th><p>Description</p></th>
-</tr>
+    <tr>
+        <th><p>File</p></th>
+        <th><p>Description</p></th>
+    </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td headers="d17e5613 "><p>CustomErrors.mxml</p>
-<p>or</p>
-<p>CustomErrors.fla</p></td>
-<td headers="d17e5616 "><p>The main
-application file in Flash (FLA) or Flex (MXML)</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e5613 "><p>com/example/programmingas3/errors/ApplicationError.as</p></td>
-<td headers="d17e5616 "><p>A class that
-serves as the base error class for both the FatalError and WarningError
-classes.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e5613 "><p>com/example/programmingas3/errors/FatalError.as</p></td>
-<td headers="d17e5616 "><p>A class that
-defines a FatalError errorthrown by the application. This class extends
-the custom ApplicationError class.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e5613 "><p>com/example/programmingas3/errors/Validator.as</p></td>
-<td headers="d17e5616 "><p>A class that
-defines a single method that validates a user-supplied employee XML
-packet.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e5613 "><p>com/example/programmingas3/errors/WarningError.as</p></td>
-<td headers="d17e5616 "><p>A class that
-defines a WarningError error thrown by the application. This class
-extends the custom ApplicationError class.</p></td>
-</tr>
+    <tr>
+        <td >
+            <p>CustomErrors.mxml</p>
+            <p>or</p>
+            <p>CustomErrors.fla</p>
+        </td>
+        <td ><p>The main
+        application file in Flash (FLA) or Flex (MXML)</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/errors/ApplicationError.as</p></td>
+        <td ><p>A class that
+        serves as the base error class for both the FatalError and WarningError
+        classes.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/errors/FatalError.as</p></td>
+        <td ><p>A class that
+        defines a FatalError errorthrown by the application. This class extends
+        the custom ApplicationError class.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/errors/Validator.as</p></td>
+        <td ><p>A class that
+        defines a single method that validates a user-supplied employee XML
+        packet.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/errors/WarningError.as</p></td>
+        <td ><p>A class that
+        defines a WarningError error thrown by the application. This class
+        extends the custom ApplicationError class.</p></td>
+    </tr>
 </tbody>
 </table>
 
-</div>
-
-</div>
-
-<div>
-
 ## CustomErrors application overview
-
-<div>
 
 When the application loads, the `initApp()` method is called for Flex
 applications or the timeline (non-function) code is executed for Flash
@@ -184,15 +170,7 @@ called. The following excerpt shows the `closeHandler()` method:
 If the user chooses to cancel the script by clicking Yes, a FatalError is
 thrown, causing the application to terminate.
 
-</div>
-
-</div>
-
-<div>
-
 ## Building a custom validator
-
-<div>
 
 The custom Validator class contains a single method, `validateEmployeeXML()`.
 The `validateEmployeeXML()` method takes a single argument, `employee`, which is
@@ -230,15 +208,7 @@ at least one phone number and e-mail address defined, and that both values are
 valid. You can also modify the XML so that each employee has a unique ID and
 specifies the ID of their manager.
 
-</div>
-
-</div>
-
-<div>
-
 ## Defining the ApplicationError class
-
-<div>
 
 The ApplicationError class serves as the base class for both the FatalError and
 WarningError classes. The ApplicationError class extends the Error class, and
@@ -306,15 +276,7 @@ the specific error number and message that occurred.
         return "[APPLICATION ERROR #" + id + "] " + message;
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## Defining the FatalError class
-
-<div>
 
 The FatalError class extends the custom ApplicationError class and defines three
 methods: the FatalError constructor, `getTitle()`, and `toString()`. The first
@@ -349,15 +311,7 @@ defined in the ApplicationError class. The `toString()` method is
         return "[FATAL ERROR #" + id + "] " + message;
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## Defining the WarningError class
-
-<div>
 
 The WarningError class extends the ApplicationError class and is nearly
 identical to the FatalError class, except for a couple minor string changes and
@@ -370,7 +324,3 @@ ApplicationError.FATAL, as seen in the following code:
         severity = ApplicationError.WARNING;
         message = super.getMessageText(errorID);
     }
-
-</div>
-
-</div>

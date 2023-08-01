@@ -1,7 +1,5 @@
 # Multidimensional arrays
 
-<div>
-
 Multidimensional arrays contain other arrays as elements. For example, consider
 a list of tasks that is stored as an indexed array of strings:
 
@@ -15,13 +13,7 @@ multidimensional arrays. The examples in the following sections use either two
 indexed arrays or an associative array of indexed arrays. You might want to try
 the other combinations as exercises.
 
-</div>
-
-<div>
-
 ## Two indexed arrays
-
-<div>
 
 When you use two indexed arrays, you can visualize the result as a table or
 spreadsheet. The elements of the first array represent the rows of the table,
@@ -58,15 +50,7 @@ To retrieve the first task from Sunday's list, use index 6 for Sunday and index
 
     trace(masterTaskList[6][0]); // output: mow lawn
 
-</div>
-
-</div>
-
-<div>
-
 ## Associative array with an indexed array
-
-<div>
 
 To make the individual arrays easier to access, you can use an associative array
 for the days of the week and an indexed array for the task lists. Using an
@@ -110,7 +94,3 @@ following example shows:
     Saturday: wash dishes,wash car,pay rent
     Tuesday: wash dishes,pay bills
     */
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # Basics of movie clips
 
-<div>
-
 Movie clips are a key element for people who create animated content with the
 Flash authoring tool and want to control that content with ActionScript.
 Whenever you create a movie clip symbol in Flash, Flash adds the symbol to the
@@ -26,8 +24,6 @@ necessary for the function of a display object, using the Shape class or Sprite
 class in lieu of the MovieClip class may improve rendering performance. For more
 information on choosing the appropriate display object for a task, see
 [Choosing a DisplayObject subclass](../display-programming/choosing-a-display-object-subclass.md).
-
-<div>
 
 #### Important concepts and terms
 
@@ -58,7 +54,3 @@ the timeline in the Flash authoring tool.
 Playhead  
 A marker identifying the location (frame) in the timeline that is being
 displayed at a given moment.
-
-</div>
-
-</div>

@@ -1,11 +1,7 @@
 # Manual orientation
 
-<div>
-
 You can control the stage orientation using the Stage `setOrientation()` or
 `setAspectRatio()` methods.
-
-<div>
 
 #### Setting the stage orientation
 
@@ -14,8 +10,6 @@ of the Stage object. Use the string constants defined by the StageOrientation
 class to specify the desired orientation:
 
     this.stage.setOrientation( StageOrientation.ROTATED_RIGHT );
-
-<div>
 
 Not every device and operating system supports every possible orientation. For
 example, Android 2.2 does not support programmatically choosing the rotated-left
@@ -28,12 +22,6 @@ list of the orientations that can be passed to the `setOrientation()` method:
     {
         trace( orientation );
     }
-
-</div>
-
-</div>
-
-<div>
 
 #### Setting the stage aspect ratio
 
@@ -57,10 +45,6 @@ capability to re-orient to all orientations (landscape-left, landscape-right,
 portait, and portrait-upside-down). Also new in AIR 3.3, the aspect ratio is
 persistent, and further rotation of the device is constrained to the specified
 orientation.
-
-</div>
-
-<div>
 
 #### Example: Setting the stage orientation to match the device orientation
 
@@ -94,7 +78,3 @@ The orientation change is asynchronous. You can listen for the
 `orientationChange` event dispatched by the stage to detect the completion of
 the change. If an orientation is not supported on a device, the
 `setOrientation()` call fails without throwing an error.
-
-</div>
-
-</div>

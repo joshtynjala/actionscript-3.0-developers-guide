@@ -1,13 +1,9 @@
 # Accessing the HTML history list
 
-<div>
-
 As new pages are loaded in an HTMLLoader object, the runtime maintains a history
 list for the object. The history list corresponds to the `window.history` object
 in the HTML page. The HTMLLoader class includes the following properties and
 methods that let you work with the HTML history list:
-
-<div>
 
 | Class member       | Description                                                                                                                                                                                                                      |
 | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -18,13 +14,9 @@ methods that let you work with the HTML history list:
 | `historyForward()` | Navigates forward in the history list, if possible.                                                                                                                                                                              |
 | `historyGo()`      | Navigates the indicated number of steps in the browser history. Navigates forward if positive, backward if negative. Navigating to zero reloads the page. Specifying a position beyond the end navigates to the end of the list. |
 
-</div>
-
 Items in the history list are stored as objects of type
 [HTMLHistoryItem](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/html/HTMLHistoryItem.html).
 The HTMLHistoryItem class has the following properties:
-
-<div>
 
 | Property      | Description                                              |
 | ------------- | -------------------------------------------------------- |
@@ -32,15 +24,3 @@ The HTMLHistoryItem class has the following properties:
 | `originalUrl` | The original URL of the HTML page, before any redirects. |
 | `title`       | The title of the HTML page.                              |
 | `url`         | The URL of the HTML page.                                |
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

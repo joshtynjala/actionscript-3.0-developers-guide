@@ -1,7 +1,5 @@
 # Code signing
 
-<div>
-
 All AIR installer files are required to be code signed. Code signing is a
 cryptographic process of confirming that the specified origin of software is
 accurate. AIR applications can be signed using either by a certificate issued by
@@ -14,28 +12,10 @@ application that uses `adt` for certificate generation. Self-signed certificates
 do not provide any assurance that the application being installed is genuine and
 should only be used for testing an application prior to public release.
 
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
-
-</div>
 
 ![](../../img/airLinkIndicator.png)
 [Signing AIR applications](https://help.adobe.com/en_US/air/build/WSfffb011ac560372f-19aa73f128cc9f05e8-8000.html)
 
 ![](../../img/airLinkIndicator.png)
 [ADT code signing options](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7f72.html)
-
-<div>
-
-</div>
-
-</div>

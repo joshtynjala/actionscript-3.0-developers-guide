@@ -1,7 +1,5 @@
 # Opening a URL in another application
 
-<div>
-
 You can use the `navigateToURL()` function to open a URL in a web browser or
 other application. For content running in AIR, the `navigateToURL()` function
 opens the page in the default system web browser.
@@ -19,13 +17,9 @@ window name. For example, the following code opens the www.adobe.com web page:
     var urlReq:URLRequest = new URLRequest(url);
     navigateToURL(urlReq);
 
-<div>
-
 Note: When using the `navigateToURL()` function, the runtime treats a URLRequest
 object that uses the POST method (one that has its `method` property set to
 `URLRequestMethod.POST`) as using the GET method.
-
-</div>
 
 When using the `navigateToURL()` function, URI schemes are permitted based on
 the security sandbox of the code calling the `navigateToURL()` function.
@@ -35,8 +29,6 @@ some URI schemes are prohibited when using these APIs in AIR. The list of
 prohibited schemes depends on the security sandbox of the code using the API.
 (For details on security sandboxes, see
 [AIR security](WS5b3ccc516d4fbf351e63e3d118666ade46-7fa3.html).)
-
-<div>
 
 #### Application sandbox (AIR only)
 
@@ -76,10 +68,6 @@ Where allowed by the operating system, applications can define and register
 custom URI schemes. You can create a URL using the scheme to launch the
 application from AIR.
 
-</div>
-
-<div>
-
 #### Remote sandboxes
 
 The following schemes are allowed. Use these schemes as you would use them in a
@@ -94,10 +82,6 @@ web browser.
 
 All other URI schemes are prohibited.
 
-</div>
-
-<div>
-
 #### Local-with-file sandbox
 
 The following schemes are allowed. Use these schemes as you would use them in a
@@ -109,10 +93,6 @@ web browser.
   application
 
 All other URI schemes are prohibited.
-
-</div>
-
-<div>
 
 #### Local-with-networking sandbox
 
@@ -127,10 +107,6 @@ web browser.
   application
 
 All other URI schemes are prohibited.
-
-</div>
-
-<div>
 
 #### Local-trusted sandbox
 
@@ -147,15 +123,3 @@ web browser.
   application
 
 All other URI schemes are prohibited.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

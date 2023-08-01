@@ -1,20 +1,12 @@
 # Supporting the drag-out gesture
 
-<div>
-
 To support the drag-out gesture, you must create a Clipboard object in response
 to a `mouseDown` event and send it to the `NativeDragManager.doDrag()` method.
 Your application can then listen for the `nativeDragComplete` event on the
 initiating object to determine what action to take when the user completes or
 abandons the gesture.
 
-</div>
-
-<div>
-
 ## Preparing data for transfer
-
-<div>
 
 To prepare data or an object for dragging, create a Clipboard object and add the
 information to be transferred in one or more formats. You can use the standard
@@ -44,21 +36,11 @@ list format containing the file from which the bitmap was originally loaded:
     	return transfer;
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## Starting a drag-out operation
-
-<div>
 
 To start a drag operation, call the `NativeDragManager.doDrag()` method in
 response to a mouse down event. The `doDrag()` method is a static method that
 takes the following parameters:
-
-<div>
 
 | Parameter      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -67,8 +49,6 @@ takes the following parameters:
 | dragImage      | (Optional) A BitmapData object to display during the drag. The image can specify an `alpha` value. (Note: Microsoft Windows always applies a fixed alpha fade to drag images).                                                                                                                                                                                                                                                                                          |
 | offset         | (Optional) A Point object specifying the offset of the drag image from the mouse hotspot. Use negative coordinates to move the drag image up and left relative to the mouse cursor. If no offset is provided, the top, left corner of the drag image is positioned at the mouse hotspot.                                                                                                                                                                                |
 | actionsAllowed | (Optional) A NativeDragOptions object specifying which actions (copy, move, or link) are valid for the drag operation. If no argument is provided, all actions are permitted. The DragOptions object is referenced in NativeDragEvent objects to enable a potential drag target to check that the allowed actions are compatible with the purpose of the target component. For example, a "trash" component might only accept drag gestures that allow the move action. |
-
-</div>
 
 The following example illustrates how to start a drag operation for a bitmap
 object loaded from a file. The example loads an image and, on a `mouseDown`
@@ -136,15 +116,7 @@ event, starts the drag operation.
     	}
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## Completing a drag-out transfer
-
-<div>
 
 When a user drops the dragged item by releasing the mouse, the initiator object
 dispatches a `nativeDragComplete` event. You can check the `dropAction` property
@@ -154,15 +126,3 @@ original location. The user can abandon a drag gesture by releasing the mouse
 button while the cursor is outside an eligible drop target. The drag manager
 sets the `dropAction` property for an abandoned gesture to
 `NativeDragAction.NONE`.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

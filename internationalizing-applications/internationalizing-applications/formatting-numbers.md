@@ -1,11 +1,7 @@
 # Formatting numbers
 
-<div>
-
 The display format of numeric values varies widely from region to region. For
 example, here is how the number 123456.78 is formatted for certain locales:
-
-<div>
 
 | Locale                      | Number Format |
 | --------------------------- | ------------- |
@@ -15,8 +11,6 @@ example, here is how the number 123456.78 is formatted for certain locales:
 | de-CH (German, Switzerland) | -123'456.78   |
 | en-IN (English, India)      | -1,23,456.78  |
 | Many Arabic locales         | 123,456.78-   |
-
-</div>
 
 There are many factors that influence number formats, including:
 
@@ -43,13 +37,7 @@ There are many factors that influence number formats, including:
 The NumberFormatter class considers all of these factors when formatting numeric
 values.
 
-</div>
-
-<div>
-
 ## Using the NumberFormatter class
-
-<div>
 
 The NumberFormatter class formats numeric values (of type int, uint, or Number)
 according to the conventions of a specific locale.
@@ -103,8 +91,6 @@ This example first creates a NumberFormatter object and then:
 
 - tells the formatter not to use any grouping separators.
 
-<div>
-
 Note: When some of these properties change, the resulting number format no
 longer corresponds to the preferred format for the specified locale. Use some of
 these properties only when locale-awareness is not important; when you need
@@ -112,17 +98,7 @@ detailed control over a single aspect of the format, such as the number of
 trailing zeroes; or when the user requests the change directly, for example,
 through the Windows Control Panel.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Parsing strings that contain numeric values
-
-<div>
 
 The NumberFormatter class can also extract numeric values from strings that
 conform to locale-specific formatting requirements. The
@@ -160,15 +136,3 @@ numeric value in its value property. The startIndex property indicates the index
 of the first numeric character that was found. You can use the startIndex and
 endIndex properties to extract the portions of the string that come before and
 after the digits.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

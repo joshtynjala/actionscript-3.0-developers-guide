@@ -1,7 +1,5 @@
 # Basics of Motion Tweens
 
-<div>
-
 Motion tweens provide an easy way to create animation.
 
 A motion tween modifies display object properties, such as position or rotation,
@@ -16,8 +14,6 @@ dynamic animation at runtime.
 See the Motion Tweens section in _Using Flash Professional_ for information
 about creating a motion tween.
 
-<div>
-
 #### Important concepts and terms
 
 The following is an important term that is relevant to this feature:
@@ -27,15 +23,3 @@ A construct that generates intermediate frames of a display object in different
 states at different times; gives the appearance that the first state evolves
 smoothly into the second. Used to move a display object across the stage, as
 well as make it grow, shrink, rotate, fade, or change color over time.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

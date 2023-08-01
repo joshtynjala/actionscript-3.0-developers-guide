@@ -1,7 +1,5 @@
 # Sound example: Podcast Player
 
-<div>
-
 A podcast is a sound file that is distributed over the Internet, on demand or by
 subscription. Podcasts are usually published as part of a series, which is also
 called a podcast channel. Because podcast episodes can last anywhere from one
@@ -31,111 +29,97 @@ To get the application files for this sample, see
 The Podcast Player application files can be found in the folder
 Samples/PodcastPlayer. The application consists of the following files:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>File</p></th>
-<th><p>Description</p></th>
-</tr>
+	<tr>
+		<th><p>File</p></th>
+		<th><p>Description</p></th>
+	</tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td headers="d17e31783 "><p>PodcastPlayer.mxml</p>
-<p>or</p>
-<p>PodcastPlayer.fla</p></td>
-<td headers="d17e31786 "><p>The user
-interface for the application for Flex (MXML) or Flash (FLA).</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e31783 "><p>comp/example/programmingas3/podcastplayer/PodcastPlayer.as</p></td>
-<td headers="d17e31786 "><p>Document
-class containing the user interface logic for the podcast player (Flash
-only).</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e31783 "><p>SoundPlayer.mxml</p></td>
-<td headers="d17e31786 "><p>An MXML
-component that displays playback buttons and progress bars and controls
-sound playback, for Flex only.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e31783 "><p>main.css</p></td>
-<td headers="d17e31786 "><p>Styles for
-the application user interface (Flex only).</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e31783 "><p>images/</p></td>
-<td headers="d17e31786 "><p>Icons for
-styling the buttons (Flex only).</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e31783 "><p>comp/example/programmingas3/podcastplayer/SoundPlayer.as</p></td>
-<td headers="d17e31786 "><p>Class for the
-SoundPlayer movie clip symbol containing the user interface logic for
-the sound player (Flash only).</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e31783 "><p>comp/example/programmingas3/podcastplayer/PlayButtonRenderer.as</p></td>
-<td headers="d17e31786 "><p>Custom cell
-renderer for displaying a play button in a data grid cell (Flash
-only).</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e31783 "><p>com/example/programmingas3/podcastplayer/RSSBase.as</p></td>
-<td headers="d17e31786 "><p>A base class
-that provides common properties and methods for the RSSChannel class and
-the RSSItem class.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e31783 "><p>com/example/programmingas3/podcastplayer/RSSChannel.as</p></td>
-<td headers="d17e31786 "><p>An
-ActionScript class that holds data about an RSS channel.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e31783 "><p>com/example/programmingas3/podcastplayer/RSSItem.as</p></td>
-<td headers="d17e31786 "><p>An
-ActionScript class that holds data about an RSS item.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e31783 "><p>com/example/programmingas3/podcastplayer/SoundFacade.as</p></td>
-<td headers="d17e31786 "><p>The main
-ActionScript class for the application. It encapsulates the methods and
-events of the Sound class and the SoundChannel class and adds support
-for pausing and resuming playback.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e31783 "><p>com/example/programmingas3/podcastplayer/URLService.as</p></td>
-<td headers="d17e31786 "><p>An
-ActionScript class that retrieves data from a remote URL.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e31783 "><p>playerconfig.xml</p></td>
-<td headers="d17e31786 "><p>An XML file
-containing a list of RSS feeds that represent podcast channels.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e31783 "><p>comp/example/programmingas3/utils/DateUtil.as</p></td>
-<td headers="d17e31786 "><p>Class that is
-used for easy date formatting (Flash only).</p></td>
-</tr>
+	<tr>
+		<td ><p>PodcastPlayer.mxml</p>
+		<p>or</p>
+		<p>PodcastPlayer.fla</p></td>
+		<td ><p>The user
+		interface for the application for Flex (MXML) or Flash (FLA).</p></td>
+	</tr>
+	<tr>
+		<td ><p>comp/example/programmingas3/podcastplayer/PodcastPlayer.as</p></td>
+		<td ><p>Document
+		class containing the user interface logic for the podcast player (Flash
+		only).</p></td>
+	</tr>
+	<tr>
+		<td ><p>SoundPlayer.mxml</p></td>
+		<td ><p>An MXML
+		component that displays playback buttons and progress bars and controls
+		sound playback, for Flex only.</p></td>
+	</tr>
+	<tr>
+		<td ><p>main.css</p></td>
+		<td ><p>Styles for
+		the application user interface (Flex only).</p></td>
+	</tr>
+	<tr>
+		<td ><p>images/</p></td>
+		<td ><p>Icons for
+		styling the buttons (Flex only).</p></td>
+	</tr>
+	<tr>
+		<td ><p>comp/example/programmingas3/podcastplayer/SoundPlayer.as</p></td>
+		<td ><p>Class for the
+		SoundPlayer movie clip symbol containing the user interface logic for
+		the sound player (Flash only).</p></td>
+	</tr>
+	<tr>
+		<td ><p>comp/example/programmingas3/podcastplayer/PlayButtonRenderer.as</p></td>
+		<td ><p>Custom cell
+		renderer for displaying a play button in a data grid cell (Flash
+		only).</p></td>
+	</tr>
+	<tr>
+		<td ><p>com/example/programmingas3/podcastplayer/RSSBase.as</p></td>
+		<td ><p>A base class
+		that provides common properties and methods for the RSSChannel class and
+		the RSSItem class.</p></td>
+	</tr>
+	<tr>
+		<td ><p>com/example/programmingas3/podcastplayer/RSSChannel.as</p></td>
+		<td ><p>An
+		ActionScript class that holds data about an RSS channel.</p></td>
+	</tr>
+	<tr>
+		<td ><p>com/example/programmingas3/podcastplayer/RSSItem.as</p></td>
+		<td ><p>An
+		ActionScript class that holds data about an RSS item.</p></td>
+	</tr>
+	<tr>
+		<td ><p>com/example/programmingas3/podcastplayer/SoundFacade.as</p></td>
+		<td ><p>The main
+		ActionScript class for the application. It encapsulates the methods and
+		events of the Sound class and the SoundChannel class and adds support
+		for pausing and resuming playback.</p></td>
+	</tr>
+	<tr>
+		<td ><p>com/example/programmingas3/podcastplayer/URLService.as</p></td>
+		<td ><p>An
+		ActionScript class that retrieves data from a remote URL.</p></td>
+	</tr>
+	<tr>
+		<td ><p>playerconfig.xml</p></td>
+		<td ><p>An XML file
+		containing a list of RSS feeds that represent podcast channels.</p></td>
+	</tr>
+	<tr>
+		<td ><p>comp/example/programmingas3/utils/DateUtil.as</p></td>
+		<td ><p>Class that is
+		used for easy date formatting (Flash only).</p></td>
+	</tr>
 </tbody>
 </table>
 
-</div>
-
-</div>
-
-<div>
-
 ## Reading RSS data for a podcast channel
-
-<div>
 
 The Podcast Player application starts by reading information about a number of
 podcast channels and their episodes:
@@ -152,15 +136,7 @@ object to get a list of RSS feeds in XML format from the playerconfig.xml file.
 Next, when the user selects a specific feed from the list, a new URLLoader
 object is created to read the RSS data from that feed's URL.
 
-</div>
-
-</div>
-
-<div>
-
 ## Simplifying sound loading and playback using the SoundFacade class
-
-<div>
 
 The ActionScript 3.0 sound architecture is powerful but complex. Applications
 that only need basic sound loading and playback features can use a class that
@@ -362,15 +338,7 @@ play. The resulting SoundChannel object is stored in the `sc` property. The
 `play()` method then creates a Timer object that will be used to dispatch
 playback progress events at regular intervals.
 
-</div>
-
-</div>
-
-<div>
-
 ## Displaying playback progress
-
-<div>
 
 Creating a Timer object to drive playback monitoring is complex operation that
 you should only have to code once. Encapsulating this Timer logic in a reusable
@@ -398,15 +366,7 @@ creates a new ProgressEvent instance with an event type of
 position of the SoundChannel object and the `bytesTotal` property set to the
 estimated length of the sound data.
 
-</div>
-
-</div>
-
-<div>
-
 ## Pausing and resuming playback
-
-<div>
 
 The `SoundFacade.play()` method shown previously accepts a `pos` parameter
 corresponding to a starting position in the sound data. If the `pos` value is
@@ -448,15 +408,7 @@ The `pause()` method passes the current `SoundChannel.position` value to the
 `resume()` method starts playing the same sound again using the `pausePosition`
 value as the starting point.
 
-</div>
-
-</div>
-
-<div>
-
 ## Extending the Podcast Player example
-
-<div>
 
 This example presents a bare-bones Podcast Player that showcases the use of the
 reusable SoundFacade class. You could add other features to enhance the
@@ -480,15 +432,3 @@ usefulness of this application, including the following:
 
 - Add podcast searching and browsing functionality using an API from a podcast
   hosting service like Odeo.com.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

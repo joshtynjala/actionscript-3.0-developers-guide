@@ -1,7 +1,5 @@
 # JavaScript in AIR
 
-<div>
-
 AIR makes several changes to the typical behavior of common JavaScript objects.
 Many of these changes are made to make it easier to write secure applications in
 AIR. At the same time, these differences in behavior mean that some common
@@ -10,13 +8,7 @@ might not always execute as expected in AIR. For information on correcting these
 types of issues, see
 [Avoiding security-related JavaScript errors](WS5b3ccc516d4fbf351e63e3d118666ade46-7f0e.html).
 
-</div>
-
-<div>
-
 ## HTML Sandboxes
-
-<div>
 
 AIR places content into isolated sandboxes according to the origin of the
 content. The sandbox rules are consistent with the same-origin policy
@@ -62,15 +54,7 @@ dangerous functions. If, for example, you exposed an interface that allowed
 remote content to read and write files anywhere on a user's system, then you
 might be giving remote content the means to do considerable harm to your users.
 
-</div>
-
-</div>
-
-<div>
-
 ## JavaScript eval() function
-
-<div>
 
 Use of the `eval()` function is restricted within the application sandbox once a
 page has finished loading. Some uses are permitted so that JSON-formatted data
@@ -79,44 +63,20 @@ results in an error.
 [Code restrictions for content in different sandboxes](WS5b3ccc516d4fbf351e63e3d118666ade46-7eea.html)
 describes the allowed uses of the `eval()` function.
 
-</div>
-
-</div>
-
-<div>
-
 ## Function constructors
-
-<div>
 
 In the application sandbox, function constructors can be used before a page has
 finished loading. After all page `load` event handlers have finished, new
 functions cannot be created.
 
-</div>
-
-</div>
-
-<div>
-
 ## Loading external scripts
-
-<div>
 
 HTML pages in the application sandbox cannot use the `script` tag to load
 JavaScript files from outside of the application directory. For a page in your
 application to load a script from outside the application directory, the page
 must be mapped to a non-application sandbox.
 
-</div>
-
-</div>
-
-<div>
-
 ## The XMLHttpRequest object
-
-<div>
 
 AIR provides an XMLHttpRequest (XHR) object that applications can use to make
 data requests. The following example illustrates a simple data request:
@@ -151,12 +111,8 @@ in the containing frame or iframe element:
     	allowCrossDomainXHR="true">
     </iframe>
 
-<div>
-
 Note: When convenient, the AIR URLStream class can also be used to download
 data.
-
-</div>
 
 If you dispatch an XMLHttpRequest to a remote server from a frame or iframe
 containing application content that has been mapped to a remote sandbox, make
@@ -196,45 +152,25 @@ For more information on sandbox mapping see
 and
 [HTML security in Adobe AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7f11.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Cookies
-
-<div>
 
 In AIR applications, only content in remote sandboxes (content loaded from http:
 and https: sources) can use cookies (the `document.cookie` property). In the
 application sandbox, other means for storing persistent data are available,
 including the EncryptedLocalStore, SharedObject, and FileStream classes.
 
-</div>
-
-</div>
-
-<div>
-
 ## The Clipboard object
-
-<div>
 
 The WebKit Clipboard API is driven with the following events: `copy`, `cut`, and
 `paste`. The event object passed in these events provides access to the
 clipboard through the `clipboardData` property. Use the following methods of the
 `clipboardData` object to read or write clipboard data:
 
-<div>
-
 | Method                  | Description                                                                                                                                                     |
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | clearData(mimeType)     | Clears the clipboard data. Set the `mimeType` parameter to the MIME type of the data to clear.                                                                  |
 | getData(mimeType)       | Get the clipboard data. This method can only be called in a handler for the `paste` event. Set the `mimeType` parameter to the MIME type of the data to return. |
 | setData(mimeType, data) | Copy data to the clipboard. Set the `mimeType` parameter to the MIME type of the data.                                                                          |
-
-</div>
 
 JavaScript code outside the application sandbox can only access the clipboard
 through theses events. However, content in the application sandbox can access
@@ -246,8 +182,6 @@ could use the following statement to get text format data on the clipboard:
 
 The valid data MIME types are:
 
-<div>
-
 | MIME type | Value                                   |
 | --------- | --------------------------------------- |
 | Text      | "text/plain"                            |
@@ -256,29 +190,15 @@ The valid data MIME types are:
 | Bitmap    | "image/x-vnd.adobe.air.bitmap"          |
 | File list | "application/x-vnd.adobe.air.file-list" |
 
-</div>
-
-<div>
-
 Important: Only content in the application sandbox can access file data present
 on the clipboard. If non-application content attempts to access a file object
 from the clipboard, a security error is thrown.
-
-</div>
 
 For more information on using the clipboard, see
 [Copy and paste](WS88A6374C-1D6C-4faa-968C-5354C78587E2.html) and
 [Using the Pasteboard from JavaScript (Apple Developer Center)](http://developer.apple.com/documentation/AppleApplications/Conceptual/SafariJSProgTopics/Tasks/CopyAndPaste.html#//apple_ref/doc/uid/30001234).
 
-</div>
-
-</div>
-
-<div>
-
 ## Drag and Drop
-
-<div>
 
 Drag-and-drop gestures into and out of HTML produce the following DOM events:
 `dragstart`, `drag`, `dragend`, `dragenter`, `dragover`, `dragleave`, and
@@ -295,8 +215,6 @@ function to get text format data from a `drop` event:
 
 The `dataTransfer` object has the following important members:
 
-<div>
-
 | Member                  | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | clearData(mimeType)     | Clears the data. Set the `mimeType` parameter to the MIME type of the data representation to clear.                                                                                                                                                                                                                                                                                                                                                                                                          |
@@ -306,21 +224,11 @@ The `dataTransfer` object has the following important members:
 | effectsAllowed          | Specifies whether the data being dragged can be copied, moved, linked, or some combination thereof. Set the `effectsAllowed` property in the handler for the `dragstart` event.                                                                                                                                                                                                                                                                                                                              |
 | dropEffect              | Specifies which of the allowed drop effects are supported by a drag target. Set the `dropEffect` property in the handler for the `dragEnter` event. During the drag, the cursor changes to indicate which effect would occur if the user released the mouse. If no `dropEffect` is specified, an `effectsAllowed` property effect is chosen. The copy effect has priority over the move effect, which itself has priority over the link effect. The user can modify the default priority using the keyboard. |
 
-</div>
-
 For more information on adding support for drag-and-drop to an AIR application
 see [Drag and drop in AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7e8a.html) and
 [Using the Drag-and-Drop from JavaScript (Apple Developer Center)](http://developer.apple.com/documentation/AppleApplications/Conceptual/SafariJSProgTopics/Tasks/DragAndDrop.html#//apple_ref/doc/uid/30001233).
 
-</div>
-
-</div>
-
-<div>
-
 ## innerHTML and outerHTML properties
-
-<div>
 
 AIR places security restrictions on the use of the `innerHTML` and `outerHTML`
 properties for content running in the application sandbox. Before the page load
@@ -334,15 +242,7 @@ is not added. Likewise, embedded `<script>` tags are not evaluated. For more
 information, see the
 [HTML security in Adobe AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7f11.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Document.write() and Document.writeln() methods
-
-<div>
 
 Use of the `write()` and `writeln()` methods is not restricted in the
 application sandbox before the `load` event of the page. However, once the page
@@ -351,15 +251,7 @@ new one. In a non-application sandbox, as in most web browsers, calling
 `document.write()` or `writeln()` after a page has finished loading clears the
 current page and opens a new, blank one.
 
-</div>
-
-</div>
-
-<div>
-
 ## Document.designMode property
-
-<div>
 
 Set the `document.designMode` property to a value of `on` to make all elements
 in the document editable. Built-in editor support includes text editing, copy,
@@ -370,15 +262,7 @@ document are editable. See
 [HTML contentEditable attribute](WS5b3ccc516d4fbf351e63e3d118666ade46-7e98.html)
 for additional information.
 
-</div>
-
-</div>
-
-<div>
-
 ## unload events (for body and frameset objects)
-
-<div>
 
 In the top-level `frameset` or `body` tag of a window (including the main window
 of the application), do not use the `unload` event to respond to the window (or
@@ -398,21 +282,9 @@ closes the application:
 However, scripts _can_ successfully respond to the `unload` event caused by
 navigation of a frame, iframe, or top-level window content.
 
-<div>
-
 Note: These limitations may be removed in a future version of Adobe AIR.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## JavaScript Window object
-
-<div>
 
 The Window object remains the global object in the JavaScript execution context.
 In the application sandbox, AIR adds new properties to the JavaScript Window
@@ -449,13 +321,9 @@ window:
 
     window.nativeWindow.close();
 
-<div>
-
 Note: The window control features provided by the NativeWindow object overlap
 the features provided by the JavaScript Window object. In such cases, you can
 use whichever method you find most convenient.
-
-</div>
 
 The `window.nativeWindow` property is only defined for content within the
 application sandbox and only for the parent document of a page with frames or
@@ -470,14 +338,10 @@ paints a default, white background:
 
     window.htmlLoader.paintsDefaultBackground = false;
 
-<div>
-
 Note: The HTMLLoader object itself has a `window` property, which references the
 JavaScript Window object of the HTML content it contains. You can use this
 property to access the JavaScript environment through a reference to the
 containing HTMLLoader.
-
-</div>
 
 The `window.htmlLoader` property is only defined for content within the
 application sandbox and only for the parent document of a page with frames or
@@ -504,15 +368,7 @@ application title (to prevent windows opened by remote content from
 impersonating windows opened by the application). For more information, see the
 [Restrictions on calling the JavaScript window.open() method](WS5b3ccc516d4fbf351e63e3d118666ade46-7e91.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## air.NativeApplication object
-
-<div>
 
 The NativeApplication object provides information about the application state,
 dispatches several important application-level events, and provides useful
@@ -533,28 +389,8 @@ The NativeApplication object can only be accessed from within the application
 sandbox. For more information about the NativeApplication object, see
 [Working with AIR runtime and operating system information](WS5b3ccc516d4fbf351e63e3d118676a5f3b-8000.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## The JavaScript URL scheme
-
-<div>
 
 Execution of code defined in a JavaScript URL scheme (as in
 `href="javascript:alert('Test')"`) is blocked within the application sandbox. No
 error is thrown.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

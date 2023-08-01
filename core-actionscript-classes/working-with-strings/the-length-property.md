@@ -1,7 +1,5 @@
 # The length property
 
-<div>
-
 Every string has a `length` property, which is equal to the number of characters
 in the string:
 
@@ -16,5 +14,3 @@ example shows:
 
     str2:String = '';
     trace(str2.length);           // output: 0
-
-</div>

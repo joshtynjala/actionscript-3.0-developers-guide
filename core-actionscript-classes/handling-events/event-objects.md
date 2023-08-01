@@ -1,7 +1,5 @@
 # Event objects
 
-<div>
-
 Event objects serve two main purposes in the new event-handling system. First,
 event objects represent actual events by storing information about specific
 events in a set of properties. Second, event objects contain a set of methods
@@ -17,13 +15,7 @@ This section begins with a discussion of the Event class properties, continues
 with a description of the Event class methods, and concludes with an explanation
 of why subclasses of the Event class exist.
 
-</div>
-
-<div>
-
 ## Understanding Event class properties
-
-<div>
 
 The Event class defines a number of read-only properties and constants that
 provide important information about an event object.The following are especially
@@ -36,8 +28,6 @@ important:
   Boolean value and stored in the `Event.cancelable` property.
 
 - Event flow information is contained in the remaining properties.
-
-<div>
 
 #### Event object types
 
@@ -78,10 +68,6 @@ rather than:
 
     myDisplayObject.addEventListener("click", clickHandler);
 
-</div>
-
-<div>
-
 #### Default behavior information
 
 Your code can check whether the default behavior for any given event object can
@@ -91,10 +77,6 @@ prevented. You can prevent, or cancel, the default behavior associated with a
 small number of events using the `preventDefault()` method. For more
 information, see Canceling default event behavior under
 [Understanding Event class methods](#understanding-event-class-methods).
-
-</div>
-
-<div>
 
 #### Event flow information
 
@@ -112,10 +94,6 @@ following list:
 - The `currentTarget` property stores a reference to the display list object
   that is currently processing the event object.
 
-</div>
-
-<div>
-
 #### The bubbles property
 
 An event is said to bubble if its event object participates in the bubbling
@@ -127,10 +105,6 @@ participate in the capture and target phases, any event that bubbles
 participates in all three of the event flow phases. If the value is `true`, the
 event object participates in all three phases. If the value is `false`, the
 event object does not participate in the bubbling phase.
-
-</div>
-
-<div>
 
 #### The eventPhase property
 
@@ -162,10 +136,6 @@ test for this condition:
         myFunc();
     }
 
-</div>
-
-<div>
-
 #### The target property
 
 The `target` property holds a reference to the object that is the target of the
@@ -183,10 +153,6 @@ these situations, the common practice is to add event listeners to the button
 and use the `currentTarget` property because it points to the button, whereas
 the `target` property may point to a child of the button.
 
-</div>
-
-<div>
-
 #### The currentTarget property
 
 The `currentTarget` property contains a reference to the object that is
@@ -198,17 +164,7 @@ Moreover, the same listener function can be added to different display objects.
 As a project increases in size and complexity, the `currentTarget` property
 becomes more and more useful.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Understanding Event class methods
-
-<div>
 
 There are three categories of Event class methods:
 
@@ -219,8 +175,6 @@ There are three categories of Event class methods:
 
 - Default behavior methods, which prevent default behavior or check whether it
   has been prevented
-
-<div>
 
 #### Event class utility methods
 
@@ -233,10 +187,6 @@ system, but are exposed to developers for general use.
 For advanced developers creating subclasses of the Event class, you must
 override and implement versions of both utility methods to ensure that the event
 subclass will work properly.
-
-</div>
-
-<div>
 
 #### Stopping event flow
 
@@ -258,10 +208,6 @@ Calling either of these methods has no effect on whether the default behavior
 associated with an event occurs. Use the default behavior methods of the Event
 class to prevent default behavior.
 
-</div>
-
-<div>
-
 #### Canceling default event behavior
 
 The two methods that pertain to canceling default behavior are the
@@ -280,17 +226,7 @@ Canceling the default behavior has no effect on the progress of an event object
 through the event flow. Use the event flow methods of the Event class to remove
 an event object from the event flow.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Subclasses of the Event class
-
-<div>
 
 For many events, the common set of properties defined in the Event class is
 sufficient. Other events, however, have unique characteristics that cannot be
@@ -313,7 +249,3 @@ As described in the section on Event class utility methods under
 [Event objects](#event-class-utility-methods), when creating an Event subclass
 you must override the `clone()` and `toString()` methods to provide
 functionality specific to the subclass.
-
-</div>
-
-</div>

@@ -1,20 +1,12 @@
 # Managing calendar dates and times
 
-<div>
-
 All of the calendar date and time management functions in ActionScript 3.0 are
 concentrated in the top-level Date class. The Date class contains methods and
 properties that let you handle dates and times in either Coordinated Universal
 Time (UTC) or in local time specific to a time zone. UTC is a standard time
 definition that is essentially the same as Greenwich Mean Time (GMT).
 
-</div>
-
-<div>
-
 ## Creating Date objects
-
-<div>
 
 The Date class boasts one of the most versatile constructor methods of all the
 core classes. You can invoke it four different ways.
@@ -63,15 +55,7 @@ If the `Date()` constructor cannot successfully parse the string parameter, it
 will not raise an exception. However, the resulting Date object will contain an
 invalid date value.
 
-</div>
-
-</div>
-
-<div>
-
 ## Getting time unit values
-
-<div>
 
 You can extract the values for various units of time within a Date object using
 properties or methods of the Date class. Each of the following properties gives
@@ -121,15 +105,7 @@ you the value of a time unit in the Date object:
   the `setTime()` method, lets you change the value of an existing Date object
   using milliseconds since January 1, 1970 (UTC).
 
-</div>
-
-</div>
-
-<div>
-
 ## Performing date and time arithmetic
-
-<div>
 
 You can perform addition and subtraction on dates and times with the Date class.
 Date values are kept internally in terms of milliseconds, so you should convert
@@ -165,50 +141,7 @@ Next, the `millisecondsPerDay` constant is multiplied by 30 to represent 30
 days' time and the result is added to the `invoiceDate` value and used to set
 the `dueDate` value.
 
-<div xmlns:adobe="http://www.adobe.com/saxon">
-
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td colspan="2"><h2
-id="adobe-recommends">Adobe recommends</h2></td>
-<td colspan="2"></td>
-</tr>
-<tr class="even">
-<td colspan="4" height="10"></td>
-</tr>
-<tr class="odd">
-<td><span> <img
-src="../../img/jabbyPanda.png" /> </span></td>
-<td width="45%"><h3
-id="in-math-operations-with-dates-in-actionscript"><a
-href="http://goo.gl/ndMsl" target="_self">2 - 1 = 2 in math operations
-with dates in ActionScript</a></h3>
-<span> <a href="http://goo.gl/2ZBKN" target="_self">JabbyPanda</a>
-</span></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Converting between time zones
-
-<div>
 
 Date and time arithmetic comes in handy when you want to convert dates from one
 time zone to another. So does the `getTimezoneOffset()` method, which returns
@@ -227,6 +160,7 @@ milliseconds and then adjusting the Date value by that amount:
     var offsetMilliseconds:Number = nextDay.getTimezoneOffset() * 60 * 1000;
     nextDay.setTime(nextDay.getTime() + offsetMilliseconds);
 
-</div>
+## Adobe recommends
 
-</div>
+> <h3 id="in-math-operations-with-dates-in-actionscript"><a href="http://goo.gl/ndMsl" target="_self"><img src="../../img/jabbyPanda.png" /> 2 - 1 = 2 in math operations with dates in ActionScript</a></h3>
+> <a href="http://goo.gl/2ZBKN" target="_self">JabbyPanda</a>

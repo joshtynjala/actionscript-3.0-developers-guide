@@ -1,7 +1,5 @@
 # Reading and writing a ByteArray
 
-<div>
-
 The ByteArray class is part of the flash.utils package. To create a ByteArray
 object in ActionScript 3.0, import the ByteArray class and invoke the
 constructor, as shown in the following example:
@@ -9,13 +7,7 @@ constructor, as shown in the following example:
     import flash.utils.ByteArray;
     var stream:ByteArray = new ByteArray();
 
-</div>
-
-<div>
-
 ## ByteArray methods
-
-<div>
 
 Any meaningful data stream is organized into a format that you can analyze to
 find the information that you want. A record in a simple employee file, for
@@ -56,15 +48,7 @@ pattern makes it possible to read the array with a loop.
     }
     trace("bytes length is: " +  bytes.length);    // display the length
 
-</div>
-
-</div>
-
-<div>
-
 ## The position property
-
-<div>
 
 The position property stores the current position of the pointer that indexes
 the ByteArray during reading or writing. The initial value of the position
@@ -99,15 +83,7 @@ bytes read.
 Notice that you can set the position property to a specific location in the
 ByteArray to read or write at that offset.
 
-</div>
-
-</div>
-
-<div>
-
 ## The bytesAvailable and length properties
-
-<div>
 
 The `length` and `bytesAvailable` properties tell you how long a ByteArray is
 and how many bytes remain in it from the current position to the end. The
@@ -130,15 +106,7 @@ at a time until it encounters either the character "a" or the end (
     	trace("and the number of bytes available is: " + bytes.bytesAvailable);    // 47
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## The endian property
-
-<div>
 
 Computers can differ in how they store multibyte numbers, that is, numbers that
 require more than 1 byte of memory to store them. An integer, for example, can
@@ -151,23 +119,15 @@ _little endian_ (least significant byte first). For example, the number
 ordering, where a0 represents the lowest memory address of the 4 bytes and a3
 represents the highest:
 
-<div>
-
 | Big Endian | Big Endian | Big Endian | Big Endian |
 | ---------- | ---------- | ---------- | ---------- |
 | a0         | a1         | a2         | a3         |
 | 31         | 32         | 33         | 34         |
 
-</div>
-
-<div>
-
 | Little Endian | Little Endian | Little Endian | Little Endian |
 | ------------- | ------------- | ------------- | ------------- |
 | a0            | a1            | a2            | a3            |
 | 34            | 33            | 32            | 31            |
-
-</div>
 
 The `endian` property of the ByteArray class allows you to denote this byte
 order for multibyte numbers that you are processing. The acceptable values for
@@ -175,15 +135,7 @@ this property are either `"bigEndian"` or `"littleEndian"` and the Endian class
 defines the constants `BIG_ENDIAN` and `LITTLE_ENDIAN` for setting the `endian`
 property with these strings.
 
-</div>
-
-</div>
-
-<div>
-
 ## The compress() and uncompress() methods
-
-<div>
 
 The `compress()` method allows you to compress a ByteArray in accordance with a
 compression algorithm that you specify as a parameter. The `uncompress()` method
@@ -211,15 +163,7 @@ algorithm:
 
     bytes.uncompress(CompressionAlgorithm.LZMA);
 
-</div>
-
-</div>
-
-<div>
-
 ## Reading and writing objects
-
-<div>
 
 The `readObject()` and `writeObject()` methods read an object from and write an
 object to a ByteArray, encoded in serialized Action Message Format (AMF). AMF is
@@ -354,15 +298,3 @@ a header for the contents of the `order` file.
     		inStream.close();
     	}
     }
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # Event listeners
 
-<div>
-
 Event listeners, which are also called event handlers, are functions that Flash
 Player and AIR execute in response to specific events. Adding an event listener
 is a two-step process. First, you create a function or class method for Flash
@@ -11,13 +9,7 @@ listener function or the event handler function. Second, you use the
 of the event or any display list object that lies along the appropriate event
 flow.
 
-</div>
-
-<div>
-
 ## Creating a listener function
-
-<div>
 
 The creation of listener functions is one area where the ActionScript 3.0 event
 model deviates from the DOM event model. In the DOM event model, there is a
@@ -33,8 +25,6 @@ EventListener interface, and listener functions can be defined outside a class
 or as part of a class. Moreover, listener functions do not have to be named
 `handleEvent()` —they can be named with any valid identifier. In ActionScript
 3.0, you register the name of the actual listener function.
-
-<div>
 
 #### Listener function defined outside of a class
 
@@ -90,10 +80,6 @@ event.
 The example also checks the value of the `this` keyword. In this case, `this`
 represents the global object, which makes sense because the function is defined
 outside of any custom class or object.
-
-</div>
-
-<div>
 
 #### Listener function defined as a class method
 
@@ -158,10 +144,6 @@ longer necessary, however, because ActionScript 3.0 creates a bound method when
 ChildSprite instance named `child`, and the programmer has access to the other
 methods and properties of the ChildSprite class.
 
-</div>
-
-<div>
-
 #### Event listener that should not be used
 
 There is a third technique in which you create a generic object with a property
@@ -223,17 +205,7 @@ are passing as the `listener` parameter is nothing more than the memory address
 of your listener function, and Flash Player and AIR have no way to link that
 memory address with the `myListenerObj` instance `.`
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Managing event listeners
-
-<div>
 
 You can manage your listener functions using the methods of the IEventDispatcher
 interface. The IEventDispatcher interface is the ActionScript 3.0 version of the
@@ -270,8 +242,6 @@ event targets or part of an event flow. For example, the DisplayObject class
 inherits from the EventDispatcher class. This means that any object on the
 display list has access to the methods of the IEventDispatcher interface.
 
-<div>
-
 #### Adding event listeners
 
 The `addEventListener()` method is the workhorse of the IEventDispatcher
@@ -281,15 +251,11 @@ the type of event. You use the `listener` parameter to specify the listener
 function that will execute when the event occurs. The `listener` parameter can
 be a reference to either a function or a class method.
 
-<div>
-
 Do not use parentheses when you specify the `listener` parameter. For example,
 the `clickHandler()` function is specified without parentheses in the following
 call to the `addEventListener()` method:
 
     addEventListener(MouseEvent.CLICK, clickHandler)
-
-</div>
 
 The `useCapture` parameter of the `addEventListener()` method allows you to
 control the event flow phase on which your listener will be active. If
@@ -319,10 +285,6 @@ object is considered no longer in use if no references to it exist. The garbage
 collector disregards weak references, which means that a listener function that
 has only a weak reference pointing to it is eligible for garbage collection.
 
-</div>
-
-<div>
-
 #### Removing event listeners
 
 You can use the `removeEventListener()` method to remove an event listener that
@@ -335,10 +297,6 @@ to `true`, and then again with it set to `false`. To remove both event
 listeners, you would need to call `removeEventListener()` twice, once with
 `useCapture` set to `true`, and then again with it set to `false`.
 
-</div>
-
-<div>
-
 #### Dispatching events
 
 The `dispatchEvent()` method can be used by advanced programmers to dispatch a
@@ -346,10 +304,6 @@ custom event object into the event flow. The only parameter accepted by this
 method is a reference to an event object, which must be an instance of the Event
 class or a subclass of the Event class. Once dispatched, the `target` property
 of the event object is set to the object on which `dispatchEvent()` was called.
-
-</div>
-
-<div>
 
 #### Checking for existing event listeners
 
@@ -361,17 +315,7 @@ if a listener is found for a particular display list object, but `willTrigger()`
 checks for listeners not only on that display object, but also on all of that
 display list object's ancestors for all phases of the event flow.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Error events without listeners
-
-<div>
 
 Exceptions, rather than events, are the primary mechanism for error handling in
 ActionScript 3.0, but exception handling does not work for asynchronous
@@ -383,13 +327,7 @@ the debugger version of Flash Player produces the following dialog box
 describing the error when the application attempts to load a file from an
 invalid URL:
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](../../img/eh_error_event_dialog.png)
-
-</div>
 
 Most error events are based on the ErrorEvent class, and as such will have a
 property named `text` that is used to store the error message that Flash Player
@@ -403,7 +341,3 @@ as a dialog box on the debugger versions of the browser plug-ins and stand-alone
 players, as a message in the output panel in the authoring player, and as an
 entry in the log file for Adobe Flash Builder. It will not manifest at all in
 the release versions of Flash Player or AIR.
-
-</div>
-
-</div>

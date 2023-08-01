@@ -1,7 +1,5 @@
 # Accessing AIR API classes from JavaScript
 
-<div>
-
 In addition to the standard and extended elements of Webkit, HTML and JavaScript
 code can access the host classes provided by the runtime. These classes let you
 access the advanced features that AIR provides, including:
@@ -32,14 +30,10 @@ access the advanced features that AIR provides, including:
   package includes the File class). Packages are a way of organizing classes
   used in ActionScript.
 
-  <div>
-
   Note: The `runtime` property is not automatically added to the window objects
   of pages loaded in a frame or iframe. However, as long as the child document
   is in the application sandbox, the child can access the `runtime` property of
   the parent.
-
-  </div>
 
   Because the package structure of the runtime classes would require developers
   to type long strings of JavaScript code strings to access each class (as in
@@ -55,31 +49,9 @@ access the advanced features that AIR provides, including:
   ECMAScript language.) All built-in classes are available in both JavaScript
   (in HTML content) and ActionScript (in SWF content).
 
-  <div>
-
   Note: JavaScript code cannot use the Dictionary, XML, and XMLList classes,
   which are available in ActionScript.
 
-  </div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
 
-</div>
-
-<div>
-
 [Using the AIRAliases.js file](WS5b3ccc516d4fbf351e63e3d118666ade46-7fcd.html)
-
-</div>
-
-<div>
-
-</div>
-
-</div>

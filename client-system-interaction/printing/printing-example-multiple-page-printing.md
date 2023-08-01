@@ -1,7 +1,5 @@
 # Printing example: Multiple-page printing
 
-<div>
-
 When printing more than one page of content, you can associate each page of
 content with a different sprite (in this case, `sheet1` and `sheet2`), and then
 use `PrintJob.addPage()` for each sprite. The following code illustrates this
@@ -104,13 +102,3 @@ technique:
     		}
     	}
     }
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

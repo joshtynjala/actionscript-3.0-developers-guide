@@ -1,7 +1,5 @@
 # Determining the locale
 
-<div>
-
 A locale identifies a specific combination of language and cultural conventions
 for a country or region.
 
@@ -36,13 +34,7 @@ system (script) and region. For example:
 In this example, the `LocaleID()` constructor retrieved data about the locale
 that best matches the language code "es" for that user.
 
-</div>
-
-<div>
-
 ## Setting the locale ID
-
-<div>
 
 There are a number of ways to set the current locale for an application,
 including:
@@ -63,8 +55,6 @@ including:
 
 You can implement this third option as follows:
 
-<div>
-
 1.  Retrieve a list of the user's preferred locales or languages from a user
     profile, browser settings, operating system settings, or a cookie. (Your
     application would need to implement this logic itself. The
@@ -79,17 +69,7 @@ You can implement this third option as follows:
 3.  Give the user a way to change the default locale setting in case the default
     locale is not satisfactory.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Limitations of other locale and language classes
-
-<div>
 
 The `fl.lang.Locale` class lets you replace text strings based on a locale,
 using resource bundles containing string values. However this class does not
@@ -105,15 +85,3 @@ ID—and it only supports a specific set of locales.
 With AIR 1.5, you can use the `flash.system.Capabilities.languages` property.
 This property provides an array of the user's preferred user interface
 languages. Thus, it does not have the limitations of `Capabilities.language`.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

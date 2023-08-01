@@ -1,10 +1,6 @@
 # AGAL bytecode format
 
-<div>
-
 AGAL bytecode must use Endian.LITTLE_ENDIAN format.
-
-<div>
 
 #### Bytecode Header
 
@@ -13,20 +9,12 @@ AGAL bytecode must begin with a 7-byte header:
     A0 01000000 A1 00 -- for a vertex program
     A0 01000000 A1 01 -- for a fragment program
 
-<div>
-
 | Offset (bytes) | Size (bytes) | Name           | Description                                      |
 | -------------- | ------------ | -------------- | ------------------------------------------------ |
 | 0              | 1            | magic          | must be 0xa0                                     |
 | 1              | 4            | version        | must be 1                                        |
 | 5              | 1            | shader type ID | must be 0xa1                                     |
 | 6              | 1            | shader type    | 0 for a vertex program; 1 for a fragment program |
-
-</div>
-
-</div>
-
-<div>
 
 #### Tokens
 
@@ -37,274 +25,237 @@ bits (24 bytes) in size and always has the format:
 
 Not every opcode uses all of these fields. Unused fields must be set to 0.
 
-</div>
-
-<div>
-
 #### Operation codes
 
 The \[opcode\] field is 32 bits in size and can take one of these values:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>Name</p></th>
-<th><p>Opcode</p></th>
-<th><p>Operation</p></th>
-<th><p>Description</p></th>
-</tr>
+    <tr>
+        <th><p>Name</p></th>
+        <th><p>Opcode</p></th>
+        <th><p>Operation</p></th>
+        <th><p>Description</p></th>
+    </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><p>mov</p></td>
-<td><p>0x00</p></td>
-<td><p>move</p></td>
-<td><p>move data from source1 to destination, component-wise</p></td>
-</tr>
-<tr class="even">
-<td><p>add</p></td>
-<td><p>0x01</p></td>
-<td><p>add</p></td>
-<td><p>destination = source1 + source2, component-wise</p></td>
-</tr>
-<tr class="odd">
-<td><p>sub</p></td>
-<td><p>0x02</p></td>
-<td><p>subtract</p></td>
-<td><p>destination = source1 - source2, component-wise</p></td>
-</tr>
-<tr class="even">
-<td><p>mul</p></td>
-<td><p>0x03</p></td>
-<td><p>multiply</p></td>
-<td><p>destination = source1 * source2, component-wise</p></td>
-</tr>
-<tr class="odd">
-<td><p>div</p></td>
-<td><p>0x04</p></td>
-<td><p>divide</p></td>
-<td><p>destination = source1 / source2, component-wise</p></td>
-</tr>
-<tr class="even">
-<td><p>rcp</p></td>
-<td><p>0x05</p></td>
-<td><p>reciprocal</p></td>
-<td><p>destination = 1/source1, component-wise</p></td>
-</tr>
-<tr class="odd">
-<td><p>min</p></td>
-<td><p>0x06</p></td>
-<td><p>minimum</p></td>
-<td><p>destination = minimum(source1,source2), component-wise</p></td>
-</tr>
-<tr class="even">
-<td><p>max</p></td>
-<td><p>0x07</p></td>
-<td><p>maximum</p></td>
-<td><p>destination = maximum(source1,source2), component-wise</p></td>
-</tr>
-<tr class="odd">
-<td><p>frc</p></td>
-<td><p>0x08</p></td>
-<td><p>fractional</p></td>
-<td><p>destination = source1 - (float)floor(source1),
-component-wise</p></td>
-</tr>
-<tr class="even">
-<td><p>sqt</p></td>
-<td><p>0x09</p></td>
-<td><p>square root</p></td>
-<td><p>destination = sqrt(source1), component-wise</p></td>
-</tr>
-<tr class="odd">
-<td><p>rsq</p></td>
-<td><p>0x0a</p></td>
-<td><p>reciprocal root</p></td>
-<td><p>destination = 1/sqrt(source1), component-wise</p></td>
-</tr>
-<tr class="even">
-<td><p>pow</p></td>
-<td><p>0x0b</p></td>
-<td><p>power</p></td>
-<td><p>destination = pow(source1,source2), component-wise</p></td>
-</tr>
-<tr class="odd">
-<td><p>log</p></td>
-<td><p>0x0c</p></td>
-<td><p>logarithm</p></td>
-<td><p>destination = log_2(source1), component-wise</p></td>
-</tr>
-<tr class="even">
-<td><p>exp</p></td>
-<td><p>0x0d</p></td>
-<td><p>exponential</p></td>
-<td><p>destination = 2^source1, component-wise</p></td>
-</tr>
-<tr class="odd">
-<td><p>nrm</p></td>
-<td><p>0x0e</p></td>
-<td><p>normalize</p></td>
-<td><p>destination = normalize(source1), component-wise (produces only a
-3 component result, destination must be masked to .xyz or less)</p></td>
-</tr>
-<tr class="even">
-<td><p>sin</p></td>
-<td><p>0x0f</p></td>
-<td><p>sine</p></td>
-<td><p>destination = sin(source1), component-wise</p></td>
-</tr>
-<tr class="odd">
-<td><p>cos</p></td>
-<td><p>0x10</p></td>
-<td><p>cosine</p></td>
-<td><p>destination = cos(source1), component-wise</p></td>
-</tr>
-<tr class="even">
-<td><p>crs</p></td>
-<td><p>0x11</p></td>
-<td><p>cross product</p></td>
-<td><p>destination.x = source1.y * source2.z - source1.z * source2.y</p>
-<p>destination.y = source1.z * source2.x - source1.x * source2.z</p>
-<p>destination.z = source1.x * source2.y - source1.y * source2.x</p>
-<p>(produces only a 3 component result, destination must be masked to
-.xyz or less)</p></td>
-</tr>
-<tr class="odd">
-<td><p>dp3</p></td>
-<td><p>0x12</p></td>
-<td><p>dot product</p></td>
-<td><p>destination = source1.x*source2.x + source1.y*source2.y +
-source1.z*source2.z</p></td>
-</tr>
-<tr class="even">
-<td><p>dp4</p></td>
-<td><p>0x13</p></td>
-<td><p>dot product</p></td>
-<td><p>destination = source1.x*source2.x + source1.y*source2.y +
-source1.z*source2.z + source1.w*source2.w</p></td>
-</tr>
-<tr class="odd">
-<td><p>abs</p></td>
-<td><p>0x14</p></td>
-<td><p>absolute</p></td>
-<td><p>destination = abs(source1), component-wise</p></td>
-</tr>
-<tr class="even">
-<td><p>neg</p></td>
-<td><p>0x15</p></td>
-<td><p>negate</p></td>
-<td><p>destination = -source1, component-wise</p></td>
-</tr>
-<tr class="odd">
-<td><p>sat</p></td>
-<td><p>0x16</p></td>
-<td><p>saturate</p></td>
-<td><p>destination = maximum(minimum(source1,1),0),
-component-wise</p></td>
-</tr>
-<tr class="even">
-<td><p>m33</p></td>
-<td><p>0x17</p></td>
-<td><p>multiply matrix 3x3</p></td>
-<td><p>destination.x = (source1.x * source2[0].x) + (source1.y *
-source2[0].y) + (source1.z * source2[0].z)</p>
-<p>destination.y = (source1.x * source2[1].x) + (source1.y *
-source2[1].y) + (source1.z * source2[1].z)</p>
-<p>destination.z = (source1.x * source2[2].x) + (source1.y *
-source2[2].y) + (source1.z * source2[2].z)</p>
-<p>(produces only a 3 component result, destination must be masked to
-.xyz or less)</p></td>
-</tr>
-<tr class="odd">
-<td><p>m44</p></td>
-<td><p>0x18</p></td>
-<td><p>multiply matrix 4x4</p></td>
-<td><p>destination.x = (source1.x * source2[0].x) + (source1.y *
-source2[0].y) + (source1.z * source2[0].z) + (source1.w *
-source2[0].w)</p>
-<p>destination.y = (source1.x * source2[1].x) + (source1.y *
-source2[1].y) + (source1.z * source2[1].z) + (source1.w *
-source2[1].w)</p>
-<p>destination.z = (source1.x * source2[2].x) + (source1.y *
-source2[2].y) + (source1.z * source2[2].z) + (source1.w *
-source2[2].w)</p>
-<p>destination.w = (source1.x * source2[3].x) + (source1.y *
-source2[3].y) + (source1.z * source2[3].z) + (source1.w *
-source2[3].w)</p></td>
-</tr>
-<tr class="even">
-<td><p>m34</p></td>
-<td><p>0x19</p></td>
-<td><p>multiply matrix 3x4</p></td>
-<td><p>destination.x = (source1.x * source2[0].x) + (source1.y *
-source2[0].y) + (source1.z * source2[0].z) + (source1.w *
-source2[0].w)</p>
-<p>destination.y = (source1.x * source2[1].x) + (source1.y *
-source2[1].y) + (source1.z * source2[1].z) + (source1.w *
-source2[1].w)</p>
-<p>destination.z = (source1.x * source2[2].x) + (source1.y *
-source2[2].y) + (source1.z * source2[2].z) + (source1.w *
-source2[2].w)</p>
-<p>(produces only a 3 component result, destination must be masked to
-.xyz or less)</p></td>
-</tr>
-<tr class="odd">
-<td><p>kil</p></td>
-<td><p>0x27</p></td>
-<td><p>kill/discard (fragment shader only)</p></td>
-<td><p>If single scalar source component is less than zero, fragment is
-discarded and not drawn to the frame buffer. (Destination register must
-be set to all 0)</p></td>
-</tr>
-<tr class="even">
-<td><p>tex</p></td>
-<td><p>0x28</p></td>
-<td><p>texture sample (fragment shader only)</p></td>
-<td><p>destination equals load from texture source2 at coordinates
-source1. In this case, source2 must be in sampler format.</p></td>
-</tr>
-<tr class="odd">
-<td><p>sge</p></td>
-<td><p>0x29</p></td>
-<td><p>set-if-greater-equal</p></td>
-<td><p>destination = source1 &gt;= source2 ? 1 : 0,
-component-wise</p></td>
-</tr>
-<tr class="even">
-<td><p>slt</p></td>
-<td><p>0x2a</p></td>
-<td><p>set-if-less-than</p></td>
-<td><p>destination = source1 &lt; source2 ? 1 : 0,
-component-wise</p></td>
-</tr>
-<tr class="odd">
-<td><p>seq</p></td>
-<td><p>0x2c</p></td>
-<td><p>set-if-equal</p></td>
-<td><p>destination = source1 == source2 ? 1 : 0, component-wise</p></td>
-</tr>
-<tr class="even">
-<td><p>sne</p></td>
-<td><p>0x2d</p></td>
-<td><p>set-if-not-equal</p></td>
-<td><p>destination = source1 != source2 ? 1 : 0, component-wise</p></td>
-</tr>
+    <tr>
+        <td><p>mov</p></td>
+        <td><p>0x00</p></td>
+        <td><p>move</p></td>
+        <td><p>move data from source1 to destination, component-wise</p></td>
+    </tr>
+    <tr>
+        <td><p>add</p></td>
+        <td><p>0x01</p></td>
+        <td><p>add</p></td>
+        <td><p>destination = source1 + source2, component-wise</p></td>
+    </tr>
+    <tr>
+        <td><p>sub</p></td>
+        <td><p>0x02</p></td>
+        <td><p>subtract</p></td>
+        <td><p>destination = source1 - source2, component-wise</p></td>
+    </tr>
+    <tr>
+        <td><p>mul</p></td>
+        <td><p>0x03</p></td>
+        <td><p>multiply</p></td>
+        <td><p>destination = source1 * source2, component-wise</p></td>
+    </tr>
+    <tr>
+        <td><p>div</p></td>
+        <td><p>0x04</p></td>
+        <td><p>divide</p></td>
+        <td><p>destination = source1 / source2, component-wise</p></td>
+    </tr>
+    <tr>
+        <td><p>rcp</p></td>
+        <td><p>0x05</p></td>
+        <td><p>reciprocal</p></td>
+        <td><p>destination = 1/source1, component-wise</p></td>
+    </tr>
+    <tr>
+        <td><p>min</p></td>
+        <td><p>0x06</p></td>
+        <td><p>minimum</p></td>
+        <td><p>destination = minimum(source1,source2), component-wise</p></td>
+    </tr>
+    <tr>
+        <td><p>max</p></td>
+        <td><p>0x07</p></td>
+        <td><p>maximum</p></td>
+        <td><p>destination = maximum(source1,source2), component-wise</p></td>
+    </tr>
+    <tr>
+        <td><p>frc</p></td>
+        <td><p>0x08</p></td>
+        <td><p>fractional</p></td>
+        <td><p>destination = source1 - (float)floor(source1), component-wise</p></td>
+    </tr>
+    <tr>
+        <td><p>sqt</p></td>
+        <td><p>0x09</p></td>
+        <td><p>square root</p></td>
+        <td><p>destination = sqrt(source1), component-wise</p></td>
+    </tr>
+    <tr>
+        <td><p>rsq</p></td>
+        <td><p>0x0a</p></td>
+        <td><p>reciprocal root</p></td>
+        <td><p>destination = 1/sqrt(source1), component-wise</p></td>
+    </tr>
+    <tr>
+        <td><p>pow</p></td>
+        <td><p>0x0b</p></td>
+        <td><p>power</p></td>
+        <td><p>destination = pow(source1,source2), component-wise</p></td>
+    </tr>
+    <tr>
+        <td><p>log</p></td>
+        <td><p>0x0c</p></td>
+        <td><p>logarithm</p></td>
+        <td><p>destination = log_2(source1), component-wise</p></td>
+    </tr>
+    <tr>
+        <td><p>exp</p></td>
+        <td><p>0x0d</p></td>
+        <td><p>exponential</p></td>
+        <td><p>destination = 2^source1, component-wise</p></td>
+    </tr>
+    <tr>
+        <td><p>nrm</p></td>
+        <td><p>0x0e</p></td>
+        <td><p>normalize</p></td>
+        <td><p>destination = normalize(source1), component-wise (produces only a 3 component result, destination must be masked to .xyz or less)</p></td>
+    </tr>
+    <tr>
+        <td><p>sin</p></td>
+        <td><p>0x0f</p></td>
+        <td><p>sine</p></td>
+        <td><p>destination = sin(source1), component-wise</p></td>
+    </tr>
+    <tr>
+        <td><p>cos</p></td>
+        <td><p>0x10</p></td>
+        <td><p>cosine</p></td>
+        <td><p>destination = cos(source1), component-wise</p></td>
+    </tr>
+    <tr>
+        <td><p>crs</p></td>
+        <td><p>0x11</p></td>
+        <td><p>cross product</p></td>
+        <td>
+            <p>destination.x = source1.y * source2.z - source1.z * source2.y</p>
+            <p>destination.y = source1.z * source2.x - source1.x * source2.z</p>
+            <p>destination.z = source1.x * source2.y - source1.y * source2.x</p>
+            <p>(produces only a 3 component result, destination must be masked to .xyz or less)</p>
+        </td>
+    </tr>
+    <tr>
+        <td><p>dp3</p></td>
+        <td><p>0x12</p></td>
+        <td><p>dot product</p></td>
+        <td><p>destination = source1.x*source2.x + source1.y*source2.y + source1.z*source2.z</p></td>
+    </tr>
+    <tr>
+        <td><p>dp4</p></td>
+        <td><p>0x13</p></td>
+        <td><p>dot product</p></td>
+        <td><p>destination = source1.x*source2.x + source1.y*source2.y + source1.z*source2.z + source1.w*source2.w</p></td>
+    </tr>
+    <tr>
+        <td><p>abs</p></td>
+        <td><p>0x14</p></td>
+        <td><p>absolute</p></td>
+        <td><p>destination = abs(source1), component-wise</p></td>
+    </tr>
+    <tr>
+        <td><p>neg</p></td>
+        <td><p>0x15</p></td>
+        <td><p>negate</p></td>
+        <td><p>destination = -source1, component-wise</p></td>
+    </tr>
+    <tr>
+        <td><p>sat</p></td>
+        <td><p>0x16</p></td>
+        <td><p>saturate</p></td>
+        <td><p>destination = maximum(minimum(source1,1),0), component-wise</p></td>
+    </tr>
+    <tr>
+        <td><p>m33</p></td>
+        <td><p>0x17</p></td>
+        <td><p>multiply matrix 3x3</p></td>
+        <td>
+            <p>destination.x = (source1.x * source2[0].x) + (source1.y * source2[0].y) + (source1.z * source2[0].z)</p>
+            <p>destination.y = (source1.x * source2[1].x) + (source1.y * source2[1].y) + (source1.z * source2[1].z)</p>
+            <p>destination.z = (source1.x * source2[2].x) + (source1.y * source2[2].y) + (source1.z * source2[2].z)</p>
+            <p>(produces only a 3 component result, destination must be masked to .xyz or less)</p>
+        </td>
+    </tr>
+    <tr>
+        <td><p>m44</p></td>
+        <td><p>0x18</p></td>
+        <td><p>multiply matrix 4x4</p></td>
+        <td>
+            <p>destination.x = (source1.x * source2[0].x) + (source1.y * source2[0].y) + (source1.z * source2[0].z) + (source1.w * source2[0].w)</p>
+            <p>destination.y = (source1.x * source2[1].x) + (source1.y * source2[1].y) + (source1.z * source2[1].z) + (source1.w * source2[1].w)</p>
+            <p>destination.z = (source1.x * source2[2].x) + (source1.y * source2[2].y) + (source1.z * source2[2].z) + (source1.w * source2[2].w)</p>
+            <p>destination.w = (source1.x * source2[3].x) + (source1.y * ource2[3].y) + (source1.z * source2[3].z) + (source1.w * source2[3].w)</p>
+        </td>
+    </tr>
+    <tr>
+        <td><p>m34</p></td>
+        <td><p>0x19</p></td>
+        <td><p>multiply matrix 3x4</p></td>
+        <td>
+            <p>destination.x = (source1.x * source2[0].x) + (source1.y * source2[0].y) + (source1.z * source2[0].z) + (source1.w * source2[0].w)</p>
+            <p>destination.y = (source1.x * source2[1].x) + (source1.y * source2[1].y) + (source1.z * source2[1].z) + (source1.w * source2[1].w)</p>
+            <p>destination.z = (source1.x * source2[2].x) + (source1.y * source2[2].y) + (source1.z * source2[2].z) + (source1.w *
+        source2[2].w)</p>
+            <p>(produces only a 3 component result, destination must be masked to .xyz or less)</p>
+        </td>
+    </tr>
+    <tr>
+        <td><p>kil</p></td>
+        <td><p>0x27</p></td>
+        <td><p>kill/discard (fragment shader only)</p></td>
+        <td><p>If single scalar source component is less than zero, fragment is discarded and not drawn to the frame buffer. (Destination register must be set to all 0)</p></td>
+    </tr>
+    <tr>
+        <td><p>tex</p></td>
+        <td><p>0x28</p></td>
+        <td><p>texture sample (fragment shader only)</p></td>
+        <td><p>destination equals load from texture source2 at coordinates source1. In this case, source2 must be in sampler format.</p></td>
+    </tr>
+    <tr>
+        <td><p>sge</p></td>
+        <td><p>0x29</p></td>
+        <td><p>set-if-greater-equal</p></td>
+        <td><p>destination = source1 &gt;= source2 ? 1 : 0, component-wise</p></td>
+    </tr>
+    <tr>
+        <td><p>slt</p></td>
+        <td><p>0x2a</p></td>
+        <td><p>set-if-less-than</p></td>
+        <td><p>destination = source1 &lt; source2 ? 1 : 0, component-wise</p></td>
+    </tr>
+    <tr>
+        <td><p>seq</p></td>
+        <td><p>0x2c</p></td>
+        <td><p>set-if-equal</p></td>
+        <td><p>destination = source1 == source2 ? 1 : 0, component-wise</p></td>
+    </tr>
+    <tr>
+        <td><p>sne</p></td>
+        <td><p>0x2d</p></td>
+        <td><p>set-if-not-equal</p></td>
+        <td><p>destination = source1 != source2 ? 1 : 0, component-wise</p></td>
+    </tr>
 </tbody>
 </table>
 
-</div>
-
 In AGAL2, the following opcodes have been introduced:
-
-<div>
 
 | Name | Opcode | Operation               | Description                                               |
 | ---- | ------ | ----------------------- | --------------------------------------------------------- |
@@ -316,12 +267,6 @@ In AGAL2, the following opcodes have been introduced:
 | ifl  | 0x1f   | if less than            | Jump if source1 is less than source2.                     |
 | els  | 0x20   | else                    | Else block                                                |
 | eif  | 0x21   | Endif                   | Close if or else block.                                   |
-
-</div>
-
-</div>
-
-<div>
 
 #### Destination field format
 
@@ -337,10 +282,6 @@ M = Write mask (4 bits)
 N = Register number (16 bits)
 
 \- = undefined, must be 0
-
-</div>
-
-<div>
 
 #### Source field format
 
@@ -364,10 +305,6 @@ O = Indirect offset (8 bits)
 N = Register number (16 bits)
 
 \- = undefined, must be 0
-
-</div>
-
-<div>
 
 #### Sampler field format
 
@@ -394,16 +331,10 @@ S = Special flag bits (must be 0)
 
 D = Dimension (0=2D, 1=Cube)
 
-</div>
-
-<div>
-
 #### Program Registers
 
 The number of registers used depend upon the Context3D profile used. The number
 of registers along with their usage are defined in the following table:
-
-<div>
 
 | Name                        | Value | AGAL                        |                           | AGAL2                       |                           | AGAL3                       |                           | Usage                                                                                                                                                                                                                                     |
 | --------------------------- | ----- | --------------------------- | ------------------------- | --------------------------- | ------------------------- | --------------------------- | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -419,19 +350,5 @@ of registers along with their usage are defined in the following table:
 | Fragment register           | 6     | NA                          | NA                        | 1                           | NA                        | 1                           | NA                        | It is write-only and used to re-write z-value (or depth value) written in vertex shader.                                                                                                                                                  |
 | Tokens                      |       | 200                         |                           | 1024                        |                           | 2048                        |                           |                                                                                                                                                                                                                                           |
 
-</div>
-
 The latest AGAL Mini Assembler can be found
 [here](https://github.com/adobe-flash/graphicscorelib/tree/master/src/com/adobe/utils/v3).
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

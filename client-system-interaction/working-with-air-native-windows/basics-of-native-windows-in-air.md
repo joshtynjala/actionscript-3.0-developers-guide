@@ -1,7 +1,5 @@
 # Basics of native windows in AIR
 
-<div>
-
 For quick explanations and code examples of working with native windows in AIR,
 see the following quick start articles on the Adobe Developer Connection:
 
@@ -55,13 +53,7 @@ window chrome with vector and bitmap artwork with full support for transparency
 and alpha blending against the desktop. Tired of rectangular windows? Draw a
 round one.
 
-</div>
-
-<div>
-
 ## Windows in AIR
-
-<div>
 
 AIR supports three distinct APIs for working with windows:
 
@@ -79,18 +71,12 @@ AIR supports three distinct APIs for working with windows:
   replaces the Application component when you create an AIR application with
   Flex and must always be used as the initial window in your Flex application.
 
-<div>
-
 #### ActionScript windows
 
 When you create windows with the NativeWindow class, use the Flash Player stage
 and display list directly. To add a visual object to a NativeWindow, add the
 object to the display list of the window stage or to another display object
 container on the stage.
-
-</div>
-
-<div>
 
 #### HTML windows
 
@@ -101,17 +87,9 @@ defines a `nativeWindow` property in HTML windows that provides access to the
 underlying NativeWindow instance. You can use this property to access the
 NativeWindow properties, methods, and events described here.
 
-<div>
-
 Note: The JavaScript Window object also has methods for scripting the containing
 window, such as `moveTo()` and `close()`. Where overlapping methods are
 available, you can use whichever method that is convenient.
-
-</div>
-
-</div>
-
-<div>
 
 #### Flex Framework windows
 
@@ -124,10 +102,6 @@ components directly, whereas NativeWindow objects cannot. When necessary, the
 NativeWindow properties and methods can be accessed through the
 WindowedApplication and Window objects using the `nativeWindow` property.
 
-</div>
-
-<div>
-
 #### The initial application window
 
 The first window of your application is automatically created for you by AIR.
@@ -138,78 +112,44 @@ If the root content is a SWF file, AIR creates a NativeWindow instance, loads
 the SWF file, and adds it to the window stage. If the root content is an HTML
 file, AIR creates an HTML window and loads the HTML.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Native window classes
-
-<div>
 
 The native window API contains the following classes:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>Package</p></th>
-<th><p>Classes</p></th>
-</tr>
+    <tr>
+        <th><p>Package</p></th>
+        <th><p>Classes</p></th>
+    </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><p>flash.display</p></td>
-<td><div>
-<ul class="incremental">
-<li><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeWindow.html">NativeWindow</a></p></li>
-<li><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeWindow.html">NativeWindowInitOptions</a></p></li>
-<li><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeWindowDisplayState.html">NativeWindowDisplayState</a></p></li>
-<li><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeWindowResize.html">NativeWindowResize</a></p></li>
-<li><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeWindowSystemChrome.html">NativeWindowSystemChrome</a></p></li>
-<li><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeWindowType.html">NativeWindowType</a></p></li>
-</ul>
-</div></td>
-</tr>
-<tr class="even">
-<td><p>flash.events</p></td>
-<td><div>
-<ul class="incremental">
-<li><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeWindow.html">NativeWindowBoundsEvent</a></p></li>
-<li><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeWindow.html">NativeWindowDisplayStateEvent</a></p></li>
-</ul>
-</div></td>
-</tr>
+    <tr>
+        <td><p>flash.display</p></td>
+        <td>
+            <ul class="incremental">
+                <li><p><a href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeWindow.html">NativeWindow</a></p></li>
+                <li><p><a href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeWindow.html">NativeWindowInitOptions</a></p></li>
+                <li><p><a href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeWindowDisplayState.html">NativeWindowDisplayState</a></p></li>
+                <li><p><a href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeWindowResize.html">NativeWindowResize</a></p></li>
+                <li><p><a href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeWindowSystemChrome.html">NativeWindowSystemChrome</a></p></li>
+                <li><p><a href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeWindowType.html">NativeWindowType</a></p></li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+    <td><p>flash.events</p></td>
+      <td>
+        <ul class="incremental">
+          <li><p><a href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeWindow.html">NativeWindowBoundsEvent</a></p></li>
+          <li><p><a href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeWindow.html">NativeWindowDisplayStateEvent</a></p></li>
+        </ul>
+      </td>
+    </tr>
 </tbody>
 </table>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Native window event flow
-
-<div>
 
 Native windows dispatch events to notify interested components that an important
 change is about to occur or has already occurred. Many window-related events are
@@ -251,15 +191,7 @@ of events that occurs when a user clicks the maximize button of a window:
     class listing in the
     [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Properties controlling native window style and behavior
-
-<div>
 
 The following properties control the basic appearance and behavior of a window:
 
@@ -282,20 +214,12 @@ Some settings of these properties are mutually incompatible: `systemChrome`
 cannot be set to `standard` when either `transparent` is `true` or `type` is
 `lightweight`.
 
-</div>
-
-<div>
-
 ### Window types
-
-<div>
 
 The AIR window types combine chrome and visibility attributes of the native
 operating system to create three functional types of window. Use the constants
 defined in the NativeWindowType class to reference the type names in code. AIR
 provides the following window types:
-
-<div>
 
 | Type        | Description                                                                                                                                                                                                                                                                                                                                                                                               |
 | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -303,23 +227,11 @@ provides the following window types:
 | Utility     | A tool palette. Utility windows use a slimmer version of the system chrome and do not appear on the Windows taskbar and the Mac OS X window menu.                                                                                                                                                                                                                                                         |
 | Lightweight | Lightweight windows have no chrome and do not appear on the Windows taskbar or the Mac OS X window menu. In addition, lightweight windows do not have the System (Alt+Space) menu on Windows. Lightweight windows are suitable for notification bubbles and controls such as combo-boxes that open a short-lived display area. When the lightweight `type` is used, `systemChrome` must be set to `none`. |
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ### Window chrome
-
-<div>
 
 Window chrome is the set of controls that allow users to manipulate a window in
 the desktop environment. Chrome elements include the title bar, title bar
 buttons, border, and resize grippers.
-
-<div>
 
 #### System chrome
 
@@ -334,10 +246,6 @@ the controls themselves, but can react to the events dispatched when the
 controls are used. When you use standard chrome for a window, the `transparent`
 property must be set to `false` and the `type` property must be `normal` or
 `utility`.
-
-</div>
-
-<div>
 
 #### Flex chrome
 
@@ -366,10 +274,6 @@ chrome:
 For more information, see
 [Using Flex 4: About the AIR window containers: Controlling window chrome](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-7fd8.html#WSacd9bdd0c5c09f4a-690d4877120e8b878b0-7fd7)
 
-</div>
-
-<div>
-
 #### Custom chrome
 
 When you create a window with no system chrome, then you must add your own
@@ -380,17 +284,7 @@ To use custom chrome with the mx:WindowedApplication or mx:Window components,
 you must set the `showFlexChrome` style to `false`. Otherwise, Flex will add its
 own chrome to your windows.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ### Window transparency
-
-<div>
 
 To allow alpha blending of a window with the desktop or other windows, set the
 window `transparent` property to `true`. The `transparent` property must be set
@@ -407,15 +301,11 @@ that are irregular in shape or that "fade out" or appear to be invisible.
 However, rendering large alpha-blended areas can be slow, so the effect should
 be used conservatively.
 
-<div>
-
 Important: On Linux, mouse events do not pass through fully transparent pixels.
 You should avoid creating windows with large, fully transparent areas since you
 may invisibly block the user's access to other windows or items on their
 desktop. On Mac OS X and Windows, mouse events do pass through fully transparent
 pixels.
-
-</div>
 
 Transparency cannot be used with windows that have system chrome. In addition,
 SWF and PDF content in HTML may not display in transparent windows. For more
@@ -435,15 +325,7 @@ systems. Support on Linux operating systems requires a compositing window
 manager, but even when a compositing window manager is active, transparency can
 be unavailable because of user display options or hardware configuration.
 
-</div>
-
-</div>
-
-<div>
-
 ### Transparency in an MXML application window
-
-<div>
 
 By default, the background of an MXML window is opaque, even if you create the
 window as _transparent_ . (Notice the transparency effect at the corners of the
@@ -458,15 +340,7 @@ the background a slightly transparent green shade:
     	background-color:"0x448234";
     }
 
-</div>
-
-</div>
-
-<div>
-
 ### Transparency in an HTML application window
-
-<div>
 
 By default the background of HTML content displayed in HTML windows and
 HTMLLoader objects is opaque, event if the containing window is transparent. To
@@ -487,15 +361,7 @@ that element is not transparent. Setting a partial transparency (or opacity)
 value is not supported. However, you can use a transparent PNG-format graphic as
 the background for a page or a page element to achieve a similar visual effect.
 
-</div>
-
-</div>
-
-<div>
-
 ### Window ownership
-
-<div>
 
 One window can _own_ one or more other windows. These owned windows always
 appear in front of the master window, are minimized and restored along with the
@@ -512,179 +378,85 @@ dialog in front of the document window automatically.
 
 - [Christian Cantrell: Owned windows in AIR 2.6](http://blogs.adobe.com/cantrell/archives/2011/03/owned-windows-in-air-2-6.html)
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## A visual window catalog
-
-<div>
 
 The following table illustrates the visual effects of different combinations of
 window property settings on the Mac OS X, Windows, and Linux operating systems:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>Window settings</p></th>
-<th><p>Mac OS X</p></th>
-<th><p>Microsoft Windows</p></th>
-<th><p>Linux <sup>*</sup></p></th>
-</tr>
+    <tr>
+        <th><p>Window settings</p></th>
+        <th><p>Mac OS X</p></th>
+        <th><p>Microsoft Windows</p></th>
+        <th><p>Linux <sup>*</sup></p></th>
+    </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><p>Type: normal</p>
-<p>SystemChrome: standard</p>
-<p>Transparent: false</p></td>
-<td><div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<img src="images/MacNormal.png" />
-</div></td>
-<td><div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<img src="images/WinNormal.png" />
-</div></td>
-<td><div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<img src="images/LsCNormWin.png" />
-</div></td>
-</tr>
-<tr class="even">
-<td><p>Type: utility</p>
-<p>SystemChrome: standard</p>
-<p>Transparent: false</p></td>
-<td><div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<img src="images/MacUtility.png" />
-</div></td>
-<td><div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<img src="images/WinUtility.png" />
-</div></td>
-<td><div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<img src="images/LsCUtilWin.png" />
-</div></td>
-</tr>
-<tr class="odd">
-<td><p>Type: Any</p>
-<p>SystemChrome: none</p>
-<p>Transparent: false</p></td>
-<td><div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<img src="images/MacBare.png" />
-</div></td>
-<td><div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<img src="images/WinBare.png" />
-</div></td>
-<td><div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<img src="images/LnCnTwin.png" />
-</div></td>
-</tr>
-<tr class="even">
-<td><p>Type: Any</p>
-<p>SystemChrome: none</p>
-<p>Transparent: true</p></td>
-<td><div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<img src="images/MacTransparent.png" />
-</div></td>
-<td><div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<img src="images/WinTransparent.png" />
-</div></td>
-<td><div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<img src="images/LnCyTwin.png" />
-</div></td>
-</tr>
-<tr class="odd">
-<td><p>mxWindowedApplication or mx:Window</p>
-<p>Type: Any</p>
-<p>SystemChrome: none</p>
-<p>Transparent: true</p></td>
-<td><div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<img src="images/MacmxWin.png" />
-</div></td>
-<td><div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<img src="images/WinmxWin.png" />
-</div></td>
-<td><div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<img src="images/LfCyTwin.png" />
-</div></td>
-</tr>
+    <tr>
+        <td>
+            <p>Type: normal</p>
+            <p>SystemChrome: standard</p>
+            <p>Transparent: false</p>
+        </td>
+        <td> <img src="../../img/MacNormal.png" /></td>
+        <td><img src="../../img/WinNormal.png" /></td>
+        <td><img src="../../img/LsCNormWin.png" /></td>
+    </tr>
+    <tr>
+        <td>
+            <p>Type: utility</p>
+            <p>SystemChrome: standard</p>
+            <p>Transparent: false</p>
+        </td>
+        <td><img src="../../img/MacUtility.png" /></td>
+        <td><img src="../../img/WinUtility.png" /></td>
+        <td><img src="../../img/LsCUtilWin.png" /></td>
+    </tr>
+    <tr>
+        <td>
+            <p>Type: Any</p>
+            <p>SystemChrome: none</p>
+            <p>Transparent: false</p>
+        </td>
+        <td><img src="../../img/MacBare.png" /></td>
+        <td><img src="../../img/WinBare.png" /></td>
+        <td><img src="../../img/LnCnTwin.png" /></td>
+    </tr>
+    <tr>
+        <td>
+            <p>Type: Any</p>
+            <p>SystemChrome: none</p>
+            <p>Transparent: true</p>
+        </td>
+        <td><img src="../../img/MacTransparent.png" /></td>
+        <td><img src="../../img/WinTransparent.png" /></td>
+        <td><img src="../../img/LnCyTwin.png" /></td>
+    </tr>
+    <tr>
+        <td>
+            <p>mx:WindowedApplication or mx:Window</p>
+            <p>Type: Any</p>
+            <p>SystemChrome: none</p>
+            <p>Transparent: true</p>
+        </td>
+        <td><img src="../../img/MacmxWin.png" /></td>
+        <td><img src="../../img/WinmxWin.png" /></td>
+        <td><img src="../../img/LfCyTwin.png" /></td>
+    </tr>
 </tbody>
 </table>
 
-</div>
-
 <sup>\*</sup> _Ubuntu with Compiz window manager_
-
-<div>
 
 Note: The following system chrome elements are not supported by AIR: the Mac OS
 X Toolbar, the Mac OS X Proxy Icon, Windows title bar icons, and alternate
 system chrome.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
-
-</div>
 
 ![](../../img/flexLinkIndicator.png)
 [Using the Flex AIR components](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-8000.html)
 
 ![](../../img/airLinkIndicator.png)
 [Setting AIR application properties](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html)
-
-<div>
-
-</div>
-
-</div>

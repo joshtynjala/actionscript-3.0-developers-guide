@@ -1,7 +1,5 @@
 # Panning and scrolling display objects
 
-<div>
-
 If you have a display object that is too large for the area in which you want it
 to display it, you can use the `scrollRect` property to define the viewable area
 of the display object. In addition, by changing the `scrollRect` property in
@@ -68,5 +66,3 @@ you do so, Flash Player and AIR don't have to re-draw the entire contents of the
 display object each time it is scrolled, and can instead use the cached bitmap
 to render the necessary portion directly to the screen. For details, see
 [Caching display objects](./caching-display-objects.md).
-
-</div>

@@ -1,7 +1,5 @@
 # Using synchronous and asynchronous database operations
 
-<div>
-
 Previous sections have described common database operations such as retrieving,
 inserting, updating, and deleting data, as well as creating a database file and
 tables and other objects within a database. The examples have demonstrated how
@@ -30,26 +28,8 @@ connection operates in asynchronous execution mode. Once a SQLConnection
 instance is connected to a database using `open()` or `openAsync()`, it is fixed
 to synchronous or asynchronous execution.
 
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
 
 [Using synchronous database operations](WS5b3ccc516d4fbf351e63e3d118666ade46-7d18.html)
 
 [Understanding the asynchronous execution model](WS5b3ccc516d4fbf351e63e3d118666ade46-7d2b.html)
-
-</div>
-
-<div>
-
-</div>
-
-</div>

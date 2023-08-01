@@ -1,7 +1,5 @@
 # Loading external sound files
 
-<div>
-
 Each instance of the Sound class exists to load and trigger the playback of a
 specific sound resource. An application can't reuse a Sound object to load more
 than one sound. If it wants to load a new sound resource, it should create a new
@@ -30,8 +28,6 @@ process. Your application can listen for these events to track loading progress
 and make sure that the sound loads completely before playing. The following
 table lists the events that can be dispatched by a Sound object.
 
-<div>
-
 | Event                                | Description                                                                                                                      |
 | ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
 | open ( `Event.OPEN`)                 | Dispatched right before the sound loading operation begins.                                                                      |
@@ -39,8 +35,6 @@ table lists the events that can be dispatched by a Sound object.
 | id3 ( `Event.ID3`)                   | Dispatched when ID3 data is available for an mp3 sound.                                                                          |
 | complete ( `Event.COMPLETE`)         | Dispatched when all of the sound resource's data has been loaded.                                                                |
 | ioError ( `IOErrorEvent.IO_ERROR`)   | Dispatched when a sound file cannot be located or when the loading process is interrupted before all sound data can be received. |
-
-</div>
 
 The following code illustrates how to play a sound after it has finished
 loading:
@@ -70,13 +64,7 @@ The `onSoundLoaded()` method executes when the sound loading is complete. The
 `target` property of the Event object is a reference to the Sound object.
 Calling the `play()` method of the Sound object then starts the sound playback.
 
-</div>
-
-<div>
-
 ## Monitoring the sound loading process
-
-<div>
 
 Sound files can be very large and take a long time to load. While Flash Player
 and AIR let your application play sounds even before they are fully loaded, you
@@ -137,15 +125,3 @@ when loading sound files. For example, if a sound file with the given filename
 cannot be located, an `Event.IO_ERROR` event is dispatched by the Sound object.
 In the previous code, the `onIOError()` method executes and displays a brief
 error message when an error occurs.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

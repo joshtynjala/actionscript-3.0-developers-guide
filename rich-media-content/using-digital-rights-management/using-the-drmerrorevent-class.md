@@ -1,7 +1,5 @@
 # Using the DRMErrorEvent class
 
-<div>
-
 Adobe Flash Player and Adobe AIR dispatch a DRMErrorEvent object when a
 NetStream object, trying to play protected content, encounters a DRM-related
 error. If user credentials are invalid in an AIR application, the
@@ -20,27 +18,13 @@ The error events can also be fired if the content is corrupted or if the
 application's version does not match what the voucher specifies. The application
 must provide appropriate mechanism for handling errors.
 
-</div>
-
-<div>
-
 ## DRMErrorEvent properties
-
-<div>
 
 For a complete list of errors, see the
 [Runtime Error Codes](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/runtimeErrors.html)
 in the ActionScript 3.0 Reference. The DRM-related errors start at error 3300.
 
-</div>
-
-</div>
-
-<div>
-
 ## Creating a DRMErrorEvent handler
-
-<div>
 
 The following example creates an event handler for the NetStream object that
 originated the event. It is called when the NetStream encounters an error while
@@ -52,15 +36,3 @@ the error and provides options for solving the problem.
     {
     	trace(event.toString());
     }
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

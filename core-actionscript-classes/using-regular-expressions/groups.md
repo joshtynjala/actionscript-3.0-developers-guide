@@ -1,7 +1,5 @@
 # Groups
 
-<div>
-
 You can specify a group in a regular expression by using parentheses, as
 follows:
 
@@ -20,8 +18,6 @@ things:
   `replace()` method of the String class).
 
 The following sections provide details on these uses of groups.
-
-<div>
 
 #### Using groups with quantifiers
 
@@ -56,10 +52,6 @@ character class:
 
 For more information on quantifiers, see [Quantifiers](./quantifiers.md).
 
-</div>
-
-<div>
-
 #### Using groups with the alternator (\|) character
 
 You can use groups to define the group of characters to which you want to apply
@@ -70,10 +62,6 @@ an alternator (`|`) character, as follows:
 
     pattern = /ca(t|d)og/;
     // matches catog or cadog
-
-</div>
-
-<div>
 
 #### Using groups to capture substring matches
 
@@ -105,10 +93,6 @@ capturing groups:
     var str:String = "bob@example.com";
     trace(pattern.exec(str));
       // bob@example.com,bob,example,com
-
-</div>
-
-<div>
 
 #### Using noncapturing groups and lookahead groups
 
@@ -158,10 +142,6 @@ subpattern in the group must _not_ match at the position. For example:
     trace(pattern.exec(str));
     // shore,ore
 
-</div>
-
-<div>
-
 #### Using named groups
 
 A named group is a type of group in a regular expression that is given a named
@@ -189,13 +169,5 @@ Here is another example, which uses two named groups, with the identifiers
     trace(result.name); // bob
     trace(result.dom); // example
 
-<div>
-
 Note: Named groups are not part of the ECMAScript language specification. They
 are an added feature in ActionScript 3.0.
-
-</div>
-
-</div>
-
-</div>

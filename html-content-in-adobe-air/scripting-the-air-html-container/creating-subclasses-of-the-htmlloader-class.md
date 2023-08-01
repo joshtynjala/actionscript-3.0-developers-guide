@@ -1,7 +1,5 @@
 # Creating subclasses of the HTMLLoader class
 
-<div>
-
 You can create a subclass of the HTMLLoader class, to create new behaviors. For
 example, you can create a subclass that defines default event listeners for
 HTMLLoader events (such as those events dispatched when HTML is rendered or when
@@ -53,13 +51,3 @@ MyHTMLHost object to its `htmlHost` property:
 For details on the HTMLHost class and the `HTMLLoader.createRootWindow()` method
 used in this example, see
 [Defining browser-like user interfaces for HTML content](WS5b3ccc516d4fbf351e63e3d118666ade46-7e74.html).
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

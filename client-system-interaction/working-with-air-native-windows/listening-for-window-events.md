@@ -1,7 +1,5 @@
 # Listening for window events
 
-<div>
-
 To listen for the events dispatched by a window, register a listener with the
 window instance. For example, to listen for the closing event, register a
 listener with the window as follows:
@@ -26,8 +24,6 @@ object and dispatch it using the window `dispatchEvent()` method.
 
 The window events that dispatch an Event object are:
 
-<div>
-
 | Event      | Description                                                                                                                                                                    |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | activate   | Dispatched when the window receives focus.                                                                                                                                     |
@@ -35,11 +31,7 @@ The window events that dispatch an Event object are:
 | closing    | Dispatched when the window is about to close. This only occurs automatically when the system chrome close button is pressed or, on Mac OS X, when the Quit command is invoked. |
 | close      | Dispatched when the window has closed.                                                                                                                                         |
 
-</div>
-
 The window events that dispatch an NativeWindowBoundsEvent object are:
-
-<div>
 
 | Event    | Description                                                                                                                                                    |
 | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -48,22 +40,16 @@ The window events that dispatch an NativeWindowBoundsEvent object are:
 | resizing | Dispatched immediately before the window width or height changes either as a result of resizing or a display state change.                                     |
 | resize   | Dispatched after the window has changed size.                                                                                                                  |
 
-</div>
-
 For NativeWindowBoundsEvent events, you can use the `beforeBounds` and
 `afterBounds` properties to determine the window bounds before and after the
 impending or completed change.
 
 The window events that dispatch an NativeWindowDisplayStateEvent object are:
 
-<div>
-
 | Event                | Description                                                     |
 | -------------------- | --------------------------------------------------------------- |
 | displayStateChanging | Dispatched immediately before the window display state changes. |
 | displayStateChange   | Dispatched after the window display state has changed.          |
-
-</div>
 
 For NativeWindowDisplayStateEvent events, you can use the `beforeDisplayState`
 and `afterDisplayState` properties to determine the window display state before
@@ -72,13 +58,3 @@ and after the impending or completed change.
 On some Linux window managers, a display state change event is not dispatched
 when a window with a maximum size setting is maximized. (The window is set to
 the maximized display state, but is not resized.)
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

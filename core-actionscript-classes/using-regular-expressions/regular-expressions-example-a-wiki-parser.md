@@ -1,7 +1,5 @@
 # Regular expressions example: A Wiki parser
 
-<div>
-
 This simple Wiki text conversion example illustrates a number of uses for
 regular expressions:
 
@@ -19,58 +17,46 @@ To get the application files for this sample, see
 The WikiEditor application files can be found in the folder Samples/WikiEditor.
 The application consists of the following files:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>File</p></th>
-<th><p>Description</p></th>
-</tr>
+    <tr>
+        <th><p>File</p></th>
+        <th><p>Description</p></th>
+    </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td headers="d17e8172 "><p>WikiEditor.mxml</p>
-<p>or</p>
-<p>WikiEditor.fla</p></td>
-<td headers="d17e8175 "><p>The main
-application file in Flash (FLA) or Flex (MXML).</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e8172 "><p>com/example/programmingas3/regExpExamples/WikiParser.as</p></td>
-<td headers="d17e8175 "><p>A class that
-includes methods that use regular expressions to convert Wiki input text
-patterns to the equivalent HTML output.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e8172 "><p>com/example/programmingas3/regExpExamples/URLParser.as</p></td>
-<td headers="d17e8175 "><p>A class that
-includes methods that use regular expressions to convert URL strings to
-HTML <samp>&lt;a&gt;</samp>
-hyperlink tags.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e8172 "><p>com/example/programmingas3/regExpExamples/CurrencyConverter.as</p></td>
-<td headers="d17e8175 "><p>A class that
-includes methods that use regular expressions to convert U.S. dollar
-strings to euro strings.</p></td>
-</tr>
+    <tr>
+        <td >
+            <p>WikiEditor.mxml</p>
+            <p>or</p>
+            <p>WikiEditor.fla</p>
+        </td>
+        <td ><p>The main
+        application file in Flash (FLA) or Flex (MXML).</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/regExpExamples/WikiParser.as</p></td>
+        <td ><p>A class that
+        includes methods that use regular expressions to convert Wiki input text
+        patterns to the equivalent HTML output.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/regExpExamples/URLParser.as</p></td>
+        <td ><p>A class that
+        includes methods that use regular expressions to convert URL strings to
+        HTML <samp>&lt;a&gt;</samp>
+        hyperlink tags.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/regExpExamples/CurrencyConverter.as</p></td>
+        <td ><p>A class that
+        includes methods that use regular expressions to convert U.S. dollar
+        strings to euro strings.</p></td>
+    </tr>
 </tbody>
 </table>
 
-</div>
-
-</div>
-
-<div>
-
 ## Defining the WikiParser class
-
-<div>
 
 The WikiParser class includes methods that convert Wiki input text into the
 equivalent HTML output. This is not a very robust Wiki conversion application,
@@ -103,8 +89,6 @@ Each of the methods called— `parseBold()`, `parseItalic()`,
 `linesToParagraphs()`, and `parseBullets()` —uses the `replace()` method of the
 string to replace matching patterns, defined by a regular expression, in order
 to transform the input Wiki text into HTML-formatted text.
-
-<div>
 
 #### Converting boldface and italic patterns
 
@@ -140,10 +124,6 @@ three):
         return input.replace(pattern, "<i>$1</i>");
     }
 
-</div>
-
-<div>
-
 #### Converting bullet patterns
 
 As the following example shows, the `parseBullet()` method looks for the Wiki
@@ -170,10 +150,6 @@ replacement string. The `g` (`global`) flag in the regular expression ensures
 that the `replace()` method replaces all matches in the string (not simply the
 first one).
 
-</div>
-
-<div>
-
 #### Converting paragraph Wiki patterns
 
 The `linesToParagraphs()` method converts each line in the input Wiki string to
@@ -193,17 +169,7 @@ empty string (`""`). The `g` (`global`) flag in the regular expression ensures
 that the `replace()` method replaces all matches in the string (not simply the
 first one).
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Converting URLs to HTML \<a\> tags
-
-<div>
 
 When the user clicks the Test button in the sample application, if the user
 selected the `urlToATag` check box, the application calls the
@@ -252,15 +218,7 @@ The regular expressions used to match HTTP, FTP, and e-mail URLs in this sample
 file are fairly simple, for the purposes of exemplification; there are much more
 complicated regular expressions for matching such URLs more correctly.
 
-</div>
-
-</div>
-
-<div>
-
 ## Converting U.S. dollar strings to euro strings
-
-<div>
 
 When the user clicks the Test button in the sample application, if the user
 selected the `dollarToEuro` check box, the application calls the
@@ -310,7 +268,3 @@ Note that `args[1]` represents the captured parenthetical group matched by the
 string: that is, the dollar amount without the `$` sign. The method applies an
 exchange rate conversion and returns the resulting string (with a trailing €
 symbol instead of a leading $ symbol).
-
-</div>
-
-</div>

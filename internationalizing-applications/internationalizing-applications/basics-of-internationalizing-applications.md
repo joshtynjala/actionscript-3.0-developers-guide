@@ -1,7 +1,5 @@
 # Basics of internationalizing applications
 
-<div>
-
 The terms globalization and internationalization are sometimes used
 interchangeably. But most definitions of these terms say that globalization
 refers to a combination of business and engineering processes while
@@ -63,13 +61,3 @@ translated into the appropriate language for the given locale. It can also
 contain other settings that alter the layout or behavior of the user interface
 for a specific locale. A resource bundle can contain other media types, or
 references to other media types, that are locale-specific.
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

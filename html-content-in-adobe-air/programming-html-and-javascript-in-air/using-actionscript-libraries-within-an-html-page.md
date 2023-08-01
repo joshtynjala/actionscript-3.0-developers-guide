@@ -1,7 +1,5 @@
 # Using ActionScript libraries within an HTML page
 
-<div>
-
 AIR extends the HTML script element so that a page can import ActionScript
 classes in a compiled SWF file. For example, to import a library named,
 _myClasses.swf_ , located in the `lib` subdirectory of the root application
@@ -9,12 +7,8 @@ folder, include the following script tag within an HTML file:
 
     <script src="lib/myClasses.swf" type="application/x-shockwave-flash"></script>
 
-<div>
-
 Important: The type attribute must be `type="application/x-shockwave-flash"`
 _for the library to be properly loaded._
-
-</div>
 
 If the SWF content is compiled as a Flash Player 10 or AIR 1.5 SWF, you must set
 the XML namespace of the application descriptor file to the AIR 1.5 namespace.
@@ -34,21 +28,11 @@ following statement:
 
     var libraryObject = new window.runtime.utilities.LibraryClass();
 
-<div>
-
 Note: To compile an ActionScript SWF library for use as part of an HTML page in
 AIR, use the `acompc` compiler. The acompc utility is part of the Flex SDK and
 is described in the Flex SDK documentation.
 
-</div>
-
-</div>
-
-<div>
-
 ## Accessing the HTML DOM and JavaScript objects from an imported ActionScript file
-
-<div>
 
 To access objects in an HTML page from ActionScript in a SWF file imported into
 the page using the `<script>` tag, pass a reference to a JavaScript object, such
@@ -105,30 +89,10 @@ on the page:
     	window.foo = 66;
     }
 
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
-
-</div>
 
 ![](../../img/airLinkIndicator.png)
 [Specifying the required AIR version](https://help.adobe.com/en_US/air/build/WSe3d2d52902616553396777a311d6a2e014f-8000.html)
 
 ![](../../img/flexLinkIndicator.png)
 [Using compc, the component compiler](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fd2.html)
-
-<div>
-
-</div>
-
-</div>

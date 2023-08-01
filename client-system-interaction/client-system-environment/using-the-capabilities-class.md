@@ -1,7 +1,5 @@
 # Using the Capabilities class
 
-<div>
-
 The Capabilities class allows developers to determine the environment in which
 an application is being run. Using various properties of the Capabilities class,
 you can find out the resolution of the user's system, whether the user's system
@@ -46,13 +44,3 @@ ActionScript code:
     request.method = URLRequestMethod.POST;
     request.data = new URLVariables(Capabilities.serverString);
     var loader:URLLoader = new URLLoader(request);
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

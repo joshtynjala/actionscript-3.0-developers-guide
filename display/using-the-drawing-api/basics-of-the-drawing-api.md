@@ -1,7 +1,5 @@
 # Basics of the drawing API
 
-<div>
-
 The drawing API is the name for the functionality built into ActionScript that
 allows you to create vector graphics—lines, curves, shapes, fills, and
 gradients—and display them on the screen using ActionScript. The
@@ -24,8 +22,6 @@ entire shapes with a single command. Once you're familiar with the Graphics
 class and tasks covered in "Basics of using the drawing API", continue to
 [Advanced use of the drawing API](./advanced-use-of-the-drawing-api.md) to learn
 more about these drawing API features.
-
-<div>
 
 #### Important concepts and terms
 
@@ -79,7 +75,3 @@ The horizontal axis in the 2-d coordinate system used in ActionScript.
 
 Y axis  
 The vertical axis in the 2-d coordinate system used in ActionScript.
-
-</div>
-
-</div>

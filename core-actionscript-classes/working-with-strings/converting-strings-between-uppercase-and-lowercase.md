@@ -1,7 +1,5 @@
 # Converting strings between uppercase and lowercase
 
-<div>
-
 As the following example shows, the `toLowerCase()` method and the
 `toUpperCase()` method convert alphabetical characters in the string to
 lowercase and uppercase, respectively:
@@ -19,5 +17,3 @@ These methods work with extended characters, not simply a–z and A–Z:
 
     var str:String = "José Barça";
     trace(str.toUpperCase(), str.toLowerCase()); // JOSÉ BARÇA josé barça
-
-</div>

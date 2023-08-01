@@ -1,7 +1,5 @@
 # SOAP web service requests
 
-<div>
-
 SOAP builds on the general XML-RPC web service concept and provides a richer,
 albeit more complex, means for transferring typed data. SOAP web services
 typically provide a Web Service Description Language file (WSDL) that specifies
@@ -17,19 +15,7 @@ it is part of the Flex framework. In Flash Professional, you can add the Flex
 framework.swc and rpc.swc to the library path of a project and then access the
 Flex classes with ActionScript.
 
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
-
-</div>
 
 [Using the Flex web service component in Flash Professional](http://tv.adobe.com/watch/adc-presents/use-the-flex-webservice-component-in-flash/)
 
@@ -37,9 +23,3 @@ More Help topics
 [Accessing server-side data](https://help.adobe.com/en_US/Flex/4.5/AccessingData/WS2db454920e96a9e51e63e3d11c0bf69084-7ff2.html)
 
 [Cristophe Coenraets: Real-time Trader Desktop for Android](http://coenraets.org/blog/air-for-android-samples/real-time-trader-desktop-for-android/)
-
-<div>
-
-</div>
-
-</div>

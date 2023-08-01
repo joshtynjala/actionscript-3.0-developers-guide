@@ -1,7 +1,5 @@
 # Connecting to a database
 
-<div>
-
 Before you can perform any database operations, first open a connection to the
 database file. A
 [SQLConnection](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/SQLConnection.html)
@@ -156,13 +154,3 @@ it is opened, which is the same as if you use `SQLMode.Update`. You can also
 specify `SQLMode.READ` for the `openMode` parameter to open an existing database
 in a read-only mode. In that case data can be retrieved from the database but no
 data can be added, deleted, or changed.
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

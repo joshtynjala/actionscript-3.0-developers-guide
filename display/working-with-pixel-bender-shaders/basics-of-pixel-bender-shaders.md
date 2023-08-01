@@ -1,7 +1,5 @@
 # Basics of Pixel Bender shaders
 
-<div>
-
 Adobe Pixel Bender is a programming language that is used to create or
 manipulate image content. Using Pixel Bender you create a kernel, also known as
 a shader. The shader defines a single function that executes on each of the
@@ -35,8 +33,6 @@ Pixel Bender blends, filters, and fills are not supported under GPU rendering.
 On mobile devices, Pixel Bender shaders do run under CPU rendering. However,
 performance is not at the same level as on a desktop computer. Many shader
 programs may only execute at a few frames per second.
-
-<div>
 
 #### Important concepts and terms
 
@@ -82,10 +78,6 @@ Shader parameter
 A single value (or limited set of values) that is provided to a shader to use in
 its calculations. Each parameter value is defined for a single shader execution,
 and the same value is used throughout the shader execution.
-
-</div>
-
-<div>
 
 #### Working through the code examples
 
@@ -136,7 +128,3 @@ example in Flash Professional:
 These techniques for testing example code listings are explained in more detail
 in
 [How to Use ActionScript Examples](WS9b644acd4ebe5999-2734bf3c124372a52ff-8000.html).
-
-</div>
-
-</div>

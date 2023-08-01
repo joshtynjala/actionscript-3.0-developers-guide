@@ -1,7 +1,5 @@
 # About XML signatures
 
-<div>
-
 An XML signature is a digital signature represented in XML syntax. The data in
 an XML signature can be used to validate that the signed information has not
 been altered since signing. In addition, when a signing certificate has been
@@ -17,13 +15,7 @@ format). XML signatures are typically used for such purposes as:
 
 - validating application license or subscription privileges
 
-</div>
-
-<div>
-
 ## Supported XML signature syntax
-
-<div>
 
 AIR supports the following elements from the W3C recommendation for XML
 Signature Syntax and Processing:
@@ -101,13 +93,7 @@ resolving the URI and returning the signed data as a ByteArray object. The
 returned ByteArray object is digested using the same algorithm that produced the
 digest in the signature.
 
-</div>
-
-<div>
-
 ### Certificates and trust
-
-<div>
 
 A certificate consists of a public key, identifying information, and possibly
 one or more certificates belonging to the issuing certification authority.
@@ -134,8 +120,6 @@ public key or other certificate information to a list of acceptable keys. (This
 list must be secured, perhaps by its own signature, or by storing in the AIR
 encrypted local store, so that the list itself cannot be tampered with.)
 
-<div>
-
 Note: While you can elect to trust the signing certificate without independent
 verification—such as when a signature is "self-signed"—you do not thereby gain
 much assurance of anything by verifying the signature. Without knowing who
@@ -143,15 +127,7 @@ created a signature, the assurance that the signature has not been tampered
 with, is of little, if any, value. The signature could be a validly signed
 forgery.
 
-</div>
-
-</div>
-
-<div>
-
 #### Certificate expiration and revocation
-
-<div>
 
 All certificates expire. Certificates can also be revoked by the issuing
 certification authority if, for example, the private key related to the
@@ -168,19 +144,3 @@ The timestamp authority certificate embedded in the timestamp must be trusted on
 the current machine for the timestamp to be considered valid. The
 XMLSignatureValidator does not provide an API for designating a different
 certificate to use in validating the timestamp.
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

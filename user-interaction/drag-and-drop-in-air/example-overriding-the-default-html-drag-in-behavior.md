@@ -1,7 +1,5 @@
 # Example: Overriding the default HTML drag-in behavior
 
-<div>
-
 This example implements a drop target that displays a table showing each data
 format available in the dropped item.
 
@@ -93,13 +91,3 @@ a table for display.
     	</div>
     </body>
     </html>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

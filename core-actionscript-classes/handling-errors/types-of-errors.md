@@ -1,7 +1,5 @@
 # Types of errors
 
-<div>
-
 When you develop and run applications, you encounter different types of errors
 and error terminology. The following list introduces the major error types and
 terms:
@@ -112,13 +110,7 @@ terms:
   of Flash runtimes, see
   [Working with the debugger versions of Flash runtimes](./working-with-the-debugger-versions-of-flash-runtimes.md).
 
-  <div>
-
   Note: While processing an uncaughtError event, if an error event is thrown
   from an uncaughtError handler, the event handler is called multiple times.
   This results in an infinite loop of exceptions. It is recommended that you
   avoid such a scenario.
-
-  </div>
-
-</div>

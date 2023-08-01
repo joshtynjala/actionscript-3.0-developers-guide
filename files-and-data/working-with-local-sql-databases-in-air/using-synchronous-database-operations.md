@@ -1,7 +1,5 @@
 # Using synchronous database operations
 
-<div>
-
 There is little difference in the actual code that you use to execute and
 respond to operations when using synchronous execution, compared to the code for
 asynchronous execution mode. The key differences between the two approaches fall
@@ -9,13 +7,7 @@ into two areas. The first is executing an operation that depends on another
 operation (such as `SELECT` result rows or the primary key of the row added by
 an `INSERT` statement). The second area of difference is in handling errors.
 
-</div>
-
-<div>
-
 ## Writing code for synchronous operations
-
-<div>
 
 The key difference between synchronous and asynchronous execution is that in
 synchronous mode you write the code as a single series of steps. In contrast, in
@@ -64,15 +56,7 @@ you're using synchronous or asynchronous execution. The key differences between
 the two approaches are executing an operation that depends on another operation
 and handling errors.
 
-</div>
-
-</div>
-
-<div>
-
 ## Executing an operation that depends on another operation
-
-<div>
 
 When you're using synchronous execution mode, you don't need to write code that
 listens for an event to determine when an operation completes. Instead, you can
@@ -120,15 +104,7 @@ demonstrates these operations:
     // commit the transaction
     conn.commit();
 
-</div>
-
-</div>
-
-<div>
-
 ## Handling errors with synchronous execution
-
-<div>
 
 In synchronous execution mode, you don't listen for an error event to determine
 that an operation has failed. Instead, you surround any code that could trigger
@@ -183,15 +159,3 @@ builds on the previous example by adding error handling code:
     	// rollback the transaction
     	conn.rollback();
     }
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

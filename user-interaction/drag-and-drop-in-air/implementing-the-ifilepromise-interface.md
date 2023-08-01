@@ -1,7 +1,5 @@
 # Implementing the IFilePromise interface
 
-<div>
-
 To provide file promises for resources that cannot be accessed using a
 URLFilePromise object, you can implement the IFilePromise interface in a custom
 class. The IFilePromise interface defines the methods and properties used by the
@@ -62,13 +60,7 @@ All of the IFilePromise methods are called by the runtime during a drag-and-drop
 operation involving the file promise. Typically, your application logic should
 not call any of these methods directly.
 
-</div>
-
-<div>
-
 ## Using a synchronous data provider in a file promise
-
-<div>
 
 The simplest way to implement the IFilePromise interface is to use a synchronous
 data provider object, such as a ByteArray or a synchronous FileStream. In the
@@ -133,15 +125,7 @@ can block UI updates for a noticeable amount of time and make your application
 seem unresponsive. To avoid this problem, you can create an asynchronous data
 provider driven by a timer.
 
-</div>
-
-</div>
-
-<div>
-
 ## Using an asynchronous data provider in a file promise
-
-<div>
 
 When you use an asynchronous data provider object, the IFilePromise `isAsync`
 property must be `true` and the object returned by the `open()` method must
@@ -194,12 +178,8 @@ The data provider should dispatch these events in the following sequence:
 
 3.  `complete` or `close` event
 
-<div>
-
 Note: The built-in objects, FileStream, Socket, and URLStream, dispatch the
 appropriate events automatically.
-
-</div>
 
 The following example creates a file promise using a custom, asynchronous data
 provider. The data provider class extends ByteArray (for the IDataInput support)
@@ -299,15 +279,11 @@ dispatches a complete event.
     	}
     }
 
-<div>
-
 Note: Because the AsyncDataProvider class in the example extends ByteArray, it
 cannot also extend EventDispatcher. To implement the IEventDispatcher interface,
 the class uses an internal EventDispatcher object and forwards the
 IEventDispatcher method calls to that internal object. You could also extend
 EventDispatcher and implement IDataInput (or implement both interfaces).
-
-</div>
 
 The asynchronous IFilePromise implementation is almost identical to the
 synchronous implementation. The main differences are that `isAsync` returns
@@ -355,15 +331,3 @@ synchronous implementation. The main differences are that `isAsync` returns
     		}
     	}
     }
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

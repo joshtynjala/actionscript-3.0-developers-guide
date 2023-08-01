@@ -1,7 +1,5 @@
 # Capabilities example: Detecting system capabilities
 
-<div>
-
 The CapabilitiesExplorer example demonstrates how you can use the
 flash.system.Capabilities class to determine which features the user's version
 of the Flash runtime supports. This example teaches the following techniques:
@@ -17,50 +15,34 @@ To get the application files for this sample, see
 The CapabilitiesExplorer application files can be found in the folder
 Samples/CapabilitiesExplorer. This application consists of the following files:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>File</p></th>
-<th><p>Description</p></th>
-</tr>
+    <tr>
+        <th><p>File</p></th>
+        <th><p>Description</p></th>
+    </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><p>CapabilitiesExplorer.fla</p>
-<p>or</p>
-<p>CapabilitiesExplorer.mxml</p></td>
-<td><p>The main application file in Flash (FLA) or Flex (MXML).</p></td>
-</tr>
-<tr class="even">
-<td><p>com/example/programmingas3/capabilities/CapabilitiesGrabber.as</p></td>
-<td><p>The class that provides the main functionality of the
-application, including adding the system Capabilities to an array,
-sorting the items, and using the ExternalInterface class to retrieve
-browser capabilities.</p></td>
-</tr>
-<tr class="odd">
-<td><p>capabilities.html</p></td>
-<td><p>An HTML container that contains the necessary JavaScript to
-communicate with the external API.</p></td>
-</tr>
+    <tr>
+        <td>
+            <p>CapabilitiesExplorer.fla</p>
+            <p>or</p>
+            <p>CapabilitiesExplorer.mxml</p>
+        </td>
+        <td><p>The main application file in Flash (FLA) or Flex (MXML).</p></td>
+    </tr>
+    <tr>
+        <td><p>com/example/programmingas3/capabilities/CapabilitiesGrabber.as</p></td>
+        <td><p>The class that provides the main functionality of the application, including adding the system Capabilities to an  array, sorting the items, and using the ExternalInterface class to retrieve browser capabilities.</p></td>
+    </tr>
+    <tr>
+        <td><p>capabilities.html</p></td>
+        <td><p>An HTML container that contains the necessary JavaScript to communicate with the external API.</p></td>
+    </tr>
 </tbody>
 </table>
 
-</div>
-
-</div>
-
-<div>
-
 ## CapabilitiesExplorer overview
-
-<div>
 
 The CapabilitiesExplorer.mxml file is responsible for setting up the user
 interface for the CapabilitiesExplorer application. The capabilities of the
@@ -86,15 +68,7 @@ Flash runtime and browser capabilities, which then gets set to the
 `dataProvider` property of the `capabilitiesGrid` DataGrid component instance on
 the Stage.
 
-</div>
-
-</div>
-
-<div>
-
 ## CapabilitiesGrabber class overview
-
-<div>
 
 The static `getCapabilities()` method of the CapabilitiesGrabber class adds each
 property from the flash.system.Capabilities class to an array ( `capDP`). It
@@ -158,15 +132,7 @@ ActionScript. This string is then converted into a URLVariables object (
 `itemVars`) and added to the `itemArr` array, which is returned to the calling
 script.
 
-</div>
-
-</div>
-
-<div>
-
 ## Communicating with JavaScript
-
-<div>
 
 The final piece in building the CapabilitiesExplorer application is writing the
 necessary JavaScript to loop over each of the items in the browser's navigator
@@ -232,15 +198,3 @@ Each String or Boolean value in the navigator object is appended to the
 the temporary array is converted into a string using the `Array.join()` method.
 The array uses an ampersand (&) as a delimiter, which allows ActionScript to
 easily parse the data using the URLVariables class.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

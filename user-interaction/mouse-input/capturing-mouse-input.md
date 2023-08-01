@@ -1,7 +1,5 @@
 # Capturing mouse input
 
-<div>
-
 Mouse clicks create mouse events that can be used to trigger interactive
 functionality. You can add an event listener to the Stage to listen for mouse
 events that occur anywhere within the SWF file. You can also add event listeners
@@ -38,30 +36,16 @@ Stage. The same click reports \[50,50\] for these coordinates, because `square`
 was moved to these coordinates. Both of these coordinate pairs can be useful
 depending on how you want to respond to user interaction.
 
-<div>
-
-<div>
-
 Note: In full-screen mode, you can configure the application to use mouse
 locking. Mouse locking disables the cursor and enables unbounded mouse movement.
 For more information, see
 [Working with full-screen mode](WS2E9C7F3B-6A7C-4c5d-8ADD-5B23446FBEEB.html).
 
-</div>
-
-</div>
-
 The MouseEvent object also contains `altKey`, `ctrlKey`, and `shiftKey` Boolean
 properties. You can use these properties to check if the Alt, Ctrl, or Shift key
 is also being pressed at the time of the mouse click.
 
-</div>
-
-<div>
-
 ## Dragging Sprites around the stage
-
-<div>
 
 You can allow users to drag a Sprite object around the stage using the
 `startDrag()` method of the Sprite class. The following code shows an example of
@@ -105,25 +89,13 @@ this:
 For more details, see the section on creating mouse drag interaction in
 [Changing position](WS5b3ccc516d4fbf351e63e3d118a9b90204-7df5.html).
 
-<div>
-
 #### Drag-and-drop in AIR
 
 In Adobe AIR, you can enable drag-and-drop support to allow users to drag data
 into and out of your application. For more details, see
 [Drag and drop in AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7e8a.html).
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Customizing the mouse cursor
-
-<div>
 
 The mouse cursor (mouse pointer) can be hidden or swapped for any display object
 on the Stage. To hide the mouse cursor, call the `Mouse.hide()` method.
@@ -146,15 +118,3 @@ following example illustrates a basic execution of this task:
     	cursor.x = event.stageX;
     	cursor.y = event.stageY;
     }
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

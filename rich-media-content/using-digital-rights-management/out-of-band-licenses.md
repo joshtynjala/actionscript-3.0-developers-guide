@@ -1,7 +1,5 @@
 # Out-of-band Licenses
 
-<div>
-
 Licenses can also be obtained out-of-band (without contacting a Adobe Access
 License Server) by storing the voucher (license) on disk and in memory using the
 `storeVoucher` method.
@@ -37,26 +35,8 @@ AIR application can then extract the serialized DRM vouchers using the
 `DRMVoucher.toByteArray()` method and on your other machines you can import the
 vouchers using the `DRMManager.storeVoucher()` method.
 
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
 
 [Device registration](WS5262178513756206-23ef6621131a8f8c6f2-8000.html)
 
 [Factory reset](WS5262178513756206-6236898c131a9209b5d-8000.html)
-
-</div>
-
-<div>
-
-</div>
-
-</div>

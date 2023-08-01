@@ -1,24 +1,14 @@
 # AIR application invocation and termination
 
-<div>
-
 This section discusses the ways in which an installed Adobe® AIR® application
 can be invoked, as well as options and considerations for closing a running
 application.
-
-<div>
-
-<div>
 
 Note: The NativeApplication, InvokeEvent, and BrowserInvokeEvent objects are
 only available to SWF content running in the AIR application sandbox. SWF
 content running in the Flash Player runtime, within the browser or the
 standalone player (projector), or in an AIR application outside the application
 sandbox, cannot access these classes.
-
-</div>
-
-</div>
 
 For a quick explanation and code examples of invoking and terminating AIR
 applications, see the following quick start articles on the Adobe Developer
@@ -28,13 +18,7 @@ Connection:
 
 <!-- -->
 
-</div>
-
-<div>
-
 ## Application invocation
-
-<div>
 
 An AIR application is invoked when the user (or the operating system):
 
@@ -73,13 +57,9 @@ application time to initialize itself and register an event listener, `invoke`
 events are queued instead of discarded. As soon as a listener is registered, all
 the queued events are delivered.
 
-<div>
-
 Note: When an application is invoked using the browser invocation feature, the
 NativeApplication object only dispatches an `invoke` event if the application is
 not already running.
-
-</div>
 
 To receive `invoke` events, call the `addEventListener()` method of the
 NativeApplication object ( `NativeApplication.nativeApplication)`. When an event
@@ -124,15 +104,7 @@ And defining an event listener:
     	currentDir = invocation.currentDirectory;
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## Capturing command line arguments
-
-<div>
 
 The command line arguments associated with the invocation of an AIR application
 are delivered in the InvokeEvent object dispatched by the NativeApplication
@@ -144,8 +116,6 @@ the `currentDirectory` property.
 The arguments passed to an AIR program are treated as white-space delimited
 strings, unless enclosed in double quotes:
 
-<div>
-
 |                   |                  |
 | ----------------- | ---------------- |
 | Arguments         | Array            |
@@ -153,8 +123,6 @@ strings, unless enclosed in double quotes:
 | tick "tick tock"  | {tick,tick tock} |
 | "tick" "tock"     | {tick,tock}      |
 | \\tick\\ \\tock\\ | {"tick","tock"}  |
-
-</div>
 
 The `currentDirectory` property of an InvokeEvent object contains a File object
 representing the directory from which the application was launched.
@@ -178,19 +146,11 @@ File object:
 
 You should also validate that an argument is indeed a path to a file.
 
-</div>
-
-<div>
-
 ### Example: Invocation event log
-
-<div>
 
 The following example demonstrates how to register listeners for and handle the
 `invoke` event. The example logs all the invocation events received and displays
 the current directory and command line arguments.
-
-<div>
 
 #### ActionScript example
 
@@ -251,10 +211,6 @@ the current directory and command line arguments.
     	}
     }
 
-</div>
-
-<div>
-
 #### Flex example
 
     <?xml version="1.0" encoding="utf-8"?>
@@ -292,19 +248,7 @@ the current directory and command line arguments.
     		valueCommit="log.verticalScrollPosition=log.textHeight;"/>
     </mx:WindowedApplication>
 
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Invoking an AIR application on user login
-
-<div>
 
 An AIR application can be set to launch automatically when the current user logs
 in by setting the NativeApplication `startAtLogin` property to `true`. Once set,
@@ -316,12 +260,8 @@ to the current user. The application must be installed to successfully set the
 `startAtLogin` property to `true`. An error is thrown if the property is set
 when an application is not installed (such as when it is launched with ADL).
 
-<div>
-
 Note: The application does not launch when the computer system starts. It
 launches when the user logs in.
-
-</div>
 
 To determine whether an application has launched automatically or as a result of
 a user action, you can examine the `reason` property of the InvokeEvent object.
@@ -387,22 +327,10 @@ opens a window in response to a user-triggered invoke event.
     	}
     }
 
-<div>
-
 Note: To see the difference in behavior, package and install the application.
 The `startAtLogin` property can only be set for installed applications.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Invoking an AIR application from the browser
-
-<div>
 
 Using the browser invocation feature, a web site can launch an installed AIR
 application to be launched from the browser. Browser invocation is only
@@ -429,69 +357,46 @@ application started.
 
 The BrowserInvokeEvent object includes the following properties:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>Property</p></th>
-<th><p>Description</p></th>
-</tr>
+	<tr>
+		<th><p>Property</p></th>
+		<th><p>Description</p></th>
+	</tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><p>arguments</p></td>
-<td><p>An array of arguments (strings) to pass to the
-application.</p></td>
-</tr>
-<tr class="even">
-<td><p>isHTTPS</p></td>
-<td><p>Whether the content in the browser uses the https URL scheme (
-<samp>true</samp>) or not ( <samp>false</samp>).</p></td>
-</tr>
-<tr class="odd">
-<td><p>isUserEvent</p></td>
-<td><p>Whether the browser invocation resulted in a user event (such as
-a mouse click). In AIR 1.0, this is always set to <samp>true</samp> ;
-AIR requires a user event to the browser invocation feature.</p></td>
-</tr>
-<tr class="even">
-<td><p>sandboxType</p></td>
-<td><p>The sandbox type for the content in the browser. Valid values are
-defined the same as those that can be used in the
-<samp>Security.sandboxType</samp> property, and can be one of the
-following:</p>
-<div>
-<ul class="incremental">
-<li><p><samp>Security.APPLICATION</samp> — The content is in the
-application security sandbox.</p></li>
-<li><p><samp>Security.LOCAL_TRUSTED</samp> — The content is in the
-local-with-filesystem security sandbox.</p></li>
-<li><p><samp>Security.LOCAL_WITH_FILE</samp> — The content is in the
-local-with-filesystem security sandbox.</p></li>
-<li><p><samp>Security.LOCAL_WITH_NETWORK</samp> — The content is in the
-local-with-networking security sandbox.</p></li>
-<li><p><samp>Security.REMOTE</samp> — The content is in a remote
-(network) domain.</p></li>
-</ul>
-</div></td>
-</tr>
-<tr class="odd">
-<td><p>securityDomain</p></td>
-<td><p>The security domain for the content in the browser, such as
-<samp>"www.adobe.com"</samp> or <samp>"www.example.org"</samp>. This
-property is only set for content in the remote security sandbox (for
-content from a network domain). It is not set for content in a local or
-application security sandbox.</p></td>
-</tr>
+	<tr>
+		<td><p>arguments</p></td>
+		<td><p>An array of arguments (strings) to pass to the
+	application.</p></td>
+	</tr>
+	<tr>
+		<td><p>isHTTPS</p></td>
+		<td><p>Whether the content in the browser uses the https URL scheme (<samp>true</samp>) or not ( <samp>false</samp>).</p></td>
+	</tr>
+	<tr>
+		<td><p>isUserEvent</p></td>
+		<td><p>Whether the browser invocation resulted in a user event (such as a mouse click). In AIR 1.0, this is always set to  <samp>true</samp>; AIR requires a user event to the browser invocation feature.</p></td>
+	</tr>
+	<tr>
+		<td><p>sandboxType</p></td>
+		<td>
+			<p>The sandbox type for the content in the browser. Valid values are defined the same as those that can be used in the <samp>Security.sandboxType</samp> property, and can be one of the following:</p>
+			<ul class="incremental">
+				<li><p><samp>Security.APPLICATION</samp> — The content is in the application security sandbox.</p></li>
+				<li><p><samp>Security.LOCAL_TRUSTED</samp> — The content is in the local-with-filesystem security sandbox.</p></li>
+				<li><p><samp>Security.LOCAL_WITH_FILE</samp> — The content is in the local-with-filesystem security sandbox.</p></li>
+				<li><p><samp>Security.LOCAL_WITH_NETWORK</samp> — The content is in the local-with-networking security sandbox.</p></li>
+				<li><p><samp>Security.REMOTE</samp> — The content is in a remote (network) domain.</p></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td><p>securityDomain</p></td>
+		<td><p>The security domain for the content in the browser, such as <samp>"www.adobe.com"</samp> or <samp>"www.example.org"</samp>. This property is only set for content in the remote security sandbox (for content from a network domain). It is not set for content in a local or application security sandbox.</p></td>
+	</tr>
 </tbody>
 </table>
-
-</div>
 
 If you use the browser invocation feature, be sure to consider security
 implications. When a web site launches an AIR application, it can send data via
@@ -514,15 +419,7 @@ path passed from the browser. If remote paths are expected to be passed from the
 browser, the application should ensure that the paths do not use the `file://`
 protocol instead of a remote protocol.
 
-</div>
-
-</div>
-
-<div>
-
 ## Application termination
-
-<div>
 
 The quickest way to terminate an application is to call the NativeApplication
 exit() method. This works fine when your application has no data to save or
@@ -612,21 +509,7 @@ observe the following good practices for exiting the application:
     earlier cannot know whether subsequent handlers will cancel the `exiting`
     event (and it would be unwise to rely on the order of execution).
 
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
-
-</div>
 
 ![](../img/flashplatformLinkIndicator.png)
 [flash.desktop.NativeApplication](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeApplication.html)
@@ -645,9 +528,3 @@ More Help topics
 
 ![](../img/airLinkIndicator.png)
 [Presenting a custom application update user interface](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ccd.html)
-
-<div>
-
-</div>
-
-</div>

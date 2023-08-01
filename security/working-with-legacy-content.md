@@ -1,7 +1,5 @@
 # Working with legacy content
 
-<div>
-
 In Flash Player 6, the domain that is used for certain Flash Player settings is
 based on the trailing portion of the domain of the SWF file. These settings
 include settings for camera and microphone permissions, storage quotas, and
@@ -33,13 +31,3 @@ If you published a version 6 SWF file and created persistent shared objects from
 it, to retrieve those persistent shared objects from a SWF that uses
 ActionScript 3.0, you must set `Security.exactSettings` to `false` before
 calling `SharedObject.getLocal()`.
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

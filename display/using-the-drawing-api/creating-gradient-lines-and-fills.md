@@ -1,7 +1,5 @@
 # Creating gradient lines and fills
 
-<div>
-
 The graphics object can also draw strokes and fills with gradients rather than
 solid colors. A gradient stroke is created with the `lineGradientStyle()` method
 and a gradient fill is created with the `beginGradientFill()` method.
@@ -36,13 +34,7 @@ gradient's appearance. This parameter accepts a Matrix instance. The easiest way
 to create a Matrix object for a gradient is to use the Matrix class's
 `createGradientBox()` method.
 
-</div>
-
-<div>
-
 ## Defining a Matrix object for use with a gradient
-
-<div>
 
 You use the `beginGradientFill()` and `lineGradientStyle()` methods of the
 flash.display.Graphics class to define gradients for use in shapes. When you
@@ -78,196 +70,108 @@ The following examples show gradients in which the `rotation` parameter of the
 `createGradientBox()` method differs as indicated, but all other settings stay
 the same:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <tbody>
-<tr class="odd">
-<td><p><samp>width
-= 100;</samp></p>
-<p><samp>height =
-100;</samp></p>
-<p><samp>rotation =
-0;</samp></p>
-<p><samp>tx =
-0;</samp></p>
-<p><samp>ty =
-0;</samp></p></td>
-<td><div
-xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<img src="../../img/gv_gradient_linear_w100_h100_r0_tx0_ty0.png" />
-</div></td>
-</tr>
-<tr class="even">
-<td><p><samp>width
-= 100;</samp></p>
-<p><samp>height =
-100;</samp></p>
-<p><samp>rotation =
-Math.PI/4; // 45°</samp></p>
-<p><samp>tx =
-0;</samp></p>
-<p><samp>ty =
-0;</samp></p></td>
-<td><div
-xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<img src="../../img/gv_gradient_linear_w100_h100_r45_tx0_ty0.png" />
-</div></td>
-</tr>
-<tr class="odd">
-<td><p><samp>width
-= 100;</samp></p>
-<p><samp>height =
-100;</samp></p>
-<p><samp>rotation =
-Math.PI/2; // 90°</samp></p>
-<p><samp>tx =
-0;</samp></p>
-<p><samp>ty =
-0;</samp></p></td>
-<td><div
-xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<img src="../../img/gv_gradient_linear_w100_h100_r90_tx0_ty0.png" />
-</div></td>
-</tr>
+    <tr>
+        <td>
+            <p><samp>width = 100;</samp></p>
+            <p><samp>height = 100;</samp></p>
+            <p><samp>rotation = 0;</samp></p>
+            <p><samp>tx = 0;</samp></p>
+            <p><samp>ty = 0;</samp></p>
+        </td>
+      <td><img src="../../img/gv_gradient_linear_w100_h100_r0_tx0_ty0.png" /></td>
+    </tr>
+    <tr>
+        <td>
+            <p><samp>width = 100;</samp></p>
+            <p><samp>height = 100;</samp></p>
+            <p><samp>rotation = Math.PI/4; // 45°</samp></p>
+            <p><samp>tx = 0;</samp></p>
+            <p><samp>ty = 0;</samp></p>
+        </td>
+        <td><img src="../../img/gv_gradient_linear_w100_h100_r45_tx0_ty0.png" /></td>
+    </tr>
+    <tr>
+        <td>
+            <p><samp>width = 100;</samp></p>
+            <p><samp>height = 100;</samp></p>
+            <p><samp>rotation = Math.PI/2; // 90°</samp></p>
+            <p><samp>tx = 0;</samp></p>
+            <p><samp>ty = 0;</samp></p>
+        </td>
+        <td><img src="../../img/gv_gradient_linear_w100_h100_r90_tx0_ty0.png" /></td>
+    </tr>
 </tbody>
 </table>
-
-</div>
 
 The following examples show the effects on a green-to-blue linear gradient in
 which the `rotation`, `tx`, and `ty` parameters of the `createGradientBox()`
 method differ as indicated, but all other settings stay the same:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <tbody>
-<tr class="odd">
-<td><p><samp>width
-= 50;</samp></p>
-<p><samp>height =
-100;</samp></p>
-<p><samp>rotation =
-0;</samp></p>
-<p><samp>tx =
-0;</samp></p>
-<p><samp>ty =
-0;</samp></p></td>
-<td><div
-xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<img src="../../img/gv_gradient_linear_w50_h100_r0_tx0_ty0.png" />
-</div></td>
-</tr>
-<tr class="even">
-<td><p><samp>width
-= 50;</samp></p>
-<p><samp>height =
-100;</samp></p>
-<p><samp>rotation =
-0</samp></p>
-<p><samp>tx =
-50;</samp></p>
-<p><samp>ty =
-0;</samp></p></td>
-<td><div
-xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<img src="../../img/gv_gradient_linear_w50_h100_r0_tx50_ty0.png" />
-</div></td>
-</tr>
-<tr class="odd">
-<td><p><samp>width
-= 100;</samp></p>
-<p><samp>height =
-50;</samp></p>
-<p><samp>rotation =
-Math.PI/2; // 90°</samp></p>
-<p><samp>tx =
-0;</samp></p>
-<p><samp>ty =
-0;</samp></p></td>
-<td><div
-xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<img src="../../img/gv_gradient_linear_w100_h50_r90_tx0_ty0.png" />
-</div></td>
-</tr>
-<tr class="even">
-<td><p><samp>width
-= 100;</samp></p>
-<p><samp>height =
-50;</samp></p>
-<p><samp>rotation =
-Math.PI/2; // 90°</samp></p>
-<p><samp>tx =
-0;</samp></p>
-<p><samp>ty =
-50;</samp></p></td>
-<td><div
-xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<img src="../../img/gv_gradient_linear_w100_h50_r90_tx0_ty50.png" />
-</div></td>
-</tr>
+    <tr>
+        <td>
+            <p><samp>width = 50;</samp></p>
+            <p><samp>height = 100;</samp></p>
+            <p><samp>rotation = 0;</samp></p>
+            <p><samp>tx = 0;</samp></p>
+            <p><samp>ty = 0;</samp></p>
+        </td>
+        <td><img src="../../img/gv_gradient_linear_w50_h100_r0_tx0_ty0.png" /></td>
+    </tr>
+    <tr>
+        <td>
+            <p><samp>width = 50;</samp></p>
+            <p><samp>height = 100;</samp></p>
+            <p><samp>rotation = 0</samp></p>
+            <p><samp>tx = 50;</samp></p>
+            <p><samp>ty = 0;</samp></p>
+        </td>
+        <td><img src="../../img/gv_gradient_linear_w50_h100_r0_tx50_ty0.png" /></td>
+    </tr>
+    <tr>
+        <td>
+            <p><samp>width = 100;</samp></p>
+            <p><samp>height = 50;</samp></p>
+            <p><samp>rotation = Math.PI/2; // 90°</samp></p>
+            <p><samp>tx = 0;</samp></p>
+            <p><samp>ty = 0;</samp></p>
+        </td>
+        <td><img src="../../img/gv_gradient_linear_w100_h50_r90_tx0_ty0.png" /></td>
+    </tr>
+    <tr>
+        <td>
+            <p><samp>width = 100;</samp></p>
+            <p><samp>height = 50;</samp></p>
+            <p><samp>rotation = Math.PI/2; // 90°</samp></p>
+            <p><samp>tx = 0;</samp></p>
+            <p><samp>ty = 50;</samp></p>
+        </td>
+        <td><img src="../../img/gv_gradient_linear_w100_h50_r90_tx0_ty50.png" /></td>
+    </tr>
 </tbody>
 </table>
-
-</div>
 
 The `width`, `height`, `tx`, and `ty` parameters of the `createGradientBox()`
 method affect the size and position of a _radial_ gradient fill as well, as the
 following example shows:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <tbody>
-<tr class="odd">
-<td><p><samp>width
-= 50;</samp></p>
-<p><samp>height =
-100;</samp></p>
-<p><samp>rotation =
-0;</samp></p>
-<p><samp>tx =
-25;</samp></p>
-<p><samp>ty =
-0;</samp></p></td>
-<td><div
-xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<img src="../../img/gv_gradient_radial_w50_h100_r0_tx25_ty0.png" />
-</div></td>
-</tr>
+    <tr>
+        <td>
+            <p><samp>width = 50;</samp></p>
+            <p><samp>height = 100;</samp></p>
+            <p><samp>rotation = 0;</samp></p>
+            <p><samp>tx = 25;</samp></p>
+            <p><samp>ty = 0;</samp></p>
+        </td>
+        <td><img src="../../img/gv_gradient_radial_w50_h100_r0_tx25_ty0.png" /></td>
+    </tr>
 </tbody>
 </table>
-
-</div>
 
 The following code produces the last radial gradient illustrated:
 
@@ -348,7 +252,3 @@ box with a red, green, and blue gradient stroke:
 
 For more information on the Matrix class, see
 [Using Matrix objects](../working-with-geometry/using-matrix-objects.md).
-
-</div>
-
-</div>

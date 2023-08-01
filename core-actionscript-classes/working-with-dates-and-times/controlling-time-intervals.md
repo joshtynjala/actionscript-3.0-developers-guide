@@ -1,19 +1,11 @@
 # Controlling time intervals
 
-<div>
-
 When you develop applications using Adobe Flash CS4 Professional, you have
 access to the timeline, which provides a steady, frame-by-frame progression
 through your application. In pure ActionScript projects, however, you must rely
 on other timing mechanisms.
 
-</div>
-
-<div>
-
 ## Loops versus timers
-
-<div>
 
 In some programming languages, you must devise your own timing schemes using
 loop statements like `for` or `do..while.`
@@ -29,15 +21,7 @@ The ActionScript 3.0 Timer class provides a powerful solution. Using the
 ActionScript 3.0 event model, the Timer class dispatches timer events whenever a
 specified time interval is reached.
 
-</div>
-
-</div>
-
-<div>
-
 ## The Timer class
-
-<div>
 
 The preferred way to handle timing functions in ActionScript 3.0 is to use the
 Timer class (flash.utils.Timer), which can be used to dispatch events whenever
@@ -118,22 +102,12 @@ console or trace window at the rate of one line per second:
     tick 5
     Time's Up!
 
-</div>
-
-</div>
-
-<div>
-
 ## Timing functions in the flash.utils package
-
-<div>
 
 ActionScript 3.0 contains a number of timing functions similar to those that
 were available in ActionScript 2.0. These functions are provided as
 package-level functions in the flash.utils package, and they operate just as
 they did in ActionScript 2.0.
-
-<div>
 
 | Function                                                          | Description                                                                                                     |
 | ----------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
@@ -143,13 +117,7 @@ they did in ActionScript 2.0.
 | `setInterval(closure:Function, delay:Number, ... arguments):uint` | Runs a function at a specified interval (in milliseconds).                                                      |
 | `setTimeout(closure:Function, delay:Number, ... arguments):uint`  | Runs a specified function after a specified delay (in milliseconds).                                            |
 
-</div>
-
 These functions remain in ActionScript 3.0 for backward compatibility. Adobe
 does not recommend that you use them in new ActionScript 3.0 applications. In
 general, it is easier and more efficient to use the Timer class in your
 applications.
-
-</div>
-
-</div>

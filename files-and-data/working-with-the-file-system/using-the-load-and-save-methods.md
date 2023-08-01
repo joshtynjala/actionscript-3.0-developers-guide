@@ -1,7 +1,5 @@
 # Using the load() and save() methods
 
-<div>
-
 Flash Player 10 added the `load()` and `save()` methods to the FileReference
 class. These methods are also in AIR 1.5, and the File class inherits the
 methods from the FileReference class. These methods were designed to provide a
@@ -10,8 +8,6 @@ applications can also use these methods as an easy way to load and save files
 asynchronously.
 
 For example, the following code saves a string to a text file:
-
-<div>
 
     var file:File = File.applicationStorageDirectory.resolvePath("test.txt");
     var str:String = "Hello.";
@@ -22,8 +18,6 @@ For example, the following code saves a string to a text file:
     	trace("Done.");
     }
 
-</div>
-
 The `data` parameter of the `save()` method can take a String, XML, or ByteArray
 value. When the argument is a String or XML value, the method saves the file as
 a UTF-8–encoded text file.
@@ -32,8 +26,6 @@ When this code sample executes, the application displays a dialog box in which
 the user selects the saved file destination.
 
 The following code loads a string from a UTF-8–encoded text file:
-
-<div>
 
     var file:File = File.applicationStorageDirectory.resolvePath("test.txt");
     file.addEventListener(Event.COMPLETE, loaded);
@@ -46,12 +38,8 @@ The following code loads a string from a UTF-8–encoded text file:
     	trace(str);
     }
 
-</div>
-
 The FileStream class provides more functionality than that provided by the
 `load()` and `save()` methods:
-
-<div>
 
 - Using the FileStream class, you can read and write data both synchronously and
   asynchronously.
@@ -70,15 +58,3 @@ The FileStream class provides more functionality than that provided by the
 
 - You can directly use types other than byte arrays when reading data with the
   FileStream class.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

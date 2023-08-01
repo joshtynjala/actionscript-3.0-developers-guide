@@ -1,7 +1,5 @@
 # Creating strings
 
-<div>
-
 The String class is used to represent string (textual) data in ActionScript 3.0.
 ActionScript strings support both ASCII and Unicode characters. The simplest way
 to create a string is to use a string literal. To declare a string literal, use
@@ -47,8 +45,6 @@ sure to use the correct characters.
 As the following table shows, you can use the backslash escape character (`\`)
 to define other characters in string literals:
 
-<div>
-
 | Escape sequence | Character                                                                                                                                 |
 | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | `\b`            | Backspace                                                                                                                                 |
@@ -61,7 +57,3 @@ to define other characters in string literals:
 | `\'`            | Single quotation mark                                                                                                                     |
 | `\"`            | Double quotation mark                                                                                                                     |
 | `\\`            | Single backslash character                                                                                                                |
-
-</div>
-
-</div>

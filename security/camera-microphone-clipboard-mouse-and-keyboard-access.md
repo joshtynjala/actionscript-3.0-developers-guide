@@ -1,7 +1,5 @@
 # Camera, microphone, clipboard, mouse, and keyboard access
 
-<div>
-
 When a SWF file attempts to access a user's camera or microphone using the
 `Camera.get()` or `Microphone.get()` methods, Flash Player displays a Privacy
 dialog box, in which the user can allow or deny access to their camera and
@@ -24,13 +22,3 @@ method.
 An application running in Flash Player can monitor only keyboard and mouse
 events that occur within its focus. Content running in Flash Player cannot
 detect keyboard or mouse events in another application.
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

@@ -1,12 +1,8 @@
 # Flags and properties
 
-<div>
-
 The following table lists the five flags that you can set for regular
 expressions. Each flag can be accessed as a property of the regular expression
 object.
-
-<div>
 
 | Flag | Property     | Description                                                                                                                                                                            |
 | ---- | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -15,8 +11,6 @@ object.
 | `m`  | `multiline`  | With this flag set, `$` and `^` can match the beginning of a line and end of a line, respectively.                                                                                     |
 | `s`  | `dotall`     | With this flag set, `.` (dot) can match the newline character (`\n`).                                                                                                                  |
 | `x`  | `extended`   | Allows extended regular expressions. You can type spaces in the regular expression, which are ignored as part of the pattern. This lets you type regular expression code more legibly. |
-
-</div>
 
 Note that these properties are read-only. You can set the flags (`g`, `i`, `m`,
 `s`, `x`) when you set a regular expression variable, as follows:
@@ -40,8 +34,6 @@ Additionally, there are two other properties of a regular expression:
 - The `source` property specifies the string that defines the pattern portion of
   the regular expression.
 
-<div>
-
 #### The g (global) flag
 
 When the `g` (`global`) flag is _not_ included, a regular expression matches no
@@ -59,10 +51,6 @@ as follows:
     var pattern:RegExp = /sh\w*/g;
     // The same pattern, but this time the g flag IS set.
     trace(str.match(pattern)); // output: she,shells,shore
-
-</div>
-
-<div>
 
 #### The i (ignoreCase) flag
 
@@ -82,10 +70,6 @@ letter `S`:
 
 The `i` flag ignores case sensitivity only for the `A` – `Z` and `a` – `z`
 characters, but not for extended characters such as `É` and `é`.
-
-</div>
-
-<div>
 
 #### The m (multiline) flag
 
@@ -123,10 +107,6 @@ characters do not:
 
 - Unicode paragraph-separator (`\u2029`) character
 
-</div>
-
-<div>
-
 #### The s (dotall) flag
 
 If the `s` (`dotall` or "dot all") flag is not set, a dot (`.`) in a regular
@@ -151,10 +131,6 @@ the newline character:
     <p>Test
     Multiline</p>
 
-</div>
-
-<div>
-
 #### The x (extended) flag
 
 Regular expressions can be difficult to read, especially when they include a lot
@@ -174,10 +150,6 @@ expressions are equivalent:
 
     /foo bar/
     /foo \ bar/x
-
-</div>
-
-<div>
 
 #### The lastIndex property
 
@@ -220,10 +192,6 @@ searches from the beginning of the string, regardless of the setting of the
 You can set the `lastIndex` property to adjust the starting position in the
 string for regular expression matching.
 
-</div>
-
-<div>
-
 #### The source property
 
 The `source` property specifies the string that defines the pattern portion of a
@@ -231,7 +199,3 @@ regular expression. For example:
 
     var pattern:RegExp = /foo/gi;
     trace(pattern.source); // foo
-
-</div>
-
-</div>

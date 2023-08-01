@@ -1,7 +1,5 @@
 # Using the System class
 
-<div>
-
 The System class contains methods and properties that allow you to interact with
 the user's operating system and retrieve the current memory usage of the
 runtime. The methods and properties of the System class also allow you to listen
@@ -9,13 +7,7 @@ for `imeComposition` events, instruct the runtime to load external text files
 using the user's current code page or to load them as Unicode, or set the
 contents of the user's clipboard.
 
-</div>
-
-<div>
-
 ## Getting data about the user's system at run time
-
-<div>
 
 By checking the `System.totalMemory` property, you can determine the amount of
 memory (in bytes) that the runtime is currently using. This property allows you
@@ -46,15 +38,7 @@ used in your application, you should encode all external text files as Unicode
 and leave `System.useCodePage` set to `false` by default. This way, the runtime
 interprets the text as Unicode.
 
-</div>
-
-</div>
-
-<div>
-
 ## Saving text to the clipboard
-
-<div>
 
 The System class includes a method called `setClipboard()` that allows the Flash
 runtime to set the contents of the user's clipboard with a specified string. For
@@ -73,24 +57,8 @@ user wants to report a potential bug with an application.
     	System.setClipboard(errorString);
     }
 
-<div>
-
 #### Flash Player 10 and AIR 1.0
 
 You can use the Clipboard class to read and write clipboard data in response to
 a user event. In AIR, a user event is not required for code running in the
 application sandbox to access the clipboard.
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

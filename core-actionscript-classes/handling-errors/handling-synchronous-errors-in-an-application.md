@@ -1,7 +1,5 @@
 # Handling synchronous errors in an application
 
-<div>
-
 The most common error handling is synchronous error-handling logic, where you
 insert statements into your code to catch synchronous errors while an
 application is running. This type of error handling lets your application notice
@@ -10,13 +8,7 @@ synchronous error includes `try..catch..finally` statements, which literally try
 an operation, catch any error response from the Flash runtime, and finally
 execute some other operation to handle the failed operation.
 
-</div>
-
-<div>
-
 ## Using try..catch..finally statements
-
-<div>
 
 When you work with synchronous run-time errors, use the `try..catch..finally`
 statements to catch errors. When a run-time error occurs, the Flash runtime
@@ -114,15 +106,7 @@ As you become more familiar with the
 you'll notice which methods throw exceptions, as detailed in each method's
 description.
 
-</div>
-
-</div>
-
-<div>
-
 ## The throw statement
-
-<div>
 
 Flash runtimes throw exceptions when they encounter errors in your running
 application. In addition, you can explicitly throw exceptions yourself using the
@@ -167,24 +151,12 @@ types are listed first. If the `catch` statement for the Number data type is
 listed first, neither the catch statement for the uint data type nor the catch
 statement for the int data type is ever run.
 
-<div>
-
 Note: In the Java programming language, each function that can throw an
 exception must declare this fact, listing the exception classes it can throw in
 a `throws` clause attached to the function declaration. ActionScript does not
 require you to declare the exceptions thrown by a function.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Displaying a simple error message
-
-<div>
 
 One of the biggest benefits of the new exception and error event model is that
 it allows you to tell users when and why an action has failed. Your part is to
@@ -232,15 +204,7 @@ Using a wider range of error classes and built-in compiler errors, ActionScript
 something has failed. This information enables you to build more stable
 applications with better error handling.
 
-</div>
-
-</div>
-
-<div>
-
 ## Rethrowing errors
-
-<div>
 
 When you build applications, there are several occasions in which you need to
 rethrow an error if you are unable to handle the error properly. For example,
@@ -281,7 +245,3 @@ The nested `try` block throws a custom ApplicationError error that is caught by
 the subsequent `catch` block. This nested `catch` block can try to handle the
 error, and if unsuccessful, throw the ApplicationError object to the enclosing
 `try..catch` block.
-
-</div>
-
-</div>

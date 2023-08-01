@@ -1,7 +1,5 @@
 # Performing complex 3D transformations
 
-<div>
-
 The Matrix3D class lets you transform 3D points within a coordinate space or map
 3D points from one coordinate space to another.
 
@@ -14,11 +12,7 @@ After you set the `z` property of a display object to a numeric value, you can
 retrieve the object's transformation matrix using the Matrix3D property of the
 display object's Transform object:
 
-<div>
-
     var leafMatrix:Matrix3D = this.transform.matrix3D;
-
-</div>
 
 You can use the methods of the Matrix3D object to perform translation, rotation,
 scaling, and perspective projection on the display object.
@@ -29,21 +23,11 @@ and a magnitude. The methods of the Vector3D class let you perform common
 calculations with spatial vectors, such as addition, dot product, and cross
 product calculations.
 
-<div>
-
 Note: The Vector3D class is not related to the ActionScript Vector class. The
 Vector3D class contains properties and methods for defining and manipulating 3D
 points, while the Vector class supports arrays of typed objects.
 
-</div>
-
-</div>
-
-<div>
-
 ## Creating Matrix3D objects
-
-<div>
 
 There are three main ways of creating or retrieving `Matrix3D` objects:
 
@@ -60,15 +44,7 @@ There are three main ways of creating or retrieving `Matrix3D` objects:
   stage by calling the `perspectiveProjection.toMatrix3D()` method on the root
   display object.
 
-</div>
-
-</div>
-
-<div>
-
 ## Applying multiple 3D transformations
-
-<div>
 
 You can apply many 3D transformations at once using a Matrix3D object. For
 example if you wanted to rotate, scale, and then move a cube, you could apply
@@ -76,14 +52,10 @@ three separate transformations to each point of the cube. However it is much
 more efficient to precalculate multiple transformations in one Matrix3D object
 and then perform one matrix transformation on each of the points.
 
-<div>
-
 Note: The order in which matrix transformations are applied is important. Matrix
 calculations are not commutative. For example, applying a rotation followed by a
 translation gives a different result than applying the same translation followed
 by the same rotation.
-
-</div>
 
 The following example shows two ways of performing multiple 3D transformations.
 
@@ -159,15 +131,7 @@ If your code will apply the same complex transformations to display objects more
 than once, save the Matrix3D object as a variable and then reapply it over and
 over.
 
-</div>
-
-</div>
-
-<div>
-
 ## Using Matrix3D objects for reordering display
-
-<div>
 
 As mentioned previously, the layering order of display objects in the display
 list determines the display layering order, regardless of their relative z-axes.
@@ -180,8 +144,6 @@ that is closer to the viewer.
 To ensure that the layering of 3D display objects corresponds to the relative
 depths of the objects, use an approach like the following:
 
-<div>
-
 1.  Use the `getRelativeMatrix3D()` method of the Transform object to get the
     relative `z-axes` of the child 3D display objects.
 
@@ -192,15 +154,11 @@ depths of the objects, use an approach like the following:
 4.  Use the `addChild()` method to add the children back to the display list in
     reverse order.
 
-</div>
-
 This reordering ensures that your objects display in accordance with their
 relative z-axes.
 
 The following code enforces the correct display of the six faces of a 3D box. It
 reorders the faces of the box after rotations have been applied to the it:
-
-<div>
 
     public var faces:Array; . . .
 
@@ -218,20 +176,6 @@ reorders the faces of the box after rotations have been applied to the it:
         }
     }
 
-</div>
-
 To get the application files for this sample, see
 [_FlashPlatformAS3DevGuideExamples.zip_](https://github.com/joshtynjala/flash-platform-as3-dev-guide-examples/releases/tag/original).
 The application files are in the Samples/ReorderByZ folder.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

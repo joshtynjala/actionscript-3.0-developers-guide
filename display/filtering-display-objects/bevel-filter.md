@@ -1,7 +1,5 @@
 # Bevel filter
 
-<div>
-
 The BevelFilter class allows you to add a 3D beveled edge to the filtered
 object. This filter makes the hard corners or edges of your object look like
 they have been chiseled, or beveled, away.
@@ -43,5 +41,3 @@ The following example loads an external image and applies a bevel filter to it.
 
     // Apply filter to the image.
     imageLoader.filters = [bevel];
-
-</div>

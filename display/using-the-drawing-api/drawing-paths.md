@@ -1,7 +1,5 @@
 # Drawing Paths
 
-<div>
-
 The section on drawing lines and curves (see
 [Drawing lines and curves](./drawing-lines-and-curves.md)) introduced the
 commands for drawing a single line (`Graphics.lineTo()`) or curve
@@ -26,12 +24,8 @@ set of coordinates that correspond to the coordinates for each drawing command.
 Create a Vector instance containing coordinates (Number instances) and pass it
 to the `drawPath()` method as the second (`data`) argument.
 
-<div>
-
 Note: The values in the vector are not Point objects; the vector is a series of
 numbers where each group of two numbers represents an x/y coordinate pair.
-
-</div>
 
 The `Graphics.drawPath()` method matches each command with its respective point
 values (a collection of two or four numbers) to generate a path in the Graphics
@@ -69,5 +63,3 @@ object:
             }
         }
     }
-
-</div>

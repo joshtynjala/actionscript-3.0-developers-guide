@@ -1,7 +1,5 @@
 # Basics of using the external API
 
-<div>
-
 Although in some cases a SWF file can run on its own (for example, if you use
 Adobe® Flash® Professional to create a SWF projector), in the majority of cases
 a SWF application runs as an element inside of another application. Commonly,
@@ -17,8 +15,6 @@ the web page, it changes something in the SWF file. ActionScript contains a
 mechanism, known as the external API, that facilitates this type of
 communication between ActionScript in a SWF file and other code in the container
 application.
-
-<div>
 
 #### Important concepts and terms
 
@@ -55,10 +51,6 @@ To convert objects or data values into a format that can be used to pass the
 values in messages between two programming systems, such as over the Internet or
 between two different applications running on a single computer.
 
-</div>
-
-<div>
-
 #### Working through the examples
 
 Many of the code examples provided are small listings of code for demonstration
@@ -67,10 +59,6 @@ using the external API requires (by definition) writing ActionScript code as
 well as code in a container application, testing the examples involves creating
 a container (for example, a web page containing the SWF file) and using the code
 listings to interact with the container.
-
-</div>
-
-<div>
 
 #### To test an example of ActionScript-to-JavaScript communication:
 
@@ -114,10 +102,6 @@ listings to interact with the container.
 12. Using a web browser, open the HTML page you edited to view the page and test
     communication between ActionScript and the HTML page.
 
-</div>
-
-<div>
-
 #### To test an example of ActionScript-to-ActiveX container communication:
 
 1.  Create a new document using Flash Professional and save it to your computer.
@@ -144,8 +128,6 @@ listings to interact with the container.
 8.  Create and run your container application to test communication between
     ActionScript and the container application.
 
-<div>
-
 For full examples of using the external API to communicate with an HTML page,
 see the following topic:
 
@@ -155,17 +137,3 @@ Those examples include the full code, including ActionScript and container
 error-checking code, which you should use when writing code using the external
 API. For another full example using the external API, see the class example for
 the ExternalInterface class in the ActionScript 3.0 Reference.
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

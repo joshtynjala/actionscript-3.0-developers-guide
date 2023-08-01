@@ -1,7 +1,5 @@
 # Comparing strings
 
-<div>
-
 You can use the following operators to compare strings: `<`, `<=`, `!=`, `==`,
 `=>`, and `>`. These operators can be used with conditional statements, such as
 `if` and `while`, as the following example shows:
@@ -32,5 +30,3 @@ compare strings with other types of objects, as the following example shows:
     trace(str1 == str2); // false
     var total:uint = 1;
     trace(str1 == total); // true
-
-</div>

@@ -1,7 +1,5 @@
 # Working with multiple databases
 
-<div>
-
 Use the `SQLConnection.attach()` method to open a connection to an additional
 database on a
 [SQLConnection](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/SQLConnection.html)
@@ -29,13 +27,3 @@ same database through different SQLConnection instances, and an application
 error occurs after one operation takes place, the database data could be left in
 an intermediate state that would not be reversible and might affect the
 integrity of the database (and consequently the application).
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

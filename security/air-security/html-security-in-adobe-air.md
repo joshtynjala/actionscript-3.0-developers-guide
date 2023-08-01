@@ -1,7 +1,5 @@
 # HTML security in Adobe AIR
 
-<div>
-
 This topic describes the AIR HTML security architecture and how to use iframes,
 frames, and the sandbox bridge to set up HTML-based applications and safely
 integrate HTML content into SWF-based applications.
@@ -36,13 +34,7 @@ executed, but the text can include links and externally loaded images.
 For more information, see
 [Avoiding security-related JavaScript errors](WS5b3ccc516d4fbf351e63e3d118666ade46-7f0e.html).
 
-</div>
-
-<div>
-
 ## Overview on configuring your HTML-based application
-
-<div>
 
 Frames and iframes provide a convenient structure for organizing HTML content in
 AIR. Frames provide a means both for maintaining data persistence and for
@@ -78,26 +70,16 @@ from interacting with content in another. To allow interaction between
 application content and content in another domain, you can set up a bridge to
 serve as the interface between a parent and a child frame.
 
-</div>
-
-<div>
-
 ### Setting up a parent-child sandbox relationship
-
-<div>
 
 AIR adds the `sandboxRoot` and `documentRoot` attributes to the HTML frame and
 iframe elements. These attributes let you treat application content as if it
 came from another domain:
 
-<div>
-
 | Attribute    | Description                                                                                                                                            |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | sandboxRoot  | The URL to use for determining the sandbox and domain in which to place the frame content. The `file:`, `http:`, or `https:` URL schemes must be used. |
 | documentRoot | The URL from which to load the frame content. The `file:`, `app:`, or `app-storage:` URL schemes must be used.                                         |
-
-</div>
 
 The following example maps content installed in the sandbox subdirectory of the
 application to run in the remote sandbox and the www.example.com domain:
@@ -108,15 +90,7 @@ application to run in the remote sandbox and the www.example.com domain:
     	documentRoot="app:/sandbox/">
     </iframe>
 
-</div>
-
-</div>
-
-<div>
-
 ### Setting up a bridge between parent and child frames in different sandboxes or domains
-
-<div>
 
 AIR adds the `childSandboxBridge` and `parentSandboxBridge` properties to the
 `window` object of any child frame. These properties let you define bridges to
@@ -172,17 +146,7 @@ the runtime throws a SecurityError exception. If parent content attempts to set
 a property of the `childSandboxBridge` object, the runtime throws a
 SecurityError exception.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Code restrictions for content in different sandboxes
-
-<div>
 
 As discussed in the introduction to this topic,
 [HTML security in Adobe AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7f11.html),
@@ -195,13 +159,7 @@ code in the application security sandbox."
 For more information, see
 [Avoiding security-related JavaScript errors](WS5b3ccc516d4fbf351e63e3d118666ade46-7f0e.html).
 
-</div>
-
-<div>
-
 ### Restrictions on using the JavaScript eval() function and similar techniques
-
-<div>
 
 For HTML content in the application security sandbox, there are limitations on
 using APIs that can dynamically transform strings into executable code after the
@@ -313,15 +271,7 @@ Unlike content in the application security sandbox, JavaScript content in a
 non-application security sandbox _can_ call the `eval()` function to execute
 dynamically generated code at any time.
 
-</div>
-
-</div>
-
-<div>
-
 ### Restrictions on access to AIR APIs (for non-application sandboxes)
-
-<div>
 
 JavaScript code in a non-application sandbox does not have access to the
 `window.runtime` object, and as such this code cannot execute AIR APIs. If
@@ -344,15 +294,7 @@ You can expose runtime functionality to content in a non-application sandbox by
 using a script bridge. For details, see and
 [Scripting between application and non-application content](WS5b3ccc516d4fbf351e63e3d118666ade46-7e3b.html).
 
-</div>
-
-</div>
-
-<div>
-
 ### Restrictions on using XMLHttpRequest calls
-
-<div>
 
 HTML content in the application security sandbox cannot use synchronous
 XMLHttpRequest methods to load data from outside of the application sandbox
@@ -376,15 +318,7 @@ request:
 For more information, see
 [Scripting between content in different domains](WS5b3ccc516d4fbf351e63e3d118666ade46-7e5c.html).
 
-</div>
-
-</div>
-
-<div>
-
 ### Restrictions on loading CSS, frame, iframe, and img elements (for content in non-application sandboxes)
-
-<div>
 
 HTML content in remote (network) security sandboxes can only load CSS, `frame`,
 `iframe`, and `img` content from remote sandboxes (from network URLs).
@@ -393,15 +327,7 @@ HTML content in local-with-filesystem, local-with-networking, or local-trusted
 sandboxes can only load CSS, frame, iframe, and `img` content from local
 sandboxes (not from application or remote sandboxes).
 
-</div>
-
-</div>
-
-<div>
-
 ### Restrictions on calling the JavaScript window.open() method
-
-<div>
 
 If a window that is created via a call to the JavaScript `window.open()` method
 displays content from a non-application security sandbox, the window's title
@@ -427,15 +353,7 @@ sandboxes (see
 use the `window.open()` method to open content in local sandboxes. It cannot use
 `window.open()` to open content from the application or remote sandboxes.
 
-</div>
-
-</div>
-
-<div>
-
 ### Errors when calling restricted code
-
-<div>
 
 If you call code that is restricted from use in a sandbox due to these security
 restrictions, the runtime dispatches a JavaScript error: "Adobe AIR runtime
@@ -444,17 +362,7 @@ security violation for JavaScript code in the application security sandbox."
 For more information, see
 [Avoiding security-related JavaScript errors](WS5b3ccc516d4fbf351e63e3d118666ade46-7f0e.html).
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Sandbox protection when loading HTML content from a string
-
-<div>
 
 The `loadString()` method of the HTMLLoader class lets you create HTML content
 at run time. However, data that you use as the HTML content can be corrupted if
@@ -465,15 +373,3 @@ application sandbox and it has no access to AIR APIs. However, you can set the
 true to place HTML created using the `loadString()` method into the application
 sandbox. For more information, see
 [Loading HTML content from a string](WS5b3ccc516d4fbf351e63e3d118666ade46-7ed0.html).
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

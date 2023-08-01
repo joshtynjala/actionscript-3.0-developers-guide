@@ -1,20 +1,10 @@
 # Adding filters
 
-<div>
-
 If the target object of a motion tween contains filters, those filters are added
 using the `initFilters()` and `addFilterPropertyArray()` methods of the Motion
 class.
 
-</div>
-
-<div>
-
 ## Initializing the filters array
-
-<div>
-
-<div>
 
 The `initFilters()` method initializes the filters. Its first argument is an
 array of the fully qualified class names of all the filters applied to the
@@ -27,19 +17,7 @@ keyframe in the Motion object.
 
     __motion_Box.initFilters(["flash.filters.DropShadowFilter", "flash.filters.GlowFilter", "flash.filters.BevelFilter"], [0, 0, 0]);
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Adding filters
-
-<div>
-
-<div>
 
 The `addFilterPropertyArray()` method describes the properties of an initialized
 filter with the following arguments:
@@ -52,10 +30,6 @@ filter with the following arguments:
     keyframe.
 
 3.  Its third argument is the value of the specified filter property.
-
-</div>
-
-<div>
 
 Given the previous call to `initFilters()`, the following calls to
 `addFilterPropertyArray()` assign a value of 5 to the `blurX` and `blurY`
@@ -81,17 +55,7 @@ item in the initialized filters array:
     __motion_Box.addFilterPropertyArray(2, "highlightAlpha", [1.00]);
     __motion_Box.addFilterPropertyArray(2, "highlightColor", [0xffffff]);
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Adjusting color with the ColorMatrixFilter
-
-<div>
 
 After the `ColorMatrixFilter` has been initialized, you can set the appropriate
 `AdjustColor` properties to adjust the brightness, contrast, saturation, and hue
@@ -99,8 +63,6 @@ of the tweened display object. Typically, the `AdjustColor` filter is applied
 when the motion tween is created in Flash; you can fine-tune it in your copy of
 the ActionScript. The following example transforms the hue and saturation of the
 display object as it moves.
-
-<div>
 
     __motion_Leaf_1.initFilters(["flash.filters.ColorMatrix"], [0], -1, -1);
     __motion_Leaf_1.addFilterPropertyArray(0, "adjustColorBrightness", [0], -1, -1);
@@ -131,17 +93,3 @@ display object as it moves.
             90,93,96,99,102,105,108,111,114
         ],
         -1, -1);
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

@@ -9,39 +9,6 @@ location.
 The Geolocation class dispatches `update` events in response to the device's
 location sensor. The `update` event is a GeolocationEvent object.
 
-<div xmlns:adobe="http://www.adobe.com/saxon">
-
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td colspan="2"><h2 id="adobe-recommends">Adobe recommends</h2></td>
-<td colspan="2"></td>
-</tr>
-<tr class="even">
-<td colspan="4" height="10"></td>
-</tr>
-<tr class="odd">
-<td width="5%"><span> <img src="images/flex_pasta.png" /> </span></td>
-<td width="45%"><h3
-id="flex-4.5-using-geolocationgps-on-a-mobile-device"><a
-href="http://goo.gl/M5OTf">Flex 4.5: Using Geolocation(GPS) on a mobile
-device</a></h3>
-<span> Brian Telintelo: <a href="http://www.flexpasta.com/">Flex
-Pasta</a> </span></td>
-<td width="5%"><span> <img src="images/gregWilson.png" /> </span></td>
-<td width="45%"><h3 id="geolocation-tips-and-quirks"><a
-href="http://goo.gl/XpgZ1">Geolocation tips and quirks</a></h3>
-<span> Greg Wilson </span></td>
-</tr>
-</tbody>
-</table>
-
 - [Detecting geolocation changes](WS144092a96ffef7cc-66bf4d0212658dde8c4-7fff.html)
 
 More Help topics
@@ -51,3 +18,11 @@ More Help topics
 
 ![](../../img/flashplatformLinkIndicator.png)
 [flash.events.GeolocationEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/GeolocationEvent.html)
+
+## Adobe recommends
+
+> <h3 id="flex-4.5-using-geolocationgps-on-a-mobile-device"><img src="../../img/flex_pasta.png" /> <a href="http://goo.gl/M5OTf">Flex 4.5: Using Geolocation(GPS) on a mobile device</a></h3>
+> <a href="http://www.flexpasta.com/">Brian Telintelo: Flex Pasta</a>
+
+> <h3 id="geolocation-tips-and-quirks"><img src="../../img/gregWilson.png" /> <a href="http://goo.gl/XpgZ1">Geolocation tips and quirks</a></h3>
+> Greg Wilson

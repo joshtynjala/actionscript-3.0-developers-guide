@@ -1,16 +1,8 @@
 # Advanced topics for video files
 
-<div>
-
 The following topics address some special issues for working with FLV files.
 
-</div>
-
-<div>
-
 ## About configuring FLV files for hosting on a server
-
-<div>
 
 When you work with FLV files, you might have to configure your server to work
 with the FLV file format. Multipurpose Internet Mail Extensions (MIME) is a
@@ -55,27 +47,15 @@ For information about configuring Microsoft Windows 2003 and Microsoft IIS
 Server 6.0 to stream FLV video, see <a href="http://www.adobe.com/go/tn_19439"
 target="_self">www.adobe.com/go/tn_19439</a>.
 
-</div>
-
-</div>
-
-<div>
-
 ## About targeting local FLV files on the Macintosh
-
-<div>
 
 If you attempt to play a local FLV from a non-system drive on an Apple®
 Macintosh® computer by using a path that uses a relative slash (/), the video
 will not play. Non-system drives include, but are not limited to, CD-ROMs,
 partitioned hard disks, removable storage media, and connected storage devices.
 
-<div>
-
 Note: The reason for this failure is a limitation of the operating system, not a
 limitation in Flash Player or AIR.
-
-</div>
 
 For an FLV file to play from a non-system drive on a Macintosh, refer to it with
 an absolute path using a colon-based notation (:) rather than slash-based
@@ -85,15 +65,3 @@ notation:
 - Slash-based notation **:** myDrive/myFolder/myFLV.flv
 
 - Colon-based notation **:** (Mac OS®) myDrive:myFolder:myFLV.flv
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # XML objects
 
-<div>
-
 An XML object may represent an XML element, attribute, comment, processing
 instruction, or text element.
 
@@ -36,13 +34,7 @@ processing instruction:
     var x2:XML = x1.comments()[0];
     var x3:XML = x1.processingInstructions()[0];
 
-</div>
-
-<div>
-
 ## XML properties
-
-<div>
 
 The XML class has five static properties:
 
@@ -63,15 +55,7 @@ For details on these properties, see the
 class listing in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## XML methods
-
-<div>
 
 The following methods allow you to work with the hierarchical structure of XML
 objects:
@@ -178,7 +162,3 @@ For details on these methods, see the
 [XML](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html)
 class listing in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
-
-</div>
-
-</div>

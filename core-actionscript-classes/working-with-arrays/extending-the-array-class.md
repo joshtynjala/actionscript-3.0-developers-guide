@@ -1,7 +1,5 @@
 # Extending the Array class
 
-<div>
-
 The Array class is one of the few core classes that is not final, which means
 that you can create your own subclass of Array. This section provides an example
 of how to create a subclass of Array and discusses some of the issues that can
@@ -20,17 +18,11 @@ to throw exceptions. Third, the class cannot prevent the use of the array access
 operator to insert values of any type into the array. Fourth, the coding style
 favors simplicity over performance optimization.
 
-<div>
-
 Note: You can use the technique described here to create a typed array. However,
 a better approach is to use a Vector object. A Vector instance is a true typed
 array, and provides performance and other improvements over the Array class or
 any subclass. The purpose of this discussion is to demonstrate how to create an
 Array subclass.
-
-</div>
-
-<div>
 
 #### Declaring the subclass
 
@@ -64,20 +56,12 @@ attribute because this example assumes that the compiler option `-as3` is set to
 `true` and the compiler option `-es` is set to `false`. These are the default
 settings for Adobe Flash Builder and for AdobeFlashProfessional.
 
-<div>
-
 ![](../../img/tip_help.png) If you are an advanced developer who prefers to use
 prototype inheritance, you can make two minor changes to the TypedArray class to
 make it compile with the compiler option `-es` set to `true`. First, remove all
 occurrences of the `override` attribute and replace the AS3 namespace with the
 `public` attribute. Second, substitute `Array.prototype` for all four
 occurrences of `super` _._
-
-</div>
-
-</div>
-
-<div>
 
 #### TypedArray constructor
 
@@ -160,10 +144,6 @@ constructor function:
             }
         }
     }
-
-</div>
-
-<div>
 
 #### TypedArray overridden methods
 
@@ -252,7 +232,3 @@ following example code:
             return (super.unshift.apply(this, args));
         }
     }
-
-</div>
-
-</div>

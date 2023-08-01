@@ -1,12 +1,8 @@
 # Embedding SWF content in HTML
 
-<div>
-
 You can embed SWF content in HTML content within an AIR application just as you
 would in a browser. Embed the SWF content using an `object` tag, an `embed` tag,
 or both.
-
-<div>
 
 Note: A common web development practice is to use both an `object` tag and an
 `embed` tag to display SWF content in an HTML page. This practice has no benefit
@@ -14,8 +10,6 @@ in AIR. You can use the W3C-standard `object` tag by itself in content to be
 displayed in AIR. At the same time, you can continue to use the `object` and
 `embed` tags together, if necessary, for HTML content that is also displayed in
 a browser.
-
-</div>
 
 If you have enabled transparency in the NativeWindow object displaying the HTML
 and SWF content, then AIR does not display the SWF content when window mode (
@@ -69,23 +63,13 @@ if the `alpha` property is set to a value other than 1.0. Prior to AIR 1.5.2,
 SWF content was not displayed in a transparent window no matter which `wmode`
 value was set.
 
-<div>
-
-<div>
-
 Note: When an embedded SWF object attempts to load an external asset like a
 video file, the SWF content may not be rendered properly if an absolute path to
 the video file is not provided in the HTML file. However, an embedded SWF object
 can load an external image file using a relative path.
 
-</div>
-
-</div>
-
 The following example depicts how external assets can be loaded through a SWF
 object embedded in an HTML content:
-
-<div>
 
     var imageLoader;
 
@@ -120,12 +104,8 @@ object embedded in an HTML content:
     	showSWF("ImageLoader.swf", "imageSpot");
     }
 
-</div>
-
 In the following ActionScript example, the image path passed by the HTML file is
 read and the image is loaded on stage:
-
-<div>
 
     package
     {
@@ -155,15 +135,3 @@ read and the image is loaded on stage:
     		}
     	}
     }
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

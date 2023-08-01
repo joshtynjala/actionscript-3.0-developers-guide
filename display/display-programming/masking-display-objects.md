@@ -1,17 +1,9 @@
 # Masking display objects
 
-<div>
-
 You can use a display object as a mask to create a hole through which the
 contents of another display object are visible.
 
-</div>
-
-<div>
-
 ## Defining a mask
-
-<div>
 
 To indicate that a display object will be the mask for another display object,
 set the mask object as the `mask` property of the display object to be masked:
@@ -76,8 +68,6 @@ You cannot use a mask to mask another mask. You cannot set the `alpha` property
 of a mask display object. Only fills are used in a display object that is used
 as a mask; strokes are ignored.
 
-<div>
-
 #### AIR 2
 
 If a masked display object is cached by setting the `cacheAsBitmap` and
@@ -88,17 +78,7 @@ descendents of that container. If the masked object is a descendent of more than
 one cached display object container, the mask must be a descendent of the cached
 container closest to the masked object in the display list.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## About masking device fonts
-
-<div>
 
 You can use a display object to mask text that is set in a device font. When you
 use a display object to mask text set in a device font, the rectangular bounding
@@ -107,15 +87,7 @@ non-rectangular display object mask for device font text, the mask that appears
 in the SWF file is the shape of the rectangular bounding box of the mask, not
 the shape of the mask itself.
 
-</div>
-
-</div>
-
-<div>
-
 ## Alpha channel masking
-
-<div>
 
 Alpha channel masking is supported if both the mask and the masked display
 objects use bitmap caching, as shown here:
@@ -177,7 +149,3 @@ for the image, and it is then made draggable.
 
     // Make the oval draggable.
     oval.startDrag(true);
-
-</div>
-
-</div>

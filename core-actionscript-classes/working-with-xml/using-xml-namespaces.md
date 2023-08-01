@@ -1,7 +1,5 @@
 # Using XML namespaces
 
-<div>
-
 Namespaces in an XML object (or document) identify the type of data that the
 object contains. For example, in sending and delivering XML data to a web
 service that uses the SOAP messaging protocol, you declare the namespace in the
@@ -47,5 +45,3 @@ default namespace:
     default xml namespace = ns1;
     var x1:XML = <test1 />;
     var x2:XML = <test2 />;
-
-</div>

@@ -1,7 +1,5 @@
 # Drawing shapes using built-in methods
 
-<div>
-
 For convenience when drawing common shapes such as circles, ellipses,
 rectangles, and rectangles with rounded corners, ActionScript 3.0 has methods
 that draw these common shapes for you. These are the `drawCircle()`,
@@ -47,5 +45,3 @@ objects:
 
 Note that the TextField appears on top of the circle drawn with the graphics
 object.
-
-</div>

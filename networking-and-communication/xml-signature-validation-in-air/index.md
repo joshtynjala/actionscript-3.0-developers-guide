@@ -1,7 +1,5 @@
 # XML signature validation in AIR
 
-<div>
-
 Use the classes in the Adobe® AIR® XMLSignatureValidator API to validate digital
 signatures conforming to a subset of the W3C recommendation for XML-Signature
 Syntax and Processing (
@@ -26,13 +24,3 @@ security sandbox.
 - [Basics of XML signature validation](WSe3d2d52902616553-16c3561611c42fb32b6-8000.html)
 - [About XML signatures](WS0d09d76dc8b209fc-4cec51c711c2bd135a5-8000.html)
 - [Implementing the IURIDereferencer interface](WS93f497c3840e6eaf-6419d18d11c4e2bbf5a-8000.html)
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

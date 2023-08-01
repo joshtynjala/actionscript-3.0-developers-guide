@@ -1,7 +1,5 @@
 # Error handling in ActionScript 3.0
 
-<div>
-
 Since many applications can run without building the logic to handle errors,
 developers are tempted to postpone building error handling into their
 applications. However, without error handling, an application can easily stall
@@ -11,8 +9,6 @@ an exception with a specific message. Because error handling is critical for
 making a user-friendly application, ActionScript 3.0 includes an expanded
 architecture for catching errors.
 
-<div>
-
 Note: While the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html)
 documents the exceptions thrown by many methods, it might not include all
@@ -21,15 +17,7 @@ syntax errors or other problems that are not noted explicitly in the method
 description, even when the description does list some of the exceptions a method
 throws.
 
-</div>
-
-</div>
-
-<div>
-
 ## ActionScript 3.0 error-handling elements
-
-<div>
 
 ActionScript 3.0 includes many tools for error handling, including:
 
@@ -81,15 +69,7 @@ ActionScript 3.0 includes many tools for error handling, including:
   asynchronous error events. For more information see
   [Responding to error events and status](./responding-to-error-events-and-status.md).
 
-</div>
-
-</div>
-
-<div>
-
 ## Error-handling strategies
-
-<div>
 
 As long as your application doesn't encounter a problematic condition, it can
 still run successfully if you don't build error-handling logic into your code.
@@ -117,7 +97,3 @@ The following list summarizes the three major options for handling errors:
   also more likely to catch asynchronous errors using this approach. For more
   information, see
   [Responding to error events and status](./responding-to-error-events-and-status.md).
-
-</div>
-
-</div>

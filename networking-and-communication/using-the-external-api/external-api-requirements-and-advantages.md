@@ -1,7 +1,5 @@
 # External API requirements and advantages
 
-<div>
-
 The external API is the portion of ActionScript that provides a mechanism for
 communication between ActionScript and code running in an "external application"
 that is acting as a container for Flash Player (commonly a web browser or
@@ -11,14 +9,10 @@ versions prior to Flash Player 8, the `fscommand()` action was used to carry out
 communication with the container application. The ExternalInterface class is a
 replacement for `fscommand()`.
 
-<div>
-
 Note: If you need to use the old `fscommand()` function—for example, to maintain
 compatibility with older applications or to interact with a third-party SWF
 container application or the stand-alone Flash Player—it is still available as a
 package-level function in the flash.system package.
-
-</div>
 
 The ExternalInterface class is a subsystem that lets you easily communicate from
 ActionScript and Flash Player to JavaScript in an HTML page.
@@ -54,8 +48,6 @@ external API offers the following improved functionality compared with
 - You can receive the value of a call, and that value returns immediately to
   ActionScript (as the return value of the call you make).
 
-<div>
-
 Important: If the name given to the Flash Player instance in an HTML page (the
 `object` tag's `id` attribute) includes a hyphen ( `-`) or other characters that
 are defined as operators in JavaScript (such as `+`, `*`, `/`, `\`, `.`, and so
@@ -63,15 +55,3 @@ on), ExternalInterface calls from ActionScript will not work when the container
 web page is viewed in Internet Explorer.In addition, if the HTML tags that
 define the Flash Player instance (the `object` and `embed` tags) are nested in
 an HTML `form` tag, ExternalInterface calls from ActionScript will not work.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

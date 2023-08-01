@@ -1,7 +1,5 @@
 # Creating an instance of a regular expression
 
-<div>
-
 There are two ways to create a regular expression instance. One way uses forward
 slash characters (`/`) to delineate the regular expression; the other uses the
 `new` constructor. For example, the following regular expressions are
@@ -64,5 +62,3 @@ patterns.
 
 For more information on flags, see
 [Flags and properties](./flags-and-properties.md).
-
-</div>

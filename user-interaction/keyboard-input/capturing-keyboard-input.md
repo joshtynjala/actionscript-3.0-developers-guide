@@ -1,7 +1,5 @@
 # Capturing keyboard input
 
-<div>
-
 Display objects that inherit their interaction model from the InteractiveObject
 class can respond to keyboard events by using event listeners. For example, you
 can place an event listener on the Stage to listen for and respond to keyboard
@@ -52,20 +50,10 @@ The TextField class also reports a `textInput` event that you can listen for
 when a user enters text. For more information, see
 [Capturing text input](WS8d7bb3e8da6fb92f-20050207122bd5f80cb-7ff7.html).
 
-<div>
-
 Note: In the AIR runtime, a keyboard event can be canceled. In the Flash Player
 runtime, a keyboard event cannot be canceled.
 
-</div>
-
-</div>
-
-<div>
-
 ## Key codes and character codes
-
-<div>
 
 You can access the `keyCode` and `charCode` properties of a keyboard event to
 determine what key was pressed and then trigger other actions. The `keyCode`
@@ -80,15 +68,11 @@ different than the 1 in the top row, but the key that generates "1" and the key
 that generates "!" are the same key) and the character value represents a
 particular character (the R and r characters are different).
 
-<div>
-
 Note: For the mappings between keys and their character code values in ASCII,
 see the
 [flash.ui.Keyboard](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Keyboard.html)
 class listing in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
-
-</div>
 
 The mappings between keys and their key codes is dependent on the device and the
 operating system. For this reason, you should not use key mappings to trigger
@@ -97,15 +81,7 @@ Keyboard class to reference the appropriate `keyCode` properties. For example,
 instead of using the key mapping for the Shift key, use the `Keyboard.SHIFT`
 constant (as shown in the preceding code sample).
 
-</div>
-
-</div>
-
-<div>
-
 ## KeyboardEvent precedence
-
-<div>
 
 As with other events, the keyboard event sequence is determined by the display
 object hierarchy and not the order in which `addEventListener()` methods are
@@ -134,15 +110,3 @@ The operating system and the web browser will process keyboard events before
 Adobe Flash Player or AIR. For example, in Microsoft Internet Explorer, pressing
 Ctrl+W closes the browser window before any contained SWF file dispatches a
 keyboard event.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

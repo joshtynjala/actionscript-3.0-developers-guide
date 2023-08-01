@@ -1,19 +1,11 @@
 # Basics of user interaction
 
-<div>
-
 Your application can create interactivity by using ActionScript 3.0 to respond
 to user activity. Note that this section assumes that you are already familiar
 with the ActionScript 3.0 event model. For more information, see
 [Handling events](WS5b3ccc516d4fbf351e63e3d118a9b90204-7fca.html).
 
-</div>
-
-<div>
-
 ## Capturing user input
-
-<div>
 
 User interaction, whether by keyboard, mouse, camera, or a combination of these
 devices, is the foundation of interactivity. In ActionScript 3.0, identifying
@@ -27,8 +19,6 @@ various Flash authoring tool and Flex components inherit their user interaction
 model from this class and therefore share a common structure. This means that
 the techniques you learn and the code you write to handle user interaction in an
 object derived from InteractiveObject are applicable to all the others.
-
-<div>
 
 #### Important concepts and terms
 
@@ -54,17 +44,7 @@ keyboard or mouse interaction.
 Key code  
 A numeric code corresponding to a physical key on the keyboard.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Managing focus
-
-<div>
 
 An interactive object can receive focus, either programmatically or through a
 user action. Additionally, if the `tabEnabled` property is set to `true`, the
@@ -87,13 +67,9 @@ class. The following example shows how to enable focus cycling with the Tab key
 and how to respond to the subsequent focus event. In this case, each square
 changes color as it receives focus.
 
-<div>
-
 Note: Flash Professional uses keyboard shortcuts to manage focus; therefore, to
 properly simulate focus management, SWF files should be tested in a browser or
 AIR rather than within Flash.
-
-</div>
 
     var rows:uint = 10;
     var cols:uint = 10;
@@ -137,17 +113,7 @@ AIR rather than within Flash.
     	return new ColorTransform(1, 1, 1, 1, red, green, blue, 0);
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## Discovering input types
-
-<div>
-
-<div>
 
 The Flash Player 10.1 and Adobe AIR 2 releases introduced the ability to test
 the runtime environment for support of specific input types. You can use
@@ -159,10 +125,6 @@ ActionScript to test if the device on which the runtime is currently deployed:
 
 - Displays a cursor (if not, then features that are dependent upon having a
   cursor hover over an object do not work).
-
-</div>
-
-<div>
 
 The input discovery ActionScript APIs include:
 
@@ -200,8 +162,6 @@ The input discovery ActionScript APIs include:
   (either in place of a physical keyboard, or in addition to a physical
   keyboard).
 
-</div>
-
 The input discovery APIs let you take advantage of a user's device capabilities,
 or provide alternatives when those capabilities are not present. These API are
 especially useful for developing mobile and touch-enabled applications. For
@@ -223,12 +183,8 @@ finger interaction:
     	createTouchUI();
     }
 
-<div>
-
 When developing applications for different input environments, consider the
 following compatibility chart:
-
-<div>
 
 | Environment                                                                                                                     | supportsCursor | touchscreenType == FINGER | touchscreenType == STYLUS | touchscreenType == NONE |
 | ------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------------- | ------------------------- | ----------------------- |
@@ -237,36 +193,10 @@ following compatibility chart:
 | Resistive Touchscreen devices (tablets, PDAs, and phones that detect precise, high-pressure contact, such as the HTC Fuze)      | false          | false                     | true                      | false                   |
 | Non-Touchscreen devices (feature phones and devices that run applications but don't have screens that detect contact)           | false          | false                     | false                     | true                    |
 
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 Note: Different device platforms can support many combinations of input types.
 Use this chart as a general guide.
 
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
-
-</div>
 
 ![](../img/flashplatformLinkIndicator.png)
 [InteractiveObject](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/InteractiveObject.html)
@@ -279,9 +209,3 @@ More Help topics
 
 ![](../img/flashplatformLinkIndicator.png)
 [ContextMenu](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/ContextMenu.html)
-
-<div>
-
-</div>
-
-</div>

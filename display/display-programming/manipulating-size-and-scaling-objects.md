@@ -1,7 +1,5 @@
 # Manipulating size and scaling objects
 
-<div>
-
 You can measure and manipulate the size of a display object in two ways, using
 either the dimension properties (`width` and `height`) or the scale properties
 (`scaleX` and `scaleY`).
@@ -30,15 +28,11 @@ When you change the `width` or `height` properties of a display object, Flash
 Player and AIR update the `scaleX` and `scaleY` properties of the object as
 well.
 
-<div>
-
 Note: TextField objects are an exception to this scaling behavior. Text fields
 need to resize themselves to accommodate text wrapping and font sizes, so they
 reset their scaleX or scaleY values to 1 after resizing. However, if you adjust
 the scaleX or scaleY values of a TextField object, the width and height values
 change to accommodate the scaling values you provide.
-
-</div>
 
 These properties represent the relative size of the display object compared to
 its original size. The `scaleX` and `scaleY` properties use fraction (decimal)
@@ -76,5 +70,3 @@ proportional.
     // Change the vertical scale to match the horizontal scale,
     // to keep the size proportional.
     square.scaleY = square.scaleX;
-
-</div>

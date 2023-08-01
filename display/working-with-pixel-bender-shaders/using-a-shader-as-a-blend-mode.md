@@ -1,7 +1,5 @@
 # Using a shader as a blend mode
 
-<div>
-
 Using a shader as a blend mode is like using other blend modes. The shader
 defines the appearance resulting from two display objects being blended together
 visually. To use a shader as a blend mode, assign your Shader object to the
@@ -30,14 +28,10 @@ uses a lighten blend mode based on luminosity. The result of the blend is that
 the lightest pixel value from either of the blended objects becomes the pixel
 that's displayed.
 
-<div>
-
 Note: The code for this example was written by Mario Klingemann. Thank you Mario
 for sharing this example. You can see more of Mario's work and read his writing
 at <a href="http://www.quasimondo.com/"
 target="_self">www.quasimondo.com/</a>.
-
-</div>
 
 The important ActionScript code is in these two methods:
 
@@ -59,25 +53,13 @@ The important ActionScript code is in these two methods:
   ellipse (`foregroundShape`) shows completely and part of the green ellipse
   (`backgroundShape`) is hidden by it:
 
-  <div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-  xmlns:fo="http://www.w3.org/1999/XSL/Format"
-  xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
   ![](../../img/sb_blend_mode_before.png)
-
-  </div>
 
   However, with the blend mode applied, the brighter part of the green ellipse
   "shows through" because it is lighter than the portion of `foregroundShape`
   that overlaps it:
 
-  <div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-  xmlns:fo="http://www.w3.org/1999/XSL/Format"
-  xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
   ![](../../img/sb_blend_mode_after.png)
-
-  </div>
 
 The following is the ActionScript code for this example. Use this class as the
 main application class for an ActionScript-only project in Flash Builder, or as
@@ -190,8 +172,6 @@ create the "LumaLighten.pbj" Pixel Bender bytecode file:
 For more information on using blend modes, see
 [Applying blending modes](../display-programming/applying-blending-modes.md).
 
-<div>
-
 Note: When a Pixel Bender shader program is run as a blend in Flash Player or
 AIR, the sampling and `outCoord()` functions behave differently than in other
 contexts.In a blend, a sampling function will always return the current pixel
@@ -200,7 +180,3 @@ being evaluated by the shader. You cannot, for example, use add an offset to
 `outCoord()` function outside a sampling function, its coordinates always
 evaluate to 0. You cannot, for example, use the position of a pixel to influence
 how the blended images are combined.
-
-</div>
-
-</div>

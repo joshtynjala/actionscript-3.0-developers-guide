@@ -1,7 +1,5 @@
 # Projecting 3D objects onto a 2D view
 
-<div>
-
 The <a
 href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/PerspectiveProjection.html"
 target="_self">PerspectiveProjection</a> class in the `flash.geom` package
@@ -15,15 +13,11 @@ and is propagated to all its children.
 The three properties that define how a PerspectiveProjection object displays 3D
 space are:
 
-<div>
-
 - `fieldOfView`
 
 - `projectionCenter`
 
 - `focalLength`
-
-</div>
 
 Modifying the value of the `fieldOfView` automatically modifies the value of the
 `focalLength` and vice-versa, since they are interdependent.
@@ -35,13 +29,7 @@ is:
 
 Typically you would modify the `fieldOfView` property explicitly.
 
-</div>
-
-<div>
-
 ## Field of view
-
-<div>
 
 By manipulating the `fieldOfView` property of the PerspectiveProjection class,
 you can make a 3D display object approaching the viewer appear larger and an
@@ -57,15 +45,7 @@ more distortion and the appearance of greater movement. The maximum value of
 maximum value of `fieldOfView` is 179.9999... and the minimum is 0.00001...
 Exactly 0 and 180 are illegal values.
 
-</div>
-
-</div>
-
-<div>
-
 ## Projection center
-
-<div>
 
 The `projectionCenter` property represents the vanishing point in the
 perspective projection. It is applied as an offset to the default registration
@@ -83,15 +63,7 @@ appear on the left of the stage and a 3D area to appear on the right, set the
 `projectionCenter` to a point on the right of the stage to make that the
 vanishing point of your 3D viewing area.
 
-</div>
-
-</div>
-
-<div>
-
 ## Focal length
-
-<div>
 
 The `focalLength` property represents the distance between the origin of the
 viewpoint (0,0,0) and the location of the display object on its z-axis.
@@ -104,28 +76,16 @@ approximates what the human eye sees.
 Typically the `focalLength` is re-calculated dynamically during perspective
 transformation as the display object moves, but you can set it explicitly.
 
-</div>
-
-</div>
-
-<div>
-
 ## Default perspective projection values
-
-<div>
 
 The default PerspectiveProjection object created on the root has the following
 values:
-
-<div>
 
 - `fieldOfView: 55`
 
 - `perspectiveCenter: stagewidth/2, stageHeight/2`
 
 - `focalLength: stageWidth / 2 * ( cos(fieldOfView/2) / sin(fieldOfView/2) )`
-
-</div>
 
 These are the values that are used if you do not create your own
 PerspectiveProjection object.
@@ -135,24 +95,8 @@ modifying the `projectionCenter` and `fieldOfView` yourself. In this case, the
 default values of the newly created object are the following, based on a default
 stage size of 500 by 500:
 
-<div>
-
 - `fieldOfView: 55`
 
 - `perspectiveCenter: 250,250`
 
 - `focalLength: 480.24554443359375`
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

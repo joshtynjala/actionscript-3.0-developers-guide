@@ -1,7 +1,5 @@
 # Using a shader
 
-<div>
-
 Once a Pixel Bender shader is available in ActionScript as a Shader object, it
 can be used in several ways:
 
@@ -19,8 +17,6 @@ can be used in several ways:
   background, with the result is available when the processing completes. This
   technique can be used to generate bitmap data and also to process non-visual
   data.
-
-</div>
 
 - [Using a shader as a drawing fill](./using-a-shader-as-a-drawing-fill.md)
 

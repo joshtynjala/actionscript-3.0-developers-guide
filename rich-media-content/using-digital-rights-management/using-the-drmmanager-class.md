@@ -1,11 +1,7 @@
 # Using the DRMManager class
 
-<div>
-
 Use the DRMManager class to manage vouchers and media rights server sessions in
 applications.
-
-<div>
 
 **Voucher management (AIR only)**
 
@@ -26,10 +22,6 @@ whether user authentication is required. With this information, you can call the
 DRMManager `loadVoucher()` method to obtain and cache the voucher. The workflow
 for pre-loading vouchers is described in more detail in
 [Pre-loading vouchers for offline playback](WSe3d2d52902616553-3a6b491211d1b2ce8d5-8000.html).
-
-</div>
-
-<div>
 
 **Session management**
 
@@ -52,15 +44,7 @@ you can store them in the AIR Encrypted Local Store. See
 [Encrypted local storage](WS5b3ccc516d4fbf351e63e3d118666ade46-7e31.html) for
 more information.
 
-</div>
-
-</div>
-
-<div>
-
 ## DRMStatus Events
-
-<div>
 
 The DRMManager dispatches a DRMStatusEvent object after a call to the
 `loadVoucher()` method completes successfully.
@@ -78,15 +62,7 @@ If the `loadVoucher()` call does not complete successfully, perhaps because of
 an authentication or communication error, then the DRMManager dispatches a
 DRMErrorEvent or DRMAuthenticationErrorEvent object instead.
 
-</div>
-
-</div>
-
-<div>
-
 ## DRMAuthenticationComplete events
-
-<div>
 
 The DRMManager dispatches a DRMAuthenticationCompleteEvent object when a user is
 successfully authenticated through a call to the `authenticate()` method.
@@ -97,28 +73,8 @@ to DRMManager `setAuthenticationToken()` method to re-establish the session.
 (The token creator sets token attributes such as expiration. Adobe does not
 provide an API for examining token attributes.)
 
-</div>
-
-</div>
-
-<div>
-
 ## DRMAuthenticationError events
-
-<div>
 
 The DRMManager dispatches a DRMAuthenticationErrorEvent object when a user
 cannot be successfully authenticated through a call to the `authenticate()` or
 `setAuthenticationToken()` methods.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

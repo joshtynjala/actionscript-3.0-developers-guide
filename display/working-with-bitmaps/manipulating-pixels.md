@@ -1,17 +1,9 @@
 # Manipulating pixels
 
-<div>
-
 The BitmapData class contains a set of methods that allow you to manipulate
 pixel data values.
 
-</div>
-
-<div>
-
 ## Manipulating individual pixels
-
-<div>
 
 When changing the appearance of a bitmap image at a pixel level, you first need
 to get the color values of the pixels contained within the area you wish to
@@ -94,15 +86,7 @@ group of pixels from one BitmapData object to another:
     addChild(bitmapImage2);
     bitmapImage2.x = 110;
 
-</div>
-
-</div>
-
-<div>
-
 ## Pixel-level collision detection
-
-<div>
 
 The `BitmapData.hitTest()` method performs pixel-level collision detection
 between the bitmap data and another object or point.
@@ -172,7 +156,3 @@ using two different collision points (one returns false, the other true):
 
     trace(bmd1.hitTest(pt1, 0xFF, pt2)); // true
     trace(bmd1.hitTest(pt1, 0xFF, pt3)); // false
-
-</div>
-
-</div>

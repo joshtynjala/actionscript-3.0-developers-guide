@@ -1,7 +1,5 @@
 # The E4X approach to XML processing
 
-<div>
-
 The ECMAScript for XML specification defines a set of classes and functionality
 for working with XML data. These classes and functionality are known
 collectively as _E4X._ ActionScript 3.0 includes the following E4X classes: XML,
@@ -19,8 +17,6 @@ following goals:
 - Familiarity—You manipulate XML data with well-known operators, such as the dot
   (`.`) operator.
 
-<div>
-
 Note: There is a different XML class in ActionScript 2.0. In ActionScript 3.0
 that class has been renamed as XMLDocument, so that the name does not conflict
 with the ActionScript 3.0 XML class that is part of E4X. In ActionScript 3.0,
@@ -31,8 +27,6 @@ ActionScript 2.0 XML classes, see the
 [flash.xml package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/xml/package-detail.html)
 in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
-
-</div>
 
 Here is an example of manipulating data with E4X:
 
@@ -94,5 +88,3 @@ Use a `for` loop to iterate through nodes of the XML, as follows:
         trace(q + " " + property.menuName + " $" + itemTotal.toFixed(2))
     }
     trace("Total: $", total.toFixed(2));
-
-</div>

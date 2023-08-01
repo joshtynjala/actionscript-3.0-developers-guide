@@ -1,7 +1,5 @@
 # Choosing a DisplayObject subclass
 
-<div>
-
 With several options to choose from, one of the important decisions you'll make
 when you're working with display objects is which display object to use for what
 purpose. Here are some guidelines to help you decide. These same suggestions
@@ -66,5 +64,3 @@ for a class you're creating:
 
   - Sprite if the associated movie clip symbol has content only on the first
     frame
-
-</div>

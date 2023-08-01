@@ -1,7 +1,5 @@
 # Sorting and comparing strings
 
-<div>
-
 Collation is the process of arranging things in their proper order. Collation
 rules vary significantly by locale. The rules also differ if you are sorting a
 list or matching similar items, such as in a text search algorithm.
@@ -18,13 +16,7 @@ increase the chance of finding relevant matches. For example, a search for the
 characters "cote" in a French document conceivably returns matches for "cote",
 "côte", and "coté".
 
-</div>
-
-<div>
-
 ## Using the Collator class
-
-<div>
 
 The main methods of the Collator class are the compare() method, used primarily
 for sorting, and the equals() method, used for matching values.
@@ -57,23 +49,13 @@ The example then creates a Collator object in MATCHING mode. When that Collator
 object compares the two words, it treats them as equal. That shows that the
 MATCHING comparison values accented and non-accented characters the same.
 
-</div>
-
-</div>
-
-<div>
-
 ## Customizing the behavior of the Collator class
-
-<div>
 
 By default, the Collator class uses string comparison rules obtained from the
 operating system based on the locale and the user's system preferences. You can
 customize the behavior of the compare() and equals() methods by explicitly
 setting various properties. The following table lists the properties and the
 effect they have upon comparisons:
-
-<div>
 
 | Collator Property    | Effect                                                                                                                            |
 | -------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
@@ -83,8 +65,6 @@ effect they have upon comparisons:
 | ignoreDiacritics     | Controls whether strings that use the same base characters but different accents or other diacritic marks are evaluated as equal. |
 | ignoreKanaType       | Controls whether strings that differ only by the type of kana character being used are treated as equal.                          |
 | ignoreSymbols        | Controls whether symbol characters such as spaces, currency symbols, math symbols, and others are ignored.                        |
-
-</div>
 
 The following code shows that setting the ignoreDiacritics property to true
 changes the sort order of a list of French words:
@@ -97,15 +77,3 @@ changes the sort order of a list of French words:
     sorter.ignoreDiacritics = true;
     words.sort(sorter.compare);
     trace(words); // côte,coté,cote,Coté,COTE
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

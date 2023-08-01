@@ -1,7 +1,5 @@
 # Working with display object containers
 
-<div>
-
 If a DisplayObjectContainer object is deleted from the display list, or if it is
 moved or transformed in some other way, each display object in the
 DisplayObjectContainer is also deleted, moved, or transformed.
@@ -11,18 +9,12 @@ another display object container. For example, the following image shows a
 display object container, `pictureScreen`, that contains one outline shape and
 four other display object containers (of type PictureFrame):
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](../../img/dp_fruitGallery_popup.png)
 
 **A.** A shape defining the border of the pictureScreen display object container
 
 **B.** Four display object containers that are children of the pictureScreen
 object
-
-</div>
 
 In order to have a display object appear in the display list, you must add it to
 a display object container that is on the display list. You do this by using the
@@ -44,13 +36,7 @@ the child list relate to the layering (the front-to-back order) of the display
 objects. For example, consider the following three display objects. Each object
 was created from a custom class called Ball.
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](../../img/dp_DisplayObjectContainer_layers-1.png)
-
-</div>
 
 The layering of these display objects in their container can be adjusted using
 the `addChildAt()` method. For example, consider the following code:
@@ -76,13 +62,7 @@ the `addChildAt()` method. For example, consider the following code:
 After executing this code, the display objects are positioned as follows in the
 `container` DisplayObjectContainer object. Notice the layering of the objects.
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](../../img/dp_DisplayObjectContainer_layers-2.png)
-
-</div>
 
 To reposition an object to the top of the display list, simply re-add it to the
 list. For example, after the previous code, to move `ball_A` to the top of the
@@ -175,5 +155,3 @@ class listing in the
 Recall that a display object that is off the display list—one that is not
 included in a display object container that is a child of the Stage—is known as
 an _off-list_ display object.
-
-</div>

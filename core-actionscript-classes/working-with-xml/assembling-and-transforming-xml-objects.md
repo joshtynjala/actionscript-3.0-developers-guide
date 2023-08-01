@@ -1,7 +1,5 @@
 # Assembling and transforming XML objects
 
-<div>
-
 Use the `prependChild()` method or the `appendChild()` method to add a property
 to the beginning or end of an XML object's list of properties, as the following
 example shows:
@@ -75,5 +73,3 @@ This sets the XMLList object `xList` to the following:
     <a>test1</a>
     <b>test2</b>
     <c>test3</c>
-
-</div>

@@ -1,7 +1,5 @@
 # Writing to disk
 
-<div>
-
 Applications running in a web browser have only limited interaction with the
 user's local file system. Web browsers implement security policies that ensure
 that a user's computer cannot be compromised as a result of loading web content.
@@ -22,22 +20,14 @@ developers should read
 AIR developers can access and write files to the local file system using several
 URL scheme conventions:
 
-<div>
-
 | URL scheme    | Description                                                                                                                                                                                                            |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | app:/         | An alias to the application directory. Files accessed from this path are assigned the application sandbox and have the full privileges granted by the runtime.                                                         |
 | app-storage:/ | An alias to the local storage directory, standardized by the runtime. Files accessed from this path are assigned a non-application sandbox.                                                                            |
 | file:///      | An alias that represents the root of the user's hard disk. A file accessed from this path is assigned an application sandbox if the file exists in the application directory, and a non-application sandbox otherwise. |
 
-</div>
-
-<div>
-
 Note: AIR applications cannot modify content using the app: URL scheme. Also,
 the application directory may be read only because of administrator settings.
-
-</div>
 
 Unless there are administrator restrictions to the user's computer, AIR
 applications are privileged to write to any location on the user's hard drive.
@@ -60,13 +50,3 @@ put in a standard location:
 If an application is designed to interact with existing files in the user's file
 system, be sure to read
 [Best security practices for developers](WS5b3ccc516d4fbf351e63e3d118666ade46-7e59.html).
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # Loading video files
 
-<div>
-
 Loading videos using the NetStream and NetConnection classes is a multistep
 process. As a best practice, the steps of adding the Video object to the display
 list, attaching the NetStream object to the Video instance, and calling the
@@ -52,28 +50,10 @@ NetStream object's `play()` method should be performed in the specified order:
 
         ns.play("video.mp4");
 
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
-
-</div>
 
 ![](../../img/flexLinkIndicator.png)
 [Flex: Spark VideoPlayer control](https://help.adobe.com/en_US/flex/using/WSc78f87379113c38b-669905c51221a3b97af-8000.html)
 
 ![](../../img/flashplatformLinkIndicator.png)
 [spark.components.VideoDisplay](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/spark/components/VideoDisplay.html?allClasses=1)
-
-<div>
-
-</div>
-
-</div>

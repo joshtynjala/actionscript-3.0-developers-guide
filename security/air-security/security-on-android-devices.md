@@ -1,7 +1,5 @@
 # Security on Android devices
 
-<div>
-
 On Android, as on all computing devices, AIR conforms to the native security
 model. At the same time, AIR maintains its own security rules, which are
 intended to make it easy for developers to write secure, Internet-connected
@@ -18,8 +16,6 @@ The Android security model has three primary aspects:
 - Application signatures
 
 - Application user IDs
-
-<div>
 
 #### Android permissions
 
@@ -63,10 +59,6 @@ SystemIdleMode class settings.
 WRITE_EXTERNAL_STORAGE  
 Allows the application to write to the external memory card on the device.
 
-</div>
-
-<div>
-
 #### Application signatures
 
 All application packages created for the Android platform must be signed. Since
@@ -89,10 +81,6 @@ significant differences:
   them to access each others cache and data files. (Such sharing is not
   facilitated by AIR. )
 
-</div>
-
-<div>
-
 #### Application user IDs
 
 Android uses a Linux kernel. Every installed app is assigned a Linux-type user
@@ -104,10 +92,6 @@ applications, or by the user, when the SD card is mounted as a mass storage
 device on a computer.
 
 Cookies received with internet requests are not shared between AIR applications.
-
-</div>
-
-<div>
 
 #### Background image privacy
 
@@ -122,15 +106,7 @@ event dispatched by the NativeApplication object signals that an application is
 about to switch to the background. Use this event to clear or hide any sensitive
 information.
 
-</div>
-
-</div>
-
-<div>
-
 ## Encrypted data on Android
-
-<div>
 
 AIR applications on Android can use the encryption options available in the
 built-in SQL database to save encrypted data. For optimum security, base the
@@ -147,37 +123,13 @@ application user ID to protect the data from other applications. Applications
 that use a shared user ID and which are signed with the same code signing
 certificate use the same encrypted local store.
 
-<div>
-
 Important: On a rooted phone, any application running with root privileges can
 access the files of any other application. Thus, data stored using the encrypted
 local store is not secure on a rooted device.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
-
-</div>
 
 ![](../../img/airLinkIndicator.png)
 [Android permissions](https://help.adobe.com/en_US/air/build/WS901d38e593cd1bac1e63e3d129d39606f2-8000.html)
 
 [Android: Security and Permissions](http://developer.android.com/guide/topics/security/security.html)
-
-<div>
-
-</div>
-
-</div>

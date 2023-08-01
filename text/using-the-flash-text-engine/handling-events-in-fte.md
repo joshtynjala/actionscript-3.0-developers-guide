@@ -1,9 +1,5 @@
 # Handling Events in FTE
 
-<div>
-
-<div>
-
 You can add event listeners to a TextLine instance just as you can to other
 display objects. For example, you can detect when a user rolls the mouse over a
 text line or a user clicks the line. The following example detects both of these
@@ -78,15 +74,7 @@ cursor and when you click the line, it changes color.
     	}
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## Mirroring events
-
-<div>
 
 You can also mirror events on a text block, or on a portion of a text block, to
 an event dispatcher. First, create an EventDispatcher instance and then assign
@@ -182,15 +170,3 @@ of the third text element to read, "Click here to see me in normal font!".
 
 The `mouseOverHandler()` and `mouseOutHandler()` functions set the cursor to a
 button cursor when it's over the word "here" and back to an arrow when it's not.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # XMLList objects
 
-<div>
-
 An XMLList instance represents an arbitrary collection of XML objects. It can
 contain full XML documents, XML fragments, or the results of an XML query.
 
@@ -82,5 +80,3 @@ because `doc.div` is an XMLList object containing one element, you can use the
     doc.div.appendChild(<p>World</p>);
 
 For a list of XML properties and methods, see [XML objects](./xml-objects.md).
-
-</div>

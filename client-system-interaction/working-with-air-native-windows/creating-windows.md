@@ -1,7 +1,5 @@
 # Creating windows
 
-<div>
-
 AIR automatically creates the first window for an application, but you can
 create any additional windows you need. To create a native window, use the
 NativeWindow constructor method.
@@ -27,19 +25,11 @@ an HTML window with the HTMLLoader `createRootWindow()` method, you can set the
 `visible` argument to `false`. Call the NativeWindow `activate()` method or set
 the `visible` property to `true` to make a window visible.
 
-</div>
-
-<div>
-
 ## Specifying window initialization properties
-
-<div>
 
 The initialization properties of a native window cannot be changed after the
 desktop window is created. These immutable properties and their default values
 include:
-
-<div>
 
 | Property     | Default value |
 | ------------ | ------------- |
@@ -50,8 +40,6 @@ include:
 | maximizable  | true          |
 | minimizable  | true          |
 | resizable    | true          |
-
-</div>
 
 Set the properties for the initial window created by AIR in the application
 descriptor file. The main window of an AIR application is always type, _normal_
@@ -77,15 +65,11 @@ window:
 Setting _systemChrome_ to _standard_ when _transparent_ is `true` or `type` is
 `lightweight` _is not supported._
 
-<div>
-
 Note: You cannot set the initialization properties for a window created with the
 JavaScript `window.open()` function. You can, however, override how these
 windows are created by implementing your own HTMLHost class. See
 [Handling JavaScript calls to window.open()](WS5b3ccc516d4fbf351e63e3d118666ade46-7e72.html)
 for more information.
-
-</div>
 
 When you create a window with the Flex mx:Window class, specify the
 initialization properties on the window object itself, either in the MXML
@@ -94,15 +78,7 @@ underlying NativeWindow object is not created until you call the `open()`
 method. Once a window is opened, these initialization properties cannot be
 changed.
 
-</div>
-
-</div>
-
-<div>
-
 ## Creating the initial application window
-
-<div>
 
 AIR creates the initial application window based on the properties specified in
 the application descriptor and loads the file referenced in the content element.
@@ -112,13 +88,7 @@ The initial window can be the main window of your application or it can merely
 serve to launch one or more other windows. You do not have to make it visible at
 all.
 
-</div>
-
-<div>
-
 ### Creating the initial window with ActionScript
-
-<div>
 
 When you create an AIR application using ActionScript, the main class of your
 application must extend the Sprite class (or a subclass of Sprite). This class
@@ -153,13 +123,9 @@ AIR application built with ActionScript:
     	}
     }
 
-<div>
-
 Note: Technically, you CAN access the `nativeWindow` property in the constructor
 function of the main class. However, this is a special case applying only to the
 initial application window.
-
-</div>
 
 When creating an application in Flash Professional, the main document class is
 created automatically if you do not create your own in a separate ActionScript
@@ -173,15 +139,7 @@ main window in the maximized state (from the timeline):
     mainWindow.maximize();
     mainWindow.activate();
 
-</div>
-
-</div>
-
-<div>
-
 ### Creating the initial window with Flex
-
-<div>
 
 When creating an AIR application with the Flex framework, use the
 mx:WindowedApplication as the root element of your main MXML file. (You can use
@@ -212,17 +170,7 @@ its x and y coordinates:
     	<mx:Label text="Hello World" horizontalCenter="0" verticalCenter="0"/>
     </mx:WindowedApplication>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Creating a NativeWindow
-
-<div>
 
 To create a NativeWindow, pass a NativeWindowInitOptions object to the
 NativeWindow constructor:
@@ -249,25 +197,13 @@ content to the window without compromise.
 
 The scale mode for Flex and HTML windows is set to `noScale` automatically.
 
-<div>
-
 Note: To determine the maximum and minimum window sizes allowed on the current
 operating system, use the following static NativeWindow properties:
-
-</div>
 
     var maxOSSize:Point = NativeWindow.systemMaxSize;
     var minOSSize:Point = NativeWindow.systemMinSize;
 
-</div>
-
-</div>
-
-<div>
-
 ## Creating an HTML window
-
-<div>
 
 To create an HTML window, you can either call the JavaScript `Window.open()`
 method, or you can call the AIR HTMLLoader class `createRootWindow()` method.
@@ -280,13 +216,9 @@ chrome is created to display the content at the specified URL. For example:
 
     newWindow = window.open("xmpl.html", "logWindow", "height=600, width=400, top=10, left=10");
 
-<div>
-
 Note: You can extend the HTMLHost class in ActionScript to customize the window
 created with the JavaScript `window.open()` function. See
 [About extending the HTMLHost class](WS5b3ccc516d4fbf351e63e3d118666ade46-7e6d.html).
-
-</div>
 
 Content in the application security sandbox has access to the more powerful
 method of creating windows, `HTMLLoader.createRootWindow()`. With this method,
@@ -302,13 +234,9 @@ chrome that is 300x400 pixels in size:
     newHTMLLoader = air.HTMLLoader.createRootWindow(true, options, true, windowBounds);
     newHTMLLoader.load(new air.URLRequest("xmpl.html"));
 
-<div>
-
 Note: If the content loaded by a new window is outside the application security
 sandbox, the window object does not have the AIR properties: `runtime`,
 `nativeWindow`, or `htmlLoader`.
-
-</div>
 
 If you create a transparent window, then SWF content embedded in the HTML loaded
 into that window is not always displayed. You must set the `wmode` parameter of
@@ -326,22 +254,10 @@ function. In the context of the previous example, the statement
 `newHTMLLoader.window` would reference the JavaScript Window object of the
 created window.
 
-<div>
-
 Note: The `createRootWindow()` function can be called from both JavaScript and
 ActionScript.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Creating a mx:Window
-
-<div>
 
 To create a mx:Window, you can create an MXML file using mx:Window as the root
 tag, or you can call the Window class constructor directly.
@@ -357,15 +273,7 @@ constructor:
     newWindow.height = 200;
     newWindow.open(true);
 
-</div>
-
-</div>
-
-<div>
-
 ## Adding content to a window
-
-<div>
 
 How you add content to an AIR window depends on the type of window. For example,
 MXML and HTML let you declaratively define the basic content of the window. You
@@ -386,8 +294,6 @@ interface between application content and non-application content. In HTML
 content, you can also map pages of your application into a non-application
 sandbox to allow the code on that page to cross-script external content. See
 [AIR security](WS5b3ccc516d4fbf351e63e3d118666ade46-7fa3.html).
-
-<div>
 
 #### Loading a SWF file or image
 
@@ -415,20 +321,12 @@ using the `flash.display.Loader` class:
     	}
     }
 
-<div>
-
 Note: Older SWF files created using ActionScript 1 or 2 share global states such
 as class definitions, singletons, and global variables if they are loaded into
 the same window. If such a SWF file relies on untouched global states to work
 correctly, it cannot be loaded more than once into the same window, or loaded
 into the same window as another SWF file using overlapping class definitions and
 variables. This content can be loaded into separate windows.
-
-</div>
-
-</div>
-
-<div>
 
 #### Loading HTML content into a NativeWindow
 
@@ -464,10 +362,6 @@ not displayed in a transparent window no matter what `wmode` value is used.
 Also, neither SWF nor PDF content is displayed if the HTMLLoader control is
 scaled, rotated, or if the HTMLLoader `alpha` property is set to a value other
 than 1.0.
-
-</div>
-
-<div>
 
 #### Adding SWF content as an overlay on an HTML window
 
@@ -578,17 +472,7 @@ that cross over the boundaries between JavaScript and ActionScript in AIR. If
 your are unfamiliar with using ActionScript display objects, refer to
 [Display programming](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e58.html).
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Example: Creating a native window
-
-<div>
 
 The following example illustrates how to create a native window:
 
@@ -612,27 +496,7 @@ The following example illustrates how to create a native window:
     	newWindow.activate();
     }
 
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
-
-</div>
 
 ![](../../img/flexLinkIndicator.png)
 [Using the Flex AIR components](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-8000.html)
-
-<div>
-
-</div>
-
-</div>

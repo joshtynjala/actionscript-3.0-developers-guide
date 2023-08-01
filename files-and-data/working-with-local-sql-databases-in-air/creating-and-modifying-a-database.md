@@ -1,20 +1,12 @@
 # Creating and modifying a database
 
-<div>
-
 Before your application can add or retrieve data, there must be a database with
 tables defined in it that your application can access. Described here are the
 tasks of creating a database and creating the data structure within a database.
 While these tasks are less frequently used than data insertion and retrieval,
 they are necessary for most applications.
 
-</div>
-
-<div>
-
 ## Creating a database
-
-<div>
 
 To create a database file, you first create a
 [SQLConnection](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/SQLConnection.html)
@@ -102,10 +94,6 @@ with the filename "DBSample.db":
     	</mx:Script>
     </mx:WindowedApplication>
 
-<div>
-
-<div>
-
 Note: Although the File class lets you point to a specific native file path,
 doing so can lead to applications that will not work across platforms. For
 example, the path C:\Documents and Settings\joe\test.db only works on Windows.
@@ -114,10 +102,6 @@ For these reasons, it is best to use the static properties of the
 such as `File.applicationStorageDirectory`, as well as the `resolvePath()`
 method (as shown in the previous example). For more information, see
 [Paths of File objects](WS5b3ccc516d4fbf351e63e3d118666ade46-7d9e.html).
-
-</div>
-
-</div>
 
 To execute operations synchronously, when you open a database connection with
 the SQLConnection instance, call the `open()` method. The following example
@@ -176,15 +160,7 @@ operations synchronously:
     	</mx:Script>
     </mx:WindowedApplication>
 
-</div>
-
-</div>
-
-<div>
-
 ## Creating database tables
-
-<div>
 
 Creating a table in a database involves
 [executing a SQL statement](<https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/SQLStatement.html#execute()>)
@@ -356,26 +332,6 @@ database.
     	</mx:Script>
     </mx:WindowedApplication>
 
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
 
-</div>
-
-<div>
-
-</div>
-
 [Mind the Flex: Updating an existing AIR database](http://www.mindtheflex.com/?p=83 "http://www.mindtheflex.com/?p=83")
-
-<div>
-
-</div>
-
-</div>

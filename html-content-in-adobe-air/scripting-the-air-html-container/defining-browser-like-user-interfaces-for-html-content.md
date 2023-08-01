@@ -1,19 +1,11 @@
 # Defining browser-like user interfaces for HTML content
 
-<div>
-
 JavaScript provides several APIs for controlling the window displaying the HTML
 content. In AIR, these APIs can be overridden by implementing a custom
 [HTMLHost](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/html/HTMLHost.html)
 class.
 
-</div>
-
-<div>
-
 ## About extending the HTMLHost class
-
-<div>
 
 If, for example, your application presents multiple HTMLLoader objects in a
 tabbed interface, you may want title changes made by the loaded HTML pages to
@@ -62,28 +54,14 @@ behaviors is assigned automatically. You can change the host object behavior by
 assigning a different HTMLHost implementation to the `htmlHost` property of the
 HTMLLoader, or you can assign `null` to disable the features entirely.
 
-<div>
-
 Note: AIR assigns a default HTMLHost object to the initial window created for an
 HTML-based AIR application and any windows created by the default implementation
 of the JavaScript `window.open()` method.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Example: Extending the HTMLHost class
-
-<div>
 
 The following example shows how to customize the way that an HTMLLoader object
 affects the user interface, by extending the HTMLHost class:
-
-<div>
 
 #### Flex example:
 
@@ -178,10 +156,6 @@ in the application directory:
         <a href="#" onclick="openWindow()">window.open('Test.html')</a>
     </body>
     </html>
-
-</div>
-
-<div>
 
 #### Flash Professional example:
 
@@ -333,17 +307,7 @@ in the application directory:
         </body>
         </html>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Handling changes to the window.location property
-
-<div>
 
 Override the `locationChange()` method to handle changes of the URL of the HTML
 page. The `locationChange()` method is called when JavaScript in a page changes
@@ -355,22 +319,10 @@ URL:
     	htmlLoader.load(new URLRequest(locationURL));
     }
 
-<div>
-
 Note: You can use the htmlLoader property of the HTMLHost object to reference
 the current HTMLLoader object.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Handling JavaScript calls to window.moveBy(), window.moveTo(), window.resizeTo(), window.resizeBy()
-
-<div>
 
 Override the `set windowRect()` method to handle changes in the bounds of the
 HTML content. The `set windowRect()` method is called when JavaScript in a page
@@ -383,15 +335,7 @@ desktop window:
     	htmlLoader.stage.nativeWindow.bounds = value;
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## Handling JavaScript calls to window.open()
-
-<div>
 
 Override the `createWindow()` method to handle JavaScript calls to
 `window.open()`. Implementations of the `createWindow()` method are responsible
@@ -416,20 +360,14 @@ the HTMLLoader to the window stage.
     	return htmlControl;
     }
 
-<div>
-
 Note: This example assigns the custom HTMLHost implementation to any new windows
 created with `window.open()`. You can also use a different implementation or set
 the `htmlHost` property to null for new windows, if desired.
-
-</div>
 
 The object passed as a parameter to the `createWindow()` method is an
 [HTMLWindowCreateOptions](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/html/HTMLWindowCreateOptions.html)
 object. The HTMLWindowCreateOptions class includes properties that report the
 values set in the `features` parameter string in the call to `window.open()`:
-
-<div>
 
 | HTMLWindowCreateOptions property | Corresponding setting in the features string in the JavaScript call to window.open() |
 | -------------------------------- | ------------------------------------------------------------------------------------ |
@@ -445,8 +383,6 @@ values set in the `features` parameter string in the call to `window.open()`:
 | `x`                              | `left` or `screenX`                                                                  |
 | `y`                              | `top` or `screenY`                                                                   |
 
-</div>
-
 The HTMLLoader class does not implement all the features that can be specified
 in the feature string. Your application must provide scroll bars, location bars,
 menu bars, status bars, and toolbars when appropriate.
@@ -455,15 +391,7 @@ The other arguments to the JavaScript `window.open()` method are handled by the
 system. A `createWindow()` implementation should not load content in the
 HTMLLoader object, or set the window title.
 
-</div>
-
-</div>
-
-<div>
-
 ## Handling JavaScript calls to window.close()
-
-<div>
 
 Override the `windowClose()` to handle JavaScript calls to `window.close()`
 method. The following example closes the desktop window when the
@@ -483,15 +411,7 @@ window (which may have other content) open, as in the following code:
     	htmlLoader.parent.removeChild(htmlLoader);
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## Handling changes of the window.status property
-
-<div>
 
 Override the `updateStatus()` method to handle JavaScript changes to the value
 of `window.status`. The following example traces the status value:
@@ -505,15 +425,7 @@ The requested status is passed as a string to the `updateStatus()` method.
 
 The HTMLLoader object does not provide a status bar.
 
-</div>
-
-</div>
-
-<div>
-
 ## Handling changes of the window.document.title property
-
-<div>
 
 override the `updateTitle()` method to handle JavaScript changes to the value of
 `window.document.title`. The following example changes the window title and
@@ -531,15 +443,7 @@ Changes to `document.title` do not have to change the title of the window
 containing the HTMLLoader object. You could, for example, change another
 interface element, such as a text field.
 
-</div>
-
-</div>
-
-<div>
-
 ## Handling JavaScript calls to window.blur() and window.focus()
-
-<div>
 
 Override the `windowBlur()` and `windowFocus()` methods to handle JavaScript
 calls to `window.blur()` and `window.focus()`, as shown in the following
@@ -555,21 +459,9 @@ example:
     	NativeApplication.nativeApplication.activate(htmlLoader.stage.nativeWindow);
     }
 
-<div>
-
 Note: AIR does not provide an API for deactivating a window or application.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Creating windows with scrolling HTML content
-
-<div>
 
 The HTMLLoader class includes a static method, `HTMLLoader.createRootWindow()`,
 which lets you open a new window (represented by a NativeWindow object) that
@@ -577,16 +469,12 @@ contains an HTMLLoader object and define some user interface settings for that
 window. The method takes four parameters, which let you define the user
 interface:
 
-<div>
-
 | Parameter           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `visible`           | A Boolean value that specifies whether the window is initially visible ( `true`) or not ( `false`).                                                                                                                                                                                                                                                                                                                                                                                                         |
 | `windowInitOptions` | A [NativeWindowInitOptions](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeWindowInitOptions.html) object. The NativeWindowInitOptions class defines initialization options for a NativeWindow object, including the following: whether the window is minimizable, maximizable, or resizable, whether the window has system chrome or custom chrome, whether the window is transparent or not (for windows that do not use system chrome), and the type of window. |
 | `scrollBarsVisible` | Whether there are scroll bars ( `true`) or not ( `false`).                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | `bounds`            | A [Rectangle](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Rectangle.html) object defining the position and size of the new window.                                                                                                                                                                                                                                                                                                                                       |
-
-</div>
 
 For example, the following code uses the `HTMLLoader.createRootWindow()` method
 to create a window with HTMLLoader content that uses scroll bars:
@@ -598,25 +486,9 @@ to create a window with HTMLLoader content that uses scroll bars:
     html2.load(urlReq2);
     html2.stage.nativeWindow.activate();
 
-<div>
-
 Note: Windows created by calling `createRootWindow()` directly in JavaScript
 remain independent from the opening HTML window. The JavaScript Window `opener`
 and `parent` properties, for example, are `null`. However, if you call
 `createRootWindow()` indirectly by overriding the HTMLHost `createWindow()`
 method to call `createRootWindow()`, then `opener` and `parent` do reference the
 opening HTML window.
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

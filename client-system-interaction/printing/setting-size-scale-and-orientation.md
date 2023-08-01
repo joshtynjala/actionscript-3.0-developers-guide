@@ -1,7 +1,5 @@
 # Setting size, scale, and orientation
 
-<div>
-
 The section [Printing a page](WS5b3ccc516d4fbf351e63e3d118a9b90204-7cc7.html)
 details the steps for a basic print job, where the output directly reflects the
 printed equivalent of the screen size and position of the specified sprite.
@@ -17,13 +15,7 @@ settings, specify a print area, adjust for the difference between a screen's
 resolution and a printer's point measurements, or transform your content to meet
 the size or orientation settings of the user's printer.
 
-</div>
-
-<div>
-
 ## Using rectangles for the print area
-
-<div>
 
 The `PrintJob.addPage()` method allows you to specify the region of a sprite
 that you want printed. The second parameter, `printArea,` is in the form of a
@@ -47,15 +39,7 @@ parameter:
 
       myPrintJob.addPage(sheet, null, options);
 
-</div>
-
-</div>
-
-<div>
-
 ## Comparing points and pixels
-
-<div>
 
 A rectangle's width and height are pixel values. A printer uses points as print
 units of measurement. Points are a fixed physical size (1/72 inch), but the size
@@ -77,15 +61,7 @@ twips or points (a twip is 1/20 of a point):
 If you omit the `printArea` parameter, or if it is passed incorrectly, the full
 area of the sprite is printed.
 
-</div>
-
-</div>
-
-<div>
-
 ## Scaling
-
-<div>
 
 If you want to scale a Sprite object before you print it, set the scale
 properties (see
@@ -100,15 +76,7 @@ size.
 For an example, see
 [Printing example: Scaling, cropping, and responding](WS5b3ccc516d4fbf351e63e3d118a9b90204-7cc5.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Printing for landscape or portrait orientation
-
-<div>
 
 Because Flash Player and AIR can detect the settings for orientation, you can
 build logic into your ActionScript to adjust the content size or rotation in
@@ -119,27 +87,15 @@ response to the printer settings, as the following example illustrates:
     	mySprite.rotation = 90;
     }
 
-<div>
-
 Note: If you plan to read the system setting for content orientation on the
 paper, remember to import the
 [PrintJobOrientation class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/printing/PrintJobOrientation.html).
 The PrintJobOrientation class provides constant values that define the content
 orientation on the page. You import the class using the following statement:
 
-</div>
-
     import flash.printing.PrintJobOrientation;
 
-</div>
-
-</div>
-
-<div>
-
 ## Responding to page height and width
-
-<div>
 
 Using a strategy that is similar to handling printer orientation settings, you
 can read the page height and width settings and respond to them by embedding
@@ -155,15 +111,3 @@ and paper dimensions, as the following example illustrates:
 
     margin_height = (myPrintJob.paperHeight - myPrintJob.pageHeight) / 2;
     margin_width = (myPrintJob.paperWidth - myPrintJob.pageWidth) / 2;
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

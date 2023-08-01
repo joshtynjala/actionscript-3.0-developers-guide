@@ -1,7 +1,5 @@
 # Drop shadow filter
 
-<div>
-
 Drop shadows give the impression that there is a separate light source situated
 above a target object. The position and intensity of this light source can be
 modified to produce a variety of different drop shadow effects.
@@ -39,5 +37,3 @@ to it:
     // inner shadows and knockout effects.
 
     boxShadow.filters = [shadow];
-
-</div>

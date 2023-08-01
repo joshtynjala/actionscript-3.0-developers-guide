@@ -1,18 +1,12 @@
 # Web service requests
 
-<div>
-
 There are a variety of HTTP-based web services. The main types include:
-
-<div>
 
 - REST
 
 - XML-RPC
 
 - SOAP
-
-</div>
 
 To use a web service in ActionScript 3, you create a URLRequest object,
 construct the web service call using either URL variables or an XML document,
@@ -42,17 +36,7 @@ applications, content in the application security sandbox can make cross-domain
 XMLHttpRequests. You can allow content in other security sandboxes to make
 cross-domain XMLHttpRequests as long as that content is loaded into an iframe.
 
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
 
 [Website controls (policy files)](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e08.html)
 
@@ -61,8 +45,6 @@ More Help topics
 [XML-RPC web service requests](WSb2ba3b1aad8a27b061afd5d7127074bbf44-7fff.html)
 
 [SOAP web service requests](WSb2ba3b1aad8a27b061afd5d7127074bbf44-7ffe.html)
-
-</div>
 
 ![](../../img/flexLinkIndicator.png)
 [Accessing server-side data](https://help.adobe.com/en_US/Flex/4.5/AccessingData/WS2db454920e96a9e51e63e3d11c0bf69084-7ff2.html)
@@ -76,9 +58,3 @@ More Help topics
 [XML-RPC](http://en.wikipedia.org/wiki/XML-RPC)
 
 [SOAP protocol](http://www.w3.org/TR/soap/)
-
-<div>
-
-</div>
-
-</div>

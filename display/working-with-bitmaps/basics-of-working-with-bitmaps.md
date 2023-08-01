@@ -1,7 +1,5 @@
 # Basics of working with bitmaps
 
-<div>
-
 When you work with digital images, you're likely to encounter two main types of
 graphics: bitmap and vector. Bitmap graphics, also known as raster graphics, are
 composed of tiny squares (pixels) that are arranged in a rectangular grid
@@ -30,8 +28,6 @@ Because bitmap graphics are resolution-dependent, they don't scale very well.
 This is most noticeable when bitmap images are scaled up in size. Scaling up a
 bitmap usually results in a loss of detail and quality.
 
-<div>
-
 #### Bitmap file formats
 
 Bitmap images are grouped into a number of common file formats. These formats
@@ -39,19 +35,11 @@ use different types of compression algorithms to reduce file size, as well as
 optimize image quality based on the end purpose of the image. The bitmap image
 formats supported by Adobe runtimes are BMP, GIF, JPG, PNG, and TIFF.
 
-</div>
-
-<div>
-
 #### BMP
 
 The BMP (bit mapped) format is a default image format used by the Microsoft
 Windows operating system. It does not use any form of compression algorithm and
 as such usually results in large file sizes.
-
-</div>
-
-<div>
 
 #### GIF
 
@@ -64,10 +52,6 @@ gradients. GIF images permit single-bit transparency, which allows colors to be
 mapped as clear (or transparent). This results in the background color of a web
 page showing through the image where the transparency has been mapped.
 
-</div>
-
-<div>
-
 #### JPEG
 
 Developed by the Joint Photographic Experts Group (JPEG), the JPEG (often
@@ -77,10 +61,6 @@ image is saved, the image loses quality and data but results in a smaller file
 size. The JPEG format is ideal for photographs because it is capable of
 displaying millions of colors. The ability to control the degree of compression
 applied to an image allows you to manipulate image quality and file size.
-
-</div>
-
-<div>
 
 #### PNG
 
@@ -92,10 +72,6 @@ lossless compression, which means that none of the image data is lost when the
 image is saved. PNG files also support alpha transparency, which allows for up
 to 256 levels of transparency.
 
-</div>
-
-<div>
-
 #### TIFF
 
 The Tagged Image File Format (TIFF) was the cross-platform format of choice
@@ -104,10 +80,6 @@ of the many different varieties of TIFF, there is no single reader that can
 handle every version. In addition, no web browsers currently support the format.
 TIFF can use either lossy or lossless compression, and is able to handle
 device-specific color spaces (such as CMYK).
-
-</div>
-
-<div>
 
 #### Transparent bitmaps and opaque bitmaps
 
@@ -124,10 +96,6 @@ backgrounds.
 ActionScript 3.0 replicates this extra transparency pixel byte within the
 BitmapData class. Similar to the PNG transparency model, ActionScript offers up
 to 256 levels of transparency.
-
-</div>
-
-<div>
 
 #### Important concepts and terms
 
@@ -164,7 +132,3 @@ and height in number of pixels.
 RGB color  
 A color scheme where each pixel's color is represented as a mixture of red,
 green, and blue color values.
-
-</div>
-
-</div>

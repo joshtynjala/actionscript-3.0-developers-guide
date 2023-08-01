@@ -1,7 +1,5 @@
 # Localizing applications
 
-<div>
-
 Localization is the process of including assets to support multiple locales. A
 locale is the combination of a language and a country code. For example, en_US
 refers to the English language as spoken in the United States, and fr_FR refers
@@ -24,18 +22,10 @@ provide additional assets for the en_US locale, specific to U.S. English.
 Localization goes beyond just translating strings used in your application. It
 can also include any type of asset such as audio files, images, and videos.
 
-</div>
-
-<div>
-
 ## Choosing a locale
-
-<div>
 
 To determine which locale your content or application uses, you can use one of
 the following methods:
-
-<div>
 
 - flash.globalization package — Use the locale-aware classes in the
   flash.globalization package to retrieve the default locale for the user based
@@ -65,17 +55,7 @@ the following methods:
   returns only the language code, not the country code. For these reasons, it is
   better to use the first element in the `Capabilities.languages` array.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Localizing Flex content
-
-<div>
 
 Adobe Flex includes a framework for localizing Flex content. This framework
 includes the Locale, ResourceBundle, and ResourceManagerImpl classes, as well as
@@ -84,15 +64,7 @@ the IResourceBundle, IResourceManagerImpl interfaces.
 A Flex localization library containing utility classes for sorting application
 locales is available on Google Code (http://code.google.com/p/as3localelib/).
 
-</div>
-
-</div>
-
-<div>
-
 ## Localizing Flash content
-
-<div>
 
 Adobe Flash Professional includes a Locale class in the ActionScript 3.0
 components. The Locale class allows you to control how a SWF file displays
@@ -104,30 +76,14 @@ information, see the
 class listing in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Localizing AIR applications
-
-<div>
 
 The AIR SDK provides an HTML Localization Framework (contained in an
 AIRLocalizer.js file). This framework includes APIs that assist in working with
 multiple locales in an HTML-based application. An ActionScript library for
 sorting locales is provided at http://code.google.com/p/as3localelib/.
 
-</div>
-
-</div>
-
-<div>
-
 ## Localizing dates, times, and currencies
-
-<div>
 
 The way applications present dates, times, and currencies varies greatly for
 each locale. For example, the U.S. standard for representing dates is
@@ -139,8 +95,6 @@ following code converts a Date object into month/day/year format or
 day/month/year format. if the `locale` variable (representing the locale) is set
 to `"en_US"`, the function returns month/day/year format. The example converts a
 Date object into day/month/year format for all other locales:
-
-<div>
 
     function convertDate(date)
     {
@@ -154,10 +108,6 @@ Date object into day/month/year format for all other locales:
     	}
     }
 
-</div>
-
-<div>
-
 #### ADOBE FLEX
 
 The Flex framework includes controls for formatting dates, times, and
@@ -168,23 +118,7 @@ controls.
 
 - [mx:CurrencyFormatter](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/mx/formatters/CurrencyFormatter.html)
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
-
-</div>
 
 ![](../img/flexLinkIndicator.png)
 [Localization](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fcf.html)
@@ -196,9 +130,3 @@ More Help topics
 
 ![](../img/airLinkIndicator.png)
 [Localizing HTML content with the AIR HTML localization framework](https://help.adobe.com/en_US/air/build/WS7097DF4C-EFCF-4d55-ADE1-682F0FDA26AC.html)
-
-<div>
-
-</div>
-
-</div>

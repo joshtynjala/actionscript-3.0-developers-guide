@@ -1,7 +1,5 @@
 # AIR file basics
 
-<div>
-
 For a quick explanation and code examples of working with the file system in
 AIR, see the following quick start articles on the Adobe Developer Connection:
 
@@ -24,15 +22,11 @@ Adobe AIR provides classes that you can use to access, create, and manage both
 files and folders. These classes, contained in the flash.filesystem package, are
 used as follows:
 
-<div>
-
 | File classes                                                                                                       | Description                                                                                                                                                                                                                                                                                                                                |
 | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [File](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/File.html)             | File object represents a path to a file or directory. You use a file object to create a pointer to a file or folder, initiating interaction with the file or folder.                                                                                                                                                                       |
 | [FileMode](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/FileMode.html)     | The FileMode class defines string constants used in the `fileMode` parameter of the `open()` and `openAsync()` methods of the FileStream class. The `fileMode` parameter of these methods determines the capabilities available to the FileStream object once the file is opened, which include writing, reading, appending, and updating. |
 | [FileStream](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/FileStream.html) | FileStream object is used to open files for reading and writing. Once you've created a File object that points to a new or existing file, you pass that pointer to the FileStream object so that you can open it and read or write data.                                                                                                   |
-
-</div>
 
 Some methods in the File class have both synchronous and asynchronous versions:
 
@@ -63,13 +57,3 @@ The synchronous versions let you write simpler code that does not rely on
 setting up event listeners. However, since other code cannot execute while a
 synchronous method is executing, important processes such as display object
 rendering and animation can be delayed.
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # Understanding cue points
 
-<div>
-
 You can embed cue points in an Adobe F4V or FLV video file during encoding.
 Historically, cue points were embedded in movies to give the projectionist a
 visual signal that indicated the reel of film was nearing the end. In Adobe F4V
@@ -54,13 +52,3 @@ For more information on F4V cue points, see
 
 For more information on handling cue points and metadata, see
 [Writing callback methods for metadata and cue points](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d3f.html).
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

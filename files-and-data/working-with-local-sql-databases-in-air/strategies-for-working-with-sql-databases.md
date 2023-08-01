@@ -1,7 +1,5 @@
 # Strategies for working with SQL databases
 
-<div>
-
 There are various ways that an application can access and work with a local SQL
 database. The application design can vary in terms of how the application code
 is organized, the sequence and timing of how operations are performed, and so
@@ -10,13 +8,7 @@ your application. They can affect how easy it is to modify the application in
 future updates. They can also affect how well the application performs from the
 users' perspective.
 
-</div>
-
-<div>
-
 ## Distributing a pre-populated database
-
-<div>
 
 When you use an AIR local SQL database in your application, the application
 expects a database with a certain structure of tables, columns, and so forth.
@@ -43,27 +35,13 @@ a user runs the application, copy the original database file into the user's
 [Pointing to the application storage directory](WS5b3ccc516d4fbf351e63e3d118676a4c56-7fc6.html)
 (or another location), and use that database within the application.
 
-</div>
-
-</div>
-
-<div>
-
 ## Best practices for working with local SQL databases
-
-<div>
 
 The following list is a set of suggested techniques you can use to improve the
 performance, security, and ease of maintenance of your applications when working
 with local SQL databases.
 
-</div>
-
-<div>
-
 ### Pre-create database connections
-
-<div>
 
 Even if your application doesn't execute any statements when it first loads,
 instantiate a SQLConnection object and call its `open()` or `openAsync()` method
@@ -71,30 +49,14 @@ ahead of time (such as after the initial application startup) to avoid delays
 when running statements. See
 [Connecting to a database](WS5b3ccc516d4fbf351e63e3d118666ade46-7d32.html).
 
-</div>
-
-</div>
-
-<div>
-
 ### Reuse database connections
-
-<div>
 
 If you access a certain database throughout the execution time of your
 application, keep a reference to the SQLConnection instance, and reuse it
 throughout the application, rather than closing and reopening the connection.
 See [Connecting to a database](WS5b3ccc516d4fbf351e63e3d118666ade46-7d32.html).
 
-</div>
-
-</div>
-
-<div>
-
 ### Favor asynchronous execution mode
-
-<div>
 
 When writing data-access code, it can be tempting to execute operations
 synchronously rather than asynchronously, because using synchronous operations
@@ -131,15 +93,7 @@ makes asynchronous code like synchronous code in terms of how the code is
 written. For more information, see
 [Understanding the asynchronous execution model](WS5b3ccc516d4fbf351e63e3d118666ade46-7d2b.html).
 
-</div>
-
-</div>
-
-<div>
-
 ### Use separate SQL statements and don't change the SQLStatement's text property
-
-<div>
 
 For any SQL statement that is executed more than once in an application, create
 a separate SQLStatement instance for each SQL statement. Use that SQLStatement
@@ -150,15 +104,7 @@ instances and call each statement's `execute()` method to run it. Avoid the
 alternative of using a single SQLStatement instance for all SQL statements,
 redefining its `text` property each time before executing the statement.
 
-</div>
-
-</div>
-
-<div>
-
 ### Use statement parameters
-
-<div>
 
 Use SQLStatement parameters—never concatenate user input into statement text.
 Using parameters makes your application more secure because it prevents the
@@ -168,17 +114,3 @@ efficiently because they can be reused without needing to be recompiled each
 time they're executed. See
 [Using parameters in statements](WS5b3ccc516d4fbf351e63e3d118666ade46-7d42.html)
 for more information.
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # Writing callback methods for metadata and cue points
 
-<div>
-
 You can trigger actions in your application when specific metadata is received
 by the player or when specific cue points are reached. When these events occur,
 you must use specific callback methods as event handlers. The NetStream class
@@ -47,13 +45,7 @@ The errors occur because the NetStream object was unable to find an `onMetaData`
 or `onCuePoint` callback method. There are several ways to define these callback
 methods within your applications.
 
-</div>
-
-<div>
-
 ## Set the NetStream object's client property to an Object
-
-<div>
 
 By setting the `client` property to either an Object or a subclass of NetStream,
 you can reroute the `onMetaData` and `onCuePoint` callback methods or ignore
@@ -90,15 +82,7 @@ The previous code listens for the `onMetaData` callback method and calls the
 encountered a cue point, no errors would be generated even though no
 `onCuePoint` callback method is defined.
 
-</div>
-
-</div>
-
-<div>
-
 ## Create a custom class and define methods to handle the callback methods
-
-<div>
 
 The following code sets the NetStream object's `client` property to a custom
 class, CustomClient, which defines handlers for the callback methods:
@@ -135,15 +119,7 @@ prevent this error, you would either need to define an `onCuePoint` callback
 method in your CustomClient class, or define an event handler for the
 `asyncError` event.
 
-</div>
-
-</div>
-
-<div>
-
 ## Extend the NetStream class and add methods to handle the callback methods
-
-<div>
 
 The following code creates an instance of the CustomNetStream class, which is
 defined in a later code listing:
@@ -214,15 +190,7 @@ CustomNetStream class, you could use the following code:
     	}
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## Extend the NetStream class and make it dynamic
-
-<div>
 
 You can extend the NetStream class and make the subclass dynamic so that
 `onCuePoint` and `onMetaData` callback handlers can be added dynamically. This
@@ -276,15 +244,7 @@ you could use the following code:
     	trace("cue point");
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## Set the NetStream object's client property to this
-
-<div>
 
 By setting the `client` property to `this`, the application looks in the current
 scope for `onMetaData()` and `onCuePoint()` methods. You can see this in the
@@ -315,27 +275,7 @@ seen in the following snippet:
     	trace("cue point");
     }
 
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
-
-</div>
 
 ![](../../img/flashmediaserverLinkIndicator.png)
 [Flash Media Server: Handling metadata in streams](https://help.adobe.com/en_US/FlashMediaServer/3.5_Deving/WS5b3ccc516d4fbf351e63e3d11a0773d117-7fc8.html#WS5b3ccc516d4fbf351e63e3d11a0773d117-7fdb)
-
-<div>
-
-</div>
-
-</div>

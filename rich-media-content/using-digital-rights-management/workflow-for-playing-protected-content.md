@@ -1,27 +1,15 @@
 # Workflow for playing protected content
 
-<div>
-
-1.  <div>
-
-    Create a `MediaPlayer` instance.
+1.  Create a `MediaPlayer` instance.
 
         player = new MediaPlayer();
 
-    </div>
-
-2.  <div>
-
-    Register `MediaPlayerCapabilityChangeEvent.HAS_DRM_CHANGE` event to the
+2.  Register `MediaPlayerCapabilityChangeEvent.HAS_DRM_CHANGE` event to the
     player. This event will be dispatched if the content is DRM protected.
 
         player.addEventListener(MediaPlayerCapabilityChangeEvent.HAS_DRM_CHANGE, onDRMCapabilityChange);
 
-    </div>
-
-3.  <div>
-
-    In the event handler, obtain the `DRMTrait` instance. `DRMTrait` is the
+3.  In the event handler, obtain the `DRMTrait` instance. `DRMTrait` is the
     interface through which you invoke DRM-related methods, such as
     `authenticate()`. When loading a DRM-protected content, OSMF performs the
     DRM validating actions and dispatches state events. Add a
@@ -38,11 +26,7 @@
                 }
             }
 
-    </div>
-
-4.  <div>
-
-    Handle the DRM events in the `onDRMStateChange()` method.
+4.  Handle the DRM events in the `onDRMStateChange()` method.
 
         private function onDRMStateChange(event :DRMEvent) :void
         {
@@ -110,15 +94,3 @@
         			break;
         	}
         }
-
-    </div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

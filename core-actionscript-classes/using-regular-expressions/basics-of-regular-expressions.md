@@ -1,7 +1,5 @@
 # Basics of regular expressions
 
-<div>
-
 A regular expression describes a pattern of characters. Regular expressions are
 typically used to verify that a text value conforms to a particular pattern
 (such as verifying that a user-entered phone number has the proper number of
@@ -36,8 +34,6 @@ The RegExp class includes the following methods: `test()` and `exec()`. For more
 information, see
 [Methods for using regular expressions with strings](./methods-for-using-regular-expressions-with-strings.md).
 
-<div>
-
 #### Important concepts and terms
 
 The following reference list contains important terms that are relevant to this
@@ -66,7 +62,3 @@ a United States postal code should contain five or nine numbers.
 Regular expression  
 A program statement defining a pattern of characters that can be used to confirm
 whether other strings match that pattern or to replace portions of a string.
-
-</div>
-
-</div>

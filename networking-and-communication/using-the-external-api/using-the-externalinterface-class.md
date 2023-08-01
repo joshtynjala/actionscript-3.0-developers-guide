@@ -1,7 +1,5 @@
 # Using the ExternalInterface class
 
-<div>
-
 Communication between ActionScript and the container application can take one of
 two forms: either ActionScript can call code (such as a JavaScript function)
 defined in the container, or code in the container can call an ActionScript
@@ -15,13 +13,7 @@ to obtain information about the external interface connection, to execute code
 in the container from ActionScript, and to make ActionScript functions available
 to be called by the container.
 
-</div>
-
-<div>
-
 ## Getting information about the external container
-
-<div>
 
 The `ExternalInterface.available` property indicates whether the current Flash
 Player is in a container that offers an external interface. If the external
@@ -35,13 +27,9 @@ interface communication, as follows:
     	// Perform ExternalInterface method calls here.
     }
 
-<div>
-
 Note: The `ExternalInterface.available` property reports whether the current
 container is a type that supports ExternalInterface connectivity. It doesn't
 tell you if JavaScript is enabled in the current browser.
-
-</div>
 
 The `ExternalInterface.objectID` property allows you to determine the unique
 identifier of the Flash Player instance (specifically, the `id` attribute of the
@@ -52,15 +40,7 @@ document—for example, when calling a JavaScript function in a container HTML
 page. When the Flash Player container is not a web browser, this property is
 `null`.
 
-</div>
-
-</div>
-
-<div>
-
 ## Calling external code from ActionScript
-
-<div>
 
 The `ExternalInterface.call()` method executes code in the container
 application. It requires at least one parameter, a string containing the name of
@@ -108,15 +88,7 @@ value for `allowScriptAccess` in the containing environment. For example, to
 change the value of `allowScriptAccess` in an HTML page, you would edit the
 appropriate attribute in the `object` and `embed` tags.
 
-</div>
-
-</div>
-
-<div>
-
 ## Calling ActionScript code from the container
-
-<div>
 
 A container can only call ActionScript code that's in a function—no other
 ActionScript code can be called by a container. To call an ActionScript function
@@ -174,15 +146,7 @@ the container code, either directly as a value when the caller is JavaScript
 code in a browser, or serialized as an XML-formatted string when the caller is
 an ActiveX container.
 
-</div>
-
-</div>
-
-<div>
-
 ## The external API's XML format
-
-<div>
 
 Communication between ActionScript and an application hosting the Shockwave
 Flash ActiveX control uses a specific XML format to encode function calls and
@@ -212,131 +176,105 @@ a formatting scheme that includes data type information in addition to the
 actual values. The following table lists ActionScript classes and the XML format
 used to encode values of that data type:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>ActionScript class/value</p></th>
-<th><p>C# class/value</p></th>
-<th><p>Format</p></th>
-<th><p>Comments</p></th>
-</tr>
+    <tr>
+        <th><p>ActionScript class/value</p></th>
+        <th><p>C# class/value</p></th>
+        <th><p>Format</p></th>
+        <th><p>Comments</p></th>
+    </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><p>null</p></td>
-<td><p>null</p></td>
-<td><p>&lt;null/&gt;</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>Boolean <samp>true</samp></p></td>
-<td><p>bool true</p></td>
-<td><p>&lt;true/&gt;</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>Boolean <samp>false</samp></p></td>
-<td><p>bool false</p></td>
-<td><p>&lt;false/&gt;</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>String</p></td>
-<td><p>string</p></td>
-<td><p>&lt;string&gt;string value&lt;/string&gt;</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>Number, int, uint</p></td>
-<td><p>single, double, int, uint</p></td>
-<td><div>
-<pre><code>&lt;number&gt;27.5&lt;/number&gt; 
-&lt;number&gt;-12&lt;/number&gt;</code></pre>
-</div></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>Array (elements can be mixed types)</p></td>
-<td><p>A collection that allows mixed-type elements, such as ArrayList
-or object[]</p></td>
-<td><div>
-<pre><code>&lt;array&gt; 
-&lt;property id=&quot;0&quot;&gt; 
-    &lt;number&gt;27.5&lt;/number&gt; 
-&lt;/property&gt; 
-&lt;property id=&quot;1&quot;&gt; 
-    &lt;string&gt;Hello there!&lt;/string&gt; 
-&lt;/property&gt; 
-... 
-&lt;/array&gt;</code></pre>
-</div></td>
-<td><p>The <samp>property</samp> node defines individual elements, and
-the <samp>id</samp> attribute is the numeric, zero-based index.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Object</p></td>
-<td><p>A dictionary with string keys and object values, such as a
-HashTable with string keys</p></td>
-<td><div>
-<pre><code>&lt;object&gt; 
-&lt;property id=&quot;name&quot;&gt; 
-    &lt;string&gt;John Doe&lt;/string&gt; 
-&lt;/property&gt; 
-&lt;property id=&quot;age&quot;&gt; 
-    &lt;string&gt;33&lt;/string&gt; 
-&lt;/property&gt; 
-... 
-&lt;/object&gt;</code></pre>
-</div></td>
-<td><p>The <samp>property</samp> node defines individual properties, and
-the <samp>id</samp> attribute is the property name (a string).</p></td>
-</tr>
-<tr class="even">
-<td><p>Other built-in or custom classes</p></td>
-<td></td>
-<td><div>
-<pre><code>&lt;null/&gt; or  
-&lt;object&gt;&lt;/object&gt;</code></pre>
-</div></td>
-<td><p>ActionScript encodes other objects as null or as an empty object.
-In either case any property values are lost.</p></td>
-</tr>
+    <tr>
+        <td><p>null</p></td>
+        <td><p>null</p></td>
+        <td><p>&lt;null/&gt;</p></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><p>Boolean <samp>true</samp></p></td>
+        <td><p>bool true</p></td>
+        <td><p>&lt;true/&gt;</p></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><p>Boolean <samp>false</samp></p></td>
+        <td><p>bool false</p></td>
+        <td><p>&lt;false/&gt;</p></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><p>String</p></td>
+        <td><p>string</p></td>
+        <td><p>&lt;string&gt;string value&lt;/string&gt;</p></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><p>Number, int, uint</p></td>
+        <td><p>single, double, int, uint</p></td>
+        <td><div>
+        <pre><code>&lt;number&gt;27.5&lt;/number&gt; 
+        &lt;number&gt;-12&lt;/number&gt;</code></pre>
+        </div></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><p>Array (elements can be mixed types)</p></td>
+        <td><p>A collection that allows mixed-type elements, such as ArrayList
+        or object[]</p></td>
+        <td><div>
+        <pre><code>&lt;array&gt; 
+        &lt;property id=&quot;0&quot;&gt; 
+            &lt;number&gt;27.5&lt;/number&gt; 
+        &lt;/property&gt; 
+        &lt;property id=&quot;1&quot;&gt; 
+            &lt;string&gt;Hello there!&lt;/string&gt; 
+        &lt;/property&gt; 
+        ... 
+        &lt;/array&gt;</code></pre>
+        </div></td>
+        <td><p>The <samp>property</samp> node defines individual elements, and
+        the <samp>id</samp> attribute is the numeric, zero-based index.</p></td>
+    </tr>
+    <tr>
+        <td><p>Object</p></td>
+        <td><p>A dictionary with string keys and object values, such as a
+        HashTable with string keys</p></td>
+        <td><div>
+        <pre><code>&lt;object&gt; 
+        &lt;property id=&quot;name&quot;&gt; 
+            &lt;string&gt;John Doe&lt;/string&gt; 
+        &lt;/property&gt; 
+        &lt;property id=&quot;age&quot;&gt; 
+            &lt;string&gt;33&lt;/string&gt; 
+        &lt;/property&gt; 
+        ... 
+        &lt;/object&gt;</code></pre>
+        </div></td>
+        <td><p>The <samp>property</samp> node defines individual properties, and
+        the <samp>id</samp> attribute is the property name (a string).</p></td>
+    </tr>
+    <tr>
+        <td><p>Other built-in or custom classes</p></td>
+        <td></td>
+        <td><div>
+        <pre><code>&lt;null/&gt; or  
+        &lt;object&gt;&lt;/object&gt;</code></pre>
+        </div></td>
+        <td><p>ActionScript encodes other objects as null or as an empty object.
+        In either case any property values are lost.</p></td>
+    </tr>
 </tbody>
 </table>
-
-</div>
-
-<div>
 
 Note: By way of example, this table shows equivalent C# classes in addition to
 ActionScript classes; however, the external API can be used to communicate with
 any programming language or run time that supports ActiveX controls, and is not
 limited to C# applications.
 
-</div>
-
 When you are building your own applications using the external API with an
 ActiveX container application, you'll probably find it convenient to write a
 proxy that will perform the task of converting native function calls to the
 serialized XML format. For an example of a proxy class written in C#, see Inside
 the ExternalInterfaceProxy class.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

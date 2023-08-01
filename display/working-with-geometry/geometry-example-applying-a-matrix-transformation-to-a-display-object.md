@@ -1,7 +1,5 @@
 # Geometry example: Applying a matrix transformation to a display object
 
-<div>
-
 The DisplayObjectTransformer sample application shows a number of features of
 using the Matrix class to transform a display object, including the following:
 
@@ -16,31 +14,15 @@ using the Matrix class to transform a display object, including the following:
 The application provides an interface for adjusting the parameters of the matrix
 transformation, as follows:
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](../../img/ge_DisplayObjectTransformer-1.png)
-
-</div>
 
 When the user clicks the Transform button, the application applies the
 appropriate transformation.
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](../../img/ge_DisplayObjectTransformer-2.png)
-
-<div>
 
 The original display object, and the display object rotated by -45° _and scaled
 by 50%_
-
-</div>
-
-</div>
 
 To get the application files for this sample, see
 [_FlashPlatformAS3DevGuideExamples.zip_](https://github.com/joshtynjala/flash-platform-as3-dev-guide-examples/releases/tag/original).
@@ -48,54 +30,40 @@ The DisplayObjectTransformer application files can be found in the folder
 Samples/DisplayObjectTransformer. The application consists of the following
 files:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>File</p></th>
-<th><p>Description</p></th>
-</tr>
+    <tr>
+        <th><p>File</p></th>
+        <th><p>Description</p></th>
+    </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td headers="d17e17434 "><p>DisplayObjectTransformer.mxml</p>
-<p>or</p>
-<p>DisplayObjectTransformer.fla</p></td>
-<td headers="d17e17437 "><p>The main
-application file in Flash (FLA) or Flex (MXML)</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e17434 "><p>com/example/programmingas3/geometry/MatrixTransformer.as</p></td>
-<td headers="d17e17437 "><p>A class that
-contains methods for applying matrix transformations.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e17434 "><p>img/</p></td>
-<td headers="d17e17437 "><p>A directory
-containing sample image files used by the application.</p></td>
-</tr>
+    <tr>
+        <td >
+            <p>DisplayObjectTransformer.mxml</p>
+            <p>or</p>
+            <p>DisplayObjectTransformer.fla</p>
+        </td>
+        <td ><p>The main
+        application file in Flash (FLA) or Flex (MXML)</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/geometry/MatrixTransformer.as</p></td>
+        <td ><p>A class that
+        contains methods for applying matrix transformations.</p></td>
+    </tr>
+    <tr>
+        <td ><p>img/</p></td>
+        <td ><p>A directory
+        containing sample image files used by the application.</p></td>
+    </tr>
 </tbody>
 </table>
 
-</div>
-
-</div>
-
-<div>
-
 ## Defining the MatrixTransformer class
-
-<div>
 
 The MatrixTransformer class includes static methods that apply geometric
 transformations of Matrix objects.
-
-<div>
 
 #### The transform() method
 
@@ -126,10 +94,6 @@ The `transform()` method calls the following static methods of the class:
 - `rotate()`
 
 Each returns the source matrix with the applied transformation.
-
-</div>
-
-<div>
 
 #### The skew() method
 
@@ -168,10 +132,6 @@ two matrixes, as the following example shows:
     sourceMatrix.concat(skewMatrix);
     return sourceMatrix;
 
-</div>
-
-<div>
-
 #### The scale() method
 
 The following example shows the `scale()` method adjusts the scale factor if it
@@ -186,10 +146,6 @@ matrix object:
     sourceMatrix.scale(xScale, yScale);
     return sourceMatrix;
 
-</div>
-
-<div>
-
 #### The translate() method
 
 The `translate()` method simply applies the `dx` and `dy` translation factors by
@@ -197,10 +153,6 @@ calling the `translate()` method of the matrix object, as follows:
 
     sourceMatrix.translate(dx, dy);
     return sourceMatrix;
-
-</div>
-
-<div>
 
 #### The rotate() method
 
@@ -219,17 +171,7 @@ matrix object:
     sourceMatrix.rotate(angle);
     return sourceMatrix;
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Calling the MatrixTransformer.transform() method from the application
-
-<div>
 
 The application contains a user interface for getting the transformation
 parameters from the user. It then passes these values, along with the `matrix`
@@ -249,7 +191,3 @@ The application then applies the return value to the `matrix` property of the
 `transform` property of the display object, triggering the transformation:
 
     img.content.transform.matrix = tempMatrix;
-
-</div>
-
-</div>

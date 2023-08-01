@@ -1,20 +1,12 @@
 # Working with directories
 
-<div>
-
 The runtime provides you with capabilities to work with directories on the local
 file system.
 
 For details on creating File objects that point to directories, see
 [Pointing a File object to a directory](WS5b3ccc516d4fbf351e63e3d118666ade46-7dbe.html).
 
-</div>
-
-<div>
-
 ## Creating directories
-
-<div>
 
 The `File.createDirectory()` method lets you create a directory. For example,
 the following code creates a directory named AIR Test as a subdirectory of the
@@ -31,15 +23,7 @@ the `fileMode` parameter of the `FileStream()` constructor set to
 `FileMode.APPEND` or `FileMode.WRITE`. For more information, see
 [Workflow for reading and writing files](WS5b3ccc516d4fbf351e63e3d118666ade46-7dc8.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Creating a temporary directory
-
-<div>
 
 The File class includes a `createTempDirectory()` method, which creates a
 directory in the temporary directory folder for the System, as in the following
@@ -57,15 +41,7 @@ creating new, unique temporary files in the System temporary directory.
 You may want to delete the temporary directory before closing the application,
 as it is _not_ automatically deleted on all devices.
 
-</div>
-
-</div>
-
-<div>
-
 ## Enumerating directories
-
-<div>
 
 You can use the `getDirectoryListing()` method or the
 `getDirectoryListingAsync()` method of a File object to get an array of File
@@ -98,15 +74,7 @@ the directories:
     	}
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## Copying and moving directories
-
-<div>
 
 You can copy or move a directory, using the same methods as you would to copy or
 move a file. For example, the following code copies a directory synchronously:
@@ -127,15 +95,7 @@ _parent_ directory that will contain the resulting directory.
 For details, see
 [Copying and moving files](WS5b3ccc516d4fbf351e63e3d118666ade46-7dbc.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Deleting directory contents
-
-<div>
 
 The File class includes a `deleteDirectory()` method and a
 `deleteDirectoryAsync()` method. These methods delete directories, the first
@@ -166,15 +126,3 @@ user's documents directory:
 Also included are the `moveToTrash()` and `moveToTrashAsync()` methods, which
 you can use to move a directory to the System trash. For details, see
 [Moving a file to the trash](WS5b3ccc516d4fbf351e63e3d118666ade46-7dba.html).
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

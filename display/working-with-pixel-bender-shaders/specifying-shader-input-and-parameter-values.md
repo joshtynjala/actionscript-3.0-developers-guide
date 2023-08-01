@@ -1,7 +1,5 @@
 # Specifying shader input and parameter values
 
-<div>
-
 Many Pixel Bender shaders are defined to use one or more input images that are
 used in the shader processing. For example, it's common for a shader to accept a
 source image and output that image with a particular effect applied to it.
@@ -14,13 +12,7 @@ You use the Shader object's `data` property to set shader inputs and parameters
 and to determine whether a particular shader expects inputs or parameters. The
 `data` property is a ShaderData instance.
 
-</div>
-
-<div>
-
 ## Identifying shader inputs and parameters
-
-<div>
 
 The first step in specifying shader input and parameter values is to find out
 whether the particular shader you're using expects any input images or
@@ -79,15 +71,7 @@ example assumes a Shader instance named `myShader` is already created:
 
     // do something with the inputs or properties
 
-</div>
-
-</div>
-
-<div>
-
 ## Specifying shader input values
-
-<div>
 
 Many shaders expect one or more input images that are used in the shader
 processing. However, in many cases an input is specified automatically when the
@@ -128,15 +112,7 @@ than the number that are automatically set, then you set values for those
 inputs. For details on the different ways to use a shader, and whether input
 values are automatically set, see [Using a shader](./using-a-shader.md).
 
-</div>
-
-</div>
-
-<div>
-
 ## Specifying shader parameter values
-
-<div>
 
 Some shaders define parameter values that the shader uses in creating its
 result. For example, a shader that alters the brightness of an image might
@@ -181,14 +157,10 @@ the `color` parameter value is changed continuously, and each time it changes
 the shader is used to draw a colored rectangle on the screen. The result is an
 animated color change.
 
-<div>
-
 Note: The code for this example was written by Ryan Taylor. Thank you Ryan for
 sharing this example. You can see Ryan's portfolio and read his writing at
 <a href="http://www.boostworthy.com/"
 target="_self">www.boostworthy.com/</a>.
-
-</div>
 
 The ActionScript code centers around three methods:
 
@@ -339,7 +311,3 @@ parameter named `brightness`:
     }
 
     // do something with the metadata
-
-</div>
-
-</div>

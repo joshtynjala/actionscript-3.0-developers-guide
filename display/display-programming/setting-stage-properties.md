@@ -1,7 +1,5 @@
 # Setting Stage properties
 
-<div>
-
 The Stage class overrides most properties and methods of the DisplayObject
 class. If you call one of these overridden properties or methods, Flash Player
 and AIR throw an exception. For example, the Stage object does not have `x` or
@@ -10,22 +8,12 @@ application. The `x` and `y` properties refer to the position of a display
 object relative to its container, and since the Stage is not contained in
 another display object container, these properties do not apply.
 
-<div>
-
 Note: Some properties and methods of the Stage class are only available to
 display objects that are in the same security sandbox as the first SWF file
 loaded. For details, see
 [Stage security](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e27.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Controlling the playback frame rate
-
-<div>
 
 The `frameRate` property of the Stage class is used to set the frame rate for
 all SWF files loaded into the application. For more information, see the
@@ -33,15 +21,7 @@ all SWF files loaded into the application. For more information, see the
 property description in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Controlling Stage scaling
-
-<div>
 
 When the portion of the screen representing Flash Player or AIR is resized, the
 runtime automatically adjusts the Stage contents to compensate. The Stage
@@ -115,8 +95,6 @@ flash.display.StageScaleMode class:
           controlBar.y = newContentHeight;
       }
 
-<div>
-
 #### Setting the stage scale mode for AIR windows
 
 The stage `scaleMode` property determines how the stage scales and clips child
@@ -150,25 +128,11 @@ code calculates the required scale factor for a display object named `client`:
         client.scaleY = 72/newWindow.stage.stageHeight;
     }
 
-<div>
-
 Note: Flex and HTML windows automatically set the stage `scaleMode` to
 `noScale`. Changing the `scaleMode` disturbs the automatic layout mechanisms
 used in these types of windows.
 
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Working with full-screen mode
-
-<div>
 
 Full-screen mode allows you to set a movie's stage to fill a viewer's entire
 monitor without any container borders or menus. The Stage class's `displayState`
@@ -197,8 +161,6 @@ To exit full-screen mode, set the `displayState` property to
 In addition, a user can choose to leave full-screen mode by switching focus to a
 different window or by using one of several key combinations: the Esc key (all
 platforms), Control-W (Windows), Command-W (Mac), or Alt-F4 (Windows).
-
-<div>
 
 #### Enabling full-screen mode in Flash Player
 
@@ -233,21 +195,13 @@ you should add the `allowFullScreen` parameter to that function call as follows:
 
 This does not apply to SWF files running in the stand-alone Flash Player.
 
-<div>
-
 Note: If you set the Window Mode (wmode in the HTML) to Opaque Windowless
 (opaque) or Transparent Windowless (transparent), the full-screen window is
 always opaque
 
-</div>
-
 There are also security-related restrictions for using full-screen mode with
 Flash Player in a browser. These restrictions are described in
 [Security](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d23.html).
-
-</div>
-
-<div>
 
 #### Enabling full-screen interactive mode in Flash Player 11.3 and higher
 
@@ -289,10 +243,6 @@ function call as follows:
     ); //end AC code
 
 This does not apply to SWF files running in the stand-alone Flash Player.
-
-</div>
-
-<div>
 
 #### Full screen stage size and scaling
 
@@ -349,10 +299,6 @@ of the flash.events.FullScreenEvent class, which includes a `fullScreen`
 property indicating whether full-screen mode is enabled (`true`) or not
 (`false`).
 
-</div>
-
-<div>
-
 #### Keyboard support in full-screen mode
 
 When Flash Player runs in a browser, all keyboard-related ActionScript, such as
@@ -369,10 +315,6 @@ These restrictions are not present for SWF content running in the stand-alone
 Flash Player or in AIR. AIR supports an interactive full-screen mode that allows
 keyboard input.
 
-</div>
-
-<div>
-
 #### Mouse support in full-screen mode
 
 By default, mouse events in full-screen mode work the same way as when not in
@@ -380,22 +322,12 @@ full-screen mode. However, in full-screen mode, you can optionally set the
 `Stage.mouseLock` property to enable mouse locking. Mouse locking disables the
 cursor and enables unbounded mouse movement.
 
-<div>
-
-<div>
-
 Note: You can only enable mouse locking in full-screen mode for desktop
 applications. Setting it on applications not in full-screen mode, or for
 applications on mobile devices, throws an exception.
 
-</div>
-
-</div>
-
 Mouse locking is disabled automatically and the mouse cursor is made visible
 again when:
-
-<div>
 
 - The user exits full-screen mode by using the Escape key (all platforms),
   Control-W (Windows), Command-W (Mac), or Alt-F4 (Windows).
@@ -406,8 +338,6 @@ again when:
 
 - A native dialog box is shown, such as a file upload dialog box.
 
-</div>
-
 Events associated with mouse movement, such as the `mouseMove` event, use the
 MouseEvent class to represent the event object. When mouse locking is disabled,
 use the `MouseEvent.localX` and `MouseEvent.localY` properties to determine the
@@ -416,10 +346,6 @@ location of the mouse.When mouse locking is enabled, use the
 location of the mouse. The `movementX` and `movementY` properties contain
 changes in the position of the mouse since the last event, instead of absolute
 coordinates of the mouse location.
-
-</div>
-
-<div>
 
 #### Hardware scaling in full-screen mode
 
@@ -447,14 +373,10 @@ standard "Press Esc to exit full-screen mode" message. This limit is usually
 around 260 by 30 pixels but can vary depending on platform and Flash Player
 version.
 
-<div>
-
 ![](../../img/tip_help.png) The `fullScreenSourceRect` property can only be set
 when Flash Player or AIR is not in full-screen mode. To use this property
 correctly, set this property first, then set the `displayState` _property to
 full-screen mode._
-
-</div>
 
 To enable scaling, set the `fullScreenSourceRect` property to a rectangle
 object.
@@ -470,10 +392,6 @@ enable it through the Flash Player Settings dialog box. To load the dialog box,
 right-click (Windows) or Control-click (Mac) inside Flash Player content in your
 browser. Select the Display tab, which is the first tab, and click the checkbox:
 Enable hardware acceleration.
-
-</div>
-
-<div>
 
 #### Direct and GPU-compositing window modes
 
@@ -520,9 +438,3 @@ through the Flash Publish Settings dialog box, using the Hardware Acceleration
 menu on the Flash tab. If you choose None, the window mode reverts to `default`,
 `transparent`, or `opaque`, as specified by the Window Mode setting on the HTML
 tab.
-
-</div>
-
-</div>
-
-</div>

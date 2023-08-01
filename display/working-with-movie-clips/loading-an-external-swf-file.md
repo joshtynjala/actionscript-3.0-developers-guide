@@ -1,7 +1,5 @@
 # Loading an external SWF file
 
-<div>
-
 In ActionScript 3.0, SWF files are loaded using the Loader class. To load an
 external SWF file, your ActionScript needs to do four things:
 
@@ -47,13 +45,7 @@ There are a few differences for loading a SWF file in Adobe AIR for iOS versus
 other platforms. For more information, see
 [Loading SWF files in AIR for iOS](WS2f73111e7a180bd0-3db1ea4613c45877121-8000.html).
 
-</div>
-
-<div>
-
 ## Considerations for loading an older SWF file
-
-<div>
 
 If the external SWF file has been published with an older version of
 ActionScript, there are important limitations to consider. Unlike an
@@ -101,60 +93,43 @@ Player in relation to loading newer content and executing code, as well as the
 limitations for cross-scripting between SWF files written in different versions
 of ActionScript.
 
-<div>
-
 | Supported functionality           | Flash Player 7 | Flash Player 8 | Flash Player 9 and 10 |
 | --------------------------------- | -------------- | -------------- | --------------------- |
 | Can load SWFs published for       | 7 and earlier  | 8 and earlier  | 9 (or 10) and earlier |
 | Contains this AVM                 | AVM1           | AVM1           | AVM1 and AVM2         |
 | Runs SWFs written in ActionScript | 1.0 and 2.0    | 1.0 and 2.0    | 1.0 and 2.0, and 3.0  |
 
-</div>
-
 In the following table, "Supported functionality" refers to content running in
 Flash Player 9 or later. Content running in Flash Player 8 or earlier can load,
 display, execute, and cross-script only ActionScript 1.0 and 2.0.
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>Supported functionality</p></th>
-<th><p>Content created in ActionScript
-1.0 and 2.0</p></th>
-<th><p>Content created in ActionScript
-3.0</p></th>
-</tr>
+    <tr>
+        <th><p>Supported functionality</p></th>
+        <th><p>Content created in ActionScript
+        1.0 and 2.0</p></th>
+        <th><p>Content created in ActionScript
+        3.0</p></th>
+    </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td headers="d17e24154 "><p>Can load
-content and execute code in content created in</p></td>
-<td headers="d17e24157 "><p>ActionScript
-1.0 and 2.0 only</p></td>
-<td headers="d17e24160 "><p>ActionScript
-1.0 and 2.0, and ActionScript 3.0</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e24154 "><p>Can cross
-script content created in</p></td>
-<td headers="d17e24157 "><p>ActionScript
-1.0 and 2.0 only (ActionScript 3.0 through Local Connection)</p></td>
-<td headers="d17e24160 "><p>ActionScript
-1.0 and 2.0 through LocalConnection.</p>
-<p>ActionScript 3.0</p></td>
-</tr>
+    <tr>
+        <td ><p>Can load
+        content and execute code in content created in</p></td>
+        <td ><p>ActionScript
+        1.0 and 2.0 only</p></td>
+        <td ><p>ActionScript
+        1.0 and 2.0, and ActionScript 3.0</p></td>
+    </tr>
+    <tr>
+        <td ><p>Can cross
+        script content created in</p></td>
+        <td ><p>ActionScript
+        1.0 and 2.0 only (ActionScript 3.0 through Local Connection)</p></td>
+        <td ><p>ActionScript
+        1.0 and 2.0 through LocalConnection.</p>
+        <p>ActionScript 3.0</p></td>
+    </tr>
 </tbody>
 </table>
-
-</div>
-
-</div>
-
-</div>

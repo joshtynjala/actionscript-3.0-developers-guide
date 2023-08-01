@@ -1,7 +1,5 @@
 # Basics of XML
 
-<div>
-
 XML is a standard way of representing structured information so that it is easy
 for computers to work with and reasonably easy for people to write and
 understand. XML is an abbreviation for eXtensible Markup Language. The XML
@@ -57,8 +55,6 @@ structures such as attributes ( `tracknumber` and `length` in the `song` tags),
 and tags that contain other tags rather than containing data (such as the
 `tracks` tag).
 
-<div>
-
 #### Getting started with XML
 
 If you have little or no experience with XML, here is a brief description of the
@@ -109,10 +105,6 @@ attribute named `length`, with the value `"4:19"`:
 Each XML element has content, which is either a single value, one or more XML
 elements, or nothing (for an empty element).
 
-</div>
-
-<div>
-
 #### Learning more about XML
 
 To learn more about working with XML, there are a number of additional books and
@@ -124,10 +116,6 @@ resources for learning more about XML, including these web sites:
 - XMLpitstop tutorials, discussion lists, and more:
   <a href="http://xmlpitstop.com/"
   target="_self">http://xmlpitstop.com/</a>
-
-</div>
-
-<div>
 
 #### ActionScript classes for working with XML
 
@@ -157,10 +145,6 @@ manipulating XML data. This approach to working with XML using these classes and
 operators is known as ECMAScript for XML (E4X), as defined by the ECMA-357
 edition 2 specification.
 
-</div>
-
-<div>
-
 #### Important concepts and terms
 
 The following reference list contains important terms you will encounter when
@@ -187,7 +171,3 @@ Attribute
 A named value associated with an element that is written into the opening tag of
 the element in `attributename="value"` format, rather than being written as a
 separate child element nested inside the element.
-
-</div>
-
-</div>

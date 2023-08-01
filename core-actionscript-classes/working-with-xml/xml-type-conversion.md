@@ -1,19 +1,11 @@
 # XML type conversion
 
-<div>
-
 You can convert XML objects and XMLList objects to String values. Similarly, you
 can convert strings to XML objects and XMLList objects. Also, keep in mind that
 all XML attribute values, names, and text values are strings. The following
 sections discuss all these forms of XML type conversion.
 
-</div>
-
-<div>
-
 ## Converting XML and XMLList objects to strings
-
-<div>
 
 The XML and XMLList classes include a `toString()` method and a
 `toXMLString()`method. The `toXMLString()` method returns a string that includes
@@ -54,15 +46,7 @@ as this code shows:
 When using the `trace()` method to debug code, you will often want to use the
 `toXMLString()` method so that the `trace()` method outputs more complete data.
 
-</div>
-
-</div>
-
-<div>
-
 ## Converting strings to XML objects
-
-<div>
 
 You can use the `new XML()` constructor to create an XML object from a string,
 as follows:
@@ -74,15 +58,7 @@ XML or XML that is not well formed, a run-time error is thrown, as follows:
 
     var x:XML = new XML("<a>test"); // throws an error
 
-</div>
-
-</div>
-
-<div>
-
 ## Converting attribute values, names, and text values from strings
-
-<div>
 
 All XML attribute values, names, and text values are String data types, and you
 may need to convert these to other data types. For example, the following code
@@ -113,7 +89,3 @@ operator as the string concatenation operator, and the `trace()` method in the
 last line would output the following:
 
     01.003.95
-
-</div>
-
-</div>

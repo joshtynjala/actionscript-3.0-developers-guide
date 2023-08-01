@@ -1,7 +1,5 @@
 # Flash Platform security overview
 
-<div>
-
 Much of security model used by the Flash Player and AIR runtimes is based on the
 domain of origin for loaded SWF files, HTML, media, and other assets. Executable
 code in a file from a specific Internet domain, such as www.example.com, can
@@ -110,19 +108,5 @@ sandbox, permission must be granted by means of a URL policy file at the origin
 domain. For details, see
 [Using URLLoader and URLStream](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c67.html).
 
-<div>
-
 Note: Policy files are never required in order for code executing in the AIR
 application sandbox to load remote content or data.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

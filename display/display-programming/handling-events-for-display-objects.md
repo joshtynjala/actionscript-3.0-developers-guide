@@ -1,7 +1,5 @@
 # Handling events for display objects
 
-<div>
-
 The DisplayObject class inherits from the EventDispatcher class. This means that
 every display object can participate fully in the event model (described in
 [Handling events](../../core-actionscript-classes/handling-events/index.md)).
@@ -18,13 +16,7 @@ hierarchy down to the `child1` display object.
 The event flow is conceptually divided into three phases, as illustrated in this
 diagram:
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![<Three phases of event flow>](../../img/dp_stage_parent_Node.png)
-
-</div>
 
 For more information, see
 [Handling events](../../core-actionscript-classes/handling-events/index.md).
@@ -37,5 +29,3 @@ events, that display object will not be removed from memory even when it's
 removed from the display list, because it will still have references to those
 listener objects. For more information, see
 [Managing event listeners](../../core-actionscript-classes/handling-events/event-listeners.md#managing-event-listeners).
-
-</div>

@@ -1,7 +1,5 @@
 # Adjusting DisplayObject colors
 
-<div>
-
 You can use the methods of the ColorTransform class (flash.geom.ColorTransform)
 to adjust the color of a display object. Each display object has a `transform`
 property, which is an instance of the Transform class, and contains information
@@ -28,13 +26,7 @@ the `transform.colorTransform` property.
     // Commit the change.
     myDisplayObject.transform.colorTransform = colorInfo;
 
-</div>
-
-<div>
-
 ## Setting color values with code
-
-<div>
 
 The `color` property of the ColorTransform class can be used to assign a
 specific red, green, blue (RGB) color value to the display object. The following
@@ -69,15 +61,7 @@ of that object's associated ColorTransform instance to a shade of red will make
 the entire object, circle and text, turn red (so the text will no longer be
 distinguishable from the rest of the object).
 
-</div>
-
-</div>
-
-<div>
-
 ## Altering color and brightness effects with code
-
-<div>
 
 Suppose you have a display object with multiple colors (for example, a digital
 photo) and you don't want to completely recolor the object; you just want to
@@ -133,7 +117,3 @@ in any given pixel will be the original amount of red or green in that pixel.
     }
 
     loader.addEventListener(MouseEvent.MOUSE_MOVE, adjustColor);
-
-</div>
-
-</div>

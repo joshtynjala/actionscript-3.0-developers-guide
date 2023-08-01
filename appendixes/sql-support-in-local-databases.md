@@ -1,7 +1,5 @@
 # SQL support in local databases
 
-<div>
-
 Adobe AIR includes a SQL database engine with support for local SQL databases
 with many standard SQL features, using the open source
 [SQLite](http://www.sqlite.org) database system. The runtime does not specify
@@ -21,8 +19,6 @@ SQL dialect.
 
 SQL statement definition conventions
 
-<div>
-
 Within statement definitions in this document, the following conventions are
 used:
 
@@ -33,17 +29,11 @@ used:
   - lower case - placeholder terms or clause names are written in all lower
     case.
 
-- <div>
-
-  Definition characters
+- Definition characters
 
   - ::= Indicates a clause or statement definition.
 
-  </div>
-
-- <div>
-
-  Grouping and alternating characters
+- Grouping and alternating characters
 
   - \| The pipe character is used between alternative options, and can be read
     as "or".
@@ -55,19 +45,13 @@ used:
     by pipe characters), designates a required group of items, that is, a set of
     items that are the possible values for a single required item.
 
-  </div>
-
-- <div>
-
-  Quantifiers
+- Quantifiers
 
   - \+ A plus character following an item in parentheses indicates that the
     preceding item can occur 1 or more times.
 
   - \* An asterisk character following an item in square brackets indicates that
     the preceding (bracketed) item can occur 0 or more times
-
-  </div>
 
 - Literal characters
 
@@ -85,17 +69,5 @@ used:
   - Other characters, unless otherwise indicated, represent those literal
     characters.
 
-</div>
-
 - [Supported SQL syntax](WSd47bd22bdd97276f1365b8c112629d7c47c-8000.html)
 - [Data type support](WSd47bd22bdd97276f2aceae3b1262b7f2d43-8000.html)
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

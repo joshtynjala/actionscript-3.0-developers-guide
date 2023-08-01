@@ -1,7 +1,5 @@
 # Understanding 3D display objects in Flash Player and the AIR runtime
 
-<div>
-
 In Flash Player versions prior to Flash Player 10 and Adobe AIR versions prior
 to Adobe AIR 1.5, display objects have two properties, `x` and `y`, for
 positioning them on a 2D plane. Starting with Flash Player 10 and Adobe AIR 1.5,
@@ -23,34 +21,18 @@ the right along the x-axis, and the value of y increases as you move down along
 the y-axis. The 3D coordinate system retains those conventions and adds a z-axis
 whose value increases as you move away from the viewpoint.
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](../../img/th_xyzAxes.png)
-
-<div>
 
 The positive directions of the x, y, and z axes in the ActionScript 3D
 coordinate system.
 
-</div>
+**A.** \+ Z axis
 
-A.  
-\+ Z axis
+**B.** Origin
 
-B.  
-Origin
+**C.** +X axis
 
-C.  
-+X axis
-
-D.  
-+Y axis
-
-</div>
-
-<div>
+**D.** +Y axis
 
 Note: Be aware that Flash Player and AIR always represent 3D in layers. This
 means that if object A is in front of object B on the display list, Flash Player
@@ -59,8 +41,6 @@ objects. To resolve this conflict between the display list order and the z-axis
 order, use the `transform.getRelativeMatrix3D()` method to save and then
 re-order the layers of 3D display objects. For more information, see
 [Using Matrix3D objects for reordering display](./performing-complex-3d-transformations.md#using-matrix3d-objects-for-reordering-display).
-
-</div>
 
 The following ActionScript classes support the new 3D-related features:
 
@@ -99,13 +79,3 @@ There are two different approaches to simulating 3D images in ActionScript:
     Examples of this approach include loading 3D model data from a file and
     rendering the model on the screen, or generating and drawing 3D terrain as
     triangle meshes.
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

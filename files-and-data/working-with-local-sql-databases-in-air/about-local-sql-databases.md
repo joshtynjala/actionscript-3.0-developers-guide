@@ -1,7 +1,5 @@
 # About local SQL databases
 
-<div>
-
 For a quick explanation and code examples of using SQL databases, see the
 following quick start articles on the Adobe Developer Connection:
 
@@ -32,13 +30,7 @@ the runtime's local SQL database engine provides a convenient mechanism for
 storing persistent, local application data, particularly if you have experience
 with SQL and relational databases.
 
-</div>
-
-<div>
-
 ## Uses for local SQL databases
-
-<div>
 
 The AIR local SQL database functionality can be used for any purpose for which
 you might want to store application data on a user's local computer. Adobe AIR
@@ -64,15 +56,7 @@ database in your AIR application:
   application settings, such as user options or application information like
   window size and position.
 
-</div>
-
-</div>
-
-<div>
-
 ## About AIR databases and database files
-
-<div>
 
 An individual Adobe AIR local SQL database is stored as a single file in the
 computer's file system. The runtime includes the SQL database engine that
@@ -91,15 +75,7 @@ single computer, data is not automatically shared among users on different
 computers. The local SQL database engine doesn't provide any capability to
 execute SQL statements against a remote or server-based database.
 
-</div>
-
-</div>
-
-<div>
-
 ## About relational databases
-
-<div>
 
 A relational database is a mechanism for storing (and retrieving) data on a
 computer. Data is organized into tables: rows represent records or items, and
@@ -149,15 +125,7 @@ relationships are an important part of the structure of a relational database,
 and foreign keys should be used when creating relationships between tables in
 your database.
 
-</div>
-
-</div>
-
-<div>
-
 ## About SQL
-
-<div>
 
 Structured Query Language (SQL) is used with relational databases to manipulate
 and retrieve data. SQL is a descriptive language rather than a procedural
@@ -172,20 +140,10 @@ standard.
 For specific descriptions of the SQL language supported in Adobe AIR, see
 [SQL support in local databases](WS112915e91f2778507c29b8cc1256b9c36a3-8000.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## About SQL database classes
-
-<div>
 
 To work with local SQL databases in ActionScript 3.0, you use instances of these
 classes in the flash.data package:
-
-<div>
 
 | Class                                                                                                                         | Description                                                                                                                                                                                                       |
 | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -193,12 +151,8 @@ classes in the flash.data package:
 | [flash.data.SQLStatement](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/SQLStatement.html)   | Represents a single SQL statement (a single query or command) that is executed on a database, including defining the statement text and setting parameter values.                                                 |
 | [flash.data.SQLResult](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/SQLResult.html)         | Provides a way to get information about or results from executing a statement, such as the result rows from a `SELECT` statement, the number of rows affected by an `UPDATE` or `DELETE` statement, and so forth. |
 
-</div>
-
 To obtain schema information describing the structure of a database, you use
 these classes in the flash.data package:
-
-<div>
 
 | Class                                                                                                                               | Description                                                                                                     |
 | ----------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
@@ -208,12 +162,8 @@ these classes in the flash.data package:
 | [flash.data.SQLIndexSchema](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/SQLIndexSchema.html)     | Provides information describing a single column of a table or view in a database.                               |
 | [flash.data.SQLTriggerSchema](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/SQLTriggerSchema.html) | Provides information describing a single trigger in a database.                                                 |
 
-</div>
-
 Other classes in the flash.data package provide constants that are used with the
 SQLConnection class and the SQLColumnSchema class:
-
-<div>
 
 | Class                                                                                                                                           | Description                                                                                                                                                                                          |
 | ----------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -222,12 +172,8 @@ SQLConnection class and the SQLColumnSchema class:
 | [flash.data.SQLTransactionLockType](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/SQLTransactionLockType.html) | Defines a set of constants representing the possible values for the option parameter of the `SQLConnection.begin()` method.                                                                          |
 | [flash.data.SQLCollationType](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/SQLCollationType.html)             | Defines a set of constants representing the possible values for the `SQLColumnSchema.defaultCollationType` property and the `defaultCollationType` parameter of the `SQLColumnSchema()` constructor. |
 
-</div>
-
 In addition, the following classes in the flash.events package represent the
 events (and supporting constants) that you use:
-
-<div>
 
 | Class                                                                                                                               | Description                                                                                                                                                                                                      |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -235,29 +181,15 @@ events (and supporting constants) that you use:
 | [flash.events.SQLErrorEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/SQLErrorEvent.html)   | Defines the event that a SQLConnection or SQLStatement instance dispatches when any of its operations results in an error.                                                                                       |
 | [flash.events.SQLUpdateEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/SQLUpdateEvent.html) | Defines the event that a SQLConnection instances dispatches when table data in one of its connected databases changes as a result of an `INSERT`, `UPDATE`, or `DELETE` SQL statement being executed.            |
 
-</div>
-
 Finally, the following classes in the flash.errors package provide information
 about database operation errors:
-
-<div>
 
 | Class                                                                                                                                     | Description                                                                                                                                                                  |
 | ----------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [flash.errors.SQLError](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/errors/SQLError.html)                   | Provides information about a database operation error, including the operation that was being attempted and the cause of the failure.                                        |
 | [flash.errors.SQLErrorOperation](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/errors/SQLErrorOperation.html) | Defines a set of constants representing the possible values for the SQLError class's `operation` property, which indicates the database operation that resulted in an error. |
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## About synchronous and asynchronous execution modes
-
-<div>
 
 When you're writing code to work with a local SQL database, you specify that
 database operations execution in one of two execution modes: asynchronous or
@@ -308,28 +240,8 @@ mode. For more information on these topics, and suggestions for working in each
 mode, see
 [Using synchronous and asynchronous database operations](WS5b3ccc516d4fbf351e63e3d118666ade46-7d39.html).
 
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
-
-</div>
 
 [Christophe Coenraets: Employee Directory on AIR for Android](http://coenraets.org/blog/air-for-android-samples/employee-directory-for-android/)
 
 [Raymond Camden: jQuery and AIR - Moving from web page to application](http://insideria.com/2009/09/jquery-and-air---moving-from-w-1.html)
-
-<div>
-
-</div>
-
-</div>

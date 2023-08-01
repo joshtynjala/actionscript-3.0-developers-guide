@@ -1,7 +1,5 @@
 # Controlling sound volume and panning
 
-<div>
-
 An individual SoundChannel object controls both the left and the right stereo
 channels for a sound. If an mp3 sound is a monaural sound, the left and right
 stereo channels of the SoundChannel object will contain identical waveforms.
@@ -100,13 +98,3 @@ In this example, the same effect could be achieved by setting the
 `soundTransform` property of the SoundMixer class. However, that would affect
 the panning of all sounds currently playing, not just the single sound being
 played by this SoundChannel object.
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

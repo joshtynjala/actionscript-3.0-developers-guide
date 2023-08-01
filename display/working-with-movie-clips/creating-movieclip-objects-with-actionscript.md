@@ -1,7 +1,5 @@
 # Creating MovieClip objects with ActionScript
 
-<div>
-
 One way of adding content to the screen in Flash is by dragging assets from the
 library onto the Stage, but that is not the only workflow. For complex projects,
 experienced developers commonly prefer to create movie clips programatically.
@@ -21,5 +19,3 @@ display object container. This allows you to create a movie clip, set its
 properties, and even call methods before it is rendered to the screen. For more
 information on working with the display list, see
 [Working with display object containers](../display-programming/working-with-display-object-containers.md).
-
-</div>

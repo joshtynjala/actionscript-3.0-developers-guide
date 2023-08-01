@@ -1,7 +1,5 @@
 # Using Point objects
 
-<div>
-
 A <a
 href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Point.html"
 target="_self">Point</a> object defines a Cartesian pair of coordinates. It
@@ -16,13 +14,7 @@ To define a Point object, you set its `x` and `y` properties, as follows:
     pt2.x = 10;
     pt2.y = 20;
 
-</div>
-
-<div>
-
 ## Finding the distance between two points
-
-<div>
 
 You can use the `distance()` method of the Point class to find the distance
 between two points in a coordinate space. For example, the following code finds
@@ -34,15 +26,7 @@ and `circle2`, in the same display object container:
     var pt2:Point = new Point(circle2.x, circle2.y);
     var distance:Number = Point.distance(pt1, pt2);
 
-</div>
-
-</div>
-
-<div>
-
 ## Translating coordinate spaces
-
-<div>
 
 If two display objects are in different display object containers, they can be
 in different coordinate spaces. You can use the `localToGlobal()` method of the
@@ -70,15 +54,7 @@ method of the DisplayObject class:
     targetCenter = target.localToGlobal(targetCenter);
     var distance:Number = Point.distance(stageCenter, targetCenter);
 
-</div>
-
-</div>
-
-<div>
-
 ## Moving a display object by a specified angle and distance
-
-<div>
 
 You can use the `polar()` method of the Point class to move a display object a
 specific distance by a specific angle. For example, the following code moves the
@@ -91,81 +67,60 @@ specific distance by a specific angle. For example, the following code moves the
     myDisplayObject.x += translatePoint.x;
     myDisplayObject.y += translatePoint.y;
 
-</div>
-
-</div>
-
-<div>
-
 ## Other uses of the Point class
-
-<div>
 
 You can use Point objects with the following methods and properties:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>Class</p></th>
-<th><p>Methods or properties</p></th>
-<th><p>Description</p></th>
-</tr>
+    <tr>
+        <th><p>Class</p></th>
+        <th><p>Methods or properties</p></th>
+        <th><p>Description</p></th>
+    </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td headers="d17e16823 "><p>DisplayObjectContainer</p></td>
-<td headers="d17e16826 "><div>
-<p><samp>areInaccessibleObjectsUnderPoint()</samp></p><p><samp>getObjectsUnderPoint()</samp></p>
-</div></td>
-<td headers="d17e16829 "><p>Used to
-return a list of objects under a point in a display object
-container.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e16823 "><p>BitmapData</p></td>
-<td headers="d17e16826 "><p><samp>hitTest()</samp></p></td>
-<td headers="d17e16829 "><p>Used to
-define the pixel in the BitmapData object as well as the point that you
-are checking for a hit.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e16823 "><p>BitmapData</p></td>
-<td headers="d17e16826 "><p><samp>applyFilter()</samp></p>
-<p><samp>copyChannel()</samp></p>
-<p><samp>merge()</samp></p>
-<p><samp>paletteMap()</samp></p>
-<p><samp>pixelDissolve()</samp></p>
-<p><samp>threshold()</samp></p></td>
-<td headers="d17e16829 "><p>Used to
-define the positions of rectangles that define the operations.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e16823 "><p>Matrix</p></td>
-<td headers="d17e16826 "><p><samp>deltaTransformPoint()</samp></p>
-<p><samp>transformPoint()</samp></p></td>
-<td headers="d17e16829 "><p>Used to
-define points for which you want to apply a transformation.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e16823 "><p>Rectangle</p></td>
-<td headers="d17e16826 "><p><samp>bottomRight</samp></p>
-<p><samp>size</samp></p>
-<p><samp>topLeft</samp></p></td>
-<td headers="d17e16829 "><p>Used to
-define these properties.</p></td>
-</tr>
+    <tr>
+        <td ><p>DisplayObjectContainer</p></td>
+        <td ><div>
+        <p><samp>areInaccessibleObjectsUnderPoint()</samp></p><p><samp>getObjectsUnderPoint()</samp></p>
+        </div></td>
+        <td ><p>Used to
+        return a list of objects under a point in a display object
+        container.</p></td>
+    </tr>
+    <tr>
+        <td ><p>BitmapData</p></td>
+        <td ><p><samp>hitTest()</samp></p></td>
+        <td ><p>Used to
+        define the pixel in the BitmapData object as well as the point that you
+        are checking for a hit.</p></td>
+    </tr>
+    <tr>
+        <td ><p>BitmapData</p></td>
+        <td ><p><samp>applyFilter()</samp></p>
+        <p><samp>copyChannel()</samp></p>
+        <p><samp>merge()</samp></p>
+        <p><samp>paletteMap()</samp></p>
+        <p><samp>pixelDissolve()</samp></p>
+        <p><samp>threshold()</samp></p></td>
+        <td ><p>Used to
+        define the positions of rectangles that define the operations.</p></td>
+    </tr>
+    <tr>
+        <td ><p>Matrix</p></td>
+        <td ><p><samp>deltaTransformPoint()</samp></p>
+        <p><samp>transformPoint()</samp></p></td>
+        <td ><p>Used to
+        define points for which you want to apply a transformation.</p></td>
+    </tr>
+    <tr>
+        <td ><p>Rectangle</p></td>
+        <td ><p><samp>bottomRight</samp></p>
+        <p><samp>size</samp></p>
+        <p><samp>topLeft</samp></p></td>
+        <td ><p>Used to
+        define these properties.</p></td>
+    </tr>
 </tbody>
 </table>
-
-</div>
-
-</div>
-
-</div>

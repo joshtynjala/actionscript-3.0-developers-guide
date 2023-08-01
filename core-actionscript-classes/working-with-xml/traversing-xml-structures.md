@@ -1,7 +1,5 @@
 # Traversing XML structures
 
-<div>
-
 One of the powerful features of XML is its ability to provide complex, nested
 data via a linear string of text characters. When you load data into an XML
 object, ActionScript parses the data and loads its hierarchical structure into
@@ -47,13 +45,7 @@ with the name `book` of the `myXML` object: in this case, an XMLList object
 containing only one XML object (the `lastName` property with the value " `Case`
 ").
 
-</div>
-
-<div>
-
 ## Accessing parent and child nodes
-
-<div>
 
 The `parent()` method returns the parent of an XML object.
 
@@ -94,15 +86,7 @@ variable or expression, as the following example shows:
 
     trace(myXML.child(childName).title) // output: Dictionary
 
-</div>
-
-</div>
-
-<div>
-
 ## Accessing attributes
-
-<div>
 
 Use the `@` symbol (the attribute identifier operator) to access attributes in
 an XML or XMLList object, as shown in the following code:
@@ -153,15 +137,7 @@ following example shows:
 These are each equivalent to `employee.@id`. However, the syntax `employee.@id`
 is the preferred approach.
 
-</div>
-
-</div>
-
-<div>
-
 ## Filtering by attribute or element value
-
-<div>
 
 You can use the parentheses operators— `(` and `)` —to filter elements with a
 specific element name or attribute value. Consider the following XML object:
@@ -243,15 +219,7 @@ You can also use the `hasOwnProperty()` method, as in the following code:
     trace(doc.p.(hasOwnProperty('@id') && @id == '123'));
     trace(doc.p.(hasOwnProperty('b') && b == 'Bob'));
 
-</div>
-
-</div>
-
-<div>
-
 ## Using the for..in and the for each..in statements
-
-<div>
 
 ActionScript 3.0 includes the `for..in` statement and the `for each..in`
 statement for iterating through XMLList objects. For example, consider the
@@ -287,7 +255,3 @@ XMLList:
     {
         total2 += prop.@quantity * prop.price;
     }
-
-</div>
-
-</div>

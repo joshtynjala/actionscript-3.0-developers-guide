@@ -1,7 +1,5 @@
 # Basics of video
 
-<div>
-
 One important capability of Adobe® Flash® Player and Adobe® AIR™ is the ability
 to display and manipulate video information with ActionScript in the same way
 that you can manipulate other visual content such as images, animation, text,
@@ -53,8 +51,6 @@ When you're loading external video, you can load the file from a standard web
 server for progressive download, or you can work with streaming video delivered
 by a specialized server such as Adobe's Flash® Media Server.
 
-<div>
-
 #### Important concepts and terms
 
 Cue point  
@@ -97,15 +93,3 @@ computer only needs a portion of the total video information. Because a special
 server controls the delivery of the video content, any part of the video can be
 accessed at any time, rather than needing to wait for it to download before
 accessing it.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

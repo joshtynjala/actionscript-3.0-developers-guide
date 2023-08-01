@@ -1,7 +1,5 @@
 # Basics of error handling
 
-<div>
-
 A run-time error is something that goes wrong in your ActionScript code that
 stops the ActionScript content from running as intended. To ensure that your
 ActionScript code runs smoothly for users, write code in your application that
@@ -54,8 +52,6 @@ To determine whether a particular method can trigger an error or error event,
 see the method's entry in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
-<div>
-
 #### Important concepts and terms
 
 The following reference list contains important terms for programming error
@@ -99,7 +95,3 @@ Throw
 The act of notifying a Flash runtime (and consequently, notifying other objects
 and ActionScript code) that an error has occurred is known as _throwing_ an
 error.
-
-</div>
-
-</div>

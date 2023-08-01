@@ -1,7 +1,5 @@
 # Using Rectangle objects
 
-<div>
-
 A <a
 href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Rectangle.html"
 target="_self">Rectangle</a> object defines a rectangular area. A Rectangle
@@ -17,13 +15,7 @@ function, as follows:
     var rheight:Number = 50;
     var rect1:Rectangle = new Rectangle(rx, ry, rwidth, rheight);
 
-</div>
-
-<div>
-
 ## Resizing and repositioning Rectangle objects
-
-<div>
 
 There are a number of ways to resize and reposition Rectangle objects.
 
@@ -109,15 +101,7 @@ the rectangle moves from the center:
 The `inflatePt()` method works similarly, except that it takes a Point object as
 its parameter, rather than `dx` and `dy` values.
 
-</div>
-
-</div>
-
-<div>
-
 ## Finding unions and intersections of Rectangle objects
-
-<div>
 
 You use the `union()` method to find the rectangular region formed by the
 boundaries of two rectangles:
@@ -167,19 +151,9 @@ bounding rectangles of two display objects overlap. Use the `getRect()` method
 of the DisplayObject class to include any additional space that the strokes of a
 display object add to a bounding region.
 
-</div>
-
-</div>
-
-<div>
-
 ## Other uses of Rectangle objects
 
-<div>
-
 Rectangle objects are used in the following methods and properties:
-
-<div>
 
 | Class         | Methods or properties                                                                                                                                                                                                                          | Description                                                                       |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
@@ -189,9 +163,3 @@ Rectangle objects are used in the following methods and properties:
 | Sprite        | `startDrag()`                                                                                                                                                                                                                                  | Used to define the `bounds` parameter.                                            |
 | TextField     | `getCharBoundaries()`                                                                                                                                                                                                                          | Used as the return value type.                                                    |
 | Transform     | `pixelBounds`                                                                                                                                                                                                                                  | Used as the data type.                                                            |
-
-</div>
-
-</div>
-
-</div>

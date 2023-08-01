@@ -1,7 +1,5 @@
 # Display object example: SpriteArranger
 
-<div>
-
 The SpriteArranger sample application builds upon the Geometric Shapes sample
 application described separately in _Learning ActionScript 3.0_.
 
@@ -23,111 +21,99 @@ To get the application files for this sample, see
 The SpriteArranger application files can be found in the folder
 Examples/SpriteArranger. The application consists of the following files:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>File</p></th>
-<th><p>Description</p></th>
-</tr>
+    <tr>
+        <th><p>File</p></th>
+        <th><p>Description</p></th>
+    </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td headers="d17e16067 "><p>SpriteArranger.mxml</p>
-<p>or</p>
-<p>SpriteArranger.fla</p></td>
-<td headers="d17e16070 "><p>The main
-application file in Flash (FLA) or Flex (MXML).</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e16067 "><p>com/example/programmingas3/SpriteArranger/CircleSprite.as</p></td>
-<td headers="d17e16070 "><p>A class
-defining a type of Sprite object that renders a circle
-on-screen.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e16067 "><p>com/example/programmingas3/SpriteArranger/DrawingCanvas.as</p></td>
-<td headers="d17e16070 "><p>A class
-defining the canvas, which is a display object container that contains
-GeometricSprite objects.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e16067 "><p>com/example/programmingas3/SpriteArranger/SquareSprite.as</p></td>
-<td headers="d17e16070 "><p>A class
-defining a type of Sprite object that renders a square
-on-screen.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e16067 "><p>com/example/programmingas3/SpriteArranger/TriangleSprite.as</p></td>
-<td headers="d17e16070 "><p>A class
-defining a type of Sprite object that renders a triangle
-on-screen.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e16067 "><p>com/example/programmingas3/SpriteArranger/GeometricSprite.as</p></td>
-<td headers="d17e16070 "><p>A class that
-extends the Sprite object, used to define an on-screen shape. The
-CircleSprite, SquareSprite, and TriangleSprite each extend this
-class.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e16067 "><p>com/example/programmingas3/geometricshapes/IGeometricShape.as</p></td>
-<td headers="d17e16070 "><p>The base
-interface defining methods to be implemented by all geometric shape
-classes.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e16067 "><p>com/example/programmingas3/geometricshapes/IPolygon.as</p></td>
-<td headers="d17e16070 "><p>An interface
-defining methods to be implemented by geometric shape classes that have
-multiple sides.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e16067 "><p>com/example/programmingas3/geometricshapes/RegularPolygon.as</p></td>
-<td headers="d17e16070 "><p>A type of
-geometric shape that has sides of equal length positioned symmetrically
-around the shape's center.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e16067 "><p>com/example/programmingas3/geometricshapes/Circle.as</p></td>
-<td headers="d17e16070 "><p>A type of
-geometric shape that defines a circle.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e16067 "><p>com/example/programmingas3/geometricshapes/EquilateralTriangle.as</p></td>
-<td headers="d17e16070 "><p>A subclass of
-RegularPolygon that defines a triangle with all sides the same
-length.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e16067 "><p>com/example/programmingas3/geometricshapes/Square.as</p></td>
-<td headers="d17e16070 "><p>A subclass of
-RegularPolygon defining a rectangle with all four sides the same
-length.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e16067 "><p>com/example/programmingas3/geometricshapes/GeometricShapeFactory.as</p></td>
-<td headers="d17e16070 "><p>A class
-containing a "factory method" for creating shapes given a shape type and
-size.</p></td>
-</tr>
+    <tr>
+        <td >
+            <p>SpriteArranger.mxml</p>
+            <p>or</p>
+            <p>SpriteArranger.fla</p>
+        </td>
+        <td ><p>The main
+        application file in Flash (FLA) or Flex (MXML).</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/SpriteArranger/CircleSprite.as</p></td>
+        <td ><p>A class
+        defining a type of Sprite object that renders a circle
+        on-screen.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/SpriteArranger/DrawingCanvas.as</p></td>
+        <td ><p>A class
+        defining the canvas, which is a display object container that contains
+        GeometricSprite objects.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/SpriteArranger/SquareSprite.as</p></td>
+        <td ><p>A class
+        defining a type of Sprite object that renders a square
+        on-screen.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/SpriteArranger/TriangleSprite.as</p></td>
+        <td ><p>A class
+        defining a type of Sprite object that renders a triangle
+        on-screen.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/SpriteArranger/GeometricSprite.as</p></td>
+        <td ><p>A class that
+        extends the Sprite object, used to define an on-screen shape. The
+        CircleSprite, SquareSprite, and TriangleSprite each extend this
+        class.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/geometricshapes/IGeometricShape.as</p></td>
+        <td ><p>The base
+        interface defining methods to be implemented by all geometric shape
+        classes.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/geometricshapes/IPolygon.as</p></td>
+        <td ><p>An interface
+        defining methods to be implemented by geometric shape classes that have
+        multiple sides.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/geometricshapes/RegularPolygon.as</p></td>
+        <td ><p>A type of
+        geometric shape that has sides of equal length positioned symmetrically
+        around the shape's center.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/geometricshapes/Circle.as</p></td>
+        <td ><p>A type of
+        geometric shape that defines a circle.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/geometricshapes/EquilateralTriangle.as</p></td>
+        <td ><p>A subclass of
+        RegularPolygon that defines a triangle with all sides the same
+        length.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/geometricshapes/Square.as</p></td>
+        <td ><p>A subclass of
+        RegularPolygon defining a rectangle with all four sides the same
+        length.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/geometricshapes/GeometricShapeFactory.as</p></td>
+        <td ><p>A class
+        containing a "factory method" for creating shapes given a shape type and
+        size.</p></td>
+    </tr>
 </tbody>
 </table>
 
-</div>
-
-</div>
-
-<div>
-
 ## Defining the SpriteArranger classes
-
-<div>
 
 The SpriteArranger application lets the user add a variety of display objects to
 the on-screen "canvas."
@@ -135,8 +121,6 @@ the on-screen "canvas."
 The DrawingCanvas class defines a drawing area, a type of display object
 container, to which the user can add on-screen shapes. These on-screen shapes
 are instances of one of the subclasses of the GeometricSprite class.
-
-<div>
 
 #### The DrawingCanvas class
 
@@ -203,10 +187,6 @@ user interactions with the application:
 - The `onMouseUp()` method, which is described in
   [Clicking and dragging display objects](./display-object-example-sprite-arranger.md#clicking-and-dragging-display-objects)
 
-</div>
-
-<div>
-
 #### The GeometricSprite class and its subclasses
 
 Each display object the user can add to the canvas is an instance of one of the
@@ -249,17 +229,7 @@ The GeometricSprite class also provides the following methods:
 - The `showSelected()` and `hideSelected()` methods, which are described in
   [Clicking and dragging display objects](./display-object-example-sprite-arranger.md#clicking-and-dragging-display-objects)
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Adding display objects to the canvas
-
-<div>
 
 When the user clicks the Add Shape button, the application calls the
 `addShape()` method of the DrawingCanvas class. It instantiates a new
@@ -341,15 +311,7 @@ string listing each child, as follows:
 The resulting string is used to set the `text` property of the `outputTxt` text
 field.
 
-</div>
-
-</div>
-
-<div>
-
 ## Clicking and dragging display objects
-
-<div>
 
 When the user clicks on a GeometricSprite instance, the application calls the
 `onMouseDown()` event handler. As the following shows, this event handler is set
@@ -406,15 +368,7 @@ The `onMouseUp()` method calls the `onMouseUp()` method of the GeometricSprite
 object, which in turn calls the `stopDrag()` method of the GeometricSprite
 object.
 
-</div>
-
-</div>
-
-<div>
-
 ## Rearranging display object layering
-
-<div>
 
 The user interface for the application includes buttons labeled Move Back, Move
 Down, Move Up, and Move to Front. When the user clicks one of these buttons, the
@@ -450,7 +404,3 @@ instance:
 
 The `moveUp()` and `moveToFront()` methods work similarly to the `moveToBack()`
 and `moveDown()` methods.
-
-</div>
-
-</div>

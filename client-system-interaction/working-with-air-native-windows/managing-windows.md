@@ -1,26 +1,14 @@
 # Managing windows
 
-<div>
-
 You use the properties and methods of the NativeWindow class to manage the
 appearance, behavior, and life cycle of desktop windows.
-
-<div>
 
 Note: When using the Flex framework, it is generally better to manage window
 behavior using the framework classes. Most of the NativeWindow properties and
 methods can be accessed through the mx:WindowedApplication and mx:Window
 classes.
 
-</div>
-
-</div>
-
-<div>
-
 ## Getting a NativeWindow instance
-
-<div>
 
 To manipulate a window, you must first get the window instance. You can get a
 window instance from one of the following places:
@@ -79,8 +67,6 @@ the `stage` property, as follows:
     	</mx:Script>
     </WindowedApplication
 
-<div>
-
 Note: Until the WindowedApplication or Window component is added to the window
 stage by the Flex framework, the component's `stage` property is `null`. This
 behavior is consistent with that of the Flex Application component, but does
@@ -90,17 +76,7 @@ WindowedApplication and Window components, such as `creationComplete`. It is
 safe to access the stage and NativeWindow instance when the
 `applicationComplete` event is dispatched.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Activating, showing, and hiding windows
-
-<div>
 
 To activate a window, call the NativeWindow `activate()` method. Activating a
 window brings the window to the front, gives it keyboard and mouse focus, and,
@@ -121,25 +97,13 @@ When you change the visibility of a window, the visibility of any windows that
 window owns is also changed. For example, if you hide a window, all of its owned
 windows are also hidden.
 
-<div>
-
 Note: On Mac OS X, it is not possible to completely hide a minimized window that
 has an icon in the window portion of the dock. If the `visible` property is set
 to `false` on a minimized window, the dock icon for the window is still
 displayed. If the user clicks the icon, the window is restored to a visible
 state and displayed.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Changing the window display order
-
-<div>
 
 AIR provides several methods for directly changing the display order of windows.
 You can move a window to the front of the display order or to the back; you can
@@ -168,13 +132,9 @@ done when necessary and appropriate. Examples of justified uses include:
 
 - Short-lived toast-style windows.
 
-<div>
-
 Note: AIR does not enforce proper use of the `alwaysInFront` property. However,
 if your application disrupts a user's workflow, it is likely to be consigned to
 that same user's trash can.
-
-</div>
 
 If a window owns other windows, those windows are always ordered in front of it.
 If you call `orderToFront()` or set `alwaysInFront` to `true` on a window that
@@ -192,67 +152,52 @@ window display order.
 The NativeWindow class provides the following properties and methods for setting
 the display order of a window relative to other windows:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>Member</p></th>
-<th><p>Description</p></th>
-</tr>
+	<tr>
+		<th><p>Member</p></th>
+		<th><p>Description</p></th>
+	</tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><p>alwaysInFront property</p></td>
-<td><p>Specifies whether the window is displayed in the top-most group
-of windows.</p>
-<p>In almost all cases, <samp>false</samp> is the best setting. Changing
-the value from <samp>false</samp> to <samp>true</samp> brings the window
-to the front of all windows (but does not activate it). Changing the
-value from <samp>true</samp> to <samp>false</samp> orders the window
-behind windows remaining in the top-most group, but still in front of
-other windows. Setting the property to its current value for a window
-does not change the window display order.</p>
-<p>The <samp>alwaysInFront</samp> setting has no affect on windows owned
-by another window.</p></td>
-</tr>
-<tr class="even">
-<td><p>orderToFront()</p></td>
-<td><p>Brings the window to the front.</p></td>
-</tr>
-<tr class="odd">
-<td><p>orderInFrontOf()</p></td>
-<td><p>Brings the window directly in front of a particular
-window.</p></td>
-</tr>
-<tr class="even">
-<td><p>orderToBack()</p></td>
-<td><p>Sends the window behind other windows.</p></td>
-</tr>
-<tr class="odd">
-<td><p>orderBehind()</p></td>
-<td><p>Sends the window directly behind a particular window.</p></td>
-</tr>
-<tr class="even">
-<td><p>activate()</p></td>
-<td><p>Brings the window to the front (along with making the window
-visible and assigning focus).</p></td>
-</tr>
+	<tr>
+		<td><p>alwaysInFront property</p></td>
+		<td>
+			<p>Specifies whether the window is displayed in the top-most group of windows.</p>
+			<p>In almost all cases, <samp>false</samp> is the best setting. Changing
+			the value from <samp>false</samp> to <samp>true</samp> brings the window
+			to the front of all windows (but does not activate it). Changing the
+			value from <samp>true</samp> to <samp>false</samp> orders the window
+			behind windows remaining in the top-most group, but still in front of
+			other windows. Setting the property to its current value for a window
+			does not change the window display order.</p>
+			<p>The <samp>alwaysInFront</samp> setting has no affect on windows owned by another window.</p></td>
+	</tr>
+	<tr>
+		<td><p>orderToFront()</p></td>
+		<td><p>Brings the window to the front.</p></td>
+	</tr>
+	<tr>
+		<td><p>orderInFrontOf()</p></td>
+		<td><p>Brings the window directly in front of a particular window.</p></td>
+	</tr>
+	<tr>
+		<td><p>orderToBack()</p></td>
+		<td><p>Sends the window behind other windows.</p></td>
+	</tr>
+	<tr>
+		<td><p>orderBehind()</p></td>
+		<td><p>Sends the window directly behind a particular window.</p></td>
+	</tr>
+	<tr>
+		<td><p>activate()</p></td>
+		<td><p>Brings the window to the front (along with making the window visible and assigning focus).</p></td>
+	</tr>
 </tbody>
 </table>
 
-</div>
-
-<div>
-
 Note: If a window is hidden ( `visible` is `false`) or minimized, then calling
 the display order methods has no effect.
-
-</div>
 
 On the Linux operating system, different window managers enforce different rules
 regarding the window display order:
@@ -264,15 +209,7 @@ regarding the window display order:
   `true` is always displayed in front of other windows that also have
   `alwaysInFront` set to `true`.
 
-</div>
-
-</div>
-
-<div>
-
 ## Closing a window
-
-<div>
 
 To close a window, use the `NativeWindow.close()` method.
 
@@ -294,15 +231,7 @@ Any windows that have an owner are closed when the owner is closed. The owned
 windows do not dispatch a closing event and hence cannot prevent closure. A
 close event is dispatched.
 
-</div>
-
-</div>
-
-<div>
-
 ## Allowing cancellation of window operations
-
-<div>
 
 When a window uses system chrome, user interaction with the window can be
 canceled by listening for, and canceling the default behavior of the appropriate
@@ -334,15 +263,7 @@ method is called by a listener. However, it can also return `false` for other
 reasons, so it is better to explicitly use the `isDefaultPrevented()` method to
 test whether the change should be canceled.
 
-</div>
-
-</div>
-
-<div>
-
 ## Maximizing, minimizing, and restoring a window
-
-<div>
 
 To maximize the window, use the NativeWindow `maximize()` method.
 
@@ -361,15 +282,11 @@ A window that has an owner is minimized and restored when the owning window is
 minimized or restored. No events are dispatched by the owned window when it is
 minimized because its owner is minimized.
 
-<div>
-
 Note: The behavior that results from maximizing an AIR window is different from
 the Mac OS X standard behavior. Rather than toggling between an
 application-defined "standard" size and the last size set by the user, AIR
 windows toggle between the size last set by the application or user and the full
 usable area of the screen.
-
-</div>
 
 On the Linux operating system, different window managers enforce different rules
 regarding setting the window display state:
@@ -384,8 +301,6 @@ regarding setting the window display state:
 - Some window managers do not honor the window `maximizable` or `minimizable`
   settings.
 
-<div>
-
 Note: On Linux, window properties are changed asynchronously. If you change the
 display state in one line of your program, and read the value in the next, the
 value read will still reflect the old setting. On all platforms, the
@@ -394,17 +309,7 @@ state changes. If you need to take some action based on the new state of the
 window, always do so in a `displayStateChange` event handler. See
 [Listening for window events](WS5b3ccc516d4fbf351e63e3d118666ade46-7e07.html).
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Example: Minimizing, maximizing, restoring and closing a window
-
-<div>
 
 The following short MXML application demonstrates the Window `maximize()`,
 `minimize()`, `restore()`, and `close()` methods:
@@ -522,30 +427,16 @@ that trigger the NativeWindow `minimize()`, `maximize()`, `restore()`, and
     	}
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## Resizing and moving a window
-
-<div>
 
 When a window uses system chrome, the chrome provides drag controls for resizing
 the window and moving around the desktop. If a window does not use system chrome
 you must add your own controls to allow the user to resize and move the window.
 
-<div>
-
 Note: To resize or move a window, you must first obtain a reference to the
 NativeWindow instance. For information about how to obtain a window reference,
 see
 [Getting a NativeWindow instance](WS5b3ccc516d4fbf351e63e3d118666ade46-7e03.html).
-
-</div>
-
-<div>
 
 #### Resizing a window
 
@@ -567,8 +458,6 @@ y position of a window near the bottom of the screen, then the full height
 change might not occur when the height change is applied before the y position
 change.
 
-<div>
-
 Note: On Linux, window properties are changed asynchronously. If you resize a
 window in one line of your program, and read the dimensions in the next, they
 will still reflect the old settings. On all platforms, the NativeWindow object
@@ -576,8 +465,6 @@ dispatches the `resize` event when the window resizes. If you need to take some
 action, such as laying out controls in the window, based on the new size or
 state of the window, always do so in a `resize` event handler. See
 [Listening for window events](WS5b3ccc516d4fbf351e63e3d118666ade46-7e07.html).
-
-</div>
 
 The scale mode of the stage determines how the window stage and its contents
 behaves when a window is resized. Keep in mind that the stage scale modes are
@@ -587,10 +474,6 @@ the best results by setting the stage `scaleMode` property to
 `StageScaleMode.NO_SCALE`. If you want the contents of the window to scale, you
 can still set the `scaleX` and `scaleY` parameters of the content in response to
 the window bounds changes.
-
-</div>
-
-<div>
 
 #### Moving a window
 
@@ -610,8 +493,6 @@ To move a window programmatically, set the `x`, `y`, or `bounds` properties of
 the window to the desired position. When you set the bounds, the window size and
 position can both be changed at the same time.
 
-<div>
-
 Note: On Linux, window properties are changed asynchronously. If you move a
 window in one line of your program, and read the position in the next, the value
 read will still reflect the old setting. On all platforms, the NativeWindow
@@ -620,19 +501,7 @@ take some action based on the new position of the window, always do so in a
 `move` event handler. See
 [Listening for window events](WS5b3ccc516d4fbf351e63e3d118666ade46-7e07.html).
 
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Example: Resizing and moving windows
-
-<div>
 
 The following example shows how to initiate resizing and moving operations on a
 window:
@@ -685,15 +554,3 @@ window:
     		}
     	}
     }
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

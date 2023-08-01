@@ -1,7 +1,5 @@
 # AIR and WebKit
 
-<div>
-
 Adobe AIR uses the open source WebKit engine, also used in the Safari web
 browser. AIR adds several extensions to allow access to the runtime classes and
 objects as well as for security. In addition, WebKit itself adds features not
@@ -17,17 +15,7 @@ provides a valuable
 CSS, and DOM topics (of course, the WebKit and Mozilla engines are not
 identical).
 
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
 
 [JavaScript in AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7eb3.html)
 
@@ -36,11 +24,3 @@ More Help topics
 [CSS in AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7eb0.html)
 
 [WebKit features not supported in AIR](WSb2ba3b1aad8a27b0-67c0013e126afbe6c4d-8000.html)
-
-</div>
-
-<div>
-
-</div>
-
-</div>

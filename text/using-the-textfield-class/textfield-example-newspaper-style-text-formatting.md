@@ -1,7 +1,5 @@
 # TextField Example: Newspaper-style text formatting
 
-<div>
-
 The News Layout example formats text to look something like a story in a printed
 newspaper. The input text can contain a headline, a subtitle, and the body of
 the story. Given a display width and height, this News Layout example formats
@@ -23,71 +21,59 @@ To get the application files for this sample, see
 The News Layout application files can be found in the folder Samples/NewsLayout.
 The application consists of the following files:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>File</p></th>
-<th><p>Description</p></th>
-</tr>
+    <tr>
+        <th><p>File</p></th>
+        <th><p>Description</p></th>
+    </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td headers="d17e27614 "><p>NewsLayout.mxml</p>
-<p>or</p>
-<p>NewsLayout.fla</p></td>
-<td headers="d17e27617 "><p>The user
-interface for the application for Flex (MXML) or Flash (FLA).</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e27614 "><p>com/example/programmingas3/newslayout/StoryLayoutComponent.as</p></td>
-<td headers="d17e27617 "><p>A Flex
-UIComponent class that places the StoryLayout instance.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e27614 "><p>com/example/programmingas3/newslayout/StoryLayout.as</p></td>
-<td headers="d17e27617 "><p>The main
-ActionScript class that arranges all the components of a news story for
-display.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e27614 "><p>com/example/programmingas3/newslayout/FormattedTextField.as</p></td>
-<td headers="d17e27617 "><p>A subclass of
-the TextField class that manages its own TextFormat object.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e27614 "><p>com/example/programmingas3/newslayout/HeadlineTextField.as</p></td>
-<td headers="d17e27617 "><p>A subclass of
-the FormattedTextField class that adjusts font sizes to fit a desired
-width.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e27614 "><p>com/example/programmingas3/newslayout/MultiColumnTextField.as</p></td>
-<td headers="d17e27617 "><p>An
-ActionScript class that splits text across two or more columns.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e27614 "><p>story.css</p></td>
-<td headers="d17e27617 "><p>A CSS file
-that defines text styles for the layout.</p></td>
-</tr>
+    <tr>
+        <td >
+            <p>NewsLayout.mxml</p>
+            <p>or</p>
+            <p>NewsLayout.fla</p>
+        </td>
+        <td ><p>The user
+        interface for the application for Flex (MXML) or Flash (FLA).</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/newslayout/StoryLayoutComponent.as</p></td>
+        <td ><p>A Flex
+        UIComponent class that places the StoryLayout instance.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/newslayout/StoryLayout.as</p></td>
+        <td ><p>The main
+        ActionScript class that arranges all the components of a news story for
+        display.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/newslayout/FormattedTextField.as</p></td>
+        <td ><p>A subclass of
+        the TextField class that manages its own TextFormat object.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/newslayout/HeadlineTextField.as</p></td>
+        <td ><p>A subclass of
+        the FormattedTextField class that adjusts font sizes to fit a desired
+        width.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/newslayout/MultiColumnTextField.as</p></td>
+        <td ><p>An
+        ActionScript class that splits text across two or more columns.</p></td>
+    </tr>
+    <tr>
+        <td ><p>story.css</p></td>
+        <td ><p>A CSS file
+        that defines text styles for the layout.</p></td>
+    </tr>
 </tbody>
 </table>
 
-</div>
-
-</div>
-
-<div>
-
 ## Reading the external CSS file
-
-<div>
 
 The News Layout application starts by reading story text from a local XML file.
 Then it reads an external CSS file that provides the formatting information for
@@ -199,15 +185,7 @@ style declarations and TextFormat objects. The `getTextStyle()` method
 translates CSS property values into the values expected by the TextFormat
 object.
 
-</div>
-
-</div>
-
-<div>
-
 ## Arranging story elements on the page
-
-<div>
 
 The StoryLayout class formats and lays out the headline, subtitle, and main text
 fields into a newspaper-style arrangement. The `displayText()` method initially
@@ -247,15 +225,7 @@ equal the `y` property of the previous field plus its height. This dynamic
 placement calculation is needed because HeadlineTextField objects and
 MultiColumnTextField objects can change their height to fit their contents.
 
-</div>
-
-</div>
-
-<div>
-
 ## Altering font size to fit the field size
-
-<div>
 
 Given a width in pixels and a maximum number of lines to display, the
 HeadlineTextField alters the font size to make the text fit the field. If the
@@ -345,15 +315,7 @@ too many lines it calls the `growText()` method to increase the font size and
 try again. The process stops at the point where incrementing the font size by
 one more point would create too many lines.
 
-</div>
-
-</div>
-
-<div>
-
 ## Splitting text across multiple columns
-
-<div>
 
 The MultiColumnTextField class spreads text among multiple TextField objects
 which are then arranged like newspaper columns.
@@ -518,15 +480,3 @@ successive field begins where the text in the previous field ended. If the text
 alignment style has been set to "justify" then the `justifyLastLine()` method is
 called to justify the final line of text in a field. Otherwise that last line
 would be treated as an end-of-paragraph line and not justified.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

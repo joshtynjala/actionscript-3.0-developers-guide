@@ -1,7 +1,5 @@
 # Data formats, and choosing the read and write methods to use
 
-<div>
-
 Every file is a set of bytes on a disk. In ActionScript, the data from a file
 can always be represented as a ByteArray. For example, the following code reads
 the data from a file into a ByteArray object named `bytes`:
@@ -97,13 +95,3 @@ section.
 Other files formats (for images, databases, application documents, and so on)
 have different structures, and to work with their data in ActionScript, you must
 understand how the data is structured.
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

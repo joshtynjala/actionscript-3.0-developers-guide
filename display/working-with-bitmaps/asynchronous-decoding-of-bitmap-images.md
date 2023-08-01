@@ -1,7 +1,5 @@
 # Asynchronous decoding of bitmap images
 
-<div>
-
 When you work with bitmap images, you can asynchronously decode and load the
 bitmap images to improve your application's perceived performance. Decoding a
 bitmap image asynchronously can take the same time as decoding the image
@@ -12,55 +10,42 @@ event. Hence, you can asynchronously decode larger images after loading them.
 The `ImageDecodingPolicy` class in the `flash.system` package, allows you to
 specify the bitmap loading scheme. The default loading scheme is synchronous.
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>Bitmap Decoding Policy</p></th>
-<th><p>Bitmap Loading Scheme</p></th>
-<th><p>Description</p></th>
-</tr>
+    <tr>
+        <th><p>Bitmap Decoding Policy</p></th>
+        <th><p>Bitmap Loading Scheme</p></th>
+        <th><p>Description</p></th>
+    </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td headers="d17e20992 "><p><samp>ImageDecodingPolicy.ON_DEMAND</samp></p></td>
-<td headers="d17e20995 "><p>Synchronous</p></td>
-<td headers="d17e20998 "><p>Loaded images
-are decoded when the image data is accessed.</p>
-<p>Use this policy to decode smaller images. You can also use this
-policy when your application does not rely on complex effects and
-transitions.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e20992 "><p><samp>ImageDecodingPolicy.ON_LOAD</samp></p></td>
-<td headers="d17e20995 "><p>Asynchronous</p></td>
-<td headers="d17e20998 "><p>Loaded images
-are decoded on load, before the
-<samp>COMPLETE</samp>
-event is dispatched.</p>
-<p>Ideal for larger images (greater than 10 MP). When you are developing
-AIR-based mobile applications with page transitions, use this bitmap
-loading policy to improve your application's perceived
-performance.</p></td>
-</tr>
+    <tr>
+        <td ><p><samp>ImageDecodingPolicy.ON_DEMAND</samp></p></td>
+        <td ><p>Synchronous</p></td>
+        <td ><p>Loaded images
+        are decoded when the image data is accessed.</p>
+        <p>Use this policy to decode smaller images. You can also use this
+        policy when your application does not rely on complex effects and
+        transitions.</p></td>
+    </tr>
+    <tr>
+        <td ><p><samp>ImageDecodingPolicy.ON_LOAD</samp></p></td>
+        <td ><p>Asynchronous</p></td>
+        <td ><p>Loaded images
+        are decoded on load, before the
+        <samp>COMPLETE</samp>
+        event is dispatched.</p>
+        <p>Ideal for larger images (greater than 10 MP). When you are developing
+        AIR-based mobile applications with page transitions, use this bitmap
+        loading policy to improve your application's perceived
+        performance.</p></td>
+    </tr>
 </tbody>
 </table>
-
-</div>
-
-<div>
 
 Note: If the file being loaded is a bitmap image and the decoding policy used is
 `ON_LOAD`, the image is decoded asynchronously before the `COMPLETE` event is
 dispatched.
-
-</div>
 
 The following code shows the usage of the `ImageDecodingPolicy` class:
 
@@ -138,5 +123,3 @@ synchronously and asynchronously:
 For a demonstration of the effect of the different decoding policies, see
 <a href="http://www.bytearray.org/?p=2931" target="_self">Thibaud Imbert:
 Asynchronous bitmap decoding in the Adobe Flash runtimes</a>
-
-</div>

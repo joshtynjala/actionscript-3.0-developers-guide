@@ -1,7 +1,5 @@
 # Drawing API example: Algorithmic Visual Generator
 
-<div>
-
 The Algorithmic Visual Generator example dynamically draws to the stage several
 "satellites", or circles moving in a circular orbit. Among the features explored
 are:
@@ -24,8 +22,6 @@ To get the application files for this sample, see
 The application files can be found in the folder
 Samples/AlgorithmicVisualGenerator. This folder contains the following files:
 
-<div>
-
 | File                                                                 | Description                                                                                                                                                                                                                 |
 | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | AlgorithmicVisualGenerator.fla                                       | The main application file in Flash Professional (FLA).                                                                                                                                                                      |
@@ -33,15 +29,7 @@ Samples/AlgorithmicVisualGenerator. This folder contains the following files:
 | com/example/programmingas3/algorithmic/ControlPanel.as               | A class that manages user interaction with several sliders and dispatching events when this occurs.                                                                                                                         |
 | com/example/programmingas3/algorithmic/Satellite.as                  | A class which represents the display object that rotates in an orbit around a central point and contains properties related to its current draw state.                                                                      |
 
-</div>
-
-</div>
-
-<div>
-
 ## Setting the listeners
-
-<div>
 
 The application first creates three listeners. The first listens for a
 dispatched event from the control panel that a rebuild of the satellites is
@@ -49,15 +37,7 @@ necessary. The second listens to changes to the size of the SWF file's stage.
 The third listens for each passing frame in the SWF file and to redraw using the
 `doEveryFrame()` function.
 
-</div>
-
-</div>
-
-<div>
-
 ## Creating the satellites
-
-<div>
 
 Once these listeners are set, the `build()` function is called. This function
 first calls the `clear()` function, which empties the `satellites` array and
@@ -75,15 +55,7 @@ As each satellite is created, a reference to it is added to the `satellites`
 array. When the `doEveryFrame()` function is called, it will update to all
 satellites in this array.
 
-</div>
-
-</div>
-
-<div>
-
 ## Updating the satellite position
-
-<div>
 
 The `doEveryFrame()` function is the heart of the application's animation
 process. It is called for every frame, at a rate equal the framerate of the SWF
@@ -106,15 +78,7 @@ immediately follows the loop responsible for drawing.
 When the doEveryFrame() function completes, the number of `visibleSatellites`
 update in position across the screen.
 
-</div>
-
-</div>
-
-<div>
-
 ## Responding to user interaction
-
-<div>
 
 User interaction occurs via the control panel, which is managed by the
 ControlPanel class. This class sets a listener along with the individual
@@ -125,15 +89,7 @@ display, an event is dispatched which is then handled in the main application
 file. As the control panel settings change, the `doEveryFrame()` function draws
 each satellite with the updated variables.
 
-</div>
-
-</div>
-
-<div>
-
 ## Customizing further
-
-<div>
 
 This example is only a basic schematic of how to generate visuals using the
 drawing API. It uses relatively few lines of code to create an interactive
@@ -156,7 +112,3 @@ Flash authoring environment, drawing basic shapes at run time. But it can also
 be used to create visual effects of a variety and scope that are not possible to
 create by hand. Using the drawing API and a bit of mathematics, the ActionScript
 author can give life to many unexpected creations.
-
-</div>
-
-</div>

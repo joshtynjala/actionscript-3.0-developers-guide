@@ -1,7 +1,5 @@
 # AIR security basics
 
-<div>
-
 AIR applications run with the same security restrictions as native applications.
 In general, AIR applications, like native applications, have broad access to
 operating system capabilities such as reading and writing files, starting
@@ -22,59 +20,8 @@ vulnerabilities related to memory management, such as buffer overflows and
 memory corruption. These are some of the most common vulnerabilities affecting
 desktop applications written in native code.
 
-<div xmlns:adobe="http://www.adobe.com/saxon">
+## Adobe recommends<
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td colspan="3"><h2 id="adobe-recommends">Adobe recommends</h2></td>
-</tr>
-<tr class="even">
-<td colspan="2" width="60%"></td>
-<td><table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td width="15%"><span> <img src="images/ethanAndpeleus.png" />
-</span></td>
-<td width="85%"><h3 id="maintaining-security-with-adobe-air"><a
-href="http://goo.gl/rXu59">Maintaining Security with Adobe AIR</a></h3>
-<span> Peleus Uhley and Ethan Malasky </span><br />
-<span> Peleus Uhley and Ethan Malasky provide an overview of the
-security-related issues that can arise when developing Adobe AIR
-applications. </span></td>
-</tr>
-</tbody>
-</table></td>
-</tr>
-</tbody>
-</table></td>
-</tr>
-</tbody>
-</table>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>
+>  <h3 id="maintaining-security-with-adobe-air"><a href="http://goo.gl/rXu59"><img src="../../img/ethanAndpeleus.png" /> Maintaining Security with Adobe AIR</a></h3>
+> Peleus Uhley and Ethan Malasky
+> Peleus Uhley and Ethan Malasky provide an overview of the security-related issues that can arise when developing Adobe AIR applications.

@@ -1,15 +1,11 @@
 # Flash Text Engine example: News layout
 
-<div>
-
 This programming example shows the Flash Text Engine in use laying out a simple
 newspaper page. The page includes a large headline, a subhead, and a multicolumn
 body section.
 
 First, create an FLA file, and attach the following code to frame \#2 of the
 default layer:
-
-<div>
 
     import com.example.programmingas3.newslayout.StoryLayout;
     // frame sc ript - create  a 3-columned arti cle layout
@@ -19,14 +15,10 @@ default layer:
     addChild(story);
     stop();
 
-</div>
-
 StoryLayout.as is the controller script for this example. It sets the content,
 reads in style information from an external style sheet, and assigns those
 styles to ElementFormat objects. It then creates the headline, subhead and
 multicolumn text elements.
-
-<div>
 
     package com.example.programmingas3.newslayout
     {
@@ -186,12 +178,8 @@ multicolumn text elements.
     	}
     }
 
-</div>
-
 FormattedTextBlock.as is used as a base class for creating blocks of text. It
 also includes utility functions for changing font size and case.
-
-<div>
 
     package com.example.programmingas3.newslayout
     {
@@ -275,13 +263,9 @@ also includes utility functions for changing font size and case.
     	}
     }
 
-</div>
-
 HeadlineTextBlock.as extends the FormattedTextBlock class and is used for
 creating headlines. It includes a function for fitting text within a defined
 space on the page.
-
-<div>
 
     package com.example.programmingas3.newslayout
     {
@@ -365,13 +349,9 @@ space on the page.
     	}
     }
 
-</div>
-
 MultiColumnText.as handles formatting text within a multicolumn design. It
 demonstrates the flexible use a TextBlock object as a factory for creating,
 formatting, and placing text lines.
-
-<div>
 
     package com.example.programmingas3.newslayout
     {
@@ -439,15 +419,3 @@ formatting, and placing text lines.
 
     	}
     }
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

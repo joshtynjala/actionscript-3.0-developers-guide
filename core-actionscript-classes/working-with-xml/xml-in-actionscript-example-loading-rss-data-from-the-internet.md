@@ -1,7 +1,5 @@
 # XML in ActionScript example: Loading RSS data from the Internet
 
-<div>
-
 The RSSViewer sample application shows a number of features of working with XML
 in ActionScript, including the following:
 
@@ -59,53 +57,41 @@ To get the application files for this sample, see
 The RSSViewer application files can be found in the folder Samples/RSSViewer.
 The application consists of the following files:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>File</p></th>
-<th><p>Description</p></th>
-</tr>
+    <tr>
+        <th><p>File</p></th>
+        <th><p>Description</p></th>
+    </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td headers="d17e10282 "><p>RSSViewer.mxml</p>
-<p>or</p>
-<p>RSSViewer.fla</p></td>
-<td headers="d17e10285 "><p>The main
-application file in Flash (FLA) or Flex (MXML).</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e10282 "><p>com/example/programmingas3/rssViewer/RSSParser.as</p></td>
-<td headers="d17e10285 "><p>A class that
-contains methods that use E4X to traverse RSS (XML) data and generate a
-corresponding HTML representation.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e10282 "><p>RSSData/ak.rss</p></td>
-<td headers="d17e10285 "><p>A sample RSS
-file. The application is set up to read RSS data from the web, at a Flex
-RSS feed hosted by Adobe. However, you can easily change the application
-to read RSS data from this document, which uses a slightly different
-schema than that of the Flex RSS feed.</p></td>
-</tr>
+    <tr>
+        <td >
+            <p>RSSViewer.mxml</p>
+            <p>or</p>
+            <p>RSSViewer.fla</p>
+        </td>
+        <td ><p>The main
+        application file in Flash (FLA) or Flex (MXML).</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/rssViewer/RSSParser.as</p></td>
+        <td ><p>A class that
+        contains methods that use E4X to traverse RSS (XML) data and generate a
+        corresponding HTML representation.</p></td>
+    </tr>
+    <tr>
+        <td ><p>RSSData/ak.rss</p></td>
+        <td ><p>A sample RSS
+        file. The application is set up to read RSS data from the web, at a Flex
+        RSS feed hosted by Adobe. However, you can easily change the application
+        to read RSS data from this document, which uses a slightly different
+        schema than that of the Flex RSS feed.</p></td>
+    </tr>
 </tbody>
 </table>
 
-</div>
-
-</div>
-
-<div>
-
 ## Reading and parsing XML data
-
-<div>
 
 The RSSParser class includes an `xmlLoaded()` method that converts the input RSS
 data, stored in the `rssXML` variable, into an string containing HTML-formatted
@@ -137,15 +123,7 @@ description and link properties of the `item` property of the XML data. The next
 line then calls the `buildItemHTML()` method to get HTML data in the form of an
 XMLList object, using the three new string variables as parameters.
 
-</div>
-
-</div>
-
-<div>
-
 ## Assembling XMLList data
-
-<div>
 
 The HTML data (an XMLList object) is of the following form:
 
@@ -192,15 +170,7 @@ and converts it to a string:
     XML.prettyPrinting = false;
     rssOutput = outXML.toXMLString();
 
-</div>
-
-</div>
-
-<div>
-
 ## Extracting the title of the RSS feed and sending a custom event
-
-<div>
 
 The `xmlLoaded()` method sets a `rssTitle` string variable, based on information
 in the source RSS XML data:
@@ -211,7 +181,3 @@ Finally, the `xmlLoaded()` method generates an event, which notifies the
 application that the data is parsed and available:
 
                 dataWritten = new Event("dataWritten", true);
-
-</div>
-
-</div>

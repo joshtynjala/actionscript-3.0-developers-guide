@@ -1,7 +1,5 @@
 # Drawing lines and curves
 
-<div>
-
 All drawing that you do with a Graphics instance is based on basic drawing with
 lines and curves. Consequently, all ActionScript drawing must be performed using
 the same series of steps:
@@ -14,13 +12,7 @@ the same series of steps:
 
 - If necessary, finish creating a fill
 
-</div>
-
-<div>
-
 ## Defining line and fill styles
-
-<div>
 
 To draw with the `graphics` property of a Shape, Sprite, or MovieClip instance,
 you must first define the style (line size and color, fill color) to use when
@@ -76,13 +68,9 @@ With the drawing point in place you draw using a series of calls to the drawing
 methods `lineTo()` (for drawing straight lines) and `curveTo()` (for drawing
 curved lines).
 
-<div>
-
 ![](../../img/tip_help.png) While you are drawing, you can call the `moveTo()`
 _method at any time to move the drawing point to a new position without
 drawing._
-
-</div>
 
 While drawing, if you have specified a fill color, you can close off the fill by
 calling the `endFill()` method. If you have not drawn a closed shape (in other
@@ -94,15 +82,7 @@ call. If you have started a fill and not called `endFill()`, calling
 `beginFill()` (or one of the other fill methods) closes the current fill and
 starts the new one.
 
-</div>
-
-</div>
-
-<div>
-
 ## Drawing straight lines
-
-<div>
 
 When you call the `lineTo()` method, the Graphics object draws a straight line
 from the current drawing point to the coordinates you specify as the two
@@ -134,15 +114,7 @@ The following example draws red and green triangles with a height of 100 pixels:
 
     this.addChild(triangle);
 
-</div>
-
-</div>
-
-<div>
-
 ## Drawing curves
-
-<div>
 
 The `curveTo()` method draws a quadratic Bézier curve. This draws an arc that
 connects two points (called anchor points) while bending toward a third point
@@ -181,7 +153,3 @@ equation, these are not perfect circles:
     roundObject.graphics.curveTo(200, 0, 200 + size / 2, 0);
 
     this.addChild(roundObject);
-
-</div>
-
-</div>

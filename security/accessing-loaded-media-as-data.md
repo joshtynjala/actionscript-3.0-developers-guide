@@ -1,7 +1,5 @@
 # Accessing loaded media as data
 
-<div>
-
 To access load data use the `BitmapData.draw()`, `BitmapData.drawWithQuality()`,
 and `SoundMixer.computeSpectrum()` methods. By default, you cannot obtain pixel
 data or audio data from graphic or audio objects rendered or played by media
@@ -22,13 +20,7 @@ grant permission to access such data across sandbox boundaries:
 The following sections provide details on accessing bitmap, sound, and video
 data.
 
-</div>
-
-<div>
-
 ## Accessing bitmap data
-
-<div>
 
 The `draw()` and `drawWithQuality()` (Flash Player 11.3; AIR 3.3) methods of a
 BitmapData object lets you draw the currently displayed pixels of any display
@@ -60,15 +52,7 @@ You can also specify a `checkPolicyFile` property in an image loaded via an
 `<img>` tag in a text field. For details, see
 [Loading SWF files and images using the \<img\> tag in a text field](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c65.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Accessing sound data
-
-<div>
 
 The following sound-related ActionScript 3.0 APIs have security restrictions:
 
@@ -136,15 +120,7 @@ the Server-Side ActionScript `Client.audioSampleAccess` property to allow access
 to specific directories on Flash Media Server. For more information, see the
 [Server-Side ActionScript Language Reference](http://www.adobe.com/go/learn_fms_docs_en).
 
-</div>
-
-</div>
-
-<div>
-
 ## Accessing video data
-
-<div>
 
 You can use the `BitmapData.draw()` or `BitmapData.drawWithQuality()` method to
 capture the pixel data of the current frame of a video. (The `drawWithQuality`
@@ -168,15 +144,3 @@ or the server of the FLV file must have a policy file that grants permission to
 the domain of the calling SWF file. You can request that the policy file be
 downloaded by setting the `checkPolicyFile` property of the NetStream object to
 `true`.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # Permission controls
 
-<div>
-
 The Flash Player client run-time security model has been designed around
 resources, which are objects such as SWF files, local data, and Internet URLs.
 _Stakeholders_ are the parties who own or use those resources. Stakeholders can
@@ -9,19 +7,9 @@ exercise controls (security settings) over their own resources, and each
 resource has four stakeholders. Flash Player strictly enforces a hierarchy of
 authority for these controls, as the following illustration shows:
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![Hierarchy of authority](images/sc_hierarchy_securityControl.png)
 
-<div>
-
 Hierarchy of security controls
-
-</div>
-
-</div>
 
 This means, for instance, that if an administrator restricts access to a
 resource, no other stakeholders can override that restriction.
@@ -29,13 +17,7 @@ resource, no other stakeholders can override that restriction.
 For AIR applications, these permission controls only apply to content running
 outside the AIR application sandbox.
 
-</div>
-
-<div>
-
 ## Administrator controls
-
-<div>
 
 An administrative user of a computer (a user who has logged in with
 administrative rights) can apply Flash Player security settings that affect all
@@ -50,13 +32,7 @@ There are two types of administrative user controls:
 
 - The Global Flash Player Trust directory
 
-</div>
-
-<div>
-
 ### The mms.cfg file
-
-<div>
 
 The mms.cfg file is a text file that lets administrators enable or restrict
 access to a variety of capabilities. When Flash Player starts, it reads its
@@ -115,15 +91,7 @@ For more information about the mms.cfg file, see the Flash Player Administration
 Guide at
 [www.adobe.com/go/flash_player_admin](http://www.adobe.com/go/flash_player_admin).
 
-</div>
-
-</div>
-
-<div>
-
 ### The Global Flash Player Trust directory
-
-<div>
 
 Administrative users and installer applications can register specified local SWF
 files as trusted for all users. These SWF files are assigned to the
@@ -168,29 +136,13 @@ trusted local applications using the Global Flash Player Trust directory.
 There are also Flash Player Trust directories for individual users (see
 [User controls](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c91.html)).
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## User controls
-
-<div>
 
 Flash Player provides three different user-level mechanisms for setting
 permissions: the Settings UI and Settings Manager, and the User Flash Player
 Trust directory.
 
-</div>
-
-<div>
-
 ### The Settings UI and Settings Manager
-
-<div>
 
 The Settings UI is a quick, interactive mechanism for configuring the settings
 for a specific domain. The Settings Manager presents a more detailed interface
@@ -204,26 +156,14 @@ camera and microphone settings, shared object storage settings, settings related
 to legacy content, and so on. Neither the Settings Manager nor the Settings UI
 are available to AIR applications.
 
-<div>
-
 Note: Any settings made in the mms.cfg file (see
 [Administrator controls](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c95.html)) are
 not reflected in the Settings Manager.
 
-</div>
-
 For details on the Settings Manager, see
 [www.adobe.com/go/settingsmanager](http://www.adobe.com/go/settingsmanager).
 
-</div>
-
-</div>
-
-<div>
-
 ### The User Flash Player Trust directory
-
-<div>
 
 Users and installer applications can register specified local SWF files as
 trusted. These SWF files are assigned to the local-trusted sandbox. They can
@@ -266,17 +206,7 @@ following locations (locations are specific to the current user):
   a computer (see
   [Administrator controls](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c95.html)).
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Website controls (policy files)
-
-<div>
 
 To make data from your web server available to SWF files from other domains, you
 can create a policy file on your server. A _policy file_ is an XML file placed
@@ -300,8 +230,6 @@ connections, and these objects load a file from a URL. ActionScript Socket and
 XMLSocket objects make socket connections, which operate with streaming data,
 not loaded documents.
 
-<div>
-
 Because Flash Player supports two kinds of server connections, there are two
 types of policy files—URL policy files and socket policy files.
 
@@ -312,8 +240,6 @@ types of policy files—URL policy files and socket policy files.
 - Socket connections require _socket policy files,_ which enable networking
   directly at the lower TCP socket level, using the Socket and XMLSocket
   classes.
-
-</div>
 
 Flash Player requires policy files to be transmitted using the same protocol
 that the attempted connection wants to use. For example, when you place a policy
@@ -335,13 +261,7 @@ Code executing in the AIR application sandbox does not require a policy file to
 access data from a URL or socket. Code in an AIR application executing in a
 non-application sandbox does require a policy file.
 
-</div>
-
-<div>
-
 ### Master policy files
-
-<div>
 
 By default, Flash Player (and AIR content that is not in the AIR application
 sandbox) first looks for a URL policy file named `crossdomain.xml` in the root
@@ -358,8 +278,6 @@ contain policy files. The default meta-policy for URL policy files is
 on the server. The default meta-policy for socket policy files is "all," which
 means that any socket on the host can serve a socket policy file.
 
-<div>
-
 Note: In Flash Player 9 and earlier, the default meta-policy for URL policy
 files was "all," which means that any directory can contain a policy file. If
 you have deployed applications that load policy files from locations other than
@@ -369,8 +287,6 @@ master policy file to allow additional policy files. For information on how to
 specify different a different meta-policy, see the Flash Player Developer Center
 topic "Policy File Changes in Flash Player 9" at
 [www.adobe.com/go/devnet_security_en](http://www.adobe.com/go/devnet_security_en).
-
-</div>
 
 A SWF file can check for a different policy filename or a different directory
 location by calling the `Security.loadPolicyFile()` method. However, if the
@@ -404,15 +320,7 @@ The following sections contain information that applies only to URL policy
 files. For more information on socket policy files, see
 [Connecting to sockets](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c63.html).
 
-</div>
-
-</div>
-
-<div>
-
 ### URL policy file scope
-
-<div>
 
 A URL policy file applies only to the directory from which it is loaded and to
 its child directories. A policy file in the root directory applies to the whole
@@ -424,17 +332,7 @@ For example, a policy file located at https://www.adobe.com:8080/crossdomain.xml
 applies only to data- loading calls made to www.adobe.com over HTTPS at
 port 8080.
 
-</div>
-
-</div>
-
-<div>
-
 ### Specifying access permissions in a URL policy file
-
-<div>
-
-<div>
 
 A policy file contains a single `<cross-domain-policy>` tag, which in turn
 contains zero or more `<allow-access-from>` tags. Each `<allow-access-from>` tag
@@ -451,8 +349,6 @@ Suffixes must begin with a dot. However, wildcard domains with suffixes can
 match domains that consist of only the suffix without the leading dot. For
 example, xyz.com is considered to be part of \*.xyz.com. Wildcards are not
 allowed in IP domain specifications.
-
-</div>
 
 The following example shows a URL policy file that permits access to SWF files
 that originate from \*.example.com, www.friendOfExample.com and 192.0.34.166:
@@ -497,8 +393,6 @@ file on an HTTP server, add the `secure="false"` attribute to the
 
     <allow-access-from domain="www.example.com" secure="false" />
 
-<div>
-
 Another element you can use to permit access is the
 `allow-http-request-headers-from` tag. This element grants a client hosting
 content from another permission domain to send user-defined headers to your
@@ -512,21 +406,11 @@ the current domain:
     	<allow-http-request-headers-from domain="*" headers="SOAPAction"/>
     </cross-domain-policy>
 
-</div>
-
 If the `allow-http-request-headers-from` statement is in the master policy file,
 it applies to all directories on the host. Otherwise, it applies only to the
 directory and subdirectories of the policy file that contains the statement.
 
-</div>
-
-</div>
-
-<div>
-
 ### Preloading policy files
-
-<div>
 
 Loading data from a server or connecting to a socket is an asynchronous
 operation. Flash Player simply waits for the policy file to finish downloading
@@ -557,17 +441,7 @@ policy file in the default location on the server, checking both for
 it considers any pending calls to the `Security.loadPolicyFile()` method to see
 if they are in scope.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Author (developer) controls
-
-<div>
 
 The main ActionScript API used to grant security privileges is the
 `Security.allowDomain()` method, which grant privileges to SWF files in the
@@ -620,27 +494,11 @@ access to your secure HTTPS data by SWF files served over HTTP connections, an
 attacker interposed between your HTTP server and your users could replace your
 HTTP SWF file with one of their own, which can then access your HTTPS data.
 
-<div>
-
 Important: Code executing in the AIR application sandbox is not permitted to
 call either the `allowDomain()` or `allowInsecureDomain()` methods of the
 Security class.
-
-</div>
 
 Another important security-related method is the `Security.loadPolicyFile()`
 method, which causes Flash Player to check for a policy file at a nonstandard
 location. For more information, see
 [Website controls (policy files)](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e08.html).
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

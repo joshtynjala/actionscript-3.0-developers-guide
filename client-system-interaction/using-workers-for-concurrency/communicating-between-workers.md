@@ -1,7 +1,5 @@
 # Communicating between workers
 
-<div>
-
 Although workers run their code in separate execution threads, they wouldn't
 offer any benefit if they were completely isolated from each other.
 Communication between workers ultimately means passing data between workers.
@@ -18,23 +16,13 @@ memory and cpu cycles. In other cases the workers access objects that reference
 the same underlying system memory, which means fewer objects are created and
 less memory is used overall. These differences are outlined here:
 
-<div>
-
 | Communication technique  | Dispatches event when receiving data | Shares memory between workers         |
 | ------------------------ | ------------------------------------ | ------------------------------------- |
 | Worker shared properties | No                                   | No, objects are copies not references |
 | MessageChannel           | Yes                                  | No, objects are copies not references |
 | Shareable ByteArray      | No                                   | Yes, memory is shared                 |
 
-</div>
-
-</div>
-
-<div>
-
 ## Passing data with a shared property
-
-<div>
 
 The most basic way to share data between workers is to use a shared property.
 Each worker maintains an internal dictionary of shared property values. The
@@ -72,15 +60,7 @@ before the worker is running. When the parent worker calls the Worker's
 Any shared properties that were set before `start()` was called are available
 for code in the child worker to read.
 
-</div>
-
-</div>
-
-<div>
-
 ## Passing data with a MessageChannel
-
-<div>
 
 A message channel provides a one-way data-passing link between two workers.
 Using a MessageChannel object to pass data between workers has one key
@@ -133,15 +113,7 @@ object passed in by the sender and not a reference to the object in the sending
 worker, unless it is one of a few data types, as described in
 [Shared references and copied values](WS2f73111e7a180bd0d047eb7139123f4689-8000.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Sharing data using a shareable ByteArray
-
-<div>
 
 When an object is passed between two workers, the receiving worker gets a new
 object that's a copy of the original one. The two objects are stored in
@@ -184,15 +156,7 @@ control for working with shared resources:
 
 - [Condition class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/concurrent/Condition.html)
 
-</div>
-
-</div>
-
-<div>
-
 ## Shared references and copied values
-
-<div>
 
 In the normal case, when you call `Worker.setSharedProperty()` or
 `MessageChannel.send()`, the object that's passed to the receiving worker is
@@ -234,15 +198,7 @@ if you pass the same instance of one of these objects to a worker more than
 once, the runtime doesn't create a new copy of the object in the receiving
 worker. Instead, the same reference is re-used.
 
-</div>
-
-</div>
-
-<div>
-
 ## Additional data-sharing techniques
-
-<div>
 
 In addition to the worker-specific mechanisms for passing data, workers can also
 exchange data using any of the existing apis that support sharing data between
@@ -276,15 +232,3 @@ affect the integrity of the data.
 [Working with local SQL databases in AIR](WS5b3ccc516d4fbf351e63e3d118676a5497-7fb4.html)
 
 [flash.concurrent package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/concurrent/package-detail.html)
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # Updating Flash Player to support Adobe Access
 
-<div>
-
 **_Important_** : Flash Player 11.5 and above integrates the Adobe Access
 module, so the update step (calling
 `SystemUpdater.update(SystemUpdaterType.DRM)`) is unnecessary. This includes the
@@ -21,12 +19,8 @@ This means that the update step is _still required_ in the following cases:
 - Flash Player 11.4 and below, except on Google Chrome 22 and above (all
   platforms) or 21 and above (Windows)
 
-<div>
-
 Note: You can still safely call `SystemUpdater.update(SystemUpdaterType.DRM)` on
 a system with Flash Player 11.5 or higher, but nothing is downloaded.
-
-</div>
 
 To support Adobe Access, Flash Player requires the Adobe Access module. When
 Flash Player tries to play protected content, the runtime indicates if the
@@ -45,26 +39,12 @@ instance running in Firefox.
 
 The SystemUpdater API is supported for desktop platforms only.
 
-<div>
-
-<div>
-
 Note: For versions of Flash Player earlier than 10.1, use the update mechanism
 supported in earlier player versions (manual download and install from
 www.adobe.com or ExpressInstall). Also, the AIR installer handles necessary
 updates for Adobe Access and does not support the SystemUpdater API.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Listening for an update event
-
-<div>
 
 When an update of the Adobe Access module is required, the NetStream object
 dispatches a NetStatusEvent with a code value of `DRM.UpdateNeeded`. This value
@@ -72,30 +52,18 @@ indicates that the NetStream object cannot play back the protected stream with
 any of the currently installed Adobe Access modules. Listen for this event and
 call the following code:
 
-<div>
-
     SystemUpdater.update(flash.system.SystemUpdaterType.DRM)
 
 This code updates the Adobe Access module installed in the player. User consent
 for this module update is not required.
 
-</div>
-
 If the Adobe Access module is not found, an error is thrown. See step 3 of the
 [Detailed API workflow](WSa3a415adbae4e49c-513a8af0126e28a784c-8000.html).
-
-<div>
-
-<div>
 
 Note: If play() is called on an encrypted stream in players earlier than 10.1, a
 NetStatusEvent with code value of NetStream.Play.StreamNotFound is dispatched.
 For earlier players, use the update mechanism supported for those players
 (manual download and install from www.adobe.com or ExpressInstall).
-
-</div>
-
-</div>
 
 When an update of the player itself is required, the SystemUpdater object
 dispatches a StatusEvent with a code value of `DRM.UpdateNeededButIncompatible`
@@ -104,13 +72,9 @@ application, provide an interface for the user to agree to and initiate the
 update of the player. Listen for the StatusEvent event and call the following
 code:
 
-<div>
-
     SystemUpdater.update(flash.system.SystemUpdaterType.SYSTEM);
 
 This code initiates the update of the player.
-
-</div>
 
 Additional
 [events for the SystemUpdater class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/system/SystemUpdater.html#eventSummary)
@@ -120,15 +84,3 @@ are documented in the
 After the player update completes, the user is redirected to the page where the
 update began. The Adobe Access module is downloaded, and the stream can begin
 playing.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

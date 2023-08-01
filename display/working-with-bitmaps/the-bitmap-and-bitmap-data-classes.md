@@ -1,18 +1,10 @@
 # The Bitmap and BitmapData classes
 
-<div>
-
 The main ActionScript 3.0 classes for working with bitmap images are the Bitmap
 class, which is used to display bitmap images on the screen, and the BitmapData
 class, which is used to access and manipulate the raw image data of a bitmap.
 
-</div>
-
-<div>
-
 ## Understanding the Bitmap class
-
-<div>
 
 As a subclass of the DisplayObject class, the Bitmap class is the main
 ActionScript 3.0 class used for displaying bitmap images. These images may have
@@ -25,15 +17,7 @@ the characteristics and functionality of display objects can be used to
 manipulate a Bitmap instance as well. For more information about working with
 display objects, see [Display programming](../display-programming/index.md).
 
-</div>
-
-</div>
-
-<div>
-
 ## Pixel snapping and smoothing
-
-<div>
 
 In addition to the functionality common to all display objects, the Bitmap class
 provides some additional features that are specific to bitmap images.
@@ -52,15 +36,7 @@ This Boolean property, when set to `true`, smooths, or anti-aliases, the pixels
 within the image when it is scaled. This gives the image a clearer and more
 natural appearance.
 
-</div>
-
-</div>
-
-<div>
-
 ## Understanding the BitmapData class
-
-<div>
 
 The BitmapData class, which is in the flash.display package, can be likened to a
 photographic snapshot of the pixels contained within a loaded or dynamically
@@ -105,7 +81,3 @@ it in a Bitmap instance:
     var myBitmapDataObject:BitmapData = new BitmapData(150, 150, false, 0xFF0000);
     var myImage:Bitmap = new Bitmap(myBitmapDataObject);
     addChild(myImage);
-
-</div>
-
-</div>

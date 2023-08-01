@@ -1,12 +1,8 @@
 # How to Use ActionScript Examples
 
-<div>
-
 Running an ActionScript 3.0 code example is one of the best ways to learn how
 particular classes and methods work. You can use examples in different ways,
 depending on the devices you are using or targeting.
-
-<div>
 
 Computers running Flash Professional or Flash Builder  
 See
@@ -31,15 +27,7 @@ examples by running them on your computer. See
 on the Adobe Developer Connection website for information about developing
 applications for TV devices.
 
-</div>
-
-</div>
-
-<div>
-
 ## Types of examples
-
-<div>
 
 The types of ActionScript 3.0 code examples are:
 
@@ -53,8 +41,6 @@ The types of ActionScript 3.0 code examples are:
   from
   [_FlashPlatformAS3DevGuideExamples.zip_](https://github.com/joshtynjala/flash-platform-as3-dev-guide-examples/releases/tag/original))
 
-<div>
-
 #### Code snippet examples
 
 A code snippet example looks like this:
@@ -64,10 +50,6 @@ A code snippet example looks like this:
 
 Code snippets only contain enough code to demonstrate a single idea. They do not
 normally contain package or class statements.
-
-</div>
-
-<div>
 
 #### Class-based examples
 
@@ -86,18 +68,12 @@ class-based example looks like this:
 The code for a class-based example includes a package statement, a class
 declaration, and a constructor function.
 
-</div>
-
-<div>
-
 #### Practical examples containing multiple source files
 
 Many of the topics in the ActionScript 3.0 Developer's Guide conclude with
 practical examples that show how to use certain ActionScript features in a
 practical, real-world context. These examples usually contain multiple files
 including:
-
-<div>
 
 - One or more ActionScript source files
 
@@ -107,8 +83,6 @@ including:
 
 - Data files, image files, sound files, or other assets used by the example
   application (optional).
-
-</div>
 
 Practical examples are normally delivered as ZIP archive files.
 
@@ -190,22 +164,10 @@ contains the following examples:
 Practical examples are also found with many of the Quick Start articles in the
 Flash Developer Center and Flex Developer Center.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Running ActionScript 3.0 examples in Flash Professional
-
-<div>
 
 Use one of the following procedures (depending on example type) to run an
 example using Flash Professional.
-
-<div>
 
 #### Running a code snippet example in Flash Professional
 
@@ -225,15 +187,9 @@ To run a code snippet example in Flash Professional:
 
 6.  To test the example, select Control \> Test Movie.
 
-</div>
-
-<div>
-
 #### Running a class-based example in Flash Professional
 
 To run a class-based example in Flash Professional:
-
-<div>
 
 1.  Select File \> New.
 
@@ -253,11 +209,8 @@ To run a class-based example in Flash Professional:
     Also make sure that all the classes referenced in the example are declared
     using `import` statements.
 
-4.  <div>
-
-    Select File \> Save. Give the file the same name as the class in the example
+4.  Select File \> Save. Give the file the same name as the class in the example
     (e.g. ContextMenuExample.as).
-    <div>
 
     Note: Some of the class-based examples, such as the
     [flashx.textLayout.container.ContainerController class example](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/container/ContainerController.html#includeExamplesSummary),
@@ -267,10 +220,6 @@ To run a class-based example in Flash Professional:
     (flashx/textLayout/container/examples), or remove the package name (so the
     ActionScript starts with `package {` only) and you can test the file from
     any location.
-
-    </div>
-
-    </div>
 
 5.  Select File \> New.
 
@@ -286,12 +235,6 @@ To run a class-based example in Flash Professional:
 
 9.  To test the example, select Control \> Test Movie.
 
-</div>
-
-</div>
-
-<div>
-
 #### Running a practical example in Flash Professional
 
 Practical examples are normally delivered as ZIP archive files. To run a
@@ -306,28 +249,14 @@ practical example using Flash Professional:
 
 4.  To test the example, select Control \> Test Movie.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Running ActionScript 3.0 examples in Flash Builder
-
-<div>
 
 Use one of the following procedures (depending on example type) to run an
 example using Flash Builder.
 
-<div>
-
 #### Running a code snippet example in Flash Builder
 
 To run a code snippet example in Flash Builder:
-
-<div>
 
 1.  Either create a new Flex Project (select File \> New \> Flex Project), or
     within an existing Flex project create a new MXML Application (select File
@@ -342,15 +271,7 @@ To run a code snippet example in Flash Builder:
 4.  To run the example, select the Run \> Run menu option for the main MXML file
     (such as Run \> Run ContextMenuExample).
 
-</div>
-
-</div>
-
-<div>
-
 #### Running a class-based example in Flash Builder
-
-To run a class-based example in Flash Builder:
 
 1.  Select File \> New \> ActionScript Project.
 
@@ -363,8 +284,6 @@ To run a class-based example in Flash Builder:
     code, including package and import statements, into the ActionScript file
     and save the file.
 
-    <div>
-
     Note: Some of the class-based examples, such as the
     [flashx.textLayout.container.ContainerController class example](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/container/ContainerController.html#includeExamplesSummary),
     include multiple levels in the package declaration (
@@ -374,21 +293,13 @@ To run a class-based example in Flash Builder:
     ActionScript starts with `package {` only) and you can test the file from
     any location.
 
-    </div>
-
 4.  To run the example, select the Run \> Run menu option for the main
     ActionScript class name (such as Run \> Run ContextMenuExample).
-
-</div>
-
-<div>
 
 #### Running a practical example inFlash Builder
 
 Practical examples are normally delivered as ZIP archive files. To run a
 practical example using Flash Builder:
-
-<div>
 
 1.  Unzip the archive file into a folder of your choice. Give the folder a
     descriptive name (such as ContextMenuExample).
@@ -408,19 +319,7 @@ practical example using Flash Builder:
 5.  To run the example, select the Run \> Run menu option for the main MXML file
     (such as Run \> Run ContextMenuExample).
 
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Running ActionScript 3.0 examples on mobile devices
-
-<div>
 
 You can run the ActionScript 3.0 code examples on mobile devices that support
 Flash Player 10.1. However, typically you run a code example to learn how
@@ -432,8 +331,6 @@ Builder to increase your understanding of a code example.
 If you want to run the example on a mobile device, you can either copy the files
 to the device or to a web server. To copy files to the device and run the
 example in the browser, do the following:
-
-<div>
 
 1.  Create the SWF file by following the instructions in
     [Running ActionScript 3.0 examples in Flash Professional](WS9b644acd4ebe5999-2734bf3c124372a52ff-7fff.html)
@@ -449,12 +346,8 @@ example in the browser, do the following:
 3.  In the address bar of browser on the mobile device, enter the file:// URL
     for the SWF file. For example, enter `file:://applications/myExample.swf`.
 
-</div>
-
 To copy files to a web server and run the example in the device's browser, do
 the following:
-
-<div>
 
 1.  Create a SWF file and an HTML file. First, follow the instructions in
     [Running ActionScript 3.0 examples in Flash Professional](WS9b644acd4ebe5999-2734bf3c124372a52ff-7fff.html)
@@ -475,10 +368,6 @@ the following:
 Before running an example on a mobile device, consider each of the following
 issues.
 
-</div>
-
-<div>
-
 #### Stage size
 
 The stage size you use when running an example on a mobile device is much
@@ -493,10 +382,6 @@ computer. Although the examples work on mobile devices, the Stage size and user
 interface design is not suitable to the small screen. Adobe recommends that you
 run the practical examples on a computer to learn the ActionScript, and then use
 pertinent code snippets in your mobile applications.
-
-</div>
-
-<div>
 
 #### Text fields instead of trace statements
 
@@ -552,10 +437,6 @@ that is to call the object's `toString()` method:
     traceField.appendText("albumYear = ");
     traceField.appendText(albumYear.toString());
 
-</div>
-
-<div>
-
 #### Text size
 
 Many examples use text fields to help illustrate a concept. Sometimes adjusting
@@ -567,10 +448,6 @@ device. For example, if an example uses a text field instance named
     var myFormat:TextFormat = new TextFormat();
     myFormat.size = 18;
     myTextField.defaultTextFormat = myFormat
-
-</div>
-
-<div>
 
 #### Capturing user input
 
@@ -593,10 +470,6 @@ ActionScript, and then use pertinent code snippets in your mobile applications.
 For more information, see
 [Panning and scrolling display objects](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e17.html).
 
-</div>
-
-<div>
-
 #### Handling focus
 
 Some examples require you to give a field the focus. By giving a field the
@@ -609,10 +482,6 @@ Enter on a computer. On some devices, tapping twice on a button selects it.
 For more information about focus, see
 [Managing focus](WS5b3ccc516d4fbf351e63e3d118a9b8f499-7ff2.html).
 
-</div>
-
-<div>
-
 #### Handling mouse events
 
 Many examples listen for mouse events. On a computer, these mouse events can
@@ -623,10 +492,6 @@ Player 10.1 maps touch events to mouse events. This mapping ensures that SWF
 content that was developed before Flash Player 10.1 continues to work.
 Therefore, examples work when using a pointer device to select or drag a display
 object.
-
-</div>
-
-<div>
 
 #### Performance
 
@@ -641,10 +506,6 @@ not suitable on some mobile devices due to their performance limitations.
 For more information about performance on mobile devices, see
 _[Optimizing Performance for the Flash Platform](http://www.adobe.com/go/learn_optimizing_fp_en)_.
 
-</div>
-
-<div>
-
 #### Best practices
 
 The examples do not consider best practices in developing applications for
@@ -653,17 +514,3 @@ require special consideration. Similarly, the user interface for the small
 screen has different needs than a desktop display. For more information about
 developing applications for mobile devices, _see
 _[Optimizing Performance for the Flash Platform](http://www.adobe.com/go/learn_optimizing_fp_en)_._
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

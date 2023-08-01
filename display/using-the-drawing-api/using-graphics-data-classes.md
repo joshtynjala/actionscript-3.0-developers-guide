@@ -1,14 +1,10 @@
 # Using graphics data classes
 
-<div>
-
 The enhanced drawing API includes a set of classes in the flash.display package
 that implement the <a
 href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/IGraphicsData.html"
 target="_self">IGraphicsData</a> interface. These classes act as value objects
 (data containers) that represent the drawing methods of the drawing API.
-
-<div>
 
 The following classes implement the IGraphicsData interface:
 
@@ -28,8 +24,6 @@ The following classes implement the IGraphicsData interface:
 
 - [GraphicsTrianglePath](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/GraphicsTrianglePath.html)
 
-</div>
-
 With these classes, you can store a complete drawing in a Vector object of
 IGraphicsData type (Vector.\<IGraphicsData\>). You can then reuse the graphics
 data as the data source for other shape instances or to store drawing
@@ -42,71 +36,59 @@ actually defined by a combination of the stroke class and a fill class.
 Otherwise, the API for these graphics data classes mirror the methods they
 represent in the flash.display.Graphics class:
 
-<div>
-
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>Graphics Method</p></th>
-<th><p>Corresponding Class</p></th>
-</tr>
+    <tr>
+        <th><p>Graphics Method</p></th>
+        <th><p>Corresponding Class</p></th>
+    </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td headers="d17e19098 "><p>beginBitmapFill()</p></td>
-<td headers="d17e19101 "><p>GraphicsBitmapFill</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e19098 "><p>beginFill()</p></td>
-<td headers="d17e19101 "><p>GraphicsSolidFill</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e19098 "><p>beginGradientFill()</p></td>
-<td headers="d17e19101 "><p>GraphicsGradientFill</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e19098 "><p>beginShaderFill()</p></td>
-<td headers="d17e19101 "><p>GraphicsShaderFill</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e19098 "><p>lineBitmapStyle()</p></td>
-<td headers="d17e19101 "><p>GraphicsStroke + GraphicsBitmapFill</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e19098 "><p>lineGradientStyle()</p></td>
-<td headers="d17e19101 "><p>GraphicsStroke + GraphicsGradientFill</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e19098 "><p>lineShaderStyle()</p></td>
-<td headers="d17e19101 "><p>GraphicsStroke + GraphicsShaderFill</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e19098 "><p>lineStyle()</p></td>
-<td headers="d17e19101 "><p>GraphicsStroke + GraphicsSolidFill</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e19098 "><p>moveTo()</p>
-<p>lineTo()</p>
-<p>curveTo()</p>
-<p>drawPath()</p></td>
-<td headers="d17e19101 "><p>GraphicsPath</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e19098 "><p>drawTriangles()</p></td>
-<td headers="d17e19101 "><p>GraphicsTrianglePath</p></td>
-</tr>
+    <tr>
+        <td ><p>beginBitmapFill()</p></td>
+        <td ><p>GraphicsBitmapFill</p></td>
+    </tr>
+    <tr>
+        <td ><p>beginFill()</p></td>
+        <td ><p>GraphicsSolidFill</p></td>
+    </tr>
+    <tr>
+        <td ><p>beginGradientFill()</p></td>
+        <td ><p>GraphicsGradientFill</p></td>
+    </tr>
+    <tr>
+        <td ><p>beginShaderFill()</p></td>
+        <td ><p>GraphicsShaderFill</p></td>
+    </tr>
+    <tr>
+        <td ><p>lineBitmapStyle()</p></td>
+        <td ><p>GraphicsStroke + GraphicsBitmapFill</p></td>
+    </tr>
+    <tr>
+        <td ><p>lineGradientStyle()</p></td>
+        <td ><p>GraphicsStroke + GraphicsGradientFill</p></td>
+    </tr>
+    <tr>
+        <td ><p>lineShaderStyle()</p></td>
+        <td ><p>GraphicsStroke + GraphicsShaderFill</p></td>
+    </tr>
+    <tr>
+        <td ><p>lineStyle()</p></td>
+        <td ><p>GraphicsStroke + GraphicsSolidFill</p></td>
+    </tr>
+    <tr>
+        <td ><p>moveTo()</p>
+        <p>lineTo()</p>
+        <p>curveTo()</p>
+        <p>drawPath()</p></td>
+        <td ><p>GraphicsPath</p></td>
+    </tr>
+    <tr>
+        <td ><p>drawTriangles()</p></td>
+        <td ><p>GraphicsTrianglePath</p></td>
+    </tr>
 </tbody>
 </table>
-
-</div>
-
-</div>
 
 In addition, the <a
 href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/GraphicsPath.html"
@@ -116,13 +98,7 @@ and `GraphicsPath.wideMoveTo()` utility methods to easily define those commands
 for a GraphicsPath instance. These utility methods simplify the task of defining
 or updating the commands and data values directly.
 
-</div>
-
-<div>
-
 ## Drawing with vector graphics data
-
-<div>
 
 Once you have a collection of IGraphicsData instances, use the Graphics class's
 `drawGraphicsData()` method to render the graphics. The `drawGraphicsData()`
@@ -170,29 +146,17 @@ stroke styles are not a requirement. In other words, Graphics class methods can
 be used to set styles while IGraphicsData objects can be used to draw a saved
 collection of paths, or vice-versa.
 
-<div>
-
 Note: Use the `Graphics.clear()` method to clear out a previous drawing before
 starting a new one; unless you're adding on to the original drawing, as seen in
 the example above. As you change a single portion of a path or collection of
 IGraphicsData objects, redraw the entire drawing to see the changes.
-
-</div>
 
 When using graphics data classes, the fill is rendered whenever three or more
 points are drawn, because the shape is inherently closed at that point. Even
 though the fill closes, the stroke does not, and this behavior is different than
 when using multiple `Graphics.lineTo()` or `Graphics.moveTo()` commands.
 
-</div>
-
-</div>
-
-<div>
-
 ## Reading vector graphics data
-
-<div>
 
 In addition to drawing vector content to a display object, in Flash Player 11.6
 and Adobe AIR 3.6 and later you can use the Graphics class's
@@ -209,7 +173,3 @@ There are several limitations to reading vector graphics with the
 href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Graphics.html#readGraphicsData()"
 target="_self">readGraphicsData() entry in the ActionScript Language
 Reference</a>.
-
-</div>
-
-</div>

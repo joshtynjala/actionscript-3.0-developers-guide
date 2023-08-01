@@ -1,7 +1,5 @@
 # Touch and drag
 
-<div>
-
 Two methods were added to
 [the Sprite class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Sprite.html)
 to provide additional support for touch-enabled applications supporting
@@ -63,13 +61,3 @@ event phases:
     	evt.target.height = 40;
     	evt.target.alpha = 1;
     }
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

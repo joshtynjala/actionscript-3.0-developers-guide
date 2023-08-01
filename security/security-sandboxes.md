@@ -1,7 +1,5 @@
 # Security sandboxes
 
-<div>
-
 Client computers can obtain individual files containing code, content, and data
 from a number of sources, such as from external websites, from a local file
 system, or from an installed AIR application. The Flash Player and AIR runtimes
@@ -15,13 +13,7 @@ For more information on Flash Player security, see the Flash Player Developer
 Center topic "Security" at
 [www.adobe.com/go/devnet_security_en](http://www.adobe.com/go/devnet_security_en).
 
-</div>
-
-<div>
-
 ## Remote sandboxes
-
-<div>
 
 The Flash Player and AIR runtimes classify assets (including SWF files) from the
 Internet in separate sandboxes that correspond to their domain of origin. For
@@ -41,15 +33,7 @@ For more information on Flash Player security, see the Flash Player Developer
 Center topic "Security" at
 [www.adobe.com/go/devnet_security_en](http://www.adobe.com/go/devnet_security_en).
 
-</div>
-
-</div>
-
-<div>
-
 ## Local sandboxes
-
-<div>
 
 _Local file_ describes any file that is referenced by using the `file:` protocol
 or a Universal Naming Convention (UNC) path. Local SWF files are placed into one
@@ -110,15 +94,7 @@ SWF files in the local-with-networking sandbox cannot load SWF files in the
 local-with-filesystem sandbox. SWF files in the local-with-filesystem sandbox
 cannot load SWF files in the local-with-networking sandbox.
 
-</div>
-
-</div>
-
-<div>
-
 ## The AIR application sandbox
-
-<div>
 
 The Adobe AIR runtime adds an additional sandbox, called the _application_
 sandbox, to the Flash Player security sandbox model. Files installed as part of
@@ -188,15 +164,7 @@ additional restrictions:
   loaded SWF content on demand (eliminating the need to reload the content
   multiple times).
 
-</div>
-
-</div>
-
-<div>
-
 ## Restrictions for JavaScript inside AIR
-
-<div>
 
 Unlike content in the application security sandbox, JavaScript content in a
 non-application security sandbox _can_ call the `eval()` function to execute
@@ -228,15 +196,7 @@ include:
 For details, see
 [Code restrictions for content in different sandboxes](WS5b3ccc516d4fbf351e63e3d118666ade46-7eea.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Setting the sandbox type of local SWF files
-
-<div>
 
 An end user or the administrator of a computer can specify that a local SWF file
 is trusted, allowing it to load data from all domains, both local and network.
@@ -248,17 +208,11 @@ directories. For more information, see
 For more information on local sandboxes, see
 [Local sandboxes](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c8f.html).
 
-<div>
-
 #### Adobe Flash Professional
 
 You can configure a SWF file for the local-with-filesystem sandbox or the
 local-with-networking sandbox by setting the document's publish settings in the
 authoring tool.
-
-</div>
-
-<div>
 
 #### Adobe Flex
 
@@ -267,17 +221,7 @@ local-with-networking sandbox by setting the `use-network` flag in the Adobe
 Flex compiler. For more information, see "About the application compiler
 options" in _Building and Deploying Adobe Flex 3 Applications_ .
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## The Security.sandboxType property
-
-<div>
 
 An author of a SWF file can use the read-only static `Security.sandboxType`
 property to determine the type of sandbox to which the Flash Player or AIR
@@ -308,15 +252,3 @@ represent possible values of the `Security.sandboxType` property, as follows:
   domain. However, files outside the AIR application sandbox are not permitted
   to cross-script the AIR file. By default, files in the AIR application sandbox
   can load content and data from any domain.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

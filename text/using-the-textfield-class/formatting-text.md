@@ -1,7 +1,5 @@
 # Formatting text
 
-<div>
-
 You have several options for programmatically formatting the display of text.
 You can set properties directly on the TextField instance—for example, the
 `TextFIeld.thickness`, `TextField.textColor`, and `TextField.textHeight`
@@ -14,13 +12,7 @@ the appearance of text throughout your application. You can define a TextFormat
 or StyleSheet object and apply it to many or all text fields in your
 application.
 
-</div>
-
-<div>
-
 ## Assigning text formats
-
-<div>
 
 You can use the TextFormat class to set a number of different text display
 properties and to apply them to the entire contents of a TextField object, or to
@@ -51,15 +43,7 @@ application might need to call the `TextField.setTextFormat()` method again to
 reapply the formatting. You can also set the TextField `defaultTextFormat`
 property to specify the format to be used for user-entered text.
 
-</div>
-
-</div>
-
-<div>
-
 ## Applying cascading style sheets
-
-<div>
 
 Text fields can contain either plain text or HTML-formatted text. Plain text is
 stored in the `text` property of the instance, and HTML text is stored in the
@@ -120,15 +104,7 @@ their content to incorporate the formatting from the previously assigned style
 sheet. To preserve the original `htmlText` property, save it in a variable
 before setting the style sheet to `null`.
 
-</div>
-
-</div>
-
-<div>
-
 ## Loading an external CSS file
-
-<div>
 
 The CSS approach to formatting is more powerful when you can load CSS
 information from an external file at run time. When the CSS data is external to
@@ -211,15 +187,7 @@ When the CSS data is loaded, the `onCSSFileLoaded()` method executes and calls
 the `StyleSheet.parseCSS()` method to transfer the style declarations to the
 StyleSheet object.
 
-</div>
-
-</div>
-
-<div>
-
 ## Formatting ranges of text within a text field
-
-<div>
 
 A useful method of the flash.text.TextField class is the `setTextFormat()`
 method. Using `setTextFormat()`, you can assign specific properties to the
@@ -247,15 +215,3 @@ clicks the text field:
     {
     	myTextField.setTextFormat(myformat, 49, 65);
     }
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

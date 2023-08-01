@@ -1,7 +1,5 @@
 # Using the FileReference class
 
-<div>
-
 A FileReference object represents a data file on a client or server machine. The
 methods of the FileReference class let your application load and save data files
 locally, and transfer file data to and from remote servers.
@@ -18,94 +16,27 @@ allow you to access and save local files directly as well. The use of those
 methods is similar to the equivalent-named methods in the URLLoader and Loader
 classes.
 
-<div>
-
 Note: The File class, which extends the FileReference class, and the FileStream
 class provide additional functions for working with files and the local file
 system. The File and FileStream classes are only supported in AIR and not in the
 Flash Player.
 
-</div>
-
-<div xmlns:adobe="http://www.adobe.com/saxon">
-
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td colspan="3"><h2 id="adobe-recommends">Adobe recommends</h2></td>
-</tr>
-<tr class="even">
-<td colspan="2" width="60%"></td>
-<td><table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td width="15%"><span> <img src="images/kevin_hoyt.png" /> </span></td>
-<td width="85%"><h3 id="load-and-save-local-files"><a
-href="http://goo.gl/ryIkQ">Load and Save Local Files</a></h3>
-<span> <a href="http://goo.gl/M9ynW">Kevin Hoyt</a> </span><br />
-<span> In this video, Kevin Hoyt reveals the ease of loading and saving
-local content using Flash. </span></td>
-</tr>
-</tbody>
-</table></td>
-</tr>
-</tbody>
-</table></td>
-</tr>
-</tbody>
-</table>
-
-</div>
-
-</div>
-
-<div>
-
 ## FileReference class
-
-<div>
 
 Each FileReference object represents a single data file on the local machine.
 The properties of the FileReference class contain information about the file's
 size, type, name, filename extension, creator, creation date, and modification
 date.
 
-<div>
-
 Note: The `creator` property is supported on Mac OS only. All other platforms
 return `null`.
 
-</div>
-
-<div>
-
 Note: The `extension` property is only supported in Adobe AIR.
-
-</div>
 
 You can create an instance of the FileReference class one of two ways:
 
-- <div>
-
-  Use the `new` operator, as shown in the following code: import
+- Use the `new` operator, as shown in the following code: import
   flash.net.FileReference; var fileRef:FileReference = new FileReference();
-
-  </div>
 
 - Call the `FileReferenceList.browse()` method, which opens a dialog box and
   prompts the user to select one or more files to upload. It then creates an
@@ -134,12 +65,8 @@ Once you have created a FileReference object, you can do the following:
   prompts the user to choose a single file location on the local file system. It
   then saves data to the specified location.
 
-<div>
-
 Note: You can only perform one `browse()`, `download()`, or `save()` action at a
 time, because only one dialog box can be open at any point.
-
-</div>
 
 The FileReference object properties such as `name`, `size`, or
 `modificationDate` are not defined until one of the following happens:
@@ -150,13 +77,9 @@ The FileReference object properties such as `name`, `size`, or
 - The `FileReference.download()` method has been called, and the user has
   specified a new file location using the dialog box.
 
-<div>
-
 Note: When performing a download, only the `FileReference.name` property is
 populated before the download is complete. After the file has been downloaded,
 all properties are available.
-
-</div>
 
 While calls to the `FileReference.browse()`, `FileReferenceList.browse()`,
 `FileReference.download()`, `FileReference.load()`, or `FileReference.save()`
@@ -171,30 +94,14 @@ not in the same domain as the SWF file initiating the upload or download.
 See
 [FileReference](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/FileReference.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Loading data from files
-
-<div>
 
 The `FileReference.load()` method lets you load data from a local file into
 memory.
 
-<div>
-
-<div>
-
 Note: Your code must first call the `FileReference.browse()` method to let the
 user select a file to load. This restriction does not apply to content running
 in Adobe AIR in the application security sandbox
-
-</div>
-
-</div>
 
 The `FileReference.load()` method returns immediately after being called, but
 the data being loaded isn't available immediately. The FileReference object
@@ -293,15 +200,7 @@ In Adobe AIR, the FileStream class provides additional functionality for reading
 data from a local file. See
 [Reading and writing files](WS5b3ccc516d4fbf351e63e3d118666ade46-7dc2.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Saving data to local files
-
-<div>
 
 The `FileReference.save()` method lets you save data to a local file. It starts
 by opening a dialog box to let the user enter a new filename and location to
@@ -309,14 +208,10 @@ which to save a file. After the user selects the filename and location, the data
 is written to the new file. When the file is saved successfully, the properties
 of the FileReference object are populated with the properties of the local file.
 
-<div>
-
 Note: Your code can only call the `FileReference.save()` method in response to a
 user-initiated event such as a mouse click or a keypress event. Otherwise an
 error is thrown. This restriction does not apply to content running in Adobe AIR
 in the application security sandbox.
-
-</div>
 
 The `FileReference.save()` method returns immediately after being called. The
 FileReference object then dispatches events to call listener methods at each
@@ -468,15 +363,7 @@ In Adobe AIR, the FileStream class provides additional functionality for writing
 data to a local file. See
 [Reading and writing files](WS5b3ccc516d4fbf351e63e3d118666ade46-7dc2.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Uploading files to a server
-
-<div>
 
 To upload files to a server, first call the `browse()` method to allow a user to
 select one or more files. Next, when the `FileReference.upload()` method is
@@ -485,13 +372,9 @@ multiple files using the `FileReferenceList.browse()` method, Flash Player
 creates an array of selected files called `FileReferenceList.fileList`. You can
 then use the `FileReference.upload()` method to upload each file individually.
 
-<div>
-
 Note: Using the `FileReference.browse()` method allows you to upload single
 files only. To allow a user to upload multiple files, use the
 `FileReferenceList.browse()` method.
-
-</div>
 
 By default, the system file picker dialog box allows users to pick any file type
 from the local computer. Developers can specify one or more custom file type
@@ -537,14 +420,10 @@ following code sends the file to a web server:
     	trace("uploaded");
     }
 
-<div>
-
 ![](images/tip_help.png) You can send data to the server with the
 `FileReference.upload()` method by using the `URLRequest.method` and
 `URLRequest.data` properties to send variables using the `POST` or `GET`
 _methods._
-
-</div>
 
 When you attempt to upload a file using the `FileReference.upload()` method, the
 following events are dispatched:
@@ -584,8 +463,6 @@ following events are dispatched:
   - The `url` parameter contains an invalid protocol. The
     `FileReference.upload()` method must use either HTTP or HTTPS.
 
-<div>
-
 ![](images/tip_help.png) Flash Player does not offer complete support for
 servers that require authentication. Only SWF files that are running in a
 browser using the browser plug-in or Microsoft ActiveX® control can provide a
@@ -593,8 +470,6 @@ dialog box to prompt the user to enter a user name and password for
 authentication, and then only for downloads. For uploads using the plug-in or
 ActiveX control or upload/download using either the stand-alone or external
 player, the file transfer fails.
-
-</div>
 
 To create a server script in ColdFusion to accept a file upload from Flash
 Player, you can use code similar to the following:
@@ -706,11 +581,7 @@ the `upload()` method. The purpose of the test upload is to check whether the
 actual file upload will be successful and that server authentication, if
 required, will succeed.
 
-<div>
-
 Note: A test upload occurs only on Windows-based Flash Players at this time.
-
-</div>
 
 The server script that handles the file upload should expect an HTTP `POST`
 request with the following elements:
@@ -793,15 +664,7 @@ value of `"photo"`:
     Submit Query
     ------------Ij5GI3GI3ei4GI3ei4KM7GI3KM7KM7--
 
-</div>
-
-</div>
-
-<div>
-
 ## Downloading files from a server
-
-<div>
 
 You can let users download files from a server using the
 `FileReference.download()` method, which takes two parameters: `request` and
@@ -882,15 +745,7 @@ variable:
     	</cfdefaultcase>
     </cfswitch>
 
-</div>
-
-</div>
-
-<div>
-
 ## FileReferenceList class
-
-<div>
 
 The FileReferenceList class lets the user select one or more files to upload to
 a server-side script. The file upload is handled by the `FileReference.upload()`
@@ -952,14 +807,8 @@ Because the `Event.COMPLETE` event is added to each individual FileReference
 object in the array, Flash Player calls the `completeHandler()` method when each
 individual file finishes uploading.
 
-</div>
+## Adobe recommends
 
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>
+> <h3 id="load-and-save-local-files"><a href="http://goo.gl/ryIkQ"><img src="../../img/kevin_hoyt.png" /> Load and Save Local Files</a></h3>
+> <a href="http://goo.gl/M9ynW">Kevin Hoyt</a>
+> In this video, Kevin Hoyt reveals the ease of loading and saving local content using Flash.

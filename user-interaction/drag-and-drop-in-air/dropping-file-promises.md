@@ -1,7 +1,5 @@
 # Dropping file promises
 
-<div>
-
 A file promise is a drag-and-drop clipboard format that allows a user to drag a
 file that does not yet exist out of an AIR application. For example, using file
 promises, your application could allow a user to drag a proxy icon to a desktop
@@ -24,8 +22,6 @@ undesirable pauses in the drag gesture as the data is generated or downloaded.
 Use deferred rendering for copy and paste operations (for which file promises
 are not supported).
 
-<div>
-
 #### Limitations when using file promises
 
 File promises have the following limitations compared to other data formats that
@@ -43,34 +39,14 @@ you can put in a drag-and-drop clipboard:
 - File promises cannot be used with the copy-and-paste clipboard (
   `Clipboard.generalClipboard`).
 
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
 
 [Dropping remote files](WSb2ba3b1aad8a27b0-3c3eacbd123c4109bdd-8000.html)
 
 [Implementing the IFilePromise interface](WSb2ba3b1aad8a27b0-3c3eacbd123c4109bdd-7fff.html)
-
-</div>
 
 ![](../../img/flashplatformLinkIndicator.png)
 [flash.desktop.IFilePromise](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/IFilePromise.html)
 
 ![](../../img/flashplatformLinkIndicator.png)
 [air.desktop.URLFilePromise](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/air/desktop/URLFilePromise.html)
-
-<div>
-
-</div>
-
-</div>

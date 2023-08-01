@@ -1,7 +1,5 @@
 # Animating with the drawing API
 
-<div>
-
 One advantage of creating content with the drawing API is that you are not
 limited to positioning your content once. What you draw can be modified by
 maintaining and modifying the variables you use to draw. You can convey
@@ -49,5 +47,3 @@ initial seed variables at the beginning of the code, ` currentDegrees`,
 and/or increasing the totalSatellites variable. This is only one example of how
 the drawing API can create a visual display whose complexity conceals the
 simplicity of its creation.
-
-</div>

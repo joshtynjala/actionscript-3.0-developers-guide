@@ -1,7 +1,5 @@
 # Manipulating SQL database data
 
-<div>
-
 There are some common tasks that you perform when you're working with local SQL
 databases. These tasks include connecting to a database, adding data to tables,
 and retrieving data from tables in a database. There are also several issues
@@ -25,17 +23,7 @@ the operations to complete before executing other code. For more information on
 working in asynchronous or synchronous execution mode, see
 [Using synchronous and asynchronous database operations](WS5b3ccc516d4fbf351e63e3d118666ade46-7d39.html).
 
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
 
 [Connecting to a database](WS5b3ccc516d4fbf351e63e3d118666ade46-7d32.html)
 
@@ -54,11 +42,3 @@ More Help topics
 [Handling database errors](WS5b3ccc516d4fbf351e63e3d118666ade46-7d1a.html)
 
 [Working with database data types](WS5b3ccc516d4fbf351e63e3d118666ade46-7d48.html)
-
-</div>
-
-<div>
-
-</div>
-
-</div>

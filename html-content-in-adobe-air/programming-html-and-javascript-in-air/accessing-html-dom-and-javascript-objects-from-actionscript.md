@@ -1,7 +1,5 @@
 # Accessing HTML DOM and JavaScript objects from ActionScript
 
-<div>
-
 Once the HTMLLoader object dispatches the `complete` event, you can access all
 the objects in the HTML DOM (document object model) for the page. Accessible
 objects include display elements (such as `div` and `p` objects in the page) as
@@ -68,13 +66,3 @@ HTMLLoader object:
 
     html.window.document.getElementById("p1").innerHTML = "Goodbye";
     html.window.foo = 66;
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

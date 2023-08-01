@@ -1,7 +1,5 @@
 # Working with cameras
 
-<div>
-
 A camera attached to a user's computer can serve as a source of video data that
 you can display and manipulate using ActionScript. The <a
 href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/Camera.html"
@@ -16,13 +14,7 @@ is finished, your application can access the image or video through a <a
 href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/MediaPromise.html"
 target="_self">MediaPromise</a> object.
 
-</div>
-
-<div>
-
 ## Understanding the Camera class
-
-<div>
 
 The Camera object allows you to connect to the user's local camera and broadcast
 the video either locally (back to the user) or remotely to a server (such as
@@ -46,23 +38,11 @@ camera objects. For example, the static `Camera.names` property contains an
 array of camera names currently installed on the user's computer. You can also
 use the `name` property to display the name of the currently active camera.
 
-<div>
-
 Note: When streaming camera video across the network, you should always handle
 network interruptions. Network interruptions can occur for many reasons,
 particularly on mobile devices.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Displaying camera content on screen
-
-<div>
 
 Connecting to a camera can require less code than using the NetConnection and
 NetStream classes to load a video. The camera class can also quickly become
@@ -77,22 +57,10 @@ user's local camera:
     vid.attachCamera(cam);
     addChild(vid);
 
-<div>
-
 Note: The Camera class does not have a constructor method. In order to create a
 new Camera instance you use the static `Camera.getCamera()` method.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Designing your camera application
-
-<div>
 
 When writing an application that connects to a user's camera, you need to
 account for the following in your code:
@@ -119,15 +87,7 @@ account for the following in your code:
 
 - On mobile devices, only one camera can be active at a time.
 
-</div>
-
-</div>
-
-<div>
-
 ## Connecting to a user's camera
-
-<div>
 
 The first step when connecting to a user's camera is to create a new camera
 instance by creating a variable of type Camera and initializing it to the return
@@ -158,15 +118,7 @@ and
 [Detecting permissions for camera access](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d37.html)
 for further information.
 
-</div>
-
-</div>
-
-<div>
-
 ## Verifying that cameras are installed
-
-<div>
 
 Before you attempt to use any methods or properties on a camera instance, you'll
 want to verify that the user has a camera installed. There are two ways to check
@@ -220,8 +172,6 @@ application simply displays nothing:
     	addChild(vid);
     }
 
-<div>
-
 #### Mobile device cameras
 
 The Camera class is not supported in the Flash Player runtime in mobile
@@ -233,17 +183,7 @@ camera, but only one camera output can be displayed at any given time.
 (Attaching a second camera will detach the first.) The front-facing camera is
 horizontally mirrored on iOS, on Android, it is not.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Detecting permissions for camera access
-
-<div>
 
 In the AIR application sandbox, the application can access any camera without
 the user's permission. On Android, however, the application must specify the
@@ -327,15 +267,7 @@ on the display list is deleted to free up system resources.
 In AIR, a Camera object does not dispatch status events since permission to use
 the camera is not dynamic.
 
-</div>
-
-</div>
-
-<div>
-
 ## Maximizing camera video quality
-
-<div>
 
 By default, new instances of the Video class are 320 pixels wide by 240 pixels
 high. In order to maximize video quality you should always ensure that your
@@ -394,15 +326,7 @@ of the video instance using the camera's native height and width.
 For information about full-screen mode, see the full-screen mode section under
 [Setting Stage properties](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e31.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Monitoring camera status
-
-<div>
 
 The camera class contains several properties which allow you to monitor the
 Camera object's current status. For example, the following code displays several
@@ -454,21 +378,7 @@ Every 1/10 of a second (100 milliseconds) the Timer object's `timer` event is
 dispatched and the `timerHandler()` function updates the text field on the
 display list.
 
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
-
-</div>
 
 [Christian Cantrell: How to use CameraUI in a Cross-platform Way](http://blogs.adobe.com/cantrell/archives/2011/02/how-to-use-cameraui-in-a-cross-platform-way.html)
 
@@ -479,9 +389,3 @@ More Help topics
 [Mark Doherty: Android Radar app (source)](http://www.flashmobileblog.com/2010/10/14/facebook-connect-with-air-on-android/#comments)
 
 [Lee Brimelow: How to access the camera on Android devices](http://www.gotoandlearn.com/play.php?id=124 "http://www.gotoandlearn.com/play.php?id=124")
-
-<div>
-
-</div>
-
-</div>

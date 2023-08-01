@@ -1,19 +1,11 @@
 # Cross-scripting content in different security sandboxes
 
-<div>
-
 The runtime security model isolates code from different origins. By
 cross-scripting content in different security sandboxes, you can allow content
 in one security sandbox to access selected properties and methods in another
 sandbox.
 
-</div>
-
-<div>
-
 ## AIR security sandboxes and JavaScript code
-
-<div>
 
 AIR enforces a same-origin policy that prevents code in one domain from
 interacting with content in another. All files are placed in a sandbox based on
@@ -56,15 +48,7 @@ For more information, see
 [HTML security in Adobe AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7f11.html),
 and [The XMLHttpRequest object](WS5b3ccc516d4fbf351e63e3d118666ade46-7eb5.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Loading application content into a non-application sandbox
-
-<div>
 
 To allow application content to safely cross-script content loaded from outside
 the application install directory, you can use `frame` or `iframe` elements to
@@ -101,20 +85,12 @@ the application to run in the remote sandbox and the `www.example.com` domain:
 The `ui.html` page could load a javascript file from the local, `sandbox` folder
 using the following script tag:
 
-<div>
-
     <script src="http://www.example.com/local/ui.js"></script>
-
-</div>
 
 It could also load content from a directory on the remote server using a script
 tag such as the following:
 
-<div>
-
     <script src="http://www.example.com/remote/remote.js"></script>
-
-</div>
 
 The `sandboxRoot` URL will mask any content at the same URL on the remote
 server. In the above example, you would not be able to access any remote content
@@ -123,15 +99,7 @@ the request to the local application directory. Requests are remapped whether
 they derive from page navigation, from an XMLHttpRequest, or from any other
 means of loading content.
 
-</div>
-
-</div>
-
-<div>
-
 ## Setting up a sandbox bridge interface
-
-<div>
 
 You can use a sandbox bridge when content in the application sandbox must access
 properties or methods defined by content in a non-application sandbox, or when
@@ -139,15 +107,7 @@ non-application content must access properties and methods defined by content in
 the application sandbox. Create a bridge with the `childSandboxBridge` and
 `parentSandboxBridge` properties of the `window` object of any child document.
 
-</div>
-
-</div>
-
-<div>
-
 ## Establishing a child sandbox bridge
-
-<div>
 
 The `childSandboxBridge` property allows the child document to expose an
 interface to content in the parent document. To expose an interface, you set the
@@ -171,15 +131,7 @@ could access the interface from parent content by reading the
     air.trace(childInterface.calculatePrice()); //traces ".45 cents"
     air.trace(childInterface.storeID)); //traces "abc"
 
-</div>
-
-</div>
-
-<div>
-
 ## Establishing a parent sandbox bridge
-
-<div>
 
 The `parentSandboxBridge` property allows the parent document to expose an
 interface to content in a child document. To expose an interface, the parent
@@ -209,15 +161,7 @@ since it may be subject to accidental or malicious code injection. You must put
 appropriate safeguards in place to prevent misuse of the interface you expose
 through the parent sandbox bridge.
 
-</div>
-
-</div>
-
-<div>
-
 ## Accessing a parent sandbox bridge during page loading
-
-<div>
 
 In order for a script in a child document to access a parent sandbox bridge, the
 bridge must be set up before the script is run. Window, frame and iframe objects
@@ -282,15 +226,3 @@ Instead, you must use load an intermediate page in the new window that itself
 uses frames to load the child document. You can then establish the bridge from
 the parent document of the new window to the child document loaded into the
 frame.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

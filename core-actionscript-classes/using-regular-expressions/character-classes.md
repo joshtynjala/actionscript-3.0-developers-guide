@@ -1,15 +1,11 @@
 # Character classes
 
-<div>
-
 You use character classes to specify a list of characters to match one position
 in the regular expression. You define character classes with square brackets (
 `[` and `]`). For example, the following regular expression defines a character
 class that matches `bag`, `beg`, `big`, `bog`, or `bug`:
 
     /b[aeiou]g/
-
-<div>
 
 #### Escape sequences in character classes
 
@@ -25,15 +21,11 @@ other characters listed:
 However, the three characters listed in the following table do function as
 metacharacters, with special meaning, in character classes:
 
-<div>
-
 | Metacharacter | Meaning in character classes                                                                           |
 | ------------- | ------------------------------------------------------------------------------------------------------ |
 | `]`           | Defines the end of the character class.                                                                |
 | `-`           | Defines a range of characters (see the following section "Ranges of characters in character classes"). |
 | `\`           | Defines metasequences and undoes the special meaning of metacharacters.                                |
-
-</div>
 
 For any of these characters to be recognized as literal characters (without the
 special metacharacter meaning), you must precede the character with the
@@ -46,8 +38,6 @@ or `-`):
 In addition to the metacharacters that retain their special meanings, the
 following metasequences function as metasequences within character classes:
 
-<div>
-
 | Metasequence | Meaning in character classes                                                                                     |
 | ------------ | ---------------------------------------------------------------------------------------------------------------- |
 | `\n`         | Matches a newline character.                                                                                     |
@@ -56,14 +46,8 @@ following metasequences function as metasequences within character classes:
 | `\u` `nnnn`  | Matches the character with the specified Unicode code point value (as defined by the hexadecimal number _nnnn_). |
 | `\\x` `nn`   | Matches the character with the specified ASCII value (as defined by the hexadecimal number _nn_).                |
 
-</div>
-
 Other regular expression metasequences and metacharacters are treated as normal
 characters within a character class.
-
-</div>
-
-<div>
 
 #### Ranges of characters in character classes
 
@@ -80,10 +64,6 @@ set of extended ASCII characters (such as `é` and `ê`):
 
     \\x
 
-</div>
-
-<div>
-
 #### Negated character classes
 
 When you use a caret (`^`) character at the beginning of a character class, it
@@ -99,7 +79,3 @@ the characters in the character class. For example, the following character
 class matches any one of a number of symbol characters, including the caret:
 
     /[!.,#+*%$&^]/
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # Understanding the sound architecture
 
-<div>
-
 Your applications can load sound data from five main sources:
 
 - External sound files loaded at run time
@@ -35,8 +33,6 @@ information see "Importing Sounds" in _Using Flash_ .
 The ActionScript 3.0 sound architecture makes use of the following classes in
 the flash.media package.
 
-<div>
-
 | Class                          | Description                                                                                                                                                                                                                                                                                                    |
 | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | flash.media.Sound              | The Sound class handles the loading of sound, manages basic sound properties, and starts a sound playing.                                                                                                                                                                                                      |
@@ -48,8 +44,6 @@ the flash.media package.
 | flash.media.Microphone         | The Microphone class represents a microphone or other sound input device attached to the user's computer. Audio input from a microphone can be routed to local speakers or sent to a remote server. The Microphone object controls the gain, sampling rate, and other characteristics of its own sound stream. |
 | flash.media.AudioPlaybackMode  | The AudioPlaybackMode class defines constants for the `audioPlaybackMode` property of the SoundMixer class.                                                                                                                                                                                                    |
 
-</div>
-
 Each sound that is loaded and played needs its own instance of the Sound class
 and the SoundChannel class. The output from multiple SoundChannel instances is
 then mixed together by the global SoundMixer class during playback,
@@ -57,13 +51,3 @@ then mixed together by the global SoundMixer class during playback,
 The Sound, SoundChannel, and SoundMixer classes are not used for sound data
 obtained from a microphone or from a streaming media server like Flash Media
 Server.
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

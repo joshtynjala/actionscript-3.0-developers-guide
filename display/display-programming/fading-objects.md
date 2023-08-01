@@ -1,7 +1,5 @@
 # Fading objects
 
-<div>
-
 You can control the transparency of a display object to make it partially (or
 completely transparent), or change the transparency to make the object appear to
 fade in or out. The DisplayObject class's `alpha` property defines the
@@ -20,5 +18,3 @@ with the mouse:
 You can also alter the transparency of a display object using the color
 adjustments available through the ColorTransform class. For more information,
 see [Adjusting DisplayObject colors](./adjusting-display-object-colors.md).
-
-</div>

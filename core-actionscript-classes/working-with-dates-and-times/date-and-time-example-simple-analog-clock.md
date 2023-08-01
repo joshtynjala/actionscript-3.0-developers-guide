@@ -1,7 +1,5 @@
 # Date and time example: Simple analog clock
 
-<div>
-
 A simple analog clock example illustrates these two date and time concepts:
 
 - Getting the current date and time and extracting values for the hours,
@@ -14,50 +12,38 @@ A simple analog clock example illustrates these two date and time concepts:
   The SimpleClock application files can be found in the folder
   Samples/SimpleClock. The application consists of the following files:
 
-  <div>
-
   <table>
-  <colgroup>
-  <col style="width: 50%" />
-  <col style="width: 50%" />
-  </colgroup>
   <thead>
-  <tr class="header">
-  <th><p>File</p></th>
-  <th><p>Description</p></th>
-  </tr>
+        <tr>
+            <th><p>File</p></th>
+            <th><p>Description</p></th>
+        </tr>
   </thead>
   <tbody>
-  <tr class="odd">
-  <td headers="d17e637 "><p>SimpleClockApp.mxml</p>
-  <p>or</p>
-  <p>SimpleClockApp.fla</p></td>
-  <td headers="d17e640 "><p>The main
-  application file in Flash (FLA) or Flex (MXML).</p></td>
-  </tr>
-  <tr class="even">
-  <td headers="d17e637 "><p>com/example/programmingas3/simpleclock/SimpleClock.as</p></td>
-  <td headers="d17e640 "><p>The main
-  application file.</p></td>
-  </tr>
-  <tr class="odd">
-  <td headers="d17e637 "><p>com/example/programmingas3/simpleclock/AnalogClockFace.as</p></td>
-  <td headers="d17e640 "><p>Draws a round
-  clock face and hour, minute, and seconds hands based on the
-  time.</p></td>
-  </tr>
+        <tr>
+            <td >
+                <p>SimpleClockApp.mxml</p>
+                <p>or</p>
+                <p>SimpleClockApp.fla</p>
+            </td>
+            <td ><p>The main
+            application file in Flash (FLA) or Flex (MXML).</p></td>
+        </tr>
+        <tr>
+            <td ><p>com/example/programmingas3/simpleclock/SimpleClock.as</p></td>
+            <td ><p>The main
+            application file.</p></td>
+        </tr>
+        <tr>
+            <td ><p>com/example/programmingas3/simpleclock/AnalogClockFace.as</p></td>
+            <td ><p>Draws a round
+            clock face and hour, minute, and seconds hands based on the
+            time.</p></td>
+        </tr>
   </tbody>
   </table>
 
-  </div>
-
-</div>
-
-<div>
-
 ## Defining the SimpleClock class
-
-<div>
 
 The clock example is simple, but it's a good idea to organize even simple
 applications well so you could easily expand them in the future. To that end,
@@ -90,15 +76,7 @@ The class has two important properties:
   takes care of the real setup work, creating the clock face and starting the
   Timer instance ticking.
 
-</div>
-
-</div>
-
-<div>
-
 ## Creating the clock face
-
-<div>
 
 The next lines in the SimpleClock code create the clock face that is used to
 display the time:
@@ -124,15 +102,7 @@ using
 theaddChild()`method inherited from the DisplayObjectContainer class. Then it calls the`AnalogClockFace.draw()`
 method to display the clock face once, showing the current time.
 
-</div>
-
-</div>
-
-<div>
-
 ## Starting the timer
-
-<div>
 
 After creating the clock face, the `initClock()` method sets up a timer:
 
@@ -160,15 +130,7 @@ event is received:
 
 The `AnalogClockFace.draw()` method simply draws the clock face and hands.
 
-</div>
-
-</div>
-
-<div>
-
 ## Displaying the current time
-
-<div>
 
 Most of the code in the AnalogClockFace class involves setting up the clock
 face's display elements. When the AnalogClockFace is initialized, it draws a
@@ -222,7 +184,3 @@ minute.
 The hour hand updates every minute, too, so it can show some progress as the
 minutes tick by. It rotates 30 degrees each hour (360/12), but it also rotates
 half a degree each minute (30 degrees divided by 60 minutes).
-
-</div>
-
-</div>

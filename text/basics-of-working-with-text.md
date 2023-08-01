@@ -1,7 +1,5 @@
 # Basics of Working with text
 
-<div>
-
 To display text on the screen in Adobe® Flash® Player or Adobe® AIR™, use an
 instance of the TextField class or use the Flash Text Engine classes. These
 classes allow you to create, display, and format text. Alternatively, you can
@@ -44,8 +42,6 @@ viewport. The StageText instance displays in front of any display objects.
 
 For more information on these topics, see:
 
-<div>
-
 - [Using the TextField class](WSb2ba3b1aad8a27b07258e35912218ac0e60-8000.html)
 
 - [Using the Flash Text Engine](WS9dd7ed846a005b294b857bfa122bd808ea6-8000.html)
@@ -54,10 +50,6 @@ For more information on these topics, see:
 
 - <a href="http://goo.gl/A0L15" target="_self">Native text input with
   StageText</a>
-
-</div>
-
-<div>
 
 #### Important concepts and terms
 
@@ -103,15 +95,3 @@ baseline), and so on.
 Tracking  
 An adjustment of spacing between groups of letters or blocks of text to increase
 or decrease the density and make the text more readable.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

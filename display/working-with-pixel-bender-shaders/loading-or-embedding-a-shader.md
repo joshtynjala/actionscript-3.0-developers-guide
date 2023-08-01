@@ -1,7 +1,5 @@
 # Loading or embedding a shader
 
-<div>
-
 The first step in using a Pixel Bender shader in ActionScript is to get access
 to the shader in your ActionScript code. Because a shader is created using the
 Adobe Pixel Bender Toolkit, and written in the Pixel Bender language, it cannot
@@ -16,8 +14,6 @@ as an argument to the `Graphics.beginShaderFill()` method.
 
 Your ActionScript code can access a shader created by Adobe Pixel Bender Toolkit
 (a .pbj file) in two ways:
-
-<div>
 
 - Loaded at run time: the shader file can be loaded as an external asset using a
   URLLoader object. This technique is like loading an external asset such as a
@@ -62,8 +58,6 @@ Your ActionScript code can access a shader created by Adobe Pixel Bender Toolkit
 
       // do something with the shader
 
-</div>
-
 In either case, you link the raw shader bytecode (the `URLLoader.data` property
 or an instance of the `[Embed]` data class) to the Shader instance. As the
 previous examples demonstrate, you can assign the bytecode to the Shader
@@ -76,5 +70,3 @@ can use the shader to create effects in several ways. You can use it as a
 filter, a blend mode, a bitmap fill, or for stand-alone processing of bitmap or
 other data. You can also use the Shader object's `data` property to access the
 shader's metadata, specify input images, and set parameter values.
-
-</div>

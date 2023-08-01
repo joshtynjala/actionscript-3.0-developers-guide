@@ -1,7 +1,5 @@
 # Stage orientation
 
-<div>
-
 Mobile devices typically re-orient the user interface to keep the display
 upright when the user rotates the device. If you enable auto-orientation in your
 application, the device keeps the display properly oriented, but it is up to you
@@ -23,5 +21,3 @@ strategy provides consistent behavior and selects the "best" orientation for the
 selected aspect ratio. For example, if you specify the landscape aspect ratio,
 the orientation chosen is appropriate for devices with landscape-mode, slide-out
 keyboards.
-
-</div>

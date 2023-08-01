@@ -1,7 +1,5 @@
 # Example: Internationalizing a stock ticker application
 
-<div>
-
 The Global Stock Ticker application retrieves and displays fictitious data about
 stocks in three different stock markets: the United States, Japan, and Europe.
 It formats the data according to the conventions of various locales.
@@ -24,74 +22,62 @@ To get the application files for this sample, see
 The Global Stock Ticker application files can be found in the folder
 Samples/GlobalStockTicker. The application consists of the following files:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>File</p></th>
-<th><p>Description</p></th>
-</tr>
+    <tr>
+        <th><p>File</p></th>
+        <th><p>Description</p></th>
+    </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><p>GlobalStockTicker.mxml</p>
-<p>or</p>
-<p>GlobalStockTicker.fla</p></td>
-<td><p>The user interface for the application for Flex (MXML) or Flash
-(FLA).</p></td>
-</tr>
-<tr class="even">
-<td><p>styles.css</p></td>
-<td><p>Styles for the application user interface (Flex only).</p></td>
-</tr>
-<tr class="odd">
-<td><p>com/example/programmingas3/stockticker/flex/FinGraph.mxml</p></td>
-<td><p>An MXML component that displays a chart of simulated stock data,
-for Flex only.</p></td>
-</tr>
-<tr class="even">
-<td><p>com/example/programmingas3/stockticker/flash/GlobalStockTicker.as</p></td>
-<td><p>Document class containing the user interface logic for the
-application (Flash only).</p></td>
-</tr>
-<tr class="odd">
-<td><p>comp/example/programmingas3/stockticker/flash/RightAlignedColumn.as</p></td>
-<td><p>A custom cell renderer for the Flash DataGrid component (Flash
-only).</p></td>
-</tr>
-<tr class="even">
-<td><p>com/example/programmingas3/stockticker/FinancialGraph.as</p></td>
-<td><p>An ActionScript class that draws a chart of simulated stock
-data.</p></td>
-</tr>
-<tr class="odd">
-<td><p>com/example/programmingas3/stockticker/Localizer.as</p></td>
-<td><p>An ActionScript class that manages the locale and currency and
-handles the localized formatting of numbers, currency amounts, and
-dates.</p></td>
-</tr>
-<tr class="even">
-<td><p>com/example/programmingas3/stockticker/StockDataModel.as</p></td>
-<td><p>An ActionScript class that holds all the sample data for the
-Global Stock Ticker example.</p></td>
-</tr>
+    <tr>
+        <td>
+            <p>GlobalStockTicker.mxml</p>
+            <p>or</p>
+            <p>GlobalStockTicker.fla</p>
+        </td>
+        <td><p>The user interface for the application for Flex (MXML) or Flash
+        (FLA).</p></td>
+    </tr>
+    <tr>
+        <td><p>styles.css</p></td>
+        <td><p>Styles for the application user interface (Flex only).</p></td>
+    </tr>
+    <tr>
+        <td><p>com/example/programmingas3/stockticker/flex/FinGraph.mxml</p></td>
+        <td><p>An MXML component that displays a chart of simulated stock data,
+        for Flex only.</p></td>
+    </tr>
+    <tr>
+        <td><p>com/example/programmingas3/stockticker/flash/GlobalStockTicker.as</p></td>
+        <td><p>Document class containing the user interface logic for the
+        application (Flash only).</p></td>
+    </tr>
+    <tr>
+        <td><p>comp/example/programmingas3/stockticker/flash/RightAlignedColumn.as</p></td>
+        <td><p>A custom cell renderer for the Flash DataGrid component (Flash
+        only).</p></td>
+    </tr>
+    <tr>
+        <td><p>com/example/programmingas3/stockticker/FinancialGraph.as</p></td>
+        <td><p>An ActionScript class that draws a chart of simulated stock
+        data.</p></td>
+    </tr>
+    <tr>
+        <td><p>com/example/programmingas3/stockticker/Localizer.as</p></td>
+        <td><p>An ActionScript class that manages the locale and currency and
+        handles the localized formatting of numbers, currency amounts, and
+        dates.</p></td>
+    </tr>
+    <tr>
+        <td><p>com/example/programmingas3/stockticker/StockDataModel.as</p></td>
+        <td><p>An ActionScript class that holds all the sample data for the
+        Global Stock Ticker example.</p></td>
+    </tr>
 </tbody>
 </table>
 
-</div>
-
-</div>
-
-<div>
-
 ## Understanding the user interface and sample data
-
-<div>
 
 The application's main user interface elements are:
 
@@ -108,23 +94,11 @@ company stocks in the StockDataModel class. A real application would retrieve
 data from a server and then store it in a class like StockDataModel. In this
 example, all the data is hard coded in the StockDataModel class.
 
-<div>
-
 Note: The data displayed in the financial chart doesn't necessarily match the
 data shown in the DataGrid control. The chart is randomly redrawn each time a
 different company is selected. It is for illustration purposes only.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Setting the locale
-
-<div>
 
 After some initial setup work, the application calls the method
 Localizer.setLocale() to create formatter objects for the default locale. The
@@ -192,15 +166,7 @@ selects a new market from the Markets combo box).
 After creating the DateTimeFormatter object, the setLocale() method also
 retrieves an array of localized month name abbreviations.
 
-</div>
-
-</div>
-
-<div>
-
 ## Formatting the data
-
-<div>
 
 The formatted stock data is presented in a DataGrid control. The DataGrid
 columns each call a label function that formats the column value using the
@@ -281,15 +247,3 @@ The Localizer methods then set up and call the appropriate formatters:
     {
     	return df.format(dateValue);
     }
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

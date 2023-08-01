@@ -1,7 +1,5 @@
 # Gesture event handling
 
-<div>
-
 Handle gesture events in the same way as basic touch events. You can listen for
 a series of gesture events defined by the event type constants in the
 [TransformGestureEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/TransformGestureEvent.html)
@@ -10,8 +8,6 @@ class, the
 class and the
 [PressAndTapGestureEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/PressAndTapGestureEvent.html)
 class.
-
-<div>
 
 To handle a gesture touch event:
 
@@ -24,8 +20,6 @@ To handle a gesture touch event:
 3.  Specify the type of gesture event to handle.
 
 4.  Call an event handler function to do something in response to the event.
-
-</div>
 
 For example, the following code displays a message when the square drawn on
 `mySprite` is swiped on a touch-enabled screen:
@@ -86,8 +80,6 @@ PressAndTapGestureEvent class:
     	addChild(myTextField);
     }
 
-<div>
-
 Note: Not all GestureEvent, TransformGestureEvent, and PressAndTapGestureEvent
 event types are supported in all runtime environments. For example, not all
 touch-enabled devices are capable or detecting a multi-finger swipe. So, the
@@ -96,15 +88,7 @@ testing for specific event support to ensure your application works, and see
 [Troubleshooting](WS1ca064e08d7aa930-581fb7b1257b16ff45-8000.html) for more
 information.
 
-</div>
-
-</div>
-
-<div>
-
 ## Gesture Event properties
-
-<div>
 
 Gesture events have a smaller scope of event properties than basic touch events.
 You access them the same way, through the event object in the event handler
@@ -137,8 +121,6 @@ change):
     	myTextField.text = evt.target.parent.rotation.toString();
     }
 
-<div>
-
 Note: Not all TransformGestureEvent properties are supported in all runtime
 environments. For example, not all touch-enabled devices are capable or
 detecting the rotation of a gesture on the screen. So, the
@@ -147,19 +129,7 @@ testing for specific property support to ensure your application works, and see
 [Troubleshooting](WS1ca064e08d7aa930-581fb7b1257b16ff45-8000.html) for more
 information.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Gesture phases
-
-<div>
-
-<div>
 
 Additionally, the gesture events can be tracked through phases, so you can track
 properties as the gesture is taking place. For example, you can track
@@ -198,22 +168,10 @@ gesture. Change the object again once the pan gesture is complete.
     	}
     }
 
-<div>
-
 Note: The frequency of the update phase depends on the runtime's environment.
 Some operating system and hardware combinations do not relay updates at all.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ### Gesture phase is "all" for simple gesture events
-
-<div>
 
 Some gesture event objects do not track individual phases of the gesture event,
 and instead populate the event object's phase property with the value all. The
@@ -239,17 +197,3 @@ once the event is dispatched:
     function onTwoTap(tapEvt:GestureEvent):void {
     	myTextField.text = tapEvt.phase // Output is "all"
     }
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

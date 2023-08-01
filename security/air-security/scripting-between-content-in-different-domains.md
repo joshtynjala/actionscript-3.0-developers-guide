@@ -1,18 +1,10 @@
 # Scripting between content in different domains
 
-<div>
-
 AIR applications are granted special privileges when they are installed. It is
 crucial that the same privileges not be leaked to other content, including
 remote files and local files that are not part of the application.
 
-</div>
-
-<div>
-
 ## About the AIR sandbox bridge
-
-<div>
 
 Normally, content from other domains cannot call scripts in other domains. To
 protect AIR applications from accidental leakage of privileged information or
@@ -54,15 +46,7 @@ the runtime throws a SecurityError exception. Similarly, if parent content
 attempts to set an object to the childSandboxBridge object, the runtime throws a
 SecurityError exception.
 
-</div>
-
-</div>
-
-<div>
-
 ## Sandbox bridge example (SWF)
-
-<div>
 
 Suppose an AIR music store application wants to allow remote SWF files to
 broadcast the price of albums, but does not want the remote SWF file to disclose
@@ -166,30 +150,14 @@ the store's price, but cannot report the sale price:
     	}
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## Sandbox bridge example (HTML)
-
-<div>
 
 In HTML content, the `parentSandboxBridge` and `childSandboxBridge` properties
 are added to the JavaScript window object of a child document. For an example of
 how to set up bridge functions in HTML content, see
 [Setting up a sandbox bridge interface](WS5b3ccc516d4fbf351e63e3d118666ade46-7f06.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Limiting API exposure
-
-<div>
 
 When exposing sandbox bridges, it's important to expose high-level APIs that
 limit the degree to which they can be abused. Keep in mind that the content
@@ -200,28 +168,8 @@ would be better to expose a `readApplicationSetting()` API that doesn't take a
 path and reads a specific file. The more semantic approach limits the damage
 that an application can do once part of it is compromised.
 
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
 
 [Cross-scripting content in different security sandboxes](WS5b3ccc516d4fbf351e63e3d118666ade46-7f08.html)
 
 [The AIR application sandbox](WS5b3ccc516d4fbf351e63e3d118666ade46-7e35.html)
-
-</div>
-
-<div>
-
-</div>
-
-</div>

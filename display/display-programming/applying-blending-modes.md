@@ -1,7 +1,5 @@
 # Applying blending modes
 
-<div>
-
 Blending modes involve combining the colors of one image (the base image) with
 the colors of another image (the blend image) to produce a third image—the
 resulting image is the one that is actually displayed on the screen. Each pixel
@@ -60,5 +58,3 @@ actual values of the constants.
 
 - `BlendMode.SUBTRACT` (`"subtract"`): Commonly used to create an animated
   darkening dissolve effect between two images.
-
-</div>

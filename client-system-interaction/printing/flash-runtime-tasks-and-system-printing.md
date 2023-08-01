@@ -1,7 +1,5 @@
 # Flash runtime tasks and system printing
 
-<div>
-
 Because Flash runtimes dispatch pages to the operating system's printing
 interface, be aware of the tasks managed by Flash runtimes and the tasks managed
 by an operating system's own printing interface. Flash runtimes can initiate a
@@ -14,13 +12,7 @@ a problem initiating or formatting a print job, but can report back only on
 certain properties or conditions from the operating system's printing interface.
 As a developer, your code needs to respond to these properties or conditions.
 
-</div>
-
-<div>
-
 ## Working with exceptions and returns
-
-<div>
 
 Check to see if the `PrintJob.start()` method returns `true` before executing
 `addPage()` and `send()` calls, in case the user has canceled the print job. A
@@ -90,15 +82,7 @@ a text field in an `if..else` statement, as the following code shows:
 For a working example, see
 [Printing example: Scaling, cropping, and responding](WS5b3ccc516d4fbf351e63e3d118a9b90204-7cc5.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Working with page properties
-
-<div>
 
 Once the user clicks OK in the Print dialog box and `PrintJob.start()` returns
 `true`, you can access the properties defined by the printer's settings. These
@@ -109,15 +93,7 @@ can use them to align the content you send to the printer to match the current
 settings. For more information, see
 [Setting size, scale, and orientation](WS5b3ccc516d4fbf351e63e3d118a9b90204-7cc6.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Setting vector or bitmap rendering
-
-<div>
 
 You can manually set the print job to spool each page as vector graphics or a
 bitmap image. In some cases, vector printing produces a smaller spool file, and
@@ -153,15 +129,7 @@ as constants in the PrintMethod class:
 
 - `PrintMethod.VECTOR`: Forces vector printing regardless of the content
 
-</div>
-
-</div>
-
-<div>
-
 ## Timing print job statements
-
-<div>
 
 ActionScript 3.0 does not restrict a PrintJob object to a single frame (as did
 previous versions of ActionScript). However, because the operating system
@@ -185,15 +153,3 @@ If any of these intervals spans more than 15 seconds, the next call to
 `PrintJob.start()` on the PrintJob instance returns `false`, and the next
 `PrintJob.addPage()` on the PrintJob instance causes Flash Player or AIR to
 throw a run-time exception.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

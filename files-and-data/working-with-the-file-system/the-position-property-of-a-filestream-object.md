@@ -1,7 +1,5 @@
 # The position property of a FileStream object
 
-<div>
-
 The `position` property of a FileStream object determines where data is read or
 written on the next read or write method.
 
@@ -90,13 +88,3 @@ completes:
     myFileStream.writeBytes(myByteArray, 0, 200);
     myFileStream.position = 300;
     trace(myFileStream.position); // 300
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

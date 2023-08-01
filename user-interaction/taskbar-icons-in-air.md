@@ -1,7 +1,5 @@
 # Taskbar icons in AIR
 
-<div>
-
 Many operating systems provide a taskbar, such as the Mac OS X dock, that can
 contain an icon to represent an application. Adobe® AIR® provides an interface
 for interacting with the application task bar icon through the
@@ -15,13 +13,7 @@ for interacting with the application task bar icon through the
 
 <!-- -->
 
-</div>
-
-<div>
-
 ## About taskbar icons
-
-<div>
 
 AIR creates the `NativeApplication.nativeApplication.icon` object automatically.
 The object type is either DockIcon or SystemTrayIcon, depending on the operating
@@ -57,51 +49,25 @@ array:
 
     NativeApplication.nativeApplication.icon.bitmaps = [];
 
-</div>
-
-</div>
-
-<div>
-
 ## Dock icons
-
-<div>
 
 AIR supports dock icons when `NativeApplication.supportsDockIcon` is `true`. The
 `NativeApplication.nativeApplication.icon` property represents the application
 icon on the dock (not a window dock icon).
-
-<div>
 
 Note: AIR does not support changing window icons on the dock under Mac OS X.
 Also, changes to the application dock icon only apply while an application is
 running — the icon reverts to its normal appearance when the application
 terminates.
 
-</div>
-
-</div>
-
-<div>
-
 ### Dock icon menus
-
-<div>
 
 You can add commands to the standard dock menu by creating a NativeMenu object
 containing the commands and assigning it to the
 `NativeApplication.nativeApplication.icon.menu` property. The items in the menu
 are displayed above the standard dock icon menu items.
 
-</div>
-
-</div>
-
-<div>
-
 ### Bouncing the dock
-
-<div>
 
 You can bounce the dock icon by calling the
 `NativeApplication.nativeApplication.icon.bounce()` method. If you set the
@@ -110,37 +76,15 @@ you set it to critical, then the icon bounces until the user activates the
 application. Constants for the `priority` parameter are defined in the
 NotificationType class.
 
-<div>
-
 Note: The icon does not bounce if the application is already active.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ### Dock icon events
-
-<div>
 
 When the dock icon is clicked, the NativeApplication object dispatches an
 `invoke` event. If the application is not running, the system launches it.
 Otherwise, the `invoke` event is delivered to the running application instance.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## System Tray icons
-
-<div>
 
 AIR supports system tray icons when `NativeApplication.supportsSystemTrayIcon`
 is `true`, which is currently the case only on Windows and most Linux
@@ -150,42 +94,20 @@ icon, assign an array containing BitmapData objects to the icon `bitmaps`
 property. To change the icon image, assign an array containing the new images to
 `bitmaps`. To remove the icon, set `bitmaps` to `null`.
 
-</div>
-
-<div>
-
 ### System tray icon menus
-
-<div>
 
 You can add a menu to the system tray icon by creating a NativeMenu object and
 assigning it to the `NativeApplication.nativeApplication.icon.menu` property (no
 default menu is provided by the operating system). Access the system tray icon
 menu by right-clicking the icon.
 
-</div>
-
-</div>
-
-<div>
-
 ### System tray icon tooltips
-
-<div>
 
 Add a tooltip to an icon by setting the tooltip property:
 
     NativeApplication.nativeApplication.icon.tooltip = "Application name";
 
-</div>
-
-</div>
-
-<div>
-
 ### System tray icon events
-
-<div>
 
 The SystemTrayIcon object referenced by the
 NativeApplication.nativeApplication.icon property dispatches a ScreenMouseEvent
@@ -193,15 +115,7 @@ for `click`, `mouseDown`, `mouseUp`, `rightClick`, `rightMouseDown`, and
 `rightMouseUp` events. You can use these events, along with an icon menu, to
 allow users to interact with your application when it has no visible windows.
 
-</div>
-
-</div>
-
-<div>
-
 ### Example: Creating an application with no windows
-
-<div>
 
 The following example creates an AIR application which has a system tray icon,
 but no visible windows. (The `visible` property of the application must not be
@@ -263,33 +177,15 @@ the application starts up.)
     	}
     }
 
-<div>
-
 Note: When using the Flex WindowedApplication component, you must set the
 `visible` attribute of the WindowedApplication tag to `false`. This attribute
 supercedes the setting in the application descriptor.
-
-</div>
-
-<div>
 
 Note: The example assumes that there are image files named `AIRApp_16.png` and
 `AIRApp_128.png` in an `icons` subdirectory of the application. (Sample icon
 files, which you can copy to your project folder, are included in the AIR SDK.)
 
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Window taskbar icons and buttons
-
-<div>
 
 Iconified representations of windows are typically displayed in the window area
 of a taskbar or dock to allow users to easily access background or minimized
@@ -298,13 +194,7 @@ icon for each minimized window. The Microsoft Windows and Linux taskbars display
 a button containing the progam icon and title for each normal-type window in
 your application.
 
-</div>
-
-<div>
-
 ### Highlighting the taskbar window button
-
-<div>
 
 When a window is in the background, you can notify the user that an event of
 interest related to the window has occurred. On Mac OS X, you can notify the
@@ -320,13 +210,9 @@ to the method determines the urgency of the notification:
 - `NotificationType.INFORMATIONAL`: the window icon highlights by changing
   color.
 
-  <div>
-
   Note: On Linux, only the informational type of notification is supported.
   Passing either type value to the `notifyUser()` function will create the same
   effect.
-
-  </div>
 
   The following statement highlights the taskbar button of a window:
 
@@ -337,15 +223,7 @@ to the method determines the urgency of the notification:
   `NativeWindow.supportsNotification` property to determine if window
   notification is supported.
 
-</div>
-
-</div>
-
-<div>
-
 ### Creating windows without taskbar buttons or icons
-
-<div>
 
 On the Windows operating system, windows created with the types _utility_ or
 _lightweight_ do not appear on the taskbar. Invisible windows do not appear on
@@ -382,23 +260,7 @@ If a window is minimized on the Mac OS X dock when you set the `visible`
 property to `false`, the dock icon is not removed. A user can still click the
 icon to make the window reappear.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
-
-</div>
 
 ![](../img/flashplatformLinkIndicator.png)
 [flash.desktop.NativeApplication](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeApplication.html)
@@ -408,9 +270,3 @@ More Help topics
 
 ![](../img/flashplatformLinkIndicator.png)
 [flash.desktop.SystemTrayIcon](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/SystemTrayIcon.html)
-
-<div>
-
-</div>
-
-</div>

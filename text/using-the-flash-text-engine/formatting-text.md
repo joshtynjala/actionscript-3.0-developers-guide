@@ -1,7 +1,5 @@
 # Formatting text
 
-<div>
-
 A `TextBlock` object is a factory for creating lines of text. The content of a
 `TextBlock` is assigned via the `TextElement` object. An `ElementFormat` object
 handles the formatting for the text. The ElementFormat class defines such
@@ -9,20 +7,12 @@ properties as baseline alignment, kerning, tracking, text rotation, and font
 size, color, and case. It also includes a `FontDescription`, which is covered in
 detail in [Working with fonts](WS9dd7ed846a005b294b857bfa122bd808ea6-7ff3.html).
 
-</div>
-
-<div>
-
 ## Using the ElementFormat object
-
-<div>
 
 The constructor for the `ElementFormat` object takes any of a long list of
 optional parameters, including a `FontDescription`. You can also set these
 properties outside the constructor. The following example shows the relationship
 of the various objects in defining and displaying a simple text line:
-
-<div>
 
     package
     {
@@ -53,17 +43,7 @@ of the various objects in defining and displaying a simple text line:
     	}
     }
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Font color and transparency (alpha)
-
-<div>
 
 The `color` property of the `ElementFormat` object sets the font color. The
 value is an integer representing the RGB components of the color; for example,
@@ -79,15 +59,7 @@ values, thus making the element more transparent.
     ef.alpha = 0.8;
     ef.color = 0x999999;
 
-</div>
-
-</div>
-
-<div>
-
 ## Baseline alignment and shift
-
-<div>
 
 The font and size of the largest text in a line determine its dominant baseline.
 You can override these values by setting `TextBlock.baselineFontDescription` and
@@ -95,30 +67,16 @@ You can override these values by setting `TextBlock.baselineFontDescription` and
 several baselines within the text. These baselines include the ascent line and
 the descent line or the ideographic top, center, or bottom.
 
-<div>
-
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![Text showing ascent line, baseline, decsent line and
 x-height](images/te_baseline_align2.png)
 
-A.  
-Ascent
+**A.** Ascent
 
-B.  
-Baseline
+**B.** Baseline
 
-C.  
-Descent
+**C.** Descent
 
-D.  
-x-height
-
-</div>
-
-</div>
+**D.** x-height
 
 In the `ElementFormat` object, three properties determine baseline and alignment
 characteristics. The `alignmentBaseline` property sets the main baseline of a
@@ -135,20 +93,10 @@ The `baselineShift` property moves the baseline by a set number of pixels on the
 y-axis. In normal (non-rotated) text, a positive value moves the baseline down
 and a negative value moves it up.
 
-</div>
-
-</div>
-
-<div>
-
 ## Typographic Case
-
-<div>
 
 The `TypographicCase` property of `ElementFormat` specifies text case, such as
 uppercase, lowercase, or small caps.
-
-<div>
 
     var ef_Upper:ElementFormat = new ElementFormat();
     ef_Upper.typographicCase = TypographicCase.UPPERCASE;
@@ -156,25 +104,11 @@ uppercase, lowercase, or small caps.
     var ef_SmallCaps:ElementFormat = new ElementFormat();
     ef_SmallCaps.typographicCase = TypographicCase.SMALL_CAPS;
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Rotating text
-
-<div>
-
-<div>
 
 You can rotate a block of text or the glyphs within a segment of text in
 increments of 90°. The TextRotation class defines the following constants for
 setting both text block and glyph rotation:
-
-<div>
 
 | Constant   | Value        | Description                                                                                                                          |
 | ---------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
@@ -183,10 +117,6 @@ setting both text block and glyph rotation:
 | ROTATE_180 | "rotate_180" | Specifies 180 degree rotation.                                                                                                       |
 | ROTATE_270 | "rotate_270" | Specifies 270 degree rotation.                                                                                                       |
 | ROTATE_90  | "rotate_90"  | Specifies 90 degree clockwise rotation.                                                                                              |
-
-</div>
-
-</div>
 
 To rotate the lines of text in a text block, set the `TextBlock.lineRotation`
 property before calling the `TextBlock.createTextLine()` method to create the
@@ -205,8 +135,6 @@ information on rotating Asian text, see
 
 Here is an example of rotating both a block of text and the glyphs within, as
 you would with Asian text. The example also uses a Japanese font:
-
-<div>
 
     package
     {
@@ -237,17 +165,7 @@ you would with Asian text. The example also uses a Japanese font:
     	}
     }
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Locking and cloning ElementFormat
-
-<div>
 
 When an `ElementFormat` object is assigned to any type of `ContentElement`, its
 `locked` property is automatically set to `true`. Attempting to modify a locked
@@ -260,8 +178,6 @@ unlocked copy of the object. The properties of this unlocked object can be
 changed, and it can then be assigned to the `TextElement` instance. Any new
 lines created from it have the new formatting. Previous lines created from this
 same object and using the old format are unchanged.
-
-<div>
 
     package
     {
@@ -295,17 +211,3 @@ same object and using the old format are unchanged.
     		}
     	}
     }
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

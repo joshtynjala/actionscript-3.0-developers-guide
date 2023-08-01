@@ -1,7 +1,5 @@
 # HTML in AIR
 
-<div>
-
 AIR and WebKit define a couple of non-standard HTML elements and attributes,
 including:
 
@@ -9,13 +7,7 @@ including:
 
 [HTML element event handlers](WS5b3ccc516d4fbf351e63e3d118666ade46-7ea4.html)
 
-</div>
-
-<div>
-
 ## HTML frame and iframe elements
-
-<div>
 
 AIR adds new attributes to the frame and iframe elements of content in the
 application sandbox:
@@ -27,15 +19,11 @@ into the non-application sandbox corresponding to the specified domain. Content
 in the file and content loaded from the specified domain can cross-script each
 other.
 
-<div>
-
 Important: If you set the value of `sandboxRoot` _to the base URL of the domain,
 all requests for content from that domain are loaded from the application
 directory instead of the remote server (whether that request results from page
 navigation, from an XMLHttpRequest, or from any other means of loading
 content)._
-
-</div>
 
 documentRoot attribute  
 The `documentRoot` attribute specifies the local directory from which to load
@@ -68,16 +56,12 @@ pages that you create and control and only when cross-domain data loading is
 truly necessary. Also, carefully validate all external data loaded by the page
 to prevent code injection or other forms of attack.
 
-<div>
-
 Important: If the `allowCrossDomainXHR` attribute is included in a frame or
 iframe element, cross-domain XHRs are enabled (unless the value assigned is "0"
 or starts with the letters "f" or "n"). For example, setting
 `allowCrossDomainXHR` to " `deny"` _would still enable cross-domain XHRs. Leave
 the attribute out of the element declaration altogether if you do not want to
 enable cross-domain requests._
-
-</div>
 
 ondominitialize attribute  
 Specifies an event handler for the `dominitialize` event of a frame. This event
@@ -162,21 +146,11 @@ For more information, see
 and
 [HTML security in Adobe AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7f11.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## HTML element event handlers
-
-<div>
 
 DOM objects in AIR and WebKit dispatch some events not found in the standard DOM
 event model. The following table lists the related event attributes you can use
 to specify handlers for these events:
-
-<div>
 
 | Callback attribute name | Description                                                                                                                          |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
@@ -197,17 +171,7 @@ to specify handlers for these events:
 | onscroll                | Called when the content of a scrollable element is scrolled.                                                                         |
 | onselectstart           | Called when a selection begins.                                                                                                      |
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## HTML contentEditable attribute
-
-<div>
 
 You can add the `contentEditable` attribute to any HTML element to allow users
 to edit the content of the element. For example, the following example HTML code
@@ -222,8 +186,6 @@ sets the entire document as editable, except for first `p` element:
     </body>
     </html>
 
-<div>
-
 Note: If you set the `document.designMode` property to `on`, then all elements
 in the document are editable, regardless of the setting of `contentEditable` for
 an individual element. However, setting `designMode` to `off`, does not disable
@@ -231,17 +193,7 @@ editing of elements for which `contentEditable` is `true`. See
 [Document.designMode property](WS5b3ccc516d4fbf351e63e3d118666ade46-7ec0.html)
 for additional information.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Data: URLs
-
-<div>
 
 AIR supports `data:` URLs for the following elements:
 
@@ -271,15 +223,3 @@ repeating background:
 When using data: URLS, be aware that extra whitespace is significant. For
 example, the data string must be entered as a single, unbroken line. Otherwise,
 the line breaks are treated as part of the data and the image cannot be decoded.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

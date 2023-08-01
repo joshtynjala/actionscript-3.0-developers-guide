@@ -1,7 +1,5 @@
 # Setting LocalConnection permissions
 
-<div>
-
 The LocalConnection class lets you send messages between one Flash Player or AIR
 application and another. LocalConnection objects can communicate only among
 Flash Player or AIR content running on the same client computer, but they can be
@@ -25,13 +23,3 @@ in much the same way as `Security.allowDomain()`.
 
 A SWF file can use the `domain` property of the LocalConnection class to
 determine its domain.
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

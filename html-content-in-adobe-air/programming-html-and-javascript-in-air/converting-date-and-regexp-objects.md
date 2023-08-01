@@ -1,7 +1,5 @@
 # Converting Date and RegExp objects
 
-<div>
-
 The JavaScript and ActionScript languages both define Date and RegExp classes,
 but objects of these types are not automatically converted between the two
 execution contexts. You must convert Date and RegExp objects to the equivalent
@@ -23,13 +21,3 @@ The following ActionScript code converts a JavaScript RegExp object named
     if (jsRegExp.ignoreCase) flags += "i";
     if (jsRegExp.multiline) flags += "m";
     var asRegExp:RegExp = new RegExp(jsRegExp.source, flags);
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

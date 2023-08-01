@@ -1,20 +1,12 @@
 # Methods for using regular expressions with strings
 
-<div>
-
 The RegExp class includes two methods: `exec()` and `test()`.
 
 In addition to the `exec()` and `test()` methods of the RegExp class, the String
 class includes the following methods that let you match regular expressions in
 strings: `match()`, `replace()`, `search()`, and `splice()`.
 
-</div>
-
-<div>
-
 ## The test() method
-
-<div>
 
 The `test()` method of the RegExp class simply checks the supplied string to see
 if it contains a match for the regular expression, as the following example
@@ -24,15 +16,7 @@ shows:
     var str = "Class-A";
     trace(pattern.test(str)); // output: true
 
-</div>
-
-</div>
-
-<div>
-
 ## The exec() method
-
-<div>
 
 The `exec()` method of the RegExp class checks the supplied string for a match
 of the regular expression and returns an array with the following:
@@ -69,21 +53,9 @@ Use the `exec()` method multiple times to match multiple substrings when the `g`
     // 10      19      seashells
     // 27      35      seashore
 
-</div>
-
-</div>
-
-<div>
-
 ## String methods that use RegExp parameters
-
-<div>
 
 The following methods of the String class take regular expressions as
 parameters: `match()`, `replace()`, `search()`, and `split()`. For more
 information on these methods, see
 [Finding patterns in strings and replacing substrings](../working-with-strings/finding-substrings-and-patterns-in-strings.md).
-
-</div>
-
-</div>

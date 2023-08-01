@@ -1,7 +1,5 @@
 # Copying motion tween scripts in Flash
 
-<div>
-
 A tween generates intermediate frames that show a display object in different
 states in two different frames on a timeline. It creates the appearance that the
 image in the first frame evolves smoothly into the image in the second. In a
@@ -19,25 +17,13 @@ motion tween.
 You can access the Copy Motion as ActionScript 3.0 command in Flash two ways.
 The first way is from a tween context menu on the stage:
 
-<div>
-
 1.  Select the motion tween on the stage.
 
 2.  Right-click (Windows) or Control‑click (Macintosh).
 
 3.  Choose Copy Motion as ActionScript 3.0...
 
-    <div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-    xmlns:fo="http://www.w3.org/1999/XSL/Format"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
     ![](../../img/mo_copyContext.png)
-
-    </div>
-
-</div>
-
-<div>
 
 The second way is to choose the command directly from the Flash Edit menu:
 
@@ -45,27 +31,9 @@ The second way is to choose the command directly from the Flash Edit menu:
 
 2.  Select Edit \> Timeline \> Copy Motion as ActionScript 3.0.
 
-    <div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-    xmlns:fo="http://www.w3.org/1999/XSL/Format"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
     ![Copy Motion from Timeline menu](../../img/mo_copyEdit.png)
-
-    </div>
-
-</div>
 
 After copying the script, paste it into a file and save it.
 
 After creating a motion tween and copying and saving the script, you can reuse
 it as is or modify it in your own dynamic ActionScript-based animation.
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

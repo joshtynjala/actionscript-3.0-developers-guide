@@ -1,7 +1,5 @@
 # Using a shader as a filter
 
-<div>
-
 Using a shader as a filter is like using any of the other filters in
 ActionScript. When you use a shader as a filter, the filtered image (a display
 object or BitmapData object) is passed to the shader. The shader uses the input
@@ -40,14 +38,10 @@ The following example demonstrates using a shader as a filter. The filter in
 this example inverts the red, green, and blue channel values of an image. The
 result is the "negative" version of the image.
 
-<div>
-
 Note: The shader that this example uses is the invertRGB.pbk Pixel Bender kernel
 that is included with the Pixel Bender Toolkit. You can load the source code for
 the kernel from the Pixel Bender Toolkit installation directory. Compile the
 source code and save the bytecode file in the same directory as the source code.
-
-</div>
 
 The important ActionScript code is in these two methods:
 
@@ -60,24 +54,12 @@ The important ActionScript code is in these two methods:
   gradient color that is red on the left, yellow-green in the middle, and light
   blue on the right. The unfiltered object looks like this:
 
-  <div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-  xmlns:fo="http://www.w3.org/1999/XSL/Format"
-  xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
   ![](../../img/sb_filter_before.png)
-
-  </div>
 
   With the filter applied the colors are inverted, making the rectangle look
   like this:
 
-  <div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-  xmlns:fo="http://www.w3.org/1999/XSL/Format"
-  xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
   ![](../../img/sb_filter_after.png)
-
-  </div>
 
 The shader that this example uses is the "invertRGB.pbk" sample Pixel Bender
 kernel that is included with the Pixel Bender Toolkit. The source code is
@@ -147,5 +129,3 @@ the document class for the FLA file in Flash Professional:
 
 For more information on applying filters, see
 [Creating and applying filters](../filtering-display-objects/creating-and-applying-filters.md).
-
-</div>

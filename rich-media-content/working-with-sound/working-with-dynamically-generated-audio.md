@@ -1,13 +1,7 @@
 # Working with dynamically generated audio
 
-<div>
-
-<div>
-
 Note: The ability to dynamically generate audio is available starting with Flash
 Player 10 and Adobe AIR 1.5.
-
-</div>
 
 Instead of loading or streaming an existing sound, you can generate audio data
 dynamically. You can generate audio data when you assign an event listener for
@@ -36,8 +30,6 @@ In your handler function, you use the `ByteArray.writeFloat()` method to write
 to the `data` property of the `sampleData` event. For example, the following
 code generates a sine wave:
 
-<div>
-
     var mySound:Sound = new Sound();
     mySound.addEventListener(SampleDataEvent.SAMPLE_DATA, sineWaveGenerator);
     mySound.play();
@@ -51,8 +43,6 @@ code generates a sine wave:
     	}
     }
 
-</div>
-
 When you call `Sound.play()`, the application starts calling your event handler,
 requesting sound sample data. The application continues to send events as the
 sound plays back until you stop providing data, or until you call
@@ -62,11 +52,7 @@ The latency of the event varies from platform to platform, and could change in
 future versions of Flash Player and AIR. Do not depend on a specific latency;
 calculate it instead. To calculate the latency, use the following formula:
 
-<div>
-
     (SampleDataEvent.position / 44.1) - SoundChannelObject.position
-
-</div>
 
 Provide from 2048 through 8192 samples to the `data` property of the
 SampleDataEvent object (for each call to the event listener). For best
@@ -82,20 +68,12 @@ If you provide fewer than 2048 samples (per call to the `sampleData` event
 listener), the application stops after playing the remaining samples. The
 SoundChannel object then dispatches a SoundComplete event.
 
-</div>
-
-<div>
-
 ## Modifying sound from mp3 data
-
-<div>
 
 You use the `Sound.extract()` method to extract data from a Sound object. You
 can use (and modify) that data to write to the dynamic stream of another Sound
 object for playback. For example, the following code uses the bytes of a loaded
 MP3 file and passes them through a filter function, `upOctave()`:
-
-<div>
 
     var mySound:Sound = new Sound();
     var sourceSnd:Sound = new Sound();
@@ -129,31 +107,9 @@ MP3 file and passes them through a filter function, `upOctave()`:
     	return returnBytes;
     }
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Limitations on generated sounds
-
-<div>
 
 When you use a `sampleData` event listener with a Sound object, the only other
 Sound methods that are enabled are `Sound.extract()` and `Sound.play()`. Calling
 any other methods or properties results in an exception. All methods and
 properties of the SoundChannel object are still enabled.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

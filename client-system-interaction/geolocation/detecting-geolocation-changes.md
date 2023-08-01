@@ -1,7 +1,5 @@
 # Detecting geolocation changes
 
-<div>
-
 To use the geolocation sensor, instantiate a Geolocation object and register for
 `update` events it dispatches. The `update` event is a Geolocation event object.
 The event has eight properties:
@@ -56,12 +54,8 @@ You can adjust the desired time interval for geolocation events by calling the
 takes one parameter, `interval`, which is the requested update interval in
 milliseconds:
 
-<div>
-
     var geo:Geolocation = new Geolocation();
     geo.setRequestedUpdateInterval(10000);
-
-</div>
 
 The actual time between geolocation updates may be greater or lesser than this
 value. Any change in the update interval affects all registered listeners. If
@@ -154,26 +148,12 @@ when geolocation data is unavailable:
     	}
     }
 
-<div>
-
-<div>
-
 Note: First-generation iPhones, which do not include a GPS unit, dispatch
 `update` events only occasionally. On these devices, a Geolocation object
 initially dispatches one or two `update` events. It then dispatches `update`
 events when information changes noticeably.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Checking geolocation support
-
-<div>
 
 Use the `Geolocation.isSupported` property to test the runtime environment for
 the ability to use this feature:
@@ -191,15 +171,3 @@ Some iPhone models do not have a GPS unit. These models use other means (such as
 mobile phone triangulation) to obtain geolocation data. For these models, or on
 any iPhone that has the GPS disabled, a Geolocation object may only dispatch one
 or two initial `update` events.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

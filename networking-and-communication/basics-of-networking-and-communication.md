@@ -1,7 +1,5 @@
 # Basics of networking and communication
 
-<div>
-
 When you build applications in Flash Player or AIR, you often need to access
 resources outside your application. For example, you might send a request for an
 image to an Internet web server and get the image data in return. Or, you might
@@ -12,124 +10,114 @@ IP-based networking for protocols like UDP, TCP, HTTP, RTMP, and RTMFP.
 
 The following classes can be used to send and receive data across a network:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>Class</p></th>
-<th><p>Supported data formats</p></th>
-<th><p>Protocols</p></th>
-<th><p>Description</p></th>
-</tr>
+	<tr>
+		<th><p>Class</p></th>
+		<th><p>Supported data formats</p></th>
+		<th><p>Protocols</p></th>
+		<th><p>Description</p></th>
+	</tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Loader.html">Loader</a></p></td>
-<td><p>SWF, PNG, JPEG, GIF</p></td>
-<td><p>HTTP, HTTPS</p></td>
-<td><p>Loads supported data types and converts the data into a display
-object.</p>
-<p>See <a href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7e13.html">Loading
-display content dynamically</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/URLLoader.html">URLLoader</a></p></td>
-<td><p>Any (text, XML, binary, etc.)</p></td>
-<td><p>HTTP, HTTPS</p></td>
-<td><p>Loads arbitrary formats of data. Your application is responsible
-for interpreting the data.</p>
-<p>See <a href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7cf5.html">Using
-the URLLoader class</a></p></td>
-</tr>
-<tr class="odd">
-<td><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/FileReference.html">FileReference</a></p></td>
-<td><p>Any</p></td>
-<td><p>HTTP</p></td>
-<td><p>Upload and download files.</p>
-<p>See <a href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7cf8.html">Using
-the FileReference class</a></p></td>
-</tr>
-<tr class="even">
-<td><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetConnection.html">NetConnection</a></p></td>
-<td><p>Video, audio, ActionScript Message Format (AMF)</p></td>
-<td><p>HTTP, HTTPS, RTMP, RTMFP</p></td>
-<td><p>Connects to video, audio and remote object streams.</p>
-<p>See <a href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7e1a.html">Working
-with video</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/Sound.html">Sound</a></p></td>
-<td><p>Audio</p></td>
-<td><p>HTTP</p></td>
-<td><p>Loads and plays supported audio formats.</p>
-<p>See <a href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7d25.html">Loading
-external sound files</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/XMLSocket.html">XMLSocket</a></p></td>
-<td><p>XML</p></td>
-<td><p>TCP</p></td>
-<td><p>Exchanges XML messages with an XMLSocket server.</p>
-<p>See <a href="WSb2ba3b1aad8a27b02a2e08d61220f3e44be-7ffe.html">XML
-sockets</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/Socket.html">Socket</a></p></td>
-<td><p>Any</p></td>
-<td><p>TCP</p></td>
-<td><p>Connects to a TCP socket server.</p>
-<p>See <a href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7cfb.html">Binary
-client sockets</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/SecureSocket.html">SecureSocket</a>
-(AIR)</p></td>
-<td><p>Any</p></td>
-<td><p>TCP with SSLv3 or TLSv1</p></td>
-<td><p>Connects to a TCP socket server that requires SSL or TLS
-security.</p>
-<p>See <a href="WSb2ba3b1aad8a27b0-1d9a251c124028071fd-8000.html">Secure
-client sockets (AIR)</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/ServerSocket.html">ServerSocket</a>
-(AIR)</p></td>
-<td><p>Any</p></td>
-<td><p>TCP</p></td>
-<td><p>Acts as a server for incoming TCP socket connections.</p>
-<p>See <a href="WSb2ba3b1aad8a27b0-181c51321220efd9d1c-7ffc.html">Server
-sockets</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/DatagramSocket.html">DatagramSocket</a>
-(AIR)</p></td>
-<td><p>Any</p></td>
-<td><p>UDP</p></td>
-<td><p>Sends and receives UDP packets.</p>
-<p>See <a href="WSb2ba3b1aad8a27b0-181c51321220efd9d1c-7ffe.html">UDP
-sockets (AIR)</a></p></td>
-</tr>
+	<tr>
+		<td><p><a
+		href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Loader.html">Loader</a></p></td>
+		<td><p>SWF, PNG, JPEG, GIF</p></td>
+		<td><p>HTTP, HTTPS</p></td>
+		<td><p>Loads supported data types and converts the data into a display
+		object.</p>
+		<p>See <a href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7e13.html">Loading
+		display content dynamically</a>.</p></td>
+	</tr>
+	<tr>
+		<td><p><a
+		href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/URLLoader.html">URLLoader</a></p></td>
+		<td><p>Any (text, XML, binary, etc.)</p></td>
+		<td><p>HTTP, HTTPS</p></td>
+		<td><p>Loads arbitrary formats of data. Your application is responsible
+		for interpreting the data.</p>
+		<p>See <a href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7cf5.html">Using
+		the URLLoader class</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a
+		href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/FileReference.html">FileReference</a></p></td>
+		<td><p>Any</p></td>
+		<td><p>HTTP</p></td>
+		<td><p>Upload and download files.</p>
+		<p>See <a href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7cf8.html">Using
+		the FileReference class</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a
+		href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetConnection.html">NetConnection</a></p></td>
+		<td><p>Video, audio, ActionScript Message Format (AMF)</p></td>
+		<td><p>HTTP, HTTPS, RTMP, RTMFP</p></td>
+		<td><p>Connects to video, audio and remote object streams.</p>
+		<p>See <a href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7e1a.html">Working
+		with video</a>.</p></td>
+	</tr>
+	<tr>
+		<td><p><a
+		href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/Sound.html">Sound</a></p></td>
+		<td><p>Audio</p></td>
+		<td><p>HTTP</p></td>
+		<td><p>Loads and plays supported audio formats.</p>
+		<p>See <a href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7d25.html">Loading
+		external sound files</a>.</p></td>
+	</tr>
+	<tr>
+		<td><p><a
+		href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/XMLSocket.html">XMLSocket</a></p></td>
+		<td><p>XML</p></td>
+		<td><p>TCP</p></td>
+		<td><p>Exchanges XML messages with an XMLSocket server.</p>
+		<p>See <a href="WSb2ba3b1aad8a27b02a2e08d61220f3e44be-7ffe.html">XML
+		sockets</a>.</p></td>
+	</tr>
+	<tr>
+		<td><p><a
+		href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/Socket.html">Socket</a></p></td>
+		<td><p>Any</p></td>
+		<td><p>TCP</p></td>
+		<td><p>Connects to a TCP socket server.</p>
+		<p>See <a href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7cfb.html">Binary
+		client sockets</a>.</p></td>
+	</tr>
+	<tr>
+		<td><p><a
+		href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/SecureSocket.html">SecureSocket</a>
+		(AIR)</p></td>
+		<td><p>Any</p></td>
+		<td><p>TCP with SSLv3 or TLSv1</p></td>
+		<td><p>Connects to a TCP socket server that requires SSL or TLS
+		security.</p>
+		<p>See <a href="WSb2ba3b1aad8a27b0-1d9a251c124028071fd-8000.html">Secure
+		client sockets (AIR)</a>.</p></td>
+	</tr>
+	<tr>
+		<td><p><a
+		href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/ServerSocket.html">ServerSocket</a>
+		(AIR)</p></td>
+		<td><p>Any</p></td>
+		<td><p>TCP</p></td>
+		<td><p>Acts as a server for incoming TCP socket connections.</p>
+		<p>See <a href="WSb2ba3b1aad8a27b0-181c51321220efd9d1c-7ffc.html">Server
+		sockets</a>.</p></td>
+	</tr>
+	<tr>
+		<td><p><a
+		href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/DatagramSocket.html">DatagramSocket</a>
+		(AIR)</p></td>
+		<td><p>Any</p></td>
+		<td><p>UDP</p></td>
+		<td><p>Sends and receives UDP packets.</p>
+		<p>See <a href="WSb2ba3b1aad8a27b0-181c51321220efd9d1c-7ffe.html">UDP
+		sockets (AIR)</a></p></td>
+	</tr>
 </tbody>
 </table>
-
-</div>
 
 Often, when creating a web application it is helpful to store persistent
 information about the user's application state. HTML pages and applications
@@ -172,8 +160,6 @@ an AIR application is running, you can use the following classes:
 - SocketMonitor and SecureSocketMonitor—Allows you to monitor the availability
   of a resource at a socket. See
   [Socket monitoring](WS5b3ccc516d4fbf351e63e3d118666ade46-7cbe.html).
-
-<div>
 
 #### Important concepts and terms
 
@@ -222,15 +208,7 @@ To send a file to another computer.
 Download  
 To retrieve a file from another computer.
 
-</div>
-
-</div>
-
-<div>
-
 ## Network interfaces
-
-<div>
 
 You can use the NetworkInfo object to discover the hardware and software network
 interfaces available to your application. The NetworkInfo object is a
@@ -301,15 +279,7 @@ For more information, see:
 
 - [Flexpert: Detecting the network connection type with Flex 4.5](http://www.flexpert.be/2011/04/detecting-the-network-connection-type-with-flex-4-5/)
 
-</div>
-
-</div>
-
-<div>
-
 ## Network connectivity changes
-
-<div>
 
 Your AIR application can run in environments with uncertain and changing network
 connectivity. To help an application manage connections to online resources,
@@ -340,23 +310,13 @@ to a remote resource is to try it. The service monitoring framework provides an
 event-based means of responding to changes in network connectivity to a
 specified host.
 
-<div>
-
 Note: The service monitoring framework detects whether a server responds
 acceptably to a request. A successful check does not guarantee full
 connectivity. Scalable web services often use caching and load-balancing
 appliances to redirect traffic to a cluster of web servers. In this situation,
 service providers only provide a partial diagnosis of network connectivity.
 
-</div>
-
-</div>
-
-<div>
-
 ### Service monitoring
-
-<div>
 
 The service monitor framework, separate from the AIR framework, resides in the
 file aircore.swc. To use the framework, the aircore.swc file must be included in
@@ -380,21 +340,13 @@ HTTP connectivity for a specified URLRequest.
 The SocketMonitor class, also a subclass of the ServiceMonitor class, detects
 changes in connectivity to a specified host at a specified port.
 
-<div>
-
 Note: Prior to AIR 2, the service monitor framework was published in the
 servicemonitor.swc library. This library is now deprecated. Use the aircore.swc
 library instead.
 
-</div>
-
-<div>
-
 #### Flash CS4 and CS5 Professional
 
 To use these classes in Adobe® Flash® CS4 or CS5 Professional:
-
-<div>
 
 1.  Select the File \> Publish Settings command.
 
@@ -408,18 +360,8 @@ To use these classes in Adobe® Flash® CS4 or CS5 Professional:
 
 5.  Click the OK button.
 
-6.  <div>
-
-    Add the following import statement to your ActionScript 3.0 code: import
+6.  Add the following import statement to your ActionScript 3.0 code: import
     air.net.\*;
-
-    </div>
-
-</div>
-
-</div>
-
-<div>
 
 #### Flash CS3 Professional
 
@@ -429,17 +371,7 @@ the following `import` statement to your ActionScript 3.0 code:
 
     import air.net.*;
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ### HTTP monitoring
-
-<div>
 
 The URLMonitor class determines if HTTP requests can be made to a specified
 address at port 80 (the typical port for HTTP communication). The following code
@@ -457,15 +389,7 @@ Adobe website:
     	trace("Status change. Current status: " + monitor.available);
     }
 
-</div>
-
-</div>
-
-<div>
-
 ### Socket monitoring
-
-<div>
 
 AIR applications can also use socket connections for push-model connectivity.
 Firewalls and network routers typically restrict network communication on
@@ -491,17 +415,7 @@ common port for IRC:
 If the socket server requires a secure connection, you can use the
 SecureSocketMonitor class instead of SocketMonitor.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Domain Name System (DNS) records
-
-<div>
 
 You can look up DNS resource records using the DNSResolver class. DNS resource
 records provide information like the IP address of a domain name and the domain
@@ -522,10 +436,6 @@ To look up a record, you pass a query string and the class object representing
 the record type to the `lookup()` method of the DNSResolver object. The query
 string to use depends on the record type:
 
-<div>
-
-<div>
-
 | Record class | Query string                                  | Example query string      |
 | ------------ | --------------------------------------------- | ------------------------- |
 | ARecord      | host name                                     | "example.com"             |
@@ -533,10 +443,6 @@ string to use depends on the record type:
 | MXRecord     | host name                                     | "example.com"             |
 | PTRRecord    | IP address                                    | "208.77.188.166"          |
 | SRVRecord    | Service identifier: \_service.\_protocol.host | "\_sip.\_tcp.example.com" |
-
-</div>
-
-</div>
 
 The following code example looks up the IP address of the host "example.com".
 
@@ -593,15 +499,3 @@ For more information, see:
 - [PTRRecord](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/dns/PTRRecord.html)
 
 - [SRVRecord](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/dns/SRVRecord.html)
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

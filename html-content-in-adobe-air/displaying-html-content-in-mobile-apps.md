@@ -1,7 +1,5 @@
 # Displaying HTML content in mobile apps
 
-<div>
-
 The
 [StageWebView](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/StageWebView.html)
 class displays HTML content using the system browser control on mobile devices
@@ -15,124 +13,7 @@ between the HTML content and the rest of the application. You can control
 navigation, but no cross-scripting or direct exchange of data is allowed. You
 can load content from a local or remote URL or pass in a string of HTML.
 
-<div xmlns:adobe="http://www.adobe.com/saxon">
-
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td colspan="3"><h2 id="adobe-recommends">Adobe recommends</h2></td>
-</tr>
-<tr class="even">
-<td colspan="2" width="60%"></td>
-<td><table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td width="15%"><span> <img src="images/mark_doherty.png" />
-</span></td>
-<td width="85%"><h3 id="air2.5-stagewebview-demo-oauth-support"><a
-href="http://goo.gl/QS3iW">AIR2.5 StageWebView demo – OAuth
-Support</a></h3>
-<span> <a href="http://www.flashmobileblog.com/about/">Mark Doherty</a>
-</span><br />
-<span> Evangelist Mark Doherty demonstrates how to log in to an OAuth
-protected site like Twitter using the StageWebView class. </span></td>
-</tr>
-</tbody>
-</table></td>
-</tr>
-</tbody>
-</table></td>
-</tr>
-</tbody>
-</table>
-
-</div>
-
-<div xmlns:adobe="http://www.adobe.com/saxon">
-
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td colspan="2"><h2 id="adobe-recommends-1">Adobe recommends</h2></td>
-<td colspan="2"><h3 id="have-a-tutorial-you-would-like-to-share"><img
-src="images/TinyBlueTutIcon.png" /> <a
-href="http://www.adobe.com/community/publishing/download.html">Have a
-tutorial you would like to share?</a></h3></td>
-</tr>
-<tr class="even">
-<td colspan="4" height="10"></td>
-</tr>
-<tr class="odd">
-<td width="5%"><span> <img src="images/sean_voisen.png" /> </span></td>
-<td width="45%"><h3 id="making-the-most-of-stagewebview"><a
-href="http://goo.gl/5sPwj">Making the most of StageWebView</a></h3>
-<span> Sean Voisen </span></td>
-<td width="5%"><span> <img src="images/jon_campos.png" /> </span></td>
-<td width="45%"><h3 id="html-web-view-in-air-for-android"><a
-href="http://goo.gl/RSjqN">HTML Web View in Air for Android</a></h3>
-<span> Jonathan Campos </span></td>
-</tr>
-<tr class="even">
-<td colspan="4" height="10"></td>
-</tr>
-<tr class="odd">
-<td width="5%"><span> <img src="images/rich_tretola.png" /> </span></td>
-<td width="45%"><h3 id="create-a-basic-web-browser-with-stagewebview"><a
-href="http://goo.gl/1PS3G">Create a basic web browser with
-StageWebView</a></h3>
-<span> Rich Tretola </span></td>
-<td width="5%"><span> <img src="images/sonke_rohde.png" /> </span></td>
-<td width="45%"><h3 id="air-mobile-stagewebview-uicomponent"><a
-href="http://goo.gl/qRaRY">AIR Mobile StageWebView UIComponent</a></h3>
-<span> Sönke Rohde </span></td>
-</tr>
-<tr class="even">
-<td colspan="4" height="10"></td>
-</tr>
-<tr class="odd">
-<td width="5%"><span> <img src="images/judah_frangipane.png" />
-</span></td>
-<td width="45%"><h3
-id="using-stagewebview-within-a-uicomponent-in-mobile"><a
-href="http://goo.gl/GOQPg">Using StageWebView within a UIComponent in
-Mobile</a></h3>
-<span> Judah Frangipane </span></td>
-<td width="5%"></td>
-<td width="45%"></td>
-</tr>
-</tbody>
-</table>
-
-</div>
-
-</div>
-
-<div>
-
 ## StageWebView objects
-
-<div>
 
 A StageWebView object is not a display object and cannot be added to the display
 list. Instead, it operates as a viewport attached directly to the stage.
@@ -164,15 +45,7 @@ the object entirely, call the `dispose()` method. Calling `dispose()` is
 optional, but does help the garbage collector reclaim the memory used by the
 object sooner.
 
-</div>
-
-</div>
-
-<div>
-
 ## Content
-
-<div>
 
 You can load content into a StageWebView object using two methods: `loadURL()`
 and `loadString()`.
@@ -181,8 +54,6 @@ The `loadURL()` method loads a resource at the specified URL. You can use any
 URI scheme supported by the system web browser control, including: data:, file:,
 http:, https:, and javascript:. The app: and app-storage: schemes are not
 supported. AIR does not validate the URL string.
-
-<div>
 
 The `loadString()` method loads a literal string containing HTML content. The
 location of a page loaded with this method is expressed as:
@@ -193,13 +64,7 @@ location of a page loaded with this method is expressed as:
 
 - On Android: the data URI format of the encoded _htmlString_
 
-</div>
-
 The URI scheme determines the rules for loading embedded content or data.
-
-<div>
-
-<div>
 
 | URI scheme                   | Load local resource | Load remote resource | Local XMLHttpRequest | Remote XMLHttpRequest |
 | ---------------------------- | ------------------- | -------------------- | -------------------- | --------------------- |
@@ -208,18 +73,10 @@ The URI scheme determines the rules for loading embedded content or data.
 | http:, https:                | No                  | Yes                  | No                   | Same domain           |
 | about: (loadString() method) | No                  | Yes                  | No                   | No                    |
 
-</div>
-
-<div>
-
 Note: If the stage's `displayState` property is set to `FULL_SCREEN`, in
 Desktop, you cannot type in a text field displayed in the StageWebView. However,
 in iOS and Android, you can type in a text field on StageWebView even if the
 stage's `displayState` is `FULL_SCREEN`.
-
-</div>
-
-</div>
 
 The following example uses a StageWebView object to display Adobe's website:
 
@@ -250,13 +107,7 @@ manifestAdditions element of the AIR application descriptor to display plug-in
 content in a StageWebView object. See
 [Enabling Flash Player and other plug-ins in a StageWebView object](https://help.adobe.com/en_US/air/build/WS365a66ad37c9f5102ec8a8ba12f2d91095a-8000.html).
 
-</div>
-
-<div>
-
 ### JavaScript URI
-
-<div>
 
 You can use a JavaScript URI to call a function defined in the HTML page that is
 loaded by a StageWebView object. The function you call using the JavaScript URI
@@ -287,17 +138,7 @@ StageWebView object to call a JavaScript function:
     	}
     }
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Navigation events
-
-<div>
 
 When a user clicks a link in the HTML, the StageWebView object dispatches a
 `locationChanging` event. You can call the `preventDefault()` method of the
@@ -344,15 +185,7 @@ the new page in the system browser instead.
     	}
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## History
-
-<div>
 
 As a user clicks links in the content displayed in a StageWebView object, the
 control saves the backwards and forwards history stacks. The following example
@@ -398,15 +231,7 @@ Back and Search soft keys.
     	}
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## Focus
-
-<div>
 
 Even though it is not a display object, the StageWebView class contains members
 that allow you to manage the focus transitions into and out of the control.
@@ -521,15 +346,7 @@ to Flash display objects:
     	}
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## Bitmap capture
-
-<div>
 
 A StageWebView object is rendered above all display list content. You cannot add
 a content above a StageWebView object. For example, you cannot expand a
@@ -597,26 +414,24 @@ corresponding web page and displays it as a snapshot on the stage.
     	}
     }
 
-</div>
+## Adobe recommends
 
-</div>
+> <h3 id="air2.5-stagewebview-demo-oauth-support"><a href="http://goo.gl/QS3iW"><img src="../img/mark_doherty.png" /> AIR2.5 StageWebView demo – OAuth Support</a></h3>
+> <a href="http://www.flashmobileblog.com/about/">Mark Doherty</a>
+> Evangelist Mark Doherty demonstrates how to log in to an OAuth protected site like Twitter using the StageWebView class.
 
-<div>
+> <h3 id="making-the-most-of-stagewebview"><img src="../img/sean_voisen.png" /> <a
+> href="http://goo.gl/5sPwj">Making the most of StageWebView</a></h3>
+> Sean Voisen
 
-<div>
+> <h3 id="html-web-view-in-air-for-android"><img src="../img/jon_campos.png" /> <a href="http://goo.gl/RSjqN">HTML Web View in Air for Android</a></h3>
+> Jonathan Campos
 
-More Help topics
+> <h3 id="create-a-basic-web-browser-with-stagewebview"><img src="../img/rich_tretola.png" /> <a href="http://goo.gl/1PS3G">Create a basic web browser with StageWebView</a></h3>
+> Rich Tretola
 
-</div>
+> <h3 id="air-mobile-stagewebview-uicomponent"><img src="../img/sonke_rohde.png" /> <a href="http://goo.gl/qRaRY">AIR Mobile StageWebView UIComponent</a></h3>
+> Sönke Rohde
 
-<div>
-
-</div>
-
-[Sean Voisen: Making the Most of StageWebView](http://voisen.org/blog/2010/10/making-the-most-of-stagewebview/)
-
-<div>
-
-</div>
-
-</div>
+> <h3 id="using-stagewebview-within-a-uicomponent-in-mobile"><img src="../img/judah_frangipane.png" /> <a href="http://goo.gl/GOQPg">Using StageWebView within a UIComponent in Mobile</a></h3>
+> Judah Frangipane

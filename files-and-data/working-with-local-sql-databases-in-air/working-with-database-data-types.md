@@ -1,7 +1,5 @@
 # Working with database data types
 
-<div>
-
 When a table is created in a database, the SQL statement for creating the table
 defines the affinity, or data type, for each column in the table. Although
 affinity declarations can be omitted, it's a good idea to explicitly declare
@@ -33,13 +31,3 @@ original data type.
 For more information about the available column affinity types and using data
 types in SQL statements, see the
 [Data type support](WSd47bd22bdd97276f2aceae3b1262b7f2d43-8000.html).
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

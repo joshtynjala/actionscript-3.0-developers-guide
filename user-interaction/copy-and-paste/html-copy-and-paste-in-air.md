@@ -1,7 +1,5 @@
 # HTML copy and paste in AIR
 
-<div>
-
 The HTML environment in Adobe AIR provides its own set of events and default
 behavior for copy and paste. Only code running in the application sandbox can
 access the system clipboard directly through the AIR
@@ -13,13 +11,7 @@ Copy and paste events include: `copy`, `cut`, and `paste`. The object dispatched
 for these events provides access to the clipboard through the `clipboardData`
 property.
 
-</div>
-
-<div>
-
 ## Default behavior
-
-<div>
 
 By default, AIR copies selected items in response to the copy command, which can
 be generated either by a keyboard shortcut or a context menu. Within editable
@@ -29,15 +21,7 @@ cursor or selection in response to the paste command.
 To prevent the default behavior, your event handler can call the
 `preventDefault()` method of the dispatched event object.
 
-</div>
-
-</div>
-
-<div>
-
 ## Using the clipboardData property of the event object
-
-<div>
 
 The `clipboardData` property of the event object dispatched as a result of one
 of the copy or paste events allows you to read and write clipboard data.
@@ -107,15 +91,3 @@ text.
     magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
     </body>
     </html>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

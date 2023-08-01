@@ -1,7 +1,5 @@
 # Displaying pop-up native menus (AIR)
 
-<div>
-
 You can display any NativeMenu object at an arbitrary time and location above a
 window, by calling the menu `display()` method. The method requires a reference
 to the stage; thus, only content in the application sandbox can display a menu
@@ -14,19 +12,5 @@ The following method displays the menu defined by a NativeMenu object named
     	popupMenu.display(event.target.stage, event.stageX, event.stageY);
     }
 
-<div>
-
 Note: The menu does not need to be displayed in direct response to an event. Any
 method can call the `display()` function.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

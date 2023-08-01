@@ -1,11 +1,7 @@
 # Getting file system information
 
-<div>
-
 The File class includes the following static properties that provide some useful
 information about the file system:
-
-<div>
 
 | Property             | Description                                                                                                                                                                                                        |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -13,12 +9,8 @@ information about the file system:
 | `File.separator`     | The host operating system's path component separator character. On Mac OS and Linux, this is the forward slash (/) character. On Windows, it is the backslash (\\ character.                                       |
 | `File.systemCharset` | The default encoding used for files by the host operating system. This pertains to the character set used by the operating system, corresponding to its language.                                                  |
 
-</div>
-
 The `Capabilities` class also includes useful system information that can be
 useful when working with files:
-
-<div>
 
 | Property              | Description                                                                                                                                 |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -26,16 +18,10 @@ useful when working with files:
 | Capabilities.language | Specifies the language code of the system on which the player is running.                                                                   |
 | Capabilities.os       | Specifies the current operating system.                                                                                                     |
 
-</div>
-
-<div>
-
 Note: Be careful when using `Capabilities.os` to determine system
 characteristics. If a more specific property exists to determine a system
 characteristic, use it. Otherwise, you run the risk of writing code that does
 not work correctly on all platforms. For example, consider the following code:
-
-</div>
 
     var separator:String;
     if (Capablities.os.indexOf("Mac") > -1)
@@ -49,13 +35,3 @@ not work correctly on all platforms. For example, consider the following code:
 
 This code leads to problems on Linux. It is better to simply use the
 `File.separator` property.
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

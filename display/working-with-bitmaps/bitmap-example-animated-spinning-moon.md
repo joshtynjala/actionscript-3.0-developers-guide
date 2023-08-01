@@ -1,7 +1,5 @@
 # Bitmap example: Animated spinning moon
 
-<div>
-
 The Animated spinning moon example demonstrates techniques for working with
 Bitmap objects and bitmap image data (BitmapData objects). The example creates
 an animation of a spinning, spherical moon using a flat image of the moon's
@@ -19,51 +17,39 @@ To get the application files for this sample, see
 The Animated spinning moon application files can be found in the
 Samples/SpinningMoon folder. The application consists of the following files:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>File</p></th>
-<th><p>Description</p></th>
-</tr>
+    <tr>
+        <th><p>File</p></th>
+        <th><p>Description</p></th>
+    </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td headers="d17e20326 "><p>SpinningMoon.mxml</p>
-<p>or</p>
-<p>SpinningMoon.fla</p></td>
-<td headers="d17e20329 "><p>The main
-application file in Flex (MXML) or Flash (FLA).</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e20326 "><p>com/example/programmingas3/moon/MoonSphere.as</p></td>
-<td headers="d17e20329 "><p>Class that
-performs the functionality of loading, displaying, and animating the
-moon.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e20326 "><p>moonMap.png</p></td>
-<td headers="d17e20329 "><p>Image file
-containing a photograph of the moon's surface, which is loaded and used
-to create the animated, spinning moon.</p></td>
-</tr>
+    <tr>
+        <td >
+            <p>SpinningMoon.mxml</p>
+            <p>or</p>
+            <p>SpinningMoon.fla</p>
+        </td>
+        <td ><p>The main
+        application file in Flex (MXML) or Flash (FLA).</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/moon/MoonSphere.as</p></td>
+        <td ><p>Class that
+        performs the functionality of loading, displaying, and animating the
+        moon.</p></td>
+    </tr>
+    <tr>
+        <td ><p>moonMap.png</p></td>
+        <td ><p>Image file
+        containing a photograph of the moon's surface, which is loaded and used
+        to create the animated, spinning moon.</p></td>
+    </tr>
 </tbody>
 </table>
 
-</div>
-
-</div>
-
-<div>
-
 ## Loading an external image as bitmap data
-
-<div>
 
 The first main task this sample performs is loading an external image file,
 which is a photograph of the moon's surface. The loading operation is handled by
@@ -128,15 +114,7 @@ of the loaded Bitmap instance (`event.target.content.bitmapData`) and stores it
 in the instance variable named `textureMap`, which is used as a source of the
 image data to create the animation of the rotating moon. This is described next.
 
-</div>
-
-</div>
-
-<div>
-
 ## Creating animation by copying pixels
-
-<div>
 
 A basic definition of animation is the illusion of motion, or change, created by
 changing an image over time. In this sample, the goal is to create the illusion
@@ -145,13 +123,7 @@ of the animation, you can ignore the spherical distortion aspect of the sample.
 Consider the actual image that's loaded and used as the source of the moon image
 data:
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](../../img/bt_moon_example_map_1_popup.png)
-
-</div>
 
 As you can see, the image is not one or several spheres; it's a rectangular
 photograph of the surface of the moon. Because the photo was taken exactly at
@@ -212,13 +184,7 @@ Represented visually, the code copies the pixels from `textureMap` outlined in
 the following image and pastes them onto `sphere`. In other words, the
 BitmapData content of `sphere` is the portion of `textureMap` highlighted here:
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](../../img/bt_moon_example_map_2_popup.png)
-
-</div>
 
 Remember, however, that this is just the initial state of `sphere` —the first
 image content that's copied onto `sphere`.
@@ -271,23 +237,11 @@ The code does three things:
     back to the visual representation, after several cycles of animation the
     source rectangle will have moved several pixels to the right, like this:
 
-    <div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-    xmlns:fo="http://www.w3.org/1999/XSL/Format"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
     ![](../../img/bt_moon_example_map_3_popup.png)
-
-    </div>
 
     After several more cycles, the rectangle will have moved even farther:
 
-    <div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-    xmlns:fo="http://www.w3.org/1999/XSL/Format"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
     ![](../../img/bt_moon_example_map_4_popup.png)
-
-    </div>
 
     This gradual, steady shift in the location from which the pixels are copied
     is the key to the animation. By slowly and continuously moving the source
@@ -302,13 +256,7 @@ The code does three things:
     Eventually the rectangle will reach the right edge of `textureMap` and it
     will run out of moon photo pixels to copy onto `sphere`:
 
-    <div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-    xmlns:fo="http://www.w3.org/1999/XSL/Format"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
     ![](../../img/bt_moon_example_map_5_popup.png)
-
-    </div>
 
     The next lines of code address this issue:
 
@@ -321,13 +269,7 @@ The code does three things:
     the middle of `textureMap`. If so, it resets `sourceX` back to 0, moving it
     back to the left edge of `textureMap` and starting the cycle over again:
 
-    <div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-    xmlns:fo="http://www.w3.org/1999/XSL/Format"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
     ![](../../img/bt_moon_example_map_2_0_popup.png)
-
-    </div>
 
 3.  With the appropriate `sourceX` value calculated, the final step in creating
     the animation is to actually copy the new source rectangle pixels onto
@@ -346,15 +288,7 @@ onto `sphere`, the appearance on the screen is that the moon photo image
 represented by `sphere` continuously slides. In other words, the moon appears to
 rotate continuously.
 
-</div>
-
-</div>
-
-<div>
-
 ## Creating the spherical appearance
-
-<div>
 
 The moon, of course, is a sphere and not a rectangle. Consequently, the sample
 needs to take the rectangular moon surface photo, as it continuously animates,
@@ -378,13 +312,7 @@ Note that since MoonSphere is a display object (it is based on the Sprite
 class), the mask can be applied directly to the MoonSphere instance using its
 inherited `mask` property.
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](../../img/bt_moon_masked_but_not_filtered.png)
-
-</div>
 
 Simply hiding parts of the photo using a circle-shaped mask isn't enough to
 create a realistic-looking rotating-sphere effect. Because of the way the photo
@@ -428,13 +356,7 @@ the `imageLoadComplete()` method:
 
 The final image, with mask and displacement map filter applied, looks like this:
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](../../img/bt_moon_masked_and_filtered.png)
-
-</div>
 
 With every cycle of the rotating moon animation, the BitmapData content of
 sphere is overwritten by a new snapshot of the source image data. However, the
@@ -459,15 +381,7 @@ For detailed information about using the displacement map filter in
 ActionScript, see
 [Filtering display objects](../filtering-display-objects/index.md).
 
-</div>
-
-</div>
-
-<div>
-
 ## Creating a bitmap image by setting pixel values
-
-<div>
 
 One important aspect of a displacement map filter is that it actually involves
 two images. One image, the source image, is the image that is actually altered
@@ -484,13 +398,7 @@ sample needs the appropriate map image—one that has a gray background and a
 circle that's filled with a gradient of a single color (red) going horizontally
 from dark to light, as shown here:
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](../../img/bt_moon_displacement_map_image.png)
-
-</div>
 
 Because only one map image and filter are used in this sample, the map image is
 only created once, in the `imageLoadComplete()` method (in other words, when the
@@ -639,7 +547,3 @@ four steps:
     object, shown here:
 
         result.setPixel(i, j, rgb);
-
-</div>
-
-</div>

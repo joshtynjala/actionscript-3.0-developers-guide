@@ -1,7 +1,5 @@
 # Color matrix filter
 
-<div>
-
 The ColorMatrixFilter class is used to manipulate the color and alpha values of
 the filtered object. This allows you to create saturation changes, hue rotation
 (shifting a palette from one range of colors to another), luminance-to-alpha
@@ -19,5 +17,3 @@ describing the
 [`ColorMatrixFilter.matrix`](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filters/ColorMatrixFilter.html#matrix)
 property in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
-
-</div>

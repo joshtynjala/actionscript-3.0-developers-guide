@@ -1,7 +1,5 @@
 # Capturing sound input
 
-<div>
-
 The Microphone class lets your application connect to a microphone or other
 sound input device on the user's system and broadcast the input audio to that
 system's speakers or send the audio data to a remote server, such as Flash Media
@@ -11,13 +9,7 @@ send compressed audio data to a remote server. You can use either Speex or
 Nellymoser codec for data sent to a remote server. (The Speex codec is supported
 starting with Flash Player 10 and Adobe AIR 1.5.)
 
-</div>
-
-<div>
-
 ## Accessing a microphone
-
-<div>
 
 The Microphone class does not have a constructor method. Instead, you use the
 static `Microphone.getMicrophone()` method to obtain a new Microphone instance,
@@ -84,15 +76,7 @@ the microphone are never dispatched. Content running in AIR outside the
 application sandbox does require permission from the user, so these status
 events can be dispatched.
 
-</div>
-
-</div>
-
-<div>
-
 ## Routing microphone audio to local speakers
-
-<div>
 
 Audio input from a microphone can be routed to the local system speakers by
 calling the `Microphone.setLoopback()` method with a parameter value of `true`.
@@ -114,15 +98,7 @@ local system speakers:
     mic.setUseEchoSuppression(true);
     mic.setLoopBack(true);
 
-</div>
-
-</div>
-
-<div>
-
 ## Altering microphone audio
-
-<div>
 
 Your application can alter the audio data that comes from a microphone in two
 ways. First, it can change the gain of the input sound, which effectively
@@ -145,15 +121,7 @@ codec, you can specify 5, 8, 11, 16, 22 and 44 kHz as the sample rate. When you
 use Speex codec (available starting in Flash Player 10 and Adobe AIR 1.5), you
 can only use 16 kHz.
 
-</div>
-
-</div>
-
-<div>
-
 ## Detecting microphone activity
-
-<div>
 
 To conserve bandwidth and processing resources, Flash Player tries to detect
 when no sound is being transmitted by a microphone. When the microphone's
@@ -164,14 +132,10 @@ or later and Adobe AIR 1.5 or later), set the silence level to 0, to ensure that
 the application continuously transmits audio data. Speex voice activity
 detection automatically reduces bandwidth.
 
-<div>
-
 Note: A Microphone object only dispatches Activity events when your application
 is monitoring the microphone. Thus, if you do not call `setLoopBack( true )`,
 add a listener for sample data events, or attach the microphone to a NetStream
 object, then no activity events are dispatched.
-
-</div>
 
 Three properties of the Microphone class monitor and control the detection of
 activity:
@@ -250,15 +214,7 @@ When you run the above example, speak or makes noises into your system
 microphone and watch the resulting trace statements appear in a console or debug
 window.
 
-</div>
-
-</div>
-
-<div>
-
 ## Sending audio to and from a media server
-
-<div>
 
 Additional audio capabilities are available when using ActionScript with a
 streaming media server such as Flash Media Server.
@@ -280,15 +236,7 @@ For more information, see the Flash Media Server documentation online at
 <a href="http://www.adobe.com/go/learn_fms_docs_en"
 target="_self">www.adobe.com/go/learn_fms_docs_en</a>.
 
-</div>
-
-</div>
-
-<div>
-
 ## Capturing microphone sound data
-
-<div>
 
 In Flash Player 10.1 and AIR 2, or later, you can capture data from a microphone
 data as a byte array of floating point values. Each value represents a sample of
@@ -304,8 +252,6 @@ representing a monophonic sound sample.
 The following code captures microphone sound data into a ByteArray object named
 `soundBytes`:
 
-<div>
-
     var mic:Microphone = Microphone.getMicrophone();
     mic.setSilenceLevel(0, DELAY_LENGTH);
     mic.addEventListener(SampleDataEvent.SAMPLE_DATA, micSampleDataHandler);
@@ -315,8 +261,6 @@ The following code captures microphone sound data into a ByteArray object named
     		soundBytes.writeFloat(sample);
     	}
     }
-
-</div>
 
 You can reuse the sample bytes as playback audio for a Sound object. If you do,
 you should set the `rate` property of the Microphone object to 44, which is the
@@ -377,28 +321,8 @@ captures 4 seconds of microphone data and plays it back using a Sound object:
 For more information on playing back sounds from sound sample data, see
 [Working with dynamically generated audio](WSE523B839-C626-4983-B9C0-07CF1A087ED7.html).
 
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
-
-</div>
 
 [Michael Chaize: AIR, Android, and the Microphone](http://www.riagora.com/2010/08/air-android-and-the-microphone/)
 
 [Christophe Coenraets: Voice Notes for Android](http://coenraets.org/blog/air-for-android-samples/voice-notes-for-android/)
-
-<div>
-
-</div>
-
-</div>

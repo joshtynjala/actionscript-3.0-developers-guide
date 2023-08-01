@@ -1,20 +1,14 @@
 # Formatting currency values
 
-<div>
-
 The display formats of currency values vary as much as number formats do. For
 example, here is how the US dollar value \$123456.78 is formatted for certain
 locales:
-
-<div>
 
 | Locale                  | Number Format  |
 | ----------------------- | -------------- |
 | en-US (English, USA)    | \$123,456.78   |
 | de-DE (German, Germany) | 123.456,78 \$  |
 | en-IN (English, India)  | \$ 1,23,456.78 |
-
-</div>
 
 Currency formatting involves all the same factors as number formatting, plus
 these additional factors:
@@ -32,13 +26,7 @@ these additional factors:
 - Positive currency format. Defines the location of currency symbol relative to
   the numeric portion of the currency amount.
 
-</div>
-
-<div>
-
 ## Using the CurrencyFormatter class
-
-<div>
 
 The CurrencyFormatter class formats numeric values into strings that contain
 currency strings and formatted numbers, according to the conventions of a
@@ -50,12 +38,8 @@ default currency for the given locale.
 The following example shows that a CurrencyFormatter object created using a
 German locale assumes that currency amounts are in Euros:
 
-<div>
-
     var cf:CurrencyFormatter = new CurrencyFormatter( "de-DE" );
     trace(cf.format(1234567.89)); // 1.234.567,89 EUR
-
-</div>
 
 In most cases, do not rely on the default currency for a locale. If the user's
 default locale is not supported, then the CurrencyFormatter class assigns a
@@ -71,13 +55,9 @@ and currency symbol to use.
 The following example shows currency amounts in Euros to users in the French
 part of Canada:
 
-<div>
-
     var cf:CurrencyFormatter = new CurrencyFormatter( "fr-CA" );
     cf.setCurrency("EUR", "€");
     trace(cf.format(1234567.89)); // 1.234.567,89 EUR
-
-</div>
 
 The setCurrency() method can also be used to reduce confusion by setting
 unambiguous currency symbols. For example:
@@ -113,15 +93,7 @@ currency code or the currency symbol.
     	trace(cf.format(1234567.89)); // USD1,234,567.89
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## Parsing strings that contain currency values
-
-<div>
 
 The CurrencyFormatter class can also extract a currency amount and a currency
 string from an input string that conforms to locale-specific formatting
@@ -159,15 +131,3 @@ parse() method generates an error and the parsed value is NaN.
 
 After it sets the negativeCurrencyFormat to 2, which specifies that the currency
 string comes first, the parse() method succeeds.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

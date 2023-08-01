@@ -1,7 +1,5 @@
 # Advanced use of the drawing API
 
-<div>
-
 Flash Player 10, Adobe AIR 1.5, and later Flash runtimes, support an advanced
 set of drawing features. The drawing API enhancements for these runtimes expand
 upon the drawing methods from previous releases so you can establish data sets
@@ -33,8 +31,6 @@ advanced drawing API in ActionScript:
 
 - Using triangles and drawing methods for three-dimensional effects
 
-<div>
-
 #### Important concepts and terms
 
 The following reference list contains important terms that you will encounter in
@@ -64,10 +60,6 @@ this section:
   and the enhanced drawing commands introduce a more object-oriented programming
   approach to replicating `Graphics.beginBitmapFill()` and
   `Graphics.beginGradientFill()`.
-
-</div>
-
-</div>
 
 - [Drawing paths](./drawing-paths.md)
 

@@ -77,22 +77,13 @@ different application domains can be used. The text that follows describes the
 logic used to set the appropriate application domain for each SWF file in the
 application.
 
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![](../../img/se_load_content_app_popup.png)
 
-**A.**  
-Usage A
+**A.** Usage A
 
-**B.**  
-Usage B
+**B.** Usage B
 
-**C.**  
-Usage C
-
-</div>
+**C.** Usage C
 
 The main application file is application1.swf. It contains Loader objects that
 load content from other SWF files. In this scenario, the current domain is

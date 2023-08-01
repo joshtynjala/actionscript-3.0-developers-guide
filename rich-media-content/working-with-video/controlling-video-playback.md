@@ -1,7 +1,5 @@
 # Controlling video playback
 
-<div>
-
 The NetStream class offers four main methods for controlling video playback:
 
 ` `<a
@@ -25,19 +23,11 @@ href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/
 target="_self"><samp>togglePause()</samp></a>: Pauses or resumes playback of a
 stream.
 
-<div>
-
 Note: There is no `stop()` method. In order to stop a stream you must pause
 playback and seek to the beginning of the video stream.
 
-</div>
-
-<div>
-
 Note: The `play()` method does not resume playback, it is used for loading video
 files.
-
-</div>
 
 The following example demonstrates how to control a video using several
 different buttons. To run the following example, create a new document and add
@@ -90,13 +80,7 @@ effect. Clicking on the `playBtn` button instance resumes video playback if
 playback was previously paused, otherwise the button has no effect if the video
 was already playing.
 
-</div>
-
-<div>
-
 ## Detecting the end of a video stream
-
-<div>
 
 In order to listen for the beginning and end of a video stream, you need to add
 an event listener to the NetStream instance to listen for the `netStatus` event.
@@ -144,15 +128,3 @@ filter these two codes and trace a message:
 By listening for the `netStatus` event ( `NetStatusEvent.NET_STATUS`), you can
 build a video player which loads the next video in a playlist once the current
 video has finished playing.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

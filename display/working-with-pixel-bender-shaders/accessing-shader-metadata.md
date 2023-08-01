@@ -1,7 +1,5 @@
 # Accessing shader metadata
 
-<div>
-
 While creating a Pixel Bender shader kernel, the author can specify metadata
 about the shader in the Pixel Bender source code. While using a shader in
 ActionScript, you can examine the shader and extract its metadata.
@@ -63,5 +61,3 @@ see
 [Identifying shader inputs and parameters](./specifying-shader-input-and-parameter-values.md#identifying-shader-inputs-and-parameters).
 For more information about input and parameter properties, see
 [Specifying shader input and parameter values](./specifying-shader-input-and-parameter-values.md).
-
-</div>

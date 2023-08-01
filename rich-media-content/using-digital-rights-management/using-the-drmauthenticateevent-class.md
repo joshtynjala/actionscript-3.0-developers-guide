@@ -1,7 +1,5 @@
 # Using the DRMAuthenticateEvent class
 
-<div>
-
 The DRMAuthenticateEvent object is dispatched when a NetStream object tries to
 play protected content that requires a user credential for authentication before
 playback.
@@ -14,93 +12,71 @@ example, the application could provide a user with a simple user interface to
 enter the user name and password values. Also, provide a mechanism for handling
 and limiting repeated authentication attempts.
 
-</div>
-
-<div>
-
 ## DRMAuthenticateEvent properties
-
-<div>
 
 The DRMAuthenticateEvent class includes the following properties:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>Property</p></th>
-<th><p>Description</p></th>
-</tr>
+    <tr>
+        <th><p>Property</p></th>
+        <th><p>Description</p></th>
+    </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td headers="d17e36520 "><p>authenticationType</p></td>
-<td headers="d17e36523 "><p>Indicates
-whether the supplied credentials are for authenticating against Adobe
-Access ("drm") or a proxy server ("proxy"). For example, the "proxy"
-option allows the application to authenticate against a proxy server if
-necessary before the user can access the Internet. Unless anonymous
-authentication is used, after the proxy authentication, the user must
-still authenticate against Adobe Access to obtain the voucher and play
-the content. You can use setDRMAuthenticationcredentials() a second
-time, with "drm" option, to authenticate against Adobe Access.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e36520 "><p>header</p></td>
-<td headers="d17e36523 "><p>The encrypted
-content file header provided by the server. It contains information
-about the context of the encrypted content.</p>
-<p>This header string can be passed on to the Flash application to
-enable the application to construct a user name-password dialog box. The
-header string can be used as the dialog box's instructions. For example,
-the header can be "Please type in your user name and password".</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e36520 "><p>netstream</p></td>
-<td headers="d17e36523 "><p>The NetStream
-object that initiated this event.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e36520 "><p>passwordPrompt</p></td>
-<td headers="d17e36523 "><p>A prompt for
-a password credential, provided by the server. The string can include
-instruction for the type of password required.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e36520 "><p>urlPrompt</p></td>
-<td headers="d17e36523 "><p>A prompt for
-a URL string, provided by the server. The string can provide the
-location where the user name and password are sent.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e36520 "><p>usernamePrompt</p></td>
-<td headers="d17e36523 "><p>A prompt for
-a user name credential, provided by the server. The string can include
-instruction for the type of user name required. For example, a content
-provider can require an e-mail address as the user name.</p></td>
-</tr>
+    <tr>
+        <td ><p>authenticationType</p></td>
+        <td ><p>Indicates
+        whether the supplied credentials are for authenticating against Adobe
+        Access ("drm") or a proxy server ("proxy"). For example, the "proxy"
+        option allows the application to authenticate against a proxy server if
+        necessary before the user can access the Internet. Unless anonymous
+        authentication is used, after the proxy authentication, the user must
+        still authenticate against Adobe Access to obtain the voucher and play
+        the content. You can use setDRMAuthenticationcredentials() a second
+        time, with "drm" option, to authenticate against Adobe Access.</p></td>
+    </tr>
+    <tr>
+        <td ><p>header</p></td>
+        <td ><p>The encrypted
+        content file header provided by the server. It contains information
+        about the context of the encrypted content.</p>
+        <p>This header string can be passed on to the Flash application to
+        enable the application to construct a user name-password dialog box. The
+        header string can be used as the dialog box's instructions. For example,
+        the header can be "Please type in your user name and password".</p></td>
+    </tr>
+    <tr>
+        <td ><p>netstream</p></td>
+        <td ><p>The NetStream
+        object that initiated this event.</p></td>
+    </tr>
+    <tr>
+        <td ><p>passwordPrompt</p></td>
+        <td ><p>A prompt for
+        a password credential, provided by the server. The string can include
+        instruction for the type of password required.</p></td>
+    </tr>
+    <tr>
+        <td ><p>urlPrompt</p></td>
+        <td ><p>A prompt for
+        a URL string, provided by the server. The string can provide the
+        location where the user name and password are sent.</p></td>
+    </tr>
+    <tr>
+        <td ><p>usernamePrompt</p></td>
+        <td ><p>A prompt for
+        a user name credential, provided by the server. The string can include
+        instruction for the type of user name required. For example, a content
+        provider can require an e-mail address as the user name.</p></td>
+    </tr>
 </tbody>
 </table>
-
-</div>
 
 The previously mentioned strings are supplied by the FMRMS server only. Adobe
 Access Server does not use these strings.
 
-</div>
-
-</div>
-
-<div>
-
 ## Creating a DRMAuthenticateEvent handler
-
-<div>
 
 The following example creates an event handler that passes a set of hard-coded
 authentication credentials to the NetStream object that originated the event.
@@ -120,15 +96,7 @@ the video stream has been made is not included here.)
     	videoStream.setDRMAuthenticationCredentials("administrator", "password", "drm");
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## Creating an interface for retrieving user credentials
-
-<div>
 
 In the case where protected content requires user authentication, the AIR
 application must usually retrieve the user's authentication credentials via a
@@ -225,15 +193,3 @@ credentials and resetting the TextInput object values.
         bufferTime="10.0"
         source="http://www.example.com/flv/Video.flv" />
     </mx:WindowedApplication>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

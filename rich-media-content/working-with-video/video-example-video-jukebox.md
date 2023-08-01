@@ -1,7 +1,5 @@
 # Video example: Video Jukebox
 
-<div>
-
 The following example builds a simple video jukebox which dynamically loads a
 list of videos to play back in a sequential order. This allows you to build an
 application that lets a user browse through a series of video tutorials, or
@@ -24,49 +22,37 @@ To get the application files for this sample, see
 The Video Jukebox application files can be found in the folder
 Samples/VideoJukebox. The application consists of the following files:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>File</p></th>
-<th><p>Description</p></th>
-</tr>
+	<tr>
+		<th><p>File</p></th>
+		<th><p>Description</p></th>
+	</tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td headers="d17e34434 "><p>VideoJukebox.fla</p>
-<p>or</p>
-<p>VideoJukebox.mxml</p></td>
-<td headers="d17e34437 "><p>The main
-application file for Flex (MXML) or Flash (FLA).</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e34434 "><p>VideoJukebox.as</p></td>
-<td headers="d17e34437 "><p>The class
-that provides the main functionality of the application.</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e34434 "><p>playlist.xml</p></td>
-<td headers="d17e34437 "><p>A file that
-lists which video files will be loaded into the video jukebox.</p></td>
-</tr>
+	<tr>
+		<td >
+			<p>VideoJukebox.fla</p>
+			<p>or</p>
+			<p>VideoJukebox.mxml</p>
+		</td>
+		<td ><p>The main
+		application file for Flex (MXML) or Flash (FLA).</p></td>
+	</tr>
+	<tr>
+		<td ><p>VideoJukebox.as</p></td>
+		<td ><p>The class
+		that provides the main functionality of the application.</p></td>
+	</tr>
+	<tr>
+		<td ><p>playlist.xml</p></td>
+		<td ><p>A file that
+		lists which video files will be loaded into the video jukebox.</p></td>
+	</tr>
 </tbody>
 </table>
 
-</div>
-
-</div>
-
-<div>
-
 ## Loading an external video playlist file
-
-<div>
 
 The external playlist.xml file specifies which videos to load, and the order to
 play them back in. In order to load the XML file, you need to use a URLLoader
@@ -103,15 +89,7 @@ up the various component instances on the display list, as well as the
 NetConnection and NetStream objects which are used to load the external FLV
 files.
 
-</div>
-
-</div>
-
-<div>
-
 ## Creating the user interface
-
-<div>
 
 To build the user interface you need to drag five Button instances onto the
 display list and give them the following instance names: `playButton`,
@@ -174,15 +152,7 @@ snippet:
 Finally add a Label instance to the display list and give it an instance name of
 `positionLabel`. This Label instance's value will be set by the timer instance
 
-</div>
-
-</div>
-
-<div>
-
 ## Listening for a video object's metadata
-
-<div>
 
 When Flash Player encounters metadata for each of the loaded videos, the
 `onMetaData()` callback handler is called on the NetStream object's `client`
@@ -209,15 +179,7 @@ the currently playing video. The following code contains the entire
     	positionBar.width = vid.width;
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## Dynamically loading a video
-
-<div>
 
 To dynamically load each of the videos, the application uses a NetConnection and
 a NetStream object. The following code creates a NetConnection object and passes
@@ -288,15 +250,7 @@ and total time of the current video.
     	}
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## Controlling the volume of the video
-
-<div>
 
 You can control the volume for the dynamically loaded video by setting the
 `soundTransform` property on the NetStream object. The video jukebox application
@@ -311,15 +265,7 @@ object which is set to the `soundTransform` property on the NetStream object:
     	ns.soundTransform = volumeTransform;
     }
 
-</div>
-
-</div>
-
-<div>
-
 ## Controlling video playback
-
-<div>
 
 The rest of the application controls video playback when the video reaches the
 end of the video stream or the user skips to the previous or next video.
@@ -375,15 +321,3 @@ instance's `visible` property is set to `false`:
     		positionBar.visible = false;
     	}
     }
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # Arrays example: PlayList
 
-<div>
-
 The PlayList example demonstrates techniques for working with arrays, in the
 context of a music playlist application that manages a list of songs. These
 techniques are:
@@ -20,57 +18,45 @@ To get the application files for this sample, see
 The PlayList application files can be found in the Samples/PlayList folder. The
 application consists of the following files:
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>File</p></th>
-<th><p>Description</p></th>
-</tr>
+    <tr>
+        <th><p>File</p></th>
+        <th><p>Description</p></th>
+    </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td headers="d17e4092 "><p>PlayList.mxml</p>
-<p>or</p>
-<p>PlayList.fla</p></td>
-<td headers="d17e4095 "><p>The main
-application file in Flash (FLA) or Flex (MXML).</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e4092 "><p>com/example/programmingas3/playlist/PlayList.as</p></td>
-<td headers="d17e4095 "><p>A class
-representing a list of songs. It uses an Array to store the list, and
-manages the sorting of the list's items..</p></td>
-</tr>
-<tr class="odd">
-<td headers="d17e4092 "><p>com/example/programmingas3/playlist/Song.as</p></td>
-<td headers="d17e4095 "><p>A value object
-representing information about a single song. The items that are managed
-by the PlayList class are Song instances.</p></td>
-</tr>
-<tr class="even">
-<td headers="d17e4092 "><p>com/example/programmingas3/playlist/SortProperty.as</p></td>
-<td headers="d17e4095 "><p>A
-pseudo-enumeration whose available values represent the properties of
-the Song class by which a list of Song objects can be sorted.</p></td>
-</tr>
+    <tr>
+        <td >
+            <p>PlayList.mxml</p>
+            <p>or</p>
+            <p>PlayList.fla</p>
+        </td>
+        <td ><p>The main
+        application file in Flash (FLA) or Flex (MXML).</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/playlist/PlayList.as</p></td>
+        <td ><p>A class
+        representing a list of songs. It uses an Array to store the list, and
+        manages the sorting of the list's items..</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/playlist/Song.as</p></td>
+        <td ><p>A value object
+        representing information about a single song. The items that are managed
+        by the PlayList class are Song instances.</p></td>
+    </tr>
+    <tr>
+        <td ><p>com/example/programmingas3/playlist/SortProperty.as</p></td>
+        <td ><p>A
+        pseudo-enumeration whose available values represent the properties of
+        the Song class by which a list of Song objects can be sorted.</p></td>
+    </tr>
 </tbody>
 </table>
 
-</div>
-
-</div>
-
-<div>
-
 ## PlayList class overview
-
-<div>
 
 The PlayList class manages a set of Song objects. It has public methods with
 functionality for adding a song to the playlist (the `addSong()` method) and
@@ -107,15 +93,7 @@ The first line of the constructor instantiates the `_songs` variable, so that it
 is ready to be used. In addition, the `sortList()` method is called to set the
 initial sort-by property.
 
-</div>
-
-</div>
-
-<div>
-
 ## Adding a song to the list
-
-<div>
 
 When a user enters a new song into the application, the code in the data entry
 form calls the PlayList class's `addSong()` method.
@@ -142,15 +120,7 @@ immediately before it is retrieved. By deferring the sorting operation, the
 application doesn't perform sorting that is unnecessary if, for example, several
 songs are added to the list before it is retrieved.
 
-</div>
-
-</div>
-
-<div>
-
 ## Sorting the list of songs
-
-<div>
 
 Because the Song instances that are managed by the playlist are complex objects,
 users of the application may wish to sort the playlist according to different
@@ -159,8 +129,6 @@ application, the task of sorting the list of songs has three parts: identifying
 the property by which the list should be sorted, indicating what sorting options
 need to be used when sorting by that property, and performing the actual sort
 operation.
-
-<div>
 
 #### Properties for sorting
 
@@ -187,10 +155,6 @@ calling the `sortList()` method, as follows:
 
 Because the property for sorting is specified as `SortProperty.TITLE`, the songs
 are sorted according to their title.
-
-</div>
-
-<div>
 
 #### Sorting by property and specifying sort options
 
@@ -239,17 +203,7 @@ actually sorted by calling its `sortOn()` method, passing those two values as
 parameters. The current sort property is recorded, as is the fact that the song
 list is currently sorted.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Combining array elements into a character-delimited string
-
-<div>
 
 In addition to using an array to maintain the song list in the PlayList class,
 in this example arrays are also used in the Song class to help manage the list
@@ -297,7 +251,3 @@ semicolon-separated String. The `get` accessor performs the opposite operation:
 the `_genres` variable's `split()` method is called, splitting the String into
 an array of values using the specified delimiter (the literal string value `";"`
 as before).
-
-</div>
-
-</div>

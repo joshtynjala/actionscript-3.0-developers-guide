@@ -1,7 +1,5 @@
 # Understanding the protected content workflow
 
-<div>
-
 **_Important_** : Flash Player 11.5 and above integrates the Adobe Access
 module, so the update step (calling
 `SystemUpdater.update(SystemUpdaterType.DRM)`) is unnecessary. This includes the
@@ -21,18 +19,12 @@ This means that the update step is _still required_ in the following cases:
 - Flash Player 11.4 and below, except on Google Chrome 22 and above (all
   platforms) or 21 and above (Windows)
 
-<div>
-
 Note: You can still safely call `SystemUpdater.update(SystemUpdaterType.DRM)` on
 a system with Flash Player 11.5 or higher, but nothing is downloaded.
-
-</div>
 
 The following high-level workflow shows that how an application can retrieve and
 play protected content. The workflow assumes that the application is designed
 specifically to play content protected by Adobe Access:
-
-<div>
 
 1.  Get the content metadata.
 
@@ -52,8 +44,6 @@ specifically to play content protected by Adobe Access:
 
 8.  Play the content.
 
-</div>
-
 If an error has not occurred and the user was successfully authorized to view
 the content, the NetStream object dispatches a DRMStatusEvent object. The
 application then begins playback. The DRMStatusEvent object holds the related
@@ -71,17 +61,9 @@ the event contains `"DRM.voucherObtained"`. The application decides where to
 store the content locally in order for it to be available offline. You can also
 preload vouchers using the DRMManager class.
 
-<div>
-
-<div>
-
 Note: Caching and pre-loading of vouchers is supported in both AIR and Flash
 Player. However, downloading and storing encrypted content is supported only in
 AIR.
-
-</div>
-
-</div>
 
 It is the application's responsibility to explicitly handle the error events.
 These events include cases where the user inputs valid credentials, but the
@@ -93,19 +75,11 @@ application must inform the user of the error and provide an alternative
 suggestion. A typical alternative suggestion is instructions in how to register
 and pay for viewing rights.
 
-</div>
-
-<div>
-
 ## Detailed API workflow
-
-<div>
 
 This workflow provides a more detailed view of the protected-content workflow.
 This workflow describes the specific APIs used to play content protected by
 Adobe Access.
-
-<div>
 
 1.  Using a URLLoader object, load the bytes of the protected content's metadata
     file. Set this object to a variable, such as `metadata_bytes`.
@@ -131,12 +105,8 @@ Adobe Access.
     returns to step 2 when this event is dispatched. The following code
     demonstrates these steps:
 
-    <div>
-
         flash.system.SystemUpdater.addEventListener(Event.COMPLETE, updateCompleteHandler);
         flash.system.SystemUpdater.update(flash.system.SystemUpdaterType.DRM)
-
-    </div>
 
         private function updateCompleteHandler (event:Event):void {
         	/*redo step 2*/
@@ -147,12 +117,8 @@ Adobe Access.
     information on handling this event, see
     [Listening for an update event](WS7568cbd5c81a0ea63cf5bc1d126d9ba3f10-8000.html).
 
-    <div>
-
     Note: In AIR applications, the AIR installer handles updating the Adobe
     Access module and required runtime updates.
-
-    </div>
 
 4.  Create listeners to listen for the DRMStatusEvent and DRMErrorEvent
     dispatched from the DRMManager object:
@@ -235,19 +201,7 @@ Adobe Access.
         video.attachNetStream(stream);
         stream.play(videoURL);
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## DRMContentData and session objects
-
-<div>
-
-<div>
 
 When `DRMContentData` is created, it will be used as a session object that
 refers to the Flash Player DRM module. All the `DRMManager` APIs that receives
@@ -257,10 +211,6 @@ this `DRMContentData` will use that particular DRM module. However, there are 2
 1.  `authenticate()`
 
 2.  `setAuthenticationToken()`
-
-</div>
-
-<div>
 
 Since there is no `DRMContentData` associated, invoking these `DRMManager` APIs
 will use the latest DRM module from the disk. This may become a problem if an
@@ -276,8 +226,6 @@ workflow. Consider the following scenario:
 3.  The application invokes the `DRMManager.loadVoucher(contentData1, ...)`
     method.
 
-</div>
-
 If an update happens for the DRM module before the application can get to step
 2, then the `DRMManager.authenticate()` method will end up authenticating using
 _AdobeCP2_ as the DRM module. The `loadVoucher()` method in step 3 will fail
@@ -285,20 +233,10 @@ since it is still using _AdobeCP1_ as the DRM module. The update may have
 happened due to another application invoking the DRM module update.You can avoid
 this scenario by invoking the DRM module update on application startup.
 
-</div>
-
-</div>
-
-<div>
-
 ## DRM-related events
-
-<div>
 
 The runtime dispatches numerous events when an application attempts to play
 protected content:
-
-<div>
 
 - DRMDeviceGroupErrorEvent (AIR only), dispatched by DRMManager
 
@@ -317,20 +255,10 @@ protected content:
 - NetStatusEvent. See
   [Listening for an update event](WS7568cbd5c81a0ea63cf5bc1d126d9ba3f10-8000.html)
 
-</div>
-
 To support content protected by Adobe Access, add event listeners for handling
 the DRM events.
 
-</div>
-
-</div>
-
-<div>
-
 ## Pre-loading vouchers for offline playback
-
-<div>
 
 You can preload the vouchers (licenses) required to play content protected by
 Adobe Access. Pre-loaded vouchers allow users to view the content whether they
@@ -342,13 +270,7 @@ directly. This technique is preferable because it lets you update the
 DRMContentData object independent of the content. (The `preloadEmbeddedData()`
 method fetches DRMContentData from the content.)
 
-</div>
-
-<div>
-
 ### Using DRMContentData
-
-<div>
 
 The following steps describe the workflow for pre-loading the voucher for a
 protected media file using a DRMContentData object.
@@ -366,15 +288,7 @@ protected media file using a DRMContentData object.
 3.  The rest of the steps are identical to the workflow described in
     [Understanding the protected content workflow](WS5b3ccc516d4fbf351e63e3d118666ade46-7ce3.html).
 
-</div>
-
-</div>
-
-<div>
-
 ### Using preloadEmbeddedMetadata()
-
-<div>
 
 The following steps describe the workflow for pre-loading the voucher for a
 DRM-protected media file using `preloadEmbeddedMetadata()`:
@@ -511,17 +425,3 @@ local media file:
     		}
     	}
     }
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

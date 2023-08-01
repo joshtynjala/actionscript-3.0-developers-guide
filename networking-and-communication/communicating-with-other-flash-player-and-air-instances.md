@@ -1,7 +1,5 @@
 # Communicating with other Flash Player and AIR instances
 
-<div>
-
 The
 [LocalConnection](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/LocalConnection.html)
 class enables communications between Adobe® AIR® applications, as well as
@@ -10,13 +8,7 @@ class to communicate between an AIR application and SWF content running in the
 browser. The LocalConnection class allows you to build versatile applications
 that can share data between Flash Player and AIR instances.
 
-</div>
-
-<div>
-
 ## About the LocalConnection class
-
-<div>
 
 The LocalConnection class lets you develop SWF files that can send instructions
 to other SWF files without the use of the fscommand() method or JavaScript.
@@ -52,13 +44,9 @@ implement security measures. For more information, see the discussion of the
 class listing in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
-<div>
-
 ![](images/tip_help.png) It is possible to use LocalConnection objects to send
 and receive data within a single SWF file, but Adobe does not recommended doing
 so. Instead, use shared objects.
-
-</div>
 
 There are three ways to add callback methods to your LocalConnection objects:
 
@@ -155,8 +143,6 @@ is not very portable. In addition, using this method of creating local
 connections could create performance issues, because accessing dynamic
 properties is dramatically slower than accessing sealed properties.
 
-<div>
-
 #### isPerUser property
 
 The `isPerUser` property was added to Flash Player (10.0.32) and AIR (1.5.2) to
@@ -167,17 +153,7 @@ should be set to `true` in new code. However, the default value is currently
 `false` for backward compatibility. The default may be changed in future
 versions of the runtimes.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Sending messages between two applications
-
-<div>
 
 You use the LocalConnection class to communicate between different AIR
 applications and between different Adobe® Flash® Player (SWF) applications
@@ -187,8 +163,6 @@ between an AIR application and a SWF application running in a browser.
 For example, you could have multiple Flash Player instances on a web page, or
 have a Flash Player instance retrieve data from a Flash Player instance in a
 pop-up window.
-
-<div>
 
 The following code defines a LocalConnection object that acts as a server and
 accepts incoming LocalConnection calls from other applications:
@@ -214,8 +188,6 @@ accepts incoming LocalConnection calls from other applications:
     		}
     	}
     }
-
-</div>
 
 This code first creates a LocalConnection object named `lc` and sets the
 `client` property to an object, `clientObject`. When another application calls a
@@ -260,8 +232,6 @@ and provide a unique connection name. If you already have a connection with the
 specified name, an ArgumentError error is generated, indicating that the
 connection attempt failed because the object is already connected.
 
-<div>
-
 The following snippet demonstrates how to create a LocalConnection with the name
 `conn1`:
 
@@ -274,10 +244,6 @@ The following snippet demonstrates how to create a LocalConnection with the name
     	trace("Error! Server already exists\n");
     }
 
-</div>
-
-<div>
-
 Connecting to the primary application from a secondary application requires that
 you first create a LocalConnection object in the sending LocalConnection object;
 then call the `LocalConnection.send()` method with the name of the connection
@@ -285,8 +251,6 @@ and the name of the method to execute. For example, to send the `doQuit` method
 to the LocalConnection object that you created earlier, use the following code:
 
     sendingConnection.send("conn1", "doQuit");
-
-</div>
 
 This code connects to an existing LocalConnection object with the connection
 name `conn1` and invokes the `doMessage()` method in the remote application. If
@@ -296,15 +260,7 @@ shows:
 
     sendingConnection.send("conn1", "doMessage", "Hello world");
 
-</div>
-
-</div>
-
-<div>
-
 ## Connecting to content in different domains and to AIR applications
-
-<div>
 
 To allow communications only from specific domains, you call the `allowDomain()`
 or `allowInsecureDomain()` method of the LocalConnection class and pass a list
@@ -378,8 +334,6 @@ portable between domains. Here are the two possible cases:
   names that use underscore syntax do not identify the domain of the listening
   application. For these reasons, domain-qualified names are preferred.
 
-<div>
-
 #### Adobe AIR
 
 To communicate with content running in the AIR application security sandbox
@@ -406,32 +360,10 @@ string that you would use to allow this application to connect is:
 `app#com.example.air.FriendlyApp.214649436BD677B62C33D02233043EA236D13934.1`.
 (As of AIR 1.5.3, not all AIR applications have publisher IDs.)
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
-
-</div>
 
 ![](../img/airLinkIndicator.png)
 [Setting AIR application properties](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html)
 
 ![](../img/airLinkIndicator.png)
 [Getting the application and publisher identifiers](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ccc.html)
-
-<div>
-
-</div>
-
-</div>

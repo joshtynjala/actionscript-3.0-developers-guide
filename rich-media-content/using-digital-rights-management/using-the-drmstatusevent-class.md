@@ -1,7 +1,5 @@
 # Using the DRMStatusEvent class
 
-<div>
-
 A NetStream object dispatches a DRMStatusEvent object when the content protected
 by Adobe Access begins playing successfully. (Success implies that the license
 is verified and that the user is authenticated and authorized to view the
@@ -16,13 +14,7 @@ information includes whether the license can be made available offline or when
 the voucher expires and the content can no longer be viewed. The application can
 use this data to convey the user's policy status and its permissions.
 
-</div>
-
-<div>
-
 ## DRMStatusEvent properties
-
-<div>
 
 The DRMStatusEvent class includes the following properties. Some properties
 became available in versions of AIR later than 1.0. For complete version
@@ -31,8 +23,6 @@ information, see the
 
 For properties that aren't supported in Flash Player 10.1, the DRMVoucher class
 provides similar properties for Flash Player.
-
-<div>
 
 | Property                      | Description                                                                                                                                                                                                                                                                                             |
 | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -46,17 +36,7 @@ provides similar properties for Flash Player.
 | voucher                       | The DRMVoucher.                                                                                                                                                                                                                                                                                         |
 | voucherEndDate (AIR only)     | The absolute date on which the voucher expires and the content is no longer viewable.                                                                                                                                                                                                                   |
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Creating a DRMStatusEvent handler
-
-<div>
 
 The following example creates an event handler that outputs the DRM content
 status information for the NetStream object that originated the event. Add this
@@ -70,15 +50,3 @@ event handler to a NetStream object that points to protected content.
     {
     	trace(event);
     }
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # Capturing text input
 
-<div>
-
 By default, the `type` property of a text field is set to `dynamic`. If you set
 the `type` property to `input` using the TextFieldType class, you can collect
 user input and save the value for use in other parts of your application. Input
@@ -57,13 +55,3 @@ field, called `myOutputBox`.
 
     	}
     }
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

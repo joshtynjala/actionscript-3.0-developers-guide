@@ -1,7 +1,5 @@
 # Setting the user agent used when loading HTML content
 
-<div>
-
 The HTMLLoader class has a `userAgent` property, which lets you set the user
 agent string used by the HTMLLoader. Set the `userAgent` property of the
 HTMLLoader object before calling the `load()` method. If you set this property
@@ -27,13 +25,3 @@ runtime version, as in the following two examples:
 - `"Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebKit/420+ (KHTML, like Gecko) AdobeAIR/1.0"`
 
 - `"Mozilla/5.0 (Windows; U; en) AppleWebKit/420+ (KHTML, like Gecko) AdobeAIR/1.0"`
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # Example: Perspective projection
 
-<div>
-
 The following example demonstrates the use of perspective projection to create
 3D space. It shows how you can modify the vanishing point and change the
 perspective projection of the space through the `projectionCenter` property.
@@ -9,8 +7,6 @@ This modification forces the recalculation of the `focalLength` and
 `fieldOfView` with its concomitant distortion of the 3D space.
 
 This example:
-
-<div>
 
 1.  Creates a sprite named `center`, as a circle with cross hairs
 
@@ -24,8 +20,6 @@ This example:
 4.  Creates four accordion-style boxes that form the walls of the perspective
     space
 
-</div>
-
 When you test this example, ProjectionDragger.swf, drag the circle around to
 different locations. The vanishing point follows the circle, landing wherever
 you drop it. Watch the boxes that enclose the space stretch and become distorted
@@ -35,8 +29,6 @@ To get the application files for this sample, see
 [_FlashPlatformAS3DevGuideExamples.zip_](https://github.com/joshtynjala/flash-platform-as3-dev-guide-examples/releases/tag/original).
 The ProjectionDragger application files are in the Samples/ProjectionDragger
 folder.
-
-<div>
 
     package
     {
@@ -134,16 +126,4 @@ folder.
         }
     }
 
-</div>
-
 For more complex perspective projection, use the Matrix3D class.
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

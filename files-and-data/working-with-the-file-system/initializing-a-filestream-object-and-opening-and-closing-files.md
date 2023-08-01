@@ -1,7 +1,5 @@
 # Initializing a FileStream object, and opening and closing files
 
-<div>
-
 When you open a FileStream object, you make it available to read and write data
 to a file. You open a FileStream object by passing a File object to the `open()`
 or `openAsync()` method of the FileStream object:
@@ -48,13 +46,3 @@ soon as you open the FileStream object. For details, see
 
 You can call the `close()` method of a FileStream object to close the associated
 file, making it available for use by other applications.
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

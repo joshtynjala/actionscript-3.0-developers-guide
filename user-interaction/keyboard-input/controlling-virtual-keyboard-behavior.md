@@ -1,7 +1,5 @@
 # Controlling virtual keyboard behavior
 
-<div>
-
 The runtime automatically opens the virtual keyboard when the user taps inside a
 text field or a specially configured interactive object. When the keyboard
 opens, the runtime follows the native platform conventions in panning and
@@ -20,13 +18,9 @@ handling has completed. When the focused object dispatches this event, the
 area of the stage obscured by the virtual keyboard. This event cannot be
 canceled.
 
-<div>
-
 Note: If the keyboard changes size, for example, when the user changes the
 keyboard type, the focused object dispatches a second softKeyboardActivate
 event.
-
-</div>
 
 `softKeyboardDeactivate` event — dispatched when the virtual keyboard closes for
 any reason. This event cannot be canceled.
@@ -82,13 +76,3 @@ fields.
     		}
     	}
     }
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

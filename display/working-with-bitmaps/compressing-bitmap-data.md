@@ -1,7 +1,5 @@
 # Compressing bitmap data
 
-<div>
-
 The `flash.display.BitmapData.encode()` method lets you natively compress bitmap
 data into one of the following image compression formats:
 
@@ -29,5 +27,3 @@ The following example snippet compresses a BitmapData object using
     var bitmapData:BitmapData = new BitmapData(640,480,false,0x00FF00);
     var byteArray:ByteArray = new ByteArray();
     bitmapData.encode(new Rectangle(0,0,640,480), new flash.display.JPEGEncoderOptions(), byteArray);
-
-</div>

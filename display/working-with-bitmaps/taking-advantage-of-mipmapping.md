@@ -1,7 +1,5 @@
 # Taking advantage of mipmapping
 
-<div>
-
 _MIP maps_ (also known as _mipmaps_), are bitmaps grouped together and
 associated with a texture to increase runtime rendering quality and performance.
 Each bitmap image in the MIP map is a version of the main bitmap image, but at a
@@ -46,8 +44,6 @@ steps:
 
 MIP maps are created for the following types of bitmaps:
 
-<div>
-
 - a bitmap (JPEG, GIF, or PNG files) displayed using the ActionScript 3.0 Loader
   class
 
@@ -56,8 +52,6 @@ MIP maps are created for the following types of bitmaps:
 - a BitmapData object
 
 - a bitmap displayed using the ActionScript 2.0 `loadMovie()` function
-
-</div>
 
 MIP maps are not applied to filtered objects or bitmap-cached movie clips.
 However, MIP maps are applied if you have bitmap transformations within a
@@ -84,5 +78,3 @@ sure your images take advantage of this optimization:
 
   Note that mipmapping does not occur for bitmap content with an odd width or
   height.
-
-</div>

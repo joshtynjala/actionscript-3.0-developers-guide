@@ -1,7 +1,5 @@
 # About the HTMLLoader class
 
-<div>
-
 The
 [HTMLLoader](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/html/HTMLLoader.html)
 class of Adobe AIR defines the display object that can display HTML content in
@@ -11,13 +9,7 @@ HTMLLoader object with `HTMLLoader.createRootWindow()`. The HTMLLoader object
 can be accessed through the JavaScript `window.htmlLoader` property from within
 the loaded HTML page.
 
-</div>
-
-<div>
-
 ## Loading HTML content from a URL
-
-<div>
 
 The following code loads a URL into an HTMLLoader object (add the HTMLLoader as
 a child of the stage or other display object container to display the HTML
@@ -38,8 +30,6 @@ use these events to determine when it is safe to interact with the loaded page.
 These events are described in
 [Handling HTML-related events in AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7ecf.html).
 
-<div>
-
 Note: In the Flex framework, only classes that extend the UIComponent class can
 be added as children of a Flex Container components. For this reason, you cannot
 directly add an HTMLLoader as a child of a Flex Container component; however you
@@ -48,22 +38,12 @@ UIComponent and contains an HTMLLoader as a child of the UIComponent, or you can
 add the HTMLLoader as a child of a UIComponent and add the UIComponent to the
 Flex container.
 
-</div>
-
 You can also render HTML text by using the TextField class, but its capabilities
 are limited. The Adobe® Flash® Player's TextField class supports a subset of
 HTML markup, but because of size limitations, its capabilities are limited. (The
 HTMLLoader class included in Adobe AIR is not available in Flash Player.)
 
-</div>
-
-</div>
-
-<div>
-
 ## Loading HTML content from a string
-
-<div>
 
 The `loadString()` method of an HTMLLoader object loads a string of HTML content
 into the HTMLLoader object:
@@ -75,8 +55,6 @@ into the HTMLLoader object:
 By default, content loaded via the `loadString()` method is placed in a
 non-application sandbox with the following characteristics:
 
-<div>
-
 - It has access to load content from the network (but not from the file system).
 
 - It cannot load data using XMLHttpRequest.
@@ -85,8 +63,6 @@ non-application sandbox with the following characteristics:
 
 - The content cannot access the `window.runtime` property (like content in any
   non-application sandbox can).
-
-</div>
 
 In AIR 1.5, the HTMLLoader class includes a
 `placeLoadStringContentInApplicationSandbox` property. When this property is set
@@ -102,15 +78,7 @@ when you are certain that the string cannot contain harmful code.
 In applications compiled with the AIR 1.0 or AIR 1.1 SDKs, content loaded via
 the `loadString()` method is placed in the application sandbox.
 
-</div>
-
-</div>
-
-<div>
-
 ## Important security rules when using HTML in AIR applications
-
-<div>
 
 The files you install with the AIR application have access to the AIR APIs. For
 security reasons, content from other sources do not. For example, this
@@ -151,15 +119,3 @@ To avoid this error, follow the coding practices described in the next section,
 
 For more information, see
 [HTML security in Adobe AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7f11.html).
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

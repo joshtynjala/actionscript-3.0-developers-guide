@@ -1,7 +1,5 @@
 # Working with storage volumes
 
-<div>
-
 In AIR 2, you can detect when mass storage volumes are mounted or unmounted. The
 StorageVolumeInfo class defines a singleton `storageVolumeInfo` object. The
 `StorageVolumeInfo.storageVolumeInfo` object dispatches a `storageVolumeMount`
@@ -9,23 +7,13 @@ event when a storage volume is mounted. And it dispatches a
 `storageVolumeUnmount` event when a volume is unmounted. The
 StorageVolumeChangeEvent class defines these events.
 
-<div>
-
-<div>
-
 Note: On modern Linux distributions, the StorageVolumeInfo object only
 dispatches `storageVolumeMount` and `storageVolumeUnmount` events for physical
 devices and network drives mounted at particular locations.
 
-</div>
-
-</div>
-
 The `storageVolume` property of the StorageVolumeChangeEvent class is a
 StorageVolume object. The StorageVolume class defines basic properties of the
 storage volume:
-
-<div>
 
 - `drive` —The volume drive letter on Windows ( `null` on other operating
   systems)
@@ -42,8 +30,6 @@ storage volume:
 - `rootDirectory` —A File object corresponding to the root directory of the
   volume
 
-</div>
-
 The StorageVolumeChangeEvent class also includes a `rootDirectory` property. The
 `rootDirectory` property is a File object referencing the root directory of the
 storage volume that has been mounted or unmounted.
@@ -55,20 +41,14 @@ property of the event.
 The following code outputs the name and file path of a storage volume when it is
 mounted:
 
-<div>
-
     StorageVolumeInfo.storageVolumeInfo.addEventListener(StorageVolumeChangeEvent.STORAGE_VOLUME_MOUNT, onVolumeMount);
     function onVolumeMount(event:StorageVolumeChangeEvent):void
     {
     	trace(event.storageVolume.name, event.rootDirectory.nativePath);
     }
 
-</div>
-
 The following code outputs the file path of a storage volume when it is
 unmounted:
-
-<div>
 
     StorageVolumeInfo.storageVolumeInfo.addEventListener(StorageVolumeChangeEvent.STORAGE_VOLUME_UNMOUNT, onVolumeUnmount);
     function onVolumeUnmount(event:StorageVolumeChangeEvent):void
@@ -76,15 +56,11 @@ unmounted:
     	trace(event.rootDirectory.nativePath);
     }
 
-</div>
-
 The `StorageVolumeInfo.storageVolumeInfo` object includes a
 `getStorageVolumes()` method. This method returns a vector of StorageVolume
 objects corresponding to the currently mounted storage volumes. The following
 code shows how to list the names and root directories of all mounted storage
 volumes:
-
-<div>
 
     var volumes:Vector.<StorageVolume> = new Vector.<StorageVolume>;
     volumes = StorageVolumeInfo.storageVolumeInfo.getStorageVolumes();
@@ -93,15 +69,9 @@ volumes:
     	trace(volumes[i].name, volumes[i].rootDirectory.nativePath);
     }
 
-</div>
-
-<div>
-
 Note: On modern Linux distributions, the `getStorageVolumes()` method returns
 objects corresponding to physical devices and network drives mounted at
 particular locations.
-
-</div>
 
 The `File.getRootDirectories()` method lists the root directories (see
 [Pointing to the file system root](WS5b3ccc516d4fbf351e63e3d118676a4c56-7fc5.html).
@@ -113,28 +83,10 @@ You can use the `spaceAvailable` property of the `rootDirectory` property of a
 StorageVolume object to get the space available on a storage volume. (See
 [Determining space available on a volume](WSC2FAD3B6-D59A-4e4d-B63F-9846584CF5D5.html).)
 
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
-
-</div>
 
 ![](../../img/flashplatformLinkIndicator.png)
 [StorageVolume](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/StorageVolume.html)
 
 ![](../../img/flashplatformLinkIndicator.png)
 [StorageVolumeInfo](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/StorageVolumeInfo.html)
-
-<div>
-
-</div>
-
-</div>

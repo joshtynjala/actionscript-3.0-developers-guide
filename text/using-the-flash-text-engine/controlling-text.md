@@ -1,18 +1,10 @@
 # Controlling text
 
-<div>
-
 FTE gives you a new set of text formatting controls to handle justification and
 character spacing (kerning and tracking). There are also properties for
 controlling that way lines are broken and for setting tab stops within lines.
 
-</div>
-
-<div>
-
 ## Justifying text
-
-<div>
 
 Justifying text makes all lines in a paragraph the same length by adjusting the
 spacing between words and sometimes between letters. The effect is to align the
@@ -75,15 +67,7 @@ To vary spacing between letters as well as between words, set the
 reduce the occurrences of unsightly gaps between words, which can sometimes
 occur with simple justification.
 
-</div>
-
-</div>
-
-<div>
-
 ## Justifying East Asian text
-
-<div>
 
 Justifying East Asian text entails additional considerations. It can be written
 from top to bottom and some characters, known as kinsoku, cannot appear at the
@@ -93,8 +77,6 @@ constants, which specify the options for handling these characters.
 compressing the line, depending on which one produces the most desirable result.
 `PUSH_IN_KINSOKU` bases justification on compressing kinsoku at the end of the
 line, or expanding it if no kinsoku occurs, or if that space is insufficient.
-
-<div>
 
 `PUSH_OUT_ONLY` bases justification on expanding the line. To create a block of
 vertical Asian text, set the `TextBlock.lineRotation` property to
@@ -158,17 +140,7 @@ of Japanese text and justifies it using the `PUSH_IN_KINSOKU` option.
     	}
     }
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Kerning and tracking
-
-<div>
 
 Kerning and tracking affect the distance between adjacent pairs of characters in
 a text block. Kerning controls how character pairs "fit" together, such as the
@@ -184,37 +156,19 @@ which adds/subtracts pixels from the left side of a character, and
 used, the tracking value is added to or subtracted from kerning values for each
 character pair.
 
-<div>
-
-<div xmlns:fn="http://www.w3.org/2005/xpath-functions"
-xmlns:fo="http://www.w3.org/1999/XSL/Format"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 ![Kerning and tracking effects](images/te_kerning_tracking.png)
 
-A.  
-Kerning.OFF
+**A.** Kerning.OFF
 
-B.  
-TrackingRight=5, Kerning.OFF
+**B.** TrackingRight=5, Kerning.OFF
 
-C.  
-TrackingRight=-5, Kerning.OFF
+**C.** TrackingRight=-5, Kerning.OFF
 
-D.  
-Kerning.ON
+**D.** Kerning.ON
 
-E.  
-TrackingRight=-5, Kerning.ON
+**E.** TrackingRight=-5, Kerning.ON
 
-F.  
-TrackingRight=-5, Kerning.ON
-
-</div>
-
-</div>
-
-<div>
+**F.** TrackingRight=-5, Kerning.ON
 
     var ef1:ElementFormat = new ElementFormat();
     ef1.kerning = Kerning.OFF;
@@ -227,17 +181,7 @@ TrackingRight=-5, Kerning.ON
     var ef3:ElementFormat = new ElementFormat();
     ef3.trackingRight = -0.2;
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Line breaks for wrapped text
-
-<div>
 
 The `breakOpportunity` property of the `ElementFormat` object determines which
 characters can be used for breaking when wrapping text is broken into multiple
@@ -246,22 +190,10 @@ such as breaking between words and on hyphens. Using `BreakOpportunity.ALL`
 allows any character to be treated as a line break opportunity, which is useful
 for creating effects like text along a path.
 
-<div>
-
     var ef:ElementFormat = new ElementFormat();
     ef.breakOpportunity = BreakOpportunity.ALL;
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Tab stops
-
-<div>
 
 To set tab stops in a text block, define the tab stops by creating instances of
 the TabStop class. The parameters to the `TabStop()` constructor specify how the
@@ -338,15 +270,3 @@ The following example shows the effect of each of the TabStop alignment options.
     		}
     	}
     }
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

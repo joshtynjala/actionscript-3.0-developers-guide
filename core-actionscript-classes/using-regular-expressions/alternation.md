@@ -1,7 +1,5 @@
 # Alternation
 
-<div>
-
 Use the `|` (pipe) character in a regular expression to have the regular
 expression engine consider alternatives for a match. For example, the following
 regular expression matches any one of the words `cat, dog, pig, rat`:
@@ -23,5 +21,3 @@ using a character class (defined with `[` and `]`), are equivalent:
     /[13579]/
 
 For more information, see [Character classes](./character-classes.md).
-
-</div>

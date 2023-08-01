@@ -1,7 +1,5 @@
 # Printing example: Page setup and print options
 
-<div>
-
 The following example initializes the PrintJob settings for number of copies,
 paper size (legal), and page orientation (landscape). It forces the Page Setup
 dialog to be displayed first, then starts the print job by displaying the Print
@@ -86,13 +84,3 @@ dialog.
     		}
     	}
     }
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

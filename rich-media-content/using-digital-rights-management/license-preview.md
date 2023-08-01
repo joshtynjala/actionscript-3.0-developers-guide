@@ -1,7 +1,5 @@
 # License preview
 
-<div>
-
 The Flash application can send a license preview request, meaning that the
 application can carry out a preview operation before asking the user to buy the
 content in order to determine whether the user's machine actually meets all the
@@ -16,13 +14,3 @@ the user so he can make an informed decision. Thus the client can see what a
 valid license looks like but would not actually receive the key to decrypt the
 content. Support for license preview is optional, and only necessary if you
 implement a custom application that uses this functionality.
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

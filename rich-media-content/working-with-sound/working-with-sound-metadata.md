@@ -1,7 +1,5 @@
 # Working with sound metadata
 
-<div>
-
 Sound files that use the mp3 format can contain additional data about the sound
 in the form of ID3 tags.
 
@@ -39,13 +37,3 @@ This code starts by creating a Sound object and telling it to listen for the
 passed to the `onID3InfoReceived()` method is the original Sound object, so the
 method then gets the Sound object's `id3` property and then iterates through all
 of its named properties to trace their values.
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # Dragging data into an HTML element
 
-<div>
-
 The default behavior only allows text to be dragged into editable regions of the
 page. You can specify that an element and its children can be made editable by
 including the `contenteditable` attribute in the opening tag of the element. You
@@ -12,13 +10,7 @@ You can support alternate drag-in behavior on a page by handling the
 `dragenter`, `dragover`, and `drop` events for any elements that can accept
 dragged data.
 
-</div>
-
-<div>
-
 ## Enabling drag-in
-
-<div>
 
 To handle the drag-in gesture, you must first cancel the default behavior.
 Listen for the `dragenter` and `dragover` events on any HTML elements you want
@@ -26,15 +18,7 @@ to use as drop targets. In the handlers for these events, call the
 `preventDefault()` method of the dispatched event object. Canceling the default
 behavior allows non-editable regions to receive a drop.
 
-</div>
-
-</div>
-
-<div>
-
 ## Getting the dropped data
-
-<div>
 
 You can access the dropped data in the handler for the `ondrop` event:
 
@@ -52,15 +36,3 @@ are responsible for inserting any dropped data into its proper place in the
 document. No API exists to convert a mouse position into an insertion point
 within an element. This limitation can make it difficult to implement
 insertion-type drag gestures.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

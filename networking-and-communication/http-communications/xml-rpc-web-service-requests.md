@@ -1,7 +1,5 @@
 # XML-RPC web service requests
 
-<div>
-
 An XML-RPC web service takes its call parameters as an XML document rather than
 as a set of URL variables. To conduct a transaction with an XML-RPC web service,
 create a properly formatted XML message and send it to the web service using the
@@ -195,13 +193,3 @@ XMLHttpRequest to conduct the web service transaction:
     	<pre id="result"></pre>
     </body>
     </html>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

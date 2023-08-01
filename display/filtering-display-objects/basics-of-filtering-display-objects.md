@@ -1,7 +1,5 @@
 # Basics of filtering display objects
 
-<div>
-
 One of the ways to add polish to an application is to add simple graphic
 effects. You can add a drop shadow behind a photo to create the illusion of 3-d,
 or a glow around a button to show that it is active. ActionScript 3.0 includes
@@ -10,15 +8,9 @@ instance. The built-in filters range from basic, such as the drop shadow and
 glow filters, to complex, such as the displacement map filter and the
 convolution filter.
 
-<div>
-
 Note: In addition to the built-in filters, you can also program custom filters
 and effects using Pixel Bender. See
 [Working with Pixel Bender shaders](../working-with-pixel-bender-shaders/index.md).
-
-</div>
-
-<div>
 
 #### Important concepts and terms
 
@@ -41,7 +33,3 @@ Shifting or moving pixels in an image to a new position.
 Matrix  
 A grid of numbers used to perform certain mathematical calculations by applying
 the numbers in the grid to various values, then combining the results.
-
-</div>
-
-</div>

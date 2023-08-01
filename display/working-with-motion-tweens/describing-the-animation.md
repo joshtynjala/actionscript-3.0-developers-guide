@@ -1,7 +1,5 @@
 # Describing the animation
 
-<div>
-
 The `addPropertyArray()` method of the MotionBase class adds an array of values
 to describe every tweened property.
 
@@ -26,8 +24,6 @@ skewed. Add the `rotationConcat` property if it rotates.
 
 Use the `addPropertyArray()` method to define the following tween properties:
 
-<div>
-
 |                     |                                                                                                                                                            |
 | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `x`                 | horizontal position of the transformation point of the object in the coordinate space of its parent                                                        |
@@ -45,8 +41,6 @@ Use the `addPropertyArray()` method to define the following tween properties:
 | `matrix3D`          | matrix3D property if one exists for the keyframe; used for 3D tweens; if used, all the previous transform properties are ignored                           |
 | `rotationZ`         | z-axis rotation of the object, in degrees, from its original orientation relative to the 3D parent container; used for 3D tweens instead of rotationConcat |
 
-</div>
-
 The properties that are added in the automatically generated script depend on
 the properties that were assigned to the motion tween in Flash. You can add,
 remove, or modify some of these properties when customizing your own version of
@@ -57,8 +51,6 @@ The following code assigns values to the properties of a motion tween named
 location but rather spins in place throughout the 29 frames in the motion tween.
 The multiple values assigned to the `rotationConcat` array define the rotation.
 The other property values of this motion tween do not change.
-
-<div>
 
     __motion_Wheel = new Motion();
     __motion_Wheel.duration = 29;
@@ -77,8 +69,6 @@ The other property values of this motion tween do not change.
         ]
     );
     __motion_Wheel.addPropertyArray("blendMode", ["normal"]);
-
-</div>
 
 In the next example, the display object named `Leaf_1` moves across the stage.
 Its `x` and `y` property arrays contain different values for each of the 100
@@ -133,13 +123,3 @@ determine the rotation.
         ]
     );
     __motion_Symbol1_4.addPropertyArray("blendMode", ["normal"]);
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

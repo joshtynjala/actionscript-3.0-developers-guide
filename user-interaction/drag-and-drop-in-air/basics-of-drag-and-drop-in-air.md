@@ -1,12 +1,8 @@
 # Basics of drag and drop in AIR
 
-<div>
-
 For a quick explanation and code examples of using drag and drop in an AIR
 application, see the following quick start articles on the Adobe Developer
 Connection:
-
-<div>
 
 - [Supporting drag-and-drop and copy-and-paste](http://www.adobe.com/devnet/air/flex/quickstart/scrappy_copy_paste.html)
   (Flex)
@@ -14,64 +10,47 @@ Connection:
 - [Supporting drag-and-drop and copy-and-paste](http://www.adobe.com/devnet/air/flash/quickstart/scrappy_copy_paste.html)
   (Flash)
 
-</div>
-
 The drag-and-drop API contains the following classes.
 
-<div>
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>Package</p></th>
-<th><p>Classes</p></th>
-</tr>
+    <tr>
+        <th><p>Package</p></th>
+        <th><p>Classes</p></th>
+    </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><p>flash.desktop</p></td>
-<td><div>
-<ul class="incremental">
-<li><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeDragManager.html">NativeDragManager</a></p></li>
-<li><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeDragOptions.html">NativeDragOptions</a></p></li>
-<li><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/Clipboard.html">Clipboard</a></p></li>
-<li><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/air/desktop/URLFilePromise.html">URLFilePromise</a></p></li>
-<li><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/IFilePromise.html">IFilePromise</a></p></li>
-</ul>
-</div>
-<p>Constants used with the drag-and-drop API are defined in the
-following classes:</p>
-<div>
-<ul class="incremental">
-<li><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeDragActions.html">NativeDragActions</a></p></li>
-<li><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/ClipboardFormats.html">ClipboardFormat</a></p></li>
-<li><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/ClipboardTransferMode.html">ClipboardTransferModes</a></p></li>
-</ul>
-</div></td>
-</tr>
-<tr class="even">
-<td><p>flash.events</p></td>
-<td><p><a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/NativeDragEvent.html">NativeDragEvent</a></p></td>
-</tr>
+    <tr>
+        <td><p>flash.desktop</p></td>
+        <td>
+            <div>
+                <ul class="incremental">
+                    <li><p><a href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeDragManager.html">NativeDragManager</a></p></li>
+                    <li><p><a href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeDragOptions.html">NativeDragOptions</a></p></li>
+                    <li><p><a href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/Clipboard.html">Clipboard</a></p></li>
+                    <li><p><a href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/air/desktop/URLFilePromise.html">URLFilePromise</a></p></li>
+                    <li><p><a href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/IFilePromise.html">IFilePromise</a></p></li>
+                </ul>
+            </div>
+            <p>Constants used with the drag-and-drop API are defined in the
+            following classes:</p>
+            <div>
+                <ul class="incremental">
+                    <li><p><a href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeDragActions.html">NativeDragActions</a></p></li>
+                    <li><p><a href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/ClipboardFormats.html">ClipboardFormat</a></p></li>
+                    <li><p><a href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/ClipboardTransferMode.html">ClipboardTransferModes</a></p></li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td><p>flash.events</p></td>
+        <td>
+            <p><a href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/NativeDragEvent.html">NativeDragEvent</a></p>
+        </td>
+    </tr>
 </tbody>
 </table>
-
-</div>
-
-<div>
 
 #### Drag-and-drop gesture stages
 
@@ -115,10 +94,6 @@ The NativeDragManager class controls both drag-in and drag-out gestures. All the
 members of the NativeDragManager class are static, do not create an instance of
 this class.
 
-</div>
-
-<div>
-
 #### The Clipboard object
 
 Data that is dragged into or out of an application or component is contained in
@@ -141,10 +116,6 @@ objects that remain valid when serialized and deserialized. Objects that are
 serialized are converted into the Action Message Format for ActionScript 3
 (AMF3), a string-based data-transfer format.
 
-</div>
-
-<div>
-
 #### Working with the Flex framework
 
 In most cases, it is better to use the Adobe® Flex™ drag-and-drop API when
@@ -154,15 +125,3 @@ internally). Flex also maintains a more limited feature set when an application
 or component is running within the more restrictive browser environment. AIR
 classes cannot be used in components or applications that run outside the AIR
 run-time environment.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

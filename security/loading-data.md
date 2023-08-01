@@ -1,7 +1,5 @@
 # Loading data
 
-<div>
-
 Flash Player and AIR content can exchange data with servers. Loading data is a
 different kind of operation from loading media, because the loaded information
 appears as program objects, rather than being displayed as media. Generally,
@@ -10,8 +8,6 @@ However, content usually requires policy files in order to load data from other
 domains (see
 [Website controls (policy files)](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e08.html)).
 
-<div>
-
 Note: Content running in the AIR application sandbox is never served from a
 remote domain (unless the developer intentionally imports remote content into
 the application sandbox), so it cannot participate in the types of attacks that
@@ -19,15 +15,7 @@ policy files protect against. AIR content in the application sandbox is not
 restricted from loading data by policy files. However, AIR content in other
 sandboxes is subject to the restrictions described here.
 
-</div>
-
-</div>
-
-<div>
-
 ## Using URLLoader and URLStream
-
-<div>
 
 You can load data, such as an XML file or a text file. The `load()` methods of
 the URLLoader and URLStream classes are governed by URL policy file permissions.
@@ -37,15 +25,7 @@ the code that is calling the method, the runtime checks for a URL policy file on
 the server of the loaded assets. If there is a policy file, and it grants access
 to the domain of the loading content, you can load the data.
 
-</div>
-
-</div>
-
-<div>
-
 ## Connecting to sockets
-
-<div>
 
 By default, the runtime looks for a socket policy file served from port 843. As
 with URL policy files, this file is called the _master policy file_ .
@@ -140,15 +120,7 @@ main connection; close the connection after transmitting the policy file. If you
 do not, Flash Player closes the policy file connection before reconnecting to
 set up the main connection.
 
-</div>
-
-</div>
-
-<div>
-
 ## Protecting data
-
-<div>
 
 To protect data from eavesdropping and alteration as it travels over the
 Internet, you can use the Transport Layer Security (TLS) or Socket Layer
@@ -159,15 +131,7 @@ In applications created for AIR 2 or above, you can also protect TCP socket
 communications. The SecureSocket class allows you to initiate a socket
 connection to a socket server that uses TLS version 1or SSL version 4.
 
-</div>
-
-</div>
-
-<div>
-
 ## Sending data
-
-<div>
 
 Data sending occurs when code sends data to a server or resource. Sending data
 is always permitted for content from a network domain. A local SWF file can send
@@ -180,15 +144,7 @@ methods also send requests to URLs. These include loading methods, such as
 `Loader.load()` and `Sound.load()`, and data-loading methods, such as
 `URLLoader.load()` and `URLStream.load()`.
 
-</div>
-
-</div>
-
-<div>
-
 ## Uploading and downloading files
-
-<div>
 
 The `FileReference.upload()` method starts the upload of a file selected by a
 user to a remote server. You must call the `FileReference.browse()` or
@@ -204,15 +160,11 @@ to call these methods from the AIR application sandbox.
 Calling the `FileReference.download()` method opens a dialog box in which the
 user can download a file from a remote server.
 
-<div>
-
 Note: If your server requires user authentication, only SWF files running in a
 browser—that is, using the browser plug-in or ActiveX control—can provide a
 dialog box to prompt the user for a user name and password for authentication,
 and only for downloads. Flash Player does not allow uploads to a server that
 requires user authentication.
-
-</div>
 
 Uploads and downloads are not allowed if the calling SWF file is in the
 local-with-filesystem sandbox.
@@ -221,15 +173,3 @@ By default, a SWF file may not initiate an upload to, or a download from, a
 server other than its own. A SWF file may upload to, or download from, a
 different server if that server provides a policy file that grants permission to
 the domain of the invoking SWF file.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

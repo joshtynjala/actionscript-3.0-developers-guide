@@ -1,7 +1,5 @@
 # Working with characters in strings
 
-<div>
-
 Every character in a string has an index position in the string (an integer).
 The index position of the first character is 0. For example, in the following
 string, the character `y` is in position 0 and the character `w` is in position
@@ -38,5 +36,3 @@ method, as the following example shows:
 
     var myStr:String = String.fromCharCode(104,101,108,108,111,32,119,111,114,108,100,33);
             // Sets myStr to "hello world!"
-
-</div>

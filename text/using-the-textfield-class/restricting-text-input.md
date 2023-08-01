@@ -1,7 +1,5 @@
 # Restricting text input
 
-<div>
-
 Since input text fields are often used for forms or dialog boxes in
 applications, you may want to limit the types of characters a user can enter in
 a text field, or even keep the text hidden —for example, for a password. The
@@ -32,21 +30,7 @@ characters. For more information about defining what is restricted in an input
 text field, see the `flash.text.TextField.restrict` property entry in the
 ActionScript 3.0 Reference.
 
-<div>
-
 Note: If you use the `flash.text.TextField.restrict` property, the runtime
 automatically converts restricted letters to the allowed case. If you use the
 `fl.text.TLFTextField.restrict` property (that is, if you use a TLF text field),
 the runtime ignores restricted letters.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>
