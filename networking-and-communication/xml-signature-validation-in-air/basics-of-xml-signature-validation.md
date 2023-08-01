@@ -48,9 +48,9 @@ The XML signature validation API includes the following classes:
 <td><div>
 <ul class="incremental">
 <li><p><a
-href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/security/XMLSignatureValidator.html">XMLSignatureValidator</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/security/XMLSignatureValidator.html">XMLSignatureValidator</a></p></li>
 <li><p><a
-href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/security/IURIDereferencer.html">IURIDereferencer</a>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/security/IURIDereferencer.html">IURIDereferencer</a>
 (interface)</p></li>
 </ul>
 </div>
@@ -59,13 +59,13 @@ classes:</p>
 <div>
 <ul class="incremental">
 <li><p><a
-href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/security/ReferencesValidationSetting.html">ReferencesValidationSetting</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/security/ReferencesValidationSetting.html">ReferencesValidationSetting</a></p></li>
 <li><p><a
-href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/security/RevocationCheckSettings.html">RevocationCheckSettings</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/security/RevocationCheckSettings.html">RevocationCheckSettings</a></p></li>
 <li><p><a
-href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/security/SignatureStatus.html">SignatureStatus</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/security/SignatureStatus.html">SignatureStatus</a></p></li>
 <li><p><a
-href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/security/SignerTrustSettings.html">SignerTrustSettings</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/security/SignerTrustSettings.html">SignerTrustSettings</a></p></li>
 </ul>
 </div></td>
 </tr>
@@ -74,9 +74,9 @@ href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/security/SignerTrustSet
 <td><div>
 <ul class="incremental">
 <li><p><a
-href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/events/Event.html">Event</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/Event.html">Event</a></p></li>
 <li><p><a
-href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/events/ErrorEvent.html">ErrorEvent</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/ErrorEvent.html">ErrorEvent</a></p></li>
 </ul>
 </div></td>
 </tr>

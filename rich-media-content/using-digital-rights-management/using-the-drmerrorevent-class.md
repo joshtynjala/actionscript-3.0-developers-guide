@@ -29,7 +29,7 @@ must provide appropriate mechanism for handling errors.
 <div>
 
 For a complete list of errors, see the
-[Runtime Error Codes](https://help.adobe.com/en_US/Flash/CS5/AS3LR/runtimeErrors.html)
+[Runtime Error Codes](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/runtimeErrors.html)
 in the ActionScript 3.0 Reference. The DRM-related errors start at error 3300.
 
 </div>

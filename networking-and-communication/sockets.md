@@ -108,13 +108,13 @@ Those methods must be used to write to and read from the Socket.
 
 For more information, see:
 
-- [Socket](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/Socket.html)
+- [Socket](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/Socket.html)
 
-- [IDataInput](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/utils/IDataInput.html)
+- [IDataInput](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/utils/IDataInput.html)
 
-- [IDataOutput](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/utils/IDataOutput.html)
+- [IDataOutput](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/utils/IDataOutput.html)
 
-- [socketData event](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/events/ProgressEvent.html#SOCKET_DATA)
+- [socketData event](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/ProgressEvent.html#SOCKET_DATA)
 
 </div>
 
@@ -183,15 +183,15 @@ SecureSocket object on the current client computer.
 
 For more information, see:
 
-- [SecureSocket](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/SecureSocket.html)
+- [SecureSocket](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/SecureSocket.html)
 
-- [CertificateStatus](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/CertificateStatus.html)
+- [CertificateStatus](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/CertificateStatus.html)
 
-- [IDataInput](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/utils/IDataInput.html)
+- [IDataInput](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/utils/IDataInput.html)
 
-- [IDataOutput](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/utils/IDataOutput.html)
+- [IDataOutput](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/utils/IDataOutput.html)
 
-- [socketData event](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/events/ProgressEvent.html#SOCKET_DATA)
+- [socketData event](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/ProgressEvent.html#SOCKET_DATA)
 
 </div>
 
@@ -685,7 +685,7 @@ terminated by a newline ( `\n` _) character._
 </div>
 
 For more information, see
-[XMLSocket](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/XMLSocket.html).
+[XMLSocket](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/XMLSocket.html).
 
 </div>
 
@@ -821,11 +821,11 @@ the client.
 
 For more information, see:
 
-- [ServerSocket](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/ServerSocket.html)
+- [ServerSocket](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/ServerSocket.html)
 
-- [ServerSocketConnectEvent](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/events/ServerSocketConnectEvent.html)
+- [ServerSocketConnectEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/ServerSocketConnectEvent.html)
 
-- [Socket](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/Socket.html)
+- [Socket](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/Socket.html)
 
 </div>
 
@@ -945,11 +945,11 @@ Keep in mind the following considerations when using UDP sockets:
 
 For more information, see:
 
-- [DatagramSocket](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/DatagramSocket.html)
+- [DatagramSocket](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/DatagramSocket.html)
 
-- [DatagramSocketDataEvent](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/events/DatagramSocketDataEvent.html)
+- [DatagramSocketDataEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/DatagramSocketDataEvent.html)
 
-- [ByteArray](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/utils/ByteArray.html)
+- [ByteArray](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/utils/ByteArray.html)
 
 </div>
 

@@ -171,17 +171,17 @@ The native window API contains the following classes:
 <td><div>
 <ul class="incremental">
 <li><p><a
-href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/NativeWindow.html">NativeWindow</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeWindow.html">NativeWindow</a></p></li>
 <li><p><a
-href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/NativeWindow.html">NativeWindowInitOptions</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeWindow.html">NativeWindowInitOptions</a></p></li>
 <li><p><a
-href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/NativeWindowDisplayState.html">NativeWindowDisplayState</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeWindowDisplayState.html">NativeWindowDisplayState</a></p></li>
 <li><p><a
-href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/NativeWindowResize.html">NativeWindowResize</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeWindowResize.html">NativeWindowResize</a></p></li>
 <li><p><a
-href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/NativeWindowSystemChrome.html">NativeWindowSystemChrome</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeWindowSystemChrome.html">NativeWindowSystemChrome</a></p></li>
 <li><p><a
-href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/NativeWindowType.html">NativeWindowType</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeWindowType.html">NativeWindowType</a></p></li>
 </ul>
 </div></td>
 </tr>
@@ -190,9 +190,9 @@ href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/NativeWindowTyp
 <td><div>
 <ul class="incremental">
 <li><p><a
-href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/NativeWindow.html">NativeWindowBoundsEvent</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeWindow.html">NativeWindowBoundsEvent</a></p></li>
 <li><p><a
-href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/NativeWindow.html">NativeWindowDisplayStateEvent</a></p></li>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/NativeWindow.html">NativeWindowDisplayStateEvent</a></p></li>
 </ul>
 </div></td>
 </tr>

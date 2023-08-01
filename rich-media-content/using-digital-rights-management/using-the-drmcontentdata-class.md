@@ -10,7 +10,7 @@ described in the
 [Detailed API workflow](WSa3a415adbae4e49c-513a8af0126e28a784c-8000.html).
 
 For more information, see the
-[DRMContentData](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/drm/DRMContentData.html)
+[DRMContentData](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/drm/DRMContentData.html)
 class listing in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 

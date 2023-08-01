@@ -120,7 +120,7 @@ You can also use Flash Professional to create the TLFTextField instance on the
 stage using the text tool. Then you can use ActionScript to control the
 formatting and layout of the text field content using the TLF classes. For more
 information, see
-[TLFTextField](https://help.adobe.com/en_US/Flash/CS5/AS3LR/fl/text/TLFTextField.html)
+[TLFTextField](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/fl/text/TLFTextField.html)
 in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
@@ -178,11 +178,11 @@ The TLF classes can be grouped into three categories:
 The following packages contain the data structures and formatting classes for
 the TLF:
 
-- [flashx.textLayout.elements](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/elements/package-detail.html)
+- [flashx.textLayout.elements](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/elements/package-detail.html)
 
-- [flashx.textLayout.formats](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/formats/package-detail.html)
+- [flashx.textLayout.formats](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/formats/package-detail.html)
 
-- [flashx.textLayout.conversion](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/conversion/package-detail.html)
+- [flashx.textLayout.conversion](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/conversion/package-detail.html)
 
 </div>
 
@@ -206,11 +206,11 @@ package.
 
 The following packages contain the rendering classes for the TLF:
 
-- [flashx.textLayout.factory](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/factory/package-detail.html)
+- [flashx.textLayout.factory](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/factory/package-detail.html)
 
-- [flashx.textLayout.container](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/container/package-detail.html)
+- [flashx.textLayout.container](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/container/package-detail.html)
 
-- [flashx.textLayout.compose](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/compose/package-detail.html)
+- [flashx.textLayout.compose](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/compose/package-detail.html)
 
 The classes in these packages facilitate the rendering of text for display by
 Flash Player. The factory package provides a simple way to display static text.
@@ -234,11 +234,11 @@ positioning and displaying dynamic text in containers.
 
 The following packages contain the user interaction classes for the TLF:
 
-- [flashx.textLayout.edit](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/edit/package-detail.html)
+- [flashx.textLayout.edit](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/edit/package-detail.html)
 
-- [flashx.textLayout.operations](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/operations/package-detail.html)
+- [flashx.textLayout.operations](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/operations/package-detail.html)
 
-- [flashx.textLayout.events](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/events/package-detail.html)
+- [flashx.textLayout.events](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/events/package-detail.html)
 
 The edit and operations packages define classes that you can use to allow
 editing of text stored in the data structures. The events package contains event
@@ -510,23 +510,23 @@ The following table contains the tags that can be used in TLF Markup.
 
 <div>
 
-| Element          | Description                                                                                                                              | Children                      | Class                                                                                                                             |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| textflow         | The root element of the markup.                                                                                                          | div, p                        | [TextFlow](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/elements/TextFlow.html)                                 |
-| div              | A division within a TextFlow. May contain a group of paragraphs.                                                                         | div, list, p                  | [DivElement](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/elements/DivElement.html)                             |
-| p                | A paragraph.                                                                                                                             | a, tcy, span, img, tab, br, g | [ParagraphElement](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/elements/ParagraphElement.html)                 |
-| a                | A link.                                                                                                                                  | tcy, span, img, tab, br, g    | [LinkElement](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/elements/LinkElement.html)                           |
-| tcy              | A run of horizontal text (used in a vertical TextFlow).                                                                                  | a, span, img, tab, br, g      | [TCYElement](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/elements/TCYElement.html)                             |
-| span             | A run of text within a paragraph.                                                                                                        |                               | [SpanElement](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/elements/SpanElement.html)                           |
-| img              | An image in a paragraph.                                                                                                                 |                               | [InlineGraphicElement](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/elements/InlineGraphicElement.html)         |
-| tab              | A tab character.                                                                                                                         |                               | [TabElement](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/elements/TabElement.html)                             |
-| br               | A break character. Used for ending a line within a paragraph; text continues on the next line, but remains in the same paragraph.        |                               | [BreakElement](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/elements/BreakElement.html)                         |
-| linkNormalFormat | Defines the formatting attributes used for links in normal state.                                                                        | TextLayoutFormat              | [TextLayoutFormat](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/formats/TextLayoutFormat.html)                  |
-| linkActiveFormat | Defines the formatting attributes used for links in active state, when the mouse is down on a link.                                      | TextLayoutFormat              | [TextLayoutFormat](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/formats/TextLayoutFormat.html)                  |
-| linkHoverFormat  | Defines the formatting attributes used for links in hover state, when the mouse is within the bounds (rolling over) a link.              | TextLayoutFormat              | [TextLayoutFormat](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/formats/TextLayoutFormat.html)                  |
-| li               | A list item element. Must be inside a list element.                                                                                      | div, li, list, p              | [ListItemElement](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/elements/ListItemElement.html)                   |
-| list             | A list. Lists can be nested, or placed adjacent to each other. Different labeling or numbering schemes can be applied to the list items. | div, li, list, p              | [ListElement](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/elements/ListElement.html)                           |
-| g                | A group element. Used for grouping elements in a paragraph. The lets you nest elements below the paragraph level.                        | a, tcy, span, img, tab, br, g | [SubParagraphGroupElement](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/elements/SubParagraphGroupElement.html) |
+| Element          | Description                                                                                                                              | Children                      | Class                                                                                                                                                    |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| textflow         | The root element of the markup.                                                                                                          | div, p                        | [TextFlow](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/elements/TextFlow.html)                                 |
+| div              | A division within a TextFlow. May contain a group of paragraphs.                                                                         | div, list, p                  | [DivElement](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/elements/DivElement.html)                             |
+| p                | A paragraph.                                                                                                                             | a, tcy, span, img, tab, br, g | [ParagraphElement](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/elements/ParagraphElement.html)                 |
+| a                | A link.                                                                                                                                  | tcy, span, img, tab, br, g    | [LinkElement](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/elements/LinkElement.html)                           |
+| tcy              | A run of horizontal text (used in a vertical TextFlow).                                                                                  | a, span, img, tab, br, g      | [TCYElement](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/elements/TCYElement.html)                             |
+| span             | A run of text within a paragraph.                                                                                                        |                               | [SpanElement](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/elements/SpanElement.html)                           |
+| img              | An image in a paragraph.                                                                                                                 |                               | [InlineGraphicElement](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/elements/InlineGraphicElement.html)         |
+| tab              | A tab character.                                                                                                                         |                               | [TabElement](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/elements/TabElement.html)                             |
+| br               | A break character. Used for ending a line within a paragraph; text continues on the next line, but remains in the same paragraph.        |                               | [BreakElement](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/elements/BreakElement.html)                         |
+| linkNormalFormat | Defines the formatting attributes used for links in normal state.                                                                        | TextLayoutFormat              | [TextLayoutFormat](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/formats/TextLayoutFormat.html)                  |
+| linkActiveFormat | Defines the formatting attributes used for links in active state, when the mouse is down on a link.                                      | TextLayoutFormat              | [TextLayoutFormat](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/formats/TextLayoutFormat.html)                  |
+| linkHoverFormat  | Defines the formatting attributes used for links in hover state, when the mouse is within the bounds (rolling over) a link.              | TextLayoutFormat              | [TextLayoutFormat](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/formats/TextLayoutFormat.html)                  |
+| li               | A list item element. Must be inside a list element.                                                                                      | div, li, list, p              | [ListItemElement](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/elements/ListItemElement.html)                   |
+| list             | A list. Lists can be nested, or placed adjacent to each other. Different labeling or numbering schemes can be applied to the list items. | div, li, list, p              | [ListElement](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/elements/ListElement.html)                           |
+| g                | A group element. Used for grouping elements in a paragraph. The lets you nest elements below the paragraph level.                        | a, tcy, span, img, tab, br, g | [SubParagraphGroupElement](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/elements/SubParagraphGroupElement.html) |
 
 </div>
 
@@ -541,9 +541,9 @@ The following table contains the tags that can be used in TLF Markup.
 <div>
 
 You can use the
-[ListElement](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/elements/ListElement.html)
+[ListElement](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/elements/ListElement.html)
 and
-[ListItemElement](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/elements/ListItemElement.html)
+[ListItemElement](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/elements/ListItemElement.html)
 classes to add bulleted lists to your text controls. The bulleted lists can be
 nested and can be customized to use different bullets (or markers) and
 auto-numbering, as well as outline-style numbering.
@@ -593,7 +593,7 @@ creates lists with various marker types and a custom counter increment:
 </div>
 
 You use the
-[ListMarkerFormat](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/formats/ListMarkerFormat.html)
+[ListMarkerFormat](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/formats/ListMarkerFormat.html)
 class to define the counter. In addition to defining the increment of a counter,
 you can also customize the counter by resetting it with the `counterReset`
 property.
@@ -658,7 +658,7 @@ HTML entities rather than quotation marks ( `"< string >"`).
 <div>
 
 Each
-[FlowElement](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/elements/FlowElement.html)
+[FlowElement](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/elements/FlowElement.html)
 supports padding properties that you use to control the position of each
 element's content area, and the space between the content areas.
 
@@ -705,7 +705,7 @@ of the `listAutoPadding` property is used. The default value of
 
 The padding properties do not, by default, inherit. The "auto" and "inherit"
 values are constants defined by the
-[FormatValue](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/formats/FormatValue.html)
+[FormatValue](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/formats/FormatValue.html)
 class.
 
 Padding properties can be negative values.
@@ -770,7 +770,7 @@ implement the ITextLayoutFormat interface. This arrangement ensures that both
 classes contain the same format properties.
 
 For more information, see
-[TextLayoutFormat](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/formats/TextLayoutFormat.html)
+[TextLayoutFormat](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/formats/TextLayoutFormat.html)
 in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
@@ -816,7 +816,7 @@ behavior by setting the `backgroundColor` property on each child to
 `flashx.textLayout.formats.FormatValue.INHERIT`.
 
 For more information, see
-[TextLayoutFormat](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/formats/TextLayoutFormat.html)
+[TextLayoutFormat](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/formats/TextLayoutFormat.html)
 in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
@@ -851,7 +851,7 @@ You can then use the classes in the flashx.textLayout.edit package to change the
 text, and export the changed text back to your database.
 
 For more information, see
-[flashx.textLayout.conversion](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/conversion/package-detail.html)
+[flashx.textLayout.conversion](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/conversion/package-detail.html)
 in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
@@ -884,13 +884,13 @@ package in Flash Player 10.
 
 The simple approach uses the TextFlowTextLineFactory class, which can be found
 in the
-[flashx.textLayout.factory package](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/factory/package-detail.html).
+[flashx.textLayout.factory package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/factory/package-detail.html).
 The advantage of this approach, beyond its simplicity, is that it has a smaller
 memory footprint than does the FlowComposer approach. This approach is advisable
 for static text that the user does not need to edit, select, or scroll.
 
 For more information, see
-[TextFlowTextLineFactory](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/factory/TextFlowTextLineFactory.html)
+[TextFlowTextLineFactory](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/factory/TextFlowTextLineFactory.html)
 in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
@@ -910,7 +910,7 @@ composer, your users can select and edit the text. For more information, see
 [Enabling text selection, editing, and undo with TLF](WS14c3067b34b57c6d4a97343b122ab36a52f-7ff0.html).
 
 A flow composer is an instance of the StandardFlowComposer class in the
-[flashx.textLayout.compose package](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/compose/package-detail.html).
+[flashx.textLayout.compose package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/compose/package-detail.html).
 A flow composer manages the conversion of TextFlow into TextLine instances, and
 also the placement of those TextLine instances into one or more containers.
 
@@ -957,10 +957,10 @@ whether those instances fit into the container. Display is the process of
 updating the Flash Player display list.
 
 For more information, see
-[IFlowComposer](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/compose/IFlowComposer.html),
-[StandardFlowComposer](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/compose/StandardFlowComposer.html),
+[IFlowComposer](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/compose/IFlowComposer.html),
+[StandardFlowComposer](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/compose/StandardFlowComposer.html),
 and
-[ContainerController](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/container/ContainerController.html)
+[ContainerController](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/container/ContainerController.html)
 in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
@@ -990,10 +990,10 @@ user undo or redo specific edits. All three of these classes are part of the
 edit package.
 
 For more information, see
-[SelectionManager](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/edit/SelectionManager.html),
-[EditManager](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/edit/EditManager.html),
+[SelectionManager](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/edit/SelectionManager.html),
+[EditManager](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/edit/EditManager.html),
 and
-[UndoManager](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/undo/UndoManager.html)
+[UndoManager](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/undo/UndoManager.html)
 in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html)
 
@@ -1022,7 +1022,7 @@ TextFlow objects dispatch events in many circumstances, including:
 </div>
 
 For more information, see
-[flashx.textLayout.events](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/events/package-detail.html)
+[flashx.textLayout.events](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/events/package-detail.html)
 in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
@@ -1039,13 +1039,13 @@ in the
 <div>
 
 To position the
-[InlineGraphicElement](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/elements/InlineGraphicElement.html)
+[InlineGraphicElement](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/elements/InlineGraphicElement.html)
 within the text, you use the following properties:
 
 - `float` property of the InlineGraphicElement class
 
 - `clearFloats` property of the
-  [FlowElement](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/elements/FlowElement.html)
+  [FlowElement](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/elements/FlowElement.html)
 
 </div>
 
@@ -1085,10 +1085,10 @@ block, this example sets the `clearFloats` property on the second paragraph to
 
 Valid values for the `clearFloats` property are "left", "right", "end", "start",
 "none", and "both". The
-[ClearFloats](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/formats/ClearFloats.html)
+[ClearFloats](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/formats/ClearFloats.html)
 class defines these constants. You can also set the `clearFloats` property to
 "inherit", which is a constant defined by the
-[FormatValue](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flashx/textLayout/formats/FormatValue.html)
+[FormatValue](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/formats/FormatValue.html)
 class. The default value is "none".
 
 </div>

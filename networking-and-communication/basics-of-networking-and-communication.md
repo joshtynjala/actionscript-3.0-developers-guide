@@ -42,7 +42,7 @@ display content dynamically</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><a
-href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/URLLoader.html">URLLoader</a></p></td>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/URLLoader.html">URLLoader</a></p></td>
 <td><p>Any (text, XML, binary, etc.)</p></td>
 <td><p>HTTP, HTTPS</p></td>
 <td><p>Loads arbitrary formats of data. Your application is responsible
@@ -61,7 +61,7 @@ the FileReference class</a></p></td>
 </tr>
 <tr class="even">
 <td><p><a
-href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/NetConnection.html">NetConnection</a></p></td>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetConnection.html">NetConnection</a></p></td>
 <td><p>Video, audio, ActionScript Message Format (AMF)</p></td>
 <td><p>HTTP, HTTPS, RTMP, RTMFP</p></td>
 <td><p>Connects to video, audio and remote object streams.</p>
@@ -70,7 +70,7 @@ with video</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a
-href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/media/Sound.html">Sound</a></p></td>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/Sound.html">Sound</a></p></td>
 <td><p>Audio</p></td>
 <td><p>HTTP</p></td>
 <td><p>Loads and plays supported audio formats.</p>
@@ -79,7 +79,7 @@ external sound files</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><a
-href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/XMLSocket.html">XMLSocket</a></p></td>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/XMLSocket.html">XMLSocket</a></p></td>
 <td><p>XML</p></td>
 <td><p>TCP</p></td>
 <td><p>Exchanges XML messages with an XMLSocket server.</p>
@@ -88,7 +88,7 @@ sockets</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a
-href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/Socket.html">Socket</a></p></td>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/Socket.html">Socket</a></p></td>
 <td><p>Any</p></td>
 <td><p>TCP</p></td>
 <td><p>Connects to a TCP socket server.</p>
@@ -97,7 +97,7 @@ client sockets</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><a
-href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/SecureSocket.html">SecureSocket</a>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/SecureSocket.html">SecureSocket</a>
 (AIR)</p></td>
 <td><p>Any</p></td>
 <td><p>TCP with SSLv3 or TLSv1</p></td>
@@ -108,7 +108,7 @@ client sockets (AIR)</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a
-href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/ServerSocket.html">ServerSocket</a>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/ServerSocket.html">ServerSocket</a>
 (AIR)</p></td>
 <td><p>Any</p></td>
 <td><p>TCP</p></td>
@@ -118,7 +118,7 @@ sockets</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><a
-href="https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/DatagramSocket.html">DatagramSocket</a>
+href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/DatagramSocket.html">DatagramSocket</a>
 (AIR)</p></td>
 <td><p>Any</p></td>
 <td><p>UDP</p></td>
@@ -293,11 +293,11 @@ interface on the client computer:
 
 For more information, see:
 
-- [NetworkInfo](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/NetworkInfo.html)
+- [NetworkInfo](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetworkInfo.html)
 
-- [NetworkInterface](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/NetworkInterface.html)
+- [NetworkInterface](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetworkInterface.html)
 
-- [InterfaceAddress](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/InterfaceAddress.html)
+- [InterfaceAddress](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/InterfaceAddress.html)
 
 - [Flexpert: Detecting the network connection type with Flex 4.5](http://www.flexpert.be/2011/04/detecting-the-network-connection-type-with-flex-4-5/)
 
@@ -580,19 +580,19 @@ The following code example looks up the IP address of the host "example.com".
 
 For more information, see:
 
-- [DNSResolver](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/dns/DNSResolver.html)
+- [DNSResolver](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/dns/DNSResolver.html)
 
-- [DNSResolverEvent](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/events/DNSResolverEvent.html)
+- [DNSResolverEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/DNSResolverEvent.html)
 
-- [ARecord](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/dns/ARecord.html)
+- [ARecord](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/dns/ARecord.html)
 
-- [AAAARecord](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/dns/AAAARecord.html)
+- [AAAARecord](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/dns/AAAARecord.html)
 
-- [MXRecord](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/dns/MXRecord.html)
+- [MXRecord](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/dns/MXRecord.html)
 
-- [PTRRecord](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/dns/PTRRecord.html)
+- [PTRRecord](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/dns/PTRRecord.html)
 
-- [SRVRecord](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/dns/SRVRecord.html)
+- [SRVRecord](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/dns/SRVRecord.html)
 
 </div>
 

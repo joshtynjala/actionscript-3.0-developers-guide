@@ -3,7 +3,7 @@
 <div>
 
 The
-[LocalConnection](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/LocalConnection.html)
+[LocalConnection](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/LocalConnection.html)
 class enables communications between Adobe® AIR® applications, as well as
 between SWF content running in the browser. You can also use the LocalConnection
 class to communicate between an AIR application and SWF content running in the
@@ -48,7 +48,7 @@ if you need to allow communication between domains, you have several ways to
 implement security measures. For more information, see the discussion of the
 `connectionName` parameter of the `send()` method and the `allowDomain()` and
 `domain` entries in the
-[LocalConnection](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/LocalConnection.html)
+[LocalConnection](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/LocalConnection.html)
 class listing in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 

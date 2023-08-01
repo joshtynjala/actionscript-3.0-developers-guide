@@ -3,7 +3,7 @@
 <div>
 
 The
-[StageWebView](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/media/StageWebView.html)
+[StageWebView](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/StageWebView.html)
 class displays HTML content using the system browser control on mobile devices
 and using the standard Adobe® AIR® HTMLLoader control on desktop computers.
 Check the `StageWebView.isSupported` property to determine whether the class is

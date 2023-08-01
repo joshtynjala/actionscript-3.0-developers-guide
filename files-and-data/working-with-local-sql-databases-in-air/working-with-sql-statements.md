@@ -4,7 +4,7 @@
 
 An individual SQL statement (a query or command) is represented in the runtime
 as a
-[SQLStatement](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLStatement.html)
+[SQLStatement](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/SQLStatement.html)
 object. Follow these steps to create and execute a SQL statement:
 
 <div>
@@ -22,7 +22,7 @@ The SQLStatement object represents the SQL statement in your application.
 #### Specify which database the query runs against.
 
 To do this, set the SQLStatement object's `sqlConnection` property to the
-[SQLConnection](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLConnection.html)
+[SQLConnection](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/SQLConnection.html)
 instance that's connected with the desired database.
 
     // A SQLConnection named "conn" has been created previously
@@ -64,7 +64,7 @@ SQLStatement instance's `result` and `error` events.
     }
 
 Alternatively, you can specify listener methods using a
-[Responder](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/Responder.html)
+[Responder](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/Responder.html)
 object. In that case you create the Responder instance and link the listener
 methods to it.
 

@@ -3,7 +3,7 @@
 <div>
 
 The
-[HTMLLoader](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/html/HTMLLoader.html)
+[HTMLLoader](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/html/HTMLLoader.html)
 class of Adobe AIR defines the display object that can display HTML content in
 an AIR application. SWF-based applications can add an HTMLLoader control to an
 existing window or create an HTML window that automatically contains a

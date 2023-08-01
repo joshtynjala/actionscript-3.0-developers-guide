@@ -12,21 +12,21 @@ target="_self">IGraphicsData</a> interface. These classes act as value objects
 
 The following classes implement the IGraphicsData interface:
 
-- [GraphicsBitmapFill](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/GraphicsBitmapFill.html)
+- [GraphicsBitmapFill](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/GraphicsBitmapFill.html)
 
-- [GraphicsEndFill](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/GraphicsEndFill.html)
+- [GraphicsEndFill](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/GraphicsEndFill.html)
 
-- [GraphicsGradientFill](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/GraphicsGradientFill.html)
+- [GraphicsGradientFill](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/GraphicsGradientFill.html)
 
-- [GraphicsPath](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/GraphicsPath.html)
+- [GraphicsPath](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/GraphicsPath.html)
 
-- [GraphicsShaderFill](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/GraphicsShaderFill.html)
+- [GraphicsShaderFill](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/GraphicsShaderFill.html)
 
-- [GraphicsSolidFill](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/GraphicsSolidFill.html)
+- [GraphicsSolidFill](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/GraphicsSolidFill.html)
 
-- [GraphicsStroke](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/GraphicsStroke.html)
+- [GraphicsStroke](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/GraphicsStroke.html)
 
-- [GraphicsTrianglePath](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/display/GraphicsTrianglePath.html)
+- [GraphicsTrianglePath](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/GraphicsTrianglePath.html)
 
 </div>
 

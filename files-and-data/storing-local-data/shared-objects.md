@@ -577,7 +577,7 @@ the following example shows:
 <div>
 
 To destroy a
-[SharedObject](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/net/SharedObject.html)
+[SharedObject](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/SharedObject.html)
 on the client, use the `SharedObject.clear()` method. This does not destroy
 directories in the default path for the application's shared objects.
 

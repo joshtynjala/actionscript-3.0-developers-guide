@@ -1,7 +1,7 @@
 # Scripting the AIR HTML Container
 
 The
-[HTMLLoader](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/html/HTMLLoader.html)
+[HTMLLoader](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/html/HTMLLoader.html)
 class serves as the container for HTML content in Adobe® AIR®. The class
 provides many properties and methods, inherited from the Sprite class, for
 controlling the behavior and appearance of the object on the ActionScript® 3.0

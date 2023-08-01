@@ -17,7 +17,7 @@ they are necessary for most applications.
 <div>
 
 To create a database file, you first create a
-[SQLConnection](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLConnection.html)
+[SQLConnection](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/SQLConnection.html)
 instance. You call its `open()` method to open it in synchronous execution mode,
 or its `openAsync()` method to open it in asynchronous execution mode. The
 `open()` and `openAsync()` methods are used to open a connection to a database.
@@ -110,7 +110,7 @@ Note: Although the File class lets you point to a specific native file path,
 doing so can lead to applications that will not work across platforms. For
 example, the path C:\Documents and Settings\joe\test.db only works on Windows.
 For these reasons, it is best to use the static properties of the
-[File class](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/filesystem/File.html)
+[File class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/File.html)
 such as `File.applicationStorageDirectory`, as well as the `resolvePath()`
 method (as shown in the previous example). For more information, see
 [Paths of File objects](WS5b3ccc516d4fbf351e63e3d118666ade46-7d9e.html).
@@ -187,7 +187,7 @@ operations synchronously:
 <div>
 
 Creating a table in a database involves
-[executing a SQL statement](<https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLStatement.html#execute()>)
+[executing a SQL statement](<https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/SQLStatement.html#execute()>)
 on that database, using the same process that you use to execute a SQL statement
 such as `SELECT`, `INSERT`, and so forth. To create a table, you use a
 `CREATE TABLE` statement, which includes definitions of columns and constraints
@@ -197,7 +197,7 @@ for the new table. For more information about executing SQL statements, see
 The following example demonstrates creating a table named "employees" in an
 existing database file, using asynchronous execution mode. Note that this code
 assumes there is a
-[SQLConnection](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLConnection.html)
+[SQLConnection](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/SQLConnection.html)
 instance named `conn` that is already instantiated and is already connected to a
 database.
 
@@ -284,7 +284,7 @@ database.
 The following example demonstrates how to create a table named "employees" in an
 existing database file, using synchronous execution mode. Note that this code
 assumes there is a
-[SQLConnection](https://help.adobe.com/en_US/Flash/CS5/AS3LR/flash/data/SQLConnection.html)
+[SQLConnection](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/SQLConnection.html)
 instance named `conn` that is already instantiated and is already connected to a
 database.
 
