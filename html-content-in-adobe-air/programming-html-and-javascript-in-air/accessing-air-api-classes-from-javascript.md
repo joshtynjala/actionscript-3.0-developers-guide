@@ -43,7 +43,7 @@ access the advanced features that AIR provides, including:
 
   The AIR API classes are discussed throughout this guide. Other classes from
   the Flash Player API, which may be of interest to HTML developers, are
-  described in the _Adobe AIR API Reference for HTML Developers_ . ActionScript
+  described in the _Adobe AIR API Reference for HTML Developers_. ActionScript
   is the language used in SWF (Flash Player) content. However, JavaScript and
   ActionScript syntax are similar. (They are both based on versions of the
   ECMAScript language.) All built-in classes are available in both JavaScript

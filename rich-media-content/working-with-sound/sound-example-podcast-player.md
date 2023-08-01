@@ -142,7 +142,7 @@ The ActionScript 3.0 sound architecture is powerful but complex. Applications
 that only need basic sound loading and playback features can use a class that
 hides some of the complexity by providing a simpler set of method calls and
 events. In the world of software design patterns, such a class is called a
-_facade_ .
+_facade_.
 
 The SoundFacade class presents a single interface for performing the following
 tasks:

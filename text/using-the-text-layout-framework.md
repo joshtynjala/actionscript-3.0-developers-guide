@@ -570,7 +570,7 @@ in the
 
 Formats are inherited through the text flow hierarchy. If you assign an instance
 of TextLayoutFormat to a FlowElement instance with children, the framework
-initiates a process called a _cascade_ . During a cascade, the framework
+initiates a process called a _cascade_. During a cascade, the framework
 recursively examines each node in the hierarchy that inherits from your
 FlowElement. It then determines whether to assign the inherited values to each
 formatting property. The following rules are applied during the cascade:

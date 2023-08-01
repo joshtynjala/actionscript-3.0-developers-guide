@@ -4,7 +4,7 @@ Much of security model used by the Flash Player and AIR runtimes is based on the
 domain of origin for loaded SWF files, HTML, media, and other assets. Executable
 code in a file from a specific Internet domain, such as www.example.com, can
 always access all data from that domain. These assets are put in the same
-security grouping, known as a _security sandbox_ . (For more information, see
+security grouping, known as a _security sandbox_. (For more information, see
 [Security sandboxes](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e3f.html).)
 
 For example, ActionScript code in a SWF file can load SWF files, bitmaps, audio,

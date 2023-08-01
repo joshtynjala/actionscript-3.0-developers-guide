@@ -23,7 +23,7 @@ For example, consider the following HTML page:
     </html>
 
 This simple HTML page defines a JavaScript variable named _foo_ and a JavaScript
-function named _test()_ . Both of these are properties of the global `window`
+function named _test()_. Both of these are properties of the global `window`
 object of the page. Also, the `window.document` object includes a named P
 element (with the ID _p1_ ), which you can access using the `getElementById()`
 method. Once the page is loaded (when the HTMLLoader object dispatches the
@@ -57,7 +57,7 @@ shown in the following ActionScript code:
 To access the content of an HTML element, use the `innerHTML` property. For
 example, the previous code uses
 `html.window.document.getElementById("p1").innerHTML` to get the contents of the
-HTML element named _p1_ .
+HTML element named _p1_.
 
 You can also set properties of the HTML page from ActionScript. For example, the
 following example sets the contents of the `p1` element and the value of the

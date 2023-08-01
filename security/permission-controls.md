@@ -233,7 +233,7 @@ not loaded documents.
 Because Flash Player supports two kinds of server connections, there are two
 types of policy files—URL policy files and socket policy files.
 
-- Document-based connections require _URL policy files_ . These files let the
+- Document-based connections require _URL policy files_. These files let the
   server indicate that its data and documents are available to SWF files served
   from certain domains or from all domains.
 
@@ -266,10 +266,10 @@ non-application sandbox does require a policy file.
 By default, Flash Player (and AIR content that is not in the AIR application
 sandbox) first looks for a URL policy file named `crossdomain.xml` in the root
 directory of the server, and looks for a socket policy file on port 843. A file
-in either of these locations is called the _master policy file_ . (In the case
-of socket connections, Flash Player also looks for a socket policy file on the
-same port as the main connection. However, a policy file found on that port is
-not considered a master policy file.)
+in either of these locations is called the _master policy file_. (In the case of
+socket connections, Flash Player also looks for a socket policy file on the same
+port as the main connection. However, a policy file found on that port is not
+considered a master policy file.)
 
 In addition to specifying access permissions, the master policy file can also
 contain a _meta-policy_ statement. A meta-policy specifies which locations can

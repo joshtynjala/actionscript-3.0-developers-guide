@@ -25,7 +25,7 @@ The runtime classes are organized in a package structure, as in the following:
 
   This list is just a short subset of the classes in the AIRAliases.js file. The
   complete list of classes and package-level functions is provided in the _Adobe
-  AIR API Reference for HTML Developers_ .
+  AIR API Reference for HTML Developers_.
 
   In addition to commonly used runtime classes, the AIRAliases.js file includes
   aliases for commonly used package-level functions: `window.runtime.trace()`,

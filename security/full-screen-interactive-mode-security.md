@@ -2,7 +2,7 @@
 
 Flash Player 11.3 and later support full-screen interactive mode, in which
 content running in Flash Player can fill the entire screen _and accept text
-input_ . To enter full-screen interactive mode, the `displayState` property of
+input_. To enter full-screen interactive mode, the `displayState` property of
 the Stage is set to the `StageDisplayState.FULL_SCREEN_INTERACTIVE` constant.
 For more information, see
 [Working with full-screen mode](WS2E9C7F3B-6A7C-4c5d-8ADD-5B23446FBEEB.html).

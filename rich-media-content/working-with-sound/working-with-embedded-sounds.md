@@ -20,7 +20,7 @@ timeline or to the frames of a button state, use them with Behaviors, or use
 them directly in ActionScript code. This section describes how to use embedded
 sounds in ActionScript code with the Flash authoring tool. For information about
 the other ways to use embedded sounds in Flash, see "Importing Sounds" in _Using
-Flash_ .
+Flash_.
 
 #### To embed a sound file using the Flash authoring tool:
 

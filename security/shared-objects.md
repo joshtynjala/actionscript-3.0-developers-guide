@@ -63,7 +63,7 @@ the purposes of choosing a shared object store. You can specify a shared object
 `localPath` parameter that uses part or all of the pseudo-URL.
 
 Users and administrators can elect to disable the use of _third-party shared
-objects_ . This is the usage of shared objects by any SWF file that is executing
+objects_. This is the usage of shared objects by any SWF file that is executing
 in a web browser, when that SWF file's origin URL is from a different domain
 than the URL shown in the browser's address bar. Users and administrators may
 choose to disable third-party shared object usage for reasons of privacy,

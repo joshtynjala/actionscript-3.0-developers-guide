@@ -63,7 +63,7 @@ You can embed fonts in an application in many ways, including:
 - Creating and using a run-time shared library containing embedded font symbols
 
 For more details about how to embed fonts in applications, see "Embedded fonts
-for dynamic or input text fields" in _Using Flash_ .
+for dynamic or input text fields" in _Using Flash_.
 
 #### Embedding a font in Flex
 
@@ -79,7 +79,7 @@ You can only embed TrueType fonts directly in a Flex application. Fonts in other
 formats, such as Type 1 Postscript fonts, can first be embedded in a SWF file
 using Flash Professional and then that SWF file can be used in your Flex
 application. For more details about using embedded fonts from SWF files in Flex,
-see "Embedding fonts from SWF files" in _Using Flex 4_ .
+see "Embedding fonts from SWF files" in _Using Flex 4_.
 
 ## Controlling sharpness, thickness, and anti-aliasing
 

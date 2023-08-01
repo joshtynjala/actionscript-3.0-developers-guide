@@ -18,7 +18,7 @@ Center topic "Security" at
 The Flash Player and AIR runtimes classify assets (including SWF files) from the
 Internet in separate sandboxes that correspond to their domain of origin. For
 example, assets loaded from _example.com_ will be placed into a different
-security sandbox than assets loaded from _foo.org_ . By default, these files are
+security sandbox than assets loaded from _foo.org_. By default, these files are
 authorized to access any resources from their own server. Remote SWF files can
 be allowed to access additional data from other domains by explicit website and
 author permissions, such as URL policy files and the `Security.allowDomain()`
@@ -219,7 +219,7 @@ authoring tool.
 You can configure a SWF file for the local-with-filesystem sandbox or the
 local-with-networking sandbox by setting the `use-network` flag in the Adobe
 Flex compiler. For more information, see "About the application compiler
-options" in _Building and Deploying Adobe Flex 3 Applications_ .
+options" in _Building and Deploying Adobe Flex 3 Applications_.
 
 ## The Security.sandboxType property
 

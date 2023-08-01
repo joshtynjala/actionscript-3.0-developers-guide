@@ -82,7 +82,7 @@ scripting remote content, such as in a _mash-up_ application.
 
 Another way to allow application and non-application content to cross-script
 each other, and the only way to give non-application content access to AIR APIs,
-is to create a _sandbox bridge_ . A _parent-to-child_ bridge allows content in a
+is to create a _sandbox bridge_. A _parent-to-child_ bridge allows content in a
 child frame, iframe, or window to access designated methods and properties
 defined in the application sandbox. Conversely, a _child-to-parent_ bridge
 allows application content to access designated methods and properties defined

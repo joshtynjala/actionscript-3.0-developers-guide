@@ -207,7 +207,7 @@ application security sandbox:
 
 - Setting any property is _prohibited._
 
-- Function literals are _prohibited_ .
+- Function literals are _prohibited._
 
 However, while the code is loading, before the `onload` event, and during
 execution the `onload` event handler function, these restrictions do not apply

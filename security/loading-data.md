@@ -28,7 +28,7 @@ to the domain of the loading content, you can load the data.
 ## Connecting to sockets
 
 By default, the runtime looks for a socket policy file served from port 843. As
-with URL policy files, this file is called the _master policy file_ .
+with URL policy files, this file is called the _master policy file_.
 
 When policy files were first introduced in Flash Player 6, there was no support
 for socket policy files. Connections to socket servers were authorized by a

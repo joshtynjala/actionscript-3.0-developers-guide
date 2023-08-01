@@ -48,7 +48,7 @@ version. See
 Because AIR applications run directly on the desktop, with full access to the
 file system, the security model for HTML content is more stringent than the
 security model of a typical web browser. In AIR, only content loaded from the
-application installation directory is placed in the _application sandbox_ . The
+application installation directory is placed in the _application sandbox_. The
 application sandbox has the highest level of privilege and allows access to the
 AIR APIs. AIR places other content into isolated sandboxes based on where that
 content came from. Files loaded from the file system go into a local sandbox.

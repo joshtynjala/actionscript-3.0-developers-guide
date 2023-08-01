@@ -5,7 +5,7 @@ are served from the same domain—for example, the URL for one SWF file is
 http://www.example.com/swfA.swf and the URL for the other is
 http://www.example.com/swfB.swf—then code defined in one file can examine and
 modify variables, objects, properties, methods, and so on in the other, and vice
-versa. This is called _cross-scripting_ .
+versa. This is called _cross-scripting_.
 
 If the two files are served from different domains—for example,
 http://siteA.com/swfA.swf and http://siteB.com/swfB.swf—then, by default, Flash

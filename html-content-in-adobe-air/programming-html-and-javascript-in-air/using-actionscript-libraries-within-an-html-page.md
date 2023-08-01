@@ -60,7 +60,7 @@ For example, consider the following HTML page:
     </html>
 
 This simple HTML page has a JavaScript variable named _num_ and a JavaScript
-function named _getStatus()_ . Both of these are properties of the `window`
+function named _getStatus()_. Both of these are properties of the `window`
 object of the page. Also, the `window.document` object includes a named P
 element (with the ID _p1_ ).
 

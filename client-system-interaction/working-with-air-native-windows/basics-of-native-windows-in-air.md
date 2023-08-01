@@ -328,7 +328,7 @@ be unavailable because of user display options or hardware configuration.
 ### Transparency in an MXML application window
 
 By default, the background of an MXML window is opaque, even if you create the
-window as _transparent_ . (Notice the transparency effect at the corners of the
+window as _transparent_. (Notice the transparency effect at the corners of the
 window.) To present a transparent background for the window, set a background
 color and alpha value in the style sheet or \<mx:Style\> element contained in
 your application MXML file. For example, the following style declaration gives

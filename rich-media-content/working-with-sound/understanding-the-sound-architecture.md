@@ -28,7 +28,7 @@ Using Adobe Flash Professional, you can import WAV or AIFF sound files and then
 embed them into your application's SWF files in the mp3 format. The Flash
 Authoring tool also lets you compress embedded sound files to reduce their file
 size, though this size reduction comes at the expense of sound quality. For more
-information see "Importing Sounds" in _Using Flash_ .
+information see "Importing Sounds" in _Using Flash_.
 
 The ActionScript 3.0 sound architecture makes use of the following classes in
 the flash.media package.
