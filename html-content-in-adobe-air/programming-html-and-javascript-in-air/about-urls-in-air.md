@@ -1,0 +1,91 @@
+# About URLs in AIR
+
+<div>
+
+In HTML content running in AIR, you can use any of the following URL schemes in
+defining `src` attributes for `img`, `frame`, `iframe`, and `script` tags, in
+the `href` attribute of a `link` tag, or anywhere else you can provide a URL.
+
+<div>
+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p>URL scheme</p></th>
+<th><p>Description</p></th>
+<th><p>Example</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>file</p></td>
+<td><p>A path relative to the root of the file system.</p></td>
+<td><div>
+<pre><code>file:///c:/AIR Test/test.txt</code></pre>
+</div></td>
+</tr>
+<tr class="even">
+<td><p>app</p></td>
+<td><p>A path relative to the root directory of the installed
+application.</p></td>
+<td><div>
+<pre><code>app:/images</code></pre>
+</div></td>
+</tr>
+<tr class="odd">
+<td><p>app-storage</p></td>
+<td><p>A path relative to the application store directory. For each
+installed application, AIR defines a unique application store directory,
+which is a useful place to store data specific to that
+application.</p></td>
+<td><div>
+<pre><code>app-storage:/settings/prefs.xml</code></pre>
+</div></td>
+</tr>
+<tr class="even">
+<td><p>http</p></td>
+<td><p>A standard HTTP request.</p></td>
+<td><div>
+<pre><code>http://www.adobe.com</code></pre>
+</div></td>
+</tr>
+<tr class="odd">
+<td><p>https</p></td>
+<td><p>A standard HTTPS request.</p></td>
+<td><div>
+<pre><code>https://secure.example.com</code></pre>
+</div></td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+For more information about using URL schemes in AIR, see
+[URI schemes](WS5b3ccc516d4fbf351e63e3d118666ade46-7ee3.html).
+
+Many of AIR APIs, including the File, Loader, URLStream, and Sound classes, use
+a URLRequest object rather than a string containing the URL. The URLRequest
+object itself is initialized with a string, which can use any of the same url
+schemes. For example, the following statement creates a URLRequest object that
+can be used to request the Adobe home page:
+
+    var urlReq = new air.URLRequest("http://www.adobe.com/");
+
+For information about URLRequest objects see
+[HTTP communications](WS5b3ccc516d4fbf351e63e3d118666ade46-7ee2.html).
+
+</div>
+
+<div>
+
+<div>
+
+</div>
+
+</div>
