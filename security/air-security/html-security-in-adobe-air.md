@@ -32,7 +32,7 @@ The TextField class can display strings of HTML text. No JavaScript can be
 executed, but the text can include links and externally loaded images.
 
 For more information, see
-[Avoiding security-related JavaScript errors](WS5b3ccc516d4fbf351e63e3d118666ade46-7f0e.html).
+[Avoiding security-related JavaScript errors](../../html-content-in-adobe-air/programming-html-and-javascript-in-air/avoiding-security-related-javascript-errors.md).
 
 ## Overview on configuring your HTML-based application
 
@@ -62,7 +62,7 @@ use frames or iframes to place the content into a non-application sandbox.
 (Running content in a sandboxed child frame may be necessary when using some
 JavaScript application frameworks that rely on the `eval()` function.) For a
 complete list of the restrictions on JavaScript in the application sandbox, see
-[Code restrictions for content in different sandboxes](WS5b3ccc516d4fbf351e63e3d118666ade46-7eea.html).
+[Code restrictions for content in different sandboxes](#code-restrictions-for-content-in-different-sandboxes).
 
 Because HTML in AIR retains its ability to load remote, possibly insecure
 content, AIR enforces a same-origin policy that prevents content in one domain
@@ -149,15 +149,15 @@ SecurityError exception.
 ## Code restrictions for content in different sandboxes
 
 As discussed in the introduction to this topic,
-[HTML security in Adobe AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7f11.html),
-the runtime enforces rules and provides mechanisms for overcoming possible
-security vulnerabilities in HTML and JavaScript. This topic lists those
-restrictions. If code attempts to call these restricted APIs, the runtime throws
-an error with the message "Adobe AIR runtime security violation for JavaScript
-code in the application security sandbox."
+[HTML security in Adobe AIR](#html-security-in-adobe-air), the runtime enforces
+rules and provides mechanisms for overcoming possible security vulnerabilities
+in HTML and JavaScript. This topic lists those restrictions. If code attempts to
+call these restricted APIs, the runtime throws an error with the message "Adobe
+AIR runtime security violation for JavaScript code in the application security
+sandbox."
 
 For more information, see
-[Avoiding security-related JavaScript errors](WS5b3ccc516d4fbf351e63e3d118666ade46-7f0e.html).
+[Avoiding security-related JavaScript errors](../../html-content-in-adobe-air/programming-html-and-javascript-in-air/avoiding-security-related-javascript-errors.md).
 
 ### Restrictions on using the JavaScript eval() function and similar techniques
 
@@ -261,11 +261,12 @@ For other Ajax frameworks and JavaScript code libraries, check to see if the
 code in the framework or library works within these restrictions on dynamically
 generated code. If they do not, include any content that uses the framework or
 library in a non-application security sandbox. For details, see
-[Restrictions for JavaScript inside AIR](WS5b3ccc516d4fbf351e63e3d118676a3fc7-7fee.html)
+[Restrictions for JavaScript inside AIR](../security-sandboxes.md#restrictions-for-javascript-inside-air)
 and
-[Scripting between application and non-application content](WS5b3ccc516d4fbf351e63e3d118666ade46-7e3b.html).
+[Scripting between application and non-application content](./working-securely-with-untrusted-content.md#scripting-between-application-and-non-application-content).
 Adobe maintains a list of Ajax frameworks known to support the application
-security sandbox, at <http://www.adobe.com/products/air/develop/ajax/features/>.
+security sandbox, at
+<https://www.adobe.com/products/air/develop/ajax/features/>.
 
 Unlike content in the application security sandbox, JavaScript content in a
 non-application security sandbox _can_ call the `eval()` function to execute
@@ -292,7 +293,7 @@ seen as an undefined value.
 
 You can expose runtime functionality to content in a non-application sandbox by
 using a script bridge. For details, see and
-[Scripting between application and non-application content](WS5b3ccc516d4fbf351e63e3d118666ade46-7e3b.html).
+[Scripting between application and non-application content](./working-securely-with-untrusted-content.md#scripting-between-application-and-non-application-content).
 
 ### Restrictions on using XMLHttpRequest calls
 
@@ -316,7 +317,7 @@ request:
     </iframe>
 
 For more information, see
-[Scripting between content in different domains](WS5b3ccc516d4fbf351e63e3d118666ade46-7e5c.html).
+[Scripting between content in different domains](./scripting-between-content-in-different-domains.md).
 
 ### Restrictions on loading CSS, frame, iframe, and img elements (for content in non-application sandboxes)
 
@@ -348,9 +349,8 @@ open content in remote network sandboxes. It cannot use the `window.open()`
 method to open content from the application or local sandboxes.
 
 Content in the local-with-filesystem, local-with-networking, or local-trusted
-sandboxes (see
-[Security sandboxes](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e3f.html)) can only
-use the `window.open()` method to open content in local sandboxes. It cannot use
+sandboxes (see [Security sandboxes](../security-sandboxes.md)) can only use the
+`window.open()` method to open content in local sandboxes. It cannot use
 `window.open()` to open content from the application or remote sandboxes.
 
 ### Errors when calling restricted code
@@ -360,7 +360,7 @@ restrictions, the runtime dispatches a JavaScript error: "Adobe AIR runtime
 security violation for JavaScript code in the application security sandbox."
 
 For more information, see
-[Avoiding security-related JavaScript errors](WS5b3ccc516d4fbf351e63e3d118666ade46-7f0e.html).
+[Avoiding security-related JavaScript errors](../../html-content-in-adobe-air/programming-html-and-javascript-in-air/avoiding-security-related-javascript-errors.md).
 
 ## Sandbox protection when loading HTML content from a string
 
@@ -372,4 +372,4 @@ application sandbox and it has no access to AIR APIs. However, you can set the
 `placeLoadStringContentInApplicationSandbox` property of an HTMLLoader object to
 true to place HTML created using the `loadString()` method into the application
 sandbox. For more information, see
-[Loading HTML content from a string](WS5b3ccc516d4fbf351e63e3d118666ade46-7ed0.html).
+[Loading HTML content from a string](../../html-content-in-adobe-air/programming-html-and-javascript-in-air/about-the-htmlloader-class.md#loading-html-content-from-a-string).

@@ -56,7 +56,7 @@ content can be used:
   SWF file). Specify this for an image file from a domain other than that of the
   file containing the Loader object. If you set this property to `true`, the
   Loader checks the origin server for a URL policy file (see
-  [Website controls (policy files)](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e08.html)).
+  [Website controls (policy files)](./permission-controls.md#website-controls-policy-files)).
   If the server grants permission to the Loader domain, ActionScript from SWF
   files in the Loader domain can access data in the loaded image. In other
   words, you can use the `Loader.content` property to obtain a reference to the
@@ -95,10 +95,10 @@ content can be used:
   domain but the loaded SWF file is part of a different security domain, the
   domain you specify in `applicationDomain` is ignored. For more information,
   see
-  [Working with application domains](WSd75bf4610ec9e22f43855da312214da1d8f-8000.html).
+  [Working with application domains](../core-actionscript-classes/working-with-application-domains.md).
 
 For details, see
-[Specifying loading context](WS5b3ccc516d4fbf351e63e3d118a9b90204-7de0.html).
+[Specifying loading context](../display/display-programming/loading-display-content-dynamically.md#specifying-loading-context).
 
 An important property of a Loader object is the `contentLoaderInfo` property,
 which is a LoaderInfo object. Unlike most other objects, a LoaderInfo object is
@@ -108,7 +108,7 @@ the LoaderInfo object through the `DisplayObject.loaderInfo` property.
 LoaderInfo objects include information such as load progress, the URLs of loader
 and loadee, the trust relationship between loader and loadee, and other
 information. For more information, see
-[Monitoring loading progress](WS5b3ccc516d4fbf351e63e3d118a9b90204-7de1.html).
+[Monitoring loading progress](../display/display-programming/loading-display-content-dynamically.md#monitoring-loading-progress).
 
 ## Loading sound and videos
 
@@ -122,8 +122,7 @@ sandbox, the AIR application sandbox, or the local-trusted sandbox can access
 data in these loaded files.
 
 There are other restrictions on accessing data from loaded media. For details,
-see
-[Accessing loaded media as data](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d1b.html).
+see [Accessing loaded media as data](./accessing-loaded-media-as-data.md).
 
 ## Loading SWF files and images using the \<img\> tag in a text field
 
@@ -178,7 +177,7 @@ NetConnection class, passing an RTMP URL as the parameter. Flash Media Server
 can restrict connections and prevent content from downloading, based on the
 domain of the requesting file. For details, see the Flash Media Server
 documentation online at
-[www.adobe.com/go/learn_fms_docs_en](http://www.adobe.com/go/learn_fms_docs_en).
+[www.adobe.com/go/learn_fms_docs_en](https://www.adobe.com/go/learn_fms_docs_en).
 
 To use the `BitmapData.draw()`, `BitmapData.drawWithQuality()`, and
 `SoundMixer.computeSpectrum()` methods to extract run-time graphics and sound
@@ -186,6 +185,6 @@ data from RTMP streams, you must allow access on the server. Use the Server-Side
 ActionScript `Client.videoSampleAccess` and `Client.audioSampleAccess`
 properties to allow access to specific directories on Flash Media Server. For
 more information, see the
-[Server-Side ActionScript Language Reference](http://www.adobe.com/go/learn_fms_docs_en).
+[Server-Side ActionScript Language Reference](https://www.adobe.com/go/learn_fms_docs_en).
 (The `drawWithQuality` method is available in Flash Player 11.3 and higher; AIR
 3.3 and higher.)

@@ -36,7 +36,7 @@ functions and properties:
   the promised file is read. The object must implement the IDataInput interface.
   If the data is provided asynchronously, the object must also implement the
   IEventDispatcher interface and dispatch the necessary events (see
-  [Using an asynchronous data provider in a file promise](WSd75bf4610ec9e22f410f2f9d123d61de2b7-7fff.html)).
+  [Using an asynchronous data provider in a file promise](#using-an-asynchronous-data-provider-in-a-file-promise)).
 
 - `get relativePath():String` — Provides the path, including file name, for the
   created file. The path is resolved relative to the drop location chosen by the

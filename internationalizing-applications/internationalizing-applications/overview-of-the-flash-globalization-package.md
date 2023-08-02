@@ -31,7 +31,7 @@ ResourceBundle classes. For more information, see
 
 Adobe AIR 1.1 also contains some features to help localize AIR applications, as
 discussed in
-[Localizing AIR applications](WS9b644acd4ebe5999-3f67b89b12214f53776-7ffe.html).
+[Localizing AIR applications](../localizing-applications.md#localizing-air-applications).
 
 ## A general approach to internationalizing an application
 

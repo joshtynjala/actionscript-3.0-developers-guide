@@ -6,7 +6,7 @@ appears as program objects, rather than being displayed as media. Generally,
 content may load data from the same domain that the content originated from.
 However, content usually requires policy files in order to load data from other
 domains (see
-[Website controls (policy files)](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e08.html)).
+[Website controls (policy files)](./permission-controls.md#website-controls-policy-files)).
 
 Note: Content running in the AIR application sandbox is never served from a
 remote domain (unless the developer intentionally imports remote content into
@@ -69,7 +69,7 @@ are accepted values.
 Here is an example socket policy file:
 
     <?xml version="1.0"?>
-    <!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd">
+    <!DOCTYPE cross-domain-policy SYSTEM "https://www.adobe.com/xml/dtds/cross-domain-policy.dtd">
     <!-- Policy file for xmlsocket://socks.mysite.com -->
     <cross-domain-policy>
     	<allow-access-from domain="*" to-ports="507" />
@@ -137,7 +137,7 @@ Data sending occurs when code sends data to a server or resource. Sending data
 is always permitted for content from a network domain. A local SWF file can send
 data to network addresses only if it is in the local-trusted,
 local-with-networking, or AIR application sandbox. For more information, see
-[Local sandboxes](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c8f.html).
+[Local sandboxes](./security-sandboxes.md#local-sandboxes).
 
 You can use the `flash.net.sendToURL()` function to send data to a URL. Other
 methods also send requests to URLs. These include loading methods, such as

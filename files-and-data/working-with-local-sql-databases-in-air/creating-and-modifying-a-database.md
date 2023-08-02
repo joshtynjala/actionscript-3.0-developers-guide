@@ -27,7 +27,7 @@ database file on disk.
 The following code listing shows the process of creating a database file (a new
 database) using asynchronous execution mode. In this case, the database file is
 saved in the
-[Pointing to the application storage directory](WS5b3ccc516d4fbf351e63e3d118676a4c56-7fc6.html),
+[Pointing to the application storage directory](../working-with-the-file-system/working-with-file-objects-in-air.md#pointing-to-the-application-storage-directory),
 with the filename "DBSample.db":
 
     import flash.data.SQLConnection;
@@ -58,7 +58,7 @@ with the filename "DBSample.db":
     }
 
     <?xml version="1.0" encoding="utf-8"?>
-    <mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="init()">
+    <mx:WindowedApplication xmlns:mx="https://www.adobe.com/2006/mxml" creationComplete="init()">
     	<mx:Script>
     		<![CDATA[
     			import flash.data.SQLConnection;
@@ -101,7 +101,7 @@ For these reasons, it is best to use the static properties of the
 [File class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/File.html)
 such as `File.applicationStorageDirectory`, as well as the `resolvePath()`
 method (as shown in the previous example). For more information, see
-[Paths of File objects](WS5b3ccc516d4fbf351e63e3d118666ade46-7d9e.html).
+[Paths of File objects](../working-with-the-file-system/working-with-file-objects-in-air.md#paths-of-file-objects).
 
 To execute operations synchronously, when you open a database connection with
 the SQLConnection instance, call the `open()` method. The following example
@@ -130,7 +130,7 @@ operations synchronously:
     }
 
     <?xml version="1.0" encoding="utf-8"?>
-    <mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="init()">
+    <mx:WindowedApplication xmlns:mx="https://www.adobe.com/2006/mxml" creationComplete="init()">
     	<mx:Script>
     		<![CDATA[
     			import flash.data.SQLConnection;
@@ -213,7 +213,7 @@ database.
     }
 
     <?xml version="1.0" encoding="utf-8"?>
-    <mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="init()">
+    <mx:WindowedApplication xmlns:mx="https://www.adobe.com/2006/mxml" creationComplete="init()">
     	<mx:Script>
     		<![CDATA[
     			import flash.data.SQLConnection;
@@ -294,7 +294,7 @@ database.
     }
 
     <?xml version="1.0" encoding="utf-8"?>
-    <mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="init()">
+    <mx:WindowedApplication xmlns:mx="https://www.adobe.com/2006/mxml" creationComplete="init()">
     	<mx:Script>
     		<![CDATA[
     			import flash.data.SQLConnection;

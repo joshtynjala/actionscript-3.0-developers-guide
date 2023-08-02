@@ -51,7 +51,7 @@ More Help topics
 
 [Adobe BlazeDS](http://opensource.adobe.com/wiki/display/blazeds/BlazeDS)
 
-[Adobe LiveCycle ES2](http://www.adobe.com/devnet/livecycle/)
+[Adobe LiveCycle ES2](https://www.adobe.com/devnet/livecycle/)
 
 [REST architecture](http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm)
 

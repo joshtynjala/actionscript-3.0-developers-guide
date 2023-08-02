@@ -416,22 +416,28 @@ corresponding web page and displays it as a snapshot on the stage.
 
 ## Adobe recommends
 
-> <h3 id="air2.5-stagewebview-demo-oauth-support"><a href="http://goo.gl/QS3iW"><img src="../img/mark_doherty.png" /> AIR2.5 StageWebView demo – OAuth Support</a></h3>
-> <a href="http://www.flashmobileblog.com/about/">Mark Doherty</a>
-> Evangelist Mark Doherty demonstrates how to log in to an OAuth protected site like Twitter using the StageWebView class.
+> ### [![](../img/mark_doherty.png) AIR2.5 StageWebView demo – OAuth Support](http://goo.gl/QS3iW)
+>
+> Evangelist [Mark Doherty](http://www.flashmobileblog.com/about/) demonstrates
+> how to log in to an OAuth protected site like Twitter using the StageWebView
+> class.
 
-> <h3 id="making-the-most-of-stagewebview"><img src="../img/sean_voisen.png" /> <a
-> href="http://goo.gl/5sPwj">Making the most of StageWebView</a></h3>
+> ### ![](../img/sean_voisen.png) [Making the most of StageWebView](http://goo.gl/5sPwj)
+>
 > Sean Voisen
 
-> <h3 id="html-web-view-in-air-for-android"><img src="../img/jon_campos.png" /> <a href="http://goo.gl/RSjqN">HTML Web View in Air for Android</a></h3>
+> ### ![](../img/jon_campos.png) [HTML Web View in Air for Android](http://goo.gl/RSjqN)
+>
 > Jonathan Campos
 
-> <h3 id="create-a-basic-web-browser-with-stagewebview"><img src="../img/rich_tretola.png" /> <a href="http://goo.gl/1PS3G">Create a basic web browser with StageWebView</a></h3>
+> ### ![](../img/rich_tretola.png) [Create a basic web browser with StageWebView](http://goo.gl/1PS3G)
+>
 > Rich Tretola
 
-> <h3 id="air-mobile-stagewebview-uicomponent"><img src="../img/sonke_rohde.png" /> <a href="http://goo.gl/qRaRY">AIR Mobile StageWebView UIComponent</a></h3>
+> ### ![](../img/sonke_rohde.png) [AIR Mobile StageWebView UIComponent](http://goo.gl/qRaRY)
+>
 > Sönke Rohde
 
-> <h3 id="using-stagewebview-within-a-uicomponent-in-mobile"><img src="../img/judah_frangipane.png" /> <a href="http://goo.gl/GOQPg">Using StageWebView within a UIComponent in Mobile</a></h3>
+> ### ![](../img/judah_frangipane.png) [Using StageWebView within a UIComponent in Mobile](http://goo.gl/GOQPg)
+>
 > Judah Frangipane

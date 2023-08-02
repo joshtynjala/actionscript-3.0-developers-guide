@@ -3,40 +3,40 @@
 For quick explanations and code examples of working with native windows in AIR,
 see the following quick start articles on the Adobe Developer Connection:
 
-- [Creating a transparent window application](http://www.adobe.com/go/learn_air_qs_transparent_flex_en)
+- [Creating a transparent window application](https://www.adobe.com/go/learn_air_qs_transparent_flex_en)
   (Flex)
 
-- [Interacting with a window](http://www.adobe.com/go/learn_air_qs_window_flex_en)
+- [Interacting with a window](https://www.adobe.com/go/learn_air_qs_window_flex_en)
   (Flex)
 
-- [Customizing the look and feel of a native window](http://www.adobe.com/go/learn_air_qs_customwindow_flex_en)
+- [Customizing the look and feel of a native window](https://www.adobe.com/go/learn_air_qs_customwindow_flex_en)
   (Flex)
 
-- [Launching windows](http://www.adobe.com/go/learn_air_qs_launchwindow_flex_en)
+- [Launching windows](https://www.adobe.com/go/learn_air_qs_launchwindow_flex_en)
   (Flex)
 
-- [Creating toast-style windows](http://www.adobe.com/go/learn_air_qs_toastwindow_flex_en)
+- [Creating toast-style windows](https://www.adobe.com/go/learn_air_qs_toastwindow_flex_en)
   (Flex)
 
-- [Controlling the display order of windows](http://www.adobe.com/go/learn_air_qs_zorder_flex_en)
+- [Controlling the display order of windows](https://www.adobe.com/go/learn_air_qs_zorder_flex_en)
   (Flex)
 
-- [Creating resizable, non-rectangular windows](http://www.adobe.com/go/learn_air_qs_nonrectwindow_flex_en)
+- [Creating resizable, non-rectangular windows](https://www.adobe.com/go/learn_air_qs_nonrectwindow_flex_en)
   (Flex)
 
-- [Interacting with a window](http://www.adobe.com/go/learn_air_qs_window_flash_en)
+- [Interacting with a window](https://www.adobe.com/go/learn_air_qs_window_flash_en)
   (Flash)
 
-- [Customizing the look and feel of a native window](http://www.adobe.com/go/learn_air_qs_customwindow_flash_en)
+- [Customizing the look and feel of a native window](https://www.adobe.com/go/learn_air_qs_customwindow_flash_en)
   (Flash)
 
-- [Creating toast-style windows](http://www.adobe.com/go/learn_air_qs_toastwindow_flash_en)
+- [Creating toast-style windows](https://www.adobe.com/go/learn_air_qs_toastwindow_flash_en)
   (Flash)
 
-- [Controlling the display order of windows](http://www.adobe.com/go/learn_air_qs_zorder_flash_en)
+- [Controlling the display order of windows](https://www.adobe.com/go/learn_air_qs_zorder_flash_en)
   (Flash)
 
-- [Creating resizable, non-rectangular windows](http://www.adobe.com/go/learn_air_qs_nonrectwindow_flash_en)
+- [Creating resizable, non-rectangular windows](https://www.adobe.com/go/learn_air_qs_nonrectwindow_flash_en)
   (Flash)
 
 AIR provides an easy-to-use, cross-platform window API for creating native
@@ -310,7 +310,7 @@ pixels.
 Transparency cannot be used with windows that have system chrome. In addition,
 SWF and PDF content in HTML may not display in transparent windows. For more
 information, see
-[Considerations when loading SWF or PDF content in an HTML page](WS5b3ccc516d4fbf351e63e3d118676a3e36-7ff9.html).
+[Considerations when loading SWF or PDF content in an HTML page](../../html-content-in-adobe-air/scripting-the-air-html-container/display-properties-of-htmlloader-objects.md#considerations-when-loading-swf-or-pdf-content-in-an-html-page).
 
 The static `NativeWindow.supportsTransparency` property reports whether window
 transparency is available. When transparency is not supported, the application

@@ -142,11 +142,14 @@ More Help topics
 
 ## Adobe recommends
 
-> <h3 id="flash-pro-cs5.5-mobile-androidios-part-2-project-2-accelerometer-and-debugging"><a href="http://goo.gl/0GkPa"><img src="../img/antonio_holguin.png" /> Flash Pro CS5.5 Mobile (Android/iOS) – Part 2: Project 2 Accelerometer and Debugging</a></h3>
-> <a href="http://goo.gl/oTba7">Antonio Holguin</a>
+> ### [![](../img/antonio_holguin.png) Flash Pro CS5.5 Mobile (Android/iOS) – Part 2: Project 2 Accelerometer and Debugging](http://goo.gl/0GkPa)
+>
+> [Antonio Holguin](http://goo.gl/oTba7)
 
->  <h3 id="air-and-the-accelerometer"><a href="http://goo.gl/eHe2T"><img src="../img/michael_chaize.png" /> AIR and the Accelerometer</a></h3>
-> <a href="http://www.riagora.com/">Michaël Chaize</a>
+> ### [![](../img/michael_chaize.png) AIR and the Accelerometer](http://goo.gl/eHe2T)
+>
+> [Michaël Chaize](http://www.riagora.com/)
 
-> <h3 id="air-for-android-accelerometer"><a href="http://goo.gl/X224z"><img src="../img/jon_campos.png" /> Air for Android: Accelerometer</a></h3>
-> <a href="http://www.unitedmindset.com/jonbcampos/">Jonathan Campos</a>
+> ### [![](../img/jon_campos.png) Air for Android: Accelerometer](http://goo.gl/X224z)
+>
+> [Jonathan Campos](http://www.unitedmindset.com/jonbcampos/)

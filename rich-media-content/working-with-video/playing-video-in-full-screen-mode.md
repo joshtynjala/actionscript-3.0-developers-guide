@@ -8,7 +8,7 @@ saver and power-saving options are disabled during play until either the video
 input stops or the user exits full-screen mode.
 
 For full details on using full-screen mode, see
-[Working with full-screen mode](WS2E9C7F3B-6A7C-4c5d-8ADD-5B23446FBEEB.html).
+[Working with full-screen mode](../../display/display-programming/setting-stage-properties.md#working-with-full-screen-mode).
 
 #### Enabling full-screen mode for Flash Player in a browser
 
@@ -30,7 +30,7 @@ parameter. The following example shows the `allowFullScreen` parameter in an
     		quality="high"
     		allowScriptAccess="sameDomain"
     		type="application/x-shockwave-flash"
-    		pluginspage="http://www.adobe.com/go/getflashplayer">
+    		pluginspage="https://www.adobe.com/go/getflashplayer">
     	</embed>
     	...
     </object>
@@ -173,6 +173,6 @@ Player applications can often profit by switching to the StageVideo class from
 the Video class (or Camera class; Flash Player 11.4/AIR 3.4 and higher).
 
 For more information on hardware acceleration in full-screen mode, see
-[Working with full-screen mode](WS2E9C7F3B-6A7C-4c5d-8ADD-5B23446FBEEB.html).
+[Working with full-screen mode](../../display/display-programming/setting-stage-properties.md#working-with-full-screen-mode).
 For more information on StageVideo, see
 [Using the StageVideo class for hardware accelerated presentation](./using-the-stagevideo-class-for-hardware-accelerated-presentation.md).

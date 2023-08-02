@@ -13,33 +13,33 @@ fired and any `load` event handlers have exited. Attempting to use the following
 types of JavaScript statements that evaluate and execute potentially insecure
 strings generates JavaScript errors:
 
-- [eval() function](WS5b3ccc516d4fbf351e63e3d118666ade46-7eff.html)
+- [eval() function](#eval-function)
 
-- [setTimeout() and setInterval()](WS5b3ccc516d4fbf351e63e3d118666ade46-7efb.html)
+- [setTimeout() and setInterval()](#settimeout-and-setinterval)
 
-- [Function constructor](WS5b3ccc516d4fbf351e63e3d118666ade46-7efa.html)
+- [Function constructor](#function-constructor)
 
   In addition, the following types of JavaScript statements fail without
   generating an unsafe JavaScript error:
 
-- [javascript: URLs](WS5b3ccc516d4fbf351e63e3d118666ade46-7ef9.html)
+- [javascript: URLs](#javascript-urls)
 
-- [Event callbacks assigned through onevent attributes in innerHTML and outerHTML statements](WS5b3ccc516d4fbf351e63e3d118666ade46-7ef8.html)
+- [Event callbacks assigned through onevent attributes in innerHTML and outerHTML statements](#event-callbacks-assigned-through-onevent-attributes-in-innerhtml-and-outerhtml-statements)
 
-- [Loading JavaScript files from outside the application installation directory](WS5b3ccc516d4fbf351e63e3d118666ade46-7ef7.html)
+- [Loading JavaScript files from outside the application installation directory](#loading-javascript-files-from-outside-the-application-installation-directory)
 
-- [document.write() and document.writeln()](WS5b3ccc516d4fbf351e63e3d118666ade46-7ef6.html)
+- [document.write() and document.writeln()](#documentwrite-and-documentwriteln)
 
-- [Synchronous XMLHttpRequests before the load event or during a load event handler](WS5b3ccc516d4fbf351e63e3d118666ade46-7ef5.html)
+- [Synchronous XMLHttpRequests before the load event or during a load event handler](#synchronous-xmlhttprequests-before-the-load-event-or-during-a-load-event-handler)
 
-- [Dynamically created script elements](WS5b3ccc516d4fbf351e63e3d118666ade46-7ef4.html)
+- [Dynamically created script elements](#dynamically-created-script-elements)
 
   Note: In some restricted cases, evaluation of strings is permitted. See
-  [Code restrictions for content in different sandboxes](WS5b3ccc516d4fbf351e63e3d118666ade46-7eea.html)
+  [Code restrictions for content in different sandboxes](../../security/air-security/html-security-in-adobe-air.md#code-restrictions-for-content-in-different-sandboxes)
   for more information.
 
   Adobe maintains a list of Ajax frameworks known to support the application
-  security sandbox, at <http://www.adobe.com/go/airappsandboxframeworks>.
+  security sandbox, at <https://www.adobe.com/go/airappsandboxframeworks>.
 
   The following sections describe how to rewrite scripts to avoid these unsafe
   JavaScript errors and silent failures for code running in the application
@@ -51,10 +51,10 @@ In most cases, you can rewrite or restructure an application to avoid
 security-related JavaScript errors. However, when rewriting or restructuring is
 not possible, you can load the application content into a different sandbox
 using the technique described in
-[Loading application content into a non-application sandbox](WS5b3ccc516d4fbf351e63e3d118666ade46-7f07.html).
+[Loading application content into a non-application sandbox](./cross-scripting-content-in-different-security-sandboxes.md#loading-application-content-into-a-non-application-sandbox).
 If that content also must access AIR APIs, you can create a sandbox bridge, as
 described in
-[Setting up a sandbox bridge interface](WS5b3ccc516d4fbf351e63e3d118666ade46-7f06.html).
+[Setting up a sandbox bridge interface](./cross-scripting-content-in-different-security-sandboxes.md#setting-up-a-sandbox-bridge-interface).
 
 ## eval() function
 
@@ -205,7 +205,7 @@ Loading script files from outside the application sandbox is not permitted. No
 security error is generated. All script files that run in the application
 sandbox must be installed in the application directory. To use external scripts
 in a page, you must map the page to a different sandbox. See
-[Loading application content into a non-application sandbox](WS5b3ccc516d4fbf351e63e3d118666ade46-7f07.html).
+[Loading application content into a non-application sandbox](./cross-scripting-content-in-different-security-sandboxes.md#loading-application-content-into-a-non-application-sandbox).
 
 ## document.write() and document.writeln()
 

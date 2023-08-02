@@ -14,12 +14,10 @@ StageVideo.
 
 ![](../../img/byline.png) Downloadable source code and additional details for
 the stage video feature are available at
-<a href="http://www.adobe.com/go/learn_as3_usingstagevideo_en"
-target="_self">Getting Started with Stage Video</a>.
+[Getting Started with Stage Video](https://www.adobe.com/go/learn_as3_usingstagevideo_en).
 
 ![](../../img/byline.png) For a StageVideo quick start tutorial, see
-<a href="http://www.adobe.com/go/learn_as3_workingwithstagevideo_en"
-target="_self">Working with Stage Video</a>.
+[Working with Stage Video](https://www.adobe.com/go/learn_as3_workingwithstagevideo_en).
 
 More Help topics
 

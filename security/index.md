@@ -12,7 +12,7 @@ comprehensively explain all implementation details, usage scenarios, or
 ramifications for using certain APIs. For a more detailed discussion of Flash
 Player security concepts, see the Flash Player Developer Center topic "Security"
 at
-[www.adobe.com/go/devnet_security_en](http://www.adobe.com/go/devnet_security_en).
+[www.adobe.com/go/devnet_security_en](https://www.adobe.com/go/devnet_security_en).
 
 - [Flash Platform security overview](./flash-platform-security-overview.md)
 - [Security sandboxes](./security-sandboxes.md)

@@ -30,4 +30,4 @@ original data type.
 
 For more information about the available column affinity types and using data
 types in SQL statements, see the
-[Data type support](WSd47bd22bdd97276f2aceae3b1262b7f2d43-8000.html).
+[Data type support](../../appendixes/sql-support-in-local-databases/data-type-support.md).

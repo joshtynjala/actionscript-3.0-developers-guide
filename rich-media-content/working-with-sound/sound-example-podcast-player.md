@@ -359,9 +359,8 @@ whenever a new TimerEvent arrives:
     }
 
 The `onPlayTimer()` method implements the size estimation technique described in
-the section
-[Monitoring playback](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d1e.html). Then it
-creates a new ProgressEvent instance with an event type of
+the section [Monitoring playback](./playing-sounds.md#monitoring-playback). Then
+it creates a new ProgressEvent instance with an event type of
 `SoundFacade.PLAY_PROGRESS`, with the `bytesLoaded` property set to the current
 position of the SoundChannel object and the `bytesTotal` property set to the
 estimated length of the sound data.

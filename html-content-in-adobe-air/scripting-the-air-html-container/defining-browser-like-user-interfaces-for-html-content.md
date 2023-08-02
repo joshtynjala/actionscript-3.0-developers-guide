@@ -114,7 +114,7 @@ affects the user interface, by extending the HTMLHost class:
 
         <?xml version="1.0" encoding="utf-8"?>
         <mx:WindowedApplication
-        	xmlns:mx="http://www.adobe.com/2006/mxml"
+        	xmlns:mx="https://www.adobe.com/2006/mxml"
         	layout="vertical"
         	applicationComplete="init()">
         	<mx:Script>

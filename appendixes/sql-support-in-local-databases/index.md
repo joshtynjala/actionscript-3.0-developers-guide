@@ -2,7 +2,7 @@
 
 Adobe AIR includes a SQL database engine with support for local SQL databases
 with many standard SQL features, using the open source
-[SQLite](http://www.sqlite.org) database system. The runtime does not specify
+[SQLite](https://www.sqlite.org) database system. The runtime does not specify
 how or where database data is stored on the file system. Each database is stored
 completely within a single file. A developer can specify the location in the
 file system where the database file is stored, and a single AIR application can
@@ -69,5 +69,5 @@ used:
   - Other characters, unless otherwise indicated, represent those literal
     characters.
 
-- [Supported SQL syntax](WSd47bd22bdd97276f1365b8c112629d7c47c-8000.html)
-- [Data type support](WSd47bd22bdd97276f2aceae3b1262b7f2d43-8000.html)
+- [Supported SQL syntax](./supported-sql-syntax.md)
+- [Data type support](./data-type-support.md)

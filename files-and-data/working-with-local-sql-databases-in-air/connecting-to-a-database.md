@@ -16,7 +16,7 @@ for the SQLConnection instance's `open` event in order to know when the
 The following example shows how to open an existing database file for
 asynchronous execution. The database file is named "DBSample.db" and is located
 in the user's
-[Pointing to the application storage directory](WS5b3ccc516d4fbf351e63e3d118676a4c56-7fc6.html).
+[Pointing to the application storage directory](../working-with-the-file-system/working-with-file-objects-in-air.md#pointing-to-the-application-storage-directory).
 
     import flash.data.SQLConnection;
     import flash.data.SQLMode;
@@ -47,7 +47,7 @@ in the user's
     }
 
     <?xml version="1.0" encoding="utf-8"?>
-    <mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="init()">
+    <mx:WindowedApplication xmlns:mx="https://www.adobe.com/2006/mxml" creationComplete="init()">
     	<mx:Script>
     		<![CDATA[
     			import flash.data.SQLConnection;
@@ -87,7 +87,7 @@ in the user's
 The following example shows how to open an existing database file for
 synchronous execution. The database file is named "DBSample.db" and is located
 in the user's
-[Pointing to the application storage directory](WS5b3ccc516d4fbf351e63e3d118676a4c56-7fc6.html).
+[Pointing to the application storage directory](../working-with-the-file-system/working-with-file-objects-in-air.md#pointing-to-the-application-storage-directory).
 
     import flash.data.SQLConnection;
     import flash.data.SQLMode;
@@ -112,7 +112,7 @@ in the user's
     }
 
     <?xml version="1.0" encoding="utf-8"?>
-    <mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="init()">
+    <mx:WindowedApplication xmlns:mx="https://www.adobe.com/2006/mxml" creationComplete="init()">
     	<mx:Script>
     		<![CDATA[
     			import flash.data.SQLConnection;

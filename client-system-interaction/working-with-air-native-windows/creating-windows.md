@@ -68,7 +68,7 @@ Setting _systemChrome_ to _standard_ when _transparent_ is `true` or `type` is
 Note: You cannot set the initialization properties for a window created with the
 JavaScript `window.open()` function. You can, however, override how these
 windows are created by implementing your own HTMLHost class. See
-[Handling JavaScript calls to window.open()](WS5b3ccc516d4fbf351e63e3d118666ade46-7e72.html)
+[Handling JavaScript calls to window.open()](../../html-content-in-adobe-air/scripting-the-air-html-container/defining-browser-like-user-interfaces-for-html-content.md#handling-javascript-calls-to-windowopen)
 for more information.
 
 When you create a window with the Flex mx:Window class, specify the
@@ -157,7 +157,7 @@ The following example creates a simple WindowedApplication component that sets
 its x and y coordinates:
 
     <?xml version="1.0" encoding="utf-8"?>
-    <mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml"
+    <mx:WindowedApplication xmlns:mx="https://www.adobe.com/2006/mxml"
     	applicationComplete="placeWindow()">
     	<mx:Script>
     	<![CDATA[
@@ -218,7 +218,7 @@ chrome is created to display the content at the specified URL. For example:
 
 Note: You can extend the HTMLHost class in ActionScript to customize the window
 created with the JavaScript `window.open()` function. See
-[About extending the HTMLHost class](WS5b3ccc516d4fbf351e63e3d118666ade46-7e6d.html).
+[About extending the HTMLHost class](../../html-content-in-adobe-air/scripting-the-air-html-container/defining-browser-like-user-interfaces-for-html-content.md#about-extending-the-htmlhost-class).
 
 Content in the application security sandbox has access to the more powerful
 method of creating windows, `HTMLLoader.createRootWindow()`. With this method,

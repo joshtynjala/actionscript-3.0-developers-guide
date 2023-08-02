@@ -371,8 +371,8 @@ waiting for a request and can send data to every connected client connected.
 In Flash Player, and in Adobe AIR content outside the application sandbox, XML
 socket connections require the presence of a socket policy file on the target
 server. For more information, see
-[Website controls (policy files)](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e08.html)
-and [Connecting to sockets](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c63.html).
+[Website controls (policy files)](../security/permission-controls.md#website-controls-policy-files)
+and [Connecting to sockets](../security/loading-data.md#connecting-to-sockets).
 
 The XMLSocket class cannot tunnel through firewalls automatically because,
 unlike the Real-Time Messaging Protocol (RTMP), XMLSocket has no HTTP tunneling

@@ -33,8 +33,8 @@ that share the same namespace as classes in the loading SWF file, you may need
 to create a new application domain for the loaded SWF file in order to avoid
 namespace conflicts. For more information on security and application domain
 considerations, see
-[Working with application domains](../../core-actionscript-classes/working-with-application-domains/)
-and [Loading content](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c83.html).
+[Working with application domains](../../core-actionscript-classes/working-with-application-domains.md)
+and [Loading content](../../security/loading-content.md).
 
 When the external SWF file is successfully loaded, it can be accessed through
 the `Loader.content` property. If the external SWF file is published for
@@ -43,7 +43,7 @@ which class it extends.
 
 There are a few differences for loading a SWF file in Adobe AIR for iOS versus
 other platforms. For more information, see
-[Loading SWF files in AIR for iOS](WS2f73111e7a180bd0-3db1ea4613c45877121-8000.html).
+[Loading SWF files in AIR for iOS](../display-programming/loading-display-content-dynamically.md#loading-swf-files-in-air-for-ios).
 
 ## Considerations for loading an older SWF file
 

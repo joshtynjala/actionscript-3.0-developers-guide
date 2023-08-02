@@ -130,7 +130,7 @@ character that consists of multiple glyphs. The letter "a" and the dot on an
 Rotating glyphs is relevant in some Asian languages in which you want to rotate
 the lines to vertical but not rotate the characters within the lines. For more
 information on rotating Asian text, see
-[Justifying East Asian text](WS9dd7ed846a005b294b857bfa122bd808ea6-7fec.html).
+[Justifying East Asian text](./controlling-text.md#justifying-east-asian-text).
 
 Here is an example of rotating both a block of text and the glyphs within, as
 you would with Asian text. The example also uses a Japanese font:

@@ -74,14 +74,14 @@ objects corresponding to physical devices and network drives mounted at
 particular locations.
 
 The `File.getRootDirectories()` method lists the root directories (see
-[Pointing to the file system root](WS5b3ccc516d4fbf351e63e3d118676a4c56-7fc5.html).
+[Pointing to the file system root](./working-with-file-objects-in-air.md#pointing-to-the-file-system-root).
 However, the StorageVolume objects (enumerated by the
 `StorageVolumeInfo.getStorageVolumes()` method) provides more information about
 the storage volumes.
 
 You can use the `spaceAvailable` property of the `rootDirectory` property of a
 StorageVolume object to get the space available on a storage volume. (See
-[Determining space available on a volume](WSC2FAD3B6-D59A-4e4d-B63F-9846584CF5D5.html).)
+[Determining space available on a volume](./working-with-file-objects-in-air.md#determining-space-available-on-a-volume).)
 
 More Help topics
 

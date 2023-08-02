@@ -3,9 +3,9 @@
 AIR and WebKit define a couple of non-standard HTML elements and attributes,
 including:
 
-[HTML frame and iframe elements](WS5b3ccc516d4fbf351e63e3d118666ade46-7edb.html)
+[HTML frame and iframe elements](#html-frame-and-iframe-elements)
 
-[HTML element event handlers](WS5b3ccc516d4fbf351e63e3d118666ade46-7ea4.html)
+[HTML element event handlers](#html-element-event-handlers)
 
 ## HTML frame and iframe elements
 
@@ -142,9 +142,9 @@ parent sandbox bridge:
     </html>
 
 For more information, see
-[Cross-scripting content in different security sandboxes](WS5b3ccc516d4fbf351e63e3d118666ade46-7f08.html)
+[Cross-scripting content in different security sandboxes](../programming-html-and-javascript-in-air/cross-scripting-content-in-different-security-sandboxes.md)
 and
-[HTML security in Adobe AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7f11.html).
+[HTML security in Adobe AIR](../../security/air-security/html-security-in-adobe-air.md).
 
 ## HTML element event handlers
 
@@ -190,7 +190,7 @@ Note: If you set the `document.designMode` property to `on`, then all elements
 in the document are editable, regardless of the setting of `contentEditable` for
 an individual element. However, setting `designMode` to `off`, does not disable
 editing of elements for which `contentEditable` is `true`. See
-[Document.designMode property](WS5b3ccc516d4fbf351e63e3d118666ade46-7ec0.html)
+[Document.designMode property](./javascript-in-air.md#documentdesignmode-property)
 for additional information.
 
 ## Data: URLs

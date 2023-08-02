@@ -50,7 +50,7 @@ type of object. When you call the `getSharedProperty()` method, the object
 that's returned is a copy of the object passed in to `setSharedProperty()` and
 not a reference to the same object, except in a few special cases. The specifics
 of how data is shared are explained in
-[Shared references and copied values](WS2f73111e7a180bd0d047eb7139123f4689-8000.html).
+[Shared references and copied values](#shared-references-and-copied-values).
 
 The biggest advantage of using a shared property to pass data between workers is
 that it's available even before the worker is running. You can call a background
@@ -104,14 +104,14 @@ MessageChannel object's `receive()` method.
 
     private function handleIncomingMessage(event:Event):void
     {
-    	var message:String = incomingChannel.receive() as String;
+    	  var message:String = incomingChannel.receive() as String;
     }
 
 The object returned by the receive method has the same data type as the object
 that was passed in to the `send()` method. The received object is a copy of the
 object passed in by the sender and not a reference to the object in the sending
 worker, unless it is one of a few data types, as described in
-[Shared references and copied values](WS2f73111e7a180bd0d047eb7139123f4689-8000.html).
+[Shared references and copied values](#shared-references-and-copied-values).
 
 ## Sharing data using a shareable ByteArray
 
@@ -121,7 +121,7 @@ different locations in the system's memory. Consequently, each copy of the
 object that's received increases the total memory used by the runtime. In
 addition, any changes that you make to an object in one worker do not affect the
 copy in the other worker. For more details about how data is copied, see
-[Shared references and copied values](WS2f73111e7a180bd0d047eb7139123f4689-8000.html).
+[Shared references and copied values](#shared-references-and-copied-values).
 
 By default, a ByteArray object uses the same behavior. If you pass a ByteArray
 instance to a Worker object's `setSharedProperty()` method or a MessageChannel

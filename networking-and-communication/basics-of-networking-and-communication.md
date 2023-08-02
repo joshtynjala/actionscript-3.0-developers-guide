@@ -27,7 +27,7 @@ The following classes can be used to send and receive data across a network:
 		<td><p>HTTP, HTTPS</p></td>
 		<td><p>Loads supported data types and converts the data into a display
 		object.</p>
-		<p>See <a href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7e13.html">Loading
+		<p>See <a href="../display/display-programming/loading-display-content-dynamically.md">Loading
 		display content dynamically</a>.</p></td>
 	</tr>
 	<tr>
@@ -37,7 +37,7 @@ The following classes can be used to send and receive data across a network:
 		<td><p>HTTP, HTTPS</p></td>
 		<td><p>Loads arbitrary formats of data. Your application is responsible
 		for interpreting the data.</p>
-		<p>See <a href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7cf5.html">Using
+		<p>See <a href="./http-communications/loading-external-data.md#using-the-urlloader-class">Using
 		the URLLoader class</a></p></td>
 	</tr>
 	<tr>
@@ -46,7 +46,7 @@ The following classes can be used to send and receive data across a network:
 		<td><p>Any</p></td>
 		<td><p>HTTP</p></td>
 		<td><p>Upload and download files.</p>
-		<p>See <a href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7cf8.html">Using
+		<p>See <a href="../files-and-data/working-with-the-file-system/using-the-filereference-class.md">Using
 		the FileReference class</a></p></td>
 	</tr>
 	<tr>
@@ -55,7 +55,7 @@ The following classes can be used to send and receive data across a network:
 		<td><p>Video, audio, ActionScript Message Format (AMF)</p></td>
 		<td><p>HTTP, HTTPS, RTMP, RTMFP</p></td>
 		<td><p>Connects to video, audio and remote object streams.</p>
-		<p>See <a href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7e1a.html">Working
+		<p>See <a href="../rich-media-content/working-with-video/index.md">Working
 		with video</a>.</p></td>
 	</tr>
 	<tr>
@@ -64,7 +64,7 @@ The following classes can be used to send and receive data across a network:
 		<td><p>Audio</p></td>
 		<td><p>HTTP</p></td>
 		<td><p>Loads and plays supported audio formats.</p>
-		<p>See <a href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7d25.html">Loading
+		<p>See <a href="../rich-media-content/working-with-sound/loading-external-sound-files.md">Loading
 		external sound files</a>.</p></td>
 	</tr>
 	<tr>
@@ -73,7 +73,7 @@ The following classes can be used to send and receive data across a network:
 		<td><p>XML</p></td>
 		<td><p>TCP</p></td>
 		<td><p>Exchanges XML messages with an XMLSocket server.</p>
-		<p>See <a href="WSb2ba3b1aad8a27b02a2e08d61220f3e44be-7ffe.html">XML
+		<p>See <a href="./sockets.md#xml-sockets">XML
 		sockets</a>.</p></td>
 	</tr>
 	<tr>
@@ -82,7 +82,7 @@ The following classes can be used to send and receive data across a network:
 		<td><p>Any</p></td>
 		<td><p>TCP</p></td>
 		<td><p>Connects to a TCP socket server.</p>
-		<p>See <a href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7cfb.html">Binary
+		<p>See <a href="./sockets.md#binary-client-sockets">Binary
 		client sockets</a>.</p></td>
 	</tr>
 	<tr>
@@ -93,7 +93,7 @@ The following classes can be used to send and receive data across a network:
 		<td><p>TCP with SSLv3 or TLSv1</p></td>
 		<td><p>Connects to a TCP socket server that requires SSL or TLS
 		security.</p>
-		<p>See <a href="WSb2ba3b1aad8a27b0-1d9a251c124028071fd-8000.html">Secure
+		<p>See <a href="./sockets.md#secure-client-sockets-air">Secure
 		client sockets (AIR)</a>.</p></td>
 	</tr>
 	<tr>
@@ -103,7 +103,7 @@ The following classes can be used to send and receive data across a network:
 		<td><p>Any</p></td>
 		<td><p>TCP</p></td>
 		<td><p>Acts as a server for incoming TCP socket connections.</p>
-		<p>See <a href="WSb2ba3b1aad8a27b0-181c51321220efd9d1c-7ffc.html">Server
+		<p>See <a href="./sockets.md#server-sockets">Server
 		sockets</a>.</p></td>
 	</tr>
 	<tr>
@@ -113,7 +113,7 @@ The following classes can be used to send and receive data across a network:
 		<td><p>Any</p></td>
 		<td><p>UDP</p></td>
 		<td><p>Sends and receives UDP packets.</p>
-		<p>See <a href="WSb2ba3b1aad8a27b0-181c51321220efd9d1c-7ffe.html">UDP
+		<p>See <a href="./sockets.md#udp-sockets-air">UDP
 		sockets (AIR)</a></p></td>
 	</tr>
 </tbody>

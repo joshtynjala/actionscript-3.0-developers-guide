@@ -30,8 +30,7 @@ that's displayed.
 
 Note: The code for this example was written by Mario Klingemann. Thank you Mario
 for sharing this example. You can see more of Mario's work and read his writing
-at <a href="http://www.quasimondo.com/"
-target="_self">www.quasimondo.com/</a>.
+at [www.quasimondo.com/](http://www.quasimondo.com/).
 
 The important ActionScript code is in these two methods:
 

@@ -5,10 +5,10 @@ attached to a computer or device.
 
 ## Basics of display screens in AIR
 
-- [Measuring the virtual desktop](http://www.adobe.com/go/learn_air_qs_virtualdesktop_en)
+- [Measuring the virtual desktop](https://www.adobe.com/go/learn_air_qs_virtualdesktop_en)
   (Flex)
 
-- [Measuring the virtual desktop](http://www.adobe.com/go/learn_air_qs_virtualdesktop_flash_en)
+- [Measuring the virtual desktop](https://www.adobe.com/go/learn_air_qs_virtualdesktop_flash_en)
   (Flash)
 
 The screen API contains a single class, Screen, which provides static members

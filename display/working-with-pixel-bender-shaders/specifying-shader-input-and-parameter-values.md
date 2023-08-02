@@ -159,8 +159,7 @@ animated color change.
 
 Note: The code for this example was written by Ryan Taylor. Thank you Ryan for
 sharing this example. You can see Ryan's portfolio and read his writing at
-<a href="http://www.boostworthy.com/"
-target="_self">www.boostworthy.com/</a>.
+[www.boostworthy.com](http://www.boostworthy.com/).
 
 The ActionScript code centers around three methods:
 

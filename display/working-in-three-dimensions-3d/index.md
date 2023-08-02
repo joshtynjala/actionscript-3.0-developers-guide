@@ -34,18 +34,22 @@ available 3D frameworks, visit the
 
 ## Adobe recommends
 
-> <h3 id="how-stage3d-works"><a href="http://goo.gl/KB34I" target="_self"><img src="../../img/marco_scabia.png" /> How Stage3D works</a></h3>
-> <a href="http://goo.gl/sVKdP" target="_self">Marco Scabia:
-> iFlash3D.com</a>
+> ### [![](../../img/marco_scabia.png) How Stage3D works](http://goo.gl/KB34I)
+>
+> [Marco Scabia: iFlash3D.com](http://goo.gl/sVKdP)
 
-> <h3 id="what-is-agal"><img src="../../img/marco_scabia.png" /> <a href="http://goo.gl/kgZ3Y" target="_self">What is AGAL</a></h3>
-> <a href="http://goo.gl/sVKdP" target="_self">Marco Scabia: iFlash3D.com</a>
+> ### ![](../../img/marco_scabia.png) [What is AGAL](http://goo.gl/kgZ3Y)
+>
+> [Marco Scabia: iFlash3D.com](http://goo.gl/sVKdP)
 
-> <h3 id="vertex-and-fragment-shaders"><a href="http://goo.gl/EfT4p" target="_self"><img src="../../img/marco_scabia.png" /> Vertex and fragment shaders</a></h3>
-> <a href="http://goo.gl/sVKdP" target="_self">Marco Scabia: iFlash3D.com</a>
+> ### [![](../../img/marco_scabia.png) Vertex and fragment shaders](http://goo.gl/EfT4p)
+>
+> [Marco Scabia: iFlash3D.com](http://goo.gl/sVKdP)
 
-> <h3 id="handling-scenarios-with-stage3d"><a href="http://goo.gl/cNLn5" target="_self"><img src="../../img/bytearrayORG.png" /> Handling scenarios with Stage3D</a></h3>
+> ### [![](../../img/bytearrayORG.png) Handling scenarios with Stage3D](http://goo.gl/cNLn5)
+>
 > Thibault Imbert
 
-> <h3 id="working-with-the-proscenium-framework"><a href="http://goo.gl/CA3iC" target="_self"><img src="../../img/adobe_logo.png" /> Working with the Proscenium framework</a></h3>
+> ### [![](../../img/adobe_logo.png) Working with the Proscenium framework](http://goo.gl/CA3iC)
+>
 > Adobe

@@ -11,7 +11,7 @@ another display object container, these properties do not apply.
 Note: Some properties and methods of the Stage class are only available to
 display objects that are in the same security sandbox as the first SWF file
 loaded. For details, see
-[Stage security](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e27.html).
+[Stage security](../../security/cross-scripting.md#stage-security).
 
 ## Controlling the playback frame rate
 

@@ -5,7 +5,7 @@ content running in Flash Player can fill the entire screen _and accept text
 input_. To enter full-screen interactive mode, the `displayState` property of
 the Stage is set to the `StageDisplayState.FULL_SCREEN_INTERACTIVE` constant.
 For more information, see
-[Working with full-screen mode](WS2E9C7F3B-6A7C-4c5d-8ADD-5B23446FBEEB.html).
+[Working with full-screen mode](../display/display-programming/setting-stage-properties.md#working-with-full-screen-mode).
 
 For SWF files running in a remote sandbox, there are some security
 considerations.
@@ -47,7 +47,7 @@ user clicks **Allow** , acknowledging they are in full-screen interactive mode.
 Administrators can disable full-screen interactive mode for SWF files running in
 browsers by setting `FullScreenInteractiveDisable = 1` in the mms.cfg file. For
 details, see
-[Administrator controls](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c95.html).
+[Administrator controls](./permission-controls.md#administrator-controls).
 
 In a browser, a SWF file must be contained in an HTML page to allow full-screen
 interactive mode.

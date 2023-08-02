@@ -58,7 +58,7 @@ This code updates the Adobe Access module installed in the player. User consent
 for this module update is not required.
 
 If the Adobe Access module is not found, an error is thrown. See step 3 of the
-[Detailed API workflow](WSa3a415adbae4e49c-513a8af0126e28a784c-8000.html).
+[Detailed API workflow](./understanding-the-protected-content-workflow.md#detailed-api-workflow).
 
 Note: If play() is called on an encrypted stream in players earlier than 10.1, a
 NetStatusEvent with code value of NetStream.Play.StreamNotFound is dispatched.

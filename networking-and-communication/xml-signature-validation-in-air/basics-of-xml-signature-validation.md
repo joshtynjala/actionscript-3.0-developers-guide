@@ -3,11 +3,11 @@
 For a quick explanation and code examples of validating XML signatures, see the
 following quick start articles on the Adobe Developer Connection:
 
-- [Creating and validating XML signatures](http://www.adobe.com/go/learn_air_qs_xmlsig_flex_en)
-  [](http://www.adobe.com/go/learn_air_qs_window_flex_en) (Flex)
+- [Creating and validating XML signatures](https://www.adobe.com/go/learn_air_qs_xmlsig_flex_en)
+  [](https://www.adobe.com/go/learn_air_qs_window_flex_en) (Flex)
 
-- [](http://www.adobe.com/go/learn_air_qs_window_flash_en)
-  [Creating and validating XML signatures](http://www.adobe.com/go/learn_air_qs_xmlsig_flash_en)
+- [](https://www.adobe.com/go/learn_air_qs_window_flash_en)
+  [Creating and validating XML signatures](https://www.adobe.com/go/learn_air_qs_xmlsig_flash_en)
   (Flash)
 
 Adobe® AIR® provides the XMLSignatureValidator class and IURIDereferencer

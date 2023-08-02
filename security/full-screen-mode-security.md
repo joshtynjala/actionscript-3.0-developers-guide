@@ -4,7 +4,7 @@ Flash Player 9.0.27.0 and later support full-screen mode, in which content
 running in Flash Player can fill the entire screen. To enter full-screen mode,
 the `displayState` property of the Stage is set to the
 `StageDisplayState.FULL_SCREEN` constant. For more information, see
-[Working with full-screen mode](WS2E9C7F3B-6A7C-4c5d-8ADD-5B23446FBEEB.html).
+[Working with full-screen mode](../display/display-programming/setting-stage-properties.md#working-with-full-screen-mode).
 
 For SWF files running in a remote sandbox, there are some security
 considerations.
@@ -56,11 +56,11 @@ environments.
 Calling the `displayState` property of a Stage object throws an exception for
 any caller that is not in the same security sandbox as the Stage owner (the main
 SWF file). For more information, see
-[Stage security](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e27.html).
+[Stage security](./cross-scripting.md#stage-security).
 
 Administrators can disable full-screen mode for SWF files running in browsers by
 setting `FullScreenDisable = 1` in the mms.cfg file. For details, see
-[Administrator controls](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c95.html).
+[Administrator controls](./permission-controls.md#administrator-controls).
 
 In a browser, a SWF file must be contained in an HTML page to allow full-screen
 mode.

@@ -2,8 +2,8 @@
 
 The process for executing other data manipulation operations is identical to the
 process used to execute a SQL `SELECT` or `INSERT` statement, as described in
-[Working with SQL statements](WS5b3ccc516d4fbf351e63e3d118666ade46-7d2c.html).
-Simply substitute a different SQL statement in the
+[Working with SQL statements](./working-with-sql-statements.md). Simply
+substitute a different SQL statement in the
 [SQLStatement](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/SQLStatement.html)
 instance's `text` property:
 

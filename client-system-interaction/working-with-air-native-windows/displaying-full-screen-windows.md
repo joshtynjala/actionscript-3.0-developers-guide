@@ -14,7 +14,7 @@ For example, the following Flex code defines a simple AIR application that sets
 up a simple full-screen terminal:
 
     <?xml version="1.0" encoding="utf-8"?>
-    <mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml"
+    <mx:WindowedApplication xmlns:mx="https://www.adobe.com/2006/mxml"
     	layout="vertical"
     	applicationComplete="init()" backgroundColor="0x003030" focusRect="false">
     	<mx:Script>

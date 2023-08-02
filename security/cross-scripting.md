@@ -42,11 +42,11 @@ established through the `ExternalInterface.addCallback()` method. When
 HTML-to-SWF scripting crosses domains, the SWF file being accessed must call the
 `Security.allowDomain()` method, just as when the accessing party is a SWF file,
 or the operation will fail. For more information, see
-[Author (developer) controls](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c96.html).
+[Author (developer) controls](./permission-controls.md#author-developer-controls).
 
 Also, Flash Player provides security controls for SWF-to-HTML scripting. For
 more information, see
-[Controlling outbound URL access](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c9b.html).
+[Controlling outbound URL access](./controlling-outbound-url-access.md).
 
 ## Stage security
 
@@ -80,7 +80,7 @@ In order for a SWF file in a sandbox other than that of the Stage owner to
 access these properties and methods, the Stage owner SWF file must call the
 `Security.allowDomain()` method to permit the domain of the external sandbox.
 For more information, see
-[Author (developer) controls](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c96.html).
+[Author (developer) controls](./permission-controls.md#author-developer-controls).
 
 The `frameRate` property is a special case—any SWF file can read the `frameRate`
 property. However, only those in the Stage owner's security sandbox (or those
@@ -101,13 +101,13 @@ sandboxes is restricted. In order for a SWF file to access a display object
 created by another SWF file in a different sandbox, the SWF file being accessed
 must call the `Security.allowDomain()` method to permit access by the domain of
 the accessing SWF file. For more information, see
-[Author (developer) controls](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c96.html).
+[Author (developer) controls](./permission-controls.md#author-developer-controls).
 
 To access a Bitmap object that was loaded by a Loader object, a URL policy file
 must exist on the origin server of the image file, and that policy file must
 grant permission to the domain of the SWF file trying to access the Bitmap
 object (see
-[Website controls (policy files)](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e08.html)).
+[Website controls (policy files)](./permission-controls.md#website-controls-policy-files)).
 
 The LoaderInfo object that corresponds to a loaded file (and to the Loader
 object) includes the following three properties, which define the relationship
@@ -119,13 +119,13 @@ between the loaded object and the Loader object: `childAllowsParent`,
 Events related to the display list have security access limitations, based on
 the sandbox of the display object that is dispatching the event. An event in the
 display list has bubbling and capture phases (described in
-[Handling events](WS5b3ccc516d4fbf351e63e3d118a9b90204-7fca.html)). During the
-bubbling and capture phases, an event migrates from the source display object
-through parent display objects in the display list. If a parent object is in a
-different security sandbox than the source display object, the capture and
-bubble phase stops below that parent object, unless there is mutual trust
-between the owner of the parent object and the owner of the source object. This
-mutual trust can be achieved by the following:
+[Handling events](../core-actionscript-classes/handling-events/index.md)).
+During the bubbling and capture phases, an event migrates from the source
+display object through parent display objects in the display list. If a parent
+object is in a different security sandbox than the source display object, the
+capture and bubble phase stops below that parent object, unless there is mutual
+trust between the owner of the parent object and the owner of the source object.
+This mutual trust can be achieved by the following:
 
 1.  The SWF file that owns the parent object must call the
     `Security.allowDomain()` method to trust the domain of the SWF file that

@@ -1,10 +1,10 @@
 # Using Point objects
 
-A <a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Point.html"
-target="_self">Point</a> object defines a Cartesian pair of coordinates. It
-represents location in a two-dimensional coordinate system, where _x_ represents
-the horizontal axis and _y_ represents the vertical axis.
+A
+[Point](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Point.html)
+object defines a Cartesian pair of coordinates. It represents location in a
+two-dimensional coordinate system, where _x_ represents the horizontal axis and
+_y_ represents the vertical axis.
 
 To define a Point object, you set its `x` and `y` properties, as follows:
 

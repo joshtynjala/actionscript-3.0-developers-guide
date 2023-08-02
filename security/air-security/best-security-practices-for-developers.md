@@ -53,7 +53,8 @@ consider the following:
 - If credentials must be stored locally, encrypt the credentials when writing to
   the local file system. The runtime provides an encrypted storage unique to
   each installed application, via the EncryptedLocalStore class. For details,
-  see [Encrypted local storage](WS5b3ccc516d4fbf351e63e3d118666ade46-7e31.html).
+  see
+  [Encrypted local storage](../../files-and-data/storing-local-data/encrypted-local-storage.md).
 
 - Do not transmit unencrypted user credentials to a network source unless that
   source is trusted and the transmission uses the HTTPS: or Transport Layer

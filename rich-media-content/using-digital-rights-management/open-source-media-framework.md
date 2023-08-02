@@ -3,8 +3,7 @@
 Open Source Media Framework (OSMF) is an ActionScript-based framework that gives
 you complete flexibility and control in creating your own rich media
 experiences. For more information on OSMF, visit the
-<a href="http://www.osmf.org/developers.html" target="_self">OSMF Developer
-Site</a>.
+[OSMF Developer Site](https://sourceforge.net/adobe/osmf/home/Home/).
 
 More Help topics
 

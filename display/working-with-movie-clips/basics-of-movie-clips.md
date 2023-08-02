@@ -4,10 +4,9 @@ Movie clips are a key element for people who create animated content with the
 Flash authoring tool and want to control that content with ActionScript.
 Whenever you create a movie clip symbol in Flash, Flash adds the symbol to the
 library of that Flash document. By default, this symbol becomes an instance of
-the <a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/MovieClip.html"
-target="_self">MovieClip class</a>, and as such has the properties and methods
-of the MovieClip class.
+the
+[MovieClip class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/MovieClip.html),
+and as such has the properties and methods of the MovieClip class.
 
 When an instance of a movie clip symbol is placed on the Stage, the movie clip
 automatically progresses through its timeline (if it has more than one frame)

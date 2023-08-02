@@ -35,10 +35,10 @@ exist. You can use such a File object in creating a file or directory.
 
 Each File object has two properties that each define its path:
 
-| Property     | Description                                                                                                                                                                                                                                                                                                                                                               |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `nativePath` | Specifies the platform-specific path to a file. For example, on Windows a path might be "c:\Sample directory\test.txt" whereas on Mac OS it could be "/Sample directory/test.txt". A `nativePath` property uses the backslash (\\ character as the directory separator character on Windows, and it uses the forward slash (/) character on Mac OS and Linux.             |
-| `url`        | This may use the file URL scheme to point to a file. For example, on Windows a path might be "file:///c:/Sample%20directory/test.txt" whereas on Mac OS it could be "file:///Sample%20directory/test.txt". The runtime includes other special URL schemes besides `file` and are described in [Supported AIR URL schemes](WS5b3ccc516d4fbf351e63e3d118666ade46-7dc7.html) |
+| Property     | Description                                                                                                                                                                                                                                                                                                                                                   |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `nativePath` | Specifies the platform-specific path to a file. For example, on Windows a path might be "c:\Sample directory\test.txt" whereas on Mac OS it could be "/Sample directory/test.txt". A `nativePath` property uses the backslash (\\ character as the directory separator character on Windows, and it uses the forward slash (/) character on Mac OS and Linux. |
+| `url`        | This may use the file URL scheme to point to a file. For example, on Windows a path might be "file:///c:/Sample%20directory/test.txt" whereas on Mac OS it could be "file:///Sample%20directory/test.txt". The runtime includes other special URL schemes besides `file` and are described in [Supported AIR URL schemes](#supported-air-url-schemes)         |
 
 The File class includes static properties for pointing to standard directories
 on Mac OS, Windows, and Linux. These properties include:
@@ -365,8 +365,7 @@ as part of the path to the application storage directory.
 
 The URL (and `url` property) for a File object created with
 `File.applicationStorageDirectory` uses the `app-storage` URL scheme (see
-[Supported AIR URL schemes](WS5b3ccc516d4fbf351e63e3d118666ade46-7dc7.html)), as
-in the following:
+[Supported AIR URL schemes](#supported-air-url-schemes)), as in the following:
 
     var dir:File = File.applicationStorageDirectory;
     dir = dir.resolvePath("preferences");
@@ -386,8 +385,7 @@ named _images_ in the application directory:
 
 The URL (and `url` property) for a File object created with
 `File.applicationDirectory` uses the `app` URL scheme (see
-[Supported AIR URL schemes](WS5b3ccc516d4fbf351e63e3d118666ade46-7dc7.html)), as
-in the following:
+[Supported AIR URL schemes](#supported-air-url-schemes)), as in the following:
 
     var dir:File = File.applicationDirectory;
     dir = dir.resolvePath("images");
@@ -409,7 +407,7 @@ the cache directory corresponds to the application library's Caches directory.
 Files in this directory are not backed up to online storage, and can potentially
 be deleted by the operating system if the device's available storage space is
 too low. For more information, see
-[Controlling file backup and caching](WS2f73111e7a180bd0-2c8d6a0213c56230816-8000.html).
+[Controlling file backup and caching](#controlling-file-backup-and-caching).
 
 ### Pointing to the file system root
 
@@ -418,7 +416,7 @@ mounted volumes, on a Windows computer. On Mac OS and Linux, this method always
 returns the unique root directory for the machine (the "/" directory). The
 `StorageVolumeInfo.getStorageVolumes()` method provides more detailed
 information on mounted storage volumes (see
-[Working with storage volumes](WS86fc450a3af174de-70f653dd1220e161719-8000.html)).
+[Working with storage volumes](./working-with-storage-volumes.md)).
 
 Note: The root of the file system is not readable on Android. A File object
 referencing the directory with the native path, "/", is returned, but the
@@ -457,8 +455,7 @@ based on a URL string, as in the following:
     var file:File = new File()
     file.url = urlStr;
 
-For more information, see
-[Modifying File paths](WS5b3ccc516d4fbf351e63e3d118666ade46-7dc1.html).
+For more information, see [Modifying File paths](#modifying-file-paths).
 
 ### Letting the user browse to select a directory
 
@@ -487,7 +484,7 @@ users to select a directory, use a custom, application-defined dialog, instead.
 You can get the directory location from which an application is invoked, by
 checking the `currentDirectory` property of the InvokeEvent object dispatched
 when the application is invoked. For details, see
-[Capturing command line arguments](WS5b3ccc516d4fbf351e63e3d118666ade46-7e1a.html).
+[Capturing command line arguments](../../client-system-interaction/air-application-invokation-and-termination.md#capturing-command-line-arguments).
 
 ## Pointing a File object to a file
 
@@ -500,8 +497,7 @@ across platforms. For example, the path C:/foo.txt only works on Windows. You
 can use the static properties of the File object, such as
 `File.applicationStorageDirectory`, to locate a directory that works
 cross-platform. Then use the `resolvePath()` method (see
-[Modifying File paths](WS5b3ccc516d4fbf351e63e3d118666ade46-7dc1.html)) to
-navigate to a relative path.
+[Modifying File paths](#modifying-file-paths)) to navigate to a relative path.
 
 You can use the `url` property of a File object to point it to a file or
 directory based on a URL string, as in the following:
@@ -538,15 +534,14 @@ Use the forward slash (/) character as the path delimiter for the `nativePath`
 property. On Windows, you can also use the backslash (\\ character, but doing so
 leads to applications that do not work across platforms.
 
-For more information, see
-[Modifying File paths](WS5b3ccc516d4fbf351e63e3d118666ade46-7dc1.html).
+For more information, see [Modifying File paths](#modifying-file-paths).
 
 ### Enumerating files in a directory
 
 You can use the `getDirectoryListing()` method of a File object to get an array
 of File objects pointing to files and subdirectories at the root level of a
 directory. For more information, see
-[Enumerating directories](WS5b3ccc516d4fbf351e63e3d118666ade46-7dbf.html).
+[Enumerating directories](./working-with-directories.md#enumerating-directories).
 
 ### Letting the user browse to select a file
 
@@ -878,11 +873,11 @@ example, the operating system may require more space to store index information.
 Or the disk sectors required may use additional space. Also, available space
 changes dynamically. So, you cannot expect to allocate all of the reported space
 for file storage. For information on writing to the file system, see
-[Reading and writing files](WS5b3ccc516d4fbf351e63e3d118666ade46-7dc2.html).
+[Reading and writing files](./reading-and-writing-files.md).
 
 The `StorageVolumeInfo.getStorageVolumes()` method provides more detailed
 information on mounted storage volumes (see
-[Working with storage volumes](WS86fc450a3af174de-70f653dd1220e161719-8000.html)).
+[Working with storage volumes](./working-with-storage-volumes.md)).
 
 ## Opening files with the default system application
 

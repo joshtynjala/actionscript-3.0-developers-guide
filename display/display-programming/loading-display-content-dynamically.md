@@ -108,7 +108,7 @@ context of how the loaded content can be used:
 - `checkPolicyFile` : Use this property only when loading an image file (not a
   SWF file). If you set this property to `true`, the Loader checks the origin
   server for a policy file (see
-  [Website controls (policy files)](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e08.html)).
+  [Website controls (policy files)](../../security/permission-controls.md#website-controls-policy-files)).
   This is necessary only for content originating from domains other than that of
   the SWF file containing the Loader object. If the server grants permission to
   the Loader domain, ActionScript from SWF files in the Loader domain can access
@@ -135,7 +135,7 @@ context of how the loaded content can be used:
   in the same application domain, you can access its classes directly. This can
   be useful if you are loading a SWF file that contains embedded media, which
   you can access via their associated class names. For more information, see
-  [Working with application domains](../../core-actionscript-classes/working-with-application-domains/index.md).
+  [Working with application domains](../../core-actionscript-classes/working-with-application-domains.md).
 
 Here's an example of checking for a policy file when loading a bitmap from
 another domain:
@@ -213,9 +213,7 @@ appear in the application.
 
 #### See also
 
-<a
-href="http://blogs.adobe.com/airodynamics/2012/11/09/packaging-and-loading-multiple-swfs-in-air-apps-on-ios/"
-target="_self">Packaging and loading multiple SWFs in AIR apps on iOS</a>
+[Packaging and loading multiple SWFs in AIR apps on iOS](http://blogs.adobe.com/airodynamics/2012/11/09/packaging-and-loading-multiple-swfs-in-air-apps-on-ios/)
 
 ## Using the ProLoader and ProLoaderInfo classes
 

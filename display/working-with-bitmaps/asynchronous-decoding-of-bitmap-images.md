@@ -52,7 +52,7 @@ The following code shows the usage of the `ImageDecodingPolicy` class:
     var loaderContext:LoaderContext = new LoaderContext();
     loaderContext.imageDecodingPolicy = ImageDecodingPolicy.ON_LOAD
     var loader:Loader = new Loader();
-    loader.load(new URLRequest("http://www.adobe.com/myimage.png"), loaderContext);
+    loader.load(new URLRequest("https://www.adobe.com/myimage.png"), loaderContext);
 
 You can still use `ON_DEMAND` decoding with `Loader.load()` and
 `Loader.loadBytes()` methods. However, all the other methods that take a
@@ -94,7 +94,7 @@ synchronously and asynchronously:
 
             private function loadImageASync():void{
                 trace("Loading image asynchronously...");
-                urlRequest = new URLRequest("http://www.adobe.com/myimage.png");
+                urlRequest = new URLRequest("https://www.adobe.com/myimage.png");
                 urlRequest.useCache = false;
                 loader.load(urlRequest, loaderContext);
                 loader.contentLoaderInfo.addEventListener
@@ -107,7 +107,7 @@ synchronously and asynchronously:
 
             private function loadImageSync():void{
                 trace("Loading image synchronously...");
-                urlRequest = new URLRequest("http://www.adobe.com/myimage.png");
+                urlRequest = new URLRequest("https://www.adobe.com/myimage.png");
                 urlRequest.useCache = false;
                 loader.load(urlRequest, loaderContext);
                 loader.contentLoaderInfo.addEventListener
@@ -121,5 +121,4 @@ synchronously and asynchronously:
     }
 
 For a demonstration of the effect of the different decoding policies, see
-<a href="http://www.bytearray.org/?p=2931" target="_self">Thibaud Imbert:
-Asynchronous bitmap decoding in the Adobe Flash runtimes</a>
+[Thibault Imbert: Asynchronous bitmap decoding in the Adobe Flash runtimes](http://www.bytearray.org/?p=2931)

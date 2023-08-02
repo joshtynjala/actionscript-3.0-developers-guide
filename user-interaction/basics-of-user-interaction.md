@@ -128,38 +128,29 @@ ActionScript to test if the device on which the runtime is currently deployed:
 
 The input discovery ActionScript APIs include:
 
-- <a
-  href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/system/Capabilities.html#touchscreenType"
-  target="_self">flash.system.Capabilities.touchscreenType property</a>: A value
-  provided at runtime indicating what input type is supported in the current
-  environment.
+- [flash.system.Capabilities.touchscreenType property](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/system/Capabilities.html#touchscreenType):
+  A value provided at runtime indicating what input type is supported in the
+  current environment.
 
-- <a
-  href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/system/TouchscreenType.html"
-  target="_self">flash.system.TouchscreenType class</a>: A class of enumeration
-  value constants for the Capabilities.touchscreenType property.
+- [flash.system.TouchscreenType class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/system/TouchscreenType.html):
+  A class of enumeration value constants for the Capabilities.touchscreenType
+  property.
 
-- <a
-  href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Mouse.html#supportsCursor"
-  target="_self">flash.ui.Mouse.supportsCursor property</a>: A value provided at
-  runtime indicating if a persistent cursor is available or not.
+- [flash.ui.Mouse.supportsCursor property](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Mouse.html#supportsCursor):
+  A value provided at runtime indicating if a persistent cursor is available or
+  not.
 
-- <a
-  href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Keyboard.html#physicalKeyboardType"
-  target="_self">flash.ui.Keyboard.physicalKeyboardType property</a>: A value
-  provided at runtime indicating if a full physical keyboard is available or a
-  numeric keypad, only, or no keyboard at all.
+- [flash.ui.Keyboard.physicalKeyboardType property](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Keyboard.html#physicalKeyboardType):
+  A value provided at runtime indicating if a full physical keyboard is
+  available or a numeric keypad, only, or no keyboard at all.
 
-- <a
-  href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/KeyboardType.html"
-  target="_self">flash.ui.KeyboardType class</a>: A class of enumeration value
-  constants for the flash.ui.Keyboard.physicalKeyboardType property.
+- [flash.ui.KeyboardType class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/KeyboardType.html):
+  A class of enumeration value constants for the
+  flash.ui.Keyboard.physicalKeyboardType property.
 
-- <a
-  href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Keyboard.html#hasVirtualKeyboard"
-  target="_self">flash.ui.Keyboard.hasVirtualKeyboard property</a>: A value
-  provided at runtime indicating if a virtual keyboard is provided to the user
-  (either in place of a physical keyboard, or in addition to a physical
+- [flash.ui.Keyboard.hasVirtualKeyboard property](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Keyboard.html#hasVirtualKeyboard):
+  A value provided at runtime indicating if a virtual keyboard is provided to
+  the user (either in place of a physical keyboard, or in addition to a physical
   keyboard).
 
 The input discovery APIs let you take advantage of a user's device capabilities,

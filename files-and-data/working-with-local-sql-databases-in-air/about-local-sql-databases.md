@@ -3,22 +3,22 @@
 For a quick explanation and code examples of using SQL databases, see the
 following quick start articles on the Adobe Developer Connection:
 
-- [Working asynchronously with a local SQL database](http://www.adobe.com/go/learn_air_qs_SQLasynch_en)
+- [Working asynchronously with a local SQL database](https://www.adobe.com/go/learn_air_qs_SQLasynch_en)
   (Flex)
 
-- [Working synchronously with a local SQL database](http://www.adobe.com/go/learn_air_qs_SQLsynch_en)
+- [Working synchronously with a local SQL database](https://www.adobe.com/go/learn_air_qs_SQLsynch_en)
   (Flex)
 
-- [Using an encrypted database](http://www.adobe.com/go/learn_air_qs_encrypteddb_flex_en)
+- [Using an encrypted database](https://www.adobe.com/go/learn_air_qs_encrypteddb_flex_en)
   (Flex)
 
-- [Working asynchronously with a local SQL database](http://www.adobe.com/go/learn_air_qs_SQLasynch_flash_en)
+- [Working asynchronously with a local SQL database](https://www.adobe.com/go/learn_air_qs_SQLasynch_flash_en)
   (Flash)
 
-- [Working synchronously with a local SQL database](http://www.adobe.com/go/learn_air_qs_SQLsynch_flash_en)
+- [Working synchronously with a local SQL database](https://www.adobe.com/go/learn_air_qs_SQLsynch_flash_en)
   (Flash)
 
-- [Using an encrypted database](http://www.adobe.com/go/learn_air_qs_encrypteddb_flash_en)
+- [Using an encrypted database](https://www.adobe.com/go/learn_air_qs_encrypteddb_flash_en)
   (Flash)
 
 Adobe AIR includes a SQL-based relational database engine that runs within the
@@ -138,7 +138,7 @@ Institute (ANSI). The Adobe AIR local SQL database supports most of the SQL-92
 standard.
 
 For specific descriptions of the SQL language supported in Adobe AIR, see
-[SQL support in local databases](WS112915e91f2778507c29b8cc1256b9c36a3-8000.html).
+[SQL support in local databases](../../appendixes/sql-support-in-local-databases/index.md).
 
 ## About SQL database classes
 

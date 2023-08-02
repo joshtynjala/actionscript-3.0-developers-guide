@@ -54,9 +54,9 @@ The `SoundMixer.computeSpectrum()` method has some limitations:
   `SoundMixer.computeSpectrum()` method to throw an error. For more detail about
   the security limitations of the `SoundMixer.computeSpectrum()` method please
   see
-  [Security considerations when loading and playing sounds](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d20.html)
+  [Security considerations when loading and playing sounds](./security-considerations-when-loading-and-playing-sounds.md)
   and
-  [Accessing loaded media as data](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d1b.html).
+  [Accessing loaded media as data](../../security/accessing-loaded-media-as-data.md).
 
 However, in an AIR application, content in the application security sandbox
 (content installed with the AIR application) are not restricted by these

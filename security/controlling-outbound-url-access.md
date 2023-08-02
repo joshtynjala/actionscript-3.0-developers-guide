@@ -21,7 +21,7 @@ AllowScriptAccess parameter described below. The `flash.net.navigateToURL()`
 function has the additional ability to communicate with any open browser window
 or frame, not just the page in which the SWF file is embedded. For more
 information on this functionality, see
-[Using the navigateToURL() function](WS6F624545-B065-413d-8C77-20308FDCDE6F.html).
+[Using the navigateToURL() function](#using-the-navigatetourl-function).
 
 The `AllowScriptAccess` parameter in the HTML code that loads a SWF file
 controls the ability to perform outbound URL access from within the SWF file.
@@ -56,7 +56,7 @@ allow outbound URL access to a different domain:
     <object id='MyMovie.swf' classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' codebase='http://download.adobe.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0' height='100%' width='100%'>
     	<param name='AllowScriptAccess' value='always'/>
     	<param name='src' value=''MyMovie.swf'/>
-    	<embed name='MyMovie.swf' pluginspage='http://www.adobe.com/go/getflashplayer' src='MyMovie.swf' height='100%' width='100%' AllowScriptAccess='never'/>
+    	<embed name='MyMovie.swf' pluginspage='https://www.adobe.com/go/getflashplayer' src='MyMovie.swf' height='100%' width='100%' AllowScriptAccess='never'/>
     </object>
 
 ## Using the navigateToURL() function

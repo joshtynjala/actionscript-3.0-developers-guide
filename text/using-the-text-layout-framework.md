@@ -95,7 +95,7 @@ in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
 If you are working in Flex, use the TLF classes. For more information, see
-[Using the Text Layout Framework](WS14c3067b34b57c6d4a97343b122ab36a52f-7ffd.html).
+[Using the Text Layout Framework](#using-the-text-layout-framework).
 
 ## Using the Text Layout Framework
 
@@ -168,22 +168,20 @@ The following steps describe the general process for creating text with the Text
 Layout Format:
 
 1.  Import formatted text into the TLF data structures. For more information,
-    see
-    [Structuring text with TLF](WS948100b6829bd5a6-6fb9ab1912ce6d702d5-8000.html)
-    and
-    [Formatting text with TLF](WS948100b6829bd5a6-6fb9ab1912ce6d702d5-7fff.html).
+    see [Structuring text with TLF](#structuring-text-with-tlf) and
+    [Formatting text with TLF](#formatting-text-with-tlf).
 
 2.  Create one or more linked display object containers for the text. For more
     information, see
-    [Managing text containers with TLF](WS14c3067b34b57c6d4a97343b122ab36a52f-7ff2.html).
+    [Managing text containers with TLF](#managing-text-containers-with-tlf).
 
 3.  Associate the text in the data structures with the containers and set
     editing and scrolling options. For more information, see
-    [Enabling text selection, editing, and undo with TLF](WS14c3067b34b57c6d4a97343b122ab36a52f-7ff0.html).
+    [Enabling text selection, editing, and undo with TLF](#enabling-text-selection-editing-and-undo-with-tlf).
 
 4.  Create an event handler to reflow the text in response to resize (or other)
     events. For more information, see
-    [Event handling with TLF](WS9161fa65b20d655231c2451c122c34c3394-8000.html).
+    [Event handling with TLF](#event-handling-with-tlf).
 
 ### Text Layout Framework example: News layout
 
@@ -307,8 +305,7 @@ headline and subhead, and the other displays three-column body text. For
 simplicity, the text is hard-coded into the example as TLF Markup text. The
 `headlineMarkup` variable contains both the headline and the subhead, and the
 `bodyMarkup` variable contains the body text. For more information on TLF
-Markup, see
-[Structuring text with TLF](WS948100b6829bd5a6-6fb9ab1912ce6d702d5-8000.html).
+Markup, see [Structuring text with TLF](#structuring-text-with-tlf).
 
 After some initialization, the `onAddedToStage()` function imports the headline
 text into a TextFlow object, which is the main data structure of the TLF:
@@ -655,7 +652,7 @@ in the
 Use a flow composer if you want to have more control over the display of text
 than that provided by TextFlowTextLineFactory. For example, with a flow
 composer, your users can select and edit the text. For more information, see
-[Enabling text selection, editing, and undo with TLF](WS14c3067b34b57c6d4a97343b122ab36a52f-7ff0.html).
+[Enabling text selection, editing, and undo with TLF](#enabling-text-selection-editing-and-undo-with-tlf).
 
 A flow composer is an instance of the StandardFlowComposer class in the
 [flashx.textLayout.compose package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/compose/package-detail.html).

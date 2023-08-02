@@ -35,7 +35,7 @@ would want to use an encrypted database:
   to be shared among all users of the application.
 
 - Any other use of a local data store, such as the ones described in
-  [Uses for local SQL databases](WS5b3ccc516d4fbf351e63e3d118666ade46-7d31.html),
+  [Uses for local SQL databases](./about-local-sql-databases.md#uses-for-local-sql-databases),
   where the data must be kept private from people who have access to the machine
   or the database files.
 
@@ -43,7 +43,7 @@ Understanding the reason why you want to use an encrypted database helps you
 decide how to architect your application. In particular, it can affect how your
 application creates, obtains, and stores the encryption key for the database.
 For more information about these considerations, see
-[Considerations for using encryption with a database](WS34990ABF-C893-47ec-B813-9C9D9587A398.html).
+[Considerations for using encryption with a database](./using-encryption-with-sql-databases.md#considerations-for-using-encryption-with-a-database).
 
 Other than an encrypted database, an alternative mechanism for keeping sensitive
 data private is the
@@ -58,7 +58,7 @@ value or set of values that can easily be encoded in a ByteArray. An encrypted
 database is most suitable for larger data sets where structured data storage and
 querying are desirable. For more information about using the encrypted local
 store, see
-[Encrypted local storage](WS5b3ccc516d4fbf351e63e3d118666ade46-7e31.html).
+[Encrypted local storage](../storing-local-data/encrypted-local-storage.md).
 
 ## Creating an encrypted database
 
@@ -66,15 +66,15 @@ To use an encrypted database, the database file must be encrypted when it is
 created. Once a database is created as unencrypted, it can't be encrypted later.
 Likewise, an encrypted database can't be unencrypted later. If needed you can
 change the encryption key of an encrypted database. For details, see
-[Changing the encryption key of a database](WS09F24BEF-BEE3-4d36-9190-7CA9B0F24DA1.html).
+[Changing the encryption key of a database](#changing-the-encryption-key-of-a-database).
 If you have an existing database that's not encrypted and you want to use
 database encryption, you can create a new encrypted database and copy the
 existing table structure and data to the new database.
 
 Creating an encrypted database is nearly identical to creating an unencrypted
 database, as described in
-[Creating a database](WS5b3ccc516d4fbf351e63e3d118666ade46-7d44.html). You first
-create a
+[Creating a database](./creating-and-modifying-a-database.md#creating-a-database).
+You first create a
 [SQLConnection](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/SQLConnection.html)
 instance that represents the connection to the database. You create the database
 by calling the SQLConnection object's `open()` method or `openAsync()` method,
@@ -105,15 +105,15 @@ not secure.
 
 For an example demonstrating a recommended way to generate an encryption key,
 see
-[Example: Generating and using an encryption key](WS61068DCE-9499-4d40-82B8-B71CC35D832C.html).
+[Example: Generating and using an encryption key](#example-generating-and-using-an-encryption-key).
 
 ## Connecting to an encrypted database
 
 Like creating an encrypted database, the procedure for opening a connection to
 an encrypted database is like connecting to an unencrypted database. That
 procedure is described in greater detail in
-[Connecting to a database](WS5b3ccc516d4fbf351e63e3d118666ade46-7d32.html). You
-use the `open()` method to
+[Connecting to a database](./connecting-to-a-database.md). You use the `open()`
+method to
 [open a connection in synchronous execution mode](<https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/SQLConnection.html#open()>),
 or the `openAsync()` method to
 [open a connection in asynchronous execution mode](<https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/SQLConnection.html#openAsync()>).
@@ -208,7 +208,7 @@ it is not secure.
 
 For an example demonstrating a recommended way to generate an encryption key,
 see
-[Example: Generating and using an encryption key](WS61068DCE-9499-4d40-82B8-B71CC35D832C.html).
+[Example: Generating and using an encryption key](#example-generating-and-using-an-encryption-key).
 
 ## Changing the encryption key of a database
 
@@ -259,8 +259,7 @@ Passing a `null` value or encryption key that's not a 16-byte ByteArray to the
 
 ## Considerations for using encryption with a database
 
-The section
-[Uses for an encrypted database](WS8FAE5151-90D9-45e0-8ABD-09C17C4E6D36.html)
+The section [Uses for an encrypted database](#uses-for-an-encrypted-database)
 presents several cases in which you would want to use an encrypted database.
 It's obvious that the usage scenarios of different applications (including these
 and other scenarios) have different privacy requirements. The way you architect
@@ -299,7 +298,7 @@ various levels of data privacy:
 - To make a database accessible only to a single individual on a single machine,
   generate the key from a password and a generated salt. For an example of this
   technique, see
-  [Example: Generating and using an encryption key](WS61068DCE-9499-4d40-82B8-B71CC35D832C.html).
+  [Example: Generating and using an encryption key](#example-generating-and-using-an-encryption-key).
 
 The following are additional security considerations that are important to keep
 in mind when designing an application to use an encrypted database:
@@ -323,7 +322,7 @@ in mind when designing an application to use an encrypted database:
   Counter with CBC-MAC (CCM) mode. This encryption cipher requires a
   user-entered key to be combined with a salt value to be secure. For an example
   of this, see
-  [Example: Generating and using an encryption key](WS61068DCE-9499-4d40-82B8-B71CC35D832C.html).
+  [Example: Generating and using an encryption key](#example-generating-and-using-an-encryption-key).
 
 - When you elect to encrypt a database, all disk files used by the database
   engine in conjunction with that database are encrypted. However, the database
@@ -345,21 +344,21 @@ this level of privacy should never directly store the database encryption key.
 The application consists of two parts: an ActionScript class that generates an
 encryption key (the EncryptionKeyGenerator class), and a basic user interface
 that demonstrates how to use that class. For the complete source code, see
-[Complete example code for generating and using an encryption key](WSAD329515-CBF1-4658-8DD7-CAC9C354CE94.html).
+[Complete example code for generating and using an encryption key](#example-generating-and-using-an-encryption-key).
 
 ### Using the EncryptionKeyGenerator class to obtain a secure encryption key
 
 It isn't necessary to understand the details of how the EncryptionKeyGenerator
 class works to use it in your application. If you are interested in the details
 of how the class generates an encryption key for a database, see
-[Understanding the EncryptionKeyGenerator class](WS495D91DF-659A-4a6f-8944-EA08072C2D4C.html).
+[Understanding the EncryptionKeyGenerator class](#understanding-the-encryptionkeygenerator-class).
 
 Follow these steps to use the EncryptionKeyGenerator class in your application:
 
 1.  Download the EncryptionKeyGenerator class as source code or a compiled SWC.
     The EncryptionKeyGenerator class is included in the open-source ActionScript
     3.0 core library (as3corelib) project. You can download
-    [the as3corelib package including source code and documentation](http://www.adobe.com/go/learn_air_opensource_encryptionkey).
+    [the as3corelib package including source code and documentation](https://www.adobe.com/go/learn_air_opensource_encryptionkey).
     You can also download the SWC or source code files from the project page.
 
 2.  Place the source code for the EncryptionKeyGenerator class (or the
@@ -435,9 +434,8 @@ Follow these steps to use the EncryptionKeyGenerator class in your application:
     code can create a new encrypted database or attempt to open the existing
     encrypted database. In either case you use the SQLConnection class's
     `open()` or `openAsync()` method, as described in
-    [Creating an encrypted database](WS00469B81-CE46-48d3-A825-A179339FA9B4.html)
-    and
-    [Connecting to an encrypted database](WS6A88523A-68C0-469e-8271-620A29661799.html).
+    [Creating an encrypted database](#creating-an-encrypted-database) and
+    [Connecting to an encrypted database](#connecting-to-an-encrypted-database).
 
     In this example, the application is designed to open the database in
     asynchronous execution mode. The code sets up the appropriate event
@@ -470,7 +468,7 @@ Follow these steps to use the EncryptionKeyGenerator class in your application:
         }
 
     For the complete code for the example event listeners, see
-    [Complete example code for generating and using an encryption key](WSAD329515-CBF1-4658-8DD7-CAC9C354CE94.html).
+    [Complete example code for generating and using an encryption key](#complete-example-code-for-generating-and-using-an-encryption-key).
 
 ### Complete example code for generating and using an encryption key
 
@@ -480,7 +478,7 @@ using an encryption key." The code consists of two parts.
 The example uses the EncryptionKeyGenerator class to create an encryption key
 from a password. The EncryptionKeyGenerator class is included in the open-source
 ActionScript 3.0 core library (as3corelib) project. You can download
-[the as3corelib package including source code and documentation](http://www.adobe.com/go/learn_air_opensource_encryptionkey).
+[the as3corelib package including source code and documentation](https://www.adobe.com/go/learn_air_opensource_encryptionkey).
 You can also download the SWC or source code files from the project page.
 
 #### Flex example
@@ -489,7 +487,7 @@ The application MXML file contains the source code for a simple application that
 creates or opens a connection to an encrypted database:
 
     <?xml version="1.0" encoding="utf-8"?>
-    <mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml" layout="vertical" creationComplete="init();">
+    <mx:WindowedApplication xmlns:mx="https://www.adobe.com/2006/mxml" layout="vertical" creationComplete="init();">
     	<mx:Script>
     	<![CDATA[
     		import com.adobe.air.crypto.EncryptionKeyGenerator;
@@ -700,14 +698,14 @@ timeline. The following is the code for the application:
 It isn't necessary to understand the inner workings of the
 EncryptionKeyGenerator class to use it to create a secure encryption key for
 your application database. The process for using the class is explained in
-[Using the EncryptionKeyGenerator class to obtain a secure encryption key](WS44EC31A7-61B1-4e0a-8C61-D720AA95DE03.html).
+[Using the EncryptionKeyGenerator class to obtain a secure encryption key](#using-the-encryptionkeygenerator-class-to-obtain-a-secure-encryption-key).
 However, you might find it valuable to understand the techniques that the class
 uses. For example, you might want to adapt the class or incorporate some of its
 techniques for situations where a different level of data privacy is desired.
 
 The EncryptionKeyGenerator class is included in the open-source ActionScript 3.0
 core library (as3corelib) project. You can download
-[the as3corelib package including source code and documentation](http://www.adobe.com/go/learn_air_opensource_encryptionkey).You
+[the as3corelib package including source code and documentation](https://www.adobe.com/go/learn_air_opensource_encryptionkey).You
 can also view the source code on the project site or download it to follow along
 with the explanations.
 

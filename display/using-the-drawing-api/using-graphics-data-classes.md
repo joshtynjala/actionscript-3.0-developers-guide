@@ -1,10 +1,10 @@
 # Using graphics data classes
 
 The enhanced drawing API includes a set of classes in the flash.display package
-that implement the <a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/IGraphicsData.html"
-target="_self">IGraphicsData</a> interface. These classes act as value objects
-(data containers) that represent the drawing methods of the drawing API.
+that implement the
+[IGraphicsData](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/IGraphicsData.html)
+interface. These classes act as value objects (data containers) that represent
+the drawing methods of the drawing API.
 
 The following classes implement the IGraphicsData interface:
 
@@ -90,13 +90,13 @@ represent in the flash.display.Graphics class:
 </tbody>
 </table>
 
-In addition, the <a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/GraphicsPath.html"
-target="_self">GraphicsPath class</a> has its own `GraphicsPath.moveTo()`,
-`GraphicsPath.lineTo()`, `GraphicsPath.curveTo()`, `GraphicsPath.wideLineTo()`,
-and `GraphicsPath.wideMoveTo()` utility methods to easily define those commands
-for a GraphicsPath instance. These utility methods simplify the task of defining
-or updating the commands and data values directly.
+In addition, the
+[GraphicsPath](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/GraphicsPath.html)
+class has its own `GraphicsPath.moveTo()`, `GraphicsPath.lineTo()`,
+`GraphicsPath.curveTo()`, `GraphicsPath.wideLineTo()`, and
+`GraphicsPath.wideMoveTo()` utility methods to easily define those commands for
+a GraphicsPath instance. These utility methods simplify the task of defining or
+updating the commands and data values directly.
 
 ## Drawing with vector graphics data
 
@@ -169,7 +169,7 @@ IGraphicsData objects. These are the same objects used to draw vector graphics
 with the `drawGraphicsData()` method.
 
 There are several limitations to reading vector graphics with the
-`readGraphicsData()` method. For more information, see the <a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Graphics.html#readGraphicsData()"
-target="_self">readGraphicsData() entry in the ActionScript Language
-Reference</a>.
+`readGraphicsData()` method. For more information, see the
+[readGraphicsData()](<https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Graphics.html#readGraphicsData()>)
+entry in the
+[ActionScript 3.0 Language Reference](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).

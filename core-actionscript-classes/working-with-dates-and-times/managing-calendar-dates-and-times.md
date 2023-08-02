@@ -162,5 +162,6 @@ milliseconds and then adjusting the Date value by that amount:
 
 ## Adobe recommends
 
-> <h3 id="in-math-operations-with-dates-in-actionscript"><a href="http://goo.gl/ndMsl" target="_self"><img src="../../img/jabbyPanda.png" /> 2 - 1 = 2 in math operations with dates in ActionScript</a></h3>
-> <a href="http://goo.gl/2ZBKN" target="_self">JabbyPanda</a>
+> ### [![](../../img/jabbyPanda.png) 2 - 1 = 2 in math operations with dates in ActionScript](http://goo.gl/ndMsl)
+>
+> [JabbyPanda](http://goo.gl/2ZBKN)

@@ -30,12 +30,12 @@ following groups:
 - Display objects
 
   In ActionScript 3.0, all elements that appear on screen in an application are
-  types of _display objects_. The flash.display package includes a <a
-  href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/DisplayObject.html"
-  target="_self">DisplayObject</a> class, which is a base class extended by a
-  number of other classes. These different classes represent different types of
-  display objects, such as vector shapes, movie clips, and text fields, to name
-  a few. For an overview of these classes, see
+  types of _display objects_. The flash.display package includes a
+  [DisplayObject](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/DisplayObject.html)
+  class, which is a base class extended by a number of other classes. These
+  different classes represent different types of display objects, such as vector
+  shapes, movie clips, and text fields, to name a few. For an overview of these
+  classes, see
   [Advantages of the display list approach](./advantages-of-the-display-list-approach.md).
 
 - Display object containers
@@ -44,13 +44,12 @@ following groups:
   addition to having their own visual representation, can also contain child
   objects that are also display objects.
 
-  The <a
-  href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/DisplayObjectContainer.html"
-  target="_self">DisplayObjectContainer</a> class is a subclass of the
-  DisplayObject class. A DisplayObjectContainer object can contain multiple
-  display objects in its _child_ _list_. For example, the following illustration
-  shows a type of DisplayObjectContainer object known as a Sprite that contains
-  various display objects:
+  The
+  [DisplayObjectContainer](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/DisplayObjectContainer.html)
+  class is a subclass of the DisplayObject class. A DisplayObjectContainer
+  object can contain multiple display objects in its _child_ _list_. For
+  example, the following illustration shows a type of DisplayObjectContainer
+  object known as a Sprite that contains various display objects:
 
   ![<Sprite containing display objects>](../../img/dp_bananaFrame.png)
 

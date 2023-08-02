@@ -115,7 +115,7 @@ Adobe Access.
 
     If the player itself must be updated, a status event is dispatched. For more
     information on handling this event, see
-    [Listening for an update event](WS7568cbd5c81a0ea63cf5bc1d126d9ba3f10-8000.html).
+    [Listening for an update event](./updating-flash-player-to-support-adobe-access.md#listening-for-an-update-event).
 
     Note: In AIR applications, the AIR installer handles updating the Adobe
     Access module and required runtime updates.
@@ -252,7 +252,7 @@ protected content:
 - StatusEvent
 
 - NetStatusEvent. See
-  [Listening for an update event](WS7568cbd5c81a0ea63cf5bc1d126d9ba3f10-8000.html)
+  [Listening for an update event](./updating-flash-player-to-support-adobe-access.md#listening-for-an-update-event)
 
 To support content protected by Adobe Access, add event listeners for handling
 the DRM events.
@@ -285,7 +285,7 @@ protected media file using a DRMContentData object.
         var drmData:DRMContentData = new DRMContentData( metadata );
 
 3.  The rest of the steps are identical to the workflow described in
-    [Understanding the protected content workflow](WS5b3ccc516d4fbf351e63e3d118666ade46-7ce3.html).
+    [Understanding the protected content workflow](#understanding-the-protected-content-workflow).
 
 ### Using preloadEmbeddedMetadata()
 

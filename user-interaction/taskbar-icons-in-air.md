@@ -5,10 +5,10 @@ contain an icon to represent an application. Adobe® AIR® provides an interface
 for interacting with the application task bar icon through the
 `NativeApplication.nativeApplication.icon` property.
 
-- [Using the system tray and dock icons](http://www.adobe.com/go/learn_air_qs_systray_en)
+- [Using the system tray and dock icons](https://www.adobe.com/go/learn_air_qs_systray_en)
   (Flex)
 
-- [Using the system tray and dock icons](http://www.adobe.com/go/learn_air_qs_systray_flash_en)
+- [Using the system tray and dock icons](https://www.adobe.com/go/learn_air_qs_systray_flash_en)
   (Flash)
 
 <!-- -->
@@ -199,10 +199,10 @@ your application.
 When a window is in the background, you can notify the user that an event of
 interest related to the window has occurred. On Mac OS X, you can notify the
 user by bouncing the application dock icon (as described in
-[Bouncing the dock](WS5b3ccc516d4fbf351e63e3d118666ade46-7dca.html)). On Windows
-and Linux, you can highlight the window taskbar button by calling the
-`notifyUser()` method of the NativeWindow instance. The `type` parameter passed
-to the method determines the urgency of the notification:
+[Bouncing the dock](#bouncing-the-dock)). On Windows and Linux, you can
+highlight the window taskbar button by calling the `notifyUser()` method of the
+NativeWindow instance. The `type` parameter passed to the method determines the
+urgency of the notification:
 
 - `NotificationType.CRITICAL`: the window icon flashes until the user brings the
   window to the foreground.

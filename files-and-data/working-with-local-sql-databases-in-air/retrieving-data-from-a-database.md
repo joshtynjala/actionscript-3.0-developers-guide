@@ -13,7 +13,7 @@ instance. Assign the appropriate SQL `SELECT` statement to the instance's `text`
 property, then call its `execute()` method.
 
 For details on the syntax of the `SELECT` statement, see
-[SQL support in local databases](WS112915e91f2778507c29b8cc1256b9c36a3-8000.html).
+[SQL support in local databases](../../appendixes/sql-support-in-local-databases/index.md).
 
 The following example demonstrates executing a `SELECT` statement to retrieve
 data from a table named "products," using asynchronous execution mode:
@@ -53,7 +53,7 @@ data from a table named "products," using asynchronous execution mode:
     }
 
     <?xml version="1.0" encoding="utf-8"?>
-    <mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="init()">
+    <mx:WindowedApplication xmlns:mx="https://www.adobe.com/2006/mxml" creationComplete="init()">
     	<mx:Script>
     		<![CDATA[
     			import flash.data.SQLConnection;
@@ -137,7 +137,7 @@ data from a table named "products," using synchronous execution mode:
     }
 
     <?xml version="1.0" encoding="utf-8"?>
-    <mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="init()">
+    <mx:WindowedApplication xmlns:mx="https://www.adobe.com/2006/mxml" creationComplete="init()">
     	<mx:Script>
     		<![CDATA[
     			import flash.data.SQLConnection;
@@ -281,7 +281,7 @@ data.
     }
 
     <?xml version="1.0" encoding="utf-8"?>
-    <mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="init()">
+    <mx:WindowedApplication xmlns:mx="https://www.adobe.com/2006/mxml" creationComplete="init()">
     	<mx:Script>
     		<![CDATA[
     			import flash.data.SQLConnection;
@@ -393,7 +393,7 @@ data.
     }
 
     <?xml version="1.0" encoding="utf-8"?>
-    <mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="init()">
+    <mx:WindowedApplication xmlns:mx="https://www.adobe.com/2006/mxml" creationComplete="init()">
     	<mx:Script>
     		<![CDATA[
     			import flash.data.SQLConnection;

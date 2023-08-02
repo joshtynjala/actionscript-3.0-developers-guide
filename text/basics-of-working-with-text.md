@@ -48,8 +48,7 @@ For more information on these topics, see:
 
 - [Using the Text Layout Framework](./using-the-text-layout-framework.md)
 
-- <a href="http://goo.gl/A0L15" target="_self">Native text input with
-  StageText</a>
+- [Native text input with StageText](http://goo.gl/A0L15)
 
 #### Important concepts and terms
 

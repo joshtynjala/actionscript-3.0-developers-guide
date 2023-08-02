@@ -91,8 +91,7 @@ might want to maintain control over these settings. You can override Flash
 Player or AIR settings using the `flash.text.TextRenderer` class and its
 associated classes, like the CSMSettings class. These classes give you precise
 control over the rendering quality of embedded text. For more information about
-embedded fonts, see
-[Using embedded fonts](WS8d7bb3e8da6fb92f-20050207122bd5f80cb-7fef.html).
+embedded fonts, see [Using embedded fonts](#using-embedded-fonts).
 
 Note: The `flash.text.TextField`.antiAliasType property must have the value
 `AntiAliasType.ADVANCED` in order for you to set the sharpness, thickness, or
@@ -138,6 +137,6 @@ More Help topics
 ![](../../img/flexLinkIndicator.png)
 [Fonts](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7f9e.html)
 
-[Peter deHaan: Embedding fonts](http://www.adobe.com/devnet/flash/quickstart/embedding_fonts.html)
+[Peter deHaan: Embedding fonts](https://www.adobe.com/devnet/flash/quickstart/embedding_fonts.html)
 
 [Divillysausages.com: AS3 Font embedding masterclass](http://divillysausages.com/blog/as3_font_embedding_masterclass)

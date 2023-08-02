@@ -27,8 +27,8 @@ check your web server documentation. The MIME type for FLV files is
 
 - Security issues: none
 
-- Published specification: <a href="http://www.adobe.com/go/video_file_format"
-  target="_self">www.adobe.com/go/video_file_format</a>
+- Published specification:
+  [www.adobe.com/go/video_file_format](https://www.adobe.com/go/video_file_format)
 
 Microsoft changed the way streaming media is handled in Microsoft Internet
 Information Services (IIS) 6.0 web server from earlier versions. Earlier
@@ -44,8 +44,8 @@ authoring tool, and the Macromedia Flash Video Kit for Dreamweaver MX 2004 from
 Adobe. These files work correctly if you test them on other operating systems.
 
 For information about configuring Microsoft Windows 2003 and Microsoft IIS
-Server 6.0 to stream FLV video, see <a href="http://www.adobe.com/go/tn_19439"
-target="_self">www.adobe.com/go/tn_19439</a>.
+Server 6.0 to stream FLV video, see
+[www.adobe.com/go/tn_19439](https://www.adobe.com/go/tn_19439).
 
 ## About targeting local FLV files on the Macintosh
 

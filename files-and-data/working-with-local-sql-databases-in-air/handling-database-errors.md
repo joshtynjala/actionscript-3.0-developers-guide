@@ -184,7 +184,7 @@ can ignore the error. It can even remove old data and replace it with the data
 that the code is attempting to store.
 
 For more information see the section "ON CONFLICT (conflict algorithms)" in the
-[SQL support in local databases](WS112915e91f2778507c29b8cc1256b9c36a3-8000.html).
+[SQL support in local databases](../../appendixes/sql-support-in-local-databases/index.md).
 
 Provide corrective feedback  
 The set of constraints that can affect a particular SQL command can be

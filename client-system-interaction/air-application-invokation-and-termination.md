@@ -14,7 +14,7 @@ For a quick explanation and code examples of invoking and terminating AIR
 applications, see the following quick start articles on the Adobe Developer
 Connection:
 
-- [Startup Options](http://www.adobe.com/go/learn_air_qs_startup_options_flex_en)
+- [Startup Options](https://www.adobe.com/go/learn_air_qs_startup_options_flex_en)
 
 <!-- -->
 
@@ -214,7 +214,7 @@ the current directory and command line arguments.
 #### Flex example
 
     <?xml version="1.0" encoding="utf-8"?>
-    <mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml" layout="vertical"
+    <mx:WindowedApplication xmlns:mx="https://www.adobe.com/2006/mxml" layout="vertical"
     	invoke="onInvoke(event)" title="Invocation Event Log">
     	<mx:Script>
     	<![CDATA[

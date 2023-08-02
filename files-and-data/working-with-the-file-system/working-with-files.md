@@ -3,12 +3,12 @@
 Using the AIR file API, you can add basic file interaction capabilities to your
 applications. For example, you can read and write files, copy and delete files,
 and so on. Since your applications can access the local file system, refer to
-[AIR security](WS5b3ccc516d4fbf351e63e3d118666ade46-7fa3.html), if you haven't
-already done so.
+[AIR security](../../security/air-security/index.md), if you haven't already
+done so.
 
 Note: You can associate a file type with an AIR application (so that
 double-clicking it opens the application). For details, see
-[Managing file associations](WS5b3ccc516d4fbf351e63e3d118666ade46-7e18.html).
+[Managing file associations](../../client-system-interaction/working-with-air-runtime-and-operating-system-information.md#managing-file-associations).
 
 ## Getting file information
 
@@ -77,7 +77,7 @@ a file or directory to which a File object points:
     <tr>
         <td><p>nativePath</p></td>
         <td><p>The full path in the host operating system representation. See <a
-        href="WS5b3ccc516d4fbf351e63e3d118666ade46-7d9e.html">Paths of File
+        href="./working-with-file-objects-in-air.md#paths-of-file-objects">Paths of File
         objects</a>.</p></td>
     </tr>
     <tr>
@@ -99,7 +99,7 @@ a file or directory to which a File object points:
     <tr>
         <td><p>url</p></td>
         <td><p>The URL for the file or directory. See <a
-        href="WS5b3ccc516d4fbf351e63e3d118666ade46-7d9e.html">Paths of File
+        href="./working-with-file-objects-in-air.md#paths-of-file-objects">Paths of File
         objects</a>.</p></td>
     </tr>
 </tbody>
@@ -116,8 +116,7 @@ The File class includes two methods for copying files or directories: `copyTo()`
 and `copyToAsync()`. The File class includes two methods for moving files or
 directories: `moveTo()` and `moveToAsync()`. The `copyTo()` and `moveTo()`
 methods work synchronously, and the `copyToAsync()` and `moveToAsync()` methods
-work asynchronously (see
-[AIR file basics](WS5b3ccc516d4fbf351e63e3d118666ade46-7dbb.html)).
+work asynchronously (see [AIR file basics](./air-file-basics.md)).
 
 To copy or move a file, you set up two File objects. One points to the file to
 copy or move, and it is the object that calls the copy or move method; the other
@@ -165,8 +164,7 @@ trash.
 
 The File class includes a `deleteFile()` method and a `deleteFileAsync()`
 method. These methods delete files, the first working synchronously, the second
-working asynchronously (see
-[AIR file basics](WS5b3ccc516d4fbf351e63e3d118666ade46-7dbb.html)).
+working asynchronously (see [AIR file basics](./air-file-basics.md)).
 
 For example, the following code synchronously deletes the test.txt file in the
 user's documents directory:
@@ -187,14 +185,14 @@ documents directory:
 
 Also included are the `moveToTrash()` and `moveToTrashAsync` methods, which you
 can use to move a file or directory to the System trash. For details, see
-[Moving a file to the trash](WS5b3ccc516d4fbf351e63e3d118666ade46-7dba.html).
+[Moving a file to the trash](#moving-a-file-to-the-trash).
 
 ## Moving a file to the trash
 
 The File class includes a `moveToTrash()` method and a `moveToTrashAsync()`
 method. These methods send a file or directory to the System trash, the first
 working synchronously, the second working asynchronously (see
-[AIR file basics](WS5b3ccc516d4fbf351e63e3d118666ade46-7dbb.html)).
+[AIR file basics](./air-file-basics.md)).
 
 For example, the following code synchronously moves the test.txt file in the
 user's documents directory to the System trash:

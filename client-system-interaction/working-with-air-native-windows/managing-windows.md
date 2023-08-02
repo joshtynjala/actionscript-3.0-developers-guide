@@ -53,7 +53,7 @@ objects, you can easily reference the application window in an MXML file using
 the `stage` property, as follows:
 
     <?xml version="1.0" encoding="utf-8"?>
-    <mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml" applicationComplete="init();">
+    <mx:WindowedApplication xmlns:mx="https://www.adobe.com/2006/mxml" applicationComplete="init();">
     	<mx:Script>
     	<![CDATA[
     		import flash.display.NativeWindow;
@@ -317,7 +317,7 @@ The following short MXML application demonstrates the Window `maximize()`,
     <?xml version="1.0" encoding="utf-8"?>
 
     <mx:WindowedApplication
-    	xmlns:mx="http://www.adobe.com/2006/mxml"
+    	xmlns:mx="https://www.adobe.com/2006/mxml"
     	layout="vertical">
 
 
@@ -435,8 +435,7 @@ you must add your own controls to allow the user to resize and move the window.
 
 Note: To resize or move a window, you must first obtain a reference to the
 NativeWindow instance. For information about how to obtain a window reference,
-see
-[Getting a NativeWindow instance](WS5b3ccc516d4fbf351e63e3d118666ade46-7e03.html).
+see [Getting a NativeWindow instance](#getting-a-nativewindow-instance).
 
 #### Resizing a window
 

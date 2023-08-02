@@ -50,4 +50,4 @@ MyHTMLHost object to its `htmlHost` property:
 
 For details on the HTMLHost class and the `HTMLLoader.createRootWindow()` method
 used in this example, see
-[Defining browser-like user interfaces for HTML content](WS5b3ccc516d4fbf351e63e3d118666ade46-7e74.html).
+[Defining browser-like user interfaces for HTML content](./defining-browser-like-user-interfaces-for-html-content.md).

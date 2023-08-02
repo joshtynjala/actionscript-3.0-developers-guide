@@ -9,7 +9,7 @@ only the `url` property is used.
 
 The first parameter of the `navigateToURL()` function, the `navigate` parameter,
 is a URLRequest object (see
-[Using the URLRequest class](WS5b3ccc516d4fbf351e63e3d118666ade46-7cb2.html)).
+[Using the URLRequest class](./loading-external-data.md#using-the-urlrequest-class)).
 The second is an optional `window` parameter, in which you can specify the
 window name. For example, the following code opens the www.adobe.com web page:
 

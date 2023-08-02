@@ -10,7 +10,7 @@ ways to use Video in your projects:
   and display the video in a Video object.
 
 - Capture input from the user's camera. For more information, see
-  [Working with cameras](WSfffb011ac560372f3fa68e8912e3ab6b8cb-8000.html).
+  [Working with cameras](../working-with-cameras.md).
 
 - Use the FLVPlayback component.
 
@@ -23,6 +23,6 @@ flash.display.DisplayObject class. Therefore, all display object functionality,
 such as matrix transformations and filters, also applies to Video instances.
 
 For more information see
-[Manipulating display objects](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e0c.html),
-[Working with geometry](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e23.html), and
-[Filtering display objects](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e37.html).
+[Manipulating display objects](../../display/display-programming/manipulating-display-objects.md),
+[Working with geometry](../../display/working-with-geometry/index.md), and
+[Filtering display objects](../../display/filtering-display-objects/index.md).

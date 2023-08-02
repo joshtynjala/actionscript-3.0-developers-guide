@@ -11,7 +11,7 @@ the encrypted local store" and "Best practices," below.
 
 Note: In addition to the encrypted local store, AIR also provides encryption for
 content stored in SQL databases. For details, see
-[Using encryption with SQL databases](WS8AFC5E35-DC79-4082-9AD4-DE1A2B41DAAF.html).
+[Using encryption with SQL databases](../working-with-local-sql-databases-in-air/using-encryption-with-sql-databases.md).
 
 You may want to use the encrypted local store to cache information that must be
 secured, such as login credentials for web services. The ELS is appropriate for

@@ -23,8 +23,7 @@ The StageVideo class imposes certain restrictions on video usage. Before
 implementing StageVideo, review the guidelines and make sure your application
 can accept them. If you accept the restrictions, use the StageVideo class
 whenever Flash Player detects that hardware accelerated presentation is
-available. See
-[Guidelines and limitations](WSe9ecd9e6b89aefd2-70150d4b12ccd2cd415-7ffe.html).
+available. See [Guidelines and limitations](#guidelines-and-limitations).
 
 ## Parallel planes: Stage video and the Flash display list
 

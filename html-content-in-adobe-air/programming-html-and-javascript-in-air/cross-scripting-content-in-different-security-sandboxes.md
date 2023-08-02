@@ -44,9 +44,10 @@ Finally, you can also perform cross-domain XMLHttpRequests from the application
 sandbox and, optionally, from other sandboxes.
 
 For more information, see
-[HTML frame and iframe elements](WS5b3ccc516d4fbf351e63e3d118666ade46-7edb.html),
-[HTML security in Adobe AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7f11.html),
-and [The XMLHttpRequest object](WS5b3ccc516d4fbf351e63e3d118666ade46-7eb5.html).
+[HTML frame and iframe elements](../about-the-html-environment/html-in-air.md#html-frame-and-iframe-elements),
+[HTML security in Adobe AIR](../../security/air-security/html-security-in-adobe-air.md),
+and
+[The XMLHttpRequest object](../about-the-html-environment/javascript-in-air.md#the-xmlhttprequest-object).
 
 ## Loading application content into a non-application sandbox
 

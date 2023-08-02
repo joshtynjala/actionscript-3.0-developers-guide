@@ -111,18 +111,18 @@ stage.
 - StageVideo — The StageVideo class displays video content, using hardware
   acceleration, when possible. This class is available starting in Flash Player
   10.2. For more information, see
-  [Using the StageVideo class for hardware accelerated presentation](WSe9ecd9e6b89aefd2-68d5ef8f12cc8511f6c-8000.html).
+  [Using the StageVideo class for hardware accelerated presentation](../../rich-media-content/working-with-video/using-the-stagevideo-class-for-hardware-accelerated-presentation.md).
 
 - StageWebView — The StageWebView class displays HTML content. This class is
   available starting in AIR 2.5. For more information, see
-  [StageWebView objects](WS901d38e593cd1bac-5a0b8b512ac674f48f-8000.html).
+  [StageWebView objects](../../html-content-in-adobe-air/displaying-html-content-in-mobile-apps.md#stagewebview-objects).
 
 The following fl.display classes provide functionality that parallels the
 flash.display.Loader and LoaderInfo classes. Use these classes instead of their
 flash.display counterparts if you are developing in the Flash Professional
 environment (CS5.5 or later). In that environment, these classes help solve
 issues involving TLF with RSL preloading. For more information, see
-[Using the ProLoader and ProLoaderInfo classes](WS8d8847c9373891295a9e5f6412cc8681fbc-8000.html).
+[Using the ProLoader and ProLoaderInfo classes](./loading-display-content-dynamically.md#using-the-proloader-and-proloaderinfo-classes).
 
 - fl.display.ProLoader—Analogous to flash.display.Loader
 

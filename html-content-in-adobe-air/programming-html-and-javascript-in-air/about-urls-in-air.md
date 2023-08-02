@@ -56,7 +56,7 @@ the `href` attribute of a `link` tag, or anywhere else you can provide a URL.
 </table>
 
 For more information about using URL schemes in AIR, see
-[URI schemes](WS5b3ccc516d4fbf351e63e3d118666ade46-7ee3.html).
+[URI schemes](../../networking-and-communication/http-communications/loading-external-data.md#uri-schemes).
 
 Many of AIR APIs, including the File, Loader, URLStream, and Sound classes, use
 a URLRequest object rather than a string containing the URL. The URLRequest
@@ -64,7 +64,7 @@ object itself is initialized with a string, which can use any of the same url
 schemes. For example, the following statement creates a URLRequest object that
 can be used to request the Adobe home page:
 
-    var urlReq = new air.URLRequest("http://www.adobe.com/");
+    var urlReq = new air.URLRequest("https://www.adobe.com/");
 
 For information about URLRequest objects see
-[HTTP communications](WS5b3ccc516d4fbf351e63e3d118666ade46-7ee2.html).
+[HTTP communications](../../networking-and-communication/http-communications/index.md).

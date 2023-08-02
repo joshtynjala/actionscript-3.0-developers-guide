@@ -502,7 +502,7 @@ For more information on XMP, see:
 
 - [partners.adobe.com/public/developer/xmp/topic.html](http://partners.adobe.com/public/developer/xmp/topic.html)
 
-- [www.adobe.com/devnet/xmp/](http://www.adobe.com/devnet/xmp/)
+- [www.adobe.com/devnet/xmp/](https://www.adobe.com/devnet/xmp/)
 
 ## Using image metadata
 

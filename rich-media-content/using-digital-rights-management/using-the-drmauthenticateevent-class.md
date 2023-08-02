@@ -140,7 +140,7 @@ application to the base state. This method does so after passing the user
 credentials and resetting the TextInput object values.
 
     <?xml version="1.0" encoding="utf-8"?>
-    <mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml"
+    <mx:WindowedApplication xmlns:mx="https://www.adobe.com/2006/mxml"
     	layout="absolute"
     	width="800"
     	height="500"

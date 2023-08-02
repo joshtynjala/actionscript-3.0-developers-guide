@@ -24,7 +24,7 @@ example illustrates the following:
 
 Before beginning, note that each of the SWF files to run in Flash Player must be
 located in the same security sandbox. For more information, see
-[Security sandboxes](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e3f.html).
+[Security sandboxes](../../security/security-sandboxes.md).
 
 To get the application files for this sample, download the
 [_FlashPlatformAS3DevGuideExamples.zip_](https://github.com/joshtynjala/flash-platform-as3-dev-guide-examples/releases/tag/original).

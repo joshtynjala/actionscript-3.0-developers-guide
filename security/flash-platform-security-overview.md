@@ -5,7 +5,7 @@ domain of origin for loaded SWF files, HTML, media, and other assets. Executable
 code in a file from a specific Internet domain, such as www.example.com, can
 always access all data from that domain. These assets are put in the same
 security grouping, known as a _security sandbox_. (For more information, see
-[Security sandboxes](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e3f.html).)
+[Security sandboxes](./security-sandboxes.md).)
 
 For example, ActionScript code in a SWF file can load SWF files, bitmaps, audio,
 text files, and any other asset from its own domain. Also, cross-scripting
@@ -20,8 +20,7 @@ communicate by using the LocalConnection class. Also, the ability of a SWF file
 to cross-script ActionScript 3.0 SWF files from other domains and to load data
 from other domains is prohibited by default; however, such access can be granted
 with a call to the `Security.allowDomain()` method in the loaded SWF file. For
-more information, see
-[Cross-scripting](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c98.html).
+more information, see [Cross-scripting](./cross-scripting.md).
 
 The following basic security rules always apply by default:
 
@@ -51,10 +50,10 @@ There are two basic methods that a developer can use to grant a SWF file access
 to assets from sandboxes other than that of the SWF file:
 
 - The `Security.allowDomain()` method (see
-  [Author (developer) controls](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c96.html))
+  [Author (developer) controls](./permission-controls.md#author-developer-controls))
 
 - The URL policy file (see
-  [Website controls (policy files)](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e08.html))
+  [Website controls (policy files)](./permission-controls.md#website-controls-policy-files))
 
 In the Flash Player and AIR runtime security models, there is a distinction
 between loading content and extracting or accessing data. _Content_ is defined
@@ -90,23 +89,23 @@ There are a few barriers to loading content:
 - By default, local SWF files (those loaded from a non-network address, such as
   a user's hard drive) are classified in the local-with-filesystem sandbox.
   These files cannot load content from the network. For more information, see
-  [Local sandboxes](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c8f.html).
+  [Local sandboxes](./security-sandboxes.md#local-sandboxes).
 
 - Real-Time Messaging Protocol (RTMP) servers can limit access to content. For
   more information, see
-  [Content delivered using RTMP servers](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c8a.html).
+  [Content delivered using RTMP servers](./loading-content.md#content-delivered-using-rtmp-servers).
 
 If the loaded media is an image, audio, or video, its data, such as pixel data
 and sound data, can be accessed by a SWF file outside its security sandbox only
 if the domain of that SWF file has been included in a URL policy file at the
 origin domain of the media. For details, see
-[Accessing loaded media as data](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d1b.html).
+[Accessing loaded media as data](./accessing-loaded-media-as-data.md).
 
 Other forms of loaded data include text or XML files, which are loaded with a
 URLLoader object. Again in this case, to access any data from another security
 sandbox, permission must be granted by means of a URL policy file at the origin
 domain. For details, see
-[Using URLLoader and URLStream](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c67.html).
+[Using URLLoader and URLStream](./loading-data.md#using-urlloader-and-urlstream).
 
 Note: Policy files are never required in order for code executing in the AIR
 application sandbox to load remote content or data.

@@ -58,7 +58,7 @@ LoaderInfo object of the Loader object that loads the remote SWF.
 The following is the code for the AIR music store:
 
     <?xml version="1.0" encoding="utf-8"?>
-    <mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" title="Music Store" creationComplete="initApp()">
+    <mx:WindowedApplication xmlns:mx="https://www.adobe.com/2006/mxml" layout="absolute" title="Music Store" creationComplete="initApp()">
     	<mx:Script>
     	<![CDATA
     		import flash.display.Loader;
@@ -155,7 +155,7 @@ the store's price, but cannot report the sale price:
 In HTML content, the `parentSandboxBridge` and `childSandboxBridge` properties
 are added to the JavaScript window object of a child document. For an example of
 how to set up bridge functions in HTML content, see
-[Setting up a sandbox bridge interface](WS5b3ccc516d4fbf351e63e3d118666ade46-7f06.html).
+[Setting up a sandbox bridge interface](../../html-content-in-adobe-air/programming-html-and-javascript-in-air/cross-scripting-content-in-different-security-sandboxes.md#setting-up-a-sandbox-bridge-interface).
 
 ## Limiting API exposure
 

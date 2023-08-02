@@ -22,12 +22,11 @@ the `matrix3D` property of the Transform object of the leaf:
     trace(leafMatrix.position.length);
     trace(leafMatrix.position.lengthSquared);
 
-For information about the properties of the Transform object, see the <a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Transform.html"
-target="_self">Transform</a> class. For information about the properties of the
-Matrix3D object, see the <a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Matrix3D.html"
-target="_self">Matrix3D</a> class.
+For information about the properties of the Transform object, see the
+[Transform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Transform.html)
+class. For information about the properties of the Matrix3D object, see the
+[Matrix3D](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Matrix3D.html)
+class.
 
 ## Moving an object in 3D space
 

@@ -48,7 +48,7 @@ To synchronize an action for a cue point in an F4V video file, you must retrieve
 the cue point data from either the `onMetaData()` or the `onXMPData()` callback
 functions and trigger the cue point using the Timer class in ActionScript 3.0.
 For more information on F4V cue points, see
-[Using onXMPData()](WS48F8E9DF-A81C-4838-84CF-5F04EB8541FE.html).
+[Using onXMPData()](./using-cue-points-and-metadata.md#using-onxmpdata).
 
 For more information on handling cue points and metadata, see
 [Writing callback methods for metadata and cue points](./writing-callback-methods-for-metadata-and-cue-points.md).

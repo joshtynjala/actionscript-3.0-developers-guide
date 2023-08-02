@@ -75,7 +75,7 @@ the PDFs subdirectory of the application directory:
 app:/js_api_reference.pdf
 
 For more information on AIR URL schemes, see
-[URI schemes](WS5b3ccc516d4fbf351e63e3d118666ade46-7ee3.html).
+[URI schemes](../networking-and-communication/http-communications/loading-external-data.md#uri-schemes).
 
 ## Scripting PDF content
 
@@ -92,8 +92,7 @@ JavaScript extensions to Acrobat provide the following features, among others:
 
 Full details on JavaScript extensions for Adobe Acrobat are provided at the
 Adobe Acrobat Developer Connection at
-<a href="http://www.adobe.com/devnet/acrobat/javascript.html"
-target="_self">http://www.adobe.com/devnet/acrobat/javascript.html</a>.
+[https://www.adobe.com/devnet/acrobat/javascript.html](https://www.adobe.com/devnet/acrobat/javascript.html).
 
 ### HTML-PDF communication basics
 
@@ -168,8 +167,7 @@ object contained in the page. Calling this method sends a message (
 
 For a more advanced example, and for information on using Acrobat 8 to add
 JavaScript to a PDF file, see
-<a href="http://www.adobe.com/go/learn_air_qs_pdf_script_flex_en"
-target="_self">Cross-scripting PDF content in Adobe AIR</a>.
+[Cross-scripting PDF content in Adobe AIR](https://www.adobe.com/go/learn_air_qs_pdf_script_flex_en).
 
 ### Scripting PDF content from ActionScript
 

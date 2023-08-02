@@ -237,5 +237,6 @@ following arguments are passed to the function:
 
 ## Adobe recommends
 
-> <h3 id="trim-leading-and-trailing-00s-from-a-string"><a href="http://goo.gl/GHGjc" target="_self"><img src="../../img/dougrdotnet.png" /> Trim Leading and Trailing 00s From a String</a></h3>
-> <a href="http://goo.gl/ql1TG" target="_self">Doug Reynolds</a>
+> ### [![](../../img/dougrdotnet.png) Trim Leading and Trailing 00s From a String](http://goo.gl/GHGjc)
+>
+> [Doug Reynolds](http://goo.gl/ql1TG)

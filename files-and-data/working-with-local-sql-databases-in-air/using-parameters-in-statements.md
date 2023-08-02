@@ -104,7 +104,7 @@ text representation to a storage class based on the associated column's type
 affinity.
 
 For more information on storage classes and column affinity, see
-[Data type support](WSd47bd22bdd97276f2aceae3b1262b7f2d43-8000.html).
+[Data type support](../../appendixes/sql-support-in-local-databases/data-type-support.md).
 
 Greater security  
 The use of parameters helps prevent a malicious technique known as a SQL

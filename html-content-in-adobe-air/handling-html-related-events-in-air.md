@@ -72,7 +72,7 @@ An HTMLLoader object dispatches the following Adobe® ActionScript® 3.0 events:
 
 You can also register an ActionScript function for a JavaScript event (such as
 `onClick`). For details, see
-[Handling DOM events with ActionScript](WS5b3ccc516d4fbf351e63e3d118666ade46-7e84.html).
+[Handling DOM events with ActionScript](./handling-html-related-events-in-air.md#handling-dom-events-with-actionscript).
 
 ## Handling DOM events with ActionScript
 

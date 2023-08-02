@@ -10,14 +10,13 @@ same drawing commands as a parameter. With these methods, you can provide a
 series of `Graphics.lineTo()`, `Graphics.curveTo()`, or `Graphics.moveTo()`
 commands for the Flash runtime to execute in a single statement.
 
-The <a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/GraphicsPathCommand.html"
-target="_self">GraphicsPathCommand</a> enumeration class defines a set of
-constants that correspond to drawing commands. You pass a series of these
-constants (wrapped in a Vector instance) as a parameter for the
-`Graphics.drawPath()` method. Then with a single command you can render an
-entire shape, or several shapes. You can also alter the values passed to these
-methods to change an existing shape.
+The
+[GraphicsPathCommand](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/GraphicsPathCommand.html)
+enumeration class defines a set of constants that correspond to drawing
+commands. You pass a series of these constants (wrapped in a Vector instance) as
+a parameter for the `Graphics.drawPath()` method. Then with a single command you
+can render an entire shape, or several shapes. You can also alter the values
+passed to these methods to change an existing shape.
 
 In addition to the Vector of drawing commands, the `drawPath()` method needs a
 set of coordinates that correspond to the coordinates for each drawing command.

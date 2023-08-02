@@ -4,10 +4,10 @@ For a quick explanation and code examples of creating native menus in AIR
 applications, see the following quick start articles on the Adobe Developer
 Connection:
 
-- [Adding native menus to an AIR application](http://www.adobe.com/devnet/air/flex/quickstart/adding_menus.html)
+- [Adding native menus to an AIR application](https://www.adobe.com/devnet/air/flex/quickstart/adding_menus.html)
   (Flex)
 
-- [Adding native menus to an AIR application](http://www.adobe.com/devnet/air/flash/quickstart/adding_menus.html)
+- [Adding native menus to an AIR application](https://www.adobe.com/devnet/air/flash/quickstart/adding_menus.html)
   (Flash)
 
 The native menu classes allow you to access the native menu features of the

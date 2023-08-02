@@ -8,12 +8,14 @@ the rendering context in the binary bytecode format described in this document.
 
 ## Adobe recommends
 
-> <h3 id="how-stage3d-works"><img src="../../img/marco_scabia.png" /> <a href="http://goo.gl/KB34I">How Stage3D works</a></h3>
-> <a href="http://goo.gl/sVKdP">Marco Scabia: iFlash3D.com</a>
+> ### ![](../../img/marco_scabia.png) [How Stage3D works](http://goo.gl/KB34I)
+>
+> [Marco Scabia: iFlash3D.com](http://goo.gl/sVKdP)
 
-> <h3 id="what-is-agal"><img src="../../img/marco_scabia.png" /> <a href="http://goo.gl/kgZ3Y">What
-> is AGAL</a></h3>
-> <a href="http://goo.gl/sVKdP">Marco Scabia: iFlash3D.com</a>
+> ### ![](../../img/marco_scabia.png) [What is AGAL](http://goo.gl/kgZ3Y)
+>
+> [Marco Scabia: iFlash3D.com](http://goo.gl/sVKdP)
 
-> <h3 id="vertex-and-fragment-shaders"><img src="../../img/marco_scabia.png" /> <a href="http://goo.gl/EfT4p">Vertex and fragment shaders</a></h3>
-> <a href="http://goo.gl/sVKdP">Marco Scabia: iFlash3D.com</a>
+> ### ![](../../img/marco_scabia.png) [Vertex and fragment shaders](http://goo.gl/EfT4p)
+>
+> [Marco Scabia: iFlash3D.com](http://goo.gl/sVKdP)

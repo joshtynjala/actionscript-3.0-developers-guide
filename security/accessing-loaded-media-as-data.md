@@ -50,7 +50,7 @@ denied.
 
 You can also specify a `checkPolicyFile` property in an image loaded via an
 `<img>` tag in a text field. For details, see
-[Loading SWF files and images using the \<img\> tag in a text field](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c65.html).
+[Loading SWF files and images using the \<img\> tag in a text field](./loading-content.md#loading-swf-files-and-images-using-the-img-tag-in-a-text-field).
 
 ## Accessing sound data
 
@@ -111,14 +111,14 @@ files), a URL policy file on the source server grants access to data in loaded
 media.
 
 For more information, see
-[Author (developer) controls](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c96.html)
+[Author (developer) controls](./permission-controls.md#author-developer-controls)
 and
-[Website controls (policy files)](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e08.html).
+[Website controls (policy files)](./permission-controls.md#website-controls-policy-files).
 
 To access sound data from RTMP streams, you must allow access on the server. Use
 the Server-Side ActionScript `Client.audioSampleAccess` property to allow access
 to specific directories on Flash Media Server. For more information, see the
-[Server-Side ActionScript Language Reference](http://www.adobe.com/go/learn_fms_docs_en).
+[Server-Side ActionScript Language Reference](https://www.adobe.com/go/learn_fms_docs_en).
 
 ## Accessing video data
 
@@ -136,7 +136,7 @@ To use the draw methods to extract run-time graphics from RTMP streams, you must
 allow access on the server. Use the Server-Side ActionScript
 `Client.videoSampleAccess` property to allow access to specific directories on
 Flash Media Server. For more information, see the
-[Server-Side ActionScript Language Reference](http://www.adobe.com/go/learn_fms_docs_en).
+[Server-Side ActionScript Language Reference](https://www.adobe.com/go/learn_fms_docs_en).
 
 When you call a draw method with progressive video as the `source` parameter,
 the caller of the method must either be from the same sandbox as the FLV file,

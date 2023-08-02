@@ -6,7 +6,7 @@ AIR. At the same time, these differences in behavior mean that some common
 JavaScript coding patterns, and existing web applications using those patterns,
 might not always execute as expected in AIR. For information on correcting these
 types of issues, see
-[Avoiding security-related JavaScript errors](WS5b3ccc516d4fbf351e63e3d118666ade46-7f0e.html).
+[Avoiding security-related JavaScript errors](../programming-html-and-javascript-in-air/avoiding-security-related-javascript-errors.md).
 
 ## HTML Sandboxes
 
@@ -15,9 +15,8 @@ content. The sandbox rules are consistent with the same-origin policy
 implemented by most web browsers, as well as the rules for sandboxes implemented
 by the Adobe Flash Player. In addition, AIR provides a new _application_ sandbox
 type to contain and protect application content. See
-[Security sandboxes](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e3f.html) for more
-information on the types of sandboxes you may encounter when developing AIR
-applications.
+[Security sandboxes](../../security/security-sandboxes.md) for more information
+on the types of sandboxes you may encounter when developing AIR applications.
 
 Access to the run-time environment and AIR APIs are only available to HTML and
 JavaScript running within the application sandbox. At the same time, however,
@@ -60,7 +59,7 @@ Use of the `eval()` function is restricted within the application sandbox once a
 page has finished loading. Some uses are permitted so that JSON-formatted data
 can be safely parsed, but any evaluation that results in executable statements
 results in an error.
-[Code restrictions for content in different sandboxes](WS5b3ccc516d4fbf351e63e3d118666ade46-7eea.html)
+[Code restrictions for content in different sandboxes](../../security/air-security/html-security-in-adobe-air.md#code-restrictions-for-content-in-different-sandboxes)
 describes the allowed uses of the `eval()` function.
 
 ## Function constructors
@@ -148,9 +147,9 @@ directory, change the previous iframe to the following:
 In this case, only content in the `air` subdirectory is loaded locally.
 
 For more information on sandbox mapping see
-[HTML frame and iframe elements](WS5b3ccc516d4fbf351e63e3d118666ade46-7edb.html)
+[HTML frame and iframe elements](./html-in-air.md#html-frame-and-iframe-elements)
 and
-[HTML security in Adobe AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7f11.html).
+[HTML security in Adobe AIR](../../security/air-security/html-security-in-adobe-air.md).
 
 ## Cookies
 
@@ -195,7 +194,7 @@ on the clipboard. If non-application content attempts to access a file object
 from the clipboard, a security error is thrown.
 
 For more information on using the clipboard, see
-[Copy and paste](WS88A6374C-1D6C-4faa-968C-5354C78587E2.html) and
+[Copy and paste](../../user-interaction/copy-and-paste/index.md) and
 [Using the Pasteboard from JavaScript (Apple Developer Center)](http://developer.apple.com/documentation/AppleApplications/Conceptual/SafariJSProgTopics/Tasks/CopyAndPaste.html#//apple_ref/doc/uid/30001234).
 
 ## Drag and Drop
@@ -225,7 +224,8 @@ The `dataTransfer` object has the following important members:
 | dropEffect              | Specifies which of the allowed drop effects are supported by a drag target. Set the `dropEffect` property in the handler for the `dragEnter` event. During the drag, the cursor changes to indicate which effect would occur if the user released the mouse. If no `dropEffect` is specified, an `effectsAllowed` property effect is chosen. The copy effect has priority over the move effect, which itself has priority over the link effect. The user can modify the default priority using the keyboard. |
 
 For more information on adding support for drag-and-drop to an AIR application
-see [Drag and drop in AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7e8a.html) and
+see [Drag and drop in AIR](../../user-interaction/drag-and-drop-in-air/index.md)
+and
 [Using the Drag-and-Drop from JavaScript (Apple Developer Center)](http://developer.apple.com/documentation/AppleApplications/Conceptual/SafariJSProgTopics/Tasks/DragAndDrop.html#//apple_ref/doc/uid/30001233).
 
 ## innerHTML and outerHTML properties
@@ -240,7 +240,7 @@ content to the document. Any statement in the string assigned to `innerHTML` or
 include an event callback attribute in an element definition, the event listener
 is not added. Likewise, embedded `<script>` tags are not evaluated. For more
 information, see the
-[HTML security in Adobe AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7f11.html).
+[HTML security in Adobe AIR](../../security/air-security/html-security-in-adobe-air.md).
 
 ## Document.write() and Document.writeln() methods
 
@@ -259,7 +259,7 @@ paste, and drag-and-drop. Setting `designMode` to `on` is equivalent to setting
 the `contentEditable` property of the `body` element to `true`. You can use the
 `contentEditable` property on most HTML elements to define which sections of a
 document are editable. See
-[HTML contentEditable attribute](WS5b3ccc516d4fbf351e63e3d118666ade46-7e98.html)
+[HTML contentEditable attribute](./html-in-air.md#html-contenteditable-attribute)
 for additional information.
 
 ## unload events (for body and frameset objects)
@@ -310,7 +310,7 @@ The `window.runtime` property is only defined for content within the application
 sandbox and only for the parent document of a page with frames or iframes.
 
 See
-[Using the AIRAliases.js file](WS5b3ccc516d4fbf351e63e3d118666ade46-7fcd.html).
+[Using the AIRAliases.js file](../programming-html-and-javascript-in-air/using-the-airaliases-js-file.md).
 
 Window.nativeWindow property  
 The `nativeWindow` property provides a reference to the underlying native window
@@ -351,14 +351,14 @@ Window.parentSandboxBridge and Window.childSandboxBridge properties
 The `parentSandboxBridge` and `childSandboxBridge` properties allow you to
 define an interface between a parent and a child frame. For more information,
 see
-[Cross-scripting content in different security sandboxes](WS5b3ccc516d4fbf351e63e3d118666ade46-7f08.html).
+[Cross-scripting content in different security sandboxes](../programming-html-and-javascript-in-air/cross-scripting-content-in-different-security-sandboxes.md).
 
 Window.setTimeout() and Window.setInterval() functions  
 AIR places security restrictions on use of the `setTimeout()` and
 `setInterval()` functions within the application sandbox. You cannot define the
 code to be executed as a string when calling `setTimeout()` or `setInterval()`.
 You must use a function reference. For more information, see
-[setTimeout() and setInterval()](WS5b3ccc516d4fbf351e63e3d118666ade46-7efb.html).
+[setTimeout() and setInterval()](../programming-html-and-javascript-in-air/avoiding-security-related-javascript-errors.md#settimeout-and-setinterval).
 
 Window.open() function  
 When called by code running in a non-application sandbox, the `open()` method
@@ -366,7 +366,7 @@ only opens a window when called as a result of user interaction (such as a mouse
 click or keypress). In addition, the window title is prefixed with the
 application title (to prevent windows opened by remote content from
 impersonating windows opened by the application). For more information, see the
-[Restrictions on calling the JavaScript window.open() method](WS5b3ccc516d4fbf351e63e3d118666ade46-7e91.html).
+[Restrictions on calling the JavaScript window.open() method](../../security/air-security/html-security-in-adobe-air.md#restrictions-on-calling-the-javascript-windowopen-method).
 
 ## air.NativeApplication object
 
@@ -387,7 +387,7 @@ form:
 
 The NativeApplication object can only be accessed from within the application
 sandbox. For more information about the NativeApplication object, see
-[Working with AIR runtime and operating system information](WS5b3ccc516d4fbf351e63e3d118676a5f3b-8000.html).
+[Working with AIR runtime and operating system information](../../client-system-interaction/working-with-air-runtime-and-operating-system-information.md).
 
 ## The JavaScript URL scheme
 

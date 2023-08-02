@@ -222,7 +222,7 @@ way to prevent this problem.)
 
 #### Flex example
 
-    <mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" width="326" height="330" applicationComplete="init()">
+    <mx:Application xmlns:mx="https://www.adobe.com/2006/mxml" layout="absolute" width="326" height="330" applicationComplete="init()">
     	<mx:Script>
     	<![CDATA[
     	import flash.desktop.Clipboard;

@@ -51,7 +51,7 @@ size, and the uncompressed size. The following MXML document defines the user
 interface for the Flex version of the application:
 
     <?xml version="1.0" encoding="utf-8"?>
-    <mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml" layout="vertical" creationComplete="init();">
+    <mx:WindowedApplication xmlns:mx="https://www.adobe.com/2006/mxml" layout="vertical" creationComplete="init();">
     	<mx:Script>
     	<![CDATA[
     		// The application code goes here

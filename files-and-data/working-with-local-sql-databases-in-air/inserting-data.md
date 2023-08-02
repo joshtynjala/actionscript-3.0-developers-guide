@@ -55,7 +55,7 @@ been created.
     }
 
     <?xml version="1.0" encoding="utf-8"?>
-    <mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="init()">
+    <mx:WindowedApplication xmlns:mx="https://www.adobe.com/2006/mxml" creationComplete="init()">
     	<mx:Script>
     		<![CDATA[
     			import flash.data.SQLConnection;
@@ -139,7 +139,7 @@ been created.
     }
 
     <?xml version="1.0" encoding="utf-8"?>
-    <mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="init()">
+    <mx:WindowedApplication xmlns:mx="https://www.adobe.com/2006/mxml" creationComplete="init()">
     	<mx:Script>
     		<![CDATA[
     			import flash.data.SQLConnection;
@@ -276,4 +276,4 @@ the system-generated row identifier as a table's primary key for defining a
 foreign key relationship with between two tables.
 
 For more information about primary keys and generated row identifiers, see
-[SQL support in local databases](WS112915e91f2778507c29b8cc1256b9c36a3-8000.html).
+[SQL support in local databases](../../appendixes/sql-support-in-local-databases/index.md).

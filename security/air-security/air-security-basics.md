@@ -22,6 +22,7 @@ desktop applications written in native code.
 
 ## Adobe recommends<
 
->  <h3 id="maintaining-security-with-adobe-air"><a href="http://goo.gl/rXu59"><img src="../../img/ethanAndpeleus.png" /> Maintaining Security with Adobe AIR</a></h3>
-> Peleus Uhley and Ethan Malasky
-> Peleus Uhley and Ethan Malasky provide an overview of the security-related issues that can arise when developing Adobe AIR applications.
+> ### [![](../../img/ethanAndpeleus.png) Maintaining Security with Adobe AIR](http://goo.gl/rXu59)
+>
+> Peleus Uhley and Ethan Malasky provide an overview of the security-related
+> issues that can arise when developing Adobe AIR applications.

@@ -87,4 +87,4 @@ handler function that no longer exists. If this happens, you will see the
 following error message: "The application attempted to reference a JavaScript
 object in an HTML page that is no longer loaded." Removing unneeded event
 listeners also lets AIR reclaim the associated memory. For more information, see
-[Removing event listeners in HTML pages that navigate](WS5b3ccc516d4fbf351e63e3d118666ade46-7ec3.html).
+[Removing event listeners in HTML pages that navigate](../handling-html-related-events-in-air.md#removing-event-listeners-in-html-pages-that-navigate).

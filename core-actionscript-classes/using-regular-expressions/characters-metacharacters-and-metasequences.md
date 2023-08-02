@@ -48,11 +48,11 @@ expressions:
         <samp>m</samp> (
         <samp>multiline</samp> ) flag
         set, the caret matches the start of a line as well (see <a
-        href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7ea7.html">Flags and
+        href="./flags-and-properties.md">Flags and
         properties</a> ). Note that when used at the start of a character class,
         the caret indicates negation, not the start of a string. For more
         information, see <a
-        href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7ea5.html">Character
+        href="./character-classes.md">Character
         classes</a>.</p></td>
     </tr>
     <tr>
@@ -66,7 +66,7 @@ expressions:
         position before a newline (
         <samp>\n</samp> ) character as
         well. For more information, see <a
-        href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7ea7.html">Flags and
+        href="./flags-and-properties.md">Flags and
         properties</a>.</p></td>
     </tr>
     <tr>
@@ -90,7 +90,7 @@ expressions:
         <samp>s</samp> (
         <samp>dotall</samp> ) flag is
         set. For more information, see <a
-        href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7ea7.html">Flags and
+        href="./flags-and-properties.md">Flags and
         properties</a>.</p></td>
     </tr>
     <tr>
@@ -99,7 +99,7 @@ expressions:
         <td ><p>Matches the
         previous item repeated zero or more times.</p>
         <p>For more information, see <a
-        href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7eab.html">Quantifiers</a>.</p></td>
+        href="./quantifiers.md">Quantifiers</a>.</p></td>
     </tr>
     <tr>
         <td ><p><samp>+</samp>
@@ -107,7 +107,7 @@ expressions:
         <td ><p>Matches the
         previous item repeated one or more times.</p>
         <p>For more information, see <a
-        href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7eab.html">Quantifiers</a>.</p></td>
+        href="./quantifiers.md">Quantifiers</a>.</p></td>
     </tr>
     <tr>
         <td ><p><samp>?</samp>
@@ -115,7 +115,7 @@ expressions:
         <td ><p>Matches the
         previous item repeated zero times or one time.</p>
         <p>For more information, see <a
-        href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7eab.html">Quantifiers</a>.</p></td>
+        href="./quantifiers.md">Quantifiers</a>.</p></td>
     </tr>
     <tr>
         <td ><p><samp>(</samp>
@@ -133,7 +133,7 @@ expressions:
         <li><p><samp>/(\w*) is repeated:
         \1/</samp></p></li>
         </ul><p>For more information, see <a
-        href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7e9a.html">Groups</a>.</p></td>
+        href="./groups.md">Groups</a>.</p></td>
     </tr>
     <tr>
         <td ><p><samp>[</samp>
@@ -161,7 +161,7 @@ expressions:
         either <samp>$</samp>
         <samp>or</samp> £.</p>
         <p>For more information, see <a
-        href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7ea5.html">Character
+        href="./character-classes.md">Character
         classes</a>.</p></td>
     </tr>
     <tr>
@@ -218,7 +218,7 @@ expression pattern. The following table describes these metasequences:
         repeated <samp>3</samp> to
         <samp>5</samp> times.</p>
         <p>For more information, see <a
-        href="WS5b3ccc516d4fbf351e63e3d118a9b90204-7eab.html">Quantifiers</a>.</p></td>
+        href="./quantifiers.md">Quantifiers</a>.</p></td>
     </tr>
     <tr>
         <td ><p><samp>\b</samp></p></td>

@@ -11,7 +11,7 @@ sandbox can access.
 
 For more information on Flash Player security, see the Flash Player Developer
 Center topic "Security" at
-[www.adobe.com/go/devnet_security_en](http://www.adobe.com/go/devnet_security_en).
+[www.adobe.com/go/devnet_security_en](https://www.adobe.com/go/devnet_security_en).
 
 ## Remote sandboxes
 
@@ -23,15 +23,15 @@ authorized to access any resources from their own server. Remote SWF files can
 be allowed to access additional data from other domains by explicit website and
 author permissions, such as URL policy files and the `Security.allowDomain()`
 method. For details, see
-[Website controls (policy files)](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e08.html)
+[Website controls (policy files)](./permission-controls.md#website-controls-policy-files)
 and
-[Author (developer) controls](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c96.html).
+[Author (developer) controls](./permission-controls.md#author-developer-controls).
 
 Remote SWF files cannot load any local files or resources.
 
 For more information on Flash Player security, see the Flash Player Developer
 Center topic "Security" at
-[www.adobe.com/go/devnet_security_en](http://www.adobe.com/go/devnet_security_en).
+[www.adobe.com/go/devnet_security_en](https://www.adobe.com/go/devnet_security_en).
 
 ## Local sandboxes
 
@@ -48,7 +48,7 @@ of four local sandboxes:
 
 - The local-with-networking sandbox—When compiling a SWF file, you can specify
   that it has network access when run as a local file (see
-  [Setting the sandbox type of local SWF files](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c8d.html)).These
+  [Setting the sandbox type of local SWF files](#setting-the-sandbox-type-of-local-swf-files)).These
   files are placed in the local-with-networking sandbox. SWF files that are
   assigned to the local-with-networking sandbox forfeit their local file access.
   In return, the SWF files are allowed to access data from the network. However,
@@ -58,19 +58,19 @@ of four local sandboxes:
   grant such permission, a URL policy file must grant permission to _all_
   domains by using `<allow-access-from domain="*"/>` or by using
   `Security.allowDomain("*")`. For more information, see
-  [Website controls (policy files)](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e08.html)
+  [Website controls (policy files)](./permission-controls.md#website-controls-policy-files)
   and
-  [Author (developer) controls](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c96.html).
+  [Author (developer) controls](./permission-controls.md#author-developer-controls).
 
 - The local-trusted sandbox—Local SWF files that are registered as trusted (by
   users or by installer programs) are placed in the local-trusted sandbox.
   System administrators and users also have the ability to reassign (move) a
   local SWF file to or from the local-trusted sandbox based on security
   considerations (see
-  [Administrator controls](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c95.html) and
-  [User controls](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c91.html)). SWF files
-  that are assigned to the local-trusted sandbox can interact with any other SWF
-  files and can load data from anywhere (remote or local).
+  [Administrator controls](./permission-controls.md#administrator-controls) and
+  [User controls](./permission-controls.md#user-controls)). SWF files that are
+  assigned to the local-trusted sandbox can interact with any other SWF files
+  and can load data from anywhere (remote or local).
 
 - The AIR application sandbox—This sandbox contains content that was installed
   with the running AIR application. By default, code executing in the AIR
@@ -105,11 +105,11 @@ the regular Flash Player security model.
 When an application is installed, all files included within an AIR package are
 installed onto the user's computer into an application directory. Developers can
 reference this directory in code through the `app:/` URL scheme (see
-[URI schemes](WS5b3ccc516d4fbf351e63e3d118666ade46-7ee3.html)). All files within
-the application directory tree are assigned to the application sandbox when the
-application is run. Content in the application sandbox is blessed with the full
-privileges available to an AIR application, including interaction with the local
-file system.
+[URI schemes](../networking-and-communication/http-communications/loading-external-data.md#uri-schemes)).
+All files within the application directory tree are assigned to the application
+sandbox when the application is run. Content in the application sandbox is
+blessed with the full privileges available to an AIR application, including
+interaction with the local file system.
 
 Many AIR applications use only these locally installed files to run the
 application. However, AIR applications are not restricted to just the files
@@ -149,7 +149,7 @@ additional restrictions:
   injecting (and executing) code from non-application sources (such as
   potentially insecure network domains). An example is the use of the `eval()`
   function. For details, see
-  [Code restrictions for content in different sandboxes](WS5b3ccc516d4fbf351e63e3d118666ade46-7eea.html).
+  [Code restrictions for content in different sandboxes](./air-security/html-security-in-adobe-air.md#code-restrictions-for-content-in-different-sandboxes).
 
 - To prevent possible phishing attacks, `img` tags in HTML content in
   ActionScript TextField objects are ignored in SWF content in the application
@@ -180,11 +180,11 @@ include:
   calling the request. However, application code can grant non-application
   content permission to do so by setting an `allowCrossdomainXHR` attribute in
   the containing frame or iframe. For more information, see
-  [Code restrictions for content in different sandboxes](WS5b3ccc516d4fbf351e63e3d118666ade46-7eea.html).
+  [Code restrictions for content in different sandboxes](./air-security/html-security-in-adobe-air.md#code-restrictions-for-content-in-different-sandboxes).
 
 - There are restrictions on calling the JavaScript `window.open()` method. For
   details, see
-  [Restrictions on calling the JavaScript window.open() method](WS5b3ccc516d4fbf351e63e3d118666ade46-7e91.html).
+  [Restrictions on calling the JavaScript window.open() method](./air-security/html-security-in-adobe-air.md#restrictions-on-calling-the-javascript-windowopen-method).
 
 - HTML content in remote (network) security sandboxes can only load CSS,
   `frame`, `iframe`, and `img` content from remote domains (from network URLs).
@@ -194,7 +194,7 @@ include:
   sandboxes (not from application or network URLs).
 
 For details, see
-[Code restrictions for content in different sandboxes](WS5b3ccc516d4fbf351e63e3d118666ade46-7eea.html).
+[Code restrictions for content in different sandboxes](./air-security/html-security-in-adobe-air.md#code-restrictions-for-content-in-different-sandboxes).
 
 ## Setting the sandbox type of local SWF files
 
@@ -202,11 +202,11 @@ An end user or the administrator of a computer can specify that a local SWF file
 is trusted, allowing it to load data from all domains, both local and network.
 This is specified in the Global Flash Player Trust and User Flash Player Trust
 directories. For more information, see
-[Administrator controls](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c95.html) and
-[User controls](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c91.html).
+[Administrator controls](./permission-controls.md#administrator-controls) and
+[User controls](./permission-controls.md#user-controls).
 
 For more information on local sandboxes, see
-[Local sandboxes](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c8f.html).
+[Local sandboxes](#local-sandboxes).
 
 #### Adobe Flash Professional
 

@@ -29,7 +29,7 @@ Note: Applications in the extended desktop profile can also launch files and
 applications using the `File.openWithDefaultApplication()` method. However,
 using this method does not provide the AIR application with access to the
 standard streams. For more information, see
-[Opening files with the default system application](WS2A7C0A31-A6A9-42d2-8772-79166A98A085.html)
+[Opening files with the default system application](../files-and-data/working-with-the-file-system/working-with-file-objects-in-air.md#opening-files-with-the-default-system-application)
 
 The following code sample shows how to launch a test.exe application in the
 application directory. The application passes the argument `"hello"` as a

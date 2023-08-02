@@ -30,6 +30,8 @@ More Help topics
 
 ## Adobe recommends
 
-> <h3 id="e4x-is-good4u"><a href="http://goo.gl/OrIZm" target="_self"><img src="../../img/marc_bir.png" /> E4X is Good4U</a></h3>
-> Marc Bir
-> Marc Bir discusses E4X, the easy way to work with XML data in ActionScript 3.0. He covers techniques for creating XML and filtering XML to find the data you need.
+> ### [![](../../img/marc_bir.png) E4X is Good4U](http://goo.gl/OrIZm)
+>
+> Marc Bir discusses E4X, the easy way to work with XML data in ActionScript
+> 3.0. He covers techniques for creating XML and filtering XML to find the data
+> you need.

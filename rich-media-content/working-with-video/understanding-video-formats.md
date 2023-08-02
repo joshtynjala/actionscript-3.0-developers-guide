@@ -45,7 +45,7 @@ Adhering to these recommendations ensures hardware acceleration and better user
 experience on most devices. These recommendations are not mandatory.
 
 For a detailed discussion and encoding settings in Adobe Media Encoder CS5, see
-[Recommendations for encoding H.264 video for Flash Player 10.1 on mobile devices](http://www.adobe.com/devnet/devices/articles/mobile_video_encoding.html)
+[Recommendations for encoding H.264 video for Flash Player 10.1 on mobile devices](https://www.adobe.com/devnet/devices/articles/mobile_video_encoding.html)
 
 Note: On iOS, only video encoded with the Sorenson Spark and On2 VP6 codecs can
 be played back using the Video class. You can play back H.264 encoded video in
@@ -144,8 +144,7 @@ play them:
 
 Adobe provides the F4V and FLV video file formats for streaming content to Flash
 Player and AIR. For a complete description of these video file formats, see
-<a href="http://www.adobe.com/go/video_file_format"
-target="_self">www.adobe.com/go/video_file_format</a>.
+[www.adobe.com/go/video_file_format](https://www.adobe.com/go/video_file_format).
 
 ### The F4V video file format
 
@@ -186,7 +185,7 @@ supported video-editing applications. To load FLV files from a web server,
 register the filename extension and MIME type with your web server. Check your
 web server documentation. The MIME type for FLV files is `video/x-flv`. For more
 information, see
-[About configuring FLV files for hosting on a server](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d41.html).
+[About configuring FLV files for hosting on a server](./advanced-topics-for-video-files.md#about-configuring-flv-files-for-hosting-on-a-server).
 
 For more information on FLV files, see
 [Advanced topics for video files](./advanced-topics-for-video-files.md).

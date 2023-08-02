@@ -21,8 +21,10 @@ More Help topics
 
 ## Adobe recommends
 
-> <h3 id="flex-4.5-using-geolocationgps-on-a-mobile-device"><img src="../../img/flex_pasta.png" /> <a href="http://goo.gl/M5OTf">Flex 4.5: Using Geolocation(GPS) on a mobile device</a></h3>
-> <a href="http://www.flexpasta.com/">Brian Telintelo: Flex Pasta</a>
+> ### ![](../../img/flex_pasta.png) [Flex 4.5: Using Geolocation(GPS) on a mobile device](http://goo.gl/M5OTf)
+>
+> [Brian Telintelo: Flex Pasta](http://www.flexpasta.com/)
 
-> <h3 id="geolocation-tips-and-quirks"><img src="../../img/gregWilson.png" /> <a href="http://goo.gl/XpgZ1">Geolocation tips and quirks</a></h3>
+> ### ![](../../img/gregWilson.png) [Geolocation tips and quirks](http://goo.gl/XpgZ1)
+>
 > Greg Wilson

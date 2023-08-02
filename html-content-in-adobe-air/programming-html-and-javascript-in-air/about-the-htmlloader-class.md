@@ -20,7 +20,7 @@ content in your application):
     var html:HTMLLoader = new HTMLLoader;
     html.width = 400;
     html.height = 600;
-    var urlReq:URLRequest = new URLRequest("http://www.adobe.com/");
+    var urlReq:URLRequest = new URLRequest("https://www.adobe.com/");
     html.load(urlReq);
 
 An HTMLLoader object's `width` and `height` properties are both set to 0 by
@@ -94,9 +94,9 @@ To properly structure content to work in an AIR application, you must take into
 account the rules for the security restrictions on content from different
 sources. Content from different sources is placed in separate security
 classifications, called sandboxes (see
-[Security sandboxes](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e3f.html)). By
-default, content installed with the application is installed in a sandbox known
-as the _application_ sandbox, and this grants it access to the AIR APIs. The
+[Security sandboxes](../../security/security-sandboxes.md)). By default, content
+installed with the application is installed in a sandbox known as the
+_application_ sandbox, and this grants it access to the AIR APIs. The
 application sandbox is generally the most secure sandbox, with restrictions
 designed to prevent the execution of untrusted code.
 
@@ -108,7 +108,7 @@ example, code in non-application sandboxes can use `eval()` and related methods
 includes ways to have content in different sandboxes communicate securely
 (without exposing AIR APIs to non-application content, for example). For
 details, see
-[Cross-scripting content in different security sandboxes](WS5b3ccc516d4fbf351e63e3d118666ade46-7f08.html).
+[Cross-scripting content in different security sandboxes](./cross-scripting-content-in-different-security-sandboxes.md).
 
 If you call code that is restricted from use in a sandbox for security reasons,
 the runtime dispatches a JavaScript error: "Adobe AIR runtime security violation

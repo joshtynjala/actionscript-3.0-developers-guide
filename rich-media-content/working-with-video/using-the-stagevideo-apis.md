@@ -61,7 +61,7 @@ Follow these top-level steps to implement the StageVideo feature:
 
 1.  Listen for the `StageVideoAvailabilityEvent.STAGE_VIDEO_AVAILABILITY` event
     to find out when the `Stage.stageVideos` vector has changed. See
-    [Using the StageVideoAvailabilityEvent.STAGE_VIDEO_AVAILABILITY event](WSe9ecd9e6b89aefd2-2046179612dc3d8edf2-8000.html).
+    [Using the StageVideoAvailabilityEvent.STAGE_VIDEO_AVAILABILITY event](#using-the-stagevideoavailabilityeventstage_video_availability-event).
 
 2.  If the `StageVideoAvailabilityEvent.STAGE_VIDEO_AVAILABILITY` event reports
     that stage video is available, use the `Stage.stageVideos` Vector object
@@ -76,14 +76,14 @@ Follow these top-level steps to implement the StageVideo feature:
     to determine the status of playing the video. Receipt of this event also
     indicates that the width and height properties of the video have been
     initialized or changed. See
-    [Using the StageVideoEvent.RENDER_STATE and VideoEvent.RENDER_STATE events](WSe9ecd9e6b89aefd2-2046179612dc3d8edf2-7fff.html).
+    [Using the StageVideoEvent.RENDER_STATE and VideoEvent.RENDER_STATE events](#using-the-stagevideoeventrender_state-and-videoeventrender_state-events).
 
 6.  Listen for the `VideoEvent.RENDER_STATE` event on the Video object. This
     event provides the same statuses as `StageVideoEvent.RENDER_STATE,` so you
     can also use it to determine whether GPU acceleration is available. Receipt
     of this event also indicates that the width and height properties of the
     video have been initialized or changed. See
-    [Using the StageVideoEvent.RENDER_STATE and VideoEvent.RENDER_STATE events](WSe9ecd9e6b89aefd2-2046179612dc3d8edf2-7fff.html).
+    [Using the StageVideoEvent.RENDER_STATE and VideoEvent.RENDER_STATE events](#using-the-stagevideoeventrender_state-and-videoeventrender_state-events).
 
 ## Initializing StageVideo event listeners
 
@@ -206,8 +206,7 @@ settings. You can use the `videoWidth` and `videoHeight` properties of the
 calculating the video viewport dimensions.
 
 Download the full source code for this sample application at
-<a href="http://www.adobe.com/go/learn_as3_usingstagevideo_en"
-target="_self">Getting Started with Stage Video</a>.
+[Getting Started with Stage Video](https://www.adobe.com/go/learn_as3_usingstagevideo_en).
 
 ## Using the StageVideoEvent.RENDER_STATE and VideoEvent.RENDER_STATE events
 

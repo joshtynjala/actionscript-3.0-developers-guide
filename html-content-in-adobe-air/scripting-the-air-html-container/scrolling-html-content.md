@@ -34,4 +34,4 @@ implement scroll bars in ActionScript or by using a Flex component. The Flex
 HTML component automatically includes scroll bars for HTML content. You can also
 use the `HTMLLoader.createRootWindow()` method to create a window that contains
 an HTMLLoader object with scroll bars (see
-[Creating windows with scrolling HTML content](WS5b3ccc516d4fbf351e63e3d118666ade46-7e63.html)).
+[Creating windows with scrolling HTML content](./defining-browser-like-user-interfaces-for-html-content.md#creating-windows-with-scrolling-html-content)).

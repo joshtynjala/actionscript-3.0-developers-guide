@@ -32,7 +32,7 @@ installed in the application directory (the directory represented by the
 `File.applicationDirectory` property). However, files in that directory are read
 only. Use the file from the AIR package as a "template" database. The first time
 a user runs the application, copy the original database file into the user's
-[Pointing to the application storage directory](WS5b3ccc516d4fbf351e63e3d118676a4c56-7fc6.html)
+[Pointing to the application storage directory](../working-with-the-file-system/working-with-file-objects-in-air.md#pointing-to-the-application-storage-directory)
 (or another location), and use that database within the application.
 
 ## Best practices for working with local SQL databases
@@ -77,7 +77,7 @@ stall your application.
 Use asynchronous operations as a standard approach, especially with operations
 that involve large numbers of rows. There is a technique for dividing up the
 processing of large sets of `SELECT` statement results, described in
-[Retrieving SELECT results in parts](WS5b3ccc516d4fbf351e63e3d118666ade46-7d46.html).
+[Retrieving SELECT results in parts](./retrieving-data-from-a-database.md#retrieving-select-results-in-parts).
 However, this technique can only be used in asynchronous execution mode. Only
 use synchronous operations when you can't achieve certain functionality using
 asynchronous programming, when you've considered the performance trade-off that

@@ -6,24 +6,6 @@ images that are loaded into a SWF. With the ability to access and change
 individual pixel values, you can create your own filter-like image effects and
 use the built-in noise functions to create textures and random noise.
 
-- <a
-  href="http://www.adobe.com/devnet/flex/articles/actionscript_blitting.html"
-  target="_self">Renaun Erickson: Rendering game assets in ActionScript using
-  blitting techniques</a>
-
-- <a href="http://my.safaribooksonline.com/0596526946/bitmap_programming"
-  target="_self">Bitmap programming</a> : Chapter 26 of Essential ActionScript 3
-  by Colin Moock (O'Reilly Media, 2007)
-
-- <a
-  href="http://blog.flashgen.com/2011/03/22/working-with-sprites-in-pushbutton-engine/"
-  target="_self">Mike Jones: Working with Sprites in Pushbutton Engine</a>
-
-- <a href="http://www.flashandmath.com/intermediate/pixtut/"
-  target="_self">Flash &amp; Math: Pixel Particles Made Simple</a>
-
-- <a href="http://flixel.org/" target="_self">Flixel</a>
-
 - [Basics of working with bitmaps](./basics-of-working-with-bitmaps.md)
 - [The Bitmap and BitmapData classes](./the-bitmap-and-bitmap-data-classes.md)
 - [Manipulating pixels](./manipulating-pixels.md)
@@ -42,3 +24,16 @@ More Help Topics
 
 ![](../../img/flashplatformLinkIndicator.png)
 [flash.display.BitmapData class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/BitmapData.html)
+
+## Adobe Recommends
+
+- [Renaun Erickson: Rendering game assets in ActionScript using blitting techniques](https://www.adobe.com/devnet/flex/articles/actionscript_blitting.html)
+
+- [Bitmap programming](http://my.safaribooksonline.com/0596526946/bitmap_programming):
+  Chapter 26 of Essential ActionScript 3 by Colin Moock (O'Reilly Media, 2007)
+
+- [Mike Jones: Working with Sprites in Pushbutton Engine](http://blog.flashgen.com/2011/03/22/working-with-sprites-in-pushbutton-engine/)
+
+- [Flash &amp; Math: Pixel Particles Made Simple](http://www.flashandmath.com/intermediate/pixtut/)
+
+- [Flixel](http://flixel.org/)

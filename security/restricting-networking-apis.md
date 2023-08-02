@@ -116,8 +116,7 @@ prevented when `allowNetworking` is set to `"none"`:
 
 Even if the selected `allowNetworking` setting permits a SWF file to use a
 networking API, there may be other restrictions based on security sandbox
-limitations (see
-[Security sandboxes](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e3f.html)).
+limitations (see [Security sandboxes](./security-sandboxes.md)).
 
 When `allowNetworking` is set to `"none"`, you cannot reference external media
 in an `<img>` tag in the `htmlText` property of a TextField object (a

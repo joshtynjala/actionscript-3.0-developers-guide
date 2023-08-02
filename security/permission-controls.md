@@ -89,7 +89,7 @@ The mms.cfg file is stored in the following location:
 
 For more information about the mms.cfg file, see the Flash Player Administration
 Guide at
-[www.adobe.com/go/flash_player_admin](http://www.adobe.com/go/flash_player_admin).
+[www.adobe.com/go/flash_player_admin](https://www.adobe.com/go/flash_player_admin).
 
 ### The Global Flash Player Trust directory
 
@@ -134,7 +134,7 @@ permissions. Both administrative users and installer applications can designate
 trusted local applications using the Global Flash Player Trust directory.
 
 There are also Flash Player Trust directories for individual users (see
-[User controls](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c91.html)).
+[User controls](#user-controls)).
 
 ## User controls
 
@@ -157,11 +157,11 @@ to legacy content, and so on. Neither the Settings Manager nor the Settings UI
 are available to AIR applications.
 
 Note: Any settings made in the mms.cfg file (see
-[Administrator controls](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c95.html)) are
-not reflected in the Settings Manager.
+[Administrator controls](#administrator-controls)) are not reflected in the
+Settings Manager.
 
 For details on the Settings Manager, see
-[www.adobe.com/go/settingsmanager](http://www.adobe.com/go/settingsmanager).
+[www.adobe.com/go/settingsmanager](https://www.adobe.com/go/settingsmanager).
 
 ### The User Flash Player Trust directory
 
@@ -203,8 +203,7 @@ following locations (locations are specific to the current user):
 
   There is also a Global Flash Player Trust directory, used by the
   administrative user or installers to register an application for all users of
-  a computer (see
-  [Administrator controls](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c95.html)).
+  a computer (see [Administrator controls](#administrator-controls)).
 
 ## Website controls (policy files)
 
@@ -255,7 +254,7 @@ implementation is slightly different in earlier versions of Flash Player, as
 successive releases have strengthened Flash Player security.) For more detailed
 information on policy files, see the Flash Player Developer Center topic "Policy
 File Changes in Flash Player 9" at
-[www.adobe.com/go/devnet_security_en](http://www.adobe.com/go/devnet_security_en).
+[www.adobe.com/go/devnet_security_en](https://www.adobe.com/go/devnet_security_en).
 
 Code executing in the AIR application sandbox does not require a policy file to
 access data from a URL or socket. Code in an AIR application executing in a
@@ -286,7 +285,7 @@ in Flash Player 10, make sure you (or the server administrator) modify the
 master policy file to allow additional policy files. For information on how to
 specify different a different meta-policy, see the Flash Player Developer Center
 topic "Policy File Changes in Flash Player 9" at
-[www.adobe.com/go/devnet_security_en](http://www.adobe.com/go/devnet_security_en).
+[www.adobe.com/go/devnet_security_en](https://www.adobe.com/go/devnet_security_en).
 
 A SWF file can check for a different policy filename or a different directory
 location by calling the `Security.loadPolicyFile()` method. However, if the
@@ -318,7 +317,7 @@ policy file checks have succeeded.
 
 The following sections contain information that applies only to URL policy
 files. For more information on socket policy files, see
-[Connecting to sockets](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c63.html).
+[Connecting to sockets](./loading-data.md#connecting-to-sockets).
 
 ### URL policy file scope
 
@@ -453,21 +452,20 @@ SWF files served from the www.example.com domain:
 This method grants permissions for the following:
 
 - Cross-scripting between SWF files (see
-  [Cross-scripting](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c98.html))
+  [Cross-scripting](./cross-scripting.md))
 
 - Display list access (see
-  [Traversing the display list](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c7e.html))
+  [Traversing the display list](./cross-scripting.md#traversing-the-display-list))
 
-- Event detection (see
-  [Event security](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c6c.html))
+- Event detection (see [Event security](./cross-scripting.md#event-security))
 
 - Full access to properties and methods of the Stage object (see
-  [Stage security](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e27.html))
+  [Stage security](./cross-scripting.md#stage-security))
 
 The primary purpose of calling the `Security.allowDomain()` method is to grant
 permission for SWF files in an outside domain to script the SWF file calling the
 `Security.allowDomain()` method. For more information, see
-[Cross-scripting](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c98.html).
+[Cross-scripting](./cross-scripting.md).
 
 Specifying an IP address as a parameter to the `Security.allowDomain()` method
 does not permit access by all parties that originate at the specified IP
@@ -501,4 +499,4 @@ Security class.
 Another important security-related method is the `Security.loadPolicyFile()`
 method, which causes Flash Player to check for a policy file at a nonstandard
 location. For more information, see
-[Website controls (policy files)](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e08.html).
+[Website controls (policy files)](#website-controls-policy-files).

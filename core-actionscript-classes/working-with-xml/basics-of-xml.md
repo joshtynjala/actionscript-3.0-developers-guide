@@ -3,8 +3,7 @@
 XML is a standard way of representing structured information so that it is easy
 for computers to work with and reasonably easy for people to write and
 understand. XML is an abbreviation for eXtensible Markup Language. The XML
-standard is available at
-<a href="http://www.w3.org/XML/" target="_self">www.w3.org/XML/</a>.
+standard is available at [www.w3.org/XML/](http://www.w3.org/XML/).
 
 XML offers a standard and convenient way to categorize data, to make it easier
 to read, access, and manipulate. XML uses a tree structure and tag structure
@@ -110,12 +109,10 @@ elements, or nothing (for an empty element).
 To learn more about working with XML, there are a number of additional books and
 resources for learning more about XML, including these web sites:
 
-- W3Schools XML Tutorial: <a href="http://w3schools.com/xml/"
-  target="_self">http://w3schools.com/xml/</a>
+- W3Schools XML Tutorial: [http://w3schools.com/xml/](http://w3schools.com/xml/)
 
 - XMLpitstop tutorials, discussion lists, and more:
-  <a href="http://xmlpitstop.com/"
-  target="_self">http://xmlpitstop.com/</a>
+  [http://xmlpitstop.com/](http://xmlpitstop.com/)
 
 #### ActionScript classes for working with XML
 

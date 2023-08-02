@@ -107,7 +107,7 @@ the h1 and h2 styles for the headline and subtitle respectively.
 
 The technique used to read the external CSS file is the same as the technique
 described in
-[Loading an external CSS file](WS8d7bb3e8da6fb92f-20050207122bd5f80cb-7ff2.html).
+[Loading an external CSS file](./formatting-text.md#loading-an-external-css-file).
 When the CSS file has been loaded the application executes the
 `onCSSFileLoaded()` method, shown below.
 

@@ -25,8 +25,8 @@ dialog box or the Settings Manager. By default, shared objects can be created up
 to a maximum of 100 KB of data per domain. Administrative users and users can
 also place restrictions on the ability to write to the file system. For more
 information, see
-[Administrator controls](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c95.html) and
-[User controls](WS5b3ccc516d4fbf351e63e3d118a9b90204-7c91.html).
+[Administrator controls](./permission-controls.md#administrator-controls) and
+[User controls](./permission-controls.md#user-controls).
 
 You can specify that a shared object is secure, by specifying `true` for the
 `secure` parameter of the `SharedObject.getLocal()` method or the
@@ -74,4 +74,4 @@ is shown in the browser's address bar. When you attempt to use shared objects
 from a third-party SWF file, and third-party shared object use is disabled, the
 `SharedObject.getLocal()` and `SharedObject.getRemote()` methods return `null`.
 For more information, see
-[www.adobe.com/products/flashplayer/articles/thirdpartylso](http://www.adobe.com/products/flashplayer/articles/thirdpartylso).
+[www.adobe.com/products/flashplayer/articles/thirdpartylso](https://www.adobe.com/products/flashplayer/articles/thirdpartylso).

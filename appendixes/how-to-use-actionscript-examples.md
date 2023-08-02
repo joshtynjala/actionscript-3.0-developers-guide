@@ -6,9 +6,9 @@ depending on the devices you are using or targeting.
 
 Computers running Flash Professional or Flash Builder  
 See
-[Running ActionScript 3.0 examples in Flash Professional](WS9b644acd4ebe5999-2734bf3c124372a52ff-7fff.html)
+[Running ActionScript 3.0 examples in Flash Professional](#running-actionscript-30-examples-in-flash-professional)
 or
-[Running ActionScript 3.0 examples in Flash Builder](WS9b644acd4ebe5999-2734bf3c124372a52ff-7ffe.html)
+[Running ActionScript 3.0 examples in Flash Builder](#running-actionscript-30-examples-in-flash-builder)
 for information about how to use these development environments to run
 ActionScript 3.0 examples. Use trace statements and other debugging tools to
 increase your understanding of how a code example works.
@@ -16,14 +16,14 @@ increase your understanding of how a code example works.
 Mobile devices  
 You can run the ActionScript 3.0 code examples on mobile devices that support
 Flash Player 10.1 and later releases. See
-[Running ActionScript 3.0 examples on mobile devices](WS701a38e0c62007d33298b7371246d7d49ec-8000.html).
+[Running ActionScript 3.0 examples on mobile devices](#running-actionscript-30-examples-on-mobile-devices).
 You can also run these examples on your computer using Flash Professional or
 Flash Builder.
 
 TV devices  
 Though you cannot run these examples on TV devices, you can still learn from the
 examples by running them on your computer. See
-[Flash Platform for TV](http://www.adobe.com/devnet/devices/flash_platform_tv.html)
+[Flash Platform for TV](https://www.adobe.com/devnet/devices/flash_platform_tv.html)
 on the Adobe Developer Connection website for information about developing
 applications for TV devices.
 
@@ -333,9 +333,9 @@ to the device or to a web server. To copy files to the device and run the
 example in the browser, do the following:
 
 1.  Create the SWF file by following the instructions in
-    [Running ActionScript 3.0 examples in Flash Professional](WS9b644acd4ebe5999-2734bf3c124372a52ff-7fff.html)
+    [Running ActionScript 3.0 examples in Flash Professional](#running-actionscript-30-examples-in-flash-professional)
     or in
-    [Running ActionScript 3.0 examples in Flash Builder](WS9b644acd4ebe5999-2734bf3c124372a52ff-7ffe.html).
+    [Running ActionScript 3.0 examples in Flash Builder](#running-actionscript-30-examples-in-flash-builder).
     In Flash Professional, you create the SWF file when you select Control \>
     Test Movie. In Flash Builder, you create the SWF file when you run, debug,
     or build your Flash Builder project.
@@ -350,9 +350,9 @@ To copy files to a web server and run the example in the device's browser, do
 the following:
 
 1.  Create a SWF file and an HTML file. First, follow the instructions in
-    [Running ActionScript 3.0 examples in Flash Professional](WS9b644acd4ebe5999-2734bf3c124372a52ff-7fff.html)
+    [Running ActionScript 3.0 examples in Flash Professional](#running-actionscript-30-examples-in-flash-professional)
     or in
-    [Running ActionScript 3.0 examples in Flash Builder](WS9b644acd4ebe5999-2734bf3c124372a52ff-7ffe.html).
+    [Running ActionScript 3.0 examples in Flash Builder](#running-actionscript-30-examples-in-flash-builder).
     In Flash Professional, selecting Control \> Test Movie creates only the SWF
     file. To create both files, first select both Flash and HTML on the Formats
     tab in the Publish Settings dialog. Then select File \> Publish to create
@@ -455,7 +455,7 @@ The mobile operating system and browser capture some user input events that the
 SWF content does not receive. Specific behavior depends on the operating system
 and browser, but could result in unexpected behavior when you run the examples
 on a mobile device. For more information, see
-[KeyboardEvent precedence](WS5b3ccc516d4fbf351e63e3d118a9b8f499-7fef.html).
+[KeyboardEvent precedence](../user-interaction/keyboard-input/capturing-keyboard-input.md#keyboardevent-precedence).
 
 Also, the user interfaces of many examples are designed for a desktop or laptop
 computer. For example, most of the practical examples in the ActionScript 3.0
@@ -468,7 +468,7 @@ Adobe recommends that you run the examples on a computer to learn the
 ActionScript, and then use pertinent code snippets in your mobile applications.
 
 For more information, see
-[Panning and scrolling display objects](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e17.html).
+[Panning and scrolling display objects](../display/display-programming/panning-and-scrolling-display-objects.md).
 
 #### Handling focus
 
@@ -480,7 +480,7 @@ button that has the focus, use the mobile device's Select key as you would use
 Enter on a computer. On some devices, tapping twice on a button selects it.
 
 For more information about focus, see
-[Managing focus](WS5b3ccc516d4fbf351e63e3d118a9b8f499-7ff2.html).
+[Managing focus](../user-interaction/basics-of-user-interaction.md#managing-focus).
 
 #### Handling mouse events
 
@@ -504,7 +504,7 @@ example on a computer illustrates various drawing APIs. However, the example is
 not suitable on some mobile devices due to their performance limitations.
 
 For more information about performance on mobile devices, see
-_[Optimizing Performance for the Flash Platform](http://www.adobe.com/go/learn_optimizing_fp_en)_.
+_[Optimizing Performance for the Flash Platform](https://www.adobe.com/go/learn_optimizing_fp_en)_.
 
 #### Best practices
 
@@ -513,4 +513,4 @@ mobile devices. Limitations in memory and processing power in mobile devices
 require special consideration. Similarly, the user interface for the small
 screen has different needs than a desktop display. For more information about
 developing applications for mobile devices, _see
-_[Optimizing Performance for the Flash Platform](http://www.adobe.com/go/learn_optimizing_fp_en)_._
+_[Optimizing Performance for the Flash Platform](https://www.adobe.com/go/learn_optimizing_fp_en)_._

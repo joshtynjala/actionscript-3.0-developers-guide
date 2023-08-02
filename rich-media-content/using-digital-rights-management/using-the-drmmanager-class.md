@@ -21,7 +21,7 @@ domain of the media rights server that can provide the license and describes
 whether user authentication is required. With this information, you can call the
 DRMManager `loadVoucher()` method to obtain and cache the voucher. The workflow
 for pre-loading vouchers is described in more detail in
-[Pre-loading vouchers for offline playback](WSe3d2d52902616553-3a6b491211d1b2ce8d5-8000.html).
+[Pre-loading vouchers for offline playback](./understanding-the-protected-content-workflow.md#pre-loading-vouchers-for-offline-playback).
 
 **Session management**
 

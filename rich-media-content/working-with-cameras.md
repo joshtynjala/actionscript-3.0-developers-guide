@@ -1,18 +1,18 @@
 # Working with cameras
 
 A camera attached to a user's computer can serve as a source of video data that
-you can display and manipulate using ActionScript. The <a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/Camera.html"
-target="_self">Camera</a> class is the mechanism built into ActionScript for
-working with a computer or device camera.
+you can display and manipulate using ActionScript. The
+[Camera](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/Camera.html)
+class is the mechanism built into ActionScript for working with a computer or
+device camera.
 
-On mobile devices, you can also use the <a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/CameraUI.html"
-target="_self">CameraUI</a> class. The CameraUI class launches a separate camera
-application to allow the user to capture a still image or video. When the user
-is finished, your application can access the image or video through a <a
-href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/MediaPromise.html"
-target="_self">MediaPromise</a> object.
+On mobile devices, you can also use the
+[CameraUI](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/CameraUI.html)
+class. The CameraUI class launches a separate camera application to allow the
+user to capture a still image or video. When the user is finished, your
+application can access the image or video through a
+[MediaPromise](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/MediaPromise.html)
+object.
 
 ## Understanding the Camera class
 
@@ -113,9 +113,9 @@ Note that if a user does not have a camera installed, the application does not
 display anything.
 
 In real life, you need to perform additional steps for your application. See
-[Verifying that cameras are installed](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d38.html)
+[Verifying that cameras are installed](#verifying-that-cameras-are-installed)
 and
-[Detecting permissions for camera access](WS5b3ccc516d4fbf351e63e3d118a9b90204-7d37.html)
+[Detecting permissions for camera access](#detecting-permissions-for-camera-access)
 for further information.
 
 ## Verifying that cameras are installed
@@ -324,7 +324,7 @@ of the video instance using the camera's native height and width.
     }
 
 For information about full-screen mode, see the full-screen mode section under
-[Setting Stage properties](WS5b3ccc516d4fbf351e63e3d118a9b90204-7e31.html).
+[Setting Stage properties](../display/display-programming/setting-stage-properties.md).
 
 ## Monitoring camera status
 

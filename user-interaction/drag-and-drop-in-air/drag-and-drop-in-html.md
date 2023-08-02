@@ -105,7 +105,7 @@ following properties and methods:
     <tr>
         <td><p>effectAllowed</p></td>
         <td>
-            <p>The effect allowed by the source of the drag. Typically, the handler for the dragstart event sets this value. See <a href="WS6D4680BD-2E34-44ad-9BFD-29DDE0DDB3EB.html">Drag effects in HTML</a>.</p>
+            <p>The effect allowed by the source of the drag. Typically, the handler for the dragstart event sets this value. See <a href="#drag-effects-in-html">Drag effects in HTML</a>.</p>
         </td>
     </tr>
     <tr>
@@ -170,7 +170,7 @@ expected format.
 Important: Only code running in the application sandbox can access dropped
 files. Attempting to read or set any property of a File object within a
 non-application sandbox generates a security error. See
-[Handling file drops in non-application HTML sandboxes](WSA15C8AF8-3317-46c5-B9B1-EAD3356A2555.html)
+[Handling file drops in non-application HTML sandboxes](./handling-file-drops-in-non-application-html-sandboxes.md)
 for more information.
 
 ## Drag effects in HTML

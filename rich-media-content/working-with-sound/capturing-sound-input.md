@@ -233,8 +233,7 @@ property to `SoundCodec.NELLYMOSER` (the default) selects the Nellymoser codec
 for compressing audio.
 
 For more information, see the Flash Media Server documentation online at
-<a href="http://www.adobe.com/go/learn_fms_docs_en"
-target="_self">www.adobe.com/go/learn_fms_docs_en</a>.
+[www.adobe.com/go/learn_fms_docs_en](https://www.adobe.com/go/learn_fms_docs_en).
 
 ## Capturing microphone sound data
 

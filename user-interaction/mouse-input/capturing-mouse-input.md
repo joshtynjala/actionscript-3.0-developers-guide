@@ -39,7 +39,7 @@ depending on how you want to respond to user interaction.
 Note: In full-screen mode, you can configure the application to use mouse
 locking. Mouse locking disables the cursor and enables unbounded mouse movement.
 For more information, see
-[Working with full-screen mode](WS2E9C7F3B-6A7C-4c5d-8ADD-5B23446FBEEB.html).
+[Working with full-screen mode](../../display/display-programming/setting-stage-properties.md#working-with-full-screen-mode).
 
 The MouseEvent object also contains `altKey`, `ctrlKey`, and `shiftKey` Boolean
 properties. You can use these properties to check if the Alt, Ctrl, or Shift key
@@ -87,13 +87,13 @@ this:
     }
 
 For more details, see the section on creating mouse drag interaction in
-[Changing position](WS5b3ccc516d4fbf351e63e3d118a9b90204-7df5.html).
+[Changing position](../../display/display-programming/changing-position.md).
 
 #### Drag-and-drop in AIR
 
 In Adobe AIR, you can enable drag-and-drop support to allow users to drag data
 into and out of your application. For more details, see
-[Drag and drop in AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7e8a.html).
+[Drag and drop in AIR](../drag-and-drop-in-air/index.md).
 
 ## Customizing the mouse cursor
 

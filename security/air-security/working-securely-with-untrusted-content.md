@@ -44,7 +44,7 @@ between trusted and untrusted content, providing communication between loader
 and loadee content without exposing object references.
 
 For more information on how to securely use sandbox bridges, see
-[Scripting between content in different domains](WS5b3ccc516d4fbf351e63e3d118666ade46-7e5c.html).
+[Scripting between content in different domains](./scripting-between-content-in-different-domains.md).
 
 ## Protection against dynamically generating unsafe SWF content
 

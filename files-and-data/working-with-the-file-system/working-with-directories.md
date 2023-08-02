@@ -4,7 +4,7 @@ The runtime provides you with capabilities to work with directories on the local
 file system.
 
 For details on creating File objects that point to directories, see
-[Pointing a File object to a directory](WS5b3ccc516d4fbf351e63e3d118666ade46-7dbe.html).
+[Pointing a File object to a directory](./working-with-file-objects-in-air.md#pointing-a-file-object-to-a-directory).
 
 ## Creating directories
 
@@ -21,7 +21,7 @@ Also, in some modes, a FileStream object creates directories when opening files.
 Missing directories are created when you instantiate a FileStream instance with
 the `fileMode` parameter of the `FileStream()` constructor set to
 `FileMode.APPEND` or `FileMode.WRITE`. For more information, see
-[Workflow for reading and writing files](WS5b3ccc516d4fbf351e63e3d118666ade46-7dc8.html).
+[Workflow for reading and writing files](./workflow-for-reading-and-writing-files.md).
 
 ## Creating a temporary directory
 
@@ -93,18 +93,17 @@ method specifies the path to the resulting directory; it does _not_ specify the
 _parent_ directory that will contain the resulting directory.
 
 For details, see
-[Copying and moving files](WS5b3ccc516d4fbf351e63e3d118666ade46-7dbc.html).
+[Copying and moving files](./working-with-files.md#copying-and-moving-files).
 
 ## Deleting directory contents
 
 The File class includes a `deleteDirectory()` method and a
 `deleteDirectoryAsync()` method. These methods delete directories, the first
 working synchronously, the second working asynchronously (see
-[AIR file basics](WS5b3ccc516d4fbf351e63e3d118666ade46-7dbb.html)). Both methods
-include a `deleteDirectoryContents` parameter (which takes a Boolean value);
-when this parameter is set to `true` (the default value is `false`) the call to
-the method deletes non-empty directories; otherwise, only empty directories are
-deleted.
+[AIR file basics](./air-file-basics.md)). Both methods include a
+`deleteDirectoryContents` parameter (which takes a Boolean value); when this
+parameter is set to `true` (the default value is `false`) the call to the method
+deletes non-empty directories; otherwise, only empty directories are deleted.
 
 For example, the following code synchronously deletes the AIR Test subdirectory
 of the user's documents directory:
@@ -125,4 +124,4 @@ user's documents directory:
 
 Also included are the `moveToTrash()` and `moveToTrashAsync()` methods, which
 you can use to move a directory to the System trash. For details, see
-[Moving a file to the trash](WS5b3ccc516d4fbf351e63e3d118666ade46-7dba.html).
+[Moving a file to the trash](./working-with-files.md#moving-a-file-to-the-trash).

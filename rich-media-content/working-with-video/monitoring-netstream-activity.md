@@ -47,4 +47,4 @@ More Help topics
 
 [Detecting player domain](./detecting-player-domain.md)
 
-[Adobe Developer Connection: Measuring video consumption in Flash](http://www.adobe.com/devnet/video/articles/media-measurement-flash.html)
+[Adobe Developer Connection: Measuring video consumption in Flash](https://www.adobe.com/devnet/video/articles/media-measurement-flash.html)

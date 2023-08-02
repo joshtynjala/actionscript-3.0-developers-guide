@@ -57,4 +57,4 @@ calls the `readUTFBytes()` method to get a string version of the read data, and
 it creates an XML object, `prefsXML`, based on that string.
 
 To see a sample application that shows these capabilities, see
-[Reading and writing from an XML preferences file](http://www.adobe.com/go/learn_air_qs_xmlpref_flex_en).
+[Reading and writing from an XML preferences file](https://www.adobe.com/go/learn_air_qs_xmlpref_flex_en).

@@ -56,4 +56,4 @@ For example, the following code traces the index values of user-selected text:
 You can apply a collection of TextFormat object properties to the selection to
 change the text appearance. For more information about applying a collection of
 TextFormat properties to selected text, see
-[Formatting ranges of text within a text field](WS8d7bb3e8da6fb92f-20050207122bd5f80cb-7ff1.html).
+[Formatting ranges of text within a text field](./formatting-text.md#formatting-ranges-of-text-within-a-text-field).

@@ -77,7 +77,7 @@ ActionScript, the container code calls the ActiveX object's `SetReturnValue()`
 method, passing the result (serialized into an XML string) as a parameter of
 that method. For more information about the XML format used for this
 communication, see
-[The external API's XML format](WS5b3ccc516d4fbf351e63e3d118a9b90204-7caf.html).
+[The external API's XML format](#the-external-apis-xml-format).
 
 Whether the container is a web browser or another ActiveX container, if the call
 fails or the container method does not specify a return value, `null` is
@@ -139,7 +139,7 @@ serialized into an XML-formatted string. Then the call is actually performed by
 calling the `CallFunction()` method of the ActiveX control with the XML string
 as a parameter. For more information about the XML format used for this
 communication, see
-[The external API's XML format](WS5b3ccc516d4fbf351e63e3d118a9b90204-7caf.html).
+[The external API's XML format](#the-external-apis-xml-format).
 
 In either case, the return value of the ActionScript function is passed back to
 the container code, either directly as a value when the caller is JavaScript

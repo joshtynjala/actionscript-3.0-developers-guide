@@ -261,7 +261,7 @@ class when the user adds or removes blogs or site URLs.
     <!-- lsos/BlogAggregator.mxml -->
     <mx:Application
     	xmlns:local="*"
-    	xmlns:mx="http://www.adobe.com/2006/mxml"
+    	xmlns:mx="https://www.adobe.com/2006/mxml"
     	creationComplete="initApp()"
     	backgroundColor="#ffffff">
 
@@ -498,7 +498,7 @@ the stored information by clicking the Delete LSO button.
 
     <?xml version="1.0"?>
     <!-- lsos/WelcomeMessage.mxml -->
-    <mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" initialize="initApp()">
+    <mx:Application xmlns:mx="https://www.adobe.com/2006/mxml" initialize="initApp()">
     	<mx:Script>
     	<![CDATA[
     		public var mySO:SharedObject;

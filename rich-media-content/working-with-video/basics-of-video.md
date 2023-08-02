@@ -11,41 +11,34 @@ displaying, and playback of video—meaning you could create your own video play
 skin, or use your video in any less traditional way that you want. Working with
 video in ActionScript involves working with a combination of several classes:
 
-- <a
-  href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/Video.html"
-  target="_self">Video class</a>: The classic video content box on the Stage is
-  an instance of the Video class. The Video class is a display object, so it can
-  be manipulated using the same techniques that can be applied to other display
-  objects, such as positioning, applying transformations, applying filters and
-  blending modes, and so forth.
+- [Video class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/Video.html):
+  The classic video content box on the Stage is an instance of the Video class.
+  The Video class is a display object, so it can be manipulated using the same
+  techniques that can be applied to other display objects, such as positioning,
+  applying transformations, applying filters and blending modes, and so forth.
 
-- <a
-  href="http://help.stage.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/StageVideo.html"
-  target="_self">StageVideo class</a>: The Video class typically uses software
-  decoding and rendering. When GPU hardware acceleration is available on a
-  device, your application can take best advantage of hardware accelerated
-  presentation by switching to the StageVideo class. The StageVideo API includes
-  a set of events that tell your code when to switch between StageVideo and
-  Video objects. Stage video imposes some minor restrictions on video playback.
-  If your application accepts those limitations, implement the StageVideo API.
-  See
-  [Guidelines and limitations](WSe9ecd9e6b89aefd2-70150d4b12ccd2cd415-7ffe.html).
+- [StageVideo class](http://help.stage.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/StageVideo.html):
+  The Video class typically uses software decoding and rendering. When GPU
+  hardware acceleration is available on a device, your application can take best
+  advantage of hardware accelerated presentation by switching to the StageVideo
+  class. The StageVideo API includes a set of events that tell your code when to
+  switch between StageVideo and Video objects. Stage video imposes some minor
+  restrictions on video playback. If your application accepts those limitations,
+  implement the StageVideo API. See
+  [Guidelines and limitations](./about-hardware-acceleration-using-stagevideo.md#guidelines-and-limitations).
 
-- <a
-  href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetStream.html"
-  target="_self">NetStream class</a>: When you're loading a video file to be
-  controlled by ActionScript, a NetStream instance represents the source of the
-  video content—in this case, a stream of video data. Using a NetStream instance
-  also involves using a NetConnection object, which is the connection to the
-  video file—like the tunnel that the video data is fed through.
+- [NetStream class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetStream.html):
+  When you're loading a video file to be controlled by ActionScript, a NetStream
+  instance represents the source of the video content—in this case, a stream of
+  video data. Using a NetStream instance also involves using a NetConnection
+  object, which is the connection to the video file—like the tunnel that the
+  video data is fed through.
 
-- <a
-  href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/Camera.html"
-  target="_self">Camera class</a>: When you're working with video data from a
-  camera connected to the user's computer, a Camera instance represents the
-  source of the video content—the user's camera and the video data it makes
-  available. New in Flash Player 11.4 and AIR 3.4, you can use a camera to feed
-  StageVideo.
+- [Camera class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/Camera.html):
+  When you're working with video data from a camera connected to the user's
+  computer, a Camera instance represents the source of the video content—the
+  user's camera and the video data it makes available. New in Flash Player 11.4
+  and AIR 3.4, you can use a camera to feed StageVideo.
 
 When you're loading external video, you can load the file from a standard web
 server for progressive download, or you can work with streaming video delivered

@@ -22,14 +22,11 @@ For more information on working with IMEs, see the documentation for the
 operating system for which you are developing the application. For additional
 resources, see the following web sites:
 
-- <a href="http://www.msdn.microsoft.com/goglobal/"
-  target="_self">http://www.msdn.microsoft.com/goglobal/</a>
+- [http://www.msdn.microsoft.com/goglobal/](http://www.msdn.microsoft.com/goglobal/)
 
-- <a href="http://developer.apple.com/library/mac/navigation/"
-  target="_self">http://developer.apple.com/library/mac/navigation/</a>
+- [http://developer.apple.com/library/mac/navigation/](http://developer.apple.com/library/mac/navigation/)
 
-- <a href="http://www.java.sun.com/"
-  target="_self">http://www.java.sun.com/</a>
+- [http://www.java.sun.com/](http://www.java.sun.com/)
 
 Note: If an IME is not active on the user's computer, calls to IME methods or
 properties, other than `Capabilities.hasIME`, will fail. Once you manually

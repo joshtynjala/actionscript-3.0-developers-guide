@@ -7,7 +7,7 @@ HTMLLoader object contains all HTML content, and is, in turn, contained within a
 NativeWindow object. In SWF content, the HTMLLoader class, which extends the
 Sprite class, can be added to the display list of a stage like any other display
 object. The Adobe® ActionScript® 3.0 properties of the class are described in
-[Scripting the AIR HTML Container](WS5b3ccc516d4fbf351e63e3d118666ade46-7ebd.html)
+[Scripting the AIR HTML Container](../scripting-the-air-html-container/index.md)
 and also in the
 [HTMLLoader](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/html/HTMLLoader.html)
 class listing in the
@@ -91,7 +91,7 @@ in the sandbox of the child. Sandbox bridges are established by setting the
 For more information, see
 [HTML security in Adobe AIR](../../security/air-security/html-security-in-adobe-air.md)
 and
-[HTML frame and iframe elements](WS5b3ccc516d4fbf351e63e3d118666ade46-7edb.html).
+[HTML frame and iframe elements](./html-in-air.md#html-frame-and-iframe-elements).
 
 ## About plug-ins and embedded objects
 

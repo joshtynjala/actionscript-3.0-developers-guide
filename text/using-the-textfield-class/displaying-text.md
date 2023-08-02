@@ -70,7 +70,7 @@ variable. You have three options for loading text values from remote sources:
 
 - The flash.net.SharedObject class manages persistent storage of values. For
   more information, see
-  [Storing local data](WS86fc450a3af174de7b9be8751220e1c6551-8000.html).
+  [Storing local data](../../files-and-data/storing-local-data/index.md).
 
 ## Displaying HTML text
 

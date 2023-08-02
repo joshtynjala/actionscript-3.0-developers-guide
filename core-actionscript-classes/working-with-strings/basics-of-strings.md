@@ -13,7 +13,7 @@ examples of strings:
 
     "Hello"
     "555-7649"
-    "http://www.adobe.com/"
+    "https://www.adobe.com/"
 
 Any time you manipulate a piece of text in ActionScript, you are working with a
 string value. The ActionScript String class is the data type you can use to work

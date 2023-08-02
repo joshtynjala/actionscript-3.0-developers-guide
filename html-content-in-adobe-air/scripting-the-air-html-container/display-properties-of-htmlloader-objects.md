@@ -95,8 +95,9 @@ Note: Prior to AIR 1.5.2, SWF embedded in HTML could not be displayed no matter
 which wmode value was used.
 
 For more information on loading these types of media in an HTMLLoader, see
-[Embedding SWF content in HTML](WS4B441C24-BAE3-4110-91FD-A4E5EEFB2467.html) and
-[Adding PDF content in AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7eb4.html).
+[Embedding SWF content in HTML](../programming-html-and-javascript-in-air/embedding-swf-content-in-html.md)
+and
+[Adding PDF content in AIR](../../rich-media-content/adding-pdf-content-in-air.md).
 
 ## Advanced display properties
 
@@ -123,7 +124,7 @@ The following example illustrates how to set the `filters` array to blur the
 entire HTML display:
 
     var html:HTMLLoader = new HTMLLoader();
-    var urlReq:URLRequest = new URLRequest("http://www.adobe.com/");
+    var urlReq:URLRequest = new URLRequest("https://www.adobe.com/");
     html.load(urlReq);
     html.width = 800;
     html.height = 600;

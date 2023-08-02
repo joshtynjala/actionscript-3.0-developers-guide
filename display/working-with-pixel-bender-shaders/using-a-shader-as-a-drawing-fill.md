@@ -26,8 +26,7 @@ addition, the colors rotate to create an animated spinning color effect.
 
 Note: The code for this example was written by Petri Leskinen. Thank you Petri
 for sharing this example. You can see more of Petri's examples and tutorials at
-<a href="http://pixelero.wordpress.com/"
-target="_self">http://pixelero.wordpress.com/</a>.
+[http://pixelero.wordpress.com/](http://pixelero.wordpress.com/).
 
 The ActionScript code is in three methods:
 
