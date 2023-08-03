@@ -121,12 +121,12 @@ controls.
 More Help topics
 
 ![](../img/flexLinkIndicator.png)
-[Localization](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fcf.html)
+[Localization](https://web.archive.org/web/20150303093254/https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fcf.html)
 
 <http://code.google.com/p/as3localelib/>
 
 ![](../img/airLinkIndicator.png)
-[Localizing AIR applications](https://help.adobe.com/en_US/air/build/WSB2927578-20D8-4065-99F3-00ACE6511EEE.html)
+[Localizing AIR applications](https://web.archive.org/web/20221230223123/https://help.adobe.com/en_US/air/build/WSB2927578-20D8-4065-99F3-00ACE6511EEE.html)
 
 ![](../img/airLinkIndicator.png)
-[Localizing HTML content with the AIR HTML localization framework](https://help.adobe.com/en_US/air/build/WS7097DF4C-EFCF-4d55-ADE1-682F0FDA26AC.html)
+[Localizing HTML content with the AIR HTML localization framework](https://web.archive.org/web/20170607153313/https://help.adobe.com/en_US/air/build/WS7097DF4C-EFCF-4d55-ADE1-682F0FDA26AC.html)

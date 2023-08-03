@@ -334,4 +334,4 @@ database.
 
 More Help topics
 
-[Mind the Flex: Updating an existing AIR database](http://www.mindtheflex.com/?p=83)
+[Mind the Flex: Updating an existing AIR database](https://web.archive.org/web/20120309072807/http://www.mindtheflex.com/?p=83)

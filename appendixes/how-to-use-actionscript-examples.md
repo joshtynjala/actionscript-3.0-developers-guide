@@ -23,7 +23,7 @@ Flash Builder.
 TV devices  
 Though you cannot run these examples on TV devices, you can still learn from the
 examples by running them on your computer. See
-[Flash Platform for TV](https://www.adobe.com/devnet/devices/flash_platform_tv.html)
+[Flash Platform for TV](https://web.archive.org/web/20140302163619/https://www.adobe.com/devnet/devices/flash_platform_tv.html)
 on the Adobe Developer Connection website for information about developing
 applications for TV devices.
 
@@ -504,7 +504,7 @@ example on a computer illustrates various drawing APIs. However, the example is
 not suitable on some mobile devices due to their performance limitations.
 
 For more information about performance on mobile devices, see
-_[Optimizing Performance for the Flash Platform](https://www.adobe.com/go/learn_optimizing_fp_en)_.
+_[Optimizing Performance for the Flash Platform](https://web.archive.org/web/20150302221450/http://help.adobe.com/en_US/as3/mobile/index.html)_.
 
 #### Best practices
 
@@ -513,4 +513,4 @@ mobile devices. Limitations in memory and processing power in mobile devices
 require special consideration. Similarly, the user interface for the small
 screen has different needs than a desktop display. For more information about
 developing applications for mobile devices, _see
-_[Optimizing Performance for the Flash Platform](https://www.adobe.com/go/learn_optimizing_fp_en)_._
+_[Optimizing Performance for the Flash Platform](https://web.archive.org/web/20150302221450/http://help.adobe.com/en_US/as3/mobile/index.html)_._

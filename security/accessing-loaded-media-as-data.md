@@ -118,7 +118,7 @@ and
 To access sound data from RTMP streams, you must allow access on the server. Use
 the Server-Side ActionScript `Client.audioSampleAccess` property to allow access
 to specific directories on Flash Media Server. For more information, see the
-[Server-Side ActionScript Language Reference](https://www.adobe.com/go/learn_fms_docs_en).
+[Server-Side ActionScript Language Reference](https://web.archive.org/web/20150702070954/http://www.adobe.com/support/documentation/en/flashmediaserver/).
 
 ## Accessing video data
 
@@ -136,7 +136,7 @@ To use the draw methods to extract run-time graphics from RTMP streams, you must
 allow access on the server. Use the Server-Side ActionScript
 `Client.videoSampleAccess` property to allow access to specific directories on
 Flash Media Server. For more information, see the
-[Server-Side ActionScript Language Reference](https://www.adobe.com/go/learn_fms_docs_en).
+[Server-Side ActionScript Language Reference](https://web.archive.org/web/20150702070954/http://www.adobe.com/support/documentation/en/flashmediaserver/).
 
 When you call a draw method with progressive video as the `source` parameter,
 the caller of the method must either be from the same sandbox as the FLV file,

@@ -312,4 +312,4 @@ More Help Topics
 [fl.ik package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/fl/ik/package-detail.html)
 
 ![](../img/flashplatformLinkIndicator.png)
-[Inverse kinematics](https://help.adobe.com/en_US/flash/cs/using/WS58BD3A02-DA25-488f-B534-AE5463A24833.html)
+[Inverse kinematics](https://web.archive.org/web/20150308055635/https://help.adobe.com/en_US/flash/cs/using/WS58BD3A02-DA25-488f-B534-AE5463A24833.html)

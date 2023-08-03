@@ -15,7 +15,7 @@ should only be used for testing an application prior to public release.
 More Help topics
 
 ![](../../img/airLinkIndicator.png)
-[Signing AIR applications](https://help.adobe.com/en_US/air/build/WSfffb011ac560372f-19aa73f128cc9f05e8-8000.html)
+[Signing AIR applications](https://web.archive.org/web/20221230223116/https://help.adobe.com/en_US/air/build/WSfffb011ac560372f-19aa73f128cc9f05e8-8000.html)
 
 ![](../../img/airLinkIndicator.png)
-[ADT code signing options](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7f72.html)
+[ADT code signing options](https://web.archive.org/web/20221208071559/https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7f72.html)

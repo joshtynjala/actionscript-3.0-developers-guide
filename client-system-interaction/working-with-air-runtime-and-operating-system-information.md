@@ -108,7 +108,7 @@ events.
 More Help topics
 
 ![](../img/flashplatformLinkIndicator.png)
-[flash.desktop.NativeApplication](https://help.adobe.com//en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeApplication.html "https://help.adobe.com//en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeApplication.html")
+[flash.desktop.NativeApplication](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeApplication.html)
 
 ![](../img/airLinkIndicator.png)
-[Declaring file type associations](https://help.adobe.com//en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7cc3.html "https://help.adobe.com//en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7cc3.html")
+[Declaring file type associations](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7cc3.html)

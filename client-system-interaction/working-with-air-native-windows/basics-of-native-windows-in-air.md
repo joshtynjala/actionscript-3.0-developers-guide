@@ -3,40 +3,40 @@
 For quick explanations and code examples of working with native windows in AIR,
 see the following quick start articles on the Adobe Developer Connection:
 
-- [Creating a transparent window application](https://www.adobe.com/go/learn_air_qs_transparent_flex_en)
+- [Creating a transparent window application](https://web.archive.org/web/20120114025846/http://www.adobe.com/devnet/air/flex/quickstart/articles/creating_transparent_window.html)
   (Flex)
 
-- [Interacting with a window](https://www.adobe.com/go/learn_air_qs_window_flex_en)
+- [Interacting with a window](https://web.archive.org/web/20160520091704/http://www.adobe.com/devnet/air/flex/quickstart/articles/interacting_window.html)
   (Flex)
 
-- [Customizing the look and feel of a native window](https://www.adobe.com/go/learn_air_qs_customwindow_flex_en)
+- [Customizing the look and feel of a native window](https://web.archive.org/web/20141220155132/http://www.adobe.com/devnet/air/flex/quickstart/articles/custom_chrome.html)
   (Flex)
 
-- [Launching windows](https://www.adobe.com/go/learn_air_qs_launchwindow_flex_en)
+- [Launching windows](https://web.archive.org/web/20120114125443/http://www.adobe.com/devnet/air/flex/quickstart/articles/launching_windows.html)
   (Flex)
 
-- [Creating toast-style windows](https://www.adobe.com/go/learn_air_qs_toastwindow_flex_en)
+- [Creating toast-style windows](https://web.archive.org/web/20120114022213/http://www.adobe.com/devnet/air/flex/quickstart/articles/creating_toast-style_windows.html)
   (Flex)
 
-- [Controlling the display order of windows](https://www.adobe.com/go/learn_air_qs_zorder_flex_en)
+- [Controlling the display order of windows](https://web.archive.org/web/20120114064730/http://www.adobe.com/devnet/air/flex/quickstart/articles/controlling_display_order_windows.html)
   (Flex)
 
-- [Creating resizable, non-rectangular windows](https://www.adobe.com/go/learn_air_qs_nonrectwindow_flex_en)
+- [Creating resizable, non-rectangular windows](https://web.archive.org/web/20120114052209/http://www.adobe.com/devnet/air/flex/quickstart/articles/creating_non-rectangular_windows.html)
   (Flex)
 
-- [Interacting with a window](https://www.adobe.com/go/learn_air_qs_window_flash_en)
+- [Interacting with a window](https://web.archive.org/web/20161201234839/https://www.adobe.com/devnet/air/flash/quickstart/articles/interacting_window.html)
   (Flash)
 
-- [Customizing the look and feel of a native window](https://www.adobe.com/go/learn_air_qs_customwindow_flash_en)
+- [Customizing the look and feel of a native window](https://web.archive.org/web/20120114054848/http://www.adobe.com/devnet/air/flash/quickstart/articles/custom_chrome.html)
   (Flash)
 
-- [Creating toast-style windows](https://www.adobe.com/go/learn_air_qs_toastwindow_flash_en)
+- [Creating toast-style windows](https://web.archive.org/web/20120114090511/http://www.adobe.com/devnet/air/flash/quickstart/articles/creating_toast-style_windows.html)
   (Flash)
 
-- [Controlling the display order of windows](https://www.adobe.com/go/learn_air_qs_zorder_flash_en)
+- [Controlling the display order of windows](https://web.archive.org/web/20120114064725/http://www.adobe.com/devnet/air/flash/quickstart/articles/controlling_display_order_windows.html)
   (Flash)
 
-- [Creating resizable, non-rectangular windows](https://www.adobe.com/go/learn_air_qs_nonrectwindow_flash_en)
+- [Creating resizable, non-rectangular windows](https://web.archive.org/web/20120114025841/http://www.adobe.com/devnet/air/flash/quickstart/articles/creating_non-rectangular_windows.html)
   (Flash)
 
 AIR provides an easy-to-use, cross-platform window API for creating native
@@ -272,7 +272,7 @@ chrome:
     </s:WindowedApplication>
 
 For more information, see
-[Using Flex 4: About the AIR window containers: Controlling window chrome](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-7fd8.html#WSacd9bdd0c5c09f4a-690d4877120e8b878b0-7fd7)
+[Using Flex 4: About the AIR window containers: Controlling window chrome](https://web.archive.org/web/20150519003317/https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-7fd8.html#WSacd9bdd0c5c09f4a-690d4877120e8b878b0-7fd7)
 
 #### Custom chrome
 
@@ -456,7 +456,7 @@ system chrome.
 More Help topics
 
 ![](../../img/flexLinkIndicator.png)
-[Using the Flex AIR components](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-8000.html)
+[Using the Flex AIR components](https://web.archive.org/web/20150519004618/https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-8000.html)
 
 ![](../../img/airLinkIndicator.png)
-[Setting AIR application properties](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html)
+[Setting AIR application properties](https://web.archive.org/web/20221205160703/https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html)

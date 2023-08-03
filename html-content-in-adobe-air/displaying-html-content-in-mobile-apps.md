@@ -105,7 +105,7 @@ for the app to successfully load remote resources.
 In Android 3.0+, an application must enable hardware acceleration in the Android
 manifestAdditions element of the AIR application descriptor to display plug-in
 content in a StageWebView object. See
-[Enabling Flash Player and other plug-ins in a StageWebView object](https://help.adobe.com/en_US/air/build/WS365a66ad37c9f5102ec8a8ba12f2d91095a-8000.html).
+[Enabling Flash Player and other plug-ins in a StageWebView object](https://web.archive.org/web/20170703170631/http://help.adobe.com/en_US/air/build/WSfffb011ac560372f-5d0f4f25128cc9cd0cb-7ffc.html#WS365a66ad37c9f5102ec8a8ba12f2d91095a-8000).
 
 ### JavaScript URI
 
@@ -416,28 +416,29 @@ corresponding web page and displays it as a snapshot on the stage.
 
 ## Adobe recommends
 
-> ### [![](../img/mark_doherty.png) AIR2.5 StageWebView demo – OAuth Support](http://goo.gl/QS3iW)
+> ### [![](../img/mark_doherty.png) AIR2.5 StageWebView demo – OAuth Support](https://web.archive.org/web/20110128070615/http://www.flashmobileblog.com/2010/07/17/air2-5-stagewebview-demo-oauth-support/)
 >
-> Evangelist [Mark Doherty](http://www.flashmobileblog.com/about/) demonstrates
-> how to log in to an OAuth protected site like Twitter using the StageWebView
-> class.
+> Evangelist
+> [Mark Doherty](https://web.archive.org/web/20110220041349/http://www.flashmobileblog.com/about)
+> demonstrates how to log in to an OAuth protected site like Twitter using the
+> StageWebView class.
 
-> ### ![](../img/sean_voisen.png) [Making the most of StageWebView](http://goo.gl/5sPwj)
+> ### ![](../img/sean_voisen.png) [Making the most of StageWebView](https://web.archive.org/web/20110512234900/http://voisen.org/blog/2010/10/making-the-most-of-stagewebview/)
 >
 > Sean Voisen
 
-> ### ![](../img/jon_campos.png) [HTML Web View in Air for Android](http://goo.gl/RSjqN)
+> ### ![](../img/jon_campos.png) [HTML Web View in Air for Android](https://web.archive.org/web/20120308132822/http://www.unitedmindset.com/jonbcampos/2010/09/16/html-web-view-in-air-for-android/)
 >
 > Jonathan Campos
 
-> ### ![](../img/rich_tretola.png) [Create a basic web browser with StageWebView](http://goo.gl/1PS3G)
+> ### ![](../img/rich_tretola.png) [Create a basic web browser with StageWebView](https://web.archive.org/web/20120427213213/http://cookbooks.adobe.com/post_Create_a_basic_web_browser_with_StageWebView-18850.html)
 >
 > Rich Tretola
 
-> ### ![](../img/sonke_rohde.png) [AIR Mobile StageWebView UIComponent](http://goo.gl/qRaRY)
+> ### ![](../img/sonke_rohde.png) [AIR Mobile StageWebView UIComponent](https://web.archive.org/web/20120114195133/http://soenkerohde.com/2010/11/air-mobile-stagewebview-uicomponent/)
 >
 > Sönke Rohde
 
-> ### ![](../img/judah_frangipane.png) [Using StageWebView within a UIComponent in Mobile](http://goo.gl/GOQPg)
+> ### ![](../img/judah_frangipane.png) [Using StageWebView within a UIComponent in Mobile](https://web.archive.org/web/20120801215717/http://www.judahfrangipane.com/blog/2011/01/16/stagewebview-uicomponent/)
 >
 > Judah Frangipane

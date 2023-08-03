@@ -92,7 +92,7 @@ on the page:
 More Help topics
 
 ![](../../img/airLinkIndicator.png)
-[Specifying the required AIR version](https://help.adobe.com/en_US/air/build/WSe3d2d52902616553396777a311d6a2e014f-8000.html)
+[Specifying the required AIR version](https://web.archive.org/web/20150913114906/http://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html#WSe3d2d52902616553396777a311d6a2e014f-8000)
 
 ![](../../img/flexLinkIndicator.png)
-[Using compc, the component compiler](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fd2.html)
+[Using compc, the component compiler](https://web.archive.org/web/20150611085602/https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fd2.html)

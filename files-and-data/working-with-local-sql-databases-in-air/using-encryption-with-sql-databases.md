@@ -358,7 +358,7 @@ Follow these steps to use the EncryptionKeyGenerator class in your application:
 1.  Download the EncryptionKeyGenerator class as source code or a compiled SWC.
     The EncryptionKeyGenerator class is included in the open-source ActionScript
     3.0 core library (as3corelib) project. You can download
-    [the as3corelib package including source code and documentation](https://www.adobe.com/go/learn_air_opensource_encryptionkey).
+    [the as3corelib package including source code and documentation](https://github.com/mikechambers/as3corelib).
     You can also download the SWC or source code files from the project page.
 
 2.  Place the source code for the EncryptionKeyGenerator class (or the
@@ -478,7 +478,7 @@ using an encryption key." The code consists of two parts.
 The example uses the EncryptionKeyGenerator class to create an encryption key
 from a password. The EncryptionKeyGenerator class is included in the open-source
 ActionScript 3.0 core library (as3corelib) project. You can download
-[the as3corelib package including source code and documentation](https://www.adobe.com/go/learn_air_opensource_encryptionkey).
+[the as3corelib package including source code and documentation](https://github.com/mikechambers/as3corelib).
 You can also download the SWC or source code files from the project page.
 
 #### Flex example
@@ -705,7 +705,7 @@ techniques for situations where a different level of data privacy is desired.
 
 The EncryptionKeyGenerator class is included in the open-source ActionScript 3.0
 core library (as3corelib) project. You can download
-[the as3corelib package including source code and documentation](https://www.adobe.com/go/learn_air_opensource_encryptionkey).You
+[the as3corelib package including source code and documentation](https://github.com/mikechambers/as3corelib).You
 can also view the source code on the project site or download it to follow along
 with the explanations.
 

@@ -3,22 +3,22 @@
 For a quick explanation and code examples of using SQL databases, see the
 following quick start articles on the Adobe Developer Connection:
 
-- [Working asynchronously with a local SQL database](https://www.adobe.com/go/learn_air_qs_SQLasynch_en)
+- [Working asynchronously with a local SQL database](https://web.archive.org/web/20111126102614/http://www.adobe.com/devnet/air/flex/quickstart/articles/simple_sql_database.html)
   (Flex)
 
-- [Working synchronously with a local SQL database](https://www.adobe.com/go/learn_air_qs_SQLsynch_en)
+- [Working synchronously with a local SQL database](https://web.archive.org/web/20111126104857/http://www.adobe.com/devnet/air/flex/quickstart/articles/sync_simple_sql_database.html)
   (Flex)
 
-- [Using an encrypted database](https://www.adobe.com/go/learn_air_qs_encrypteddb_flex_en)
+- [Using an encrypted database](https://web.archive.org/web/20111126104912/http://www.adobe.com/devnet/air/flex/quickstart/articles/encrypted_database.html)
   (Flex)
 
-- [Working asynchronously with a local SQL database](https://www.adobe.com/go/learn_air_qs_SQLasynch_flash_en)
+- [Working asynchronously with a local SQL database](https://web.archive.org/web/20111126104852/http://www.adobe.com/devnet/air/flash/quickstart/articles/simple_sql_database.html)
   (Flash)
 
-- [Working synchronously with a local SQL database](https://www.adobe.com/go/learn_air_qs_SQLsynch_flash_en)
+- [Working synchronously with a local SQL database](https://web.archive.org/web/20111126104902/http://www.adobe.com/devnet/air/flash/quickstart/articles/sync_simple_sql_database.html)
   (Flash)
 
-- [Using an encrypted database](https://www.adobe.com/go/learn_air_qs_encrypteddb_flash_en)
+- [Using an encrypted database](https://web.archive.org/web/20111126104907/http://www.adobe.com/devnet/air/flash/quickstart/articles/encrypted_database_flash.html)
   (Flash)
 
 Adobe AIR includes a SQL-based relational database engine that runs within the
@@ -242,6 +242,6 @@ mode, see
 
 More Help topics
 
-[Christophe Coenraets: Employee Directory on AIR for Android](http://coenraets.org/blog/air-for-android-samples/employee-directory-for-android/)
+[Christophe Coenraets: Employee Directory on AIR for Android](https://web.archive.org/web/20130904212327/http://coenraets.org/blog/air-for-android-samples/employee-directory-for-android)
 
-[Raymond Camden: jQuery and AIR - Moving from web page to application](http://insideria.com/2009/09/jquery-and-air---moving-from-w-1.html)
+[Raymond Camden: jQuery and AIR - Moving from web page to application](https://web.archive.org/web/20101213041415/http://insideria.com/2009/09/jquery-and-air---moving-from-w-1.html)

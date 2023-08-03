@@ -109,7 +109,7 @@ the Sound class. For a similar example that uses the SoundAsset class see
 More Help topics
 
 ![](../../img/flexLinkIndicator.png)
-[Embedding assets](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fce.html)
+[Embedding assets](https://web.archive.org/web/20150313235357/https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fce.html)
 
 ![](../../img/as3LinkIndicator.png)
-[Embedded asset classes](https://help.adobe.com/en_US/as3/learn/WS5b3ccc516d4fbf351e63e3d118a9b90204-7f2e.html)
+[Embedded asset classes](https://web.archive.org/web/20150211003723/http://help.adobe.com/en_US/as3/learn/WS5b3ccc516d4fbf351e63e3d118a9b90204-7f36.html#WS5b3ccc516d4fbf351e63e3d118a9b90204-7f2e)

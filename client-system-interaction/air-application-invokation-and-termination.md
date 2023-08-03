@@ -14,7 +14,7 @@ For a quick explanation and code examples of invoking and terminating AIR
 applications, see the following quick start articles on the Adobe Developer
 Connection:
 
-- [Startup Options](https://www.adobe.com/go/learn_air_qs_startup_options_flex_en)
+- [Startup Options](https://web.archive.org/web/20150921204315/http://www.adobe.com/devnet/air/flex/quickstart/articles/startup_options.html)
 
 <!-- -->
 
@@ -271,7 +271,7 @@ as follows:
 
 - `InvokeEventReason.NOTIFICATION` (iOS only) - The application was invoked
   through APNs. For more information on APNs, see
-  [Use push notifications](https://help.adobe.com/en_US/air/build/WSd6d4f896b3a8801b7be2f55d138e29d5e40-8000.html).
+  [Use push notifications](https://web.archive.org/web/20220814032009/https://help.adobe.com/en_US/air/build/WSd6d4f896b3a8801b7be2f55d138e29d5e40-8000.html).
 
 - `InvokeEventReason.OPEN_URL` - The application was invoked by another
   application or by the system.
@@ -521,10 +521,10 @@ More Help topics
 [flash.events.BrowserInvokeEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/BrowserInvokeEvent.html)
 
 ![](../img/airLinkIndicator.png)
-[Launching an installed AIR application from the browser](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7cd2.html)
+[Launching an installed AIR application from the browser](https://web.archive.org/web/20221230223123/https://help.adobe.com/en_US/air/build/WSfffb011ac560372f-1c6efe05128cca667e7-8000.html#WS5b3ccc516d4fbf351e63e3d118666ade46-7cd2)
 
 ![](../img/airLinkIndicator.png)
-[Setting AIR application properties](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html)
+[Setting AIR application properties](https://web.archive.org/web/20221205160703/https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html)
 
 ![](../img/airLinkIndicator.png)
-[Presenting a custom application update user interface](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ccd.html)
+[Presenting a custom application update user interface](https://web.archive.org/web/20220814030226/https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ccd.html)

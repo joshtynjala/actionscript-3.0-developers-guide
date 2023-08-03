@@ -27,7 +27,7 @@ and the advantages of the error-handling system in ActionScript 3.0.
 More Help topics
 
 ![](../../img/flashplatformLinkIndicator.png)
-[ActionScript language and syntax](https://help.adobe.com/en_US/as3/learn/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ec7.html)
+[ActionScript language and syntax](https://web.archive.org/web/20150228102137/https://help.adobe.com/en_US/as3/learn/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ec7.html)
 
 ![](../../img/flashplatformLinkIndicator.png)
-[Object-oriented programming in ActionScript](https://help.adobe.com/en_US/as3/learn/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ec0.html)
+[Object-oriented programming in ActionScript](https://web.archive.org/web/20151130063859/https://help.adobe.com/en_US/as3/learn/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ec0.html)

@@ -18,4 +18,4 @@ a wide audience. This combination enables developers to create applications such
 as Video on Demand, live web-event broadcasts, and Mp3 streaming as well as
 video blogging, video messaging, and multimedia chat environments. For more
 information, see the Flash Media Server documentation online at
-[www.adobe.com/go/learn_fms_docs_en](https://www.adobe.com/go/learn_fms_docs_en).
+[www.adobe.com/go/learn_fms_docs_en](https://web.archive.org/web/20150702070954/http://www.adobe.com/support/documentation/en/flashmediaserver/).

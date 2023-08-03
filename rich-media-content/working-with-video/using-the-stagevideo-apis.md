@@ -206,7 +206,7 @@ settings. You can use the `videoWidth` and `videoHeight` properties of the
 calculating the video viewport dimensions.
 
 Download the full source code for this sample application at
-[Getting Started with Stage Video](https://www.adobe.com/go/learn_as3_usingstagevideo_en).
+[Getting Started with Stage Video](https://web.archive.org/web/20150228093631/http://www.adobe.com/devnet/flashplayer/articles/stage_video.html).
 
 ## Using the StageVideoEvent.RENDER_STATE and VideoEvent.RENDER_STATE events
 

@@ -92,7 +92,7 @@ JavaScript extensions to Acrobat provide the following features, among others:
 
 Full details on JavaScript extensions for Adobe Acrobat are provided at the
 Adobe Acrobat Developer Connection at
-[https://www.adobe.com/devnet/acrobat/javascript.html](https://www.adobe.com/devnet/acrobat/javascript.html).
+[JavaScript for Acrobat](https://web.archive.org/web/20140302020537/https://www.adobe.com/devnet/acrobat/javascript.html).
 
 ### HTML-PDF communication basics
 
@@ -167,7 +167,7 @@ object contained in the page. Calling this method sends a message (
 
 For a more advanced example, and for information on using Acrobat 8 to add
 JavaScript to a PDF file, see
-[Cross-scripting PDF content in Adobe AIR](https://www.adobe.com/go/learn_air_qs_pdf_script_flex_en).
+[Cross-scripting PDF content in Adobe AIR](https://web.archive.org/web/20150121072654/http://www.adobe.com/devnet/air/flex/quickstart/articles/scripting_pdf.html).
 
 ### Scripting PDF content from ActionScript
 

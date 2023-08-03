@@ -168,4 +168,4 @@ More Help topics
 [flash.data.EncryptedLocalStore](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/data/EncryptedLocalStore.html)
 
 ![](../../img/airLinkIndicator.png)
-[About AIR publisher identifiers](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7cca.html)
+[About AIR publisher identifiers](https://web.archive.org/web/20220826032343/https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff0.html#WS5b3ccc516d4fbf351e63e3d118666ade46-7cca)

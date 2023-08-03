@@ -363,7 +363,7 @@ string that you would use to allow this application to connect is:
 More Help topics
 
 ![](../img/airLinkIndicator.png)
-[Setting AIR application properties](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html)
+[Setting AIR application properties](https://web.archive.org/web/20221205160703/https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html)
 
 ![](../img/airLinkIndicator.png)
-[Getting the application and publisher identifiers](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ccc.html)
+[Getting the application and publisher identifiers](https://web.archive.org/web/20120514072051/http://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118676a5e5e-7fff.html#WS5b3ccc516d4fbf351e63e3d118666ade46-7ccc)

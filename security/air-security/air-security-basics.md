@@ -20,9 +20,9 @@ vulnerabilities related to memory management, such as buffer overflows and
 memory corruption. These are some of the most common vulnerabilities affecting
 desktop applications written in native code.
 
-## Adobe recommends<
+## Adobe recommends
 
-> ### [![](../../img/ethanAndpeleus.png) Maintaining Security with Adobe AIR](http://goo.gl/rXu59)
+> ### [![](../../img/ethanAndpeleus.png) Maintaining Security with Adobe AIR](https://web.archive.org/web/20130309154244/http://tv.adobe.com/watch/max-2008-develop/maintaining-security-with-adobe-air/)
 >
 > Peleus Uhley and Ethan Malasky provide an overview of the security-related
 > issues that can arise when developing Adobe AIR applications.

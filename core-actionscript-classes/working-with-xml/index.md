@@ -30,7 +30,7 @@ More Help topics
 
 ## Adobe recommends
 
-> ### [![](../../img/marc_bir.png) E4X is Good4U](http://goo.gl/OrIZm)
+> ### [![](../../img/marc_bir.png) E4X is Good4U](https://web.archive.org/web/20140817005041/http://tv.adobe.com/watch/max-2008-develop/e4x-is-good4u-by-marc-bir/)
 >
 > Marc Bir discusses E4X, the easy way to work with XML data in ActionScript
 > 3.0. He covers techniques for creating XML and filtering XML to find the data

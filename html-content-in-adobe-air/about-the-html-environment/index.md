@@ -77,4 +77,4 @@ More Help topics
 [www.webkit.org](http://www.webkit.org)
 
 ![](../../img/airLinkIndicator.png)
-[Updating AIR applications](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff2.html)
+[Updating AIR applications](https://web.archive.org/web/20221230223123/https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff2.html)

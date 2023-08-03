@@ -233,7 +233,7 @@ property to `SoundCodec.NELLYMOSER` (the default) selects the Nellymoser codec
 for compressing audio.
 
 For more information, see the Flash Media Server documentation online at
-[www.adobe.com/go/learn_fms_docs_en](https://www.adobe.com/go/learn_fms_docs_en).
+[www.adobe.com/go/learn_fms_docs_en](https://web.archive.org/web/20150702070954/http://www.adobe.com/support/documentation/en/flashmediaserver/).
 
 ## Capturing microphone sound data
 
@@ -322,6 +322,6 @@ For more information on playing back sounds from sound sample data, see
 
 More Help topics
 
-[Michael Chaize: AIR, Android, and the Microphone](http://www.riagora.com/2010/08/air-android-and-the-microphone/)
+[Michael Chaize: AIR, Android, and the Microphone](https://web.archive.org/web/20150120163947/http://www.riagora.com/2010/08/air-android-and-the-microphone/)
 
-[Christophe Coenraets: Voice Notes for Android](http://coenraets.org/blog/air-for-android-samples/voice-notes-for-android/)
+[Christophe Coenraets: Voice Notes for Android](https://web.archive.org/web/20120913011517/http://coenraets.org/blog/air-for-android-samples/voice-notes-for-android/)

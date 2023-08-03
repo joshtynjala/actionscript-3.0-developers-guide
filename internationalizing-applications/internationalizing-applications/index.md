@@ -21,9 +21,9 @@ More Help topics
 [flash.globalization package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/globalization/package-detail.html)
 
 ![](../../img/flexLinkIndicator.png)
-[Localization](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fcf.html)
+[Localization](https://web.archive.org/web/20150303093254/https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7fcf.html)
 
 ![](../../img/airLinkIndicator.png)
-[Localizing AIR applications](https://help.adobe.com/en_US/air/build/WSB2927578-20D8-4065-99F3-00ACE6511EEE.html)
+[Localizing AIR applications](https://web.archive.org/web/20221230223123/https://help.adobe.com/en_US/air/build/WSB2927578-20D8-4065-99F3-00ACE6511EEE.html)
 
-[Charles Bihis: Want to Localize your Flex/AIR Apps?](http://blogs.adobe.com/charles/2011/02/want-to-localize-your-flexair-apps-its-easy-ill-show-you-how-again.html)
+[Charles Bihis: Want to Localize your Flex/AIR Apps?](https://web.archive.org/web/20120416074857/http://blogs.adobe.com/charles/2011/02/want-to-localize-your-flexair-apps-its-easy-ill-show-you-how-again.html)

@@ -237,6 +237,6 @@ following arguments are passed to the function:
 
 ## Adobe recommends
 
-> ### [![](../../img/dougrdotnet.png) Trim Leading and Trailing 00s From a String](http://goo.gl/GHGjc)
+> ### [![](../../img/dougrdotnet.png) Trim Leading and Trailing 00s From a String](https://web.archive.org/web/20160306044712/http://dougr.net/2011/09/15/actionscript-trim-leading-and-trailing-0s-from-a-string/)
 >
-> [Doug Reynolds](http://goo.gl/ql1TG)
+> [Doug Reynolds](https://web.archive.org/web/20160306100956/http://dougr.net/)

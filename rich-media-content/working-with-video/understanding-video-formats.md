@@ -45,7 +45,7 @@ Adhering to these recommendations ensures hardware acceleration and better user
 experience on most devices. These recommendations are not mandatory.
 
 For a detailed discussion and encoding settings in Adobe Media Encoder CS5, see
-[Recommendations for encoding H.264 video for Flash Player 10.1 on mobile devices](https://www.adobe.com/devnet/devices/articles/mobile_video_encoding.html)
+[Recommendations for encoding H.264 video for Flash Player 10.1 on mobile devices](https://web.archive.org/web/20140302152105/https://www.adobe.com/devnet/devices/articles/mobile_video_encoding.html)
 
 Note: On iOS, only video encoded with the Sorenson Spark and On2 VP6 codecs can
 be played back using the Video class. You can play back H.264 encoded video in
@@ -144,7 +144,7 @@ play them:
 
 Adobe provides the F4V and FLV video file formats for streaming content to Flash
 Player and AIR. For a complete description of these video file formats, see
-[www.adobe.com/go/video_file_format](https://www.adobe.com/go/video_file_format).
+[www.adobe.com/go/video_file_format](https://web.archive.org/web/20150730113325/http://www.adobe.com/devnet/f4v.html).
 
 ### The F4V video file format
 
@@ -221,4 +221,4 @@ More Help topics
 ![](../../img/flashmediaserverLinkIndicator.png)
 [Flash Media Server: Supported codecs](https://help.adobe.com/en_US/FlashMediaServer/3.5_TechOverview/WS5b3ccc516d4fbf351e63e3d119ed944a1a-7ffa.html#WS5b3ccc516d4fbf351e63e3d119ed944a1a-7fe7)
 
-[Adobe HTTP Dynamic Streaming](https://help.adobe.com/en_US/HTTPStreaming/1.0/Using/index.html)
+[Adobe HTTP Dynamic Streaming](https://web.archive.org/web/20170917143242/https://help.adobe.com/en_US/HTTPStreaming/1.0/Using/index.html)

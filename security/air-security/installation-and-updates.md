@@ -223,10 +223,10 @@ They include the following:
 More Help topics
 
 ![](../../img/airLinkIndicator.png)
-[Distributing, Installing, and Running AIR applications](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7fcb.html)
+[Distributing, Installing, and Running AIR applications](https://web.archive.org/web/20211015211024/https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7fcb.html)
 
 ![](../../img/airLinkIndicator.png)
-[Setting AIR application properties](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html)
+[Setting AIR application properties](https://web.archive.org/web/20221205160703/https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html)
 
 ![](../../img/airLinkIndicator.png)
-[Digitally signing an AIR file](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff0.html)
+[Digitally signing an AIR file](https://web.archive.org/web/20221230223109/https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7ff0.html)

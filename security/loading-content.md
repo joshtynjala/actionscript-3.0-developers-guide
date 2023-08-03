@@ -177,7 +177,7 @@ NetConnection class, passing an RTMP URL as the parameter. Flash Media Server
 can restrict connections and prevent content from downloading, based on the
 domain of the requesting file. For details, see the Flash Media Server
 documentation online at
-[www.adobe.com/go/learn_fms_docs_en](https://www.adobe.com/go/learn_fms_docs_en).
+[www.adobe.com/go/learn_fms_docs_en](https://web.archive.org/web/20150702070954/http://www.adobe.com/support/documentation/en/flashmediaserver/).
 
 To use the `BitmapData.draw()`, `BitmapData.drawWithQuality()`, and
 `SoundMixer.computeSpectrum()` methods to extract run-time graphics and sound
@@ -185,6 +185,6 @@ data from RTMP streams, you must allow access on the server. Use the Server-Side
 ActionScript `Client.videoSampleAccess` and `Client.audioSampleAccess`
 properties to allow access to specific directories on Flash Media Server. For
 more information, see the
-[Server-Side ActionScript Language Reference](https://www.adobe.com/go/learn_fms_docs_en).
+[Server-Side ActionScript Language Reference](https://web.archive.org/web/20150702070954/http://www.adobe.com/support/documentation/en/flashmediaserver/).
 (The `drawWithQuality` method is available in Flash Player 11.3 and higher; AIR
 3.3 and higher.)

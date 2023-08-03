@@ -3,19 +3,19 @@
 For a quick explanation and code examples of working with the file system in
 AIR, see the following quick start articles on the Adobe Developer Connection:
 
-- [Building a text-file editor](https://www.adobe.com/go/learn_air_qs_textedit_flash_en)
+- [Building a text-file editor](https://web.archive.org/web/20090130011935/http://www.adobe.com/devnet/air/flash/quickstart/building_text_editor.html)
   (Flash)
 
-- [Building a text-file editor](https://www.adobe.com/go/learn_air_qs_textedit_flex_en)
+- [Building a text-file editor](https://web.archive.org/web/20100817082125/http://www.adobe.com/devnet/air/flex/quickstart/building_text_editor.html)
   (Flex)
 
-- [Building a directory search application](https://www.adobe.com/go/learn_air_qs_search_flex_en)
+- [Building a directory search application](https://web.archive.org/web/20150508062101/http://www.adobe.com/devnet/air/flex/quickstart/articles/directory_search.html)
   (Flex)
 
-- [Reading and writing from an XML preferences file](https://www.adobe.com/go/learn_air_qs_xmlpref_flex_en)
+- [Reading and writing from an XML preferences file](https://web.archive.org/web/20170319130306/http://www.adobe.com/devnet/air/flex/quickstart/articles/xml_prefs.html)
   (Flex)
 
-- [Compressing files and data](https://www.adobe.com/go/learn_air_qs_compress_en)
+- [Compressing files and data](https://web.archive.org/web/20150508064627/http://www.adobe.com/devnet/air/flex/quickstart/articles/compressing_files.html)
   (Flex)
 
 Adobe AIR provides classes that you can use to access, create, and manage both

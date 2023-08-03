@@ -75,8 +75,8 @@ For details, see
 To see a sample application that uses the FileStream class to read and write
 files, see the following articles at the Adobe AIR Developer Center:
 
-- [Building a text-file editor](https://www.adobe.com/go/learn_air_qs_textedit_flash_en)
+- [Building a text-file editor](https://web.archive.org/web/20090130011935/http://www.adobe.com/devnet/air/flash/quickstart/building_text_editor.html)
 
-- [Building a text-file editor](https://www.adobe.com/go/learn_air_qs_textedit_flex_en)
+- [Building a text-file editor](https://web.archive.org/web/20100817082125/http://www.adobe.com/devnet/air/flex/quickstart/building_text_editor.html)
 
-- [Reading and writing from an XML preferences file](https://www.adobe.com/go/learn_air_qs_xmlpref_flex_en)
+- [Reading and writing from an XML preferences file](https://web.archive.org/web/20170319130306/http://www.adobe.com/devnet/air/flex/quickstart/articles/xml_prefs.html)

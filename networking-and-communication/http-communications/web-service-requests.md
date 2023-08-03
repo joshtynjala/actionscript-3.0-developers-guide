@@ -47,11 +47,13 @@ More Help topics
 [SOAP web service requests](./soap-web-service-requests.md)
 
 ![](../../img/flexLinkIndicator.png)
-[Accessing server-side data](https://help.adobe.com/en_US/Flex/4.5/AccessingData/WS2db454920e96a9e51e63e3d11c0bf69084-7ff2.html)
+[Accessing server-side data](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/flex/accessingdata/WS2db454920e96a9e51e63e3d11c0bf69084-7ff2.html)
 
 [Adobe BlazeDS](http://opensource.adobe.com/wiki/display/blazeds/BlazeDS)
 
-[Adobe LiveCycle ES2](https://www.adobe.com/devnet/livecycle/)
+[Apache BlazeDS](https://flex.apache.org/download-blazeds.html)
+
+[Adobe LiveCycle ES2](https://web.archive.org/web/20140302041751/http://www.adobe.com/devnet/livecycle.html)
 
 [REST architecture](http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm)
 

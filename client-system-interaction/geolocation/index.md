@@ -21,10 +21,10 @@ More Help topics
 
 ## Adobe recommends
 
-> ### ![](../../img/flex_pasta.png) [Flex 4.5: Using Geolocation(GPS) on a mobile device](http://goo.gl/M5OTf)
+> ### ![](../../img/flex_pasta.png) [Flex 4.5: Using Geolocation(GPS) on a mobile device](https://web.archive.org/web/20111213155444/http://www.flexpasta.com/index.php/2011/05/12/flex-45-using-geolocationgps-on-a-mobile-device)
 >
-> [Brian Telintelo: Flex Pasta](http://www.flexpasta.com/)
+> [Brian Telintelo: Flex Pasta](https://web.archive.org/web/20111210014203/http://www.flexpasta.com/)
 
-> ### ![](../../img/gregWilson.png) [Geolocation tips and quirks](http://goo.gl/XpgZ1)
+> ### ![](../../img/gregWilson.png) [Geolocation tips and quirks](https://web.archive.org/web/20130406073319/http://gregsramblings.com/2011/09/08/geolocation-tips-quirks-bugs-flash-actionscript/)
 >
 > Greg Wilson

@@ -4,10 +4,10 @@ For a quick explanation and code examples of using drag and drop in an AIR
 application, see the following quick start articles on the Adobe Developer
 Connection:
 
-- [Supporting drag-and-drop and copy-and-paste](https://www.adobe.com/devnet/air/flex/quickstart/scrappy_copy_paste.html)
+- [Supporting drag-and-drop and copy-and-paste](https://web.archive.org/web/20150221112531/http://www.adobe.com/devnet/air/flex/quickstart/articles/scrappy_copy_paste.html)
   (Flex)
 
-- [Supporting drag-and-drop and copy-and-paste](https://www.adobe.com/devnet/air/flash/quickstart/scrappy_copy_paste.html)
+- [Supporting drag-and-drop and copy-and-paste](https://web.archive.org/web/20150221035757/http://www.adobe.com/devnet/air/flash/quickstart/articles/scrappy_copy_paste.html)
   (Flash)
 
 The drag-and-drop API contains the following classes.

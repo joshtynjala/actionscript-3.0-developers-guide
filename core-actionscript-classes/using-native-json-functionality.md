@@ -6,7 +6,8 @@ supporting member functions follow the ECMA-262 5th edition specification with
 few variances.
 
 ![](../../img/byline.png) Community member Todd Anderson provides a comparison
-of the native JSON API and the third-party as3corelib JSON class. See
+of the native JSON API and the third-party
+[as3corelib](https://github.com/mikechambers/as3corelib) JSON class. See
 [Working with Native JSON in Flash Player 11](http://blog.infrared5.com/2011/07/working-with-native-json-in-flash-player-11/).
 
 ## Overview of the JSON API
@@ -423,6 +424,6 @@ More Help topics
 ![](../img/flashplatformLinkIndicator.png)
 [JSON class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/JSON.html)
 
-[The prototype object](https://help.adobe.com/en_US/as3/learn/WS5b3ccc516d4fbf351e63e3d118a9b90204-7fa3.html)
+[The prototype object](https://web.archive.org/web/20151029173219/http://help.adobe.com/en_US/as3/learn/WS5b3ccc516d4fbf351e63e3d118a9b90204-7f3f.html#WS5b3ccc516d4fbf351e63e3d118a9b90204-7fa3)
 
 [ECMA-262 specification](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/)

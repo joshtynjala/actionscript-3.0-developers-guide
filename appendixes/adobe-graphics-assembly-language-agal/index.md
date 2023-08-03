@@ -8,14 +8,14 @@ the rendering context in the binary bytecode format described in this document.
 
 ## Adobe recommends
 
-> ### ![](../../img/marco_scabia.png) [How Stage3D works](http://goo.gl/KB34I)
+> ### ![](../../img/marco_scabia.png) [How Stage3D works](https://web.archive.org/web/20170924112945/http://www.adobe.com/devnet/flashplayer/articles/how-stage3d-works.html)
 >
-> [Marco Scabia: iFlash3D.com](http://goo.gl/sVKdP)
+> [Marco Scabia: iFlash3D.com](https://web.archive.org/web/20131020011825/http://iflash3d.com/)
 
-> ### ![](../../img/marco_scabia.png) [What is AGAL](http://goo.gl/kgZ3Y)
+> ### ![](../../img/marco_scabia.png) [What is AGAL](https://web.archive.org/web/20170905143711/http://www.adobe.com/devnet/flashplayer/articles/what-is-agal.html)
 >
-> [Marco Scabia: iFlash3D.com](http://goo.gl/sVKdP)
+> [Marco Scabia: iFlash3D.com](https://web.archive.org/web/20131020011825/http://iflash3d.com/)
 
-> ### ![](../../img/marco_scabia.png) [Vertex and fragment shaders](http://goo.gl/EfT4p)
+> ### ![](../../img/marco_scabia.png) [Vertex and fragment shaders](https://web.archive.org/web/20170909061020/http://www.adobe.com/devnet/flashplayer/articles/vertex-fragment-shaders.html)
 >
-> [Marco Scabia: iFlash3D.com](http://goo.gl/sVKdP)
+> [Marco Scabia: iFlash3D.com](https://web.archive.org/web/20131020011825/http://iflash3d.com/)

@@ -39,6 +39,6 @@ flash.events.TextEvent class to respond to user actions related to text.
 
 More Help topics
 
-[Text](https://help.adobe.com/en_US/Flash/10.0_UsingFlash/WSd60f23110762d6b883b18f10cb1fe1af6-7d54a.html)
+[Text](https://web.archive.org/web/20111120185735/https://help.adobe.com/en_US/Flash/10.0_UsingFlash/WSd60f23110762d6b883b18f10cb1fe1af6-7d54a.html)
 
-[MX text controls](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7d84.html)
+[MX text controls](https://web.archive.org/web/20150303093237/https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7d84.html)

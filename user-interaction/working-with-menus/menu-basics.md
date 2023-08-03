@@ -4,10 +4,10 @@ For a quick explanation and code examples of creating native menus in AIR
 applications, see the following quick start articles on the Adobe Developer
 Connection:
 
-- [Adding native menus to an AIR application](https://www.adobe.com/devnet/air/flex/quickstart/adding_menus.html)
+- [Adding native menus to an AIR application](https://web.archive.org/web/20140309145436/http://www.adobe.com/devnet/air/flex/quickstart/articles/adding_menus.html)
   (Flex)
 
-- [Adding native menus to an AIR application](https://www.adobe.com/devnet/air/flash/quickstart/adding_menus.html)
+- [Adding native menus to an AIR application](https://web.archive.org/web/20140309145700/http://www.adobe.com/devnet/air/flash/quickstart/articles/adding_menus.html)
   (Flash)
 
 The native menu classes allow you to access the native menu features of the
@@ -421,4 +421,4 @@ assign the File object for each document to each menu item.
 More Help topics
 
 ![](../../img/flexLinkIndicator.png)
-[About the FlexNativeMenu control](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-7fea.html)
+[About the FlexNativeMenu control](https://web.archive.org/web/20150115101918/https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-7fea.html)

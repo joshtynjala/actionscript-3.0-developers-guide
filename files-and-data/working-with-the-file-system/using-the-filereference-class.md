@@ -809,7 +809,8 @@ individual file finishes uploading.
 
 ## Adobe recommends
 
-> ### [![](../../img/kevin_hoyt.png) Load and Save Local Files](http://goo.gl/ryIkQ)
+> ### [![](../../img/kevin_hoyt.png) Load and Save Local Files](https://web.archive.org/web/20100906103656/http://tv.adobe.com/watch/adobe-evangelists-kevin-hoyt/load-and-save-local-files)
 >
-> In this video, [Kevin Hoyt](http://goo.gl/M9ynW) reveals the ease of loading
-> and saving local content using Flash.
+> In this video,
+> [Kevin Hoyt](https://web.archive.org/web/20160918100357/http://www.adobe.com/devnet/author_bios/kevin_hoyt.html)
+> reveals the ease of loading and saving local content using Flash.

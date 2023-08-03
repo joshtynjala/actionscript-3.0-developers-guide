@@ -48,7 +48,7 @@ For more information on these topics, see:
 
 - [Using the Text Layout Framework](./using-the-text-layout-framework.md)
 
-- [Native text input with StageText](http://goo.gl/A0L15)
+- [Native text input with StageText](https://web.archive.org/web/20170629011903/http://blogs.adobe.com/cantrell/archives/2011/09/native-text-input-with-stagetext.html)
 
 #### Important concepts and terms
 

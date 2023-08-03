@@ -222,13 +222,13 @@ batch file.
 More Help topics
 
 ![](../img/airLinkIndicator.png)
-[Packaging an AIR application in a native installer](https://help.adobe.com/en_US/air/build/WS789ea67d3e73a8b22388411123785d839c-8000.html)
+[Packaging an AIR application in a native installer](https://web.archive.org/web/20220523043246/https://help.adobe.com/en_US/air/build/WS789ea67d3e73a8b22388411123785d839c-8000.html)
 
 ![](../img/airLinkIndicator.png)
-[Application profiles](https://help.adobe.com/en_US/air/build/WS144092a96ffef7cc16ddeea2126bb46b82f-8000.html)
+[Application profiles](https://web.archive.org/web/20220817165616/https://help.adobe.com/en_US/air/build/WS144092a96ffef7cc16ddeea2126bb46b82f-8000.html)
 
 ![](../img/flashplatformLinkIndicator.png)
-[flash.filesystem.File.openWithDefaultApplication()](<https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/File.html#openWithDefaultApplication()> "https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/File.html#openWithDefaultApplication()")
+[flash.filesystem.File.openWithDefaultApplication()](<https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/File.html#openWithDefaultApplication()>)
 
 ![](../img/flashplatformLinkIndicator.png)
 [flash.desktop.NativeProcess](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/NativeProcess.html)

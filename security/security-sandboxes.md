@@ -11,7 +11,7 @@ sandbox can access.
 
 For more information on Flash Player security, see the Flash Player Developer
 Center topic "Security" at
-[www.adobe.com/go/devnet_security_en](https://www.adobe.com/go/devnet_security_en).
+[www.adobe.com/go/devnet_security_en](https://web.archive.org/web/20150422111248/http://www.adobe.com/devnet/flashplayer/security.html).
 
 ## Remote sandboxes
 
@@ -31,7 +31,7 @@ Remote SWF files cannot load any local files or resources.
 
 For more information on Flash Player security, see the Flash Player Developer
 Center topic "Security" at
-[www.adobe.com/go/devnet_security_en](https://www.adobe.com/go/devnet_security_en).
+[www.adobe.com/go/devnet_security_en](https://web.archive.org/web/20150422111248/http://www.adobe.com/devnet/flashplayer/security.html).
 
 ## Local sandboxes
 

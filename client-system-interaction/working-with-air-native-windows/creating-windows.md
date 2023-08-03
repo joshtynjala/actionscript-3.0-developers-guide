@@ -499,4 +499,4 @@ The following example illustrates how to create a native window:
 More Help topics
 
 ![](../../img/flexLinkIndicator.png)
-[Using the Flex AIR components](https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-8000.html)
+[Using the Flex AIR components](https://web.archive.org/web/20150519004618/https://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-8000.html)

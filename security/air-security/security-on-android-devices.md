@@ -130,6 +130,6 @@ local store is not secure on a rooted device.
 More Help topics
 
 ![](../../img/airLinkIndicator.png)
-[Android permissions](https://help.adobe.com/en_US/air/build/WS901d38e593cd1bac1e63e3d129d39606f2-8000.html)
+[Android permissions](https://web.archive.org/web/20170703170631/http://help.adobe.com/en_US/air/build/WSfffb011ac560372f-5d0f4f25128cc9cd0cb-7ffc.html#WS901d38e593cd1bac1e63e3d129d39606f2-8000)
 
 [Android: Security and Permissions](http://developer.android.com/guide/topics/security/security.html)

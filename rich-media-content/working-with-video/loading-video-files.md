@@ -53,7 +53,7 @@ NetStream object's `play()` method should be performed in the specified order:
 More Help topics
 
 ![](../../img/flexLinkIndicator.png)
-[Flex: Spark VideoPlayer control](https://help.adobe.com/en_US/flex/using/WSc78f87379113c38b-669905c51221a3b97af-8000.html)
+[Flex: Spark VideoPlayer control](https://web.archive.org/web/20150315165855/https://help.adobe.com/en_US/flex/using/WSc78f87379113c38b-669905c51221a3b97af-8000.html)
 
 ![](../../img/flashplatformLinkIndicator.png)
 [spark.components.VideoDisplay](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/spark/components/VideoDisplay.html?allClasses=1)

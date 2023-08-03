@@ -27,13 +27,14 @@ More Help Topics
 
 ## Adobe Recommends
 
-- [Renaun Erickson: Rendering game assets in ActionScript using blitting techniques](https://www.adobe.com/devnet/flex/articles/actionscript_blitting.html)
+- [Renaun Erickson: Rendering game assets in ActionScript using blitting techniques](https://web.archive.org/web/20150313213931/https://www.adobe.com/devnet/flex/articles/actionscript_blitting.html)
 
 - [Bitmap programming](http://my.safaribooksonline.com/0596526946/bitmap_programming):
   Chapter 26 of Essential ActionScript 3 by Colin Moock (O'Reilly Media, 2007)
 
-- [Mike Jones: Working with Sprites in Pushbutton Engine](http://blog.flashgen.com/2011/03/22/working-with-sprites-in-pushbutton-engine/)
+- [Mike Jones: Working with Sprites in Pushbutton Engine](https://web.archive.org/web/20150320173951/http://blog.flashgen.com/2011/03/22/working-with-sprites-in-pushbutton-engine/)
 
-- [Flash &amp; Math: Pixel Particles Made Simple](http://www.flashandmath.com/intermediate/pixtut/)
+- [Flash &amp; Math: Pixel Particles Made Simple](https://web.archive.org/web/20170319050448/http://www.flashandmath.com/intermediate/pixtut/)
 
 - [Flixel](http://flixel.org/)
+  ([Flixel Github](https://github.com/AdamAtomic/flixel))

@@ -22,7 +22,7 @@ several commercial and open source frameworks already available.
 
 For more information about developing 3D applications using Stage3D and about
 available 3D frameworks, visit the
-[Flash Player Developer Center: Stage 3D](http://goo.gl/hlzhB).
+[Flash Player Developer Center: Stage 3D](https://web.archive.org/web/20171027002039/http://www.adobe.com/devnet/flashplayer/stage3d.html).
 
 - [Basics of 3D display objects](./basics-of-3d-objects.md)
 - [Understanding 3D display objects in Flash Player and the AIR runtime](./understanding-3d-display-objects-in-flash-player-and-the-air-runtime.md)
@@ -34,22 +34,22 @@ available 3D frameworks, visit the
 
 ## Adobe recommends
 
-> ### [![](../../img/marco_scabia.png) How Stage3D works](http://goo.gl/KB34I)
+> ### [![](../../img/marco_scabia.png) How Stage3D works](https://web.archive.org/web/20170924112945/http://www.adobe.com/devnet/flashplayer/articles/how-stage3d-works.html)
 >
-> [Marco Scabia: iFlash3D.com](http://goo.gl/sVKdP)
+> [Marco Scabia: iFlash3D.com](https://web.archive.org/web/20131020011825/http://iflash3d.com/)
 
-> ### ![](../../img/marco_scabia.png) [What is AGAL](http://goo.gl/kgZ3Y)
+> ### ![](../../img/marco_scabia.png) [What is AGAL](https://web.archive.org/web/20170905143711/http://www.adobe.com/devnet/flashplayer/articles/what-is-agal.html)
 >
-> [Marco Scabia: iFlash3D.com](http://goo.gl/sVKdP)
+> [Marco Scabia: iFlash3D.com](https://web.archive.org/web/20131020011825/http://iflash3d.com/)
 
-> ### [![](../../img/marco_scabia.png) Vertex and fragment shaders](http://goo.gl/EfT4p)
+> ### [![](../../img/marco_scabia.png) Vertex and fragment shaders](https://web.archive.org/web/20170909061020/http://www.adobe.com/devnet/flashplayer/articles/vertex-fragment-shaders.html)
 >
-> [Marco Scabia: iFlash3D.com](http://goo.gl/sVKdP)
+> [Marco Scabia: iFlash3D.com](https://web.archive.org/web/20131020011825/http://iflash3d.com/)
 
-> ### [![](../../img/bytearrayORG.png) Handling scenarios with Stage3D](http://goo.gl/cNLn5)
+> ### [![](../../img/bytearrayORG.png) Handling scenarios with Stage3D](https://web.archive.org/web/20170709144149/http://www.bytearray.org/?p=3443)
 >
 > Thibault Imbert
 
-> ### [![](../../img/adobe_logo.png) Working with the Proscenium framework](http://goo.gl/CA3iC)
+> ### [![](../../img/adobe_logo.png) Working with the Proscenium framework](https://web.archive.org/web/20120203040621/http://www.adobe.com/devnet/flashplayer/articles/working-with-proscenium.html)
 >
 > Adobe

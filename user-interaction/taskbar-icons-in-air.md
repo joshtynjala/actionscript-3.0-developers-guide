@@ -5,10 +5,10 @@ contain an icon to represent an application. Adobe® AIR® provides an interface
 for interacting with the application task bar icon through the
 `NativeApplication.nativeApplication.icon` property.
 
-- [Using the system tray and dock icons](https://www.adobe.com/go/learn_air_qs_systray_en)
+- [Using the system tray and dock icons](https://web.archive.org/web/20120623062652/http://www.adobe.com/devnet/air/flex/quickstart/articles/stopwatch_dock_system_tray.html)
   (Flex)
 
-- [Using the system tray and dock icons](https://www.adobe.com/go/learn_air_qs_systray_flash_en)
+- [Using the system tray and dock icons](https://web.archive.org/web/20120623063842/http://www.adobe.com/devnet/air/flash/quickstart/articles/stopwatch_dock_system_tray.html)
   (Flash)
 
 <!-- -->

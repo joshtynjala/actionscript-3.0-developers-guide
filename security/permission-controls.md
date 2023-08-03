@@ -89,7 +89,7 @@ The mms.cfg file is stored in the following location:
 
 For more information about the mms.cfg file, see the Flash Player Administration
 Guide at
-[www.adobe.com/go/flash_player_admin](https://www.adobe.com/go/flash_player_admin).
+[www.adobe.com/go/flash_player_admin](https://web.archive.org/web/20151111130758/http://www.adobe.com/devnet/flashplayer/articles/flash_player_admin_guide.html).
 
 ### The Global Flash Player Trust directory
 
@@ -161,7 +161,7 @@ Note: Any settings made in the mms.cfg file (see
 Settings Manager.
 
 For details on the Settings Manager, see
-[www.adobe.com/go/settingsmanager](https://www.adobe.com/go/settingsmanager).
+[www.adobe.com/go/settingsmanager](https://web.archive.org/web/20150219041754/http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager.html).
 
 ### The User Flash Player Trust directory
 
@@ -254,7 +254,7 @@ implementation is slightly different in earlier versions of Flash Player, as
 successive releases have strengthened Flash Player security.) For more detailed
 information on policy files, see the Flash Player Developer Center topic "Policy
 File Changes in Flash Player 9" at
-[www.adobe.com/go/devnet_security_en](https://www.adobe.com/go/devnet_security_en).
+[www.adobe.com/go/devnet_security_en](https://web.archive.org/web/20150422111248/http://www.adobe.com/devnet/flashplayer/security.html).
 
 Code executing in the AIR application sandbox does not require a policy file to
 access data from a URL or socket. Code in an AIR application executing in a
@@ -285,7 +285,7 @@ in Flash Player 10, make sure you (or the server administrator) modify the
 master policy file to allow additional policy files. For information on how to
 specify different a different meta-policy, see the Flash Player Developer Center
 topic "Policy File Changes in Flash Player 9" at
-[www.adobe.com/go/devnet_security_en](https://www.adobe.com/go/devnet_security_en).
+[www.adobe.com/go/devnet_security_en](https://web.archive.org/web/20150422111248/http://www.adobe.com/devnet/flashplayer/security.html).
 
 A SWF file can check for a different policy filename or a different directory
 location by calling the `Security.loadPolicyFile()` method. However, if the
