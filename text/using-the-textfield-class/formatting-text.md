@@ -2,7 +2,7 @@
 
 You have several options for programmatically formatting the display of text.
 You can set properties directly on the TextField instance—for example, the
-`TextFIeld.thickness`, `TextField.textColor`, and `TextField.textHeight`
+`TextField.thickness`, `TextField.textColor`, and `TextField.textHeight`
 properties.Or you can designate the content of the text field using the
 `htmlText` property and use the supported HTML tags, such as `b`, `i`, and `u`.
 But you can also apply TextFormat objects to text fields containing plain text,
