@@ -186,7 +186,7 @@ There are two versions of AMF: AMF0 and AMF3. AMF 0 supports sending complex
 objects by reference and allows endpoints to restore object relationships. AMF 3
 improves AMF 0 by sending object traits and strings by reference, in addition to
 object references, and by supporting new data types that were introduced in
-ActionScript 3.0. The `ByteArray.objectEcoding` property specifies the version
+ActionScript 3.0. The `ByteArray.objectEncoding` property specifies the version
 of AMF that is used to encode the object data. The flash.net.ObjectEncoding
 class defines constants for specifying the AMF version: `ObjectEncoding.AMF0`
 and `ObjectEncoding.AMF3`.
