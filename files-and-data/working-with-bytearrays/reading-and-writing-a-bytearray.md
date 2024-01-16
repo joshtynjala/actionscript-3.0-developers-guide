@@ -198,7 +198,7 @@ the `order` file on the desktop. The example uses a label to display the message
 
     import flash.filesystem.*;
     import flash.display.Sprite;
-    import flash.display.TextField;
+    import flash.text.TextField;
     import flash.utils.ByteArray;
 
     public class WriteObjectExample extends Sprite
@@ -256,7 +256,7 @@ header for the contents of the `order` file.
 
     import flash.filesystem.*;
     import flash.display.Sprite;
-    import flash.display.TextField;
+    import flash.text.TextField;
     import flash.utils.ByteArray;
 
     public class ReadObjectExample extends Sprite
