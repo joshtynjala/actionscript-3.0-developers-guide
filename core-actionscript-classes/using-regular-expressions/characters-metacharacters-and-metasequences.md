@@ -17,7 +17,7 @@ this repetition), followed by the letter C:
     /AB*C/
 
 To include a metacharacter without its special meaning in a regular expression
-pattern, you must use the backslash ( `\` ) escape character. For example, the
+pattern, you must use the backslash (`\`) escape character. For example, the
 following regular expression matches the letter A followed by the letter B,
 followed by an asterisk, followed by the letter C:
 

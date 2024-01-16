@@ -539,8 +539,8 @@ passing a host name and port number, as follows:
     var xmlsock:XMLSocket = new XMLSocket();
     xmlsock.connect("127.0.0.1", 8080);
 
-Whenever you receive data from the server, the `data` event (
-`flash.events.DataEvent.DATA`) is dispatched:
+Whenever you receive data from the server, the `data` event
+(`flash.events.DataEvent.DATA`) is dispatched:
 
     xmlsock.addEventListener(DataEvent.DATA, onData);
     private function onData(event:DataEvent):void
@@ -560,7 +560,7 @@ data was successfully transmitted. If an error occurred while trying to send
 data, an IOError error is thrown.
 
 ![](../img/tip_help.png) Each message you send to the XML socket server must be
-terminated by a newline ( `\n` _) character._
+terminated by a newline (`\n`) character.
 
 For more information, see
 [XMLSocket](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/XMLSocket.html).

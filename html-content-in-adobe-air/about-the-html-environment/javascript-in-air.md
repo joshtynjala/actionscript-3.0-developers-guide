@@ -269,8 +269,8 @@ of the application), do not use the `unload` event to respond to the window (or
 application) being closed. Instead, use `exiting` event of the NativeApplication
 object (to detect when an application is closing). Or use the `closing` event of
 the NativeWindow object (to detect when a window is closing). For example, the
-following JavaScript code displays a message ( `"Goodbye."`) when the user
-closes the application:
+following JavaScript code displays a message (`"Goodbye."`) when the user closes
+the application:
 
     var app = air.NativeApplication.nativeApplication;
     app.addEventListener(air.Event.EXITING, closeHandler);

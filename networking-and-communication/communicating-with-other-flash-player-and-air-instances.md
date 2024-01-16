@@ -281,7 +281,7 @@ that is allowed to access the Internet cannot also have access to the local file
 system. If you specify `localhost`, any local SWF file can access the SWF file.
 If the `LocalConnection.send()` method attempts to communicate with a SWF file
 from a security sandbox to which the calling code does not have access, a
-`securityError` event( `SecurityErrorEvent.SECURITY_ERROR`) is dispatched. To
+`securityError` event (`SecurityErrorEvent.SECURITY_ERROR`) is dispatched. To
 work around this error, you can specify the caller's domain in the receiver's
 `LocalConnection.allowDomain()` method.
 
@@ -293,13 +293,13 @@ locally installed, but outside of the application resource directory.
 
 If the `LocalConnection.send()` method attempts to communicate with an
 application from a security sandbox to which the calling code does not have
-access, a `securityError` event( `SecurityErrorEvent.SECURITY_ERROR`) is
+access, a `securityError` event (`SecurityErrorEvent.SECURITY_ERROR`) is
 dispatched. To work around this error, you can specify the caller's domain in
 the receiver's `LocalConnection.allowDomain()` method.
 
 If you implement communication only between content in the same domain, you can
-specify a `connectionName` parameter that does not begin with an underscore (
-`_`) and does not specify a domain name (for example,
+specify a `connectionName` parameter that does not begin with an underscore
+(`_`) and does not specify a domain name (for example,
 `myDomain:connectionName`). Use the same string in the
 `LocalConnection.connect(connectionName)` command.
 

@@ -135,8 +135,8 @@ HTML content embedding the PDF file):
     }
 
 JavaScript code in the HTML page can call the `postMessage()` method of the PDF
-object contained in the page. Calling this method sends a message (
-`"Hello from HTML"`) to the document-level JavaScript in the PDF file:
+object contained in the page. Calling this method sends a message
+(`"Hello from HTML"`) to the document-level JavaScript in the PDF file:
 
     <html>
     <head>

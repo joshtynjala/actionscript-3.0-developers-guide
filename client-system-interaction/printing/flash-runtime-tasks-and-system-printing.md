@@ -86,7 +86,7 @@ For a working example, see
 
 Once the user clicks OK in the Print dialog box and `PrintJob.start()` returns
 `true`, you can access the properties defined by the printer's settings. These
-settings include the paper width, paper height ( `pageHeight` and `pageWidth`),
+settings include the paper width, paper height (`pageHeight` and `pageWidth`),
 and content orientation on the paper. Because these are printer settings, not
 controlled by the Flash runtime, you cannot alter these settings; however, you
 can use them to align the content you send to the printer to match the current

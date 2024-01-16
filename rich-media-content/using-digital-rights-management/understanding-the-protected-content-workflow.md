@@ -91,9 +91,9 @@ Adobe Access.
 
 2.  Create a DRMContentData instance. Put this code into a try-catch block:
 
-    `new DRMContentData( `_`metadata_bytes`_` )`
+    `new DRMContentData(metadata_bytes)`
 
-    where _`metadata_bytes`_ is the URLLoader object obtained in step 1.
+    where `metadata_bytes` is the URLLoader object obtained in step 1.
 
 3.  (Flash Player only) The runtime checks for the Adobe Access module. If not
     found, an IllegalOperationError with DRMErrorEvent error code 3344 or

@@ -60,8 +60,8 @@ will be a rectangle instead of a square. If you want to make relative changes to
 the size of a display object, you can set the values of the `scaleX` and
 `scaleY` properties to resize the object, as an alternative to setting the
 `width` or `height` properties. For example, this code changes the `width` of
-the display object named `square`, and then alters the vertical scale (
-`scaleY`) to match the horizontal scale, so that the size of the square stays
+the display object named `square`, and then alters the vertical scale (`scaleY`)
+to match the horizontal scale, so that the size of the square stays
 proportional.
 
     // Change the width directly.

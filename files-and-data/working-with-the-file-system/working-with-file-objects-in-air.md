@@ -670,7 +670,7 @@ and storage. For further information see the next sections.
 
 - To specify that a file does not need to be backed up and (iOS only) can be
   deleted by the operating system if device storage space runs low, save the
-  file in the cache directory ( `File.cacheDirectory`). This is the preferred
+  file in the cache directory (`File.cacheDirectory`). This is the preferred
   storage location on iOS and should be used for most files that can be
   regenerated or re-downloaded.
 

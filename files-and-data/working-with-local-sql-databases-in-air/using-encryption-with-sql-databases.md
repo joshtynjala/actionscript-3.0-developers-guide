@@ -884,7 +884,7 @@ actual process of performing a bitwise XOR on the two values happens in the
 
     var unhashedKey:ByteArray = xorBytes(concatenatedPassword, salt);
 
-The bitwise XOR operator ( `^`) takes two uint values and returns a uint value.
+The bitwise XOR operator (`^`) takes two uint values and returns a uint value.
 (A uint value contains 32 bits.) The input values passed as arguments to the
 `xorBytes()` method are a String (the password) and a ByteArray (the salt).
 Consequently, the code uses a loop to extract 32 bits at a time from each input
@@ -903,12 +903,12 @@ to combine using the XOR operator.
     }
 
 Within the loop, first 32 bits (4 bytes) are extracted from the `passwordString`
-parameter. Those bits are extracted and converted into a uint ( `o1`) in a
+parameter. Those bits are extracted and converted into a uint (`o1`) in a
 two-part process. First, the `charCodeAt()` method gets each character's numeric
 value. Next, that value is shifted to the appropriate position in the uint using
-the bitwise left shift operator ( `<<`) and the shifted value is added to `o1`.
-For example, the first character ( `i`) becomes the first 8 bits by using the
-bitwise left shift operator ( `<<`) to shift the bits left by 24 bits and
+the bitwise left shift operator (`<<`) and the shifted value is added to `o1`.
+For example, the first character (`i`) becomes the first 8 bits by using the
+bitwise left shift operator (`<<`) to shift the bits left by 24 bits and
 assigning that value to `o1`. The second character `(i + 1`) becomes the second
 8 bits by shifting its value left 16 bits and adding the result to `o1`. The
 third and fourth characters' values are added the same way.
@@ -1002,7 +1002,7 @@ loop counts from 0 to 31 (32 characters) in increments of 2 characters.
 Within the loop, the code first determines the starting position for the current
 pair of characters. Since the desired range starts at the character at index
 position 17 (the 18th byte), the `position` variable is assigned the current
-iterator value ( `i`) plus 17. The code uses the String object's `substr()`
+iterator value (`i`) plus 17. The code uses the String object's `substr()`
 method to extract the two characters at the current position. Those characters
 are stored in the variable `hex`. Next, the code uses the `parseInt()` method to
 convert the `hex` String to a decimal integer value. It stores that value in the

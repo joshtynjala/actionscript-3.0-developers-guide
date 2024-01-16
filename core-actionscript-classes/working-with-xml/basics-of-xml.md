@@ -50,7 +50,7 @@ XML data:
 
 Notice that this XML document contains other complete XML structures within it
 (such as the `song` tags with their children). It also demonstrates other XML
-structures such as attributes ( `tracknumber` and `length` in the `song` tags),
+structures such as attributes (`tracknumber` and `length` in the `song` tags),
 and tags that contain other tags rather than containing data (such as the
 `tracks` tag).
 

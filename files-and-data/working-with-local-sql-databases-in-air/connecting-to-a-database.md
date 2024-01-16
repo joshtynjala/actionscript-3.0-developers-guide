@@ -146,7 +146,7 @@ in the user's
 Notice that in the `openAsync()` method call in the asynchronous example, and
 the `open()` method call in the synchronous example, the second argument is the
 constant `SQLMode.UPDATE`. Specifying `SQLMode.UPDATE` for the second parameter
-( `openMode`) causes the runtime to dispatch an error if the specified file
+(`openMode`) causes the runtime to dispatch an error if the specified file
 doesn't exist. If you pass `SQLMode.CREATE` for the `openMode` parameter (or if
 you leave the `openMode` parameter off), the runtime attempts to create a
 database file if the specified file doesn't exist. However, if the file exists

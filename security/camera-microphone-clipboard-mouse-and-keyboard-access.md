@@ -11,7 +11,7 @@ Settings UI, and the Settings Manager (see
 restrictions, the `Camera.get()` and `Microphone.get()` methods each return a
 `null` value. You can use the `Capabilities.avHardwareDisable` property to
 determine whether the camera and microphone have been administratively
-prohibited ( `true`) or allowed ( `false`).
+prohibited (`true`) or allowed (`false`).
 
 The `System.setClipboard()` method allows a SWF file to replace the contents of
 the clipboard with a plain-text string of characters. This poses no security

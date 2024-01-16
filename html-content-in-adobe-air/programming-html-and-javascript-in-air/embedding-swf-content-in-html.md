@@ -12,11 +12,11 @@ displayed in AIR. At the same time, you can continue to use the `object` and
 a browser.
 
 If you have enabled transparency in the NativeWindow object displaying the HTML
-and SWF content, then AIR does not display the SWF content when window mode (
-`wmode`) used to embed the content is set to the value: `window`. To display SWF
-content in an HTML page of a transparent window, set the `wmode` parameter to
-`opaque` or `transparent`. The `window` is the default value for `wmode`, so if
-you do not specify a value, your content may not be displayed.
+and SWF content, then AIR does not display the SWF content when window mode
+(`wmode`) used to embed the content is set to the value: `window`. To display
+SWF content in an HTML page of a transparent window, set the `wmode` parameter
+to `opaque` or `transparent`. The `window` is the default value for `wmode`, so
+if you do not specify a value, your content may not be displayed.
 
 The following example illustrates the use of the HTML `object` tag to display a
 SWF file within HTML content. The `wmode` parameter is set to `opaque` so that

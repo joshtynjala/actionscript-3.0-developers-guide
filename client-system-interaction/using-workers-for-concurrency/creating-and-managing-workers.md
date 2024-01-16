@@ -67,7 +67,7 @@ domain as the main swf or included in an AIR application package.
     }
 
 When the URLLoader finishes loading the swf file, the swf's bytes are available
-in the URLLoader object's `data` property ( `event.target.data` in the example).
+in the URLLoader object's `data` property (`event.target.data` in the example).
 
 ### Using the main swf as the worker swf
 

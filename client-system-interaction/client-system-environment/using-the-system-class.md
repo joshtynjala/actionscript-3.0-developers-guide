@@ -17,8 +17,8 @@ increase in memory usage, you may want to consider modifying the effect or
 eliminating it altogether.
 
 The `System.ime` property is a reference to the currently installed Input Method
-Editor (IME). This property allows you to listen for `imeComposition` events (
-`flash.events.IMEEvent.IME_COMPOSITION`) by using the `addEventListener()`
+Editor (IME). This property allows you to listen for `imeComposition` events
+(`flash.events.IMEEvent.IME_COMPOSITION`) by using the `addEventListener()`
 method.
 
 The third property in the System class is `useCodePage`. When `useCodePage` is

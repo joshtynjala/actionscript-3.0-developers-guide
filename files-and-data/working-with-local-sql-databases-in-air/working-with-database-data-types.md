@@ -13,7 +13,7 @@ stored. When a value is stored in a column, if its data type doesn't match the
 column's affinity, the database attempts to convert the value to match the
 column's affinity. For example, if a database column is declared with `NUMERIC`
 affinity, the database attempts to convert inserted data into a numeric storage
-class ( `INTEGER` or `REAL`) before storing the data. The database throws an
+class (`INTEGER` or `REAL`) before storing the data. The database throws an
 error if the data can't be converted. According to this rule, if the String
 "12345" is inserted into a `NUMERIC` column, the database automatically converts
 it to the integer value 12345 before storing it in the database. When it's

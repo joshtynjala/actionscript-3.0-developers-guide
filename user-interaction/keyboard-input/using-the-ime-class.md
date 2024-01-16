@@ -5,11 +5,11 @@ or Adobe AIR.
 
 Using ActionScript, you can determine the following:
 
-- If an IME is installed on the user's computer ( `Capabilities.hasIME`)
+- If an IME is installed on the user's computer (`Capabilities.hasIME`)
 
-- If the IME is enabled or disabled on the user's computer ( `IME.enabled`)
+- If the IME is enabled or disabled on the user's computer (`IME.enabled`)
 
-- The conversion mode the current IME is using ( `IME.conversionMode`)
+- The conversion mode the current IME is using (`IME.conversionMode`)
 
 You can associate an input text field with a particular IME context. When you
 switch between input fields, you can also switch the IME between Hiragana
@@ -200,8 +200,8 @@ For example, if the user has their IME enabled and active and types a string in
 Japanese, the `IMEEvent.IME_COMPOSITION` event would dispatch as soon as the
 user selects the composition string. In order to listen for the
 `IMEEvent.IME_COMPOSITION` event, you need to add an event listener to the
-static `ime` property in the System class (
-`flash.system.System.ime.addEventListener(...)`), as shown in the following
+static `ime` property in the System class
+(`flash.system.System.ime.addEventListener(...)`), as shown in the following
 example:
 
     var inputTxt:TextField;

@@ -27,8 +27,8 @@ data stream.
 
 For example, the following code reads a simple array of strings and
 floating-point numbers and writes each element to a ByteArray. The organization
-of the array allows the code to call the appropriate ByteArray methods (
-`writeUTFBytes()` and `writeFloat()`) to write the data. The repeating data
+of the array allows the code to call the appropriate ByteArray methods
+(`writeUTFBytes()` and `writeFloat()`) to write the data. The repeating data
 pattern makes it possible to read the array with a loop.
 
     // The following example reads a simple Array (groceries), made up of strings
@@ -89,8 +89,8 @@ The `length` and `bytesAvailable` properties tell you how long a ByteArray is
 and how many bytes remain in it from the current position to the end. The
 following example illustrates how you can use these properties. The example
 writes a String of text to the ByteArray and then reads the ByteArray one byte
-at a time until it encounters either the character "a" or the end (
-`bytesAvailable <= 0`).
+at a time until it encounters either the character "a" or the end
+(`bytesAvailable <= 0`).
 
     var bytes:ByteArray = new ByteArray();
     var text:String = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus etc.";
@@ -248,11 +248,11 @@ the `order` file on the desktop. The example uses a label to display the message
 
 The `readObject()` method reads an object in serialized AMF from a ByteArray and
 stores it in an object of the specified type. The following example reads the
-`order` file from the desktop into a ByteArray ( `inBytes`), uncompresses it,
-and calls `readObject()` to store it in the XML object `orderXML`. The example
-uses a `for each()` loop construct to add each node to a text area for display.
-The example also displays the value of the `objectEncoding` property along with
-a header for the contents of the `order` file.
+`order` file from the desktop into a ByteArray (`inBytes`), uncompresses it, and
+calls `readObject()` to store it in the XML object `orderXML`. The example uses
+a `for each()` loop construct to add each node to a text area for display. The
+example also displays the value of the `objectEncoding` property along with a
+header for the contents of the `order` file.
 
     import flash.filesystem.*;
     import flash.display.Sprite;

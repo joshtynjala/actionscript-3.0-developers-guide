@@ -196,7 +196,7 @@ the display order of a window relative to other windows:
 </tbody>
 </table>
 
-Note: If a window is hidden ( `visible` is `false`) or minimized, then calling
+Note: If a window is hidden (`visible` is `false`) or minimized, then calling
 the display order methods has no effect.
 
 On the Linux operating system, different window managers enforce different rules

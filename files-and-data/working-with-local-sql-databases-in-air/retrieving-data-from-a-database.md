@@ -184,8 +184,8 @@ data from a table named "products," using synchronous execution mode:
     </mx:WindowedApplication>
 
 In asynchronous execution mode, when the statement finishes executing, the
-SQLStatement instance dispatches a `result` event ( `SQLEvent.RESULT`)
-indicating that the statement was run successfully. Alternatively, if a
+SQLStatement instance dispatches a `result` event (`SQLEvent.RESULT`) indicating
+that the statement was run successfully. Alternatively, if a
 [Responder](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/Responder.html)
 object is passed as an argument to the `execute()` method, the Responder
 object's result handler function is called. In synchronous execution mode,

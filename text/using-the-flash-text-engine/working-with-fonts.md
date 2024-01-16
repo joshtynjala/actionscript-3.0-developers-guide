@@ -20,10 +20,10 @@ system. It is good practice to specify default names such as these in all font
 descriptions that use device fonts. If no `fontName` is specified, "\_serif" is
 used as the default.
 
-The `fontPosture` property can either be set to the default (
-`FontPosture.NORMAL`) or to italics ( `FontPosture.ITALIC`). The `fontWeight`
-property can be set to the default ( `FontWeight.NORMAL`) or to bold (
-`FontWeight.BOLD`).
+The `fontPosture` property can either be set to the default
+(`FontPosture.NORMAL`) or to italics (`FontPosture.ITALIC`). The `fontWeight`
+property can be set to the default (`FontWeight.NORMAL`) or to bold
+(`FontWeight.BOLD`).
 
     var fd1:FontDescription = new FontDescription();
     fd1.fontName = "Arial, Helvetica, _sans";
@@ -34,8 +34,8 @@ property can be set to the default ( `FontWeight.NORMAL`) or to bold (
 
 The `fontLookup` property of the `FontDescription` object specifies whether the
 text engine looks for a device font or embedded font to render text. If a device
-font ( `FontLookup.DEVICE`) is specified, the runtime looks for the font on the
-playback system. Specifying an embedded font ( `FontLookup.EMBEDDED_CFF`) causes
+font (`FontLookup.DEVICE`) is specified, the runtime looks for the font on the
+playback system. Specifying an embedded font (`FontLookup.EMBEDDED_CFF`) causes
 the runtime to look for an embedded font with the specified name in the SWF
 file. Only embedded CFF (Compact Font Format) fonts work with this setting. If
 the specified font is not found, a fallback device font is used.
@@ -52,10 +52,10 @@ fidelity across platforms.
 CFF (Compact Font Format) rendering is available starting with Flash Player 10
 and Adobe AIR 1.5. This type of font rendering makes text more legible, and
 permits higher-quality display of fonts at small sizes. This setting only
-applies to embedded fonts. `FontDescription` defaults to this setting (
-`RenderingMode.CFF`) for the `renderingMode` property. You can set this property
-to `RenderingMode.NORMAL` to match the type of rendering used by Flash Player 7
-or earlier versions.
+applies to embedded fonts. `FontDescription` defaults to this setting
+(`RenderingMode.CFF`) for the `renderingMode` property. You can set this
+property to `RenderingMode.NORMAL` to match the type of rendering used by Flash
+Player 7 or earlier versions.
 
 When CFF rendering is selected, a second property, `cffHinting`, controls how a
 font's horizontal stems are fit to the subpixel grid. The default value,

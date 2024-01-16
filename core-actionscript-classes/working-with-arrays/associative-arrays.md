@@ -45,7 +45,7 @@ values to `monitorArray`:
     // output: 16:10 16.7 million
 
 Note that the key named `aspect ratio` contains a space character. This is
-possible with the array access ( `[]`) operator, but generates an error if
+possible with the array access (`[]`) operator, but generates an error if
 attempted with the dot operator. Using spaces in your key names is not
 recommended.
 

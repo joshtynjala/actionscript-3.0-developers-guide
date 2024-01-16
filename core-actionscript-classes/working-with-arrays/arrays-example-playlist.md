@@ -75,8 +75,8 @@ of its songs using a private Array variable:
 
 In addition to the `_songs` Array variable, which is used by the PlayList class
 to keep track of its list of songs, two other private variables keep track of
-whether the list needs to be sorted ( `_needToSort` ) and which property the
-song list is sorted by at a given time ( `_currentSort` ).
+whether the list needs to be sorted (`_needToSort`) and which property the song
+list is sorted by at a given time (`_currentSort`).
 
 As with all objects, declaring an Array instance is only half the job of
 creating an Array. Before accessing an Array instance's properties or methods,

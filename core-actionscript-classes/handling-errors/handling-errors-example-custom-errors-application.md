@@ -252,8 +252,8 @@ The `getMessageText()` method takes a single integer argument, `id`, and returns
 a string. The `id` argument is the error code for the error to look up. For
 example, passing an `id` of 9001 retrieves the error saying that employees must
 be assigned to only one cost center. If more than one error has the same error
-code, ActionScript returns the error message only for the first result found (
-`message[0]` in the returned XMLList object).
+code, ActionScript returns the error message only for the first result found
+(`message[0]` in the returned XMLList object).
 
 The next method in this class, `getTitle()`, doesn't take any parameters and
 returns a string value that contains the error ID for this specific error. This

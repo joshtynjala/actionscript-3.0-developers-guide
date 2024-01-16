@@ -474,7 +474,7 @@ marker:
 As the previous example shows, the `content` property can also insert a suffix:
 a string that appears after the marker, but before the `afterContent`. To insert
 this string when providing XML content to the flow, wrap the string in `&quote;`
-HTML entities rather than quotation marks ( `"< string >"`).
+HTML entities rather than quotation marks (`"< string >"`).
 
 ### Using padding in TLF
 

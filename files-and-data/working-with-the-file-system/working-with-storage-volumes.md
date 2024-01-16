@@ -15,15 +15,15 @@ The `storageVolume` property of the StorageVolumeChangeEvent class is a
 StorageVolume object. The StorageVolume class defines basic properties of the
 storage volume:
 
-- `drive` —The volume drive letter on Windows ( `null` on other operating
+- `drive` —The volume drive letter on Windows (`null` on other operating
   systems)
 
 - `fileSystemType` —The type of file system on the storage volume (such as
   "FAT", "NTFS", "HFS", or "UFS")
 
-- `isRemoveable` —Whether a volume is removable ( `true`) or not ( `false`)
+- `isRemoveable` —Whether a volume is removable (`true`) or not (`false`)
 
-- `isWritable` —Whether a volume is writable ( `true`) or not ( `false`)
+- `isWritable` —Whether a volume is writable (`true`) or not (`false`)
 
 - `name` —The name of the volume
 
@@ -35,7 +35,7 @@ The StorageVolumeChangeEvent class also includes a `rootDirectory` property. The
 storage volume that has been mounted or unmounted.
 
 The `storageVolume` property of the StorageVolumeChangeEvent object is undefined
-( `null`) for an unmounted volume. However you can access the `rootDirectory`
+(`null`) for an unmounted volume. However you can access the `rootDirectory`
 property of the event.
 
 The following code outputs the name and file path of a storage volume when it is

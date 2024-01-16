@@ -70,5 +70,5 @@ methods of the String class), and then write a modified string, called
     fileStr.writeMultiByte(newTitle, "iso-8859-1");
 
 To conform with the ID3 version 1 standard, the length of the `newTitle` string
-should be 30 characters, padded at the end with the character code 0 (
-`String.fromCharCode(0)`).
+should be 30 characters, padded at the end with the character code 0
+(`String.fromCharCode(0)`).

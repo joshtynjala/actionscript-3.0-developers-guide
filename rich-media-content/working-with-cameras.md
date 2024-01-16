@@ -199,7 +199,7 @@ button, Flash Player is unable to connect to the camera and the Video object
 does not display anything.
 
 If you want to detect whether the user allowed Flash Player access to the
-camera, you can listen for the camera's `status` event ( `StatusEvent.STATUS`),
+camera, you can listen for the camera's `status` event (`StatusEvent.STATUS`),
 as seen in the following code:
 
     var cam:Camera = Camera.getCamera();
@@ -241,8 +241,8 @@ methods:
       }
 
 - The Camera class contains a read-only property named `muted` which specifies
-  whether the user has denied access to the camera ( `true`) or allowed access (
-  `false`) in the Flash Player Privacy panel. You can see an example of this in
+  whether the user has denied access to the camera (`true`) or allowed access
+  (`false`) in the Flash Player Privacy panel. You can see an example of this in
   the following snippet:
 
       function statusHandler(event:StatusEvent):void

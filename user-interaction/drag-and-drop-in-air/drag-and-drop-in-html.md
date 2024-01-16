@@ -87,8 +87,8 @@ The events dispatched by a drag target are:
 </table>
 
 The event object dispatched in response to these events is similar to a mouse
-event. You can use mouse event properties such as ( `clientX`, `clientY`) and (
-`screenX`, `screenY`), to determine the mouse position.
+event. You can use mouse event properties such as (`clientX`, `clientY`) and
+(`screenX`, `screenY`), to determine the mouse position.
 
 The most important property of a drag event object is `dataTransfer`, which
 contains the data being dragged. The `dataTransfer` object itself has the

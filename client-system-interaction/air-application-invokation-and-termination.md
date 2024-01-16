@@ -62,7 +62,7 @@ NativeApplication object only dispatches an `invoke` event if the application is
 not already running.
 
 To receive `invoke` events, call the `addEventListener()` method of the
-NativeApplication object ( `NativeApplication.nativeApplication)`. When an event
+NativeApplication object (`NativeApplication.nativeApplication`). When an event
 listener registers for an `invoke` event, it also receives all `invoke` events
 that occurred before the registration. Queued `invoke` events are dispatched one
 at a time on a short interval after the call to `addEventListener()` returns. If
@@ -343,7 +343,7 @@ When the application is invoked via the browser, the application's
 NativeApplication object dispatches a BrowserInvokeEvent object.
 
 To receive BrowserInvokeEvent events, call the `addEventListener()` method of
-the NativeApplication object ( `NativeApplication.nativeApplication`) in the AIR
+the NativeApplication object (`NativeApplication.nativeApplication`) in the AIR
 application. When an event listener registers for a BrowserInvokeEvent event, it
 also receives all BrowserInvokeEvent events that occurred before the
 registration. These events are dispatched after the call to `addEventListener()`

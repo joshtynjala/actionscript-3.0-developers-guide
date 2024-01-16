@@ -143,13 +143,13 @@ will display, using the following code from the AsciiArtBuilder class's
 
 The entire contents of the text file are contained in a single String instance,
 the `_imageInfoLoader.data` property. Using the `split()` method with the
-newline character ( `"\n"` ) as a parameter, the String instance is divided into
-an Array ( `lines` ) whose elements are the individual lines of the text file.
+newline character (`"\n"`) as a parameter, the String instance is divided into
+an Array (`lines`) whose elements are the individual lines of the text file.
 Next, the code uses a loop to work with each of the lines (except the first,
 because it contains only headers rather than actual content). Inside the loop,
 the `split()` method is used once again to divide the contents of the single
-line into a set of values (the Array object named `imageProperties` ). The
-parameter used with the `split()` method in this case is the tab ( `"\t"` )
+line into a set of values (the Array object named `imageProperties`). The
+parameter used with the `split()` method in this case is the tab (`"\t"`)
 character, because the values in each line are delineated by tab characters.
 
 ## Using String methods to normalize image titles
@@ -227,9 +227,9 @@ several steps, as follows:
 
 1.  The first letter of the word is extracted using `substr(0, 1)`, which
     extracts a substring starting with the character at index 0 (the first
-    letter in the string, as indicated by the first parameter `0` ). The
+    letter in the string, as indicated by the first parameter `0`). The
     substring will be one character in length (indicated by the second parameter
-    `1` ).
+    `1`).
 
 2.  That character is capitalized using the `toUpperCase()` method.
 
@@ -288,6 +288,6 @@ Since the `index` variable defines which ASCII character in the palette
 corresponds to the current pixel in the bitmap image, that character is
 retrieved from the `palette` String using the `charAt()` method. It is then
 appended to the `result` String instance using the concatenation assignment
-operator ( `+=` ). In addition, at the end of each row of pixels, a newline
+operator (`+=`). In addition, at the end of each row of pixels, a newline
 character is concatenated to the end of the `result` String, forcing the line to
 wrap to create a new row of character "pixels."

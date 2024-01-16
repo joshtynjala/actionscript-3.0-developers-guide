@@ -11,7 +11,7 @@ customer has deployed.
 
 The Flash Player/AIR runtime generally obtains this voucher by sending a voucher
 request to the Adobe Access License Server indicated in the video's DRM metadata
-( `DRMContentData` class). The Flash/AIR application can trigger this license
+(`DRMContentData` class). The Flash/AIR application can trigger this license
 request by calling the `DRMManager.loadVoucher()` method. Or, the Flash
 Player/AIR runtime will automatically request a license at the start of the
 encrypted video playback if there is no license for the content on disk or in

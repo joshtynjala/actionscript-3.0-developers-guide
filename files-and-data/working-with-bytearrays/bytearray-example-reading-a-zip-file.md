@@ -44,8 +44,8 @@ compressed or uncompressed, depending on the compression method flag. The flag
 is 0 (zero) if the file data is uncompressed, 8 if the data is compressed using
 the DEFLATE algorithm, or another value for other compression algorithms.
 
-The user interface for this example consists of a label and a text area (
-`taFiles`). The application writes the following information to the text area
+The user interface for this example consists of a label and a text area
+(`taFiles`). The application writes the following information to the text area
 for each file it encounters in the .zip file: the file name, the compressed
 size, and the uncompressed size. The following MXML document defines the user
 interface for the Flex version of the application:
@@ -103,7 +103,7 @@ The beginning of the program performs the following tasks:
       var compMethod:int;
       var signature:int;
 
-- Defines File ( `zfile`) and FileStream ( `zStream`) objects to represent the
+- Defines File (`zfile`) and FileStream (`zStream`) objects to represent the
   .zip file, and specifies the location of the .zip file from which the files
   are extracted—a file named "HelloAIR.zip" in the desktop directory.
 
@@ -140,7 +140,7 @@ the first file header.
     	// read fixed metadata portion of local file header
         zStream.readBytes(bytes, 0, 30);
 
-Next, the code reads an integer ( `signature`) from the first bytes of the
+Next, the code reads an integer (`signature`) from the first bytes of the
 30-byte header. The ZIP format definition specifies that the signature for every
 file header is the hexadecimal value `0x04034b50` ; if the signature is
 different it means that the code has moved beyond the file portion of the .zip
@@ -248,7 +248,7 @@ ending processing of the .zip file if the last file has been processed.
 
 The `outfile()` function opens an output file in WRITE mode on the desktop,
 giving it the name supplied by the `filename` parameter. It then writes the file
-data from the `data` parameter to the output file stream ( `outStream`) and
+data from the `data` parameter to the output file stream (`outStream`) and
 closes the file.
 
     // Flash version

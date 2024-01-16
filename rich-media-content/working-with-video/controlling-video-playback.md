@@ -25,7 +25,7 @@ files.
 
 The following example demonstrates how to control a video using several
 different buttons. To run the following example, create a new document and add
-four button instances to your workspace ( `pauseBtn`, `playBtn`, `stopBtn`, and
+four button instances to your workspace (`pauseBtn`, `playBtn`, `stopBtn`, and
 `togglePauseBtn`):
 
     var nc:NetConnection = new NetConnection();
@@ -119,6 +119,6 @@ filter these two codes and trace a message:
     	}
     }
 
-By listening for the `netStatus` event ( `NetStatusEvent.NET_STATUS`), you can
+By listening for the `netStatus` event (`NetStatusEvent.NET_STATUS`), you can
 build a video player which loads the next video in a playlist once the current
 video has finished playing.

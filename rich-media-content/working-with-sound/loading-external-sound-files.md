@@ -28,13 +28,13 @@ process. Your application can listen for these events to track loading progress
 and make sure that the sound loads completely before playing. The following
 table lists the events that can be dispatched by a Sound object.
 
-| Event                                | Description                                                                                                                      |
-| ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
-| open ( `Event.OPEN`)                 | Dispatched right before the sound loading operation begins.                                                                      |
-| progress ( `ProgressEvent.PROGRESS`) | Dispatched periodically during the sound loading process when data is received from the file or stream.                          |
-| id3 ( `Event.ID3`)                   | Dispatched when ID3 data is available for an mp3 sound.                                                                          |
-| complete ( `Event.COMPLETE`)         | Dispatched when all of the sound resource's data has been loaded.                                                                |
-| ioError ( `IOErrorEvent.IO_ERROR`)   | Dispatched when a sound file cannot be located or when the loading process is interrupted before all sound data can be received. |
+| Event                               | Description                                                                                                                      |
+| ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| open (`Event.OPEN`)                 | Dispatched right before the sound loading operation begins.                                                                      |
+| progress (`ProgressEvent.PROGRESS`) | Dispatched periodically during the sound loading process when data is received from the file or stream.                          |
+| id3 (`Event.ID3`)                   | Dispatched when ID3 data is available for an mp3 sound.                                                                          |
+| complete (`Event.COMPLETE`)         | Dispatched when all of the sound resource's data has been loaded.                                                                |
+| ioError (`IOErrorEvent.IO_ERROR`)   | Dispatched when a sound file cannot be located or when the loading process is interrupted before all sound data can be received. |
 
 The following code illustrates how to play a sound after it has finished
 loading:

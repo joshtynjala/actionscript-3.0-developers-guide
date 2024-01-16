@@ -217,8 +217,8 @@ ActionScript to receive calls from JavaScript, as shown here:
 The `setCallBacks()` method finishes the task of preparing for communication
 with the container by calling `ExternalInterface.addCallback()` to register the
 two methods that will be available to be called from JavaScript. In this code,
-the first parameter—the name by which the method is known to JavaScript (
-`"newMessage"` and `"getStatus"`)—is the same as the method's name in
+the first parameter—the name by which the method is known to JavaScript
+(`"newMessage"` and `"getStatus"`)—is the same as the method's name in
 ActionScript. (In this case, there was no benefit to using different names, so
 the same name was reused for simplicity.) Finally, the
 `ExternalInterface.call()` method is used to call the JavaScript function
@@ -282,7 +282,7 @@ status from the SWF IM client. This is done in the web page, in the
 The code checks the value of the `swfReady` variable, which tracks whether the
 SWF file has notified the browser that it has registered its methods with the
 ExternalInterface class. If the SWF file is ready to receive communication, the
-next line ( `var currentStatus =`...) actually calls the `getStatus()` method in
+next line (`var currentStatus =`...) actually calls the `getStatus()` method in
 the IMManager class. Three things happen in this line of code:
 
 - The `getSWF()` JavaScript function is called, returning a reference to the
@@ -308,11 +308,11 @@ getSWF("\${application}").getStatus(); The `${application}` text is a
 placeholder in the HTML page template; when Adobe Flash Builder generates the
 actual HTML page for the application, this placeholder text is replaced by the
 same text that is used as the `object` tag's `id` attribute and the `embed`
-tag's `name` attribute ( `IntrovertIMApp` in the example). That is the value
-that is expected by the `getSWF()` function.
+tag's `name` attribute (`IntrovertIMApp` in the example). That is the value that
+is expected by the `getSWF()` function.
 
 The `sendMessage()` JavaScript function demonstrates passing a parameter to an
-ActionScript function. ( `sendMessage()` is thefunction that is called when the
+ActionScript function. (`sendMessage()` is thefunction that is called when the
 user presses the Send button on the HTML page.)
 
     <script language="JavaScript">

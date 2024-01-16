@@ -325,8 +325,8 @@ the menu item `keyEquivalent` property to the single character string for that
 key. If you use an uppercase letter, the shift key is added to the modifier
 array automatically.
 
-On Mac OS X, the default modifier is the command key ( `Keyboard.COMMAND`). On
-Windows and Linux, it is the control key ( `Keyboard.CONTROL`). These default
+On Mac OS X, the default modifier is the command key (`Keyboard.COMMAND`). On
+Windows and Linux, it is the control key (`Keyboard.CONTROL`). These default
 keys are automatically added to the modifier array. To assign different modifier
 keys, assign a new array containing the desired key codes to the
 `keyEquivalentModifiers` property. The default array is overwritten. Whether you

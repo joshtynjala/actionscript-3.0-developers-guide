@@ -1,8 +1,8 @@
 # Character classes
 
 You use character classes to specify a list of characters to match one position
-in the regular expression. You define character classes with square brackets (
-`[` and `]`). For example, the following regular expression defines a character
+in the regular expression. You define character classes with square brackets
+(`[` and `]`). For example, the following regular expression defines a character
 class that matches `bag`, `beg`, `big`, `bog`, or `bug`:
 
     /b[aeiou]g/
@@ -68,8 +68,8 @@ set of extended ASCII characters (such as `é` and `ê`):
 
 When you use a caret (`^`) character at the beginning of a character class, it
 negates that class—any character not listed is considered a match. The following
-character class matches any character _except_ for a lowercase letter ( `az` –)
-or a digit:
+character class matches any character _except_ for a lowercase letter (`a-z`) or
+a digit (`0-9`):
 
     /[^a-z0-9]/
 

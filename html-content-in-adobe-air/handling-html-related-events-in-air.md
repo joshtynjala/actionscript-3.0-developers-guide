@@ -300,7 +300,7 @@ For example, the following JavaScript code removes an event listener for an
 
 To prevent the error from occurring when closing windows that contain HTML
 content, call a cleanup function in response to the `closing` event of the
-NativeWindow object ( `window.nativeWindow`). For example, the following
+NativeWindow object (`window.nativeWindow`). For example, the following
 JavaScript code removes an event listener for an `uncaughtScriptException`
 event:
 

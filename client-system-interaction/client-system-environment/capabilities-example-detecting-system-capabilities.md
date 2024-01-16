@@ -71,9 +71,9 @@ the Stage.
 ## CapabilitiesGrabber class overview
 
 The static `getCapabilities()` method of the CapabilitiesGrabber class adds each
-property from the flash.system.Capabilities class to an array ( `capDP`). It
-then calls the static `getBrowserObjects()` method in the CapabilitiesGrabber
-class. The `getBrowserObjects()` method uses the external API to loop over the
+property from the flash.system.Capabilities class to an array (`capDP`). It then
+calls the static `getBrowserObjects()` method in the CapabilitiesGrabber class.
+The `getBrowserObjects()` method uses the external API to loop over the
 browser's navigator object, which contains the browser's capabilities. The
 `getCapabilities()` method is as follows:
 
@@ -96,8 +96,8 @@ browser's navigator object, which contains the browser's capabilities. The
 
 The `getBrowserObjects()` method returns an array of each of the properties in
 the browser's navigator object. If this array has a length of one or more items,
-the array of browser capabilities ( `navArr`) is appended to the array of Flash
-Player capabilities ( `capDP`), and the entire array is sorted alphabetically.
+the array of browser capabilities (`navArr`) is appended to the array of Flash
+Player capabilities (`capDP`), and the entire array is sorted alphabetically.
 Finally, the sorted array is returned to the main application file, which then
 populates the data grid. The code for the `getBrowserObjects()` method is as
 follows:
@@ -128,8 +128,8 @@ follows:
 If the external API is available in the current user environment, the Flash
 runtime calls the JavaScript `JS_getBrowserObjects()` method, which loops over
 the browser's navigator object and returns a string of URL-encoded values to
-ActionScript. This string is then converted into a URLVariables object (
-`itemVars`) and added to the `itemArr` array, which is returned to the calling
+ActionScript. This string is then converted into a URLVariables object
+(`itemVars`) and added to the `itemArr` array, which is returned to the calling
 script.
 
 ## Communicating with JavaScript

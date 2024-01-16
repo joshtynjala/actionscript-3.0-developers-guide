@@ -11,8 +11,8 @@ size of an indexed array is 2 <sup>32</sup> - 1 or 4,294,967,295. An attempt to
 create an array that is larger than the maximum size results in a run-time
 error.
 
-To access an individual element of an indexed array, you use the array access (
-`[]` ) operator to specify the index position of the element you wish to access.
+To access an individual element of an indexed array, you use the array access
+(`[]`) operator to specify the index position of the element you wish to access.
 For example, the following code represents the first element (the element at
 index 0) in an indexed array named `songTitles`:
 
@@ -74,7 +74,7 @@ restrictions that distinguish it from the Array class:
 
 - A Vector is a dense array. An Array object may have values in indices 0 and 7
   even if it has no values in positions 1 through 6. However, a Vector must have
-  a value (or `null` ) in each index.
+  a value (or `null`) in each index.
 
 - A Vector can optionally be fixed-length. This means that the number of
   elements the Vector contains can't change.
@@ -170,7 +170,7 @@ in ActionScript, it is accompanied by a base type.
 
 You specify the Vector's base type using type parameter syntax. The type
 parameter immediately follows the word `Vector` in the code. It consists of a
-dot ( `.` ), then the base class name surrounded by angle brackets ( `<>` ), as
+dot (`.`), then the base class name surrounded by angle brackets (`<>`), as
 shown in this example:
 
     var v:Vector.<String>;
@@ -259,8 +259,8 @@ returned. Second, whether the source array is an Array or Vector instance the
 function attempts to convert the source array's elements to values of the base
 type. The conversion uses standard ActionScript data type conversion rules. For
 example, the following code listing converts the String values in the source
-Array to integers in the result Vector. The decimal portion of the first value (
-`"1.5"` ) is truncated, and the non-numeric third value ( `"Waffles"` ) is
+Array to integers in the result Vector. The decimal portion of the first value
+(`"1.5"`) is truncated, and the non-numeric third value (`"Waffles"`) is
 converted to 0 in the result:
 
     var numbers:Vector.<int> = Vector.<int>(["1.5", "17", "Waffles"]);
@@ -277,7 +277,7 @@ a base type that's a superclass of `T`.
 ## Inserting array elements
 
 The most basic way to add an element to an indexed array is to use the array
-access ( `[]` ) operator. To set the value of an indexed array element, use the
+access (`[]`) operator. To set the value of an indexed array element, use the
 Array or Vector object name and index number on the left side of an assignment
 statement:
 
@@ -335,9 +335,9 @@ fixed-length Vector using the techniques described here, an error occurs.
 ## Retrieving values and removing array elements
 
 The simplest way to retrieve the value of an element from an indexed array is to
-use the array access ( `[]` ) operator. To retrieve the value of an indexed
-array element, use the Array or Vector object name and index number on the right
-side of an assignment statement:
+use the array access (`[]`) operator. To retrieve the value of an indexed array
+element, use the Array or Vector object name and index number on the right side
+of an assignment statement:
 
     var myFavoriteSong:String = songTitles[3];
 
@@ -656,8 +656,8 @@ symbol to use as a separator between each element in the returned string.
 
 The following example creates an Array called `rivers` and calls both `join()`
 and `toString()` to return the values in the Array as a string. The `toString()`
-method is used to return comma-separated values ( `riverCSV` ), while the
-`join()` method is used to return values separated by the `+` character.
+method is used to return comma-separated values (`riverCSV`), while the `join()`
+method is used to return values separated by the `+` character.
 
     var rivers:Array = ["Nile", "Amazon", "Yangtze", "Mississippi"];
     var riverCSV:String = rivers.toString();

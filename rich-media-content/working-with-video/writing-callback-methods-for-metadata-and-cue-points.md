@@ -27,7 +27,7 @@ in the same folder where the SWF file resides:
     addChild(vid);
 
 The previous code loads a local video file named video.flv and listens for the
-`asyncError` ( `AsyncErrorEvent.ASYNC_ERROR`) to be dispatched. This event is
+`asyncError` (`AsyncErrorEvent.ASYNC_ERROR`) to be dispatched. This event is
 dispatched when an exception is thrown from native asynchronous code. In this
 case, it is dispatched when the video file contains metadata or cue point
 information, and the appropriate listeners have not been defined. The previous
@@ -113,11 +113,10 @@ The CustomClient class is as follows:
 
 The CustomClient class defines a handler for the `onMetaData` callback handler.
 If a cue point was encountered and the `onCuePoint` callback handler was called,
-an `asyncError` event ( `AsyncErrorEvent.ASYNC_ERROR`) would be dispatched
-saying "flash.net.NetStream was unable to invoke callback onCuePoint." To
-prevent this error, you would either need to define an `onCuePoint` callback
-method in your CustomClient class, or define an event handler for the
-`asyncError` event.
+an `asyncError` event (`AsyncErrorEvent.ASYNC_ERROR`) would be dispatched saying
+"flash.net.NetStream was unable to invoke callback onCuePoint." To prevent this
+error, you would either need to define an `onCuePoint` callback method in your
+CustomClient class, or define an event handler for the `asyncError` event.
 
 ## Extend the NetStream class and add methods to handle the callback methods
 

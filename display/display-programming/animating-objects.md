@@ -78,7 +78,7 @@ When the user clicks the circle, the function `fadeCircle()` is subscribed as a
 listener of the `enterFrame` event, meaning it begins to be called once per
 frame. That function fades `circle` by changing its `alpha` property, so once
 per frame the circle's `alpha` decreases by .05 (5 percent) and the screen is
-updated. Eventually, when the `alpha` value is 0 ( `circle` is completely
+updated. Eventually, when the `alpha` value is 0 (`circle` is completely
 transparent), the `fadeCircle()` function is removed as an event listener,
 ending the animation.
 

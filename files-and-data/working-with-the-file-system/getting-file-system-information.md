@@ -12,11 +12,11 @@ information about the file system:
 The `Capabilities` class also includes useful system information that can be
 useful when working with files:
 
-| Property              | Description                                                                                                                                 |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| Capabilities.hasIME   | Specifies whether the player is running on a system that does ( `true`) or does not ( `false`) have an input method editor (IME) installed. |
-| Capabilities.language | Specifies the language code of the system on which the player is running.                                                                   |
-| Capabilities.os       | Specifies the current operating system.                                                                                                     |
+| Property              | Description                                                                                                                               |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Capabilities.hasIME   | Specifies whether the player is running on a system that does (`true`) or does not (`false`) have an input method editor (IME) installed. |
+| Capabilities.language | Specifies the language code of the system on which the player is running.                                                                 |
+| Capabilities.os       | Specifies the current operating system.                                                                                                   |
 
 Note: Be careful when using `Capabilities.os` to determine system
 characteristics. If a more specific property exists to determine a system

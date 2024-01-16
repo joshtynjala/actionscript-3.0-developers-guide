@@ -111,15 +111,15 @@ process.
 The FileReference object dispatches the following events during the loading
 process.
 
-- `open` event ( `Event.OPEN`): Dispatched when the load operation starts.
+- `open` event (`Event.OPEN`): Dispatched when the load operation starts.
 
-- `progress` event ( `ProgressEvent.PROGRESS`): Dispatched periodically as bytes
+- `progress` event (`ProgressEvent.PROGRESS`): Dispatched periodically as bytes
   of data are read from the file.
 
-- `complete` event ( `Event.COMPLETE`): Dispatched when the load operation
+- `complete` event (`Event.COMPLETE`): Dispatched when the load operation
   completes successfully.
 
-- `ioError` event ( `IOErrorEvent.IO_ERROR`): Dispatched if the load process
+- `ioError` event (`IOErrorEvent.IO_ERROR`): Dispatched if the load process
   fails because an input/output error occurs while opening or reading data from
   the file.
 
@@ -220,21 +220,21 @@ step of the file saving process.
 The FileReference object dispatches the following events during the file saving
 process:
 
-- `select` event ( `Event.SELECT`): Dispatched when the user specifies the
+- `select` event (`Event.SELECT`): Dispatched when the user specifies the
   location and file name for the new file to be saved.
 
-- `cancel` event ( `Event.CANCEL`): Dispatched when the user click the Cancel
+- `cancel` event (`Event.CANCEL`): Dispatched when the user click the Cancel
   button in the dialog box.
 
-- `open` event ( `Event.OPEN`): Dispatched when the save operation starts.
+- `open` event (`Event.OPEN`): Dispatched when the save operation starts.
 
-- `progress` event ( `ProgressEvent.PROGRESS`): Dispatched periodically as bytes
+- `progress` event (`ProgressEvent.PROGRESS`): Dispatched periodically as bytes
   of data are saved to the file.
 
-- `complete` event ( `Event.COMPLETE`): Dispatched when the save operation
+- `complete` event (`Event.COMPLETE`): Dispatched when the save operation
   completes successfully.
 
-- `ioError` event ( `IOErrorEvent.IO_ERROR`): Dispatched if the saving process
+- `ioError` event (`IOErrorEvent.IO_ERROR`): Dispatched if the saving process
   fails because an input/output error occurs while attempting to save data to
   the file.
 
@@ -428,29 +428,29 @@ _methods._
 When you attempt to upload a file using the `FileReference.upload()` method, the
 following events are dispatched:
 
-- `open` event ( `Event.OPEN`): Dispatched when the upload operation starts.
+- `open` event (`Event.OPEN`): Dispatched when the upload operation starts.
 
-- `progress` event ( `ProgressEvent.PROGRESS`): Dispatched periodically as bytes
+- `progress` event (`ProgressEvent.PROGRESS`): Dispatched periodically as bytes
   of data from the file are uploaded.
 
-- `complete` event ( `Event.COMPLETE`): Dispatched when the upload operation
+- `complete` event (`Event.COMPLETE`): Dispatched when the upload operation
   completes successfully.
 
-- `httpStatus` event ( `HTTPStatusEvent.HTTP_STATUS`): Dispatched when the
-  upload process fails because of an HTTP error.
+- `httpStatus` event (`HTTPStatusEvent.HTTP_STATUS`): Dispatched when the upload
+  process fails because of an HTTP error.
 
-- `httpResponseStatus` event ( `HTTPStatusEvent.HTTP_RESPONSE_STATUS`):
+- `httpResponseStatus` event (`HTTPStatusEvent.HTTP_RESPONSE_STATUS`):
   Dispatched if a call to the `upload()` or `uploadUnencoded()` method attempts
   to access data over HTTP and Adobe AIR is able to detect and return the status
   code for the request.
 
-- `securityError` event ( `SecurityErrorEvent.SECURITY_ERROR`): Dispatched when
+- `securityError` event (`SecurityErrorEvent.SECURITY_ERROR`): Dispatched when
   an upload operation fails because of a security violation.
 
-- `uploadCompleteData` event ( `DataEvent.UPLOAD_COMPLETE_DATA`): Dispatched
+- `uploadCompleteData` event (`DataEvent.UPLOAD_COMPLETE_DATA`): Dispatched
   after data is received from the server after a successful upload.
 
-- `ioError` event ( `IOErrorEvent.IO_ERROR`): Dispatched if the upload process
+- `ioError` event (`IOErrorEvent.IO_ERROR`): Dispatched if the upload process
   fails for any of the following reasons:
 
   - An input/output error occurred while Flash Player is reading, writing, or
@@ -751,7 +751,7 @@ The FileReferenceList class lets the user select one or more files to upload to
 a server-side script. The file upload is handled by the `FileReference.upload()`
 method, which must be called on each file that the user selects.
 
-The following code creates two FileFilter objects ( `imageFilter` and
+The following code creates two FileFilter objects (`imageFilter` and
 `textFilter`) and passes them in an array to the `FileReferenceList.browse()`
 method. This causes the operating system file dialog box to display two possible
 filters for file types.
