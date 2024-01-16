@@ -134,8 +134,8 @@ example.css:
     }
 
     .bluetext {
-
-color: #0000CC; }
+    	color: #0000CC;
+    }
 
 Next is the ActionScript code for a class that loads the example.css file and
 applies the styles to TextField content:
