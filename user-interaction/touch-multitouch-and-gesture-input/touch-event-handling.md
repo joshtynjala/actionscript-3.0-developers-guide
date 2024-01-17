@@ -64,7 +64,7 @@ point in the Stage space that the touch occurred) in the text field:
     mySprite.addEventListener(TouchEvent.TOUCH_TAP, taphandler);
 
     function taphandler(evt:TouchEvent):void {
-    	myTextField.text = evt.stageX.toString;
+    	myTextField.text = evt.stageX.toString();
     	myTextField.y = 50;
     	addChild(myTextField);
     }

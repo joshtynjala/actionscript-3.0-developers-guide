@@ -200,7 +200,7 @@ way to prevent this problem.)
     		public function onPaste(event:Event):void
     		{
     			sourceTextField.text =
-    			Clipboard.generalClipboard.getData(ClipboardFormats.TEXT_FORMAT).toString;
+    			Clipboard.generalClipboard.getData(ClipboardFormats.TEXT_FORMAT).toString();
     		}
     		public function renderData():String
     		{
@@ -240,7 +240,7 @@ way to prevent this problem.)
     	}
     	public function doPaste(event:Event):void
     	{
-    		destination.text = Clipboard.generalClipboard.getData(ClipboardFormats.TEXT_FORMAT).toString;
+    		destination.text = Clipboard.generalClipboard.getData(ClipboardFormats.TEXT_FORMAT).toString();
     	}
 
     	public function renderData():String{
