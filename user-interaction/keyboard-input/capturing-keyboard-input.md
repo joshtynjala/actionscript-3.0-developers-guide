@@ -8,7 +8,8 @@ key name and key code properties are displayed:
 
     function reportKeyDown(event:KeyboardEvent):void
     {
-    	trace("Key Pressed: " + String.fromCharCode(event.charCode) +         " (character code: " + event.charCode + ")");
+    	trace("Key Pressed: " + String.fromCharCode(event.charCode) +
+                " (character code: " + event.charCode + ")");
     }
     stage.addEventListener(KeyboardEvent.KEY_DOWN, reportKeyDown);
 
