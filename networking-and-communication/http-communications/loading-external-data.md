@@ -329,7 +329,7 @@ list of items, you can convert the string into an array by calling the
 
 ![](../../img/tip_help.png) If you are loading numeric data from external text
 files, convert the values into numeric values by using a top-level function,
-such as `int()`, `uint()`, or `Number()` _._
+such as `int()`, `uint()`, or `Number()`.
 
 Instead of loading the contents of the remote file as a string and creating a
 new URLVariables object, you could instead set the `URLLoader.dataFormat`
