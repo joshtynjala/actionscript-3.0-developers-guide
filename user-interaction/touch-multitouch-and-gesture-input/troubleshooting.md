@@ -78,7 +78,7 @@ the following:
 
         mySprite.addEventListener(TouchEvent.TOUCH_TAP, taplistener);
 
-        function taplistener(e:TouchEvent): void {
+        function taplistener(e:TouchEvent):void {
         	myTextField.text = "I've been tapped";
         	myTextField.y = 50;
         	addChild(myTextField);

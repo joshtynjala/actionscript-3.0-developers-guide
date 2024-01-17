@@ -35,7 +35,7 @@ For example, the following code displays a message when the square drawn on
 
     mySprite.addEventListener(TransformGestureEvent.GESTURE_SWIPE, swipehandler);
 
-    function swipehandler(evt:TransformGestureEvent): void {
+    function swipehandler(evt:TransformGestureEvent):void {
     	myTextField.text = "I've been swiped";
     	myTextField.y = 50;
     	addChild(myTextField);
@@ -54,7 +54,7 @@ Two-finger tap events are handled the same way, but use the GestureEvent class:
 
     mySprite.addEventListener(GestureEvent.GESTURE_TWO_FINGER_TAP, taphandler);
 
-    function taphandler(evt:GestureEvent): void {
+    function taphandler(evt:GestureEvent):void {
     	myTextField.text = "I've been two-finger tapped";
     	myTextField.y = 50;
     	addChild(myTextField);
@@ -74,7 +74,7 @@ PressAndTapGestureEvent class:
 
     mySprite.addEventListener(PressAndTapGestureEvent.ESTURE_PRESS_AND_TAP, taphandler);
 
-    function taphandler(evt:PressAndTapGestureEvent): void {
+    function taphandler(evt:PressAndTapGestureEvent):void {
     	myTextField.text = "I've been press-and-tapped";
     	myTextField.y = 50;
     	addChild(myTextField);
@@ -115,7 +115,7 @@ change):
 
     mySprite.addEventListener(TransformGestureEvent.GESTURE_ROTATE, rothandler);
 
-    function rothandler(evt:TransformGestureEvent): void {
+    function rothandler(evt:TransformGestureEvent):void {
     	evt.target.parent.rotationZ += evt.target.rotation;
     	myTextField.text = evt.target.parent.rotation.toString();
     }

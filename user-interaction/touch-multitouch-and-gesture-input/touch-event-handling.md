@@ -36,7 +36,7 @@ mySprite is tapped on a touch-enabled screen:
 
     mySprite.addEventListener(TouchEvent.TOUCH_TAP, taphandler);
 
-    function taphandler(evt:TouchEvent): void {
+    function taphandler(evt:TouchEvent):void {
     	myTextField.text = "I've been tapped";
     	myTextField.y = 50;
     	addChild(myTextField);
@@ -63,7 +63,7 @@ point in the Stage space that the touch occurred) in the text field:
 
     mySprite.addEventListener(TouchEvent.TOUCH_TAP, taphandler);
 
-    function taphandler(evt:TouchEvent): void {
+    function taphandler(evt:TouchEvent):void {
     	myTextField.text = evt.stageX.toString;
     	myTextField.y = 50;
     	addChild(myTextField);
