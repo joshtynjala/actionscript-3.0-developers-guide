@@ -337,13 +337,13 @@ property to one of the static properties found in the URLLoaderDataFormat class.
 The three possible values for the `URLLoader.dataFormat` property are as
 follows:
 
-- `URLLoaderDataFormat.BINARY` —The `URLLoader.data` property will contain
+- `URLLoaderDataFormat.BINARY` — The `URLLoader.data` property will contain
   binary data stored in a ByteArray object.
 
-- `URLLoaderDataFormat.TEXT` —The `URLLoader.data` property will contain text in
-  a String object.
+- `URLLoaderDataFormat.TEXT` — The `URLLoader.data` property will contain text
+  in a String object.
 
-- `URLLoaderDataFormat.VARIABLES` —The `URLLoader.data` property will contain
+- `URLLoaderDataFormat.VARIABLES` — The `URLLoader.data` property will contain
   URL-encoded variables stored in a URLVariables object.
 
 The following code demonstrates how setting the `URLLoader.dataFormat` property
