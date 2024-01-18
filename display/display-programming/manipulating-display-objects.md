@@ -9,3 +9,17 @@ from their common base class (DisplayObject), this functionality behaves the
 same whether you're manipulating a TextField instance, a Video instance, a Shape
 instance, or any other display object. The following sections detail several of
 these common display object manipulations.
+
+## More Help topics
+
+- [Changing position](./changing-position.md)
+- [Panning and scrolling display objects](./panning-and-scrolling-display-objects.md)
+- [Manipulating size and scaling objects](./manipulating-size-and-scaling-objects.md)
+- [Controlling distortion when scaling](./controlling-distortion-when-scaling.md)
+- [Caching display objects](./caching-display-objects.md)
+- [Setting an opaque background color](./setting-an-opaque-background-color.md)
+- [Applying blending modes](./applying-blending-modes.md)
+- [Adjusting DisplayObject colors](./adjusting-display-object-colors.md)
+- [Rotating objects](./rotating-objects.md)
+- [Fading objects](./fading-objects.md)
+- [Masking display objects](./masking-display-objects.md)

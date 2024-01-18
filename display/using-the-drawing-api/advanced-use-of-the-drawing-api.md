@@ -62,9 +62,6 @@ this section:
   `Graphics.beginGradientFill()`.
 
 - [Drawing paths](./drawing-paths.md)
-
 - [Defining winding rules](./defining-winding-rules.md)
-
 - [Using graphics data classes](./using-graphics-data-classes.md)
-
 - [About using drawTriangles](./about-using-drawtriangles.md)

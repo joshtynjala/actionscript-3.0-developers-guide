@@ -270,11 +270,8 @@ interface on the client computer:
 For more information, see:
 
 - [NetworkInfo](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetworkInfo.html)
-
 - [NetworkInterface](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetworkInterface.html)
-
 - [InterfaceAddress](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/InterfaceAddress.html)
-
 - [Flexpert: Detecting the network connection type with Flex 4.5](http://www.flexpert.be/2011/04/detecting-the-network-connection-type-with-flex-4-5/)
 
 ## Network connectivity changes
@@ -485,15 +482,9 @@ The following code example looks up the IP address of the host "example.com".
 For more information, see:
 
 - [DNSResolver](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/dns/DNSResolver.html)
-
 - [DNSResolverEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/DNSResolverEvent.html)
-
 - [ARecord](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/dns/ARecord.html)
-
 - [AAAARecord](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/dns/AAAARecord.html)
-
 - [MXRecord](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/dns/MXRecord.html)
-
 - [PTRRecord](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/dns/PTRRecord.html)
-
 - [SRVRecord](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/dns/SRVRecord.html)

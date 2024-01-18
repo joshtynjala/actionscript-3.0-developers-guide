@@ -121,9 +121,7 @@ The following packages contain the data structures and formatting classes for
 the TLF:
 
 - [flashx.textLayout.elements](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/elements/package-detail.html)
-
 - [flashx.textLayout.formats](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/formats/package-detail.html)
-
 - [flashx.textLayout.conversion](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/conversion/package-detail.html)
 
 The main data structure of the TLF is the text flow hierarchy, which is defined
@@ -137,9 +135,7 @@ package.
 The following packages contain the rendering classes for the TLF:
 
 - [flashx.textLayout.factory](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/factory/package-detail.html)
-
 - [flashx.textLayout.container](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/container/package-detail.html)
-
 - [flashx.textLayout.compose](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/compose/package-detail.html)
 
 The classes in these packages facilitate the rendering of text for display by
@@ -153,9 +149,7 @@ positioning and displaying dynamic text in containers.
 The following packages contain the user interaction classes for the TLF:
 
 - [flashx.textLayout.edit](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/edit/package-detail.html)
-
 - [flashx.textLayout.operations](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/operations/package-detail.html)
-
 - [flashx.textLayout.events](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/events/package-detail.html)
 
 The edit and operations packages define classes that you can use to allow

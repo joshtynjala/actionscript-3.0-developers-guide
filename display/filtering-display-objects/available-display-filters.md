@@ -55,23 +55,13 @@ in the
 [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
 - [Bevel filter](./bevel-filter.md)
-
 - [Blur filter](./blur-filter.md)
-
 - [Drop shadow filter](./drop-shadow-filter.md)
-
 - [Glow filter](./glow-filter.md)
-
 - [Gradient bevel filter](./gradient-bevel-filter.md)
-
 - [Gradient glow filter](./gradient-glow-filter.md)
-
 - [Example: Combining basic filters](./example-combining-basic-filters.md)
-
 - [Color matrix filter](./color-matrix-filter.md)
-
 - [Convolution filter](./convolution-filter.md)
-
 - [Displacement map filter](./displacement-map-filter.md)
-
 - [Shader filter](./shader-filter.md)

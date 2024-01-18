@@ -36,15 +36,13 @@ applications, content in the application security sandbox can make cross-domain
 XMLHttpRequests. You can allow content in other security sandboxes to make
 cross-domain XMLHttpRequests as long as that content is loaded into an iframe.
 
+- [REST-style web service requests](./rest-style-web-service-requests.md)
+- [XML-RPC web service requests](./xml-rpc-web-service-requests.md)
+- [SOAP web service requests](./soap-web-service-requests.md)
+
 More Help topics
 
 [Website controls (policy files)](../../security/permission-controls.md#website-controls-policy-files)
-
-[REST-style web service requests](./rest-style-web-service-requests.md)
-
-[XML-RPC web service requests](./xml-rpc-web-service-requests.md)
-
-[SOAP web service requests](./soap-web-service-requests.md)
 
 ![](../../img/flexLinkIndicator.png)
 [Accessing server-side data](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/flex/accessingdata/WS2db454920e96a9e51e63e3d11c0bf69084-7ff2.html)

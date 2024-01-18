@@ -43,11 +43,8 @@ viewport. The StageText instance displays in front of any display objects.
 For more information on these topics, see:
 
 - [Using the TextField class](./using-the-textfield-class/index.md)
-
 - [Using the Flash Text Engine](./using-the-flash-text-engine/index.md)
-
 - [Using the Text Layout Framework](./using-the-text-layout-framework.md)
-
 - [Native text input with StageText](https://web.archive.org/web/20170629011903/http://blogs.adobe.com/cantrell/archives/2011/09/native-text-input-with-stagetext.html)
 
 #### Important concepts and terms

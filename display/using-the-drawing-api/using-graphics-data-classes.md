@@ -9,19 +9,12 @@ the drawing methods of the drawing API.
 The following classes implement the IGraphicsData interface:
 
 - [GraphicsBitmapFill](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/GraphicsBitmapFill.html)
-
 - [GraphicsEndFill](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/GraphicsEndFill.html)
-
 - [GraphicsGradientFill](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/GraphicsGradientFill.html)
-
 - [GraphicsPath](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/GraphicsPath.html)
-
 - [GraphicsShaderFill](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/GraphicsShaderFill.html)
-
 - [GraphicsSolidFill](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/GraphicsSolidFill.html)
-
 - [GraphicsStroke](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/GraphicsStroke.html)
-
 - [GraphicsTrianglePath](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/GraphicsTrianglePath.html)
 
 With these classes, you can store a complete drawing in a Vector object of

@@ -47,15 +47,9 @@ see
 More Help topics
 
 - [Creating an instance of a regular expression](./creating-an-instance-of-a-regular-expression.md)
-
 - [Characters, metacharacters, and metasequences](./characters-metacharacters-and-metasequences.md)
-
 - [Character classes](./character-classes.md)
-
 - [Quantifiers](./quantifiers.md)
-
 - [Alternation](./alternation.md)
-
 - [Groups](./groups.md)
-
 - [Flags and properties](./flags-and-properties.md)

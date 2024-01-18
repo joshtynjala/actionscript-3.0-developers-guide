@@ -19,9 +19,6 @@ can be used in several ways:
   data.
 
 - [Using a shader as a drawing fill](./using-a-shader-as-a-drawing-fill.md)
-
 - [Using a shader as a blend mode](./using-a-shader-as-a-blend-mode.md)
-
 - [Using a shader as a filter](./using-a-shader-as-a-filter.md)
-
 - [Using a shader in stand-alone mode](./using-a-shader-in-stand-alone-mode.md)

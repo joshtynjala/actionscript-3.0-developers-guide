@@ -501,7 +501,6 @@ at the beginning of the `onXMPData()` function.
 For more information on XMP, see:
 
 - [Adobe Extensible Metadata Platform (XMP)](https://web.archive.org/web/20080304172551/http://partners.adobe.com/public/developer/xmp/topic.html)
-
 - [Adobe XMP Developer Center](https://web.archive.org/web/20140302023642/http://www.adobe.com/devnet/xmp.html)
 
 ## Using image metadata
