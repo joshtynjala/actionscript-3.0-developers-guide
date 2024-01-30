@@ -20,7 +20,7 @@ operations, set up event listeners to handle the asynchronous events:
     var myFileStream:FileStream = new FileStream();
     myFileStream.addEventListener(Event.COMPLETE, completeHandler);
     myFileStream.addEventListener(ProgressEvent.PROGRESS, progressHandler);
-    myFileStream.addEventListener(IOErrorEvent.IO_Error, errorHandler);
+    myFileStream.addEventListener(IOErrorEvent.IO_ERROR, errorHandler);
     myFileStream.openAsync(myFile, FileMode.READ);
 
     function completeHandler(event:Event):void {
