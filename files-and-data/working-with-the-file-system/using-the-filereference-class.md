@@ -6,7 +6,7 @@ locally, and transfer file data to and from remote servers.
 
 The FileReference class offers two different approaches to loading,
 transferring, and saving data files. Since its introduction, the FileReference
-class has includedthe `browse()` method, the `upload()` method, and the
+class has included the `browse()` method, the `upload()` method, and the
 `download()` method. Use the `browse()` method to let the user select a file.
 Use the `upload()` method to transfer the file data to a remote server. Use the
 `download()` method to retrieve that data from the server and save it in a local
