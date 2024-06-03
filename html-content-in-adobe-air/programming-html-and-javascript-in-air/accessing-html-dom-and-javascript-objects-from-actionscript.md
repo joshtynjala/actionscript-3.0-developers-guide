@@ -25,7 +25,7 @@ For example, consider the following HTML page:
 This simple HTML page defines a JavaScript variable named _foo_ and a JavaScript
 function named _test()_. Both of these are properties of the global `window`
 object of the page. Also, the `window.document` object includes a named P
-element (with the ID _p1_ ), which you can access using the `getElementById()`
+element (with the ID _p1_), which you can access using the `getElementById()`
 method. Once the page is loaded (when the HTMLLoader object dispatches the
 `complete` event), you can access each of these objects from ActionScript, as
 shown in the following ActionScript code:

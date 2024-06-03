@@ -321,10 +321,10 @@ in this directory:
 
 - On Mac OS — varies by AIR version:
 
-  **AIR 3.2 and earlier** :
+  **AIR 3.2 and earlier**:
   `/Users/user name/Library/Preferences/ `_`applicationID`_` /Local Store/`
 
-  **AIR 3.3 and later** :
+  **AIR 3.3 and later**:
   ` `_`path`_`/Library/Application Support/`_`applicationID`_` /Local Store`,
   where ` `_`path`_` ` is either
   `/Users/ `_`username`_`/Library/Containers/`_`bundle-id`_` /Data` (sandboxed

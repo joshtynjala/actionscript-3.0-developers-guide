@@ -416,8 +416,8 @@ Follow these steps to use the EncryptionKeyGenerator class in your application:
 
     The `getEncryptionKey()` method also accepts a second (optional) parameter,
     the `overrideSaltELSKey` parameter. The EncryptionKeyGenerator creates a
-    random value (known as a _salt_ ) that is used as part of the encryption
-    key. In order to be able to re-create the encryption key, the salt value is
+    random value (known as a _salt_) that is used as part of the encryption key.
+    In order to be able to re-create the encryption key, the salt value is
     stored in the Encrypted Local Store (ELS) of your AIR application. By
     default, the EncryptionKeyGenerator class uses a particular String as the
     ELS key. Although unlikely, it's possible that the key can conflict with

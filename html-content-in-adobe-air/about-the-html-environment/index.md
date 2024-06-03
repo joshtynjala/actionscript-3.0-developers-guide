@@ -1,12 +1,11 @@
 # About the HTML environment
 
-Adobe® AIR® uses [WebKit](http://www.webkit.org) _(www.webkit.org_ ), also used
-by the Safari web browser, to parse, layout, and render HTML and JavaScript
-content. Using the AIR APIs in HTML content is optional. You can program in the
-content of an HTMLLoader object or HTML window entirely with HTML and
-JavaScript. Most existing HTML pages and applications should run with few
-changes (assuming they use HTML, CSS, DOM, and JavaScript features compatible
-with WebKit).
+Adobe® AIR® uses [WebKit](http://www.webkit.org), also used by the Safari web
+browser, to parse, layout, and render HTML and JavaScript content. Using the AIR
+APIs in HTML content is optional. You can program in the content of an
+HTMLLoader object or HTML window entirely with HTML and JavaScript. Most
+existing HTML pages and applications should run with few changes (assuming they
+use HTML, CSS, DOM, and JavaScript features compatible with WebKit).
 
 **Important:** New versions of the Adobe AIR runtime may include updated
 versions of WebKit. A WebKit update in a new version of AIR _may_ result in

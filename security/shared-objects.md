@@ -1,6 +1,6 @@
 # Shared objects
 
-Flash Player provides the ability to use _shared objects_ , which are
+Flash Player provides the ability to use _shared objects_, which are
 ActionScript objects that persist outside of a SWF file, either locally on a
 user's file system or remotely on an RTMP server. Shared objects, like other
 media in Flash Player, are partitioned into security sandboxes. However, the

@@ -1,9 +1,8 @@
 # Understanding the protected content workflow
 
-**_Important_** : Flash Player 11.5 and above integrates the Adobe Access
-module, so the update step (calling
-`SystemUpdater.update(SystemUpdaterType.DRM)`) is unnecessary. This includes the
-following browsers and platforms:
+**_Important_**: Flash Player 11.5 and above integrates the Adobe Access module,
+so the update step (calling `SystemUpdater.update(SystemUpdaterType.DRM)`) is
+unnecessary. This includes the following browsers and platforms:
 
 - Flash Player 11.5 ActiveX control, for all platforms except Internet Explorer
   on Windows 8 on Intel processors

@@ -45,15 +45,15 @@ sure to use the correct characters.
 As the following table shows, you can use the backslash escape character (`\`)
 to define other characters in string literals:
 
-| Escape sequence | Character                                                                                                                                 |
-| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| `\b`            | Backspace                                                                                                                                 |
-| `\f`            | Form feed                                                                                                                                 |
-| `\n`            | Newline                                                                                                                                   |
-| `\r`            | Carriage return                                                                                                                           |
-| `\t`            | Tab                                                                                                                                       |
-| `\u` `nnnn`     | The Unicode character with the character code specified by the hexadecimal number _nnnn_ ; for example, `\u263a` is the smiley character. |
-| `\\x` `nn`      | The ASCII character with the character code specified by the hexadecimal number _nn_                                                      |
-| `\'`            | Single quotation mark                                                                                                                     |
-| `\"`            | Double quotation mark                                                                                                                     |
-| `\\`            | Single backslash character                                                                                                                |
+| Escape sequence | Character                                                                                                                                |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| `\b`            | Backspace                                                                                                                                |
+| `\f`            | Form feed                                                                                                                                |
+| `\n`            | Newline                                                                                                                                  |
+| `\r`            | Carriage return                                                                                                                          |
+| `\t`            | Tab                                                                                                                                      |
+| `\u` `nnnn`     | The Unicode character with the character code specified by the hexadecimal number _nnnn_; for example, `\u263a` is the smiley character. |
+| `\\x` `nn`      | The ASCII character with the character code specified by the hexadecimal number _nn_                                                     |
+| `\'`            | Single quotation mark                                                                                                                    |
+| `\"`            | Double quotation mark                                                                                                                    |
+| `\\`            | Single backslash character                                                                                                               |

@@ -113,7 +113,7 @@ user-accessible location (for example, a data entry field). If application code
 constructs a SQL statement by directly concatenating user input into the SQL
 text, the user-entered SQL code is executed against the database. The following
 listing shows an example of concatenating user input into SQL text. **Do not use
-this technique** :
+this technique**:
 
     // assume the variables "username" and "password"
     // contain user-entered data

@@ -21,7 +21,7 @@ After registering and paying the publisher for the content, the user can access
 and download the content and associated AIR application from the publisher's
 website. Using the AIR application, the user can view the content offline during
 the permitted period. The content can also be shared with other devices in the
-same device group using domains ( **New in 3.0** ).
+same device group using domains (**New in 3.0**).
 
 Adobe Access also supports anonymous access, which does not require user
 authentication. For example, a publisher can use anonymous access to distribute

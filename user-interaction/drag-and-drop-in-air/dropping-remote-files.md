@@ -26,8 +26,8 @@ included in the operation are placed in a subfolder relative to the drop
 location.
 
 The following example illustrates how to initiate a drag operation that includes
-multiple file promises. In this example, an html page, _article.html_ , is put
-on the clipboard as a file promise, along with its two linked image files. The
+multiple file promises. In this example, an html page, _article.html_, is put on
+the clipboard as a file promise, along with its two linked image files. The
 images are copied into an _images_ subfolder so that the relative links are
 maintained.
 

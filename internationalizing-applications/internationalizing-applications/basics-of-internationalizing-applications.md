@@ -22,7 +22,7 @@ languages, scripts and cultural conventions (including currencies, sorting
 rules, number and date formats, and more) without the need for redesign or
 recompilation. This process can be divided into two sets of activities:
 enablement and localization. Internationalization is sometimes known as
-_world-readiness_ , and sometimes abbreviated as _I18n_. _"Internationalization
+_world-readiness_, and sometimes abbreviated as _I18n_. _"Internationalization
 is what engineers do."_
 
 Localization  

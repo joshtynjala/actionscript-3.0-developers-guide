@@ -2,7 +2,7 @@
 
 AIR extends the HTML script element so that a page can import ActionScript
 classes in a compiled SWF file. For example, to import a library named,
-_myClasses.swf_ , located in the `lib` subdirectory of the root application
+_myClasses.swf_, located in the `lib` subdirectory of the root application
 folder, include the following script tag within an HTML file:
 
     <script src="lib/myClasses.swf" type="application/x-shockwave-flash"></script>
@@ -23,7 +23,7 @@ Window object:
 
 If the classes in the SWF file are organized in packages, you must include the
 package name as well. For example, if the LibraryClass definition was in a
-package named _utilities_ , you would create an instance of the class with the
+package named _utilities_, you would create an instance of the class with the
 following statement:
 
     var libraryObject = new window.runtime.utilities.LibraryClass();
@@ -62,7 +62,7 @@ For example, consider the following HTML page:
 This simple HTML page has a JavaScript variable named _num_ and a JavaScript
 function named _getStatus()_. Both of these are properties of the `window`
 object of the page. Also, the `window.document` object includes a named P
-element (with the ID _p1_ ).
+element (with the ID _p1_).
 
 The page loads an ActionScript file, "ASLibrary.swf," that contains a class,
 ASClass. ASClass defines a function named `accessDOM()` that simply traces the

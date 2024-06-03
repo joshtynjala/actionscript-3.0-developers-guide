@@ -21,7 +21,7 @@ the `dataTransfer` property. Use the `dataTransfer.setData()` method to put data
 onto the clipboard, passing in the MIME type and the data to transfer.
 
 For example, if you had an image element in your application, with the id
-_imageOfGeorge_ , you could use the following dragstart event handler. This
+_imageOfGeorge_, you could use the following dragstart event handler. This
 example adds representations of a picture of George in several data formats,
 which increases the likelihood that other applications can use the dragged data.
 

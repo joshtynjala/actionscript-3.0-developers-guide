@@ -229,7 +229,7 @@ On the Windows operating system, windows created with the types _utility_ or
 _lightweight_ do not appear on the taskbar. Invisible windows do not appear on
 the taskbar, either.
 
-Because the initial window is necessarily of type, _normal_ , in order to create
+Because the initial window is necessarily of type, _normal_, in order to create
 an application without any windows appearing in the taskbar, you must either
 close the initial window or leave it invisible. To close all windows in your
 application without terminating the application, set the `autoExit` property of

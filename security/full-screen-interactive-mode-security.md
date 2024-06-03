@@ -42,7 +42,7 @@ situations, Flash Player throws an exception.
 An overlay message appears when the content enters full-screen interactive mode.
 The message displays the domain of the full-screen page, instructions on how to
 exit full-screen mode, and an **Allow** button. The overlay persists until the
-user clicks **Allow** , acknowledging they are in full-screen interactive mode.
+user clicks **Allow**, acknowledging they are in full-screen interactive mode.
 
 Administrators can disable full-screen interactive mode for SWF files running in
 browsers by setting `FullScreenInteractiveDisable = 1` in the mms.cfg file. For

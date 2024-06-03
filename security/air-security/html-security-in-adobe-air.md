@@ -189,7 +189,7 @@ application security sandbox:
 
       { prop1: val1, prop2: val2 }
 
-- Object literal setter/getters are _prohibited_ , as in the following:
+- Object literal setter/getters are _prohibited_, as in the following:
 
       { get prop1() { ... }, set prop1(v) { ... } }
 
@@ -197,7 +197,7 @@ application security sandbox:
 
       [ val1, val2, val3 ]
 
-- Expressions involving property reads are _prohibited_ , as in the following:
+- Expressions involving property reads are _prohibited_, as in the following:
 
       a.b.c
 
