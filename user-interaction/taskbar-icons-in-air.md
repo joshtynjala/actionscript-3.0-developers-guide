@@ -55,10 +55,10 @@ AIR supports dock icons when `NativeApplication.supportsDockIcon` is `true`. The
 `NativeApplication.nativeApplication.icon` property represents the application
 icon on the dock (not a window dock icon).
 
-Note: AIR does not support changing window icons on the dock under Mac OS X.
-Also, changes to the application dock icon only apply while an application is
-running — the icon reverts to its normal appearance when the application
-terminates.
+> **Note:** AIR does not support changing window icons on the dock under Mac OS
+> X. Also, changes to the application dock icon only apply while an application
+> is running — the icon reverts to its normal appearance when the application
+> terminates.
 
 ### Dock icon menus
 
@@ -76,7 +76,7 @@ you set it to critical, then the icon bounces until the user activates the
 application. Constants for the `priority` parameter are defined in the
 NotificationType class.
 
-Note: The icon does not bounce if the application is already active.
+> **Note:** The icon does not bounce if the application is already active.
 
 ### Dock icon events
 
@@ -177,13 +177,14 @@ the application starts up.)
     	}
     }
 
-Note: When using the Flex WindowedApplication component, you must set the
-`visible` attribute of the WindowedApplication tag to `false`. This attribute
-supercedes the setting in the application descriptor.
+> **Note:** When using the Flex WindowedApplication component, you must set the
+> `visible` attribute of the WindowedApplication tag to `false`. This attribute
+> supercedes the setting in the application descriptor.
 
-Note: The example assumes that there are image files named `AIRApp_16.png` and
-`AIRApp_128.png` in an `icons` subdirectory of the application. (Sample icon
-files, which you can copy to your project folder, are included in the AIR SDK.)
+> **Note:** The example assumes that there are image files named `AIRApp_16.png`
+> and `AIRApp_128.png` in an `icons` subdirectory of the application. (Sample
+> icon files, which you can copy to your project folder, are included in the AIR
+> SDK.)
 
 ## Window taskbar icons and buttons
 
@@ -210,9 +211,9 @@ urgency of the notification:
 - `NotificationType.INFORMATIONAL`: the window icon highlights by changing
   color.
 
-  Note: On Linux, only the informational type of notification is supported.
-  Passing either type value to the `notifyUser()` function will create the same
-  effect.
+  > **Note:** On Linux, only the informational type of notification is
+  > supported. Passing either type value to the `notifyUser()` function will
+  > create the same effect.
 
   The following statement highlights the taskbar button of a window:
 

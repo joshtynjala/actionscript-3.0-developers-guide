@@ -28,11 +28,11 @@ resources, see the following web sites:
 
 - [http://www.java.sun.com/](http://www.java.sun.com/)
 
-Note: If an IME is not active on the user's computer, calls to IME methods or
-properties, other than `Capabilities.hasIME`, will fail. Once you manually
-activate an IME, subsequent ActionScript calls to IME methods and properties
-will work as expected. For example, if you are using a Japanese IME, you must
-activate it before you can call any IME method or property.
+> **Note:** If an IME is not active on the user's computer, calls to IME methods
+> or properties, other than `Capabilities.hasIME`, will fail. Once you manually
+> activate an IME, subsequent ActionScript calls to IME methods and properties
+> will work as expected. For example, if you are using a Japanese IME, you must
+> activate it before you can call any IME method or property.
 
 ## Checking if an IME is installed and enabled
 

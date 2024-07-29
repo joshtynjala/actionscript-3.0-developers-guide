@@ -102,8 +102,8 @@ both the `userIdle` and `userPresent` events:
         trace("Present");
     });
 
-Note: Only a single `userIdle` event is dispatched between any two `userPresent`
-events.
+> **Note:** Only a single `userIdle` event is dispatched between any two
+> `userPresent` events.
 
 More Help topics
 

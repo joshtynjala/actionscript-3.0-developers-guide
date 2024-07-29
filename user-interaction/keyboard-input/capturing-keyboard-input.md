@@ -51,8 +51,8 @@ The TextField class also reports a `textInput` event that you can listen for
 when a user enters text. For more information, see
 [Capturing text input](../../text/using-the-textfield-class/capturing-text-input.md).
 
-Note: In the AIR runtime, a keyboard event can be canceled. In the Flash Player
-runtime, a keyboard event cannot be canceled.
+> **Note:** In the AIR runtime, a keyboard event can be canceled. In the Flash
+> Player runtime, a keyboard event cannot be canceled.
 
 ## Key codes and character codes
 
@@ -69,11 +69,11 @@ different than the 1 in the top row, but the key that generates "1" and the key
 that generates "!" are the same key) and the character value represents a
 particular character (the R and r characters are different).
 
-Note: For the mappings between keys and their character code values in ASCII,
-see the
-[flash.ui.Keyboard](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Keyboard.html)
-class listing in the
-[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
+> **Note:** For the mappings between keys and their character code values in
+> ASCII, see the
+> [flash.ui.Keyboard](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Keyboard.html)
+> class listing in the
+> [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
 The mappings between keys and their key codes is dependent on the device and the
 operating system. For this reason, you should not use key mappings to trigger

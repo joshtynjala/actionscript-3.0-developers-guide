@@ -212,14 +212,14 @@ To run a class-based example in Flash Professional:
 4.  Select File \> Save. Give the file the same name as the class in the example
     (e.g. ContextMenuExample.as).
 
-    Note: Some of the class-based examples, such as the
-    [flashx.textLayout.container.ContainerController class example](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/container/ContainerController.html#includeExamplesSummary),
-    include multiple levels in the package declaration (
-    `package flashx.textLayout.container.examples {`). For these examples, save
-    the file in a sub folder that matches the package declaration
-    (flashx/textLayout/container/examples), or remove the package name (so the
-    ActionScript starts with `package {` only) and you can test the file from
-    any location.
+    > **Note:** Some of the class-based examples, such as the
+    > [flashx.textLayout.container.ContainerController class example](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/container/ContainerController.html#includeExamplesSummary),
+    > include multiple levels in the package declaration (
+    > `package flashx.textLayout.container.examples {`). For these examples,
+    > save the file in a sub folder that matches the package declaration
+    > (flashx/textLayout/container/examples), or remove the package name (so the
+    > ActionScript starts with `package {` only) and you can test the file from
+    > any location.
 
 5.  Select File \> New.
 
@@ -284,14 +284,14 @@ To run a code snippet example in Flash Builder:
     code, including package and import statements, into the ActionScript file
     and save the file.
 
-    Note: Some of the class-based examples, such as the
-    [flashx.textLayout.container.ContainerController class example](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/container/ContainerController.html#includeExamplesSummary),
-    include multiple levels in the package declaration (
-    `package flashx.textLayout.container.examples {`). For these examples, save
-    the file in a sub folder that matches the package declaration
-    (flashx/textLayout/container/examples), or remove the package name (so the
-    ActionScript starts with `package {` only) and you can test the file from
-    any location.
+    > **Note:** Some of the class-based examples, such as the
+    > [flashx.textLayout.container.ContainerController class example](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flashx/textLayout/container/ContainerController.html#includeExamplesSummary),
+    > include multiple levels in the package declaration (
+    > `package flashx.textLayout.container.examples {`). For these examples,
+    > save the file in a sub folder that matches the package declaration
+    > (flashx/textLayout/container/examples), or remove the package name (so the
+    > ActionScript starts with `package {` only) and you can test the file from
+    > any location.
 
 4.  To run the example, select the Run \> Run menu option for the main
     ActionScript class name (such as Run \> Run ContextMenuExample).

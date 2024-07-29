@@ -6,9 +6,9 @@ and so on. Since your applications can access the local file system, refer to
 [AIR security](../../security/air-security/index.md), if you haven't already
 done so.
 
-Note: You can associate a file type with an AIR application (so that
-double-clicking it opens the application). For details, see
-[Managing file associations](../../client-system-interaction/working-with-air-runtime-and-operating-system-information.md#managing-file-associations).
+> **Note:** You can associate a file type with an AIR application (so that
+> double-clicking it opens the application). For details, see
+> [Managing file associations](../../client-system-interaction/working-with-air-runtime-and-operating-system-information.md#managing-file-associations).
 
 ## Getting file information
 
@@ -200,8 +200,8 @@ user's documents directory to the System trash:
     var file:File = File.documentsDirectory.resolvePath("test.txt");
     file.moveToTrash();
 
-Note: On operating systems that do not support the concept of a recoverable
-trash folder, the files are removed immediately.
+> **Note:** On operating systems that do not support the concept of a
+> recoverable trash folder, the files are removed immediately.
 
 ## Creating a temporary file
 

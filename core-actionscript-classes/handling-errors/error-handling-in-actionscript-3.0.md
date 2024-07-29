@@ -9,13 +9,13 @@ an exception with a specific message. Because error handling is critical for
 making a user-friendly application, ActionScript 3.0 includes an expanded
 architecture for catching errors.
 
-Note: While the
-[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html)
-documents the exceptions thrown by many methods, it might not include all
-possible exceptions for each method. A method might throw an exception for
-syntax errors or other problems that are not noted explicitly in the method
-description, even when the description does list some of the exceptions a method
-throws.
+> **Note:** While the
+> [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html)
+> documents the exceptions thrown by many methods, it might not include all
+> possible exceptions for each method. A method might throw an exception for
+> syntax errors or other problems that are not noted explicitly in the method
+> description, even when the description does list some of the exceptions a
+> method throws.
 
 ## ActionScript 3.0 error-handling elements
 

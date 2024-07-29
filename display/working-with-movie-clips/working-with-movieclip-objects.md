@@ -14,12 +14,12 @@ animation play by calling this code:
 
     parentClip.childClip.play();
 
-Note: : Children instances placed on the Stage in the Flash authoring tool
-cannot be accessed by code from within the constructor of a parent instance
-since they have not been created at that point in code execution. Before
-accessing the child, the parent must instead either create the child instance by
-code or delay access to a callback function that listens for the child to
-dispatch its `Event.ADDED_TO_STAGE` event.
+> **Note:** : Children instances placed on the Stage in the Flash authoring tool
+> cannot be accessed by code from within the constructor of a parent instance
+> since they have not been created at that point in code execution. Before
+> accessing the child, the parent must instead either create the child instance
+> by code or delay access to a callback function that listens for the child to
+> dispatch its `Event.ADDED_TO_STAGE` event.
 
 While some legacy methods and properties of the ActionScript 2.0 MovieClip class
 remain the same, others have changed. All properties prefixed with an underscore

@@ -36,10 +36,10 @@ Stage. The same click reports \[50,50\] for these coordinates, because `square`
 was moved to these coordinates. Both of these coordinate pairs can be useful
 depending on how you want to respond to user interaction.
 
-Note: In full-screen mode, you can configure the application to use mouse
-locking. Mouse locking disables the cursor and enables unbounded mouse movement.
-For more information, see
-[Working with full-screen mode](../../display/display-programming/setting-stage-properties.md#working-with-full-screen-mode).
+> **Note:** In full-screen mode, you can configure the application to use mouse
+> locking. Mouse locking disables the cursor and enables unbounded mouse
+> movement. For more information, see
+> [Working with full-screen mode](../../display/display-programming/setting-stage-properties.md#working-with-full-screen-mode).
 
 The MouseEvent object also contains `altKey`, `ctrlKey`, and `shiftKey` Boolean
 properties. You can use these properties to check if the Alt, Ctrl, or Shift key

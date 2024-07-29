@@ -73,10 +73,10 @@ The URI scheme determines the rules for loading embedded content or data.
 | http:, https:                | No                  | Yes                  | No                   | Same domain           |
 | about: (loadString() method) | No                  | Yes                  | No                   | No                    |
 
-Note: If the stage's `displayState` property is set to `FULL_SCREEN`, in
-Desktop, you cannot type in a text field displayed in the StageWebView. However,
-in iOS and Android, you can type in a text field on StageWebView even if the
-stage's `displayState` is `FULL_SCREEN`.
+> **Note:** If the stage's `displayState` property is set to `FULL_SCREEN`, in
+> Desktop, you cannot type in a text field displayed in the StageWebView.
+> However, in iOS and Android, you can type in a text field on StageWebView even
+> if the stage's `displayState` is `FULL_SCREEN`.
 
 The following example uses a StageWebView object to display Adobe's website:
 

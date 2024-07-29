@@ -6,9 +6,9 @@ mode, and keyboard input _is_ permitted in this mode. (In SWF content running in
 a browser, keyboard input is not permitted). To exit full-screen mode, the user
 presses the Escape key.
 
-Note: Some Linux window managers will not change the window dimensions to fill
-the screen if a maximum size is set for the window (but do remove the window
-system chrome).
+> **Note:** Some Linux window managers will not change the window dimensions to
+> fill the screen if a maximum size is set for the window (but do remove the
+> window system chrome).
 
 For example, the following Flex code defines a simple AIR application that sets
 up a simple full-screen terminal:

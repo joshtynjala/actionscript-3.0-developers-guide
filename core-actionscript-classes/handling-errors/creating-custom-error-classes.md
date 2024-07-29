@@ -41,10 +41,11 @@ The following shows an example of using AppError in your project:
         trace(error.errorID + ": " + error.message)
     }
 
-Note: If you want to override the `Error.toString()` method in your subclass,
-give it one `...` (rest) parameter. The ECMAScript language specification on
-which ActionScript 3.0 is based defines the `Error.toString()` method that way,
-and ActionScript 3.0 defines it the same way for backward compatibility.
-Therefore, when you override the `Error.toString()` method, match the parameters
-exactly. You do not want to pass any parameters to your `toString()` method at
-runtime, because those parameters are ignored.
+> **Note:** If you want to override the `Error.toString()` method in your
+> subclass, give it one `...` (rest) parameter. The ECMAScript language
+> specification on which ActionScript 3.0 is based defines the
+> `Error.toString()` method that way, and ActionScript 3.0 defines it the same
+> way for backward compatibility. Therefore, when you override the
+> `Error.toString()` method, match the parameters exactly. You do not want to
+> pass any parameters to your `toString()` method at runtime, because those
+> parameters are ignored.

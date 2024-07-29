@@ -94,9 +94,9 @@ company stocks in the StockDataModel class. A real application would retrieve
 data from a server and then store it in a class like StockDataModel. In this
 example, all the data is hard coded in the StockDataModel class.
 
-Note: The data displayed in the financial chart doesn't necessarily match the
-data shown in the DataGrid control. The chart is randomly redrawn each time a
-different company is selected. It is for illustration purposes only.
+> **Note:** The data displayed in the financial chart doesn't necessarily match
+> the data shown in the DataGrid control. The chart is randomly redrawn each
+> time a different company is selected. It is for illustration purposes only.
 
 ## Setting the locale
 

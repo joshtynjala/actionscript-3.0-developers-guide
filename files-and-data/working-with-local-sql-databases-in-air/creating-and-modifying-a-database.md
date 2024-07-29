@@ -94,14 +94,14 @@ with the filename "DBSample.db":
     	</mx:Script>
     </mx:WindowedApplication>
 
-Note: Although the File class lets you point to a specific native file path,
-doing so can lead to applications that will not work across platforms. For
-example, the path C:\Documents and Settings\joe\test.db only works on Windows.
-For these reasons, it is best to use the static properties of the
-[File class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/File.html)
-such as `File.applicationStorageDirectory`, as well as the `resolvePath()`
-method (as shown in the previous example). For more information, see
-[Paths of File objects](../working-with-the-file-system/working-with-file-objects-in-air.md#paths-of-file-objects).
+> **Note:** Although the File class lets you point to a specific native file
+> path, doing so can lead to applications that will not work across platforms.
+> For example, the path C:\Documents and Settings\joe\test.db only works on
+> Windows. For these reasons, it is best to use the static properties of the
+> [File class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filesystem/File.html)
+> such as `File.applicationStorageDirectory`, as well as the `resolvePath()`
+> method (as shown in the previous example). For more information, see
+> [Paths of File objects](../working-with-the-file-system/working-with-file-objects-in-air.md#paths-of-file-objects).
 
 To execute operations synchronously, when you open a database connection with
 the SQLConnection instance, call the `open()` method. The following example

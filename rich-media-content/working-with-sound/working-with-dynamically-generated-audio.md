@@ -1,7 +1,7 @@
 # Working with dynamically generated audio
 
-Note: The ability to dynamically generate audio is available starting with Flash
-Player 10 and Adobe AIR 1.5.
+> **Note:** The ability to dynamically generate audio is available starting with
+> Flash Player 10 and Adobe AIR 1.5.
 
 Instead of loading or streaming an existing sound, you can generate audio data
 dynamically. You can generate audio data when you assign an event listener for

@@ -41,11 +41,11 @@ property. For example, to create a File object, you would use the statement:
 
     var file = new window.runtime.filesystem.File();
 
-Note: The AIR SDK provides a JavaScript file, `AIRAliases.js`, that defines more
-convenient aliases for the most commonly used AIR classes. When you import this
-file, you can use the shorter form air.Class instead of
-window.runtime.package.Class. For example, you could create the File object with
-`new air.File()`.
+> **Note:** The AIR SDK provides a JavaScript file, `AIRAliases.js`, that
+> defines more convenient aliases for the most commonly used AIR classes. When
+> you import this file, you can use the shorter form air.Class instead of
+> window.runtime.package.Class. For example, you could create the File object
+> with `new air.File()`.
 
 The NativeWindow object provides properties for controlling the desktop window.
 From within an HTML page, you can access the containing NativeWindow object with

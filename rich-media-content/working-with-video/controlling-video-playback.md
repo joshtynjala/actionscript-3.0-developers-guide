@@ -17,11 +17,11 @@ from the beginning of the stream).
 [`togglePause()`](<https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/NetStream.html#togglePause()>):
 Pauses or resumes playback of a stream.
 
-Note: There is no `stop()` method. In order to stop a stream you must pause
-playback and seek to the beginning of the video stream.
+> **Note:** There is no `stop()` method. In order to stop a stream you must
+> pause playback and seek to the beginning of the video stream.
 
-Note: The `play()` method does not resume playback, it is used for loading video
-files.
+> **Note:** The `play()` method does not resume playback, it is used for loading
+> video files.
 
 The following example demonstrates how to control a video using several
 different buttons. To run the following example, create a new document and add

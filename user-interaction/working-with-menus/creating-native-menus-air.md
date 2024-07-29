@@ -37,10 +37,10 @@ Mac OS) and window menus (supported on other operating systems)
     	nativeWindow.menu = root;
     }
 
-Note: Mac OS defines a menu containing standard items for every application.
-Assigning a new NativeMenu object to the `menu` property of the
-NativeApplication object replaces the standard menu. You can also use the
-standard menu instead of replacing it.
+> **Note:** Mac OS defines a menu containing standard items for every
+> application. Assigning a new NativeMenu object to the `menu` property of the
+> NativeApplication object replaces the standard menu. You can also use the
+> standard menu instead of replacing it.
 
 The Adobe Flex provides a FlexNativeMenu class for easily creating menus that
 work across platforms. If you are using the Flex Framework, use the
@@ -64,10 +64,10 @@ Mac OS) and window menus (supported on other operating systems)
     	DockIcon(NativeApplication.nativeApplication.icon).menu = root;
     }
 
-Note: Mac OS X defines a standard menu for the application dock icon. When you
-assign a new NativeMenu to the menu property of the DockIcon object, the items
-in that menu are displayed above the standard items. You cannot remove, access,
-or modify the standard menu items.
+> **Note:** Mac OS X defines a standard menu for the application dock icon. When
+> you assign a new NativeMenu to the menu property of the DockIcon object, the
+> items in that menu are displayed above the standard items. You cannot remove,
+> access, or modify the standard menu items.
 
 #### Displaying a menu as a pop-up
 
@@ -103,8 +103,8 @@ listener referencing the function implementing the menu command:
 You can listen for the `select` event on the command item itself (as shown in
 the example), or you can listen for the `select` event on a parent menu object.
 
-Note: Menu items that represent submenus and separator lines do not dispatch
-`select` events and so cannot be used as commands.
+> **Note:** Menu items that represent submenus and separator lines do not
+> dispatch `select` events and so cannot be used as commands.
 
 ## Creating a menu separator line
 

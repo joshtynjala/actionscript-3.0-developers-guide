@@ -3,10 +3,10 @@
 You use the properties and methods of the NativeWindow class to manage the
 appearance, behavior, and life cycle of desktop windows.
 
-Note: When using the Flex framework, it is generally better to manage window
-behavior using the framework classes. Most of the NativeWindow properties and
-methods can be accessed through the mx:WindowedApplication and mx:Window
-classes.
+> **Note:** When using the Flex framework, it is generally better to manage
+> window behavior using the framework classes. Most of the NativeWindow
+> properties and methods can be accessed through the mx:WindowedApplication and
+> mx:Window classes.
 
 ## Getting a NativeWindow instance
 
@@ -67,14 +67,14 @@ the `stage` property, as follows:
     	</mx:Script>
     </WindowedApplication
 
-Note: Until the WindowedApplication or Window component is added to the window
-stage by the Flex framework, the component's `stage` property is `null`. This
-behavior is consistent with that of the Flex Application component, but does
-mean that it is not possible to access the stage or the NativeWindow instance in
-listeners for events that occur earlier in the initialization cycle of the
-WindowedApplication and Window components, such as `creationComplete`. It is
-safe to access the stage and NativeWindow instance when the
-`applicationComplete` event is dispatched.
+> **Note:** Until the WindowedApplication or Window component is added to the
+> window stage by the Flex framework, the component's `stage` property is
+> `null`. This behavior is consistent with that of the Flex Application
+> component, but does mean that it is not possible to access the stage or the
+> NativeWindow instance in listeners for events that occur earlier in the
+> initialization cycle of the WindowedApplication and Window components, such as
+> `creationComplete`. It is safe to access the stage and NativeWindow instance
+> when the `applicationComplete` event is dispatched.
 
 ## Activating, showing, and hiding windows
 
@@ -97,11 +97,11 @@ When you change the visibility of a window, the visibility of any windows that
 window owns is also changed. For example, if you hide a window, all of its owned
 windows are also hidden.
 
-Note: On Mac OS X, it is not possible to completely hide a minimized window that
-has an icon in the window portion of the dock. If the `visible` property is set
-to `false` on a minimized window, the dock icon for the window is still
-displayed. If the user clicks the icon, the window is restored to a visible
-state and displayed.
+> **Note:** On Mac OS X, it is not possible to completely hide a minimized
+> window that has an icon in the window portion of the dock. If the `visible`
+> property is set to `false` on a minimized window, the dock icon for the window
+> is still displayed. If the user clicks the icon, the window is restored to a
+> visible state and displayed.
 
 ## Changing the window display order
 
@@ -132,9 +132,9 @@ done when necessary and appropriate. Examples of justified uses include:
 
 - Short-lived toast-style windows.
 
-Note: AIR does not enforce proper use of the `alwaysInFront` property. However,
-if your application disrupts a user's workflow, it is likely to be consigned to
-that same user's trash can.
+> **Note:** AIR does not enforce proper use of the `alwaysInFront` property.
+> However, if your application disrupts a user's workflow, it is likely to be
+> consigned to that same user's trash can.
 
 If a window owns other windows, those windows are always ordered in front of it.
 If you call `orderToFront()` or set `alwaysInFront` to `true` on a window that
@@ -196,8 +196,8 @@ the display order of a window relative to other windows:
 </tbody>
 </table>
 
-Note: If a window is hidden (`visible` is `false`) or minimized, then calling
-the display order methods has no effect.
+> **Note:** If a window is hidden (`visible` is `false`) or minimized, then
+> calling the display order methods has no effect.
 
 On the Linux operating system, different window managers enforce different rules
 regarding the window display order:
@@ -282,11 +282,11 @@ A window that has an owner is minimized and restored when the owning window is
 minimized or restored. No events are dispatched by the owned window when it is
 minimized because its owner is minimized.
 
-Note: The behavior that results from maximizing an AIR window is different from
-the Mac OS X standard behavior. Rather than toggling between an
-application-defined "standard" size and the last size set by the user, AIR
-windows toggle between the size last set by the application or user and the full
-usable area of the screen.
+> **Note:** The behavior that results from maximizing an AIR window is different
+> from the Mac OS X standard behavior. Rather than toggling between an
+> application-defined "standard" size and the last size set by the user, AIR
+> windows toggle between the size last set by the application or user and the
+> full usable area of the screen.
 
 On the Linux operating system, different window managers enforce different rules
 regarding setting the window display state:
@@ -301,13 +301,13 @@ regarding setting the window display state:
 - Some window managers do not honor the window `maximizable` or `minimizable`
   settings.
 
-Note: On Linux, window properties are changed asynchronously. If you change the
-display state in one line of your program, and read the value in the next, the
-value read will still reflect the old setting. On all platforms, the
-NativeWindow object dispatches the `displayStateChange` event when the display
-state changes. If you need to take some action based on the new state of the
-window, always do so in a `displayStateChange` event handler. See
-[Listening for window events](./listening-for-window-events.md).
+> **Note:** On Linux, window properties are changed asynchronously. If you
+> change the display state in one line of your program, and read the value in
+> the next, the value read will still reflect the old setting. On all platforms,
+> the NativeWindow object dispatches the `displayStateChange` event when the
+> display state changes. If you need to take some action based on the new state
+> of the window, always do so in a `displayStateChange` event handler. See
+> [Listening for window events](./listening-for-window-events.md).
 
 ## Example: Minimizing, maximizing, restoring and closing a window
 
@@ -433,9 +433,9 @@ When a window uses system chrome, the chrome provides drag controls for resizing
 the window and moving around the desktop. If a window does not use system chrome
 you must add your own controls to allow the user to resize and move the window.
 
-Note: To resize or move a window, you must first obtain a reference to the
-NativeWindow instance. For information about how to obtain a window reference,
-see [Getting a NativeWindow instance](#getting-a-nativewindow-instance).
+> **Note:** To resize or move a window, you must first obtain a reference to the
+> NativeWindow instance. For information about how to obtain a window reference,
+> see [Getting a NativeWindow instance](#getting-a-nativewindow-instance).
 
 #### Resizing a window
 
@@ -457,13 +457,13 @@ y position of a window near the bottom of the screen, then the full height
 change might not occur when the height change is applied before the y position
 change.
 
-Note: On Linux, window properties are changed asynchronously. If you resize a
-window in one line of your program, and read the dimensions in the next, they
-will still reflect the old settings. On all platforms, the NativeWindow object
-dispatches the `resize` event when the window resizes. If you need to take some
-action, such as laying out controls in the window, based on the new size or
-state of the window, always do so in a `resize` event handler. See
-[Listening for window events](./listening-for-window-events.md).
+> **Note:** On Linux, window properties are changed asynchronously. If you
+> resize a window in one line of your program, and read the dimensions in the
+> next, they will still reflect the old settings. On all platforms, the
+> NativeWindow object dispatches the `resize` event when the window resizes. If
+> you need to take some action, such as laying out controls in the window, based
+> on the new size or state of the window, always do so in a `resize` event
+> handler. See [Listening for window events](./listening-for-window-events.md).
 
 The scale mode of the stage determines how the window stage and its contents
 behaves when a window is resized. Keep in mind that the stage scale modes are
@@ -492,13 +492,13 @@ To move a window programmatically, set the `x`, `y`, or `bounds` properties of
 the window to the desired position. When you set the bounds, the window size and
 position can both be changed at the same time.
 
-Note: On Linux, window properties are changed asynchronously. If you move a
-window in one line of your program, and read the position in the next, the value
-read will still reflect the old setting. On all platforms, the NativeWindow
-object dispatches the `move` event when the position changes. If you need to
-take some action based on the new position of the window, always do so in a
-`move` event handler. See
-[Listening for window events](./listening-for-window-events.md).
+> **Note:** On Linux, window properties are changed asynchronously. If you move
+> a window in one line of your program, and read the position in the next, the
+> value read will still reflect the old setting. On all platforms, the
+> NativeWindow object dispatches the `move` event when the position changes. If
+> you need to take some action based on the new position of the window, always
+> do so in a `move` event handler. See
+> [Listening for window events](./listening-for-window-events.md).
 
 ## Example: Resizing and moving windows
 

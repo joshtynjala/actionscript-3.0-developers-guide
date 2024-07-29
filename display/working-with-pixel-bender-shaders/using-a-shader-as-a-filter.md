@@ -38,10 +38,11 @@ The following example demonstrates using a shader as a filter. The filter in
 this example inverts the red, green, and blue channel values of an image. The
 result is the "negative" version of the image.
 
-Note: The shader that this example uses is the invertRGB.pbk Pixel Bender kernel
-that is included with the Pixel Bender Toolkit. You can load the source code for
-the kernel from the Pixel Bender Toolkit installation directory. Compile the
-source code and save the bytecode file in the same directory as the source code.
+> **Note:** The shader that this example uses is the invertRGB.pbk Pixel Bender
+> kernel that is included with the Pixel Bender Toolkit. You can load the source
+> code for the kernel from the Pixel Bender Toolkit installation directory.
+> Compile the source code and save the bytecode file in the same directory as
+> the source code.
 
 The important ActionScript code is in these two methods:
 

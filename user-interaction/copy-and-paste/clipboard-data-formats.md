@@ -39,9 +39,9 @@ the ClipboardFormat strings. The valid data MIME types are:
 | Bitmap    | "image/x-vnd.adobe.air.bitmap"          |
 | File list | "application/x-vnd.adobe.air.file-list" |
 
-Note: Rich text format data is not available from the `clipboardData` property
-of the event object dispatched as a result of a `paste` event within HTML
-content.
+> **Note:** Rich text format data is not available from the `clipboardData`
+> property of the event object dispatched as a result of a `paste` event within
+> HTML content.
 
 ## Custom data formats
 
@@ -119,8 +119,8 @@ If a data format of the same type is added to a Clipboard object with the
 rendering function is never called). The rendering function may or may not be
 called again if the same clipboard data is accessed a second time.
 
-Note: On Mac OS X, deferred rendering works only with custom data formats. With
-standard data formats, the rendering function is called immediately.
+> **Note:** On Mac OS X, deferred rendering works only with custom data formats.
+> With standard data formats, the rendering function is called immediately.
 
 ### Pasting text using a deferred rendering function
 

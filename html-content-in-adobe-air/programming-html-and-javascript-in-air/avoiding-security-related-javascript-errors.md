@@ -34,9 +34,9 @@ strings generates JavaScript errors:
 
 - [Dynamically created script elements](#dynamically-created-script-elements)
 
-  Note: In some restricted cases, evaluation of strings is permitted. See
-  [Code restrictions for content in different sandboxes](../../security/air-security/html-security-in-adobe-air.md#code-restrictions-for-content-in-different-sandboxes)
-  for more information.
+  > **Note:** In some restricted cases, evaluation of strings is permitted. See
+  > [Code restrictions for content in different sandboxes](../../security/air-security/html-security-in-adobe-air.md#code-restrictions-for-content-in-different-sandboxes)
+  > for more information.
 
   Adobe maintains a list of Ajax frameworks known to support the application
   security sandbox, at <https://www.adobe.com/go/airappsandboxframeworks>.

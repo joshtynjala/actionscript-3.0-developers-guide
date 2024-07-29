@@ -179,7 +179,7 @@ algorithm.
     	}
     }
 
-Note: The stage only dispatches resize events in response to an orientation
-change when the `scaleMode` property is set to `noScale`. In other modes, the
-dimensions of the stage do not change; instead, the content is scaled to
-compensate.
+> **Note:** The stage only dispatches resize events in response to an
+> orientation change when the `scaleMode` property is set to `noScale`. In other
+> modes, the dimensions of the stage do not change; instead, the content is
+> scaled to compensate.

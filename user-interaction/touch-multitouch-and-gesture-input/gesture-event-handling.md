@@ -80,12 +80,13 @@ PressAndTapGestureEvent class:
     	addChild(myTextField);
     }
 
-Note: Not all GestureEvent, TransformGestureEvent, and PressAndTapGestureEvent
-event types are supported in all runtime environments. For example, not all
-touch-enabled devices are capable or detecting a multi-finger swipe. So, the
-InteractiveObject `gestureSwipe` events are not supported on those devices. Try
-testing for specific event support to ensure your application works, and see
-[Troubleshooting](./troubleshooting.md) for more information.
+> **Note:** Not all GestureEvent, TransformGestureEvent, and
+> PressAndTapGestureEvent event types are supported in all runtime environments.
+> For example, not all touch-enabled devices are capable or detecting a
+> multi-finger swipe. So, the InteractiveObject `gestureSwipe` events are not
+> supported on those devices. Try testing for specific event support to ensure
+> your application works, and see [Troubleshooting](./troubleshooting.md) for
+> more information.
 
 ## Gesture Event properties
 
@@ -120,12 +121,12 @@ change):
     	myTextField.text = evt.target.parent.rotation.toString();
     }
 
-Note: Not all TransformGestureEvent properties are supported in all runtime
-environments. For example, not all touch-enabled devices are capable or
-detecting the rotation of a gesture on the screen. So, the
-`TransformGestureEvent.rotation` property is not supported on those devices. Try
-testing for specific property support to ensure your application works, and see
-[Troubleshooting](./troubleshooting.md) for more information.
+> **Note:** Not all TransformGestureEvent properties are supported in all
+> runtime environments. For example, not all touch-enabled devices are capable
+> or detecting the rotation of a gesture on the screen. So, the
+> `TransformGestureEvent.rotation` property is not supported on those devices.
+> Try testing for specific property support to ensure your application works,
+> and see [Troubleshooting](./troubleshooting.md) for more information.
 
 ## Gesture phases
 
@@ -166,8 +167,9 @@ gesture. Change the object again once the pan gesture is complete.
     	}
     }
 
-Note: The frequency of the update phase depends on the runtime's environment.
-Some operating system and hardware combinations do not relay updates at all.
+> **Note:** The frequency of the update phase depends on the runtime's
+> environment. Some operating system and hardware combinations do not relay
+> updates at all.
 
 ### Gesture phase is "all" for simple gesture events
 

@@ -395,9 +395,9 @@ XMLSocket object to connect to the server:
   domains. For details on cross-domain policy files, see
   [AIR security](../security/air-security/index.md).
 
-Note: Setting up a server to communicate with the XMLSocket object can be
-challenging. If your application does not require real-time interactivity, use
-the URLLoader class instead of the XMLSocket class.
+> **Note:** Setting up a server to communicate with the XMLSocket object can be
+> challenging. If your application does not require real-time interactivity, use
+> the URLLoader class instead of the XMLSocket class.
 
 You can use the `XMLSocket.connect()` and `XMLSocket.send()` methods of the
 XMLSocket class to transfer XML to and from a server over a socket connection.

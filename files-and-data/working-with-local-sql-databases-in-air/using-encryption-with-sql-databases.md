@@ -406,13 +406,13 @@ Follow these steps to use the EncryptionKeyGenerator class in your application:
     The `getEncryptionKey()` method has one required parameter, which is the
     password obtained in step 5.
 
-    Note: To maintain the highest level of security and privacy for data, an
-    application must require the user to enter a password each time the
-    application connects to the database. Do not store the user's password or
-    the database encryption key directly. Doing so exposes security risks.
-    Instead, as demonstrated in this example, an application should use the same
-    technique to derive the encryption key from the password both when creating
-    the encrypted database and when connecting to it later.
+    > **Note:** To maintain the highest level of security and privacy for data,
+    > an application must require the user to enter a password each time the
+    > application connects to the database. Do not store the user's password or
+    > the database encryption key directly. Doing so exposes security risks.
+    > Instead, as demonstrated in this example, an application should use the
+    > same technique to derive the encryption key from the password both when
+    > creating the encrypted database and when connecting to it later.
 
     The `getEncryptionKey()` method also accepts a second (optional) parameter,
     the `overrideSaltELSKey` parameter. The EncryptionKeyGenerator creates a

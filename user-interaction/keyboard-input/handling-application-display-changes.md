@@ -75,9 +75,10 @@ you can return the application display to normal.
     	}
     }
 
-Note: On Android, there are circumstances, including fullscreen mode, in which
-the exact dimensions of the keyboard are not available from the operating
-system. In these cases, the size is estimated. Also, in landscape orientations,
-the native fullscreen IME keyboard is used for all text entry. This IME keyboard
-has a built-in text entry field and obscures the entire stage. There is no way
-to display a landscape keyboard that does not fill the screen.
+> **Note:** On Android, there are circumstances, including fullscreen mode, in
+> which the exact dimensions of the keyboard are not available from the
+> operating system. In these cases, the size is estimated. Also, in landscape
+> orientations, the native fullscreen IME keyboard is used for all text entry.
+> This IME keyboard has a built-in text entry field and obscures the entire
+> stage. There is no way to display a landscape keyboard that does not fill the
+> screen.

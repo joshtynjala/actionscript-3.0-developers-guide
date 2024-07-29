@@ -51,6 +51,7 @@ The `orientationChange` event can also be used to detect orientation changes.
 The `orientationChange` event is only dispatched when auto-orientation is
 enabled.
 
-Note: On some mobile platforms, the stage dispatches a cancelable
-`orientationChanging` event before dispatching the resize or orientationChange
-events. Since the event is not supported on all platforms, avoid relying on it.
+> **Note:** On some mobile platforms, the stage dispatches a cancelable
+> `orientationChanging` event before dispatching the resize or orientationChange
+> events. Since the event is not supported on all platforms, avoid relying on
+> it.

@@ -18,9 +18,9 @@ handling has completed. When the focused object dispatches this event, the
 area of the stage obscured by the virtual keyboard. This event cannot be
 canceled.
 
-Note: If the keyboard changes size, for example, when the user changes the
-keyboard type, the focused object dispatches a second softKeyboardActivate
-event.
+> **Note:** If the keyboard changes size, for example, when the user changes the
+> keyboard type, the focused object dispatches a second softKeyboardActivate
+> event.
 
 `softKeyboardDeactivate` event — dispatched when the virtual keyboard closes for
 any reason. This event cannot be canceled.

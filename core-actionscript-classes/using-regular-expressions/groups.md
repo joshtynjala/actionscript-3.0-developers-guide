@@ -169,5 +169,5 @@ Here is another example, which uses two named groups, with the identifiers
     trace(result.name); // bob
     trace(result.dom); // example
 
-Note: Named groups are not part of the ECMAScript language specification. They
-are an added feature in ActionScript 3.0.
+> **Note:** Named groups are not part of the ECMAScript language specification.
+> They are an added feature in ActionScript 3.0.

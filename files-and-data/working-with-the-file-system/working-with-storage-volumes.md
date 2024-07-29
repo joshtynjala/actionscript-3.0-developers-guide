@@ -7,9 +7,9 @@ event when a storage volume is mounted. And it dispatches a
 `storageVolumeUnmount` event when a volume is unmounted. The
 StorageVolumeChangeEvent class defines these events.
 
-Note: On modern Linux distributions, the StorageVolumeInfo object only
-dispatches `storageVolumeMount` and `storageVolumeUnmount` events for physical
-devices and network drives mounted at particular locations.
+> **Note:** On modern Linux distributions, the StorageVolumeInfo object only
+> dispatches `storageVolumeMount` and `storageVolumeUnmount` events for physical
+> devices and network drives mounted at particular locations.
 
 The `storageVolume` property of the StorageVolumeChangeEvent class is a
 StorageVolume object. The StorageVolume class defines basic properties of the
@@ -69,9 +69,9 @@ volumes:
     	trace(volumes[i].name, volumes[i].rootDirectory.nativePath);
     }
 
-Note: On modern Linux distributions, the `getStorageVolumes()` method returns
-objects corresponding to physical devices and network drives mounted at
-particular locations.
+> **Note:** On modern Linux distributions, the `getStorageVolumes()` method
+> returns objects corresponding to physical devices and network drives mounted
+> at particular locations.
 
 The `File.getRootDirectories()` method lists the root directories (see
 [Pointing to the file system root](./working-with-file-objects-in-air.md#pointing-to-the-file-system-root).

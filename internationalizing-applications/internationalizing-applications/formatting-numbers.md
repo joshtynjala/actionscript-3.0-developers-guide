@@ -91,12 +91,12 @@ This example first creates a NumberFormatter object and then:
 
 - tells the formatter not to use any grouping separators.
 
-Note: When some of these properties change, the resulting number format no
-longer corresponds to the preferred format for the specified locale. Use some of
-these properties only when locale-awareness is not important; when you need
-detailed control over a single aspect of the format, such as the number of
-trailing zeroes; or when the user requests the change directly, for example,
-through the Windows Control Panel.
+> **Note:** When some of these properties change, the resulting number format no
+> longer corresponds to the preferred format for the specified locale. Use some
+> of these properties only when locale-awareness is not important; when you need
+> detailed control over a single aspect of the format, such as the number of
+> trailing zeroes; or when the user requests the change directly, for example,
+> through the Windows Control Panel.
 
 ## Parsing strings that contain numeric values
 

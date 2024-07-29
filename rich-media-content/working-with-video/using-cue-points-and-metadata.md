@@ -490,9 +490,10 @@ event cue points in the XMP meta data:
     </xmpDM:markers>
     onMetaData fired
 
-Note: In XMP data, time is stored as DVA Ticks rather than seconds. To compute
-the cue point time, divide the start time by the framerate. For example, the
-start time of 7695905817600 divided by a framerate of 254016000000 equals 30:30.
+> **Note:** In XMP data, time is stored as DVA Ticks rather than seconds. To
+> compute the cue point time, divide the start time by the framerate. For
+> example, the start time of 7695905817600 divided by a framerate of
+> 254016000000 equals 30:30.
 
 To see the complete raw XMP metadata, which includes the framerate, remove the
 comment identifiers (//'s) preceding the second and third `trace()` statements

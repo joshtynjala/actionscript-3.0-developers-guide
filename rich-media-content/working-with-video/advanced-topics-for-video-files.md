@@ -54,8 +54,8 @@ Macintosh® computer by using a path that uses a relative slash (/), the video
 will not play. Non-system drives include, but are not limited to, CD-ROMs,
 partitioned hard disks, removable storage media, and connected storage devices.
 
-Note: The reason for this failure is a limitation of the operating system, not a
-limitation in Flash Player or AIR.
+> **Note:** The reason for this failure is a limitation of the operating system,
+> not a limitation in Flash Player or AIR.
 
 For an FLV file to play from a non-system drive on a Macintosh, refer to it with
 an absolute path using a colon-based notation (:) rather than slash-based

@@ -301,15 +301,15 @@ the IMManager class. Three things happen in this line of code:
   assigned to the `currentStatus` variable, which is then assigned as the
   content (the `value` property) of the `status` text field.
 
-Note: If you're following along in the code, you've probably noticed that in the
-source code for the `updateStatus()` function, the line of code that calls the
-`getSWF()` function, is actually written as follows: var currentStatus =
-getSWF("\${application}").getStatus(); The `${application}` text is a
-placeholder in the HTML page template; when Adobe Flash Builder generates the
-actual HTML page for the application, this placeholder text is replaced by the
-same text that is used as the `object` tag's `id` attribute and the `embed`
-tag's `name` attribute (`IntrovertIMApp` in the example). That is the value that
-is expected by the `getSWF()` function.
+> **Note:** If you're following along in the code, you've probably noticed that
+> in the source code for the `updateStatus()` function, the line of code that
+> calls the `getSWF()` function, is actually written as follows: var
+> currentStatus = getSWF("\${application}").getStatus(); The `${application}`
+> text is a placeholder in the HTML page template; when Adobe Flash Builder
+> generates the actual HTML page for the application, this placeholder text is
+> replaced by the same text that is used as the `object` tag's `id` attribute
+> and the `embed` tag's `name` attribute (`IntrovertIMApp` in the example). That
+> is the value that is expected by the `getSWF()` function.
 
 The `sendMessage()` JavaScript function demonstrates passing a parameter to an
 ActionScript function. (`sendMessage()` is thefunction that is called when the

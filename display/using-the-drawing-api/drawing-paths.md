@@ -23,8 +23,9 @@ set of coordinates that correspond to the coordinates for each drawing command.
 Create a Vector instance containing coordinates (Number instances) and pass it
 to the `drawPath()` method as the second (`data`) argument.
 
-Note: The values in the vector are not Point objects; the vector is a series of
-numbers where each group of two numbers represents an x/y coordinate pair.
+> **Note:** The values in the vector are not Point objects; the vector is a
+> series of numbers where each group of two numbers represents an x/y coordinate
+> pair.
 
 The `Graphics.drawPath()` method matches each command with its respective point
 values (a collection of two or four numbers) to generate a path in the Graphics

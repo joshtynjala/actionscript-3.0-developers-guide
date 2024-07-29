@@ -9,9 +9,11 @@ string constants to use when setting or comparing orientation values.
 The Stage class defines two properties that report orientation:
 
 - Stage.deviceOrientation — Reports the physical orientation of the device
-  relative to the default position. Note: The deviceOrientation is not always
-  available when your application first starts up or when the device is lying
-  flat. In these cases, the device orientation is reported as _unknown_.
+  relative to the default position.
+
+  > **Note:** The deviceOrientation is not always available when your
+  > application first starts up or when the device is lying flat. In these
+  > cases, the device orientation is reported as _unknown_.
 
 - Stage.orientation — Reports the orientation of the Stage relative to the
   default position. When auto-orientation is enabled, the stage rotates in the

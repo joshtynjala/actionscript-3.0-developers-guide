@@ -5,9 +5,9 @@ events, in ActionScript. You can listen for a series of touch events defined by
 the event type constants in the
 [TouchEvent class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Multitouch.html).
 
-Note: For multiple touch point input (such as touching a device with more than
-one finger), the first point of contact dispatches a mouse event and a touch
-event.
+> **Note:** For multiple touch point input (such as touching a device with more
+> than one finger), the first point of contact dispatches a mouse event and a
+> touch event.
 
 To handle a basic touch event:
 
@@ -73,12 +73,12 @@ See the
 [TouchEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/TouchEvent.html)
 class for the properties available through the event object.
 
-Note: Not all TouchEvent properties are supported in all runtime environments.
-For example, not all touch-enabled devices are capable or detecting the amount
-of pressure the user is applying to the touch screen. So, the
-`TouchEvent.pressure` property is not supported on those devices. Try testing
-for specific property support to ensure your application works, and see
-[Troubleshooting](./troubleshooting.md) for more information.
+> **Note:** Not all TouchEvent properties are supported in all runtime
+> environments. For example, not all touch-enabled devices are capable or
+> detecting the amount of pressure the user is applying to the touch screen. So,
+> the `TouchEvent.pressure` property is not supported on those devices. Try
+> testing for specific property support to ensure your application works, and
+> see [Troubleshooting](./troubleshooting.md) for more information.
 
 ## Touch event phases
 
@@ -113,10 +113,10 @@ give the user visual feedback as they touch and move a display object:
     	myTextField.text = "touch end" + event.touchPointID;
     }
 
-Note: The initial touch listener is attached to mySprite, but the listeners for
-moving and ending the touch event are not. If the users's finger or pointing
-devices moves ahead of the display object, the Stage continues to listen for the
-touch event.
+> **Note:** The initial touch listener is attached to mySprite, but the
+> listeners for moving and ending the touch event are not. If the users's finger
+> or pointing devices moves ahead of the display object, the Stage continues to
+> listen for the touch event.
 
 ### Touch Point ID
 

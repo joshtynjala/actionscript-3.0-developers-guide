@@ -26,8 +26,9 @@ URL scheme conventions:
 | app-storage:/ | An alias to the local storage directory, standardized by the runtime. Files accessed from this path are assigned a non-application sandbox.                                                                            |
 | file:///      | An alias that represents the root of the user's hard disk. A file accessed from this path is assigned an application sandbox if the file exists in the application directory, and a non-application sandbox otherwise. |
 
-Note: AIR applications cannot modify content using the app: URL scheme. Also,
-the application directory may be read only because of administrator settings.
+> **Note:** AIR applications cannot modify content using the app: URL scheme.
+> Also, the application directory may be read only because of administrator
+> settings.
 
 Unless there are administrator restrictions to the user's computer, AIR
 applications are privileged to write to any location on the user's hard drive.

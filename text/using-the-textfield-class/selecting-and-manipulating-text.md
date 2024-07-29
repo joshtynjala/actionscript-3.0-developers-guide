@@ -5,9 +5,9 @@ methods of the TextField class use index positions to set the range of text to
 manipulate, you can programmatically select dynamic or input text even if you
 don't know the content.
 
-Note: In Flash Professional, if you choose the selectable option on a static
-text field, the text field that is exported and placed on the display list is a
-regular, dynamic text field.
+> **Note:** In Flash Professional, if you choose the selectable option on a
+> static text field, the text field that is exported and placed on the display
+> list is a regular, dynamic text field.
 
 ## Selecting text
 

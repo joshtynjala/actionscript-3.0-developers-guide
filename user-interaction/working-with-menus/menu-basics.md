@@ -199,8 +199,8 @@ The following example creates a Sprite and adds a simple edit context menu:
         trace("paste");
     }
 
-Note: In contrast to SWF content displayed in a browser environment, context
-menus in AIR do not have any built-in commands.
+> **Note:** In contrast to SWF content displayed in a browser environment,
+> context menus in AIR do not have any built-in commands.
 
 #### Customizing a Flash Player context menu
 
@@ -275,7 +275,7 @@ menu and its menu items dispatch a `preparing` event to any registered
 listeners. Interaction includes opening the menu or selecting an item with a
 keyboard shortcut.
 
-Note: The `preparing` event is available only for Adobe AIR 2.6 and later.
+> **Note:** The `preparing` event is available only for Adobe AIR 2.6 and later.
 
 Displaying:  
 Immediately before a menu is displayed, the menu and its menu items dispatch a
@@ -308,8 +308,9 @@ event on a menu, you can identify the selected item using the event `target`
 property. As the event bubbles up through the menu hierarchy, the
 `currentTarget` property of the event object identifies the current menu object.
 
-Note: ContextMenu and ContextMenuItem objects dispatch `menuItemSelect` and
-`menuSelect` events as well as `select`, `preparing`, and `displaying` events.
+> **Note:** ContextMenu and ContextMenuItem objects dispatch `menuItemSelect`
+> and `menuSelect` events as well as `select`, `preparing`, and `displaying`
+> events.
 
 ## Key equivalents for native menu commands (AIR)
 
@@ -339,9 +340,9 @@ The assigned key equivalent string is automatically displayed beside the menu
 item name. The format depends on the user's operating system and system
 preferences.
 
-Note: If you assign the `Keyboard.COMMAND` value to a key modifier array on the
-Windows operating system, no key equivalent is displayed in the menu. However,
-the control key must be used to activate the menu command.
+> **Note:** If you assign the `Keyboard.COMMAND` value to a key modifier array
+> on the Windows operating system, no key equivalent is displayed in the menu.
+> However, the control key must be used to activate the menu command.
 
 The following example assigns `Ctrl+Shift+G` as the key equivalent for a menu
 item:
@@ -356,9 +357,9 @@ modifier array directly:
     item.keyEquivalent = "G";
     item.keyEquivalentModifiers = [Keyboard.CONTROL];
 
-Note: Key equivalents are only triggered for application and window menus. If
-you add a key equivalent to a context or pop-up menu, the key equivalent is
-displayed in the menu label, but the associated menu command is never invoked.
+> **Note:** Key equivalents are only triggered for application and window menus.
+> If you add a key equivalent to a context or pop-up menu, the key equivalent is
+> displayed in the menu label, but the associated menu command is never invoked.
 
 ## Mnemonics (AIR)
 

@@ -16,7 +16,8 @@ ways to use Video in your projects:
 
 - Use the VideoDisplay control.
 
-Note: Instances of a Video object on the Stage are instances of the Video class.
+> **Note:** Instances of a Video object on the Stage are instances of the Video
+> class.
 
 Even though the Video class is in the flash.media package, it inherits from the
 flash.display.DisplayObject class. Therefore, all display object functionality,

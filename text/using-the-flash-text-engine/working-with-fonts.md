@@ -5,8 +5,8 @@ identify a font face and define some of its characteristics. These
 characteristics include the font name, weight, posture, rendering, and how to
 find the font (device versus embedded).
 
-Note: FTE does not support Type 1 fonts or bitmap fonts such as Type 3, ATC,
-sfnt-wrapped CID, or Naked CID.
+> **Note:** FTE does not support Type 1 fonts or bitmap fonts such as Type 3,
+> ATC, sfnt-wrapped CID, or Naked CID.
 
 ## Defining font characteristics (FontDescription object)
 

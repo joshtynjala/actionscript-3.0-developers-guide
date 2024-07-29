@@ -8,12 +8,12 @@ However, content usually requires policy files in order to load data from other
 domains (see
 [Website controls (policy files)](./permission-controls.md#website-controls-policy-files)).
 
-Note: Content running in the AIR application sandbox is never served from a
-remote domain (unless the developer intentionally imports remote content into
-the application sandbox), so it cannot participate in the types of attacks that
-policy files protect against. AIR content in the application sandbox is not
-restricted from loading data by policy files. However, AIR content in other
-sandboxes is subject to the restrictions described here.
+> **Note:** Content running in the AIR application sandbox is never served from
+> a remote domain (unless the developer intentionally imports remote content
+> into the application sandbox), so it cannot participate in the types of
+> attacks that policy files protect against. AIR content in the application
+> sandbox is not restricted from loading data by policy files. However, AIR
+> content in other sandboxes is subject to the restrictions described here.
 
 ## Using URLLoader and URLStream
 
@@ -160,11 +160,11 @@ to call these methods from the AIR application sandbox.
 Calling the `FileReference.download()` method opens a dialog box in which the
 user can download a file from a remote server.
 
-Note: If your server requires user authentication, only SWF files running in a
-browser—that is, using the browser plug-in or ActiveX control—can provide a
-dialog box to prompt the user for a user name and password for authentication,
-and only for downloads. Flash Player does not allow uploads to a server that
-requires user authentication.
+> **Note:** If your server requires user authentication, only SWF files running
+> in a browser—that is, using the browser plug-in or ActiveX control—can provide
+> a dialog box to prompt the user for a user name and password for
+> authentication, and only for downloads. Flash Player does not allow uploads to
+> a server that requires user authentication.
 
 Uploads and downloads are not allowed if the calling SWF file is in the
 local-with-filesystem sandbox.

@@ -305,11 +305,11 @@ to a remote resource is to try it. The service monitoring framework provides an
 event-based means of responding to changes in network connectivity to a
 specified host.
 
-Note: The service monitoring framework detects whether a server responds
-acceptably to a request. A successful check does not guarantee full
-connectivity. Scalable web services often use caching and load-balancing
-appliances to redirect traffic to a cluster of web servers. In this situation,
-service providers only provide a partial diagnosis of network connectivity.
+> **Note:** The service monitoring framework detects whether a server responds
+> acceptably to a request. A successful check does not guarantee full
+> connectivity. Scalable web services often use caching and load-balancing
+> appliances to redirect traffic to a cluster of web servers. In this situation,
+> service providers only provide a partial diagnosis of network connectivity.
 
 ### Service monitoring
 
@@ -335,9 +335,9 @@ HTTP connectivity for a specified URLRequest.
 The SocketMonitor class, also a subclass of the ServiceMonitor class, detects
 changes in connectivity to a specified host at a specified port.
 
-Note: Prior to AIR 2, the service monitor framework was published in the
-servicemonitor.swc library. This library is now deprecated. Use the aircore.swc
-library instead.
+> **Note:** Prior to AIR 2, the service monitor framework was published in the
+> servicemonitor.swc library. This library is now deprecated. Use the
+> aircore.swc library instead.
 
 #### Flash CS4 and CS5 Professional
 

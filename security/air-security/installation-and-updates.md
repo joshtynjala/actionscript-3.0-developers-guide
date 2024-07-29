@@ -9,12 +9,13 @@ When Adobe AIR is installed and an AIR installer file is opened, the AIR runtime
 administers the installation process. When a native installer is used, the
 operating system administers the installation process.
 
-Note: Developers can specify a version, and application name, and a publisher
-source when using the AIR file format, but the initial application installation
-workflow itself cannot be modified. This restriction is advantageous for users
-because all AIR applications share a secure, streamlined, and consistent
-installation procedure administered by the runtime. If application customization
-is necessary, it can be provided when the application is first executed.
+> **Note:** Developers can specify a version, and application name, and a
+> publisher source when using the AIR file format, but the initial application
+> installation workflow itself cannot be modified. This restriction is
+> advantageous for users because all AIR applications share a secure,
+> streamlined, and consistent installation procedure administered by the
+> runtime. If application customization is necessary, it can be provided when
+> the application is first executed.
 
 ## Runtime installation location
 
@@ -34,8 +35,8 @@ On Mac OS, to install an updated version of an application, the user must have
 adequate system privileges to install to the application directory. On Windows
 and Linux, a user must have administrative privileges.
 
-Note: On iOS, the AIR runtime is not installed separately; every AIR app is a
-self-contained application.
+> **Note:** On iOS, the AIR runtime is not installed separately; every AIR app
+> is a self-contained application.
 
 The runtime can be installed in two ways: using the seamless install feature
 (installing directly from a web browser) or via a manual install. AIR
@@ -196,8 +197,8 @@ The Updater class can only be used to update applications distributed as AIR
 files. Applications distributed as native applications must use the update
 facilities, if any, of the native operating system.
 
-Note: Developers can specify the version of an application by setting the
-versionNumber property of the application descriptor file.
+> **Note:** Developers can specify the version of an application by setting the
+> versionNumber property of the application descriptor file.
 
 ## Uninstalling an AIR application
 

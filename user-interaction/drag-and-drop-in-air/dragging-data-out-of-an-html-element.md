@@ -36,5 +36,5 @@ which increases the likelihood that other applications can use the dragged data.
     								new Array(dragFile));
     }
 
-Note: When you call the `setData()` method of `dataTransfer` object, no data is
-added by the default drag-and-drop behavior.
+> **Note:** When you call the `setData()` method of `dataTransfer` object, no
+> data is added by the default drag-and-drop behavior.

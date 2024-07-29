@@ -65,11 +65,11 @@ window:
 Setting _systemChrome_ to _standard_ when _transparent_ is `true` or `type` is
 `lightweight` _is not supported._
 
-Note: You cannot set the initialization properties for a window created with the
-JavaScript `window.open()` function. You can, however, override how these
-windows are created by implementing your own HTMLHost class. See
-[Handling JavaScript calls to window.open()](../../html-content-in-adobe-air/scripting-the-air-html-container/defining-browser-like-user-interfaces-for-html-content.md#handling-javascript-calls-to-windowopen)
-for more information.
+> **Note:** You cannot set the initialization properties for a window created
+> with the JavaScript `window.open()` function. You can, however, override how
+> these windows are created by implementing your own HTMLHost class. See
+> [Handling JavaScript calls to window.open()](../../html-content-in-adobe-air/scripting-the-air-html-container/defining-browser-like-user-interfaces-for-html-content.md#handling-javascript-calls-to-windowopen)
+> for more information.
 
 When you create a window with the Flex mx:Window class, specify the
 initialization properties on the window object itself, either in the MXML
@@ -123,9 +123,9 @@ AIR application built with ActionScript:
     	}
     }
 
-Note: Technically, you CAN access the `nativeWindow` property in the constructor
-function of the main class. However, this is a special case applying only to the
-initial application window.
+> **Note:** Technically, you CAN access the `nativeWindow` property in the
+> constructor function of the main class. However, this is a special case
+> applying only to the initial application window.
 
 When creating an application in Flash Professional, the main document class is
 created automatically if you do not create your own in a separate ActionScript
@@ -197,11 +197,11 @@ content to the window without compromise.
 
 The scale mode for Flex and HTML windows is set to `noScale` automatically.
 
-Note: To determine the maximum and minimum window sizes allowed on the current
-operating system, use the following static NativeWindow properties:
-
-    var maxOSSize:Point = NativeWindow.systemMaxSize;
-    var minOSSize:Point = NativeWindow.systemMinSize;
+> **Note:** To determine the maximum and minimum window sizes allowed on the
+> current operating system, use the following static NativeWindow properties:
+>
+>     var maxOSSize:Point = NativeWindow.systemMaxSize;
+>     var minOSSize:Point = NativeWindow.systemMinSize;
 
 ## Creating an HTML window
 
@@ -216,9 +216,9 @@ chrome is created to display the content at the specified URL. For example:
 
     newWindow = window.open("xmpl.html", "logWindow", "height=600, width=400, top=10, left=10");
 
-Note: You can extend the HTMLHost class in ActionScript to customize the window
-created with the JavaScript `window.open()` function. See
-[About extending the HTMLHost class](../../html-content-in-adobe-air/scripting-the-air-html-container/defining-browser-like-user-interfaces-for-html-content.md#about-extending-the-htmlhost-class).
+> **Note:** You can extend the HTMLHost class in ActionScript to customize the
+> window created with the JavaScript `window.open()` function. See
+> [About extending the HTMLHost class](../../html-content-in-adobe-air/scripting-the-air-html-container/defining-browser-like-user-interfaces-for-html-content.md#about-extending-the-htmlhost-class).
 
 Content in the application security sandbox has access to the more powerful
 method of creating windows, `HTMLLoader.createRootWindow()`. With this method,
@@ -234,9 +234,9 @@ chrome that is 300x400 pixels in size:
     newHTMLLoader = air.HTMLLoader.createRootWindow(true, options, true, windowBounds);
     newHTMLLoader.load(new air.URLRequest("xmpl.html"));
 
-Note: If the content loaded by a new window is outside the application security
-sandbox, the window object does not have the AIR properties: `runtime`,
-`nativeWindow`, or `htmlLoader`.
+> **Note:** If the content loaded by a new window is outside the application
+> security sandbox, the window object does not have the AIR properties:
+> `runtime`, `nativeWindow`, or `htmlLoader`.
 
 If you create a transparent window, then SWF content embedded in the HTML loaded
 into that window is not always displayed. You must set the `wmode` parameter of
@@ -254,8 +254,8 @@ function. In the context of the previous example, the statement
 `newHTMLLoader.window` would reference the JavaScript Window object of the
 created window.
 
-Note: The `createRootWindow()` function can be called from both JavaScript and
-ActionScript.
+> **Note:** The `createRootWindow()` function can be called from both JavaScript
+> and ActionScript.
 
 ## Creating a mx:Window
 
@@ -321,12 +321,13 @@ using the `flash.display.Loader` class:
     	}
     }
 
-Note: Older SWF files created using ActionScript 1 or 2 share global states such
-as class definitions, singletons, and global variables if they are loaded into
-the same window. If such a SWF file relies on untouched global states to work
-correctly, it cannot be loaded more than once into the same window, or loaded
-into the same window as another SWF file using overlapping class definitions and
-variables. This content can be loaded into separate windows.
+> **Note:** Older SWF files created using ActionScript 1 or 2 share global
+> states such as class definitions, singletons, and global variables if they are
+> loaded into the same window. If such a SWF file relies on untouched global
+> states to work correctly, it cannot be loaded more than once into the same
+> window, or loaded into the same window as another SWF file using overlapping
+> class definitions and variables. This content can be loaded into separate
+> windows.
 
 #### Loading HTML content into a NativeWindow
 

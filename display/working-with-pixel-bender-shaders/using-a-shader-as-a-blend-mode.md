@@ -28,9 +28,9 @@ uses a lighten blend mode based on luminosity. The result of the blend is that
 the lightest pixel value from either of the blended objects becomes the pixel
 that's displayed.
 
-Note: The code for this example was written by Mario Klingemann. Thank you Mario
-for sharing this example. You can see more of Mario's work and read his writing
-at [www.quasimondo.com/](http://www.quasimondo.com/).
+> **Note:** The code for this example was written by Mario Klingemann. Thank you
+> Mario for sharing this example. You can see more of Mario's work and read his
+> writing at [www.quasimondo.com/](http://www.quasimondo.com/).
 
 The important ActionScript code is in these two methods:
 
@@ -171,11 +171,11 @@ create the "LumaLighten.pbj" Pixel Bender bytecode file:
 For more information on using blend modes, see
 [Applying blending modes](../display-programming/applying-blending-modes.md).
 
-Note: When a Pixel Bender shader program is run as a blend in Flash Player or
-AIR, the sampling and `outCoord()` functions behave differently than in other
-contexts.In a blend, a sampling function will always return the current pixel
-being evaluated by the shader. You cannot, for example, use add an offset to
-`outCoord()` in order to sample a neighboring pixel. Likewise, if you use the
-`outCoord()` function outside a sampling function, its coordinates always
-evaluate to 0. You cannot, for example, use the position of a pixel to influence
-how the blended images are combined.
+> **Note:** When a Pixel Bender shader program is run as a blend in Flash Player
+> or AIR, the sampling and `outCoord()` functions behave differently than in
+> other contexts.In a blend, a sampling function will always return the current
+> pixel being evaluated by the shader. You cannot, for example, use add an
+> offset to `outCoord()` in order to sample a neighboring pixel. Likewise, if
+> you use the `outCoord()` function outside a sampling function, its coordinates
+> always evaluate to 0. You cannot, for example, use the position of a pixel to
+> influence how the blended images are combined.

@@ -23,9 +23,10 @@ and a magnitude. The methods of the Vector3D class let you perform common
 calculations with spatial vectors, such as addition, dot product, and cross
 product calculations.
 
-Note: The Vector3D class is not related to the ActionScript Vector class. The
-Vector3D class contains properties and methods for defining and manipulating 3D
-points, while the Vector class supports arrays of typed objects.
+> **Note:** The Vector3D class is not related to the ActionScript Vector class.
+> The Vector3D class contains properties and methods for defining and
+> manipulating 3D points, while the Vector class supports arrays of typed
+> objects.
 
 ## Creating Matrix3D objects
 
@@ -52,10 +53,10 @@ three separate transformations to each point of the cube. However it is much
 more efficient to precalculate multiple transformations in one Matrix3D object
 and then perform one matrix transformation on each of the points.
 
-Note: The order in which matrix transformations are applied is important. Matrix
-calculations are not commutative. For example, applying a rotation followed by a
-translation gives a different result than applying the same translation followed
-by the same rotation.
+> **Note:** The order in which matrix transformations are applied is important.
+> Matrix calculations are not commutative. For example, applying a rotation
+> followed by a translation gives a different result than applying the same
+> translation followed by the same rotation.
 
 The following example shows two ways of performing multiple 3D transformations.
 

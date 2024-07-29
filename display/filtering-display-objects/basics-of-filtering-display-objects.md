@@ -8,9 +8,9 @@ instance. The built-in filters range from basic, such as the drop shadow and
 glow filters, to complex, such as the displacement map filter and the
 convolution filter.
 
-Note: In addition to the built-in filters, you can also program custom filters
-and effects using Pixel Bender. See
-[Working with Pixel Bender shaders](../working-with-pixel-bender-shaders/index.md).
+> **Note:** In addition to the built-in filters, you can also program custom
+> filters and effects using Pixel Bender. See
+> [Working with Pixel Bender shaders](../working-with-pixel-bender-shaders/index.md).
 
 #### Important concepts and terms
 

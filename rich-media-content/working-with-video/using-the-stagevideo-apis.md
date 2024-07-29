@@ -14,7 +14,7 @@ objects, rather than a Video object, to display streaming video.
 On Flash Player, when you receive notification that stage video is no longer
 available, switch your video stream back to a Video object.
 
-Note: You cannot create StageVideo objects.
+> **Note:** You cannot create StageVideo objects.
 
 ## Stage.stageVideos property
 

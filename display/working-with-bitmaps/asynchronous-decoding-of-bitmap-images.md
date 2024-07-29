@@ -43,9 +43,9 @@ specify the bitmap loading scheme. The default loading scheme is synchronous.
 </tbody>
 </table>
 
-Note: If the file being loaded is a bitmap image and the decoding policy used is
-`ON_LOAD`, the image is decoded asynchronously before the `COMPLETE` event is
-dispatched.
+> **Note:** If the file being loaded is a bitmap image and the decoding policy
+> used is `ON_LOAD`, the image is decoded asynchronously before the `COMPLETE`
+> event is dispatched.
 
 The following code shows the usage of the `ImageDecodingPolicy` class:
 

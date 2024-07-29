@@ -59,8 +59,8 @@ Another type of indexed array that's available in ActionScript 3.0 is the Vector
 class. A Vector instance is a _typed array_, which means that all the elements
 in a Vector instance always have the same data type.
 
-Note: The Vector class is available starting with Flash Player 10 and Adobe AIR
-1.5.
+> **Note:** The Vector class is available starting with Flash Player 10 and
+> Adobe AIR 1.5.
 
 When you declare a Vector variable or instantiate a Vector object, you
 explicitly specify the data type of the objects that the Vector can contain. The
@@ -328,9 +328,9 @@ sense in light of the `splice()` method's versatility. You can use the
 elements from an array. When used to remove elements, the `splice()` method
 returns an array containing the elements removed.
 
-Note: If a Vector object's `fixed` property is `true`, the total number of
-elements in the Vector can't change. If you try to add a new element to a
-fixed-length Vector using the techniques described here, an error occurs.
+> **Note:** If a Vector object's `fixed` property is `true`, the total number of
+> elements in the Vector can't change. If you try to add a new element to a
+> fixed-length Vector using the techniques described here, an error occurs.
 
 ## Retrieving values and removing array elements
 
@@ -411,10 +411,10 @@ entries at the end of the array, as shown in the following code:
     oceans.length = 2;
     trace(oceans); // output: Arctic,Pacific
 
-Note: If a Vector object's `fixed` property is `true`, the total number of
-elements in the Vector can't change. If you try to remove an element from or
-truncate a fixed-length Vector using the techniques described here, an error
-occurs.
+> **Note:** If a Vector object's `fixed` property is `true`, the total number of
+> elements in the Vector can't change. If you try to remove an element from or
+> truncate a fixed-length Vector using the techniques described here, an error
+> occurs.
 
 ## Sorting an array
 
@@ -552,8 +552,8 @@ objects. These objects are expected to have at least one common property that
 can be used as the sort key. The use of the `sortOn()` method for arrays of any
 other type yields unexpected results.
 
-Note: The Vector class does not include a `sortOn()` method. This method is only
-available for Array objects.
+> **Note:** The Vector class does not include a `sortOn()` method. This method
+> is only available for Array objects.
 
 The following example revises the `poets` Array so that each element is an
 object instead of a string. Each object holds both the poet's last name and year

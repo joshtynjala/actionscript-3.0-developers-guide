@@ -30,13 +30,13 @@ that listens to the `enterFrame` event, moving the animated ball a certain
 amount each frame, and as the screen is updated (each frame), the ball would be
 redrawn in its new location, creating motion.
 
-Note: Another way to perform an action repeatedly over time is to use the Timer
-class. A Timer instance triggers an event notification each time a specified
-amount of time has past. You could write code that performs animation by
-handling the Timer class's timer event, setting the time interval to a small one
-(some fraction of a second). For more information about using the Timer class,
-see
-[Controlling time intervals](../../core-actionscript-classes/working-with-dates-and-times/controlling-time-intervals.md).
+> **Note:** Another way to perform an action repeatedly over time is to use the
+> Timer class. A Timer instance triggers an event notification each time a
+> specified amount of time has past. You could write code that performs
+> animation by handling the Timer class's timer event, setting the time interval
+> to a small one (some fraction of a second). For more information about using
+> the Timer class, see
+> [Controlling time intervals](../../core-actionscript-classes/working-with-dates-and-times/controlling-time-intervals.md).
 
 In the following example, a circle Sprite instance, named `circle`, is created
 on the Stage. When the user clicks the circle, a scripted animation sequence

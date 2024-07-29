@@ -21,13 +21,13 @@ Some common external API tasks are:
 
 - Creating a proxy to simplify calling ActionScript code from a web page
 
-Note: This discussion of the external interface only covers communication
-between ActionScript in a SWF file and the container application that includes a
-reference to the Flash Player or instance in which the SWF file is loaded. Any
-other use of Flash Player within an application is outside the scope of this
-documentation. Flash Player is designed to be used as a browser plug-in or as a
-projector (standalone application). Other usage scenarios may have limited
-support.
+> **Note:** This discussion of the external interface only covers communication
+> between ActionScript in a SWF file and the container application that includes
+> a reference to the Flash Player or instance in which the SWF file is loaded.
+> Any other use of Flash Player within an application is outside the scope of
+> this documentation. Flash Player is designed to be used as a browser plug-in
+> or as a projector (standalone application). Other usage scenarios may have
+> limited support.
 
 #### Using the external API in AIR
 

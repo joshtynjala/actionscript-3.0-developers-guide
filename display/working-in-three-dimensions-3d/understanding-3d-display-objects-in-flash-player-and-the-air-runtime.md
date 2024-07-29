@@ -34,13 +34,13 @@ coordinate system.
 
 **D.** +Y axis
 
-Note: Be aware that Flash Player and AIR always represent 3D in layers. This
-means that if object A is in front of object B on the display list, Flash Player
-or AIR always renders A in front of B regardless of the z-axis values of the two
-objects. To resolve this conflict between the display list order and the z-axis
-order, use the `transform.getRelativeMatrix3D()` method to save and then
-re-order the layers of 3D display objects. For more information, see
-[Using Matrix3D objects for reordering display](./performing-complex-3d-transformations.md#using-matrix3d-objects-for-reordering-display).
+> **Note:** Be aware that Flash Player and AIR always represent 3D in layers.
+> This means that if object A is in front of object B on the display list, Flash
+> Player or AIR always renders A in front of B regardless of the z-axis values
+> of the two objects. To resolve this conflict between the display list order
+> and the z-axis order, use the `transform.getRelativeMatrix3D()` method to save
+> and then re-order the layers of 3D display objects. For more information, see
+> [Using Matrix3D objects for reordering display](./performing-complex-3d-transformations.md#using-matrix3d-objects-for-reordering-display).
 
 The following ActionScript classes support the new 3D-related features:
 

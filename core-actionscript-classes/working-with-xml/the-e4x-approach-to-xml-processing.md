@@ -17,16 +17,16 @@ following goals:
 - Familiarity—You manipulate XML data with well-known operators, such as the dot
   (`.`) operator.
 
-Note: There is a different XML class in ActionScript 2.0. In ActionScript 3.0
-that class has been renamed as XMLDocument, so that the name does not conflict
-with the ActionScript 3.0 XML class that is part of E4X. In ActionScript 3.0,
-the legacy classes—XMLDocument, XMLNode, XMLParser, and XMLTag—are included in
-the flash.xml package primarily for legacy support. The new E4X classes are core
-classes; you need not import a package to use them. For details on the legacy
-ActionScript 2.0 XML classes, see the
-[flash.xml package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/xml/package-detail.html)
-in the
-[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
+> **Note:** There is a different XML class in ActionScript 2.0. In ActionScript
+> 3.0 that class has been renamed as XMLDocument, so that the name does not
+> conflict with the ActionScript 3.0 XML class that is part of E4X. In
+> ActionScript 3.0, the legacy classes—XMLDocument, XMLNode, XMLParser, and
+> XMLTag—are included in the flash.xml package primarily for legacy support. The
+> new E4X classes are core classes; you need not import a package to use them.
+> For details on the legacy ActionScript 2.0 XML classes, see the
+> [flash.xml package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/xml/package-detail.html)
+> in the
+> [ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
 Here is an example of manipulating data with E4X:
 

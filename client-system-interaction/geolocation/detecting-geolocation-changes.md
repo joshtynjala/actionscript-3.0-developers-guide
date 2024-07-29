@@ -148,10 +148,10 @@ when geolocation data is unavailable:
     	}
     }
 
-Note: First-generation iPhones, which do not include a GPS unit, dispatch
-`update` events only occasionally. On these devices, a Geolocation object
-initially dispatches one or two `update` events. It then dispatches `update`
-events when information changes noticeably.
+> **Note:** First-generation iPhones, which do not include a GPS unit, dispatch
+> `update` events only occasionally. On these devices, a Geolocation object
+> initially dispatches one or two `update` events. It then dispatches `update`
+> events when information changes noticeably.
 
 ## Checking geolocation support
 

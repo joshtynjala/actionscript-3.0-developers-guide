@@ -9,9 +9,9 @@ easily recreated items such as login credentials and other private information.
 ELS data should not be considered as permanent, as outlined in "Limitations of
 the encrypted local store" and "Best practices," below.
 
-Note: In addition to the encrypted local store, AIR also provides encryption for
-content stored in SQL databases. For details, see
-[Using encryption with SQL databases](../working-with-local-sql-databases-in-air/using-encryption-with-sql-databases.md).
+> **Note:** In addition to the encrypted local store, AIR also provides
+> encryption for content stored in SQL databases. For details, see
+> [Using encryption with SQL databases](../working-with-local-sql-databases-in-air/using-encryption-with-sql-databases.md).
 
 You may want to use the encrypted local store to cache information that must be
 secured, such as login credentials for web services. The ELS is appropriate for
@@ -136,11 +136,12 @@ publisher), but they do not need to be the exact same bits as were in
 application that stored the data. Updated applications with the same publisher
 ID as the original can continue to access the data.
 
-Note: In practice, setting `stronglyBound` to `true` does not add any additional
-data protection. A "malicious" user could still alter an application to gain
-access to items stored in the ELS. Furthermore, data is protected from external,
-non-user threats just as strongly whether `stronglyBound` is set to `true` or
-`false`. For these reasons, setting `stronglyBound` to `true` is discouraged.
+> **Note:** In practice, setting `stronglyBound` to `true` does not add any
+> additional data protection. A "malicious" user could still alter an
+> application to gain access to items stored in the ELS. Furthermore, data is
+> protected from external, non-user threats just as strongly whether
+> `stronglyBound` is set to `true` or `false`. For these reasons, setting
+> `stronglyBound` to `true` is discouraged.
 
 ## Accessing data in the encrypted local store
 

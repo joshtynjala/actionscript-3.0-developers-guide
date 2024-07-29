@@ -93,10 +93,10 @@ associated classes, like the CSMSettings class. These classes give you precise
 control over the rendering quality of embedded text. For more information about
 embedded fonts, see [Using embedded fonts](#using-embedded-fonts).
 
-Note: The `flash.text.TextField`.antiAliasType property must have the value
-`AntiAliasType.ADVANCED` in order for you to set the sharpness, thickness, or
-the gridFitType property, or to use the
-`TextRenderer.setAdvancedAntiAliasingTable()` method.
+> **Note:** The `flash.text.TextField.antiAliasType` property must have the
+> value `AntiAliasType.ADVANCED` in order for you to set the sharpness,
+> thickness, or the gridFitType property, or to use the
+> `TextRenderer.setAdvancedAntiAliasingTable()` method.
 
 The following example applies custom continuous stroke modulation (CSM)
 properties and formatting to displayed text using an embedded font called

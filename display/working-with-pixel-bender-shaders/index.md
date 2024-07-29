@@ -7,9 +7,9 @@ visual content. Using Pixel Bender shaders in ActionScript gives you the
 capability to create custom visual effects and perform data processing beyond
 the built-in capabilities in ActionScript.
 
-Note: Pixel Bender support is available starting in Flash Player 10 and Adobe
-AIR 1.5. Pixel Bender blends, filters, and fills are not supported under GPU
-rendering.
+> **Note:** Pixel Bender support is available starting in Flash Player 10 and
+> Adobe AIR 1.5. Pixel Bender blends, filters, and fills are not supported under
+> GPU rendering.
 
 - [Basics of Pixel Bender shaders](./basics-of-pixel-bender-shaders.md)
 - [Loading or embedding a shader](./loading-or-embedding-a-shader.md)

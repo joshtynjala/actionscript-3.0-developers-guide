@@ -157,9 +157,9 @@ the `color` parameter value is changed continuously, and each time it changes
 the shader is used to draw a colored rectangle on the screen. The result is an
 animated color change.
 
-Note: The code for this example was written by Ryan Taylor. Thank you Ryan for
-sharing this example. You can see Ryan's portfolio and read his writing at
-[www.boostworthy.com](http://www.boostworthy.com/).
+> **Note:** The code for this example was written by Ryan Taylor. Thank you Ryan
+> for sharing this example. You can see Ryan's portfolio and read his writing at
+> [www.boostworthy.com](http://www.boostworthy.com/).
 
 The ActionScript code centers around three methods:
 

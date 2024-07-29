@@ -24,9 +24,9 @@ addition, the colors rotate to create an animated spinning color effect.
 
 ![](../../img/sb_drawing_fill_three_point_gradient.png)
 
-Note: The code for this example was written by Petri Leskinen. Thank you Petri
-for sharing this example. You can see more of Petri's examples and tutorials at
-[http://pixelero.wordpress.com/](http://pixelero.wordpress.com/).
+> **Note:** The code for this example was written by Petri Leskinen. Thank you
+> Petri for sharing this example. You can see more of Petri's examples and
+> tutorials at [http://pixelero.wordpress.com/](http://pixelero.wordpress.com/).
 
 The ActionScript code is in three methods:
 
@@ -201,8 +201,8 @@ to create the "ThreePointGradient.pbj" Pixel Bender bytecode file:
         }
     }
 
-Note: If you use a shader fill when rendering under the graphics processing unit
-(GPU), the filled area will be colored cyan.
+> **Note:** If you use a shader fill when rendering under the graphics
+> processing unit (GPU), the filled area will be colored cyan.
 
 For more information about drawing shapes using the drawing api, see
 [Using the drawing API](../using-the-drawing-api/index.md).

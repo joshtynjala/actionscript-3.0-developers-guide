@@ -169,10 +169,10 @@ following steps:
   unaltered. The data in the files is not signed, so the signature will still
   validate when files referenced in the manifest are changed or deleted.
 
-  Note: To verify files in such a manifest, you can compute the digest of the
-  file data (using the same hashing algorithm used in the manifest) and compare
-  the result to the digest stored in the signed manifest. In some cases, you
-  should also check for the presence of additional files.
+  > **Note:** To verify files in such a manifest, you can compute the digest of
+  > the file data (using the same hashing algorithm used in the manifest) and
+  > compare the result to the digest stored in the signed manifest. In some
+  > cases, you should also check for the presence of additional files.
 
 ### Interpreting validation results
 

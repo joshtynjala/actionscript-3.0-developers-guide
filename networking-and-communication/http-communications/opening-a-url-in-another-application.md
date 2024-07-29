@@ -17,9 +17,9 @@ window name. For example, the following code opens the www.adobe.com web page:
     var urlReq:URLRequest = new URLRequest(url);
     navigateToURL(urlReq);
 
-Note: When using the `navigateToURL()` function, the runtime treats a URLRequest
-object that uses the POST method (one that has its `method` property set to
-`URLRequestMethod.POST`) as using the GET method.
+> **Note:** When using the `navigateToURL()` function, the runtime treats a
+> URLRequest object that uses the POST method (one that has its `method`
+> property set to `URLRequestMethod.POST`) as using the GET method.
 
 When using the `navigateToURL()` function, URI schemes are permitted based on
 the security sandbox of the code calling the `navigateToURL()` function.

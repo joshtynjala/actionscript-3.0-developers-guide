@@ -9,8 +9,8 @@ Runtimes that support the StageVideo API include:
 
 - Flash Player 10.2 and later
 
-Note: In Flash Player 11.4/AIR 3.4 and higher, you can use camera input with
-StageVideo.
+> **Note:** In Flash Player 11.4/AIR 3.4 and higher, you can use camera input
+> with StageVideo.
 
 ![](../../img/byline.png) Downloadable source code and additional details for
 the stage video feature are available at

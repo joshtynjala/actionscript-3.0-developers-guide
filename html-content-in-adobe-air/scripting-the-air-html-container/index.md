@@ -21,8 +21,8 @@ AIR. You can assign the default HTMLHost implementation to another HTMLLoader
 object by setting the `htmlHost` property of the object using a new HTMLHost
 object created with the `defaultBehavior` parameter set to `true`.
 
-Note: In the Adobe® Flex™ Framework, the HTMLLoader object is wrapped by the
-mx:HTML component. When using Flex, use the HTML component.
+> **Note:** In the Adobe® Flex™ Framework, the HTMLLoader object is wrapped by
+> the mx:HTML component. When using Flex, use the HTML component.
 
 - [Display properties of HTMLLoader objects](./display-properties-of-htmlloader-objects.md)
 - [Scrolling HTML content](./scrolling-html-content.md)

@@ -5,10 +5,10 @@ HTML displayed in an HTMLLoader), you can use HTML drag and drop events. The
 HTML drag-and-drop API allows you to drag to and from DOM elements in the HTML
 content.
 
-Note: You can also use the AIR NativeDragEvent and NativeDragManager APIs by
-listening for events on the HTMLLoader object containing the HTML content.
-However, the HTML API is better integrated with the HTML DOM and gives you
-control of the default behavior.
+> **Note:** You can also use the AIR NativeDragEvent and NativeDragManager APIs
+> by listening for events on the HTMLLoader object containing the HTML content.
+> However, the HTML API is better integrated with the HTML DOM and gives you
+> control of the default behavior.
 
 ## Default drag-and-drop behavior
 
@@ -213,6 +213,6 @@ Set the `dropEffect` value in the handlers for both the `dragover` and
     	event.dataTransfer.dropEffect = "copy";
     }
 
-Note: Although you should always set the `dropEffect` property in the handler
-for `dragenter`, be aware that the next `dragover` event resets the property to
-its default value. Set `dropEffect` in response to both events.
+> **Note:** Although you should always set the `dropEffect` property in the
+> handler for `dragenter`, be aware that the next `dragover` event resets the
+> property to its default value. Set `dropEffect` in response to both events.

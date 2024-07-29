@@ -18,20 +18,20 @@ useful when working with files:
 | Capabilities.language | Specifies the language code of the system on which the player is running.                                                                 |
 | Capabilities.os       | Specifies the current operating system.                                                                                                   |
 
-Note: Be careful when using `Capabilities.os` to determine system
-characteristics. If a more specific property exists to determine a system
-characteristic, use it. Otherwise, you run the risk of writing code that does
-not work correctly on all platforms. For example, consider the following code:
-
-    var separator:String;
-    if (Capablities.os.indexOf("Mac") > -1)
-    {
-    	separator = "/";
-    }
-    else
-    {
-    	separator = "\\";
-    }
+> **Note:** Be careful when using `Capabilities.os` to determine system
+> characteristics. If a more specific property exists to determine a system
+> characteristic, use it. Otherwise, you run the risk of writing code that does
+> not work correctly on all platforms. For example, consider the following code:
+>
+>     var separator:String;
+>     if (Capablities.os.indexOf("Mac") > -1)
+>     {
+>     	separator = "/";
+>     }
+>     else
+>     {
+>     	separator = "\\";
+>     }
 
 This code leads to problems on Linux. It is better to simply use the
 `File.separator` property.

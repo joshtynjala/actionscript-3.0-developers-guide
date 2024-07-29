@@ -30,13 +30,13 @@ use these events to determine when it is safe to interact with the loaded page.
 These events are described in
 [Handling HTML-related events in AIR](../handling-html-related-events-in-air.md).
 
-Note: In the Flex framework, only classes that extend the UIComponent class can
-be added as children of a Flex Container components. For this reason, you cannot
-directly add an HTMLLoader as a child of a Flex Container component; however you
-can use the Flex mx:HTML control, you can build a custom class that extends
-UIComponent and contains an HTMLLoader as a child of the UIComponent, or you can
-add the HTMLLoader as a child of a UIComponent and add the UIComponent to the
-Flex container.
+> **Note:** In the Flex framework, only classes that extend the UIComponent
+> class can be added as children of a Flex Container components. For this
+> reason, you cannot directly add an HTMLLoader as a child of a Flex Container
+> component; however you can use the Flex mx:HTML control, you can build a
+> custom class that extends UIComponent and contains an HTMLLoader as a child of
+> the UIComponent, or you can add the HTMLLoader as a child of a UIComponent and
+> add the UIComponent to the Flex container.
 
 You can also render HTML text by using the TextField class, but its capabilities
 are limited. The Adobe® Flash® Player's TextField class supports a subset of

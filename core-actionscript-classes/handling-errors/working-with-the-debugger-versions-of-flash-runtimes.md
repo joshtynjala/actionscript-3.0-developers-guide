@@ -28,9 +28,9 @@ Error \#2030: End of file was encountered."
 The same code in a release version of Flash Player or Adobe AIR would display
 the following text: "EOFError: Error \#2030."
 
-Note: The debugger players broadcast an event named "allComplete"; avoid
-creating custom events with the name "allComplete". Otherwise, you will
-encounter unpredictable behavior when debugging.
+> **Note:** The debugger players broadcast an event named "allComplete"; avoid
+> creating custom events with the name "allComplete". Otherwise, you will
+> encounter unpredictable behavior when debugging.
 
 To keep resources and size to a minimum in the release versions, error message
 strings are not present. You can look up the error number in the documentation

@@ -77,9 +77,9 @@ techniques in ActionScript. In both cases, two mouse events are used: when the
 mouse button is pressed down, the object is told to follow the mouse cursor, and
 when it's released, the object is told to stop following the mouse cursor.
 
-Note: Flash Player 11.3 and higher, AIR 3.3 and higher: You can also use the
-MouseEvent.RELEASE_OUTSIDE event to cover the case of a user releasing the mouse
-button outside the bounds of the containing Sprite.
+> **Note:** Flash Player 11.3 and higher, AIR 3.3 and higher: You can also use
+> the MouseEvent.RELEASE_OUTSIDE event to cover the case of a user releasing the
+> mouse button outside the bounds of the containing Sprite.
 
 The first technique, using the `startDrag()` method, is simpler, but more
 limited. When the mouse button is pressed, the `startDrag()` method of the

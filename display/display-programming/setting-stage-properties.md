@@ -8,10 +8,10 @@ application. The `x` and `y` properties refer to the position of a display
 object relative to its container, and since the Stage is not contained in
 another display object container, these properties do not apply.
 
-Note: Some properties and methods of the Stage class are only available to
-display objects that are in the same security sandbox as the first SWF file
-loaded. For details, see
-[Stage security](../../security/cross-scripting.md#stage-security).
+> **Note:** Some properties and methods of the Stage class are only available to
+> display objects that are in the same security sandbox as the first SWF file
+> loaded. For details, see
+> [Stage security](../../security/cross-scripting.md#stage-security).
 
 ## Controlling the playback frame rate
 
@@ -128,9 +128,9 @@ code calculates the required scale factor for a display object named `client`:
         client.scaleY = 72/newWindow.stage.stageHeight;
     }
 
-Note: Flex and HTML windows automatically set the stage `scaleMode` to
-`noScale`. Changing the `scaleMode` disturbs the automatic layout mechanisms
-used in these types of windows.
+> **Note:** Flex and HTML windows automatically set the stage `scaleMode` to
+> `noScale`. Changing the `scaleMode` disturbs the automatic layout mechanisms
+> used in these types of windows.
 
 ## Working with full-screen mode
 
@@ -195,9 +195,9 @@ you should add the `allowFullScreen` parameter to that function call as follows:
 
 This does not apply to SWF files running in the stand-alone Flash Player.
 
-Note: If you set the Window Mode (wmode in the HTML) to Opaque Windowless
-(opaque) or Transparent Windowless (transparent), the full-screen window is
-always opaque
+> **Note:** If you set the Window Mode (wmode in the HTML) to Opaque Windowless
+> (opaque) or Transparent Windowless (transparent), the full-screen window is
+> always opaque
 
 There are also security-related restrictions for using full-screen mode with
 Flash Player in a browser. These restrictions are described in
@@ -322,9 +322,9 @@ full-screen mode. However, in full-screen mode, you can optionally set the
 `Stage.mouseLock` property to enable mouse locking. Mouse locking disables the
 cursor and enables unbounded mouse movement.
 
-Note: You can only enable mouse locking in full-screen mode for desktop
-applications. Setting it on applications not in full-screen mode, or for
-applications on mobile devices, throws an exception.
+> **Note:** You can only enable mouse locking in full-screen mode for desktop
+> applications. Setting it on applications not in full-screen mode, or for
+> applications on mobile devices, throws an exception.
 
 Mouse locking is disabled automatically and the mouse cursor is made visible
 again when:

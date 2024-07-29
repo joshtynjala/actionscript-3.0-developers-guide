@@ -4,11 +4,11 @@ This section discusses the ways in which an installed Adobe® AIR® application
 can be invoked, as well as options and considerations for closing a running
 application.
 
-Note: The NativeApplication, InvokeEvent, and BrowserInvokeEvent objects are
-only available to SWF content running in the AIR application sandbox. SWF
-content running in the Flash Player runtime, within the browser or the
-standalone player (projector), or in an AIR application outside the application
-sandbox, cannot access these classes.
+> **Note:** The NativeApplication, InvokeEvent, and BrowserInvokeEvent objects
+> are only available to SWF content running in the AIR application sandbox. SWF
+> content running in the Flash Player runtime, within the browser or the
+> standalone player (projector), or in an AIR application outside the
+> application sandbox, cannot access these classes.
 
 For a quick explanation and code examples of invoking and terminating AIR
 applications, see the following quick start articles on the Adobe Developer
@@ -57,9 +57,9 @@ application time to initialize itself and register an event listener, `invoke`
 events are queued instead of discarded. As soon as a listener is registered, all
 the queued events are delivered.
 
-Note: When an application is invoked using the browser invocation feature, the
-NativeApplication object only dispatches an `invoke` event if the application is
-not already running.
+> **Note:** When an application is invoked using the browser invocation feature,
+> the NativeApplication object only dispatches an `invoke` event if the
+> application is not already running.
 
 To receive `invoke` events, call the `addEventListener()` method of the
 NativeApplication object (`NativeApplication.nativeApplication`). When an event
@@ -260,8 +260,8 @@ to the current user. The application must be installed to successfully set the
 `startAtLogin` property to `true`. An error is thrown if the property is set
 when an application is not installed (such as when it is launched with ADL).
 
-Note: The application does not launch when the computer system starts. It
-launches when the user logs in.
+> **Note:** The application does not launch when the computer system starts. It
+> launches when the user logs in.
 
 To determine whether an application has launched automatically or as a result of
 a user action, you can examine the `reason` property of the InvokeEvent object.
@@ -327,8 +327,9 @@ opens a window in response to a user-triggered invoke event.
     	}
     }
 
-Note: To see the difference in behavior, package and install the application.
-The `startAtLogin` property can only be set for installed applications.
+> **Note:** To see the difference in behavior, package and install the
+> application. The `startAtLogin` property can only be set for installed
+> applications.
 
 ## Invoking an AIR application from the browser
 

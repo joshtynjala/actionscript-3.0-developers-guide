@@ -54,9 +54,9 @@ behaviors is assigned automatically. You can change the host object behavior by
 assigning a different HTMLHost implementation to the `htmlHost` property of the
 HTMLLoader, or you can assign `null` to disable the features entirely.
 
-Note: AIR assigns a default HTMLHost object to the initial window created for an
-HTML-based AIR application and any windows created by the default implementation
-of the JavaScript `window.open()` method.
+> **Note:** AIR assigns a default HTMLHost object to the initial window created
+> for an HTML-based AIR application and any windows created by the default
+> implementation of the JavaScript `window.open()` method.
 
 ## Example: Extending the HTMLHost class
 
@@ -319,8 +319,8 @@ URL:
     	htmlLoader.load(new URLRequest(locationURL));
     }
 
-Note: You can use the htmlLoader property of the HTMLHost object to reference
-the current HTMLLoader object.
+> **Note:** You can use the htmlLoader property of the HTMLHost object to
+> reference the current HTMLLoader object.
 
 ## Handling JavaScript calls to window.moveBy(), window.moveTo(), window.resizeTo(), window.resizeBy()
 
@@ -360,9 +360,10 @@ the HTMLLoader to the window stage.
     	return htmlControl;
     }
 
-Note: This example assigns the custom HTMLHost implementation to any new windows
-created with `window.open()`. You can also use a different implementation or set
-the `htmlHost` property to null for new windows, if desired.
+> **Note:** This example assigns the custom HTMLHost implementation to any new
+> windows created with `window.open()`. You can also use a different
+> implementation or set the `htmlHost` property to null for new windows, if
+> desired.
 
 The object passed as a parameter to the `createWindow()` method is an
 [HTMLWindowCreateOptions](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/html/HTMLWindowCreateOptions.html)
@@ -459,7 +460,8 @@ example:
     	NativeApplication.nativeApplication.activate(htmlLoader.stage.nativeWindow);
     }
 
-Note: AIR does not provide an API for deactivating a window or application.
+> **Note:** AIR does not provide an API for deactivating a window or
+> application.
 
 ## Creating windows with scrolling HTML content
 
@@ -486,9 +488,9 @@ to create a window with HTMLLoader content that uses scroll bars:
     html2.load(urlReq2);
     html2.stage.nativeWindow.activate();
 
-Note: Windows created by calling `createRootWindow()` directly in JavaScript
-remain independent from the opening HTML window. The JavaScript Window `opener`
-and `parent` properties, for example, are `null`. However, if you call
-`createRootWindow()` indirectly by overriding the HTMLHost `createWindow()`
-method to call `createRootWindow()`, then `opener` and `parent` do reference the
-opening HTML window.
+> **Note:** Windows created by calling `createRootWindow()` directly in
+> JavaScript remain independent from the opening HTML window. The JavaScript
+> Window `opener` and `parent` properties, for example, are `null`. However, if
+> you call `createRootWindow()` indirectly by overriding the HTMLHost
+> `createWindow()` method to call `createRootWindow()`, then `opener` and
+> `parent` do reference the opening HTML window.

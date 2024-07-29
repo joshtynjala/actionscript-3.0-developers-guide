@@ -7,9 +7,9 @@ the data so that the digest can be computed. The computed digest is compared
 with the digest in the signature to determine if the referenced data has been
 altered since the signature was created.
 
-Note: HTML-based AIR applications must import a SWF library containing an
-ActionScript implementation in order to validate XML signatures. The
-IURIDereferencer interface cannot be implemented in JavaScript.
+> **Note:** HTML-based AIR applications must import a SWF library containing an
+> ActionScript implementation in order to validate XML signatures. The
+> IURIDereferencer interface cannot be implemented in JavaScript.
 
 The IURIDerefencer interface has a single method, `dereference(uri:String)`,
 that must be implemented. The XMLSignatureValidator object calls this method for
@@ -241,10 +241,10 @@ package files for tampering, you must read the files, compute the SHA256 digest
 and compare the result to digest recorded in the manifest. The
 XMLSignatureValidator does not automatically check such secondary references.
 
-Note: This example is provided only to illustrate the signature validation
-process. There is little use in an AIR application validating its own signature.
-If the application has already been tampered with, the tampering agent could
-simply remove the validation check.
+> **Note:** This example is provided only to illustrate the signature validation
+> process. There is little use in an AIR application validating its own
+> signature. If the application has already been tampered with, the tampering
+> agent could simply remove the validation check.
 
 ### Computing digest values for external resources
 
@@ -376,6 +376,6 @@ The `dereference()` function simply locates the file addressed by the reference
 URI, loads the file contents into a byte array, and returns the ByteArray
 object.
 
-Note: Before validating remote external references, consider whether your
-application could be vulnerable to a "phone home" or similar type of attack by a
-maliciously constructed signature document.
+> **Note:** Before validating remote external references, consider whether your
+> application could be vulnerable to a "phone home" or similar type of attack by
+> a maliciously constructed signature document.

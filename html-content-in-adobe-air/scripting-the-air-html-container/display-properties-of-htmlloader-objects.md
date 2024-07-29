@@ -39,9 +39,9 @@ for pages that have a reasonable minimum width when laid out according the HTML
 and CSS flow rules. However, some pages flow into a long and narrow layout in
 the absence of a reasonable width provided by the HTMLLoader.
 
-Note: When you change the width and height of an HTMLLoader object, the scaleX
-and scaleY values do not change, as would happen with most other types of
-display objects.
+> **Note:** When you change the width and height of an HTMLLoader object, the
+> scaleX and scaleY values do not change, as would happen with most other types
+> of display objects.
 
 ## Transparency of HTMLLoader content
 
@@ -58,9 +58,9 @@ background color. If you set the `opaqueBackground` property of the HTMLLoader
 object, and `paintsDefaultBackground` is `false`, then the color set for the
 `opaqueBackground` is visible.
 
-Note: You can use a transparent, PNG-format graphic to provide an alpha-blended
-background for an element in an HTML document. Setting the opacity style of an
-HTML element is not supported.
+> **Note:** You can use a transparent, PNG-format graphic to provide an
+> alpha-blended background for an element in an HTML document. Setting the
+> opacity style of an HTML element is not supported.
 
 ## Scaling HTMLLoader content
 
@@ -91,8 +91,8 @@ parameter of the object or embed tag is set to `opaque` or `transparent`. Since
 the default value of `wmode` is `window`, SWF content is not displayed in
 transparent windows unless you explicitly set the wmode parameter.
 
-Note: Prior to AIR 1.5.2, SWF embedded in HTML could not be displayed no matter
-which wmode value was used.
+> **Note:** Prior to AIR 1.5.2, SWF embedded in HTML could not be displayed no
+> matter which wmode value was used.
 
 For more information on loading these types of media in an HTMLLoader, see
 [Embedding SWF content in HTML](../programming-html-and-javascript-in-air/embedding-swf-content-in-html.md)

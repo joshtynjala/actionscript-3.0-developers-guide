@@ -10,10 +10,10 @@ To read the operating system clipboard, call the `getData()` method of the
     var text:String = Clipboard.generalClipboard.getData(ClipboardFormats.TEXT_FORMAT);
     }
 
-Note: Content running in Flash Player or in a non-application sandbox in AIR can
-call the `getData()` method only in an event handler for a `paste` event. In
-other words, only code running in the AIR application sandbox can call the
-`getData()` method outside of a `paste` event handler.
+> **Note:** Content running in Flash Player or in a non-application sandbox in
+> AIR can call the `getData()` method only in an event handler for a `paste`
+> event. In other words, only code running in the AIR application sandbox can
+> call the `getData()` method outside of a `paste` event handler.
 
 To write to the clipboard, add the data to the `Clipboard.generalClipboard`
 object in one or more formats. Any existing data in the same format is
@@ -28,8 +28,8 @@ in any other formats is also deleted.
     Clipboard.generalClipboard.clear();
     Clipboard.generalClipboard.setData(ClipboardFormats.TEXT_FORMAT, textToCopy, false);
 
-Note: Content running in Flash Player or in a non-application sandbox in AIR can
-call the `setData()` method only in an event handler for a user event, such as a
-keyboard or mouse event, or a `copy` or `cut` event. In other words, only code
-running in the AIR application sandbox can call the `setData()` method outside
-of a user event handler.
+> **Note:** Content running in Flash Player or in a non-application sandbox in
+> AIR can call the `setData()` method only in an event handler for a user event,
+> such as a keyboard or mouse event, or a `copy` or `cut` event. In other words,
+> only code running in the AIR application sandbox can call the `setData()`
+> method outside of a user event handler.

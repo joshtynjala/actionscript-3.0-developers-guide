@@ -26,15 +26,15 @@ Both touch and gesture input can be multitouch input depending on the user's
 device. ActionScript provides API for handling touch events, gesture events, and
 individually tracked touch events for multitouch input.
 
-Note: Listening for touch and gesture events can consume a significant amount of
-processing resources (equivalent to rendering several frames per second),
-depending on the computing device and operating system. It is often better to
-use mouse events when you do not actually need the extra functionality provided
-by touch or gestures. When you do use touch or gesture events, consider reducing
-the amount of graphical changes that can occur, especially when such events can
-be dispatched rapidly, as during a pan, rotate, or zoom operation. For example,
-you could stop animation within a component while the user resizes it using a
-zoom gesture.
+> **Note:** Listening for touch and gesture events can consume a significant
+> amount of processing resources (equivalent to rendering several frames per
+> second), depending on the computing device and operating system. It is often
+> better to use mouse events when you do not actually need the extra
+> functionality provided by touch or gestures. When you do use touch or gesture
+> events, consider reducing the amount of graphical changes that can occur,
+> especially when such events can be dispatched rapidly, as during a pan,
+> rotate, or zoom operation. For example, you could stop animation within a
+> component while the user resizes it using a zoom gesture.
 
 - [Basics of touch input](./basics-of-touch-input.md)
 - [Touch support discovery](./touch-support-discovery.md)

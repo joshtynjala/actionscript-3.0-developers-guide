@@ -156,9 +156,9 @@ camera and microphone settings, shared object storage settings, settings related
 to legacy content, and so on. Neither the Settings Manager nor the Settings UI
 are available to AIR applications.
 
-Note: Any settings made in the mms.cfg file (see
-[Administrator controls](#administrator-controls)) are not reflected in the
-Settings Manager.
+> **Note:** Any settings made in the mms.cfg file (see
+> [Administrator controls](#administrator-controls)) are not reflected in the
+> Settings Manager.
 
 For details on the Settings Manager, see
 [www.adobe.com/go/settingsmanager](https://web.archive.org/web/20150219041754/http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager.html).
@@ -277,15 +277,15 @@ contain policy files. The default meta-policy for URL policy files is
 on the server. The default meta-policy for socket policy files is "all," which
 means that any socket on the host can serve a socket policy file.
 
-Note: In Flash Player 9 and earlier, the default meta-policy for URL policy
-files was "all," which means that any directory can contain a policy file. If
-you have deployed applications that load policy files from locations other than
-the default /crossdomain.xml file, and those applications might now be running
-in Flash Player 10, make sure you (or the server administrator) modify the
-master policy file to allow additional policy files. For information on how to
-specify different a different meta-policy, see the Flash Player Developer Center
-topic "Policy File Changes in Flash Player 9" at
-[www.adobe.com/go/devnet_security_en](https://web.archive.org/web/20150422111248/http://www.adobe.com/devnet/flashplayer/security.html).
+> **Note:** In Flash Player 9 and earlier, the default meta-policy for URL
+> policy files was "all," which means that any directory can contain a policy
+> file. If you have deployed applications that load policy files from locations
+> other than the default /crossdomain.xml file, and those applications might now
+> be running in Flash Player 10, make sure you (or the server administrator)
+> modify the master policy file to allow additional policy files. For
+> information on how to specify different a different meta-policy, see the Flash
+> Player Developer Center topic "Policy File Changes in Flash Player 9" at
+> [www.adobe.com/go/devnet_security_en](https://web.archive.org/web/20150422111248/http://www.adobe.com/devnet/flashplayer/security.html).
 
 A SWF file can check for a different policy filename or a different directory
 location by calling the `Security.loadPolicyFile()` method. However, if the

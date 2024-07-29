@@ -13,9 +13,9 @@ instance's vector data, which is data that you do not intend to change much over
 the course of your SWF file. Therefore, instances with caching turned on are not
 continually redrawn as the SWF file plays, letting the SWF file render quickly.
 
-Note: You can update the vector data, at which time the surface is recreated.
-Therefore, the vector data cached in the surface does not need to remain the
-same for the entire SWF file.
+> **Note:** You can update the vector data, at which time the surface is
+> recreated. Therefore, the vector data cached in the surface does not need to
+> remain the same for the entire SWF file.
 
 Setting a display object's `cacheAsBitmap` property to `true` makes the display
 object cache a bitmap representation of itself. Flash Player or AIR creates a

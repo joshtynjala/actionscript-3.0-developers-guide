@@ -74,6 +74,6 @@ If you call `loadBytes()` to load SWF content and the
 `allowLoadBytesCodeExecution` property of the LoaderContext object is set to
 `false` (the default), the Loader object throws a SecurityError exception.
 
-Note: In a future release of Adobe AIR, this API may change. When that occurs,
-you may need to recompile content that uses the `allowLoadBytesCodeExecution`
-property of the LoaderContext class.
+> **Note:** In a future release of Adobe AIR, this API may change. When that
+> occurs, you may need to recompile content that uses the
+> `allowLoadBytesCodeExecution` property of the LoaderContext class.

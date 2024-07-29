@@ -18,8 +18,9 @@ This means that the update step is _still required_ in the following cases:
 - Flash Player 11.4 and below, except on Google Chrome 22 and above (all
   platforms) or 21 and above (Windows)
 
-Note: You can still safely call `SystemUpdater.update(SystemUpdaterType.DRM)` on
-a system with Flash Player 11.5 or higher, but nothing is downloaded.
+> **Note:** You can still safely call
+> `SystemUpdater.update(SystemUpdaterType.DRM)` on a system with Flash Player
+> 11.5 or higher, but nothing is downloaded.
 
 To support Adobe Access, Flash Player requires the Adobe Access module. When
 Flash Player tries to play protected content, the runtime indicates if the
@@ -38,10 +39,10 @@ instance running in Firefox.
 
 The SystemUpdater API is supported for desktop platforms only.
 
-Note: For versions of Flash Player earlier than 10.1, use the update mechanism
-supported in earlier player versions (manual download and install from
-www.adobe.com or ExpressInstall). Also, the AIR installer handles necessary
-updates for Adobe Access and does not support the SystemUpdater API.
+> **Note:** For versions of Flash Player earlier than 10.1, use the update
+> mechanism supported in earlier player versions (manual download and install
+> from www.adobe.com or ExpressInstall). Also, the AIR installer handles
+> necessary updates for Adobe Access and does not support the SystemUpdater API.
 
 ## Listening for an update event
 
@@ -59,10 +60,10 @@ for this module update is not required.
 If the Adobe Access module is not found, an error is thrown. See step 3 of the
 [Detailed API workflow](./understanding-the-protected-content-workflow.md#detailed-api-workflow).
 
-Note: If play() is called on an encrypted stream in players earlier than 10.1, a
-NetStatusEvent with code value of NetStream.Play.StreamNotFound is dispatched.
-For earlier players, use the update mechanism supported for those players
-(manual download and install from www.adobe.com or ExpressInstall).
+> **Note:** If play() is called on an encrypted stream in players earlier than
+> 10.1, a NetStatusEvent with code value of NetStream.Play.StreamNotFound is
+> dispatched. For earlier players, use the update mechanism supported for those
+> players (manual download and install from www.adobe.com or ExpressInstall).
 
 When an update of the player itself is required, the SystemUpdater object
 dispatches a StatusEvent with a code value of `DRM.UpdateNeededButIncompatible`

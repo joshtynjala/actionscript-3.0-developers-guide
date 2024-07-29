@@ -18,8 +18,9 @@ This means that the update step is _still required_ in the following cases:
 - Flash Player 11.4 and below, except on Google Chrome 22 and above (all
   platforms) or 21 and above (Windows)
 
-Note: You can still safely call `SystemUpdater.update(SystemUpdaterType.DRM)` on
-a system with Flash Player 11.5 or higher, but nothing is downloaded.
+> **Note:** You can still safely call
+> `SystemUpdater.update(SystemUpdaterType.DRM)` on a system with Flash Player
+> 11.5 or higher, but nothing is downloaded.
 
 The following high-level workflow shows that how an application can retrieve and
 play protected content. The workflow assumes that the application is designed
@@ -60,9 +61,9 @@ the event contains `"DRM.voucherObtained"`. The application decides where to
 store the content locally in order for it to be available offline. You can also
 preload vouchers using the DRMManager class.
 
-Note: Caching and pre-loading of vouchers is supported in both AIR and Flash
-Player. However, downloading and storing encrypted content is supported only in
-AIR.
+> **Note:** Caching and pre-loading of vouchers is supported in both AIR and
+> Flash Player. However, downloading and storing encrypted content is supported
+> only in AIR.
 
 It is the application's responsibility to explicitly handle the error events.
 These events include cases where the user inputs valid credentials, but the
@@ -116,8 +117,8 @@ Adobe Access.
     information on handling this event, see
     [Listening for an update event](./updating-flash-player-to-support-adobe-access.md#listening-for-an-update-event).
 
-    Note: In AIR applications, the AIR installer handles updating the Adobe
-    Access module and required runtime updates.
+    > **Note:** In AIR applications, the AIR installer handles updating the
+    > Adobe Access module and required runtime updates.
 
 4.  Create listeners to listen for the DRMStatusEvent and DRMErrorEvent
     dispatched from the DRMManager object:

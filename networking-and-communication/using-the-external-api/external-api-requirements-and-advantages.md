@@ -9,10 +9,10 @@ versions prior to Flash Player 8, the `fscommand()` action was used to carry out
 communication with the container application. The ExternalInterface class is a
 replacement for `fscommand()`.
 
-Note: If you need to use the old `fscommand()` function—for example, to maintain
-compatibility with older applications or to interact with a third-party SWF
-container application or the stand-alone Flash Player—it is still available as a
-package-level function in the flash.system package.
+> **Note:** If you need to use the old `fscommand()` function—for example, to
+> maintain compatibility with older applications or to interact with a
+> third-party SWF container application or the stand-alone Flash Player—it is
+> still available as a package-level function in the flash.system package.
 
 The ExternalInterface class is a subsystem that lets you easily communicate from
 ActionScript and Flash Player to JavaScript in an HTML page.

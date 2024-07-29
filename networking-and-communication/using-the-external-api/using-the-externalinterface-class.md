@@ -27,9 +27,9 @@ interface communication, as follows:
     	// Perform ExternalInterface method calls here.
     }
 
-Note: The `ExternalInterface.available` property reports whether the current
-container is a type that supports ExternalInterface connectivity. It doesn't
-tell you if JavaScript is enabled in the current browser.
+> **Note:** The `ExternalInterface.available` property reports whether the
+> current container is a type that supports ExternalInterface connectivity. It
+> doesn't tell you if JavaScript is enabled in the current browser.
 
 The `ExternalInterface.objectID` property allows you to determine the unique
 identifier of the Flash Player instance (specifically, the `id` attribute of the
@@ -268,10 +268,10 @@ used to encode values of that data type:
 </tbody>
 </table>
 
-Note: By way of example, this table shows equivalent C# classes in addition to
-ActionScript classes; however, the external API can be used to communicate with
-any programming language or run time that supports ActiveX controls, and is not
-limited to C# applications.
+> **Note:** By way of example, this table shows equivalent C# classes in
+> addition to ActionScript classes; however, the external API can be used to
+> communicate with any programming language or run time that supports ActiveX
+> controls, and is not limited to C# applications.
 
 When you are building your own applications using the external API with an
 ActiveX container application, you'll probably find it convenient to write a

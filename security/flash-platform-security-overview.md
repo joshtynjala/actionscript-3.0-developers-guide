@@ -107,5 +107,5 @@ sandbox, permission must be granted by means of a URL policy file at the origin
 domain. For details, see
 [Using URLLoader and URLStream](./loading-data.md#using-urlloader-and-urlstream).
 
-Note: Policy files are never required in order for code executing in the AIR
-application sandbox to load remote content or data.
+> **Note:** Policy files are never required in order for code executing in the
+> AIR application sandbox to load remote content or data.

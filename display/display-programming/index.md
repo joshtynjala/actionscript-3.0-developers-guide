@@ -8,11 +8,12 @@ display programming API. The primary classes used for display programming are
 part of the
 [flash.display package](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/package-detail.html).
 
-Note: Adobe® AIR™ provides the HTMLoader object for rendering and displaying
-HTML content. The HTMLLoader renders the visual elements of the HTML DOM as a
-single display object. You cannot access the individual elements of the DOM
-directly through the ActionScript display list hierarchy. Instead, you access
-these DOM elements using the separate DOM API provided by the HTMLLoader.
+> **Note:** Adobe® AIR™ provides the HTMLoader object for rendering and
+> displaying HTML content. The HTMLLoader renders the visual elements of the
+> HTML DOM as a single display object. You cannot access the individual elements
+> of the DOM directly through the ActionScript display list hierarchy. Instead,
+> you access these DOM elements using the separate DOM API provided by the
+> HTMLLoader.
 
 - [Basics of display programming](./basics-of-display-programming.md)
 - [Core display classes](./core-display-classes.md)

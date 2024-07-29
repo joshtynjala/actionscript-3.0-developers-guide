@@ -186,12 +186,13 @@ sets the entire document as editable, except for first `p` element:
     </body>
     </html>
 
-Note: If you set the `document.designMode` property to `on`, then all elements
-in the document are editable, regardless of the setting of `contentEditable` for
-an individual element. However, setting `designMode` to `off`, does not disable
-editing of elements for which `contentEditable` is `true`. See
-[Document.designMode property](./javascript-in-air.md#documentdesignmode-property)
-for additional information.
+> **Note:** If you set the `document.designMode` property to `on`, then all
+> elements in the document are editable, regardless of the setting of
+> `contentEditable` for an individual element. However, setting `designMode` to
+> `off`, does not disable editing of elements for which `contentEditable` is
+> `true`. See
+> [Document.designMode property](./javascript-in-air.md#documentdesignmode-property)
+> for additional information.
 
 ## Data: URLs
 

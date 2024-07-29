@@ -178,8 +178,8 @@ The data provider should dispatch these events in the following sequence:
 
 3.  `complete` or `close` event
 
-Note: The built-in objects, FileStream, Socket, and URLStream, dispatch the
-appropriate events automatically.
+> **Note:** The built-in objects, FileStream, Socket, and URLStream, dispatch
+> the appropriate events automatically.
 
 The following example creates a file promise using a custom, asynchronous data
 provider. The data provider class extends ByteArray (for the IDataInput support)
@@ -279,11 +279,12 @@ dispatches a complete event.
     	}
     }
 
-Note: Because the AsyncDataProvider class in the example extends ByteArray, it
-cannot also extend EventDispatcher. To implement the IEventDispatcher interface,
-the class uses an internal EventDispatcher object and forwards the
-IEventDispatcher method calls to that internal object. You could also extend
-EventDispatcher and implement IDataInput (or implement both interfaces).
+> **Note:** Because the AsyncDataProvider class in the example extends
+> ByteArray, it cannot also extend EventDispatcher. To implement the
+> IEventDispatcher interface, the class uses an internal EventDispatcher object
+> and forwards the IEventDispatcher method calls to that internal object. You
+> could also extend EventDispatcher and implement IDataInput (or implement both
+> interfaces).
 
 The asynchronous IFilePromise implementation is almost identical to the
 synchronous implementation. The main differences are that `isAsync` returns

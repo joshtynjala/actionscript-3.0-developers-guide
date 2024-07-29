@@ -48,10 +48,11 @@ data, assign a ByteArray object or Vector.\<Number\> instance to the `target`
 property. In that case, you must set the ShaderJob object's `width` and `height`
 properties to specify the amount of data to output to the `target` object.
 
-Note: You can set the ShaderJob object's `shader`, `target`, `width`, and
-`height` properties in one step by passing arguments to the `ShaderJob()`
-constructor, like this:
-`var job:ShaderJob = new ShaderJob(myShader, myTarget, myWidth, myHeight);`
+> **Note:** You can set the ShaderJob object's `shader`, `target`, `width`, and
+> `height` properties in one step by passing arguments to the `ShaderJob()`
+> constructor, like this:
+>
+>     var job:ShaderJob = new ShaderJob(myShader, myTarget, myWidth, myHeight);
 
 When you are ready to execute the shader, you call the ShaderJob object's
 `start()`) method:
@@ -65,12 +66,12 @@ finishes, the ShaderJob object calls its `complete` event listeners, notifying
 them that it is done. At that point (that is, in the body of your `complete`
 event listener) the `target` object contains the shader operation result.
 
-Note: Instead of using the `target` property object, you can retrieve the shader
-result directly from the event object that's passed to your listener method. The
-event object is a ShaderEvent instance. The ShaderEvent object has three
-properties that can be used to access the result, depending on the data type of
-the object you set as the `target` property: `ShaderEvent.bitmapData`,
-`ShaderEvent.byteArray`, and `ShaderEvent.vector`.
+> **Note:** Instead of using the `target` property object, you can retrieve the
+> shader result directly from the event object that's passed to your listener
+> method. The event object is a ShaderEvent instance. The ShaderEvent object has
+> three properties that can be used to access the result, depending on the data
+> type of the object you set as the `target` property: `ShaderEvent.bitmapData`,
+> `ShaderEvent.byteArray`, and `ShaderEvent.vector`.
 
 Alternatively, you can pass a `true` argument to the `start()` method. In that
 case the shader operation executes synchronously. All code (including

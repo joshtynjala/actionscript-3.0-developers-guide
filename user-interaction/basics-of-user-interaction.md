@@ -67,9 +67,9 @@ class. The following example shows how to enable focus cycling with the Tab key
 and how to respond to the subsequent focus event. In this case, each square
 changes color as it receives focus.
 
-Note: Flash Professional uses keyboard shortcuts to manage focus; therefore, to
-properly simulate focus management, SWF files should be tested in a browser or
-AIR rather than within Flash.
+> **Note:** Flash Professional uses keyboard shortcuts to manage focus;
+> therefore, to properly simulate focus management, SWF files should be tested
+> in a browser or AIR rather than within Flash.
 
     var rows:uint = 10;
     var cols:uint = 10;
@@ -184,8 +184,8 @@ following compatibility chart:
 | Resistive Touchscreen devices (tablets, PDAs, and phones that detect precise, high-pressure contact, such as the HTC Fuze)      | false          | false                     | true                      | false                   |
 | Non-Touchscreen devices (feature phones and devices that run applications but don't have screens that detect contact)           | false          | false                     | false                     | true                    |
 
-Note: Different device platforms can support many combinations of input types.
-Use this chart as a general guide.
+> **Note:** Different device platforms can support many combinations of input
+> types. Use this chart as a general guide.
 
 More Help topics
 

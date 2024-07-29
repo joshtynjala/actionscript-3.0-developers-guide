@@ -28,9 +28,9 @@ following statement:
 
     var libraryObject = new window.runtime.utilities.LibraryClass();
 
-Note: To compile an ActionScript SWF library for use as part of an HTML page in
-AIR, use the `acompc` compiler. The acompc utility is part of the Flex SDK and
-is described in the Flex SDK documentation.
+> **Note:** To compile an ActionScript SWF library for use as part of an HTML
+> page in AIR, use the `acompc` compiler. The acompc utility is part of the Flex
+> SDK and is described in the Flex SDK documentation.
 
 ## Accessing the HTML DOM and JavaScript objects from an imported ActionScript file
 

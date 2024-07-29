@@ -12,11 +12,11 @@ in an environment that supports the touch input your application requires. Test
 the runtime environment for support of the types of touch input (such as whether
 it can interpret gestures), and respond accordingly.
 
-Note: The Multitouch class properties are static properties, and do not belong
-to instances of any class. Use them with the syntax Multitouch.property, for
-example:
-
-    var touchSupport:Boolean = Multitouch.supportsTouchEvents;
+> **Note:** The Multitouch class properties are static properties, and do not
+> belong to instances of any class. Use them with the syntax
+> Multitouch.property, for example:
+>
+>     var touchSupport:Boolean = Multitouch.supportsTouchEvents;
 
 ## Set the input type
 

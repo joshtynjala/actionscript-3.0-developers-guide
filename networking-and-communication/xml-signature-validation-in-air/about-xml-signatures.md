@@ -120,12 +120,12 @@ public key or other certificate information to a list of acceptable keys. (This
 list must be secured, perhaps by its own signature, or by storing in the AIR
 encrypted local store, so that the list itself cannot be tampered with.)
 
-Note: While you can elect to trust the signing certificate without independent
-verification—such as when a signature is "self-signed"—you do not thereby gain
-much assurance of anything by verifying the signature. Without knowing who
-created a signature, the assurance that the signature has not been tampered
-with, is of little, if any, value. The signature could be a validly signed
-forgery.
+> **Note:** While you can elect to trust the signing certificate without
+> independent verification—such as when a signature is "self-signed"—you do not
+> thereby gain much assurance of anything by verifying the signature. Without
+> knowing who created a signature, the assurance that the signature has not been
+> tampered with, is of little, if any, value. The signature could be a validly
+> signed forgery.
 
 #### Certificate expiration and revocation
 

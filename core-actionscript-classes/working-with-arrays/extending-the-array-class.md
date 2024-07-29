@@ -18,11 +18,11 @@ to throw exceptions. Third, the class cannot prevent the use of the array access
 operator to insert values of any type into the array. Fourth, the coding style
 favors simplicity over performance optimization.
 
-Note: You can use the technique described here to create a typed array. However,
-a better approach is to use a Vector object. A Vector instance is a true typed
-array, and provides performance and other improvements over the Array class or
-any subclass. The purpose of this discussion is to demonstrate how to create an
-Array subclass.
+> **Note:** You can use the technique described here to create a typed array.
+> However, a better approach is to use a Vector object. A Vector instance is a
+> true typed array, and provides performance and other improvements over the
+> Array class or any subclass. The purpose of this discussion is to demonstrate
+> how to create an Array subclass.
 
 #### Declaring the subclass
 

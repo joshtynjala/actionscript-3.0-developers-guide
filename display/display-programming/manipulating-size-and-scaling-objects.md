@@ -28,11 +28,11 @@ When you change the `width` or `height` properties of a display object, Flash
 Player and AIR update the `scaleX` and `scaleY` properties of the object as
 well.
 
-Note: TextField objects are an exception to this scaling behavior. Text fields
-need to resize themselves to accommodate text wrapping and font sizes, so they
-reset their scaleX or scaleY values to 1 after resizing. However, if you adjust
-the scaleX or scaleY values of a TextField object, the width and height values
-change to accommodate the scaling values you provide.
+> **Note:** TextField objects are an exception to this scaling behavior. Text
+> fields need to resize themselves to accommodate text wrapping and font sizes,
+> so they reset their scaleX or scaleY values to 1 after resizing. However, if
+> you adjust the scaleX or scaleY values of a TextField object, the width and
+> height values change to accommodate the scaling values you provide.
 
 These properties represent the relative size of the display object compared to
 its original size. The `scaleX` and `scaleY` properties use fraction (decimal)

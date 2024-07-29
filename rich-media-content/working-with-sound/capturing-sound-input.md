@@ -132,10 +132,10 @@ or later and Adobe AIR 1.5 or later), set the silence level to 0, to ensure that
 the application continuously transmits audio data. Speex voice activity
 detection automatically reduces bandwidth.
 
-Note: A Microphone object only dispatches Activity events when your application
-is monitoring the microphone. Thus, if you do not call `setLoopBack( true )`,
-add a listener for sample data events, or attach the microphone to a NetStream
-object, then no activity events are dispatched.
+> **Note:** A Microphone object only dispatches Activity events when your
+> application is monitoring the microphone. Thus, if you do not call
+> `setLoopBack( true )`, add a listener for sample data events, or attach the
+> microphone to a NetStream object, then no activity events are dispatched.
 
 Three properties of the Microphone class monitor and control the detection of
 activity:

@@ -6,8 +6,8 @@ the effect can be completely customized. The filtered content is passed in to
 the shader as an image input, and the result of the shader operation becomes the
 filter result.
 
-Note: The Shader filter is available in ActionScript starting with Flash Player
-10 and Adobe AIR 1.5.
+> **Note:** The Shader filter is available in ActionScript starting with Flash
+> Player 10 and Adobe AIR 1.5.
 
 To apply a shader filter to an object, you first create a Shader instance
 representing the Pixel Bender shader that you are using. For details on the

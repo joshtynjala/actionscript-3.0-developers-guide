@@ -130,8 +130,8 @@ following location on Windows XP:
 
     c:/Documents and Settings/fred/Application Data/Macromedia/Flash Player/#SharedObjects/KROKWXRK/#localhost/sos/MyApp.swf/data.sol
 
-Note: If you do not provide a name in the `SharedObject.getLocal()` method,
-Flash Player names the file undefined.sol.
+> **Note:** If you do not provide a name in the `SharedObject.getLocal()`
+> method, Flash Player names the file undefined.sol.
 
 By default, Flash can save locally persistent SharedObject objects of up to 100
 KB per domain. This value is user-configurable. When the application tries to

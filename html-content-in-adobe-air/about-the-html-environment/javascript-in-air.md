@@ -110,8 +110,8 @@ in the containing frame or iframe element:
     	allowCrossDomainXHR="true">
     </iframe>
 
-Note: When convenient, the AIR URLStream class can also be used to download
-data.
+> **Note:** When convenient, the AIR URLStream class can also be used to
+> download data.
 
 If you dispatch an XMLHttpRequest to a remote server from a frame or iframe
 containing application content that has been mapped to a remote sandbox, make
@@ -282,7 +282,7 @@ the application:
 However, scripts _can_ successfully respond to the `unload` event caused by
 navigation of a frame, iframe, or top-level window content.
 
-Note: These limitations may be removed in a future version of Adobe AIR.
+> **Note:** These limitations may be removed in a future version of Adobe AIR.
 
 ## JavaScript Window object
 
@@ -321,9 +321,9 @@ window:
 
     window.nativeWindow.close();
 
-Note: The window control features provided by the NativeWindow object overlap
-the features provided by the JavaScript Window object. In such cases, you can
-use whichever method you find most convenient.
+> **Note:** The window control features provided by the NativeWindow object
+> overlap the features provided by the JavaScript Window object. In such cases,
+> you can use whichever method you find most convenient.
 
 The `window.nativeWindow` property is only defined for content within the
 application sandbox and only for the parent document of a page with frames or
@@ -338,10 +338,10 @@ paints a default, white background:
 
     window.htmlLoader.paintsDefaultBackground = false;
 
-Note: The HTMLLoader object itself has a `window` property, which references the
-JavaScript Window object of the HTML content it contains. You can use this
-property to access the JavaScript environment through a reference to the
-containing HTMLLoader.
+> **Note:** The HTMLLoader object itself has a `window` property, which
+> references the JavaScript Window object of the HTML content it contains. You
+> can use this property to access the JavaScript environment through a reference
+> to the containing HTMLLoader.
 
 The `window.htmlLoader` property is only defined for content within the
 application sandbox and only for the parent document of a page with frames or

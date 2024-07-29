@@ -67,9 +67,10 @@ on Mac OS, Windows, and Linux. These properties include:
 - `File.userDirectory` —the user directory. If a platform does not define a user
   directory, another location on the file system is used.
 
-Note: When a platform does not define standard locations for desktop, documents,
-or user directories, `File.documentsDirectory`, `File.desktopDirectory`, and
-`File.userDirectory` can reference the same directory.
+> **Note:** When a platform does not define standard locations for desktop,
+> documents, or user directories, `File.documentsDirectory`,
+> `File.desktopDirectory`, and `File.userDirectory` can reference the same
+> directory.
 
 These properties have different values on different operating systems. For
 example, Mac and Windows each have a different native path to the user's desktop
@@ -360,8 +361,8 @@ in this directory:
 
       /data/data/air.com.example.TestApp/com.example.TestApp/Local Store
 
-Note: If an application has a publisher ID, then the publisher ID is also used
-as part of the path to the application storage directory.
+> **Note:** If an application has a publisher ID, then the publisher ID is also
+> used as part of the path to the application storage directory.
 
 The URL (and `url` property) for a File object created with
 `File.applicationStorageDirectory` uses the `app-storage` URL scheme (see
@@ -391,9 +392,10 @@ The URL (and `url` property) for a File object created with
     dir = dir.resolvePath("images");
     trace(dir.url); // app:/images
 
-Note: On Android, the files in the application package are not accessible via
-the `nativePath`. The `nativePath` property is an empty string. Always use the
-URL to access files in the application directory rather than a native path.
+> **Note:** On Android, the files in the application package are not accessible
+> via the `nativePath`. The `nativePath` property is an empty string. Always use
+> the URL to access files in the application directory rather than a native
+> path.
 
 ### Pointing to the cache directory
 
@@ -418,10 +420,10 @@ returns the unique root directory for the machine (the "/" directory). The
 information on mounted storage volumes (see
 [Working with storage volumes](./working-with-storage-volumes.md)).
 
-Note: The root of the file system is not readable on Android. A File object
-referencing the directory with the native path, "/", is returned, but the
-properties of that object do not have accurate values. For example,
-`spaceAvailable` is always 0.
+> **Note:** The root of the file system is not readable on Android. A File
+> object referencing the directory with the native path, "/", is returned, but
+> the properties of that object do not have accurate values. For example,
+> `spaceAvailable` is always 0.
 
 ### Pointing to an explicit directory
 
@@ -475,9 +477,10 @@ directory path upon selection:
     	trace(file.nativePath);
     }
 
-Note: On Android, the `browseForDirectory()` method is not supported. Calling
-this method has no effect; a cancel event is dispatched immediately. To allow
-users to select a directory, use a custom, application-defined dialog, instead.
+> **Note:** On Android, the `browseForDirectory()` method is not supported.
+> Calling this method has no effect; a cancel event is dispatched immediately.
+> To allow users to select a directory, use a custom, application-defined
+> dialog, instead.
 
 ### Pointing to the directory from which the application was invoked
 
@@ -584,11 +587,11 @@ which the user can select a file:
 If the application has another browser dialog box open when you call a browse
 method, the runtime throws an Error exception.
 
-Note: On Android, only image, video, and audio files can be selected with the
-`browseForOpen()` and `browseForOpenMultiple()` methods. The browseForSave()
-dialog also displays only media files even though the user can enter an
-arbitrary filename. For opening and saving non-media files, you should consider
-using custom dialogs instead of these methods.
+> **Note:** On Android, only image, video, and audio files can be selected with
+> the `browseForOpen()` and `browseForOpenMultiple()` methods. The
+> browseForSave() dialog also displays only media files even though the user can
+> enter an arbitrary filename. For opening and saving non-media files, you
+> should consider using custom dialogs instead of these methods.
 
 ## Modifying File paths
 
@@ -892,8 +895,8 @@ for DOC files:
     file = file.resolvePath("test.doc");
     file.openWithDefaultApplication();
 
-Note: On Linux, the file's MIME type, not the filename extension, determines the
-default application for a file.
+> **Note:** On Linux, the file's MIME type, not the filename extension,
+> determines the default application for a file.
 
 The following code lets the user navigate to an mp3 file and open it in the
 default application for playing mp3 files:
@@ -920,5 +923,5 @@ open one of these files using the `openWithDefaultApplication()` method results
 in an exception. For a complete list of prevented filetypes, see the language
 reference entry for the `File.openWithDefaultApplication()` method.
 
-Note: This limitation does not exist for an AIR application installed using a
-native installer (an extended desktop application).
+> **Note:** This limitation does not exist for an AIR application installed
+> using a native installer (an extended desktop application).

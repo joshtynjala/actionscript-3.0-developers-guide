@@ -39,9 +39,9 @@ Content in the application sandbox can also define URLs using new URL schemes
 | useCache        | Specifies whether the local cache should be consulted before this URLRequest fetches data. Setting this property is only supported in the AIR application sandbox. The default (`true`) is to use the local cached version, if available.                                                                                                                                                                                                                                   |
 | userAgent       | Specifies the user-agent string to be used in the HTTP request.                                                                                                                                                                                                                                                                                                                                                                                                             |
 
-Note: The HTMLLoader class has related properties for settings pertaining to
-content loaded by an HTMLLoader object. For details, see
-[About the HTMLLoader class](../../html-content-in-adobe-air/programming-html-and-javascript-in-air/about-the-htmlloader-class.md).
+> **Note:** The HTMLLoader class has related properties for settings pertaining
+> to content loaded by an HTMLLoader object. For details, see
+> [About the HTMLLoader class](../../html-content-in-adobe-air/programming-html-and-javascript-in-air/about-the-htmlloader-class.md).
 
 ### Setting URLRequest defaults (AIR only)
 
@@ -54,8 +54,8 @@ the normal defaults:
     URLRequestDefaults.manageCookies = false;
     URLRequestDefaults.useCache = false;
 
-Note: The URLRequestDefaults class is defined for content running in Adobe AIR
-only. It is not supported in Flash Player.
+> **Note:** The URLRequestDefaults class is defined for content running in Adobe
+> AIR only. It is not supported in Flash Player.
 
 The URLRequestDefaults class includes a `setLoginCredentialsForHost()` method
 that lets you specify a default user name and password to use for a specific
@@ -383,8 +383,8 @@ into a URLVariables object:
     	}
     }
 
-Note: The default value for `URLLoader.dataFormat` is
-`URLLoaderDataFormat.TEXT`.
+> **Note:** The default value for `URLLoader.dataFormat` is
+> `URLLoaderDataFormat.TEXT`.
 
 As the following example shows, loading XML from an external file is the same as
 loading URLVariables. You can create a URLRequest instance and a URLLoader

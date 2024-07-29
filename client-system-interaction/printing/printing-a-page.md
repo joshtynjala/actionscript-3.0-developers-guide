@@ -39,10 +39,10 @@ So, for example, a simple print job script is (including `package`, `import` and
     	}
     }
 
-Note: This example is intended to show the basic elements of a print job script,
-and does not contain any error handling. To build a script that responds
-properly to a user canceling a print job, see
-[Working with exceptions and returns](./flash-runtime-tasks-and-system-printing.md#working-with-exceptions-and-returns).
+> **Note:** This example is intended to show the basic elements of a print job
+> script, and does not contain any error handling. To build a script that
+> responds properly to a user canceling a print job, see
+> [Working with exceptions and returns](./flash-runtime-tasks-and-system-printing.md#working-with-exceptions-and-returns).
 
 To clear a PrintJob object's properties for any reason, set the PrintJob
 variable to `null` (as in `myPrintJob = null`).

@@ -38,9 +38,9 @@ camera objects. For example, the static `Camera.names` property contains an
 array of camera names currently installed on the user's computer. You can also
 use the `name` property to display the name of the currently active camera.
 
-Note: When streaming camera video across the network, you should always handle
-network interruptions. Network interruptions can occur for many reasons,
-particularly on mobile devices.
+> **Note:** When streaming camera video across the network, you should always
+> handle network interruptions. Network interruptions can occur for many
+> reasons, particularly on mobile devices.
 
 ## Displaying camera content on screen
 
@@ -57,8 +57,8 @@ user's local camera:
     vid.attachCamera(cam);
     addChild(vid);
 
-Note: The Camera class does not have a constructor method. In order to create a
-new Camera instance you use the static `Camera.getCamera()` method.
+> **Note:** The Camera class does not have a constructor method. In order to
+> create a new Camera instance you use the static `Camera.getCamera()` method.
 
 ## Designing your camera application
 

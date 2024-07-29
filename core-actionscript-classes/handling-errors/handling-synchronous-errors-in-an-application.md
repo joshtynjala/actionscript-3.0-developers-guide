@@ -151,10 +151,10 @@ types are listed first. If the `catch` statement for the Number data type is
 listed first, neither the catch statement for the uint data type nor the catch
 statement for the int data type is ever run.
 
-Note: In the Java programming language, each function that can throw an
-exception must declare this fact, listing the exception classes it can throw in
-a `throws` clause attached to the function declaration. ActionScript does not
-require you to declare the exceptions thrown by a function.
+> **Note:** In the Java programming language, each function that can throw an
+> exception must declare this fact, listing the exception classes it can throw
+> in a `throws` clause attached to the function declaration. ActionScript does
+> not require you to declare the exceptions thrown by a function.
 
 ## Displaying a simple error message
 

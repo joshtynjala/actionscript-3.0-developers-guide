@@ -87,9 +87,9 @@ defines a `nativeWindow` property in HTML windows that provides access to the
 underlying NativeWindow instance. You can use this property to access the
 NativeWindow properties, methods, and events described here.
 
-Note: The JavaScript Window object also has methods for scripting the containing
-window, such as `moveTo()` and `close()`. Where overlapping methods are
-available, you can use whichever method that is convenient.
+> **Note:** The JavaScript Window object also has methods for scripting the
+> containing window, such as `moveTo()` and `close()`. Where overlapping methods
+> are available, you can use whichever method that is convenient.
 
 #### Flex Framework windows
 
@@ -449,9 +449,9 @@ window property settings on the Mac OS X, Windows, and Linux operating systems:
 
 <sup>\*</sup> _Ubuntu with Compiz window manager_
 
-Note: The following system chrome elements are not supported by AIR: the Mac OS
-X Toolbar, the Mac OS X Proxy Icon, Windows title bar icons, and alternate
-system chrome.
+> **Note:** The following system chrome elements are not supported by AIR: the
+> Mac OS X Toolbar, the Mac OS X Proxy Icon, Windows title bar icons, and
+> alternate system chrome.
 
 More Help topics
 

@@ -12,5 +12,5 @@ The following method displays the menu defined by a NativeMenu object named
     	popupMenu.display(event.target.stage, event.stageX, event.stageY);
     }
 
-Note: The menu does not need to be displayed in direct response to an event. Any
-method can call the `display()` function.
+> **Note:** The menu does not need to be displayed in direct response to an
+> event. Any method can call the `display()` function.
