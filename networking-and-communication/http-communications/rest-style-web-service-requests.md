@@ -61,7 +61,7 @@ used to call the service:
     	//Initiate the transaction
     	requestor = new URLLoader();
     	requestor.addEventListener( Event.COMPLETE, httpRequestComplete );
-    	requestor.addEventListener( IOErrorEvent.IOERROR, httpRequestError );
+    	requestor.addEventListener( IOErrorEvent.IO_ERROR, httpRequestError );
     	requestor.addEventListener( SecurityErrorEvent.SECURITY_ERROR, httpRequestError );
     	requestor.load( request );
     }

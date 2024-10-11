@@ -153,7 +153,7 @@ provider object:
 - Event.CLOSE — Informs the runtime that the data has all been read. (The
   runtime listens for both `close` and `complete` for this purpose.)
 
-- IOErrorEvent.IOERROR — Informs the runtime that an error reading the data has
+- IOErrorEvent.IO_ERROR — Informs the runtime that an error reading the data has
   occurred. The runtime aborts file creation and calls the IFilePromise
   `close()` method.
 
