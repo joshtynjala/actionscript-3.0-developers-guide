@@ -7,7 +7,7 @@ To read the operating system clipboard, call the `getData()` method of the
     import flash.desktop.ClipboardFormats;
 
     if(Clipboard.generalClipboard.hasFormat(ClipboardFormats.TEXT_FORMAT)){
-    var text:String = Clipboard.generalClipboard.getData(ClipboardFormats.TEXT_FORMAT);
+        var text:String = Clipboard.generalClipboard.getData(ClipboardFormats.TEXT_FORMAT);
     }
 
 > **Note:** Content running in Flash Player or in a non-application sandbox in
