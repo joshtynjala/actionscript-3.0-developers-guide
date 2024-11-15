@@ -78,9 +78,9 @@ chosen to match Java and the official network byte order. To change whether
 big-endian or little-endian byte order is used, you can set the `endian`
 property to `Endian.BIG_ENDIAN` or `Endian.LITTLE_ENDIAN`.
 
-![](../img/tip_help.png) The Socket class inherits all the methods defined by
-the IDataInput and IDataOutput interfaces (located in the flash.utils package).
-Those methods must be used to write to and read from the Socket.
+> ![](../img/tip_help.png) The Socket class inherits all the methods defined by
+> the IDataInput and IDataOutput interfaces (located in the flash.utils
+> package). Those methods must be used to write to and read from the Socket.
 
 For more information, see:
 
@@ -521,9 +521,9 @@ You can start the XMLSocket server by opening a command prompt and typing
 local computer or network; it doesn't need to be placed in the root directory of
 your web server.
 
-![](../img/tip_help.png) If you're unable to start the server because the files
-are not located within the Java classpath, try starting the server with
-`java -classpath . SimpleServer` _._
+> ![](../img/tip_help.png) If you're unable to start the server because the
+> files are not located within the Java classpath, try starting the server with
+> `java -classpath . SimpleServer`.
 
 To connect to the XMLSocket from your application, you need to create a new
 instance of the XMLSocket class, and call the `XMLSocket.connect()` method while
@@ -552,8 +552,8 @@ The `XMLSocket.send()` method does not return a value that indicates whether the
 data was successfully transmitted. If an error occurred while trying to send
 data, an IOError error is thrown.
 
-![](../img/tip_help.png) Each message you send to the XML socket server must be
-terminated by a newline (`\n`) character.
+> ![](../img/tip_help.png) Each message you send to the XML socket server must
+> be terminated by a newline (`\n`) character.
 
 For more information, see
 [XMLSocket](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/XMLSocket.html).
