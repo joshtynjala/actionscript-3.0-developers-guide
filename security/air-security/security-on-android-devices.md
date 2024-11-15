@@ -30,33 +30,33 @@ application descriptor. By default, no permissions are included. The following
 permissions are required for protected Android features exposed through the AIR
 runtime:
 
-ACCESS_COARSE_LOCATION  
+**ACCESS_COARSE_LOCATION**  
 Allows the application to access WIFI and cellular network location data through
 the Geolocation class.
 
-ACCESS_FINE_LOCATION  
+**ACCESS_FINE_LOCATION**  
 Allows the application to access GPS data through the Geolocation class.
 
-ACCESS_NETWORK_STATE and ACCESS_WIFI_STATE  
+**ACCESS_NETWORK_STATE and ACCESS_WIFI_STATE**  
 Allows the application to access network information the NetworkInfo class.
 
-CAMERA  
+**CAMERA**  
 Allows the application to access the camera.
 
-INTERNET  
+**INTERNET**  
 Allows the application to make network requests. Also allows remote debugging.
 
-READ_PHONE_STATE  
+**READ_PHONE_STATE**  
 Allows the AIR runtime to mute audio when an incoming call occurs.
 
-RECORD_AUDIO  
+**RECORD_AUDIO**  
 Allows the application to access the microphone.
 
-WAKE_LOCK and DISABLE_KEYGUARD  
+**WAKE_LOCK and DISABLE_KEYGUARD**  
 Allows the application to prevent the device from going to sleep using the
 SystemIdleMode class settings.
 
-WRITE_EXTERNAL_STORAGE  
+**WRITE_EXTERNAL_STORAGE**  
 Allows the application to write to the external memory card on the device.
 
 #### Application signatures
@@ -123,9 +123,9 @@ application user ID to protect the data from other applications. Applications
 that use a shared user ID and which are signed with the same code signing
 certificate use the same encrypted local store.
 
-Important: On a rooted phone, any application running with root privileges can
-access the files of any other application. Thus, data stored using the encrypted
-local store is not secure on a rooted device.
+> **Important:** On a rooted phone, any application running with root privileges
+> can access the files of any other application. Thus, data stored using the
+> encrypted local store is not secure on a rooted device.
 
 More Help topics
 

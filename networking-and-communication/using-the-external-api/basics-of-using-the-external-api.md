@@ -20,12 +20,12 @@ application.
 
 The following reference list contains important terms relevant to this feature:
 
-Container application  
+**Container application**  
 The application within which Flash Player is running a SWF file, such as a web
 browser and HTML page that includes Flash Player content or an AIR application
 that loads the SWF in a web page..
 
-Projector  
+**Projector**  
 An executable file that includes SWF content and an embedded version of Flash
 Player. You can create a projector file using Flash Professional or the
 standalone Flash Player. Projectors are commonly used to distribute SWF files by
@@ -33,7 +33,7 @@ CD-ROM or in similar situations where download size is not an issue and the SWF
 author wants to be certain the user will be able to run the SWF file, regardless
 of whether Flash Player is installed on the user's computer.
 
-Proxy  
+**Proxy**  
 A go-between application or code that calls code in one application (the
 "external application") on behalf of another application (the "calling
 application"), and returns values to the calling application. A proxy can be
@@ -46,7 +46,7 @@ used for various reasons, including:
 - To work around security or other restrictions that prevent the caller from
   communicating directly with the external application.
 
-Serialize  
+**Serialize**  
 To convert objects or data values into a format that can be used to pass the
 values in messages between two programming systems, such as over the Internet or
 between two different applications running on a single computer.

@@ -240,9 +240,9 @@ ProLoader features only with Flash Player 10.2 or higher. Always use ProLoader
 when you use TLF in Flash Professional CS5.5 or later. ProLoader is not needed
 in environments other than Flash Professional.
 
-Important: For SWF files published in Flash Professional CS5.5 and later, you
-can always use the fl.display.ProLoader and fl.display.ProLoaderInfo classes
-instead of flash.display.Loader and flash.display.LoaderInfo.
+> **Important:** For SWF files published in Flash Professional CS5.5 and later,
+> you can always use the fl.display.ProLoader and fl.display.ProLoaderInfo
+> classes instead of flash.display.Loader and flash.display.LoaderInfo.
 
 #### Issues addressed by the ProLoader class
 

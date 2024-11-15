@@ -57,38 +57,38 @@ sound-related classes, see
 
 The following reference list contains important terms that you may encounter:
 
-Amplitude  
+**Amplitude**  
 The distance of a point on the sound waveform from the zero or equilibrium line.
 
-Bit rate  
+**Bit rate**  
 The amount of data that is encoded or streamed for each second of a sound file.
 For mp3 files, the bit rate is usually stated in terms of thousands of bits per
 second (kbps). A higher bit rate generally means a higher quality sound wave.
 
-Buffering  
+**Buffering**  
 The receiving and storing of sound data before it is played back.
 
-mp3  
+**mp3**  
 MPEG-1 Audio Layer 3, or mp3, is a popular sound compression format.
 
-Panning  
+**Panning**  
 The positioning of an audio signal between the left and right channels in a
 stereo soundfield.
 
-Peak  
+**Peak**  
 The highest point in a waveform.
 
-Sampling rate  
+**Sampling rate**  
 Defines the number of samples per second taken from an analog audio signal to
 make a digital signal. The sampling rate of standard compact disc audio is 44.1
 kHz or 44,100 samples per second.
 
-Streaming  
+**Streaming**  
 The process of playing the early portions of a sound file or video file while
 later portions of that file are still being loaded from a server.
 
-Volume  
+**Volume**  
 The loudness of a sound.
 
-Waveform  
+**Waveform**  
 The shape of a graph of the varying amplitudes of a sound signal over time.

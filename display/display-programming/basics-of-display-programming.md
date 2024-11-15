@@ -78,63 +78,63 @@ following groups:
 The following reference list contains important terms that you will encounter
 when programming ActionScript graphics:
 
-Alpha  
+**Alpha**  
 The color value representing the amount of transparency (or more correctly, the
 amount of opacity) in a color. For example, a color with an alpha channel value
 of 60% only shows 60% of its full strength, and is 40% transparent.
 
-Bitmap graphic  
+**Bitmap graphic**  
 A graphic that is defined in the computer as a grid (rows and columns) of
 colored pixels. Commonly bitmap graphics include digital photos and similar
 images.
 
-Blending mode  
+**Blending mode**  
 A specification of how the contents of two overlapping images should interact.
 Commonly an opaque image on top of another image simply blocks the image
 underneath so that it isn't visible at all; however, different blending modes
 cause the colors of the images to blend together in different ways so the
 resulting content is some combination of the two images.
 
-Display list  
+**Display list**  
 The hierarchy of display objects that will be rendered as visible screen content
 by Flash Player and AIR. The Stage is the root of the display list, and all the
 display objects that are attached to the Stage or one of its children form the
 display list (even if the object isn't actually rendered, for example if it's
 outside the boundaries of the Stage).
 
-Display object  
+**Display object**  
 An object which represents some type of visual content in Flash Player or AIR.
 Only display objects can be included in the display list, and all display object
 classes are subclasses of the DisplayObject class.
 
-Display object container  
+**Display object container**  
 A special type of display object which can contain child display objects in
 addition to (generally) having its own visual representation.
 
-Main class of the SWF file  
+**Main class of the SWF file**  
 The class that defines the behavior for the outermost display object in a SWF
 file, which conceptually is the class for the SWF file itself. For instance, in
 a SWF created in Flash authoring, the main class is the document class. It has a
 "main timeline" which contains all other timelines; the main class of the SWF
 file is the class of which the main timeline is an instance.
 
-Masking  
+**Masking**  
 A technique of hiding from view certain parts of an image (or conversely, only
 allowing certain parts of an image to display). The portions of the mask image
 become transparent, so content underneath shows through. The term is related to
 painter's masking tape that is used to prevent paint from being applied to
 certain areas.
 
-Stage  
+**Stage**  
 The visual container that is the base or background of all visual content in a
 SWF.
 
-Transformation  
+**Transformation**  
 An adjustment to a visual characteristic of a graphic, such as rotating the
 object, altering its scale, skewing or distorting its shape, or altering its
 color.
 
-Vector graphic  
+**Vector graphic**  
 A graphic that is defined in the computer as lines and shapes drawn with
 particular characteristics (such as thickness, length, size, angle, and
 position).

@@ -48,10 +48,11 @@ external API offers the following improved functionality compared with
 - You can receive the value of a call, and that value returns immediately to
   ActionScript (as the return value of the call you make).
 
-Important: If the name given to the Flash Player instance in an HTML page (the
-`object` tag's `id` attribute) includes a hyphen (`-`) or other characters that
-are defined as operators in JavaScript (such as `+`, `*`, `/`, `\`, `.`, and so
-on), ExternalInterface calls from ActionScript will not work when the container
-web page is viewed in Internet Explorer.In addition, if the HTML tags that
-define the Flash Player instance (the `object` and `embed` tags) are nested in
-an HTML `form` tag, ExternalInterface calls from ActionScript will not work.
+> **Important:** If the name given to the Flash Player instance in an HTML page
+> (the `object` tag's `id` attribute) includes a hyphen (`-`) or other
+> characters that are defined as operators in JavaScript (such as `+`, `*`, `/`,
+> `\`, `.`, and so on), ExternalInterface calls from ActionScript will not work
+> when the container web page is viewed in Internet Explorer.In addition, if the
+> HTML tags that define the Flash Player instance (the `object` and `embed`
+> tags) are nested in an HTML `form` tag, ExternalInterface calls from
+> ActionScript will not work.

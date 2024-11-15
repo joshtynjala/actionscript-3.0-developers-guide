@@ -102,33 +102,33 @@ to 256 levels of transparency.
 The following list contains important terms that you will encounter when
 learning about bitmap graphics:
 
-Alpha  
+**Alpha**  
 The level of transparency (or more accurately, opacity) in a color or an image.
 The amount of alpha is often described as the _alpha channel_ value.
 
-ARGB color  
+**ARGB color**  
 A color scheme where each pixel's color is a mixture of red, green, and blue
 color values, and its transparency is specified as an alpha value.
 
-Color channel  
+**Color channel**  
 Commonly, colors are represented as a mixture of a few basic colors—usually (for
 computer graphics) red, green, and blue. Each basic color is considered a color
 channel; the amount of color in each color channel, mixed together, determines
 the final color.
 
-Color depth  
+**Color depth**  
 Also known as _bit depth_, this refers to the amount of computer memory that is
 devoted to each pixel, which in turn determines the number of possible colors
 that can be represented in the image.
 
-Pixel  
+**Pixel**  
 The smallest unit of information in a bitmap image—essentially a dot of color.
 
-Resolution  
+**Resolution**  
 The pixel dimensions of an image, which determines the level of fine-grained
 detail contained in the image. Resolution is often expressed in terms of width
 and height in number of pixels.
 
-RGB color  
+**RGB color**  
 A color scheme where each pixel's color is represented as a mixture of red,
 green, and blue color values.

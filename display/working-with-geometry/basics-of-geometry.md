@@ -39,40 +39,40 @@ information on applying transformations using display object properties, see
 
 The following reference list contains important geometry terms:
 
-Cartesian coordinates  
+**Cartesian coordinates**  
 Coordinates are commonly written as a pair of number (like 5, 12 or 17, -23).
 The two numbers are the x coordinate and the y coordinate, respectively.
 
-Coordinate space  
+**Coordinate space**  
 The graph of coordinates contained in a display object, on which its child
 elements are positioned.
 
-Origin  
+**Origin**  
 The point in a coordinate space where the x-axis meets the y-axis. This point
 has the coordinate 0, 0.
 
-Point  
+**Point**  
 A single location in a coordinate space. In the 2-d coordinate system used in
 ActionScript, the location along the x-axis and the y-axis (the point's
 coordinates) define the point.
 
-Registration point  
+**Registration point**  
 In a display object, the origin (0, 0 coordinate) of its coordinate space.
 
-Scale  
+**Scale**  
 The size of an object relative to its original size. When used as a verb, to
 scale an object means to change its size by stretching or shrinking the object.
 
-Translate  
+**Translate**  
 To change a point's coordinates from one coordinate space to another.
 
-Transformation  
+**Transformation**  
 An adjustment to a visual characteristic of a graphic, such as rotating the
 object, altering its scale, skewing or distorting its shape, or altering its
 color.
 
-X-axis  
+**X-axis**  
 The horizontal axis in the 2-d coordinate system used in ActionScript.
 
-Y-axis  
+**Y-axis**  
 The vertical axis in the 2-d coordinate system used in ActionScript.

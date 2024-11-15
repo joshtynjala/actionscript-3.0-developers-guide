@@ -29,7 +29,7 @@ topics are covered:
 In addition to the specific syntax for various statements and expressions, the
 following are general rules of SQL syntax:
 
-Case sensitivity  
+**Case sensitivity**  
 SQL statements, including object names, are not case sensitive. Nevertheless,
 SQL statements are frequently written with SQL keywords written in uppercase,
 and this document uses that convention. While SQL syntax is not case sensitive,
@@ -37,7 +37,7 @@ literal text values in SQL are case sensitive, and comparison and sorting
 operations can be case sensitive, as specified by the collation sequence defined
 for a column or operation. For more information see COLLATE.
 
-White space  
+**White space**  
 A white-space character (such as space, tab, new line, and so forth) must be
 used to separate individual words in an SQL statement. However, white space is
 optional between words and symbols. The type and quantity of white-space
@@ -741,19 +741,19 @@ constraint conflicts. The five algorithms are ROLLBACK, ABORT, FAIL, IGNORE, and
 REPLACE. The default algorithm is ABORT. The following is an explanation of the
 five conflict algorithms:
 
-ROLLBACK  
+**ROLLBACK**  
 When a constraint violation occurs, an immediate ROLLBACK occurs, ending the
 current transaction. The command aborts and the SQLStatement instance dispatches
 an error event. If no transaction is active (other than the implied transaction
 that is created on every command) then this algorithm works the same as ABORT.
 
-ABORT  
+**ABORT**  
 When a constraint violation occurs, the command backs out any prior changes it
 might have made and the SQLStatement instance dispatches an error event. No
 ROLLBACK is executed, so changes from prior commands within a transaction are
 preserved. ABORT is the default behavior.
 
-FAIL  
+**FAIL**  
 When a constraint violation occurs, the command aborts and the SQLStatement
 dispatches an error event. However, any changes to the database that the
 statement made before encountering the constraint violation are preserved and
@@ -761,14 +761,14 @@ are not backed out. For example, if an UPDATE statement encounters a constraint
 violation on the 100th row that it attempts to update, then the first 99 row
 changes are preserved but changes to rows 100 and beyond don’t occur.
 
-IGNORE  
+**IGNORE**  
 When a constraint violation occurs, the one row that contains the constraint
 violation is not inserted or changed. Aside from this row being ignored, the
 command continues executing normally. Other rows before and after the row that
 contained the constraint violation continue to be inserted or updated normally.
 No error is returned.
 
-REPLACE  
+**REPLACE**  
 When a UNIQUE constraint violation occurs, the pre-existing rows that are
 causing the constraint violation are removed before inserting or updating the
 current row. Consequently, the insert or update always occurs, and the command
@@ -1281,33 +1281,33 @@ associative array. Parameters can take three forms:
 The following is a list of the standard SQL elements that are not supported in
 Adobe AIR:
 
-FOREIGN KEY constraints  
+**FOREIGN KEY constraints**  
 FOREIGN KEY constraints are parsed but are not enforced.
 
-Triggers  
+**Triggers**  
 FOR EACH STATEMENT triggers are not supported (all triggers must be FOR EACH
 ROW). INSTEAD OF triggers are not supported on tables (INSTEAD OF triggers are
 only allowed on views). Recursive triggers—triggers that trigger themselves—are
 not supported.
 
-ALTER TABLE  
+**ALTER TABLE**  
 Only the RENAME TABLE and ADD COLUMN variants of the ALTER TABLE command are
 supported. Other kinds of ALTER TABLE operations such as DROP COLUMN, ALTER
 COLUMN, ADD CONSTRAINT, and so forth are ignored.
 
-Nested transactions  
+**Nested transactions**  
 Only a single active transaction is allowed.
 
-RIGHT and FULL OUTER JOIN  
+**RIGHT and FULL OUTER JOIN**  
 RIGHT OUTER JOIN or FULL OUTER JOIN are not supported.
 
-Updateable VIEW  
+**Updateable VIEW**  
 A view is read only. You may not execute a DELETE, INSERT, or UPDATE statement
 on a view. An INSTEAD OF trigger that fires on an attempt to DELETE, INSERT, or
 UPDATE a view is supported and can be used to update supporting tables in the
 body of the trigger.
 
-GRANT and REVOKE  
+**GRANT and REVOKE**  
 A database is an ordinary disk file; the only access permissions that can be
 applied are the normal file access permissions of the underlying operating
 system. The GRANT and REVOKE commands commonly found on client/server RDBMSes
@@ -1322,46 +1322,46 @@ This functionality is available through the transaction-related methods of the
 SQLConnection class: SQLConnection.begin(), SQLConnection.commit(), and
 SQLConnection.rollback().
 
-ANALYZE  
+**ANALYZE**  
 This functionality is available through the SQLConnection.analyze() method.
 
-ATTACH  
+**ATTACH**  
 This functionality is available through the SQLConnection.attach() method.
 
-COPY  
+**COPY**  
 This statement is not supported.
 
-CREATE VIRTUAL TABLE  
+**CREATE VIRTUAL TABLE**  
 This statement is not supported.
 
-DETACH  
+**DETACH**  
 This functionality is available through the SQLConnection.detach() method.
 
-PRAGMA  
+**PRAGMA**  
 This statement is not supported.
 
-VACUUM  
+**VACUUM**  
 This functionality is available through the SQLConnection.compact() method.
 
-System table access is not available  
+**System table access is not available**  
 The system tables including sqlite_master and other tables with the "sqlite\_"
 prefix are not available in SQL statements. The runtime includes a schema API
 that provides an object-oriented way to access schema data. For more information
 see the SQLConnection.loadSchema() method.
 
-Regular-expression functions (MATCH() and REGEX())  
+**Regular-expression functions (MATCH() and REGEX())**  
 These functions are not available in SQL statements.
 
 The following functionality differs between many SQLite implementations and
 Adobe AIR:
 
-Indexed statement parameters  
+**Indexed statement parameters**  
 In many implementations indexed statement parameters are one-based. However, in
 Adobe AIR indexed statement parameters are zero-based (that is, the first
 parameter is given the index 0, the second parameter is given the index 1, and
 so forth.
 
-INTEGER PRIMARY KEY column definitions  
+**INTEGER PRIMARY KEY column definitions**  
 In many implementations, only columns that are defined exactly as INTEGER
 PRIMARY KEY are used as the actual primary key column for a table. In those
 implementations, using another data type that is usually a synonym for INTEGER
@@ -1377,40 +1377,40 @@ The following column affinity types are not supported by default in SQLite, but
 are supported in Adobe AIR (Note that, like all keywords in SQL, these data type
 names are not case-sensitive):
 
-Boolean  
+**Boolean**  
 corresponding to the Boolean class.
 
-Date  
+**Date**  
 corresponding to the Date class.
 
-int  
+**int**  
 corresponding to the int class (equivalent to the INTEGER column affinity).
 
-Number  
+**Number**  
 corresponding to the Number class (equivalent to the REAL column affinity).
 
-Object  
+**Object**  
 corresponding to the Object class or any subclass that can be serialized and
 deserialized using AMF3. (This includes most classes including custom classes,
 but excludes some classes including display objects and objects that include
 display objects as properties.)
 
-String  
+**String**  
 corresponding to the String class (equivalent to the TEXT column affinity).
 
-XML  
+**XML**  
 corresponding to the ActionScript (E4X) XML class.
 
-XMLList  
+**XMLList**  
 corresponding to the ActionScript (E4X) XMLList class.
 
 The following literal values are not supported by default in SQLite, but are
 supported in Adobe AIR:
 
-true  
+**true**  
 used to represent the literal boolean value true, for working with BOOLEAN
 columns.
 
-false  
+**false**  
 used to represent the literal boolean value false, for working with BOOLEAN
 columns.

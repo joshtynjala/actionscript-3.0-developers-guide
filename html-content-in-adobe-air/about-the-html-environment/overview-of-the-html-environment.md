@@ -55,13 +55,13 @@ The HTMLLoader object provides properties, methods, and events for controlling
 how content is loaded and rendered. From within an HTML page, you can access the
 parent HTMLLoader object with the `window.htmlLoader` property.
 
-Important: Only pages installed as part of an application have the `htmlLoader`,
-`nativeWindow`, or `runtime` properties and only when loaded as the top-level
-document. These properties are not added when a document is loaded into a frame
-or iframe. (A child document can access these properties on the parent document
-as long as it is in the same security sandbox. For example, a document loaded in
-a frame could access the `runtime` property of its parent with `parent.runtime`
-_.)_
+> **Important:** Only pages installed as part of an application have the
+> `htmlLoader`, `nativeWindow`, or `runtime` properties and only when loaded as
+> the top-level document. These properties are not added when a document is
+> loaded into a frame or iframe. (A child document can access these properties
+> on the parent document as long as it is in the same security sandbox. For
+> example, a document loaded in a frame could access the `runtime` property of
+> its parent with `parent.runtime`.)
 
 ## About security
 

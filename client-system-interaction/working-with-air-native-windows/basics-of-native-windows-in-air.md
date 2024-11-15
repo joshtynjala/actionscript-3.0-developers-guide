@@ -301,11 +301,11 @@ that are irregular in shape or that "fade out" or appear to be invisible.
 However, rendering large alpha-blended areas can be slow, so the effect should
 be used conservatively.
 
-Important: On Linux, mouse events do not pass through fully transparent pixels.
-You should avoid creating windows with large, fully transparent areas since you
-may invisibly block the user's access to other windows or items on their
-desktop. On Mac OS X and Windows, mouse events do pass through fully transparent
-pixels.
+> **Important:** On Linux, mouse events do not pass through fully transparent
+> pixels. You should avoid creating windows with large, fully transparent areas
+> since you may invisibly block the user's access to other windows or items on
+> their desktop. On Mac OS X and Windows, mouse events do pass through fully
+> transparent pixels.
 
 Transparency cannot be used with windows that have system chrome. In addition,
 SWF and PDF content in HTML may not display in transparent windows. For more

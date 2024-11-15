@@ -10,8 +10,8 @@ modifications to the Reader toolbar interface (such as controls for position,
 anchoring, and visibility) persist in subsequent viewing of PDF files in both
 AIR applications and the browser.
 
-Important: To render PDF content in AIR, the user must have Adobe Reader or
-Adobe® Acrobat® version 8.1 or higher installed.
+> **Important:** To render PDF content in AIR, the user must have Adobe Reader
+> or Adobe® Acrobat® version 8.1 or higher installed.
 
 ## Detecting PDF Capability
 

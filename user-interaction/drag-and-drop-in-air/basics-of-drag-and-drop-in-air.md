@@ -56,7 +56,7 @@ The drag-and-drop API contains the following classes.
 
 The drag-and-drop gesture has three stages:
 
-Initiation  
+**Initiation**  
 _A user initiates a drag-and-drop operation by dragging from a component, or an
 item in a component, while holding down the mouse button._ The component that is
 the source of the dragged item is typically designated as the drag initiator and
@@ -67,7 +67,7 @@ method in response to a `mouseDown` or `mouseMove` event.
 If the drag operation is initiated from outside an AIR application, there is no
 initiator object to dispatch `nativeDragStart` or `nativeDragComplete` events.
 
-Dragging  
+**Dragging**  
 _While holding down the mouse button, the user moves the mouse cursor to another
 component, application, or to the desktop._ As long as the drag is underway, the
 initiator object dispatches `nativeDragUpdate` events. (However, this event is
@@ -82,7 +82,7 @@ As long as the drag gesture remains over an interactive object, that object
 dispatches `nativeDragOver` events. When the drag gesture leaves the interactive
 object, it dispatches a `nativeDragExit` event.
 
-Drop  
+**Drop**  
 _The user releases the mouse over an eligible drop target._ If the target is an
 AIR application or component, then the target object dispatches a
 `nativeDragDrop` event. The event handler can access the transferred data from

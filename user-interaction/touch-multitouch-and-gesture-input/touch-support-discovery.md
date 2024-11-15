@@ -29,17 +29,17 @@ handles for the Flash runtime. Use the `Multitouch.inputMode` property to
 establish the type of touch input for the runtime. The input mode can be one of
 three options:
 
-None  
+**None**  
 No special handling is provided for touch events. Set:
 `Multitouch.inputMode=MultitouchInputMode.NONE` and use the MouseEvent class to
 handle input.
 
-Single touch points  
+**Single touch points**  
 All touch input is interpreted, individually, and all touch points can be
 tracked and handled. Set: `Multitouch.inputMode=MultitouchInputMode.TOUCH_POINT`
 and use the TouchEvent class to handle input.
 
-Gesture input  
+**Gesture input**  
 The device or operating system interprets input as a complex form of finger
 movement across the screen. The device or operating system collectively assigns
 the movement to a single gesture input event. Set:

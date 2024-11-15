@@ -26,24 +26,24 @@ Security classes, respectively.
 
 The following reference list contains important terms:
 
-Operating system  
+**Operating system**  
 The main program that runs on a computer, within which all other applications
 run—such as Microsoft Windows, Mac OS X, or Linux®.
 
-Clipboard  
+**Clipboard**  
 The operating system's container for holding text or items that are copied or
 cut, and from which items are pasted into applications.
 
-Application domain  
+**Application domain**  
 A mechanism for separating classes used in different SWF files, so that if the
 SWF files include different classes with the same name, the classes don't
 overwrite each other.
 
-IME (input method editor)  
+**IME (input method editor)**  
 A program (or operating system tool) that is used to enter complex characters or
 symbols using a standard keyboard.
 
-Client system  
+**Client system**  
 In programming terms, a client is the part of an application (or whole
 application) that runs on an individual's computer and is used by a single user.
 The client system is the underlying operating system on the user's computer.

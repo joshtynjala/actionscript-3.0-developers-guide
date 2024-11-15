@@ -7,8 +7,8 @@ folder, include the following script tag within an HTML file:
 
     <script src="lib/myClasses.swf" type="application/x-shockwave-flash"></script>
 
-Important: The type attribute must be `type="application/x-shockwave-flash"`
-_for the library to be properly loaded._
+> **Important:** The type attribute must be
+> `type="application/x-shockwave-flash"` for the library to be properly loaded.
 
 If the SWF content is compiled as a Flash Player 10 or AIR 1.5 SWF, you must set
 the XML namespace of the application descriptor file to the AIR 1.5 namespace.

@@ -28,28 +28,28 @@ information on choosing the appropriate display object for a task, see
 
 The following reference list contains important terms related to movie clips:
 
-AVM1 SWF  
+**AVM1 SWF**  
 A SWF file created using ActionScript 1.0 or ActionScript 2.0, usually targeting
 Flash Player 8 or earlier.
 
-AVM2 SWF  
+**AVM2 SWF**  
 A SWF file created using ActionScript 3.0 for Adobe Flash Player 9 or later or
 Adobe AIR.
 
-External SWF  
+**External SWF**  
 A SWF file that is created separately from the project SWF file and is intended
 to be loaded into the project SWF file and played back within that SWF file.
 
-Frame  
+**Frame**  
 The smallest division of time on the timeline. As with a motion picture
 filmstrip, each frame is like a snapshot of the animation in time, and when
 frames are played quickly in sequence, the effect of animation is created.
 
-Timeline  
+**Timeline**  
 The metaphorical representation of the series of frames that make up a movie
 clip's animation sequence. The timeline of a MovieClip object is equivalent to
 the timeline in the Flash authoring tool.
 
-Playhead  
+**Playhead**  
 A marker identifying the location (frame) in the timeline that is being
 displayed at a given moment.

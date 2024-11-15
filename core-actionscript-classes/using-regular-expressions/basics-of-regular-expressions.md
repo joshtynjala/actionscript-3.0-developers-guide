@@ -39,26 +39,26 @@ information, see
 The following reference list contains important terms that are relevant to this
 feature:
 
-Escape character  
+**Escape character**  
 A character indicating that the character that follows should be treated as a
 metacharacter rather than a literal character. In regular expression syntax, the
 backslash character (\\) is the escape character, so a backslash followed by
 another character is a special code rather than just the character itself.
 
-Flag  
+**Flag**  
 A character that specifies some option about how the regular expression pattern
 should be used, such as whether to distinguish between uppercase and lowercase
 characters.
 
-Metacharacter  
+**Metacharacter**  
 A character that has special meaning in a regular expression pattern, as opposed
 to literally representing that character in the pattern.
 
-Quantifier  
+**Quantifier**  
 A character (or several characters) indicating how many times a part of the
 pattern should repeat. For example, a quantifier would be used to designate that
 a United States postal code should contain five or nine numbers.
 
-Regular expression  
+**Regular expression**  
 A program statement defining a pattern of characters that can be used to confirm
 whether other strings match that pattern or to replace portions of a string.

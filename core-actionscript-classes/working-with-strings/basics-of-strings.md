@@ -25,36 +25,36 @@ parameters, and so forth in many other ActionScript classes.
 The following reference list contains important terms related to strings that
 you will encounter:
 
-ASCII  
+**ASCII**  
 A system for representing text characters and symbols in computer programs. The
 ASCII system supports the 26-letter English alphabet, plus a limited set of
 additional characters.
 
-Character  
+**Character**  
 The smallest unit of text data (a single letter or symbol).
 
-Concatenation  
+**Concatenation**  
 Joining multiple string values together by adding one to the end of the other,
 creating a new string value.
 
-Empty string  
+**Empty string**  
 A string that contains no text, white space, or other characters, written as
 `""`. An empty string value is different from a String variable with a null
 value—a null String variable is a variable that does not have a String instance
 assigned to it, whereas an empty string has an instance with a value that
 contains no characters.
 
-String  
+**String**  
 A textual value (sequence of characters).
 
-String literal (or "literal string")  
+**String literal (or "literal string")**  
 A string value written explicitly in code, written as a text value surrounded by
 double quotation marks or single quotation marks.
 
-Substring  
+**Substring**  
 A string that is a portion of another string.
 
-Unicode  
+**Unicode**  
 A standard system for representing text characters and symbols in computer
 programs. The Unicode system allows for the use of any character in any writing
 system.

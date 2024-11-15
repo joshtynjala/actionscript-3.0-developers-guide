@@ -12,20 +12,20 @@ including:
 AIR adds new attributes to the frame and iframe elements of content in the
 application sandbox:
 
-sandboxRoot attribute  
+**sandboxRoot attribute**  
 The `sandboxRoot` attribute specifies an alternate, non-application domain of
 origin for the file specified by the frame `src` attribute. The file is loaded
 into the non-application sandbox corresponding to the specified domain. Content
 in the file and content loaded from the specified domain can cross-script each
 other.
 
-Important: If you set the value of `sandboxRoot` _to the base URL of the domain,
-all requests for content from that domain are loaded from the application
-directory instead of the remote server (whether that request results from page
-navigation, from an XMLHttpRequest, or from any other means of loading
-content)._
+> **Important:** If you set the value of `sandboxRoot` to the base URL of the
+> domain, all requests for content from that domain are loaded from the
+> application directory instead of the remote server (whether that request
+> results from page navigation, from an XMLHttpRequest, or from any other means
+> of loading content).
 
-documentRoot attribute  
+**documentRoot attribute**  
 The `documentRoot` attribute specifies the local directory from which to load
 URLs that resolve to files within the location specified by `sandboxRoot`.
 
@@ -44,7 +44,7 @@ installation folder. Relative URLs in `child.html` are resolved based on
 `www.example.com/air` are not accessible in the frame, since AIR would attempt
 to load them from the app:/sandbox/ directory.
 
-allowCrossDomainXHR attribute  
+**allowCrossDomainXHR attribute**  
 Include `allowCrossDomainXHR="allowCrossDomainXHR"` in the opening frame tag to
 allow content in the frame to make XMLHttpRequests to any remote domain. By
 default, non-application content can only make such requests to its own domain
@@ -56,14 +56,14 @@ pages that you create and control and only when cross-domain data loading is
 truly necessary. Also, carefully validate all external data loaded by the page
 to prevent code injection or other forms of attack.
 
-Important: If the `allowCrossDomainXHR` attribute is included in a frame or
-iframe element, cross-domain XHRs are enabled (unless the value assigned is "0"
-or starts with the letters "f" or "n"). For example, setting
-`allowCrossDomainXHR` to " `deny"` _would still enable cross-domain XHRs. Leave
-the attribute out of the element declaration altogether if you do not want to
-enable cross-domain requests._
+> **Important:** If the `allowCrossDomainXHR` attribute is included in a frame
+> or iframe element, cross-domain XHRs are enabled (unless the value assigned is
+> "0" or starts with the letters "f" or "n"). For example, setting
+> `allowCrossDomainXHR` to `"deny"` would still enable cross-domain XHRs. Leave
+> the attribute out of the element declaration altogether if you do not want to
+> enable cross-domain requests.
 
-ondominitialize attribute  
+**ondominitialize attribute**  
 Specifies an event handler for the `dominitialize` event of a frame. This event
 is an AIR-specific event that fires when the window and document objects of the
 frame have been created, but before any scripts have been parsed or document

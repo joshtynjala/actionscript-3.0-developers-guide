@@ -39,24 +39,24 @@ programs may only execute at a few frames per second.
 The following reference list contains important terms that you will encounter
 when creating and using Pixel Bender shaders:
 
-Kernel  
+**Kernel**  
 For Pixel Bender, a kernel is the same thing as a shader. Using Pixel Bender
 your code defines a kernel, which defines a single function that executes on
 each of the pixels of an image individually.
 
-Pixel Bender bytecode  
+**Pixel Bender bytecode**  
 When a Pixel Bender kernel is compiled it is transformed into Pixel Bender
 bytecode. The bytecode is accessed and executed at run time.
 
-Pixel Bender language  
+**Pixel Bender language**  
 The programming language used to create a Pixel Bender kernel.
 
-Pixel Bender Toolkit  
+**Pixel Bender Toolkit**  
 The application that is used to create a Pixel Bender bytecode file from Pixel
 Bender source code. The toolkit allows you to write, test, and compile Pixel
 Bender source code.
 
-Shader  
+**Shader**  
 For the purposes of this document, a shader is a set of functionality written in
 the Pixel Bender language. A shader's code creates a visual effect or performs a
 calculation. In either case, the shader returns a set of data (usually the
@@ -68,13 +68,13 @@ compile time or loaded as an external file at run time. In either case it is
 accessed in ActionScript by creating a Shader object and linking that object to
 the shader bytecode.
 
-Shader input  
+**Shader input**  
 A complex input, usually bitmap image data, that is provided to a shader to use
 in its calculations. For each input variable defined in a shader, a single value
 (that is, a single image or set of binary data) is used for the entire execution
 of the shader.
 
-Shader parameter  
+**Shader parameter**  
 A single value (or limited set of values) that is provided to a shader to use in
 its calculations. Each parameter value is defined for a single shader execution,
 and the same value is used throughout the shader execution.

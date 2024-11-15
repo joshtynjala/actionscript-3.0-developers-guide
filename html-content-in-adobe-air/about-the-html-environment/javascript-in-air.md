@@ -189,9 +189,9 @@ The valid data MIME types are:
 | Bitmap    | "image/x-vnd.adobe.air.bitmap"          |
 | File list | "application/x-vnd.adobe.air.file-list" |
 
-Important: Only content in the application sandbox can access file data present
-on the clipboard. If non-application content attempts to access a file object
-from the clipboard, a security error is thrown.
+> **Important:** Only content in the application sandbox can access file data
+> present on the clipboard. If non-application content attempts to access a file
+> object from the clipboard, a security error is thrown.
 
 For more information on using the clipboard, see
 [Copy and paste](../../user-interaction/copy-and-paste/index.md) and
@@ -292,7 +292,7 @@ object to provide access to the built-in classes of AIR, as well as important
 host objects. In addition, some methods and properties behave differently
 depending on whether they are within the application sandbox or not.
 
-Window.runtime property  
+**Window.runtime property**  
 The `runtime` property allows you to instantiate and use the built-in runtime
 classes from within the application sandbox. These classes include the AIR and
 Flash Player APIs (but not, for example, the Flex framework). For example, the
@@ -312,7 +312,7 @@ sandbox and only for the parent document of a page with frames or iframes.
 See
 [Using the AIRAliases.js file](../programming-html-and-javascript-in-air/using-the-airaliases-js-file.md).
 
-Window.nativeWindow property  
+**Window.nativeWindow property**  
 The `nativeWindow` property provides a reference to the underlying native window
 object. With this property, you can script window functions and properties such
 as screen position, size, and visibility, and handle window events such as
@@ -329,7 +329,7 @@ The `window.nativeWindow` property is only defined for content within the
 application sandbox and only for the parent document of a page with frames or
 iframes.
 
-Window.htmlLoader property  
+**Window.htmlLoader property**  
 The `htmlLoader` property provides a reference to the AIR HTMLLoader object that
 contains the HTML content. With this property, you can script the appearance and
 behavior of the HTML environment. For example, you can use the
@@ -347,20 +347,20 @@ The `window.htmlLoader` property is only defined for content within the
 application sandbox and only for the parent document of a page with frames or
 iframes.
 
-Window.parentSandboxBridge and Window.childSandboxBridge properties  
+**Window.parentSandboxBridge and Window.childSandboxBridge properties**  
 The `parentSandboxBridge` and `childSandboxBridge` properties allow you to
 define an interface between a parent and a child frame. For more information,
 see
 [Cross-scripting content in different security sandboxes](../programming-html-and-javascript-in-air/cross-scripting-content-in-different-security-sandboxes.md).
 
-Window.setTimeout() and Window.setInterval() functions  
+**Window.setTimeout() and Window.setInterval() functions**  
 AIR places security restrictions on use of the `setTimeout()` and
 `setInterval()` functions within the application sandbox. You cannot define the
 code to be executed as a string when calling `setTimeout()` or `setInterval()`.
 You must use a function reference. For more information, see
 [setTimeout() and setInterval()](../programming-html-and-javascript-in-air/avoiding-security-related-javascript-errors.md#settimeout-and-setinterval).
 
-Window.open() function  
+**Window.open() function**  
 When called by code running in a non-application sandbox, the `open()` method
 only opens a window when called as a result of user interaction (such as a mouse
 click or keypress). In addition, the window title is prefixed with the

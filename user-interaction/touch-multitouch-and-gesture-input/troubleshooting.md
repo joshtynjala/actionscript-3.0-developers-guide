@@ -29,24 +29,24 @@ the Multitouch class:
 
 Here are some common gesture and touch descriptions:
 
-Pan  
+**Pan**  
 Move a finger left-to-right or right-to-left. Some devices require two fingers
 to pan.
 
-Rotate  
+**Rotate**  
 Touch two fingers down, then move them around in a circle (as if they're both
 simultaneously tracing an imaginary circle on a surface). The pivot point is set
 at the midpoint between the two finger touch points.
 
-Swipe  
+**Swipe**  
 Move three fingers left-to-right or right-to-left, top-to-bottom, or
 bottom-to-top, quickly.
 
-Zoom  
+**Zoom**  
 Touch two fingers down, then move them away from each other to zoom in and
 toward each other to zoom out.
 
-Press-and-tap  
+**Press-and-tap**  
 Move or press one finger, then tap the surface with another.
 
 Each device has its own documentation about the gestures the device supports and

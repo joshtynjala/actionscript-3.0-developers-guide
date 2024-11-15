@@ -18,7 +18,7 @@ about creating a motion tween.
 
 The following is an important term that is relevant to this feature:
 
-Motion tween  
+**Motion tween**  
 A construct that generates intermediate frames of a display object in different
 states at different times; gives the appearance that the first state evolves
 smoothly into the second. Used to move a display object across the stage, as

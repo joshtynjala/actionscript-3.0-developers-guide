@@ -11,19 +11,19 @@ how data type differences are resolved under various conditions.
 Storage classes represent the actual data types that are used to store values in
 a database. The following storage classes are used by the database:
 
-NULL  
+**NULL**  
 The value is a NULL value.
 
-INTEGER  
+**INTEGER**  
 The value is a signed integer.
 
-REAL  
+**REAL**  
 The value is a floating-point number value.
 
-TEXT  
+**TEXT**  
 The value is a text string (limited to 256 MB).
 
-BLOB  
+**BLOB**  
 The value is a Binary Large Object (BLOB); in other words, raw binary data
 (limited to 256 MB).
 

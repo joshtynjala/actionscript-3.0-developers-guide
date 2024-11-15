@@ -55,53 +55,53 @@ as a key to distinguish between elements.
 The following reference list contains important terms that you will encounter
 when programming array and vector handling routines:
 
-Array  
+**Array**  
 An object that serves as a container to group multiple objects.
 
-Array access (\[\]) operator  
+**Array access (\[\]) operator**  
 A pair of square brackets surrounding an index or key that uniquely identifies
 an array element. This syntax is used after an array variable name to specify a
 single element of the array rather than the entire array.
 
-Associative array  
+**Associative array**  
 An array that uses string keys to identify individual elements.
 
-Base type  
+**Base type**  
 The data type of the objects that a Vector instance is allowed to store.
 
-Dictionary  
+**Dictionary**  
 An array whose items consist of pairs of objects, known as the key and the
 value. The key is used instead of a numeric index to identify a single element.
 
-Element  
+**Element**  
 A single item in an array.
 
-Index  
+**Index**  
 The numeric "address" used to identify a single element in an indexed array.
 
-Indexed array  
+**Indexed array**  
 The standard type of array that stores each element in a numbered position, and
 uses the number (index) to identify individual elements.
 
-Key  
+**Key**  
 The string or object used to identify a single element in an associative array
 or a dictionary.
 
-Multidimensional array  
+**Multidimensional array**  
 An array containing items that are arrays rather than single values.
 
-T  
+**T**  
 The standard convention that's used in this documentation to represent the base
 type of a Vector instance, whatever that base type happens to be. The T
 convention is used to represent a class name, as shown in the Type parameter
 description. ("T" stands for "type," as in "data type.").
 
-Type parameter  
+**Type parameter**  
 The syntax that's used with the Vector class name to specify the Vector's base
 type (the data type of the objects that it stores). The syntax consists of a
 period (`.`), then the data type name surrounded by angle brackets (`<>`). Put
 together, it looks like this: `Vector.<T>`. In this documentation, the class
 specified in the type parameter is represented generically as `T`.
 
-Vector  
+**Vector**  
 A type of array whose elements are all instances of the same data type.

@@ -46,26 +46,26 @@ detailed instructions on how to create an IK armature.
 The following reference list contains important terms that are relevant to this
 feature:
 
-Armature  
+**Armature**  
 A kinematic chain, consisting of bones and joints, used in computer animation to
 simulate realistic motion.
 
-Bone  
+**Bone**  
 A rigid segment in an armature, analogous to a bone in an animal skeleton.
 
-Inverse Kinematics (IK)  
+**Inverse Kinematics (IK)**  
 Process of determining the parameters of a jointed flexible object called a
 kinematic chain or armature.
 
-Joint  
+**Joint**  
 The location at which two bones make contact, constructed to enable movement of
 the bones; analogous to a joint in an animal.
 
-Physics Engine  
+**Physics Engine**  
 A package of physics-related algorithms used to provide life-like actions to
 animation.
 
-Spring  
+**Spring**  
 The quality of a bone that moves and reacts when the parent bone is moved and
 then incrementally diminishes over time.
 

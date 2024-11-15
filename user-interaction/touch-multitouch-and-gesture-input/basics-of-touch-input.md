@@ -34,42 +34,42 @@ support for touch input are the "discovery API" for touch event handling.
 The following reference list contains important terms for writing touch
 event-handling applications:
 
-Discovery API  
+**Discovery API**  
 The methods and properties used to test the runtime environment for support of
 touch events and different modes of input.
 
-Touch event  
+**Touch event**  
 An input action performed on a touch-enabled device using a single point of
 contact.
 
-Touch point  
+**Touch point**  
 The point of contact for a single touch event. Even if a device does not support
 gesture input, it might support multiple simultaneous touch points.
 
-Touch sequence  
+**Touch sequence**  
 The series of events representing the lifespan of a single touch. These events
 include one beginning, zero or more moves, and one end.
 
-Multitouch event  
+**Multitouch event**  
 An input action performed on a touch-enabled device using several points of
 contact (such as more than one finger).
 
-Gesture event  
+**Gesture event**  
 An input action performed on a touch-enabled device tracing some complex
 movement. For example, one gesture is touching a screen with two fingers and
 moving them simultaneously around the perimeter of an abstract circle to
 indicate rotation.
 
-Phases  
+**Phases**  
 Distinct points of time in the event flow (such as begin and end).
 
-Stylus  
+**Stylus**  
 An instrument for interacting with a touch-enabled screen. A stylus can provide
 more precision than the human finger. Some devices recognize only input from a
 specific type of stylus. Devices that do recognize stylus input might not
 recognize multiple, simultaneous points of contact or finger contact.
 
-Press-and-tap  
+**Press-and-tap**  
 A specific type of multitouch input gesture where the user pushes a finger
 against a touch-enabled device and then taps with another finger or pointing
 device. This gesture is often used to simulate a mouse right-click in multitouch

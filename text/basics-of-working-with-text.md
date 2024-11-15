@@ -52,42 +52,42 @@ For more information on these topics, see:
 The following reference list contains important terms involved with text
 handling:
 
-Cascading style sheets  
+**Cascading style sheets**  
 A standard syntax for specifying styles and formatting for content that's
 structured in XML (or HTML) format.
 
-Device font  
+**Device font**  
 A font that is installed on the user's machine.
 
-Dynamic text field  
+**Dynamic text field**  
 A text field whose contents can be changed by ActionScript but not by user
 input.
 
-Embedded font  
+**Embedded font**  
 A font that has its character outline data stored in the application SWF file.
 
-HTML text  
+**HTML text**  
 Text content entered into a text field using ActionScript that includes HTML
 formatting tags along with actual text content.
 
-Input text field  
+**Input text field**  
 A text field whose contents can be changed either by user input or by
 ActionScript.
 
-Kerning  
+**Kerning**  
 An adjustment of the spacing between pairs of characters to make the spacing in
 words more proportional and the text easier to read.
 
-Static text field  
+**Static text field**  
 A text field created in the authoring tool, whose content cannot change when the
 SWF file is running.
 
-Text line metrics  
+**Text line metrics**  
 Measurements of the size of various parts of the text content in a text field,
 such as the baseline of the text, the height of the top of the characters, size
 of descenders (the part of some lowercase letters that extends below the
 baseline), and so on.
 
-Tracking  
+**Tracking**  
 An adjustment of spacing between groups of letters or blocks of text to increase
 or decrease the density and make the text more readable.

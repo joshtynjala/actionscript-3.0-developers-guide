@@ -4,7 +4,7 @@ Running an ActionScript 3.0 code example is one of the best ways to learn how
 particular classes and methods work. You can use examples in different ways,
 depending on the devices you are using or targeting.
 
-Computers running Flash Professional or Flash Builder  
+**Computers running Flash Professional or Flash Builder**  
 See
 [Running ActionScript 3.0 examples in Flash Professional](#running-actionscript-30-examples-in-flash-professional)
 or
@@ -13,14 +13,14 @@ for information about how to use these development environments to run
 ActionScript 3.0 examples. Use trace statements and other debugging tools to
 increase your understanding of how a code example works.
 
-Mobile devices  
+**Mobile devices**  
 You can run the ActionScript 3.0 code examples on mobile devices that support
 Flash Player 10.1 and later releases. See
 [Running ActionScript 3.0 examples on mobile devices](#running-actionscript-30-examples-on-mobile-devices).
 You can also run these examples on your computer using Flash Professional or
 Flash Builder.
 
-TV devices  
+**TV devices**  
 Though you cannot run these examples on TV devices, you can still learn from the
 examples by running them on your computer. See
 [Flash Platform for TV](https://web.archive.org/web/20140302163619/https://www.adobe.com/devnet/devices/flash_platform_tv.html)

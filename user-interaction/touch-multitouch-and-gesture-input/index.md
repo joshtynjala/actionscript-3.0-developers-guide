@@ -6,15 +6,15 @@ And, the Flash runtimes handle events that combine multiple touch points with
 movement to create a gesture. In other words, Flash runtimes interpret two types
 of input:
 
-Touch  
+**Touch**  
 input with a single point device such as a finger, stylus, or other tool on a
 touch-enabled device. Some devices support multiple simultaneous points of
 contact with a finger or stylus.
 
-Multitouch  
+**Multitouch**  
 input with more than one simultaneous point of contact.
 
-Gesture  
+**Gesture**  
 Input interpreted by a device or operating system in response to one or more
 touch events. For example, a user rotates two fingers simultaneously, and the
 device or operating system interprets that touch input as a rotation gesture.

@@ -147,24 +147,24 @@ edition 2 specification.
 The following reference list contains important terms you will encounter when
 programming XML handling routines:
 
-Element  
+**Element**  
 A single item in an XML document, identified as the content contained between a
 starting tag and an ending tag (including the tags). XML elements can contain
 text data or other elements, or can be empty.
 
-Empty element  
+**Empty element**  
 An XML element that contains no child elements. Empty elements are often written
 as self-closing tags (such as `<element/>`).
 
-Document  
+**Document**  
 A single XML structure. An XML document can contain any number of elements (or
 can consist only of a single empty element); however, an XML document must have
 a single top-level element that contains all the other elements in the document.
 
-Node  
+**Node**  
 Another name for an XML element.
 
-Attribute  
+**Attribute**  
 A named value associated with an element that is written into the opening tag of
 the element in `attributename="value"` format, rather than being written as a
 separate child element nested inside the element.

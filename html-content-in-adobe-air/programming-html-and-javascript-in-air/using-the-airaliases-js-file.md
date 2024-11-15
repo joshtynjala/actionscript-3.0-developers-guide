@@ -40,6 +40,6 @@ The runtime classes are organized in a package structure, as in the following:
 
   Adjust the path in the `src` reference, as needed.
 
-  Important: Except where noted, the JavaScript example code in this
-  documentation assumes that you have included the AIRAliases.js file in your
-  HTML page.
+  > **Important:** Except where noted, the JavaScript example code in this
+  > documentation assumes that you have included the AIRAliases.js file in your
+  > HTML page.

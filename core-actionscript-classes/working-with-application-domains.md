@@ -91,7 +91,7 @@ Application domain 1. Usage A, usage B, and usage C illustrate different
 techniques for setting the appropriate application domain for each SWF file in
 an application.
 
-Usage A  
+**Usage A:**  
 Partition the child SWF file by creating a child of the system domain. In the
 diagram, Application domain 2 is created as a child of the system domain.The
 application2.swf file is loaded in Application domain 2, and its class
@@ -111,7 +111,7 @@ domain, and starts loading a SWF using that application domain:
     var loaderA:Loader = new Loader();
     loaderA.load(new URLRequest("application2.swf"), contextA);
 
-Usage B:  
+**Usage B:**  
 Add new class definitions to current class definitions. The application domain
 of module1.swf is set to the current domain (Application domain 1). This lets
 you add to the application's current set of class definitions with new class
@@ -128,7 +128,7 @@ domain:
     var loaderB:Loader = new Loader();
     loaderB.load(new URLRequest("module1.swf"), contextB);
 
-Usage C:  
+**Usage C:**  
 Use the parent's class definitions by creating a new child domain of the current
 domain. The application domain of module3.swf is a child of the current domain,
 and the child uses the parent's versions of all classes. One use of this

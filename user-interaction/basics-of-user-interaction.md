@@ -25,23 +25,23 @@ object derived from InteractiveObject are applicable to all the others.
 It's important to familiarize yourself with the following key user interaction
 terms before proceeding:
 
-Character code  
+**Character code**  
 A numeric code representing a character in the current character set (associated
 with a key being pressed on the keyboard). For example, "D" and "d" have
 different character codes even though they're created by the same key on a U.S.
 English keyboard.
 
-Context menu  
+**Context menu**  
 The menu that appears when a user right-clicks or uses a particular
 keyboard-mouse combination. Context menu commands typically apply directly to
 what has been clicked. For example, a context menu for an image may contain a
 command to show the image in a separate window and a command to download it.
 
-Focus  
+**Focus**  
 The indication that a selected element is active and that it is the target of
 keyboard or mouse interaction.
 
-Key code  
+**Key code**  
 A numeric code corresponding to a physical key on the keyboard.
 
 ## Managing focus

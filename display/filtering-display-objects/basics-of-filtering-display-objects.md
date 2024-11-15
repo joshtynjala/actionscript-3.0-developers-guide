@@ -17,19 +17,19 @@ convolution filter.
 The following reference list contains important terms that you might encounter
 when creating filters:
 
-Bevel  
+**Bevel**  
 An edge created by lightening pixels on two sides and darkening pixels on the
 opposite two sides. This effect creates the appearance of a three-dimensional
 border. The effect is commonly used for raised or indented buttons and similar
 graphics.
 
-Convolution  
+**Convolution**  
 Distorting pixels in an image by combining each pixel's value with the values of
 some or all of its neighboring pixels, using various ratios.
 
-Displacement  
+**Displacement**  
 Shifting or moving pixels in an image to a new position.
 
-Matrix  
+**Matrix**  
 A grid of numbers used to perform certain mathematical calculations by applying
 the numbers in the grid to various values, then combining the results.

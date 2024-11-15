@@ -20,14 +20,14 @@ important characteristics of the user's printer.
 
 The following reference list contains important terms related to printing:
 
-Spooler  
+**Spooler**  
 A portion of the operating system or printer driver software that tracks the
 pages as they are waiting to be printed and sends them to the printer when it is
 available.
 
-Page orientation  
+**Page orientation**  
 The rotation of the printed content in relation to the paper—either horizontal
 (landscape) or vertical (portrait).
 
-Print job  
+**Print job**  
 The page or set of pages that make up a single printout.

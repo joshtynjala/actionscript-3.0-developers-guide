@@ -46,38 +46,38 @@ by a specialized server such as Adobe's Flash® Media Server.
 
 #### Important concepts and terms
 
-Cue point  
+**Cue point**  
 A marker that can be placed at a specific moment in time in a video file, for
 example to act like a bookmark for locating that point in time, or to provide
 additional data that is associated with that moment in time.
 
-Encoding  
+**Encoding**  
 The process of taking video data in one format and converting it to another
 video data format; for example, taking a high-resolution source video and
 converting it to a format that's suitable for Internet delivery.
 
-Frame  
+**Frame**  
 A single segment of video information; each frame is like a still image
 representing a snapshot of a moment in time. By playing frames in sequence at
 high speed, the illusion of motion is created.
 
-Keyframe  
+**Keyframe**  
 A video frame which contains the full information for the frame. Other frames
 that follow a keyframe only contain information about how they differ from the
 keyframe, rather than containing the full frame's worth of information.
 
-Metadata  
+**Metadata**  
 Information about a video file that is embedded within the video file and
 retrieved when the video has loaded.
 
-Progressive download  
+**Progressive download**  
 When a video file is delivered from a standard web server, the video data is
 loaded using progressive download, meaning the video information loads in
 sequence. This has the benefit that the video can begin playing before the
 entire file is downloaded; however, it prevents you from jumping ahead to a part
 of the video that hasn't loaded.
 
-Streaming  
+**Streaming**  
 As an alternative to progressive download, a special video server can be used to
 deliver video over the Internet using a technique known as streaming (sometimes
 called "true streaming"). With streaming, the viewer's computer never downloads

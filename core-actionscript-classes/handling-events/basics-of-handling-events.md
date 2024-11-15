@@ -68,20 +68,20 @@ you can change the name of the variable used as the function's parameter
 The following reference list contains important terms that you will encounter
 when writing event-handling routines:
 
-Bubbling  
+**Bubbling**  
 Bubbling occurs for some events so that a parent display object can respond to
 events dispatched by its children.
 
-Bubbling phase  
+**Bubbling phase**  
 The part of the event flow in which an event propagates up to parent display
 objects. The bubbling phase occurs after the capture and target phases.
 
-Capture phase  
+**Capture phase**  
 The part of the event flow in which an event propagates down from the most
 general target to the most specific target object. The capture phase occurs
 before the target and bubbling phases.
 
-Default behavior  
+**Default behavior**  
 Some events include a behavior that normally happens along with the event, known
 as the default behavior. For example, when a user types text in a text field, a
 text input event is raised. The default behavior for that event is to actually
@@ -89,14 +89,14 @@ display the character that was typed into the text field—but you can override
 that default behavior (if for some reason you don't want the typed character to
 be displayed).
 
-Dispatch  
+**Dispatch**  
 To notify event listeners that an event has occurred.
 
-Event  
+**Event**  
 Something that happens to an object that the object can tell other objects
 about.
 
-Event flow  
+**Event flow**  
 When events happen to an object on the display list (an object displayed on the
 screen), all the objects that contain the object are notified of the event and
 notify their event listeners in turn. This process starts with the Stage and
@@ -104,21 +104,21 @@ proceeds through the display list to the actual object where the event occurred,
 and then proceeds back to the Stage again. This process is known as the event
 flow.
 
-Event object  
+**Event object**  
 An object that contains information about a particular event's occurrence, which
 is sent to all listeners when an event is dispatched.
 
-Event target  
+**Event target**  
 The object that actually dispatches an event. For example, if the user clicks a
 button that is inside a Sprite that is in turn inside the Stage, all those
 objects dispatch events, but the event target is the one where the event
 actually happened—in this case, the clicked button.
 
-Listener  
+**Listener**  
 An object or function that has registered itself with an object, to indicate
 that it should be notified when a specific event takes place.
 
-Target phase  
+**Target phase**  
 The point of the event flow at which an event has reached the most specific
 possible target. The target phase occurs between the capture and the bubbling
 phases.

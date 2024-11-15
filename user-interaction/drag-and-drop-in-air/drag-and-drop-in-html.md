@@ -167,11 +167,11 @@ However, other applications may not be able to recognize or use the transferred
 data. It is your responsibility to add data to the `dataTransfer` object in the
 expected format.
 
-Important: Only code running in the application sandbox can access dropped
-files. Attempting to read or set any property of a File object within a
-non-application sandbox generates a security error. See
-[Handling file drops in non-application HTML sandboxes](./handling-file-drops-in-non-application-html-sandboxes.md)
-for more information.
+> **Important:** Only code running in the application sandbox can access dropped
+> files. Attempting to read or set any property of a File object within a
+> non-application sandbox generates a security error. See
+> [Handling file drops in non-application HTML sandboxes](./handling-file-drops-in-non-application-html-sandboxes.md)
+> for more information.
 
 ## Drag effects in HTML
 

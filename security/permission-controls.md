@@ -492,9 +492,9 @@ access to your secure HTTPS data by SWF files served over HTTP connections, an
 attacker interposed between your HTTP server and your users could replace your
 HTTP SWF file with one of their own, which can then access your HTTPS data.
 
-Important: Code executing in the AIR application sandbox is not permitted to
-call either the `allowDomain()` or `allowInsecureDomain()` methods of the
-Security class.
+> **Important:** Code executing in the AIR application sandbox is not permitted
+> to call either the `allowDomain()` or `allowInsecureDomain()` methods of the
+> Security class.
 
 Another important security-related method is the `Security.loadPolicyFile()`
 method, which causes Flash Player to check for a policy file at a nonstandard

@@ -84,7 +84,7 @@ The menu classes include:
 
 AIR supports the following types of menus:
 
-Context menus  
+**Context menus**  
 Context menus open in response to a right-click or command-click on an
 interactive object in SWF content or a document element in HTML content.
 
@@ -96,7 +96,7 @@ In the AIR runtime, you can create a context menu using either the NativeMenu or
 the ContextMenu class. In HTML content in AIR, you can use the Webkit HTML and
 JavaScript APIs to add context menus to HTML elements.
 
-Application menus (AIR only)  
+**Application menus (AIR only)**  
 An application menu is a global menu that applies to the entire application.
 Application menus are supported on Mac OS X, but not on Windows or Linux. On Mac
 OS X, the operating system automatically creates an application menu. You can
@@ -104,33 +104,33 @@ use the AIR menu API to add items and submenus to the standard menus. You can
 add listeners for handling the existing menu commands. Or you can remove
 existing items.
 
-Window menus (AIR only)  
+**Window menus (AIR only)**  
 A window menu is associated with a single window and is displayed below the
 title bar. Menus can be added to a window by creating a NativeMenu object and
 assigning it to the `menu` property of the NativeWindow object. Window menus are
 supported on the Windows and Linux operating systems, but not on Mac OS X.
 Native window menus can only be used with windows that have system chrome.
 
-Dock and system tray icon menus (AIR only)  
+**Dock and system tray icon menus (AIR only)**  
 These icon menus are similar to context menus and are assigned to an application
 icon in the Mac OS X dock or the Windows and Linux notification areas on the
 taskbar. Dock and system tray icon menus use the NativeMenu class. On Mac OS X,
 the items in the menu are added above the standard operating system items. On
 Windows or Linux, there is no standard menu.
 
-Pop-up menus (AIR only)  
+**Pop-up menus (AIR only)**  
 An AIR pop-up menu is like a context menu, but is not necessarily associated
 with a particular application object or component. Pop-up menus can be displayed
 anywhere in a window by calling the `display()` method of any NativeMenu object.
 
-Custom menus  
+**Custom menus**  
 Native menus are drawn entirely by the operating system and, as such, exist
 outside the Flash and HTML rendering models. Instead of using native menus, you
 can always create your own custom, non-native menus using MXML, ActionScript, or
 JavaScript (in AIR). Such menus must be fully rendered inside application
 content.
 
-Flex menus  
+**Flex menus**  
 The Adobe® Flex™ framework provides a set of Flex menu components. The Flex
 menus are drawn by the runtime rather than the operating system and are not
 _native_ menus. A Flex menu component can be used for Flex windows that do not
@@ -395,13 +395,13 @@ item labeled, "Format," you would set the `mnemonicIndex` property equal to 2.
 
 Menu items have the two state properties, `checked` and `enabled`:
 
-checked  
+**checked**  
 Set to `true` to display a check mark next to the item label.
 
     var item:NativeMenuItem = new NativeMenuItem("Format");
     item.checked = true;
 
-enabled  
+**enabled**  
 Toggle the value between `true` and `false` to control whether the command is
 enabled. Disabled items are visually "grayed-out" and do not dispatch `select`
 events.

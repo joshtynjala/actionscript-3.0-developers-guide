@@ -31,24 +31,24 @@ recent `StageVideoAvailability` event indicates that stage video is available.
 
 The StageVideo API framework provides the following events:
 
-StageVideoAvailabilityEvent.STAGE_VIDEO_AVAILABILITY  
+**StageVideoAvailabilityEvent.STAGE_VIDEO_AVAILABILITY**  
 Sent when the `Stage.stageVideos` property changes. The
 `StageVideoAvailabilityEvent.availability` property indicates either `AVAILABLE`
 or `UNAVAILABLE`. Use this event to determine whether the `stageVideos` property
 contains any StageVideo objects, rather than directly checking the length of the
 `Stage.stageVideos` vector.
 
-StageVideoEvent.RENDER_STATE  
+**StageVideoEvent.RENDER_STATE**  
 Sent when a NetStream or Camera object has been attached to a StageVideo object
 and is playing. Indicates the type of decoding currently in use: hardware,
 software, or unavailable (nothing is displayed). The event target contains
 `videoWidth` and `videoHeight` properties that are safe to use for resizing the
 video viewport.
 
-Important: Coordinates obtained from the StageVideo target object use Stage
-coordinates, since they are not part of the standard display list.
+> **Important:** Coordinates obtained from the StageVideo target object use
+> Stage coordinates, since they are not part of the standard display list.
 
-VideoEvent.RENDER_STATE  
+**VideoEvent.RENDER_STATE**  
 Sent when a Video object is being used. Indicates whether software or hardware
 accelerated decoding is in use. If this event indicates hardware accelerated
 decoding, switch to a StageVideo object if possible. The Video event target
@@ -198,12 +198,12 @@ The following code shows how to handle the
     	}
     }
 
-Important: The first time an application accesses the vector element at
-Stage.stageVideos\[0\], the default rect is set to 0,0,0,0, and pan and zoom
-properties use default values. Always reset these values to your preferred
-settings. You can use the `videoWidth` and `videoHeight` properties of the
-`StageVideoEvent.RENDER_STATE` or `VideoEvent.RENDER_STATE` event target for
-calculating the video viewport dimensions.
+> **Important:** The first time an application accesses the vector element at
+> Stage.stageVideos\[0\], the default rect is set to 0,0,0,0, and pan and zoom
+> properties use default values. Always reset these values to your preferred
+> settings. You can use the `videoWidth` and `videoHeight` properties of the
+> `StageVideoEvent.RENDER_STATE` or `VideoEvent.RENDER_STATE` event target for
+> calculating the video viewport dimensions.
 
 Download the full source code for this sample application at
 [Getting Started with Stage Video](https://web.archive.org/web/20150228093631/http://www.adobe.com/devnet/flashplayer/articles/stage_video.html).

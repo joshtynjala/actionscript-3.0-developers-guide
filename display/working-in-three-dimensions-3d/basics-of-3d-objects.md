@@ -19,49 +19,49 @@ and scaling properties of a display object enable it to move in 3D space.
 The following reference list contains important terms that you will encounter
 when programming 3-dimensional graphics:
 
-Perspective  
+**Perspective**  
 In a 2D plane, representation of parallel lines as converging on a vanishing
 point to give the illusion of depth and distance.
 
-Projection  
+**Projection**  
 The production of a 2D image of a higher-dimensional object; 3D projection maps
 3D points to a 2D plane.
 
-Rotation  
+**Rotation**  
 Changing the orientation (and often the position) of an object by moving every
 point included in the object in a circular motion.
 
-Transformation  
+**Transformation**  
 Altering 3D points or sets of points by translation, rotation, scale, skew, or a
 combination of these actions.
 
-Translation  
+**Translation**  
 Changing the position of an object by moving every point included in the object
 by the same amount in the same direction.
 
-Vanishing point  
+**Vanishing point**  
 Point at which receding parallel lines seem to meet when represented in linear
 perspective.
 
-Vector  
+**Vector**  
 A 3D vector represents a point or a location in the three-dimensional space
 using the Cartesian coordinates x, y, and z.
 
-Vertex  
+**Vertex**  
 A corner point.
 
-Textured mesh  
+**Textured mesh**  
 Any point defining an object in 3D space.
 
-UV mapping  
+**UV mapping**  
 A way to apply a texture or bitmap to a 3D surface. UV mapping assigns values to
 coordinates on an image as percentages of the horizontal (U) axis and vertical
 (V) axis.
 
-T value  
+**T value**  
 The scaling factor for determining the size of a 3D object as the object moves
 toward, or away from, the current point of view.
 
-Culling  
+**Culling**  
 Rendering, or not, surfaces with specific winding. Using culling you can hide
 surfaces that are not visible to the current point of view.

@@ -30,13 +30,13 @@ available. See [Guidelines and limitations](#guidelines-and-limitations).
 With the stage video model, Flash Player can separate video from the display
 list. Flash Player divides the composite display between two Z-ordered planes:
 
-Stage video plane  
+**Stage video plane**  
 The stage video plane sits in the background. It displays only hardware
 accelerated video. Because of this design, this plane is not available if
 hardware acceleration is not supported or not available on the device. In
 ActionScript, StageVideo objects handle videos played on the stage video plane.
 
-Flash display list plane  
+**Flash display list plane**  
 Flash display list entities are composited on a plane in front of the stage
 video plane. Display list entities include anything that the runtime renders,
 including playback controls. When hardware acceleration is not available, videos

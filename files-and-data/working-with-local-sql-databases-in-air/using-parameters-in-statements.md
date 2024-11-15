@@ -88,14 +88,14 @@ previous example, using unnamed parameters:
 
 Using parameters in a SQL statement provides several benefits:
 
-Better performance  
+**Better performance**  
 A SQLStatement instance that uses parameters can execute more efficiently
 compared to one that dynamically creates the SQL text each time it executes. The
 performance improvement is because the statement is prepared a single time and
 can then be executed multiple times using different parameter values, without
 needing to recompile the SQL statement.
 
-Explicit data typing  
+**Explicit data typing**  
 Parameters are used to allow for typed substitution of values that are unknown
 at the time the SQL statement is constructed. The use of parameters is the only
 way to guarantee the storage class for a value passed in to the database. When
@@ -106,7 +106,7 @@ affinity.
 For more information on storage classes and column affinity, see
 [Data type support](../../appendixes/sql-support-in-local-databases/data-type-support.md).
 
-Greater security  
+**Greater security**  
 The use of parameters helps prevent a malicious technique known as a SQL
 injection attack. In a SQL injection attack, a user enters SQL code in a
 user-accessible location (for example, a data entry field). If application code

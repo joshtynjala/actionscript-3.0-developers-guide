@@ -57,17 +57,17 @@ see the method's entry in the
 The following reference list contains important terms for programming error
 handling routines:
 
-Asynchronous  
+**Asynchronous**  
 A program command such as a method call that doesn't provide an immediate
 result; instead it gives a result (or error) in the form of an event.
 
-Catch  
+**Catch**  
 When an exception (a run-time error) occurs and your code becomes aware of the
 exception, that code is said to _catch_ the exception. Once an exception is
 caught, the Flash runtime stops notifying other ActionScript code of the
 exception.
 
-Debugger version  
+**Debugger version**  
 A special version of the Flash runtime, such as the Flash Player dubugger
 version or the AIR Debug Launcher (ADL), that contains code for notifying users
 of run-time errors. In the standard version of Flash Player or Adobe AIR (the
@@ -76,11 +76,11 @@ are ignored. In the debugger versions (which are included with Adobe Flash CS4
 Professional and Adobe Flash Builder), a warning message appears when an
 unhandled error happens.
 
-Exception  
+**Exception**  
 An error that happens while an application is running and that the Flash runtime
 can't resolve on its own.
 
-Re-throw  
+**Re-throw**  
 When your code catches an exception, the Flash runtime no longer notifies other
 objects of the exception. If it's important for other objects to receive the
 exception, your code must _re-throw_ the exception to start the notification
