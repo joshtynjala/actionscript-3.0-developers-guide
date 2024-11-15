@@ -86,12 +86,12 @@ objects of the exception. If it's important for other objects to receive the
 exception, your code must _re-throw_ the exception to start the notification
 process again.
 
-Synchronous  
+**Synchronous**  
 A program command, such as a method call, that provides an immediate result (or
 immediately throws an error), meaning that the response can be used within the
 same code block.
 
-Throw  
+**Throw**  
 The act of notifying a Flash runtime (and consequently, notifying other objects
 and ActionScript code) that an error has occurred is known as _throwing_ an
 error.

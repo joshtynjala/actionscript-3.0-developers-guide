@@ -164,13 +164,13 @@ an AIR application is running, you can use the following classes:
 The following reference list contains important terms that you will encounter
 when programming networking and communications code:
 
-External data  
+**External data**  
 Data that is stored in some form outside of the application, and loaded into the
 application when needed. This data could be stored in a file that's loaded
 directly, or stored in a database or other form that is retrieved by calling
 scripts or programs running on a server.
 
-URL-encoded variables  
+**URL-encoded variables**  
 The URL-encoded format provides a way to represent several variables (pairs of
 variable names and values) in a single string of text. Individual variables are
 written in the format name=value. Each variable (that is, each name-value pair)
@@ -178,17 +178,17 @@ is separated by ampersand characters, like this:
 variable1=value1&variable2=value2. In this way, an indefinite number of
 variables can be sent as a single message.
 
-MIME type  
+**MIME type**  
 A standard code used to identify the type of a given file in Internet
 communication. Any given file type has a specific code that is used to identify
 it. When sending a file or message, a computer (such as a web server or a user's
 Flash Player or AIR instance) will specify the type of file being sent.
 
-HTTP  
+**HTTP**  
 Hypertext Transfer Protocol—a standard format for delivering web pages and
 various other types of content that are sent over the Internet.
 
-Request method  
+**Request method**  
 When an application (such as an AIR application or a web browser) sends a
 message (called an HTTP request) to a web server, any data being sent can be
 embedded in the request in one of two ways; these are the two request methods
@@ -197,13 +197,13 @@ look in the appropriate portion of the request to find the data, so the request
 method used to send data from your application should match the request method
 used to read that data on the server.
 
-Socket connection  
+**Socket connection**  
 A persistent connection for communication between two computers.
 
-Upload  
+**Upload**  
 To send a file to another computer.
 
-Download  
+**Download**  
 To retrieve a file from another computer.
 
 ## Network interfaces
