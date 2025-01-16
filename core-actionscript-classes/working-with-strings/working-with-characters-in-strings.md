@@ -23,7 +23,7 @@ When you run this code, the following output is produced:
     l - 108
     l - 108
     o - 111
-    - 32
+      - 32
     w - 119
     o - 111
     r - 114

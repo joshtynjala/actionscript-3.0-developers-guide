@@ -7,7 +7,7 @@ creates the Worker and manages the running Worker objects in an application.
 
 When the runtime loads, it automatically creates the WorkerDomain object. The
 runtime also automatically creates a worker for the main swf of the application.
-This first worker is known as the <span class="dfn"> primordial worker </span>.
+This first worker is known as the _primordial worker_.
 
 Because there is only one WorkerDomain object for an application, you access the
 WorkerDomain instance using the static `WorkerDomain.current` property.

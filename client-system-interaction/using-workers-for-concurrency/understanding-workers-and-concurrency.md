@@ -1,13 +1,13 @@
 # Understanding workers and concurrency
 
 When an application doesn't use workers, the application's code executes in a
-single linear block of executing steps known as an execution <span class="dfn">
-thread </span>. The thread executes the code that a developer writes. It also
-executes much of the code that's part of the runtime, most notably the code that
-updates the screen when display objects' properties change. Although code is
-written in chunks as methods and classes, at run time the code executes one line
-at a time as though it were written in a single long series of steps. Consider
-this hypothetical example of the steps that an application executes:
+single linear block of executing steps known as an execution _thread_. The
+thread executes the code that a developer writes. It also executes much of the
+code that's part of the runtime, most notably the code that updates the screen
+when display objects' properties change. Although code is written in chunks as
+methods and classes, at run time the code executes one line at a time as though
+it were written in a single long series of steps. Consider this hypothetical
+example of the steps that an application executes:
 
 1.  Enter frame: The runtime calls any `enterFrame` event handlers and runs
     their code one at a time
@@ -51,11 +51,10 @@ execution thread to redraw the screen each frame without being blocked by other
 work.
 
 The ability to run multiple code operations at the same time in this way is
-known as <span class="dfn"> concurrency </span>. When the background worker
-finishes its work, or at "progress" points along the way, you can send the main
-worker notifications and data. In this way, you can write code that performs
-complex or time consuming operations but avoid the bad user experience of having
-the screen freeze.
+known as _concurrency_. When the background worker finishes its work, or at
+"progress" points along the way, you can send the main worker notifications and
+data. In this way, you can write code that performs complex or time consuming
+operations but avoid the bad user experience of having the screen freeze.
 
 Workers are useful because they decrease the chances of the frame rate dropping
 due to the main rendering thread being blocked by other code. However, workers
