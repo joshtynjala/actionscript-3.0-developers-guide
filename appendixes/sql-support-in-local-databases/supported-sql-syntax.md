@@ -1317,7 +1317,7 @@ The following SQL elements and SQLite features are supported in some SQLite
 implementations, but are not supported in Adobe AIR. Most of this functionality
 is available through methods of the SQLConnection class:
 
-Transaction-related SQL elements (BEGIN, END, COMMIT, ROLLBACK)  
+**Transaction-related SQL elements (BEGIN, END, COMMIT, ROLLBACK)**  
 This functionality is available through the transaction-related methods of the
 SQLConnection class: SQLConnection.begin(), SQLConnection.commit(), and
 SQLConnection.rollback().
